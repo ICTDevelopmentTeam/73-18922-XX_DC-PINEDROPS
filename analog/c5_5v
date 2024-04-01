@@ -1,0 +1,9 @@
+!!!!    2    0    1 1611102925   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:17 2018
+disconnect all
+connect i to "SW1_5V"
+connect s to "VBST1_5V"
+!connect g to "VBST2_5V"
+!connect g to "SW2_5V"
+capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp, en
+! "c5_5v" test.

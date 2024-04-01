@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582963  V6a51                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:55 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "PU_GPIO51_GSXDOUT_CP"
+!B!resistor 5.11k, 6.00, 6.00, re4, wb, ar200m
+resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+! "r188_cp" test.

@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583016  V6e90                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:06 2018
+disconnect all
+connect s to "P1V5_PCH"
+connect i to "PU_SATA_RCOMP_CP"
+!B!resistor 7.5k, 6.00, 6.00, re4, wb, ar100m
+resistor 7.5k,25.00, 20.00,re4,wb,ar100m
+! "r106_cp" test.

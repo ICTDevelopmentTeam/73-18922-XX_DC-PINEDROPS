@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027787   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:28 2018
+disconnect all
+connect s to "FAN23_GRN_LED_L"
+connect i to "FAN23_GRN_LED_F"
+diode 2.32, 1.87, idc25m, co4.4, ar2.32
+! "fanled23_f%led2" test.

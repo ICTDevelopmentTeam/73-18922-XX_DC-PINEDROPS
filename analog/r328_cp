@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582833  Va454                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:29 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "TPM_PCH_DRQ_L0_CP"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 20.00,re4,wb,ar100m
+! "r328_cp" test.

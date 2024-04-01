@@ -1,0 +1,33 @@
+!!!!    2    0    1 1630329202   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:15 2018
+on failure
+   report parallel devices
+   report "c145 10.0u"
+   report "c149 10.0u"
+   report "c157 10.0u"
+   report "c170 10.0u"
+   report "c176 10.0u"
+   report "c10_adv 4.70u"
+   report "c155 1.00u"
+   report "c164 1.00u"
+   report "c166 1.00u"
+   report "c168 1.00u"
+   report "c172 1.00u"
+   report "c174 1.00u"
+   report "c144 100n"
+   report "c148 100n"
+   report "c154 100n"
+   report "c156 100n"
+   report "c165 100n"
+   report "c167 100n"
+   report "c169 100n"
+   report "c171 100n"
+   report "c173 100n"
+   report "c175 100n"
+end on failure
+disconnect all
+connect s to "GND"; a to "GND"
+connect i to "P2_5VA"; b to "P2_5VA"
+capacitor 108.7u, 35.00, 40.00, fr128, re2, ar100m, ed, sa, sb, en, nocomp, am0.25
+! "c227" test.
+off failure

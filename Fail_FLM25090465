@@ -1,0 +1,54 @@
+----------------------------------------
+73-19246-05_2old
+Thu Mar 04 11:39:51 2021
+----------------------------------------
+u5_cp_u5_cp_pch_aio HAS FAILED
+Failing Vector #: 38 (message follows)
+Test Status (hex) = 15
+IEEE Std 1149.1-2001 Integrity Failure
+  Device U5_CP_PCH has failed,
+  suspect device or these pins:
+  (tck)  BM3
+  (tms)  BJ2
+  (tdi)  BM5
+  (tdo)  BK3
+----------------------------------------
+u5_cp_u5_cp_pch HAS FAILED
+Failing Vector #: 38 (message follows)
+Test Status (hex) = 15
+IEEE Std 1149.1-2001 Integrity Failure
+  Device U5_CP_PCH has failed,
+  suspect device or these pins:
+  (tck)  BM3
+  (tms)  BJ2
+  (tdi)  BM5
+  (tdo)  BK3
+----------------------------------------
+u5_cp_u5_cp_pch_dis HAS FAILED
+vector      = 38
+Status:  15H
+Pass/Fail error on following pins:
+BRRCC  NODE            PIN
+20301  LJTAG_TDO_HDR_3V3
+IEEE Std 1149.1-2001 Integrity Failure
+  Device U5_CP_PCH has failed,
+  suspect device or these pins:
+  (tck)  BM3
+  (tms)  BJ2
+  (tdi)  BM5
+  (tdo)  BK3
+----------------------------------------
+Serial #: FLM25090465
+
+
+
+
+
+
+
+
+
+
+
+
+

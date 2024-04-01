@@ -1,0 +1,8 @@
+!!!!    2    0    1 1655566748   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:40 2018
+disconnect all
+connect s to "GND"
+connect i to "XDP_CPU_TCK0_CP"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m
+resistor 1k, 25, 20, re1, ar100m, ed, en
+! "r221_cp" test.

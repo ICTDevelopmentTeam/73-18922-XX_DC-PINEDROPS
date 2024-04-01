@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531965646   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:27 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "P5V_R"
+connect g to "GND"
+!B!resistor 84.5, 11.92, 6.00, re2, ar100m, wa179u
+resistor 84.5,30.00, 20.00,re2,ar100m,wa179u,ed
+! "r936" test.

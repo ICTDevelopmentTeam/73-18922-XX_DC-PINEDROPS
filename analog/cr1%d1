@@ -1,0 +1,7 @@
+!!!!    2    0    1 1531210705   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:28 2018
+disconnect all
+connect s to "FPGA_INIT_DONE"
+connect i to "UNNAMED_20_MAX811_I140_MR"
+diode 950m,467m,idc40m,co3.0,ar950m
+! "cr1%d1" test.

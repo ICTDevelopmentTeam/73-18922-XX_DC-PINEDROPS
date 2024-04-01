@@ -1,0 +1,72 @@
+!!!!    2    0    1 1512958111   0000                                         
+! IPG: rev 08.30p  Wed Oct 11 15:50:58 2017
+test powered analog
+   power pins 1,2,6
+   nonanalog pins 4,6,7,8,11
+
+   test "VIN1"
+!@   test "VIN2"
+!@   test "VEN"
+!@   test "VPG"
+   test "VOUT1"
+!@   test "VOUT2"
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+
+subtest "VIN1"
+   clear connect i to pins  1
+   connect l to pins  6
+
+   detector dcv, expect  1.7
+   measure  1.7 * 1.05, 1.7 * 0.95
+end subtest
+
+subtest "VIN2"
+   clear connect i to pins  2
+   connect l to pins  6
+
+   detector dcv, expect  1.7
+   measure  1.7 * 1.05, 1.7 * 0.95
+end subtest
+
+subtest "VEN"
+   clear connect i to pins  5
+   connect l to pins  6
+
+   detector dcv, expect 3.3
+   measure  3.3 * 1.05, 3.3 * 0.95
+end subtest
+
+subtest "VPG"
+   clear connect i to pins  3
+   connect l to pins  6
+
+   detector dcv, expect  3.3
+   measure  3.3 * 1.05, 3.3 * 0.95
+end subtest
+
+subtest "VOUT1"
+   clear connect i to pins  9
+   connect l to pins  6
+
+   detector dcv, expect  1.5
+   measure  1.5 * 1.05, 1.5 * 0.95
+end subtest
+
+subtest "VOUT2"
+   clear connect i to pins  10
+   connect l to pins  6
+
+   detector dcv, expect  1.3
+   measure  1.3 * 1.05, 1.3 * 0.95
+end subtest
+
+!
+!  End test
+!
+
+
+

@@ -1,0 +1,84 @@
+---------------------------------------------------------------------
+PRESENCE SWITCH TEST WIRING INSTRUCTION  (Fri Jun 15 11:01:20 2018)
+---------------------------------------------------------------------
+
+---------------------------------------------------------------------
+                |     From      |               To                  |
+Length|Ga|Color |(b   r      c )|          Presence Switch          |
+------|--|------|---------------|-----------------------------------|
+   0.0 28 Black  (2 21.00  28.0) B1_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 23.50  71.0) B1_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) FANCON01_F_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 19.00  72.0) FANCON01_F_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) FANCON23_F_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 19.50  72.0) FANCON23_F_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) FANCON45_F_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 20.00  72.0) FANCON45_F_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) IO_P1_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 20.50  72.0) IO_P1_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) IP_P2_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 21.00  72.0) IP_P2_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) J1_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 21.50  72.0) J1_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) J3_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 22.00  72.0) J3_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) M1_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 22.50  72.0) M1_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) M2_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 23.00  72.0) M2_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) M4_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 23.50  72.0) M4_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P1_CP_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 19.00  73.0) P1_CP_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P1_MVR_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 19.50  73.0) P1_MVR_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P1_VR_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 20.00  73.0) P1_VR_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P2_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 20.50  73.0) P2_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P3_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 21.00  73.0) P3_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P6_CP_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 22.00  73.0) P6_CP_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P6_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 21.50  73.0) P6_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P7_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 22.50  73.0) P7_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P8_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 23.00  73.0) P8_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) P9_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 23.50  73.0) P9_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) SPI_CP_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 19.00  74.0) SPI_CP_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) SW3_CP_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 19.50  74.0) SW3_CP_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) TPM_CP_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 20.00  74.0) TPM_CP_PRESENCE_SWITCH_PIN_2
+   0.0 28 Black  (2 21.00  28.0) TS_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 20.50  74.0) TS_PRESENCE_SWITCH_PIN_2
+
+Add	50
+---------------------------------------------------------------------
+PRESENCE SWITCH TEST WIRING INSTRUCTION  (Thu Jun 21 14:52:28 2018)
+---------------------------------------------------------------------
+
+---------------------------------------------------------------------
+                |     From      |               To                  |
+Length|Ga|Color |(b   r      c )|          Presence Switch          |
+------|--|------|---------------|-----------------------------------|
+   0.0 28 Black  (2 21.00  28.0) H2280_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 23.50  48.0) H2280_PRESENCE_SWITCH_PIN_2
+
+Add	2
+---------------------------------------------------------------------
+PRESENCE SWITCH TEST WIRING INSTRUCTION  (Fri Jun 29 09:19:34 2018)
+---------------------------------------------------------------------
+
+---------------------------------------------------------------------
+                |     From      |               To                  |
+Length|Ga|Color |(b   r      c )|          Presence Switch          |
+------|--|------|---------------|-----------------------------------|
+   0.0 28 Black  (2 21.00  28.0) U10_CP_PRESENCE_SWITCH_PIN_1
+   0.0 28  Blue  (2 23.00  49.0) U10_CP_PRESENCE_SWITCH_PIN_2
+
+Add	2

@@ -1,0 +1,56 @@
+!!!!    2    0    1 1529475093  V3e26                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:42 2018
+!IPG : Pin 6 is not connected in topology.
+!IPG : Pin 31 is not connected in topology.
+!IPG : Node VDD_SW_98 is not accessible.
+!IPG : Node VDD_SW_98 is not accessible.
+!IPG : Node VDD_SW_98 is not accessible.
+!IPG : Node VDD_SW_98 is not accessible.
+!IPG : Node VDD_SW_98 is not accessible.
+!IPG : Node VDD_SW_98 is not accessible.
+!IPG : Node VDD_SW_98 is not accessible.
+!IPG : Node VDD_SW_98 is not accessible.
+!IPG : Node VDD_SW_98 is not accessible.
+!IPG : Node VDD_SW_98 is not accessible.
+! TDA21320
+! 15-102759-01. Need to assign testjet to improve coverage.
+! Nestor
+! 01-Oct-2014
+!------------------------------------------------------------------!
+test powered analog
+  power     pins 25,26,27,28,29,30
+  power     pins 5,7,8,9,20,21,22,23,24,40
+  nonanalog pins 1,2,3,4,6,31,39,35,34,37,38,36,33,32,10,11,12,13,14,15,16,17,18
+
+  on failure
+   report "Board xx and xx Power Signal Fail"
+   report "Please check ux schematic pagex"
+  end on failure
+
+  disconnect all
+  test "VOLT_IN"
+  test "VOLT_OUT"
+end test
+
+!==================================================================!
+
+subtest "VOLT_IN"
+  disconnect all
+  connect i to pins 30
+  connect l to ground
+  detector dcv, expect 12.0
+  measure 12.50, 11.15
+end subtest
+
+
+subtest "VOLT_OUT"
+  disconnect all
+  connect i to nodes "P1V05C"   !pins 19
+  connect l to ground
+  detector dcv, expect 1.0
+  measure 1.0 * 1.1, 1.0 * 0.9
+end subtest
+
+!========================= End of Test ============================!
+
+

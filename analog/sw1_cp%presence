@@ -1,0 +1,13 @@
+!!!!    2    0    1 1531895098  V0a18                                         
+
+on failure
+   report "Check for SW1_CP presence."
+end on failure
+
+disconnect all
+connect s to nodes "FP_PWR_SW_CP"
+connect i to nodes "GND"
+jumper 9, re1, ar200m
+
+off failure
+

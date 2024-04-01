@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531145490   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:31 2018
+disconnect all
+connect i to "P1V05C"
+connect s to "PU_MBP0_MBPM0_N_CP"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+! "r437_cp" test.

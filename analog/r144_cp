@@ -1,0 +1,8 @@
+!!!!    2    0    1 1662031788   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:26 2018
+disconnect all
+connect i to "GND"
+connect s to "PD_PHY_JTDI_SDP0_0_CP"
+connect g to "P1V05C"
+resistor 10k, 30, 40,re4, ar100m, ed, en, wb, am0.2
+! "r144_cp" test.

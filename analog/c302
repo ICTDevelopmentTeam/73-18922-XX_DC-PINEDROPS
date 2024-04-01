@@ -1,0 +1,12 @@
+!!!!    2    0    1 1531983265   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:19 2018
+on failure
+   report parallel devices
+   report "c304 2.2n"
+end on failure
+disconnect all
+connect s to "TEMP_D2_P"
+connect i to "TEMP_D2_N"
+capacitor 4.4n, 35.00, 40.00, fr8192, re2, ar20.0m, ed,en,nocomp
+! "c302" test.
+off failure

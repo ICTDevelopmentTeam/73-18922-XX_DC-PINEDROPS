@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531207867   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:39 2018
+disconnect all
+connect s to "P1V2_VDDQ"
+connect i to "M_AB_VREF_R_CP"
+connect g to "SRT_DDR_VTT_REF"
+connect g to "GND"
+resistor 1k,25.00, 20.00,re3,ar100m,ed,wa20m
+! "r174_cp" test.

@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027681   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:42 2018
+disconnect all
+connect s to "GND"
+connect i to "SMBUS_FAN_SCL"
+jumper 7.85k, re4, wb, ar100m, op
+! "c1" test.

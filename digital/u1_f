@@ -1,0 +1,65 @@
+!!!!    6    0    1 1529027802  V1ef3                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:43 2018
+!
+!***  All contents copyright 2006 Cisco Systems Inc.
+!***  All rights reserved.
+!***  No portion of this software may be used or reproduced in any form, or
+!***  by any means, without prior written permission from Cisco Systems, Inc.
+!
+! Part Name:            74LVC1G04
+! Alias:                74AHCT1G04,74AHC1G04,TC7SH14F,NC7S14Z14M5,TC7SH04F
+! Part Type:            VLSI
+! Description:          Single Inverter
+! Manufacturer:         TI,Toshiba,Fairchild
+! Package Style:        5 pin SOT
+! Created:              Jul 13, 2006
+! Updated:              Sep 21, 2006. Updated Cisco part number.
+! Programmer:           sama
+! Tester:               HP3070
+! Processor:            VPU
+! Vector Format:        VCL
+! Testjet Testable:     yes
+! JTAG Device:          no
+! Fault coverage:       100%
+! Constraints:          
+! Cisco Part#:          15-10312-01,15-2409-01,15-2709-01,15-3240-01,15-3255-01
+! Cisco Part#:          15-7140-01
+
+default device "u1_f"
+set terminators to on
+assign VCC to pins *
+assign GND to pins *
+
+assign NC  to pins *
+
+assign IN  to pins 2
+assign OUT to pins 4
+
+power   VCC,GND
+inputs  IN
+outputs OUT
+nondigital NC
+
+family LVT
+
+!IPG: Add defaults or loads to floating inputs and bidirs.
+assign Floating__Inputs to pins 2 default "0"
+inputs Floating__Inputs
+
+vector  OUT_0
+ set IN  to "1"
+ set OUT to "0"
+end vector
+
+vector  OUT_1
+ set IN  to "0"
+ set OUT to "1"
+end vector
+
+!*****************************************************************************
+
+unit  "OUT vs IN"
+ execute OUT_0
+ execute OUT_1
+end unit
+

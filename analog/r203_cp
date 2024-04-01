@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582809  V5048                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:27 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "CPU_FPGA_CATERR_3V3_L"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 20.00,re4,wb,ar100m
+! "r203_cp" test.

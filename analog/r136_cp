@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582872  V559c                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:38 2018
+disconnect all
+connect s to "VCCSUS3_3"
+connect i to "GPIO28"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m
+resistor 1k,25.00, 20.00,re3,ar100m
+! "r136_cp" test.

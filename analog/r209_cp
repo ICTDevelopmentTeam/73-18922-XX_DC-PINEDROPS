@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582973  V65cc                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:57 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "PU_SUSWARN_N_GPIO30_CP"
+!B!resistor 5.11k, 6.00, 6.00, re4, wb, ar200m
+resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+! "r209_cp" test.

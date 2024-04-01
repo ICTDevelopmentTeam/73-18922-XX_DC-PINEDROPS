@@ -1,0 +1,9 @@
+!!!!    2    0    1 1689773414   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:10 2018
+disconnect all
+connect s to "SRT_JTAG_TCK_CPU_3V3"
+connect i to "JTAG_TCK_CPU_3V3"; b to "JTAG_TCK_CPU_3V3"
+!B!resistor 22, 32.73, 10.00, re2, ar500m
+!resistor 22-5,45.00, 30.00,re1,ar500m, sb, ed
+resistor 22,50.00, 30.00,re1,ar10m,en,ed,sb
+! "r175" test.

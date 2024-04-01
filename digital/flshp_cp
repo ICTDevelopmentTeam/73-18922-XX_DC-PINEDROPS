@@ -1,0 +1,252 @@
+!!!!    6    0    1 1597042178   0000                                         
+! IPG: rev 08.40p  Tue Feb 28 20:32:56 2017
+!
+!***  All contents copyright 2006 Cisco Systems Inc.
+!***  All rights reserved.
+!***  No portion of this software may be used or reproduced in any form, or
+!***  by any means, without prior written permission from Cisco Systems, Inc.
+!
+! Part Name:         N25Q032A13ESE40
+! Alias:             AT25DF321A-SH
+! Part Type:         VLSI
+! Description:       64M Bit Serial Flash Memory, SPI-bus
+! Manufacturer:      Micron, Adesto
+! Package Style:     8 pins SO
+! Created:           Oct 22, 2013
+! Programmer:        SC Toh
+! Tester:            HP3070
+! Processor:         VPU
+! Vector Format:     VCL
+! Testjet Testable:  yes
+! JTAG Device:       no
+! Fault coverage:
+! Constraints:
+! Cisco Part #:      16-4193-01, 17-11922-03
+
+sequential
+
+vector cycle 1u
+receive delay 800n
+
+default device "flshp_cp"
+set terminators to on
+assign CSB  to pins 1
+assign WPB  to pins 3
+assign HLDB to pins 7
+assign SCK  to pins 6  !nodes "SPI_PCH_CLK_CP" !pins 6
+assign SI   to pins 5
+assign SO   to pins 2
+
+assign VCC  to pins *
+assign GND  to pins *
+
+power   VCC,GND
+inputs  CSB,SCK,SI,WPB,HLDB
+outputs SO
+
+family LVT
+
+set load on groups SO to pull up
+
+vector INIT1
+ set CSB   to "1"
+ set SCK   to "0"
+ set HLDB  to "1"
+ set WPB   to "0"
+ set SI    to "x"
+ set SO    to "x"
+end vector
+
+vector INIT_ID
+ set CSB   to "1"
+ set SCK   to "x"
+ set SI    to "x"
+ set SO    to "1"
+end vector
+
+vector KEEP1
+ set CSB   to "k"
+ set SCK   to "0"
+ set HLDB  to "k"
+ set WPB   to "k"
+ set SI    to "x"
+ set SO    to "z"
+end vector
+
+vector KEEP2
+ set CSB   to "k"
+ set SCK   to "0"
+ set HLDB  to "k"
+ set WPB   to "k"
+ set SI    to "k"
+ set SO    to "Z"
+end vector
+
+vector CSB_0
+ initialize to KEEP1
+ set CSB    to "0"
+end vector
+
+vector CSB_1
+ initialize to KEEP1
+ set CSB    to "1"
+end vector
+
+vector HOLD_0
+ initialize to KEEP1
+ set HLDB   to "0"
+end vector
+
+vector HOLD_1
+ initialize to KEEP1
+ set HLDB   to "1"
+end vector
+
+vector SCK_10
+ initialize to KEEP1
+ set SCK    to "0"
+end vector
+
+vector SCK_11
+ initialize to KEEP1
+ set SCK    to "1"
+end vector
+
+vector SCK_20
+ initialize to KEEP2
+ set SCK    to "0"
+end vector
+
+vector SCK_21
+ initialize to KEEP2
+ set SCK    to "1"
+end vector
+
+vector D_0
+ initialize to KEEP2
+ set SI     to "0"
+end vector
+
+vector D_1
+ initialize to KEEP2
+ set SI     to "1"
+end vector
+
+vector R_0
+ initialize to KEEP1
+ set SO     to "0"
+end vector
+
+vector R_1
+ initialize to KEEP1
+ set SO     to "1"
+end vector
+
+vector R_X
+ initialize to KEEP1
+ set SO     to "x"
+end vector
+
+vector WPB_0
+ initialize to KEEP1
+ set WPB    to "0"
+end vector
+
+vector WPB_1
+ initialize to KEEP1
+ set WPB    to "1"
+end vector
+
+vector HLDB_0
+ initialize to KEEP1
+ set HLDB   to "0"
+end vector
+
+vector HLDB_1
+ initialize to KEEP1
+ set HLDB   to "1"
+end vector
+
+! *************************************************
+
+sub IDLE1
+ repeat 20 times
+  execute INIT1
+  execute SCK_11
+ end repeat
+end sub
+
+sub IDLEID
+ repeat 20 times
+  execute INIT_ID
+  execute SCK_11
+ end repeat
+end sub
+
+sub WBYTE(WD7,WD6,WD5,WD4,WD3,WD2,WD1,WD0)
+ execute WD7
+ execute SCK_21
+ execute WD6
+ execute SCK_21
+ execute WD5
+ execute SCK_21
+ execute WD4
+ execute SCK_21
+ execute WD3
+ execute SCK_21
+ execute WD2
+ execute SCK_21
+ execute WD1
+ execute SCK_21
+ execute WD0
+ execute SCK_21
+ execute SCK_10
+end sub
+
+sub RBYTE(RD7,RD6,RD5,RD4,RD3,RD2,RD1,RD0)
+ execute RD7
+ execute SCK_11
+ execute RD6
+ execute SCK_11
+ execute RD5
+ execute SCK_11
+ execute RD4
+ execute SCK_11
+ execute RD3
+ execute SCK_11
+ execute RD2
+ execute SCK_11
+ execute RD1
+ execute SCK_11
+ execute RD0
+ execute SCK_11
+ execute SCK_10
+end sub
+
+! ********************************************************************
+unit "READ ID"
+  repeat 80 times
+  call IDLE1
+  end repeat
+  execute HOLD_1
+  execute CSB_0
+  execute SCK_20
+  call WBYTE(D_1,D_0,D_0,D_1, D_1,D_1,D_1,D_1) ! RDID 9F
+  call RBYTE(R_1,R_1,R_1,R_0, R_1,R_1,R_1,R_1) ! 20h
+  execute CSB_1
+  execute SCK_20
+end unit
+
+unit "Hold Pin Test"
+  repeat 80 times
+  call IDLE1
+  end repeat
+  execute HOLD_0
+  execute CSB_0
+  execute SCK_20
+  call WBYTE(D_1,D_0,D_0,D_1, D_1,D_1,D_1,D_1) ! RDID 9F
+  call RBYTE(R_1,R_1,R_1,R_1, R_1,R_1,R_1,R_1) ! 20h
+!  call RBYTE(R_1,R_1,R_1,R_0, R_1,R_1,R_1,R_1) ! 20h
+  execute CSB_1
+  execute SCK_20
+end unit

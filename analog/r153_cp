@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583055  V9742                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:11 2018
+disconnect all
+connect s to "PHY_WAKE_N_CP"
+connect i to "PHY_WAKE_N_R_CP"
+!B!resistor 33, 21.15, 6.00, re2, ar200m
+resistor 33,40.00, 25.00,re2,ar200m
+! "r153_cp" test.

@@ -1,0 +1,14 @@
+!!!!    2    0    1 1530585602  V6c0d                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:29 2018
+on failure
+report parallel devices
+report "c53_f"
+report "c102_f"
+end on failure
+disconnect all
+connect s to "GND"
+connect i to "CON_FAN45_12V_F"
+!B!diode 916m, 467m, idc25m, co3.0, ar916m
+diode 950m,467m,idc25m,co3.0,ar916m
+! "cr23_f%d1" test.
+off failure

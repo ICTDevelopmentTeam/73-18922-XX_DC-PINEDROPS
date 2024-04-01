@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583058  Vb6dd                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:11 2018
+disconnect all
+connect s to "PWR_A3V3_A2V5_A1V2_PGOOD"
+connect i to "UNNAMED_24_EP4CGX50FG484_I251_CONFIG"
+!B!resistor 33, 21.15, 6.00, re2, ar200m
+resistor 33,40.00, 25.00,re2,ar200m
+! "r283" test.

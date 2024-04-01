@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027683   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:44 2018
+disconnect all
+connect i to "SR_FAN01_DIR_F"
+connect s to "GND"
+jumper 10.0k, re4, wb, ar100m, op
+! "c13_f" test.

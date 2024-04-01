@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027681   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:42 2018
+on failure
+   report parallel devices
+   report "cr4_f%d1"
+end on failure
+disconnect all
+connect i to "FAN01_TACH2_F"
+connect s to "GND"
+jumper 10.0k, re4, wb, ar100m, op
+! "c2_f" test.
+off failure

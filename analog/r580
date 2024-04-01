@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583097  Va1e4                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:20 2018
+disconnect all
+connect s to "UNNAMED_15_LED_I153_K"
+connect i to "UNNAMED_15_NMOSFET_I151_D"
+!B!resistor 220, 12.27, 10.00, re3, ar500m
+resistor 220,30.00, 20.00,re3,ar500m
+! "r580" test.

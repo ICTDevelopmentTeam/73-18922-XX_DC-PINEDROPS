@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582964  V3075                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:55 2018
+disconnect all
+connect s to "VCCSUS3_3"
+connect i to "PCH_FPGA_SUS_CLK"
+!B!resistor 5.11k, 6.00, 6.00, re4, wb, ar200m
+resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+! "r189_cp" test.

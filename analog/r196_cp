@@ -1,0 +1,8 @@
+!!!!    2    0    1 1702578165   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:57 2018
+disconnect all
+connect i to "GND"
+connect s to "LAN_SEL<1>_CP"
+!connect g to "P1V05C"
+resistor 5.11k,25.00, 20.00,re4,ed,am10m, en
+! "r196_cp" test.

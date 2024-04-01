@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027708   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:09 2018
+disconnect all
+connect s to "SRT_CLK100M_PE_CPU_MIFPGA_N"
+connect i to "CLK100M_PE_CPU_MIFPGA_N"
+jumper 6.04, re1, ar200m
+! "r144" test.

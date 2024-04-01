@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027696   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:57 2018
+on failure
+   report parallel devices
+   report "r103_cp 1.00k"
+end on failure
+disconnect all
+connect s to "P1V05C"
+connect i to "JTAG_TMS_1V05_CP"
+jumper 908, re3, wb, ar100m, op
+! "r74_cp" test.
+off failure

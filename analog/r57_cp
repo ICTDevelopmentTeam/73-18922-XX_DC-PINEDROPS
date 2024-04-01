@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027695   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:56 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "C105_PCH_CONSOLE2_TXD_CP"
+jumper 10.0k, re4, wb, ar100m, op
+! "r57_cp" test.

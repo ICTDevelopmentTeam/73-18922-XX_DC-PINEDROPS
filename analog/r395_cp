@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582924  V11dd                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:42 2018
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_43_PI3B3257PG_I28_E_CP"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m
+resistor 1k,25.00, 20.00,re3,ar100m
+! "r395_cp" test.

@@ -1,0 +1,5 @@
+!!!!    2    0    1 1532138447  V2ece                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:08 2018
+! Common Lead Resistance 100m, Common Lead Inductance 1.00u
+! Fixture: EXPRESS
+! "l1_98_mvr" is not accessible at node "VDD_SW_98",tested by cluster.

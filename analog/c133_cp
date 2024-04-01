@@ -1,0 +1,13 @@
+!!!!    2    0    1 1591769628   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:18 2018
+on failure
+   report parallel devices
+   report "c139_cp 100n"
+end on failure
+disconnect all
+connect i to "XDP_PWRGD_RST_N_CP"
+connect s to "GND"
+connect g to "FP_PWR_SW_CP" 
+capacitor 200n, 35.00, 40.00, fr1024, re2, ar20.0m, nocomp
+! "c133_cp" test.
+off failure

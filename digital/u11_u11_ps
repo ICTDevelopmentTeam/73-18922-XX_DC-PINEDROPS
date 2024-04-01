@@ -1,0 +1,482 @@
+!!!!   24    0    1 1529027820  V8b6b                                         
+! Copyright (c) Agilent Technologies, Inc. 1995-1996, 1998-2000, 2002-2003, 2006-2008
+!IPG: rev 07.20pd Fri Jun 15 09:57:01 2018
+
+powered shorts "u11_u11_ps"
+
+!IPG: User may add option statements here if needed.
+
+ground bounce suppression   on
+!IPG  family "???"
+!IPG: Family information could not be found for any node; TTL will be assumed
+
+
+chain "u11_u11"
+  tdi "JTAG_TDI_FPGA_3V3"
+  tdo "JTAG_TDO_FPGA_3V3"
+  tms "JTAG_TMS_FPGA_3V3"
+  tck "UNNAMED_24_HDR2X5_I306_P1"
+  devices
+    "u11", "custom_lib/16-4243-01.bsd", "FBGA484", no
+  end devices
+end chain
+
+!IPG: Family information could not be found for node JTAG_TDI_FPGA_3V3
+!IPG: Family information could not be found for node JTAG_TDO_FPGA_3V3
+!IPG: Family information could not be found for node JTAG_TMS_FPGA_3V3
+!IPG: Family information could not be found for node UNNAMED_24_HDR2X5_I306_P1
+
+disables "disable vector"
+  node "BUF_SPI_FLSH_SEL_CP" family "LVT_2V5" hybrid default "0"
+  node "DIMM_THERM_EVENT_L_2V5_CP" family "TTL" hybrid default "1"
+  node "ERR_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "ERR_OE2_CP" family "FLASH_1V8" hybrid default "1"
+  node "FAULT_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "FPGA_LB_NVRAM_CS0" family "LVT" hybrid default "0"
+  node "FPGA_LB_NVRAM_CS1" family "LVT" hybrid default "0"
+  node "FPGA_LB_NVRAM_CS2" family "LVT" hybrid default "0"
+  node "FPGA_LB_NVRAM_CS3" family "LVT" hybrid default "0"
+  node "FPGA_LB_OE_L" family "TTL" hybrid default "1"
+  node "HOT_OE_CP" family "LVT" hybrid default "1"
+  node "JTAG_BDX_TCK_CP" family "TTL" hybrid default "1"
+  node "RTC_NVRAM_CS_PROT_L" family "TTL" hybrid default "1"
+  node "SRT_ACT2_SCL" family "LVT" hybrid default "1"
+  node "TH_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "UNNAMED_15_PCA9617_I66_EN" family "LVT" hybrid default "0"
+  node "UNNAMED_18_LVC2244_I41_OE" family "LVT" hybrid default "1"
+  node "UNNAMED_18_LVC2244_I42_OE" family "LVT" hybrid default "1"
+  node "UNNAMED_38_AVC8T245_I91_OE_CP" family "LVT" hybrid default "1"
+  node "UNNAMED_38_AVC8T245_I146_OE_CP" family "LVT" hybrid default "1"
+  node "UNNAMED_43_PI3B3257PG_I28_E_CP" family "LVT" hybrid default "1"
+
+  pcf order is nodes "BUF_SPI_FLSH_SEL_CP","DIMM_THERM_EVENT_L_2V5_CP"
+  pcf order is nodes "ERR_OE1_CP","ERR_OE2_CP","FAULT_OE1_CP"
+  pcf order is nodes "FPGA_LB_NVRAM_CS0","FPGA_LB_NVRAM_CS1"
+  pcf order is nodes "FPGA_LB_NVRAM_CS2","FPGA_LB_NVRAM_CS3"
+  pcf order is nodes "FPGA_LB_OE_L","HOT_OE_CP","JTAG_BDX_TCK_CP"
+  pcf order is nodes "RTC_NVRAM_CS_PROT_L","SRT_ACT2_SCL","TH_OE1_CP"
+  pcf order is nodes "UNNAMED_15_PCA9617_I66_EN"
+  pcf order is nodes "UNNAMED_18_LVC2244_I41_OE"
+  pcf order is nodes "UNNAMED_18_LVC2244_I42_OE"
+  pcf order is nodes "UNNAMED_38_AVC8T245_I91_OE_CP"
+  pcf order is nodes "UNNAMED_38_AVC8T245_I146_OE_CP"
+  pcf order is nodes "UNNAMED_43_PI3B3257PG_I28_E_CP"
+  unit "disable_1"
+  pcf
+  "011110000111111011111"
+  end pcf
+  end unit
+end disables
+
+!IPG: The disable section above disables or conditions the following pins:
+!IPG:   act2.13  u100.11  u100.12  u100.13  u100.14  u100.15  u100.16
+!IPG:   u100.17  u100.18  u100.2  u100.3  u100.4  u100.5  u100.6
+!IPG:   u100.7  u100.8  u100.9  u12.12  u12.14  u12.16  u12.18  u12.2
+!IPG:   u12.4  u12.6  u12.8  u14_cp.10  u14_cp.11  u14_cp.12  u14_cp.13
+!IPG:   u14_cp.4  u14_cp.5  u14_cp.6  u14_cp.7  u15_cp.12  u15_cp.13
+!IPG:   u15_cp.4  u15_cp.5  u17_cp.10  u17_cp.14  u17_cp.15  u17_cp.16
+!IPG:   u17_cp.17  u17_cp.18  u17_cp.19  u17_cp.20  u17_cp.21  u17_cp.3
+!IPG:   u17_cp.4  u17_cp.5  u17_cp.6  u17_cp.7  u17_cp.8  u17_cp.9
+!IPG:   u18_cp.10  u18_cp.14  u18_cp.15  u18_cp.16  u18_cp.17  u18_cp.18
+!IPG:   u18_cp.19  u18_cp.20  u18_cp.21  u18_cp.3  u18_cp.4  u18_cp.5
+!IPG:   u18_cp.6  u18_cp.7  u18_cp.8  u18_cp.9  u19_cp.12  u19_cp.13
+!IPG:   u19_cp.4  u19_cp.5  u20_cp.10  u20_cp.14  u20_cp.15  u20_cp.16
+!IPG:   u20_cp.17  u20_cp.18  u20_cp.19  u20_cp.20  u20_cp.21  u20_cp.3
+!IPG:   u20_cp.4  u20_cp.5  u20_cp.6  u20_cp.7  u20_cp.8  u20_cp.9
+!IPG:   u23.11  u23.12  u23.13  u23.15  u23.16  u23.17  u23.18  u23.19
+!IPG:   u24.29  u24.30  u24.31  u24.32  u24.33  u24.34  u24.35  u24.36
+!IPG:   u24.38  u24.39  u24.40  u24.41  u24.42  u24.43  u24.44  u24.45
+!IPG:   u29.2  u29.3  u29.6  u29.7  u31_cp.4  u33_cp.4  u3_cp.12
+!IPG:   u3_cp.4  u3_cp.7  u3_cp.9  u4.29  u4.30  u4.31  u4.32  u4.33
+!IPG:   u4.34  u4.35  u4.36  u4.38  u4.39  u4.40  u4.41  u4.42
+!IPG:   u4.43  u4.44  u4.45  u4_cp.1  u4_cp.4  u5.29  u5.30  u5.31
+!IPG:   u5.32  u5.33  u5.34  u5.35  u5.36  u5.38  u5.39  u5.40
+!IPG:   u5.41  u5.42  u5.43  u5.44  u5.45  u6.29  u6.30  u6.31
+!IPG:   u6.32  u6.33  u6.34  u6.35  u6.36  u6.38  u6.39  u6.40
+!IPG:   u6.41  u6.42  u6.43  u6.44  u6.45
+
+!IPG: The following pins are disabled by Boundary-Scan:
+!IPG:   u5_cp_pch.BA19  u5_cp_pch.BP9  u5_cp_pch.BF1  u5_cp_pch.BW22
+!IPG:   u5_cp_pch.BH7  u5_cp_pch.BR4  u5_cp_pch.BP13  u5_cp_pch.BV16
+!IPG:   u5_cp_pch.BE4  u5_cp_pch.AW3  u5_cp_pch.BG4  u5_cp_pch.BN14
+!IPG:   u5_cp_pch.BU18  u5_cp_pch.BJ20  u5_cp_pch.BG2  u5_cp_pch.BD3
+!IPG:   u5_cp_pch.BT13  u5_cp_pch.BD22  u5_cp_pch.BU14  u5_cp_pch.AW1
+!IPG:   u5_cp_pch.AY2  u5_cp_pch.AL3  u5_cp_pch.BW18  u5_cp_pch.U4
+!IPG:   u5_cp_pch.AG4  u5_cp_pch.AF1  u5_cp_pch.U2  u5_cp_pch.AA9
+!IPG:   u5_cp_pch.BB18  u5_cp_pch.AF3  u5_cp_pch.BD11  u5_cp_pch.BE24
+!IPG:   u5_cp_pch.BB16  u5_cp_pch.BT16
+
+!IPG: Safeguard will ignore disabled outputs
+disabled device "act2" pins 13
+!IPG: with pin 12 on node "SRT_ACT2_SCL"
+disabled device "u100" pins 11,12,13,14,15,16,17,18,2,3,4,5,6,7,8,9
+!IPG: with pin 1 on node "UNNAMED_18_LVC2244_I41_OE"
+!IPG:      pin 19 on node "UNNAMED_18_LVC2244_I41_OE"
+disabled device "u12" pins 12,14,16,18,2,4,6,8
+!IPG: with pin 1 on node "UNNAMED_18_LVC2244_I42_OE"
+disabled device "u14_cp" pins 10,11,12,13,4,5,6,7
+!IPG: with pin 15 on node "ERR_OE1_CP"
+!IPG:      pin 14 on node "ERR_OE2_CP"
+disabled device "u15_cp" pins 12,13,4,5
+!IPG: with pin 15 on node "FAULT_OE1_CP"
+disabled device "u17_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u17_cp" pins 9
+!IPG: with pin 22 on node "UNNAMED_38_AVC8T245_I146_OE_CP"
+disabled device "u18_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u18_cp" pins 9
+!IPG: with pin 22 on node "UNNAMED_38_AVC8T245_I91_OE_CP"
+disabled device "u19_cp" pins 12,13,4,5
+!IPG: with pin 15 on node "TH_OE1_CP"
+disabled device "u20_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u20_cp" pins 9
+!IPG: with pin 22 on node "HOT_OE_CP"
+disabled device "u23" pins 11,12,13,15,16,17,18,19
+!IPG: with pin 22 on node "FPGA_LB_OE_L"
+disabled device "u24" pins 29,30,31,32,33,34,35,36,38,39,40,41,42,43
+disabled device "u24" pins 44,45
+!IPG: with pin 12 on node "FPGA_LB_NVRAM_CS0"
+!IPG:      pin 26 on node "RTC_NVRAM_CS_PROT_L"
+!IPG:      pin 28 on node "FPGA_LB_OE_L"
+disabled device "u29" pins 2,3,6,7
+!IPG: with pin 5 on node "UNNAMED_15_PCA9617_I66_EN"
+disabled device "u31_cp" pins 4
+!IPG: with pin 1 on node "JTAG_BDX_TCK_CP"
+disabled device "u33_cp" pins 4
+!IPG: with pin 1 on node "DIMM_THERM_EVENT_L_2V5_CP"
+disabled device "u3_cp" pins 12,4,7,9
+!IPG: with pin 15 on node "UNNAMED_43_PI3B3257PG_I28_E_CP"
+disabled device "u4" pins 29,30,31,32,33,34,35,36,38,39,40,41,42,43
+disabled device "u4" pins 44,45
+!IPG: with pin 12 on node "FPGA_LB_NVRAM_CS1"
+!IPG:      pin 26 on node "RTC_NVRAM_CS_PROT_L"
+!IPG:      pin 28 on node "FPGA_LB_OE_L"
+disabled device "u4_cp" pins 1,4
+!IPG: with pin 6 on node "BUF_SPI_FLSH_SEL_CP"
+disabled device "u5" pins 29,30,31,32,33,34,35,36,38,39,40,41,42,43
+disabled device "u5" pins 44,45
+!IPG: with pin 12 on node "FPGA_LB_NVRAM_CS3"
+!IPG:      pin 26 on node "RTC_NVRAM_CS_PROT_L"
+!IPG:      pin 28 on node "FPGA_LB_OE_L"
+disabled device "u5_cp_pch" pins "AA9","AF1","AF3","AG4","AL3","AW1"
+disabled device "u5_cp_pch" pins "AW3","AY2","BA19","BB16","BB18"
+disabled device "u5_cp_pch" pins "BD11","BD22","BD3","BE24","BE4"
+disabled device "u5_cp_pch" pins "BF1","BG2","BG4","BH7","BJ20"
+disabled device "u5_cp_pch" pins "BN14","BP13","BP9","BR4","BT13"
+disabled device "u5_cp_pch" pins "BT16","BU14","BU18","BV16","BW18"
+disabled device "u5_cp_pch" pins "BW22","U2","U4"
+!IPG: with boundary scan disabling
+disabled device "u6" pins 29,30,31,32,33,34,35,36,38,39,40,41,42,43
+disabled device "u6" pins 44,45
+!IPG: with pin 12 on node "FPGA_LB_NVRAM_CS2"
+!IPG:      pin 26 on node "RTC_NVRAM_CS_PROT_L"
+!IPG:      pin 28 on node "FPGA_LB_OE_L"
+
+!IPG: User may add VCL pass-through statements here if needed.
+
+nodes
+!  fixed unknown "GND" test "u11.P5","u11.R5"
+!  fixed unknown "P2_5VA" test "u11.P4","u11.T6"
+!IPG nailed:   silicon node "BUF_PCH_PLTRST_L" test "u11.H17"
+!IPG nailed:   silicon node "CONSOLE_RXD" test "u11.D16"
+!IPG nailed:   silicon node "CPU_FPGA_CATERR_3V3_L" test "u11.C15"
+!IPG nailed:   silicon node "CPU_FPGA_CPU2PCH_THROT" test "u11.E5"
+!IPG nailed:   silicon node "CPU_FPGA_ERR0" test "u11.D11"
+!IPG nailed:   silicon node "CPU_FPGA_ERR1" test "u11.D10"
+!IPG nailed:   silicon node "CPU_FPGA_ERR2" test "u11.C9"
+!IPG nailed:   silicon node "CPU_FPGA_H_FIVR_FAULT" test "u11.D9"
+!IPG nailed:   silicon node "CPU_FPGA_PCH_HOT_L" test "u11.W7"
+!IPG nailed:   silicon node "CPU_FPGA_PLTRST_PROC_L" test "u11.E8"
+!IPG nailed:   silicon node "CPU_FPGA_PWRGD_PCH" test "u11.B1"
+!IPG nailed:   silicon node "CPU_FPGA_SMI_ACTIVE_N" test "u11.D5"
+!IPG nailed:   silicon node "CPU_PROCHOT_3V3_L" test "u11.E6"
+!IPG nailed:   silicon node "CPU_THERMTRIP_3V3_L" test "u11.D14"
+!IPG not disabled:   silicon node "CPU_VR_FAULT_L" test "u11.F17"
+!IPG not disabled:   silicon node "CPU_VRHOT_L" test "u11.W13"
+!IPG nailed:   silicon node "DB_PGOOD" test "u11.W6"
+!IPG nailed:   silicon node "DB_PWR_EN" test "u11.Y6"
+!IPG nailed:   silicon node "DC_CONSOLE_TXD" test "u11.E17"
+!IPG nailed:   silicon node "DDR4_VPP_EN" test "u11.AA20"
+!IPG nailed:   silicon node "DDR4_VPP_PGOOD" test "u11.W18"
+!IPG nailed:   silicon node "DIMM_THERM_EVENT_L" test "u11.C14"
+!IPG nailed:   silicon node "FAN01_AMB_LED_L" test "u11.AB16"
+!IPG nailed:   silicon node "FAN01_DIR" test "u11.U14"
+!IPG nailed:   silicon node "FAN01_GRN_LED_L" test "u11.U15"
+!IPG nailed:   silicon node "FAN01_PG" test "u11.W15"
+!IPG nailed:   silicon node "FAN01_PRSNT_L" test "u11.Y15"
+!IPG nailed:   silicon node "FAN23_AMB_LED_L" test "u11.R14"
+!IPG nailed:   silicon node "FAN23_DIR" test "u11.R16"
+!IPG nailed:   silicon node "FAN23_GRN_LED_L" test "u11.W22"
+!IPG nailed:   silicon node "FAN23_PG" test "u11.P15"
+!IPG nailed:   silicon node "FAN23_PRSNT_L" test "u11.N15"
+!IPG nailed:   silicon node "FAN45_AMB_LED_L" test "u11.P14"
+!IPG nailed:   silicon node "FAN45_DIR" test "u11.V21"
+!IPG nailed:   silicon node "FAN45_GRN_LED_L" test "u11.M20"
+!IPG nailed:   silicon node "FAN45_PG" test "u11.H12"
+!IPG nailed:   silicon node "FAN45_PRSNT_L" test "u11.G12"
+!IPG not disabled:   silicon node "FAN_FPGA_ALERT_L" test "u11.C1"
+!IPG nailed:   silicon node "FAN_FPGA_GPIO_INT_L" test "u11.D8"
+!IPG nailed:   silicon node "FPGA_ACT2_RESET_L" test "u11.R22"
+!IPG nailed:   silicon node "FPGA_BDX_CPU_RSMRST_N" test "u11.G20"
+!IPG nailed:   silicon node "FPGA_CPU_MFG_MODE_STRAP" test "u11.J15"
+!IPG nailed:   silicon node "FPGA_CPU_PCH_PLTRST_N" test "u11.J19"
+!IPG nailed:   silicon node "FPGA_CPU_THERMTRIP_3V3_L" test "u11.K19"
+!IPG nailed:   silicon node "FPGA_CRCERR" test "u11.AA4"
+!IPG nailed:   silicon node "FPGA_DBG_JMPR1" test "u11.Y5"
+!IPG nailed:   silicon node "FPGA_DBG_JMPR2" test "u11.W4"
+!IPG nailed:   silicon node "FPGA_DBG_JMPR3" test "u11.Y4"
+!IPG nailed:   silicon node "FPGA_DBG_JMPR4" test "u11.T8"
+!IPG nailed:   silicon node "FPGA_DBG_JMPR5" test "u11.AB6"
+!IPG nailed:   silicon node "FPGA_DBG_JMPR_L" test "u11.V22"
+!IPG nailed:   silicon node "FPGA_DC_SFP_SDA" test "u11.T14"
+!IPG nailed:   silicon node "FPGA_FAN_GPIO_RESET_L" test "u11.C16"
+!IPG nailed:   silicon node "FPGA_FAST_PROCHOT" test "u11.E20"
+!IPG nailed:   silicon node "FPGA_INIT_DONE" test "u11.W8"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<0>" test "u11.J22"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<1>" test "u11.A2"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<2>" test "u11.A3"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<3>" test "u11.B4"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<4>" test "u11.A4"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<5>" test "u11.A5"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<6>" test "u11.B3"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<7>" test "u11.A6"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<8>" test "u11.A12"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<9>" test "u11.B12"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<10>" test "u11.A13"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<11>" test "u11.B13"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<12>" test "u11.A14"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<13>" test "u11.A15"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<14>" test "u11.B15"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<15>" test "u11.A16"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<16>" test "u11.A19"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<17>" test "u11.B7"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<18>" test "u11.A7"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<19>" test "u11.C12"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<20>" test "u11.R19"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<21>" test "u11.L13"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<22>" test "u11.A18"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<23>" test "u11.B18"
+!IPG nailed:   silicon node "FPGA_LB_ADDR<24>" test "u11.C6"
+!IPG nailed:   silicon node "FPGA_LB_BYTE_PU" test "u11.R20"
+!IPG nailed:   silicon node "FPGA_LB_DATA<0>" test "u11.H21"
+!IPG nailed:   silicon node "FPGA_LB_DATA<1>" test "u11.G21"
+!IPG nailed:   silicon node "FPGA_LB_DATA<2>" test "u11.E22"
+!IPG nailed:   silicon node "FPGA_LB_DATA<3>" test "u11.D22"
+!IPG nailed:   silicon node "FPGA_LB_DATA<4>" test "u11.C22"
+!IPG nailed:   silicon node "FPGA_LB_DATA<5>" test "u11.A22"
+!IPG nailed:   silicon node "FPGA_LB_DATA<6>" test "u11.A21"
+!IPG nailed:   silicon node "FPGA_LB_DATA<7>" test "u11.A20"
+!IPG nailed:   silicon node "FPGA_LB_DATA<8>" test "u11.G22"
+!IPG nailed:   silicon node "FPGA_LB_DATA<9>" test "u11.F22"
+!IPG nailed:   silicon node "FPGA_LB_DATA<10>" test "u11.E21"
+!IPG nailed:   silicon node "FPGA_LB_DATA<11>" test "u11.D21"
+!IPG nailed:   silicon node "FPGA_LB_DATA<12>" test "u11.B22"
+!IPG nailed:   silicon node "FPGA_LB_DATA<13>" test "u11.B21"
+!IPG nailed:   silicon node "FPGA_LB_DATA<14>" test "u11.B20"
+!IPG nailed:   silicon node "FPGA_LB_DATA<15>" test "u11.B19"
+!IPG nailed:   silicon node "FPGA_LB_NVRAM_BHE_L" test "u11.B10"
+!IPG nailed:   silicon node "FPGA_LB_NVRAM_BLE_L" test "u11.A8"
+!IPG nailed:   silicon node "FPGA_LB_NVRAM_CE_L" test "u11.M19"
+!IPG used for disable:   silicon node "FPGA_LB_NVRAM_CS0" test "u11.A17"
+!IPG used for disable:   silicon node "FPGA_LB_NVRAM_CS1" test "u11.D15"
+!IPG used for disable:   silicon node "FPGA_LB_NVRAM_CS2" test "u11.G15"
+!IPG used for disable:   silicon node "FPGA_LB_NVRAM_CS3" test "u11.K12"
+!IPG used for disable:   silicon node "FPGA_LB_OE_L" test "u11.H22"
+!IPG nailed:   silicon node "FPGA_LB_RTC_CS_L" test "u11.C8"
+!IPG nailed:   silicon node "FPGA_LB_WE_L" test "u11.A11"
+!IPG nailed:   silicon node "FPGA_LED_BCN_BLUE_L" test "u11.AA19"
+!IPG nailed:   silicon node "FPGA_LED_REAR_STAT_GRN_L" test "u11.AB22"
+!IPG nailed:   silicon node "FPGA_LED_REAR_STAT_RED_L" test "u11.W19"
+!IPG nailed:   silicon node "FPGA_M2_PERST_L" test "u11.Y12"
+!IPG nailed:   silicon node "FPGA_M2_SCL" test "u11.D7"
+!IPG nailed:   silicon node "FPGA_M2_SDA" test "u11.C2"
+!IPG nailed:   silicon node "FPGA_M2_SUSCLK" test "u11.C7"
+!IPG nailed:   silicon node "FPGA_MGMT_SFP_SDA" test "u11.F8"
+!IPG nailed:   silicon node "FPGA_MPHY_RESET_L" test "u11.A1"
+!IPG nailed:   silicon node "FPGA_OBFL_CMD" test "u11.AB11"
+!IPG not disabled:   silicon node "FPGA_OBFL_IO<0>" test "u11.V6"
+!IPG not disabled:   silicon node "FPGA_OBFL_IO<1>" test "u11.U12"
+!IPG not disabled:   silicon node "FPGA_OBFL_IO<2>" test "u11.W10"
+!IPG not disabled:   silicon node "FPGA_OBFL_IO<3>" test "u11.AB3"
+!IPG not disabled:   silicon node "FPGA_OBFL_IO<4>" test "u11.W5"
+!IPG not disabled:   silicon node "FPGA_OBFL_IO<5>" test "u11.Y8"
+!IPG not disabled:   silicon node "FPGA_OBFL_IO<6>" test "u11.W9"
+!IPG not disabled:   silicon node "FPGA_OBFL_IO<7>" test "u11.Y9"
+!IPG nailed:   silicon node "FPGA_OBFL_RST_L" test "u11.Y7"
+!IPG nailed:   silicon node "FPGA_PCH_APWROK" test "u11.L19"
+!IPG nailed:   silicon node "FPGA_PCH_CATERR_DLY_L" test "u11.H13"
+!IPG nailed:   silicon node "FPGA_PCH_GBE_AUX_PWR_OK" test "u11.A10"
+!IPG nailed:   silicon node "FPGA_PCH_PWRBTN_L" test "u11.D19"
+!IPG nailed:   silicon node "FPGA_PCH_PWROK" test "u11.K14"
+!IPG nailed:   silicon node "FPGA_PCH_RSMRST_L" test "u11.B6"
+!IPG nailed:   silicon node "FPGA_PCH_RTCRST" test "u11.N13"
+!IPG nailed:   silicon node "FPGA_PCH_SRTCRST" test "u11.M14"
+!IPG nailed:   silicon node "FPGA_PCH_SYS_PWROK" test "u11.C19"
+!IPG nailed:   silicon node "FPGA_PCH_SYS_RESET_L" test "u11.K13"
+!IPG nailed:   silicon node "FPGA_PCH_WDT_L" test "u11.H9"
+!IPG not disabled:   silicon node "FPGA_POR_L" test "u11.U6"
+!IPG nailed:   silicon node "FPGA_PWRGOOD_CPU" test "u11.L20"
+!IPG nailed:   silicon node "FPGA_SDO" test "u11.K4"
+!IPG nailed:   silicon node "FPGA_SPARE1" test "u11.AA6"
+!IPG nailed:   silicon node "FPGA_SPARE2" test "u11.AB4"
+!IPG nailed:   silicon node "FPGA_SPARE3" test "u11.AB5"
+!IPG nailed:   silicon node "FPGA_SPARE4" test "u11.AB7"
+!IPG nailed:   silicon node "FPGA_SPARE5" test "u11.AA10"
+!IPG nailed:   silicon node "FPGA_SPARE_PIN_0" test "u11.B16"
+!IPG nailed:   silicon node "FPGA_SPARE_PIN_1" test "u11.J14"
+!IPG nailed:   silicon node "FPGA_SPARE_PU" test "u11.AB19"
+!IPG nailed:   silicon node "FPGA_SPI_GOLD_SEL" test "u11.T16"
+!IPG nailed:   silicon node "FPGA_SPI_GOLD_WP_L" test "u11.U20"
+!IPG nailed:   silicon node "FPGA_SPI_STD_WP_L" test "u11.T20"
+!IPG nailed:   silicon node "FPGA_XDP_CPU_PWRGD" test "u11.T9"
+!IPG: Node "FPGA_CPU_BRD_ID0" is aliased to "GPIO11"
+!IPG nailed:   silicon node "GPIO11" test "u11.C20"
+!IPG: Node "FPGA_CPU_BRD_ID1" is aliased to "GPIO22"
+!IPG nailed:   silicon node "GPIO22" test "u11.F18"
+!IPG: Node "FPGA_PCH_SPARE3" is aliased to "GPIO48"
+!IPG nailed:   silicon node "GPIO48" test "u11.Y18"
+!IPG used for disable:   silicon node "I2C_ACT2_SCL" test "u11.W11"
+!IPG nailed:   silicon node "I2C_ACT2_SDA" test "u11.Y11"
+!IPG nailed:   silicon node "IO_MI2_FPGA_SPARE<0>" test "u11.F16"
+!IPG nailed:   silicon node "IO_MI2_FPGA_SPARE<1>" test "u11.H14"
+!IPG nailed:   silicon node "IO_MI2_FPGA_SPARE<2>" test "u11.J12"
+!IPG nailed:   silicon node "IO_MI2_FPGA_SPARE<3>" test "u11.C18"
+!IPG nailed:   silicon node "IO_MI_FPGA_SPARE<0>" test "u11.H7"
+!IPG nailed:   silicon node "IO_MI_FPGA_SPARE<1>" test "u11.G7"
+!IPG nailed:   silicon node "IO_MI_FPGA_SPARE<2>" test "u11.G6"
+!IPG nailed:   silicon node "IO_MI_FPGA_SPARE<3>" test "u11.D4"
+!IPG nailed:   silicon node "JTAG_CABLE_PRSNT_L" test "u11.G14"
+!IPG nailed:   silicon node "JTAG_FPGA_CPU_TDI_3V3" test "u11.M17"
+!IPG nailed:   silicon node "JTAG_FPGA_CPU_TMS_3V3" test "u11.M13"
+!IPG nailed:   silicon node "JTAG_FPGA_CPU_TRST_3V3" test "u11.F20"
+!IPG nailed:   silicon node "JTAG_TCK_CPU_FPGA_3V3" test "u11.AA22"
+!IPG nailed:   silicon node "M2_CLKREQ_L" test "u11.AA18"
+!IPG nailed:   silicon node "M2_FPGA_ALERT" test "u11.AB17"
+!IPG nailed:   silicon node "M2_PEDET" test "u11.W17"
+!IPG nailed:   silicon node "M2_PEWAKE_L" test "u11.Y17"
+!IPG nailed:   silicon node "M2_SLEEP" test "u11.AB18"
+!IPG nailed:   silicon node "MDIO_SEL0" test "u11.K20"
+!IPG nailed:   silicon node "MDIO_SEL1" test "u11.D20"
+!IPG not disabled:   silicon node "MEM_VR_FAULT_L" test "u11.C4"
+!IPG nailed:   silicon node "MGMT_CONSOLE_TXD" test "u11.V7"
+!IPG nailed:   silicon node "MIFPGA2_CPU_INT_L" test "u11.Y19"
+!IPG nailed:   silicon node "MIFPGA2_IOFPGA_CRCERR" test "u11.T15"
+!IPG nailed:   silicon node "MIFPGA2_POR_L" test "u11.T13"
+!IPG nailed:   silicon node "MIFPGA_CPU_INT_L" test "u11.N21"
+!IPG nailed:   silicon node "MIFPGA_IOFPGA_CRCERR" test "u11.C5"
+!IPG nailed:   silicon node "MIFPGA_POR_L" test "u11.R13"
+!IPG nailed:   silicon node "MPHY_INT_3V3_L" test "u11.T22"
+!IPG nailed:   silicon node "MPHY_PWR_EN" test "u11.R21"
+!IPG nailed:   silicon node "MPHY_PWR_GOOD" test "u11.T21"
+!IPG nailed:   silicon node "OBFL_FPGA_DS" test "u11.C17"
+!IPG nailed:   silicon node "P0V6_EN" test "u11.AB8"
+!IPG nailed:   silicon node "P0V6_PGOOD" test "u11.V13"
+!IPG not disabled:   silicon node "P1V2_VDDQ_EN" test "u11.K17"
+!IPG not disabled:   silicon node "P1V2_VDDQ_PGOOD" test "u11.AB20"
+!IPG nailed:   silicon node "P1V3_EN" test "u11.W12"
+!IPG nailed:   silicon node "P1V3_PGOOD" test "u11.Y10"
+!IPG nailed:   silicon node "P1V5_PCH_EN" test "u11.C11"
+!IPG nailed:   silicon node "P1V5_PCH_PGOOD" test "u11.N22"
+!IPG nailed:   silicon node "P1V05C_EN" test "u11.R11"
+!IPG not disabled:   silicon node "P1V05C_PGOOD" test "u11.R9"
+!IPG nailed:   silicon node "P1V7_EN" test "u11.AA9"
+!IPG nailed:   silicon node "P1V7_PGOOD" test "u11.W16"
+!IPG not disabled:   silicon node "P3V3_EN" test "u11.AB9"
+!IPG not disabled:   silicon node "P3V3_PGOOD" test "u11.P10"
+!IPG nailed:   silicon node "P3V3_SSD_PWRDOWN_L" test "u11.AA13"
+!IPG nailed:   silicon node "P5V_EN" test "u11.C13"
+!IPG nailed:   silicon node "P5V_PGOOD" test "u11.D13"
+!IPG nailed:   silicon node "P5V_USB0_FAULT_L" test "u11.AB21"
+!IPG nailed:   silicon node "PCH_FPGA_MDC" test "u11.P22"
+!IPG nailed:   silicon node "PCH_FPGA_MDIO" test "u11.N17"
+!IPG nailed:   silicon node "PCH_FPGA_SLP_S3_L" test "u11.L15"
+!IPG nailed:   silicon node "PCH_FPGA_SLP_S4_L" test "u11.L14"
+!IPG nailed:   silicon node "PCH_FPGA_SUS_CLK" test "u11.U18"
+!IPG nailed:   silicon node "PCH_GP27_MIFPGA2_PERST_L" test "u11.Y13"
+!IPG nailed:   silicon node "PCH_GP57_MIFPGA_PERST_L" test "u11.AB15"
+!IPG nailed:   silicon node "PCH_GP72_FPGA_PERST_L" test "u11.AB13"
+!IPG nailed:   silicon node "PCH_LPC_LAD<0>" test "u11.T18"
+!IPG nailed:   silicon node "PCH_LPC_LAD<1>" test "u11.M16"
+!IPG nailed:   silicon node "PCH_LPC_LAD<2>" test "u11.L16"
+!IPG nailed:   silicon node "PCH_LPC_LAD<3>" test "u11.M18"
+!IPG nailed:   silicon node "PCH_LPC_LFRAME_L" test "u11.T17"
+!IPG nailed:   silicon node "PCH_MIFPGA2_PERST_L" test "u11.AB14"
+!IPG nailed:   silicon node "PCH_MIFPGA_PERST_L" test "u11.Y14"
+!IPG nailed:   silicon node "PCH_PLTRST_L" test "u11.W14"
+!IPG nailed:   silicon node "PCH_SERIRQ" test "u11.J16"
+!IPG nailed:   silicon node "PCH_SUS_STAT_L" test "u11.P20"
+!IPG not disabled:   silicon node "PMBUS1_ALERT_L" test "u11.U7"
+!IPG not disabled:   silicon node "PMBUS1_SDA" test "u11.V9"
+!IPG nailed:   silicon node "PMBUS2_ALERT_L" test "u11.H20"
+!IPG nailed:   silicon node "PMBUS2_SDA" test "u11.J21"
+!IPG nailed:   silicon node "PMBUS_PSU1_SDA" test "u11.W21"
+!IPG nailed:   silicon node "PMBUS_PSU2_SDA" test "u11.R17"
+!IPG nailed:   silicon node "PSU1_AC_OK" test "u11.G17"
+!IPG nailed:   silicon node "PSU1_DC_OK" test "u11.G18"
+!IPG nailed:   silicon node "PSU2_AC_OK" test "u11.K22"
+!IPG nailed:   silicon node "PSU2_DC_OK" test "u11.G16"
+!IPG not disabled:   silicon node "PVCCIN_EN" test "u11.AA7"
+!IPG not disabled:   silicon node "PVCCIN_PGOOD" test "u11.R10"
+!IPG nailed:   silicon node "R_SPI_PCH_MISO" test "u11.G19"
+!IPG nailed:   silicon node "SFP_PRESENT_L" test "u11.N14"
+!IPG not disabled:   silicon node "SMBUS_FAN_SDA" test "u11.N20"
+!IPG nailed:   silicon node "SPI_FLSH_CLK" test "u11.W20"
+!IPG nailed:   silicon node "SPI_FLSH_MOSI" test "u11.V20"
+!IPG nailed:   silicon node "SPI_FPGA_MISO" test "u11.T19"
+!IPG nailed:   silicon node "SPI_PCH_CS0_L" test "u11.H15"
+!IPG nailed:   silicon node "SPI_PCH_CS1_L" test "u11.H16"
+!IPG nailed:   silicon node "SR_DIN" test "u11.Y16"
+!IPG nailed:   silicon node "SRT_FPGA_DC_SFP_SCL" test "u11.R15"
+!IPG nailed:   silicon node "SRT_FPGA_MGMT_SFP_SCL" test "u11.C3"
+!IPG nailed:   silicon node "SRT_FPGA_OBFL_CLK" test "u11.AB10"
+!IPG nailed:   silicon node "SRT_FPGA_PCH_SPARE1" test "u11.D6"
+!IPG nailed:   silicon node "SRT_FPGA_PCH_SPARE2" test "u11.G10"
+!IPG nailed:   silicon node "SRT_FPGA_SDI" test "u11.D1"
+!IPG nailed:   silicon node "SRT_FPGA_SPI_CS_L" test "u11.J4"
+!IPG nailed:   silicon node "SRT_IO_MI2_DATA" test "u11.J13"
+!IPG nailed:   silicon node "SRT_IO_MI2_STROBE" test "u11.C10"
+!IPG nailed:   silicon node "SRT_IO_MI_DATA" test "u11.G8"
+!IPG nailed:   silicon node "SRT_IO_MI_STROBE" test "u11.H8"
+!IPG nailed:   silicon node "SRT_IOFPGA_MIFPGA_LEDCLK" test "u11.D17"
+!IPG nailed:   silicon node "SRT_JTAG_TCK_FPGA_CPU_3V3" test "u11.Y20"
+!IPG nailed:   silicon node "SRT_MI2_IO_DATA" test "u11.F12"
+!IPG nailed:   silicon node "SRT_MI_IO_DATA" test "u11.D12"
+!IPG nailed:   silicon node "SRT_MIFPGA2_OK" test "u11.AA21"
+!IPG nailed:   silicon node "SRT_MIFPGA_OK" test "u11.F6"
+!IPG nailed:   silicon node "SRT_PMBUS1_SCL" test "u11.T11"
+!IPG nailed:   silicon node "SRT_PMBUS2_SCL" test "u11.J20"
+!IPG nailed:   silicon node "SRT_PMBUS_PSU1_SCL" test "u11.P13"
+!IPG nailed:   silicon node "SRT_PMBUS_PSU2_SCL" test "u11.Y22"
+!IPG nailed:   silicon node "SRT_SMBUS_FAN_SCL" test "u11.N19"
+!IPG nailed:   silicon node "SRT_SR_CLK" test "u11.AA16"
+!IPG nailed:   silicon node "SRT_SR_STORE_CLK" test "u11.AA15"
+!IPG nailed:   silicon node "VCCSUS3_3_EN" test "u11.U22"
+!IPG nailed:   silicon node "VCCSUS3_3_PGOOD" test "u11.M15"
+end nodes
+
+!IPG: disable problems
+!IPG: node "CPU_VR_FAULT_L"
+!IPG: node "CPU_VRHOT_L"
+!IPG: node "FAN_FPGA_ALERT_L"
+!IPG: node "FPGA_OBFL_IO<0>"
+!IPG: node "FPGA_OBFL_IO<1>"
+!IPG: node "FPGA_OBFL_IO<2>"
+!IPG: node "FPGA_OBFL_IO<3>"
+!IPG: node "FPGA_OBFL_IO<4>"
+!IPG: node "FPGA_OBFL_IO<5>"
+!IPG: node "FPGA_OBFL_IO<6>"
+!IPG: node "FPGA_OBFL_IO<7>"
+!IPG: node "FPGA_POR_L"
+!IPG: node "MEM_VR_FAULT_L"
+!IPG: node "P1V2_VDDQ_EN"
+!IPG: node "P1V2_VDDQ_PGOOD"
+!IPG: node "P1V05C_PGOOD"
+!IPG: node "P3V3_EN"
+!IPG: node "P3V3_PGOOD"
+!IPG: node "PMBUS1_ALERT_L"
+!IPG: node "PMBUS1_SDA"
+!IPG: node "PVCCIN_EN"
+!IPG: node "PVCCIN_PGOOD"
+!IPG: node "SMBUS_FAN_SDA"
+
+end powered shorts
+

@@ -1,0 +1,25 @@
+!!!!    2    0    1 1529027815  V1861                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:56 2018
+test powered analog
+
+  nonanalog pins 1,2,4
+
+  test "Freq_in"
+  test "Freq_out"
+end test
+
+subtest "Freq_in"
+
+  clear connect rcva to pins 1
+  detector frequency, expect  25M
+  measure   25M * 1.05,  25M * .95
+end subtest
+
+subtest "Freq_out"
+
+  clear connect rcva to pins 3
+  detector frequency, expect  25M
+  measure   25M * 1.05,  25M * .95
+end subtest
+
+

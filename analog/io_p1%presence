@@ -1,0 +1,9 @@
+!!!!    2    0    1 1662017801   0000                                         
+on failure
+   report "Check for IO_P1 presence."
+end on failure
+disconnect all
+connect s to ground
+connect i to "IO_P1_PRESENCE_SWITCH_PIN_2"
+jumper 15, re2, ar200m,ed,en
+off failure

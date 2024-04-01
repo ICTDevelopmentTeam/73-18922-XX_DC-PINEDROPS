@@ -1,0 +1,7 @@
+!!!!    2    0    1 1689162015   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:32 2018
+disconnect all
+connect s to "SMB_DDR01_SCL_CP"; a to "SMB_DDR01_SCL_CP"
+connect i to "SMB_DDR01_SCL_R_CP"; b to "SMB_DDR01_SCL_R_CP"
+jumper 20, re1, ar200m,ed,en
+! "r322_cp" is a limited test.

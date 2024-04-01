@@ -1,0 +1,36 @@
+!!!!    2    0    1 1529027802  V66c1                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:43 2018
+test powered analog
+   power pins 1,2,3,10,11,12,6,15,16,17
+   nonanalog pins 4,5,7,9,13,14
+
+   test "VIN"
+   test "VOUT"
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+
+subtest "VIN"
+   clear connect i to pins  10
+   connect l to pins  6
+
+   detector dcv, expect  3.3
+   measure  3.3 * 1.05, 3.3 * 0.95
+end subtest
+
+subtest "VOUT"
+   clear connect i to pins  1
+   connect l to pins  6
+
+   detector dcv, expect  1.2
+   measure  1.2 * 1.05, 1.2 * 0.95
+end subtest
+
+!
+!  End test
+!
+
+
+

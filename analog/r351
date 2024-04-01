@@ -1,0 +1,8 @@
+!!!!    2    0    1 1623146417   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:19 2018
+disconnect all
+connect i to "VFB2_VPP"
+connect s to "VPP_FP_A"
+connect g to "GND"
+resistor 20k,25.00, 25.00,re2,wb,ar500m,wa10m,ed
+! "r351" test.

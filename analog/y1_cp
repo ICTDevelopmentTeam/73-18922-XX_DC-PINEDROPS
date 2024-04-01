@@ -1,0 +1,26 @@
+!!!!    2    0    1 1529027814  Va985                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:55 2018
+test powered analog
+
+ !nonanalog pins  2,3
+
+  test "Freq_out"
+  test "Freq_in"
+end test
+
+subtest "Freq_out"
+
+  connect rcva to pins 1
+  detector frequency, expect  32.768k
+  measure  32.768k * 1.05, 32.768k * .95
+end subtest
+
+subtest "Freq_in"
+
+  connect rcva to pins 2
+  detector frequency, expect  32.768k
+  measure  32.768k * 1.05, 32.768k * .95
+end subtest
+
+
+

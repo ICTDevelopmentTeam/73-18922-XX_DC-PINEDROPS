@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531966532   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:26 2018
+disconnect all
+connect i to "P3V3_ADDR"
+connect s to "P3V3_VREG"
+connect g to "GND" 
+resistor 249k, 30.00, 30.00, re6, wb, ar500m, ed, wa10m
+! "r913" test.

@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531220218   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:43 2018
+disconnect all
+connect i to "UNNAMED_7_CAP_I276_B_MVR"
+connect s to "P12V"
+connect g to "GND"
+resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa50m,ed
+! "r10_mvr" is a limited test.

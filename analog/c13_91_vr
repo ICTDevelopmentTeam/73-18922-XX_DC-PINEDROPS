@@ -1,0 +1,42 @@
+!!!!    2    0    1 1606354409   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:11 2018
+on failure
+   report parallel devices
+   report "c13_92_vr 560u"
+   report "c14_91_vr 560u"
+   report "c14_92_vr 560u"
+   report "c11_91_vr 100u"
+   report "c11_92_vr 100u"
+   report "c12_91_vr 100u"
+   report "c12_92_vr 100u"
+   report "a_c853 47.0u"
+   report "a_c887 47.0u"
+   report "a_c888 47.0u"
+   report "a_c889 47.0u"
+   report "a_c841 22.0u"
+   report "a_c842 22.0u"
+   report "a_c843 22.0u"
+   report "a_c844 22.0u"
+   report "c63_cp 22.0u"
+   report "c64_cp 22.0u"
+   report "c66_cp 22.0u"
+   report "c67_cp 22.0u"
+   report "c69_cp 22.0u"
+   report "c70_cp 22.0u"
+   report "c73_cp 22.0u"
+   report "c74_cp 22.0u"
+   report "c76_cp 22.0u"
+   report "c77_cp 22.0u"
+   report "c78_cp 22.0u"
+   report "c79_cp 22.0u"
+   report "c80_cp 22.0u"
+   report "c81_cp 22.0u"
+   report "c82_cp 22.0u"
+   report "c83_cp 22.0u"
+end on failure
+disconnect all
+connect s to "PVCCIN"; a to "PVCCIN"
+connect i to "GND"; b to "GND"
+capacitor 3.268m, 35.00, 40.00, fr128, re1, ar800m, ed,nocomp,sm
+! "c13_91_vr" test.
+off failure

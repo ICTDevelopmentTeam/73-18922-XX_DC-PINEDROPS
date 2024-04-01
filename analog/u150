@@ -1,0 +1,37 @@
+!!!!    2    0    1 1507708263  Vd11b                                         
+! IPG: rev 08.30p  Wed Oct 11 15:51:04 2017
+!IPG : Pin 3 is not connected in topology.
+test powered analog
+   power pins 1,2,9,10
+   nonanalog pins 3,4,5,6,7,8
+
+   test "VIN"
+   test "VOUT"
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+
+subtest "VIN"
+   clear connect i to pins  1
+   connect l to pins  6
+
+   detector dcv, expect  3.3
+   measure  3.3 * 1.05, 3.3 * 0.95
+end subtest
+
+subtest "VOUT"
+   clear connect i to pins  9
+   connect l to pins  6
+
+   detector dcv, expect  1.8
+   measure  1.8 * 1.05, 1.8 * 0.95
+end subtest
+
+!
+!  End test
+!
+
+
+

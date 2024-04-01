@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583013  Vc310                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:05 2018
+disconnect all
+connect s to "GND"
+connect i to "PD_DDR01_RCOMP_0_CP"
+!B!resistor 130, 9.85, 6.00, re3, ar1.00
+resistor 130,30.00, 25.00,re3,ar1.00
+! "r88_cp" test.

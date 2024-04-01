@@ -1,0 +1,42 @@
+!!!!    6    0    1 1514180260  Vd7dd                                         
+! IPG: rev 08.30p  Mon Aug 29 10:52:20 2016
+
+combinatorial
+vector cycle 10u
+receive delay 8u
+
+default device "u16_cp"
+set terminators to on
+assign VCC to pins *,*
+assign GND to pins *
+
+assign A   to pins 3,4
+assign B   to pins 6,5
+
+assign EN to pins 8
+
+power VCC, GND
+inputs EN, A
+outputs B
+
+family LVT_1V8
+family LVT_1V05 on A
+
+disable A, B with EN to "0"
+
+set load on groups B to pull up
+
+pcf order SCAN is EN, A, B
+
+
+unit "Func Test"
+pcf
+  use pcf order SCAN
+   "1 01 LH"
+   "1 10 HL"
+   "0 11 HH"
+   "0 00 HH"
+
+end pcf
+end unit
+

@@ -1,0 +1,36 @@
+----------------------------------------
+Shorts Report for "shorts".
+Mon Apr 01 11:12:28 2024
+73-19246-05_2old
+----------------------------------------
+Open #1 Thresh 20, Delay 50us       Ohms
+From: PD_RSVD_R1_CP           22343 Open
+                r7_cp.1
+               u5_cp.A76
+             u5_cp_pch.A76
+To:   PD_RSVD_97_CP          223134
+               r436_cp.1
+               u5_cp.BT62
+             u5_cp_pch.BT62
+Common Devices:
+                 u5_cp
+               u5_cp_pch
+Message is:  None.
+------End, 1 Problem Reported-----------
+&v4S ##########ICT Fail #######
+&v4SFLM280805H6
+&v4S Operator ID: 4075724
+Serial #: FLM280805H6
+
+
+
+
+
+
+
+
+
+
+
+
+

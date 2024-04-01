@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027697   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:58 2018
+on failure
+   report parallel devices
+   report "r486 4.70k"
+end on failure
+disconnect all
+connect i to "MEM_VRHOT_L"
+connect s to "P3_3VA"
+jumper 3.11k, re4, wb, ar500m, op
+! "r86_mvr" test.
+off failure

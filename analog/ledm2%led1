@@ -1,0 +1,7 @@
+!!!!    2    0    1 1656641946   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:28 2018
+disconnect all
+connect i to "P3V3_SSD"
+connect s to "UNNAMED_15_LED_I153_K"
+diode 2.32, 1.87, idc17m, co4.4, ar2.32
+! "ledm2%led1" test.

@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583062  V02b9                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:12 2018
+disconnect all
+connect s to "FP_PWR_BTN_N_CP"
+connect i to "FP_PWR_SW_CP"
+!B!resistor 33, 21.15, 6.00, re2, ar200m
+resistor 33,40.00, 25.00,re2,ar200m
+! "r325_cp" test.

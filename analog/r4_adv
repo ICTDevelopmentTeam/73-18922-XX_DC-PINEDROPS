@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531145734   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:35 2018
+disconnect all
+connect s to "P1_2VA"
+connect i to "UNNAMED_2_RES_I471_B_ADV"
+connect g to "GND"
+!B!resistor 5.76k, 6.00, 6.00, re4, wb, ar200m, wa116u
+resistor 5.76k,25.00, 20.00,re4,wb,ar200m,wa116u,ed,en
+! "r4_adv" test.

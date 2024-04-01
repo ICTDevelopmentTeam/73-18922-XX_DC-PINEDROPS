@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+AGILENT 3070 BOARD TEST GRADER               Sat Jul 21 09:36:19 2018  page 1  
+
+SUMMARY REPORT
+-------------------------------------------------------------------------------
+
+Board Path:              ./
+Board Serial #:          Board1
+
+Test                                            Number Number  Number    Number
+                                                Total  Success Unsuccess Flagged
+
+Pins                                                10      10        0
+Pre-Shorts                                         340     340        0      15
+Shorts                                              50      50        0
+Analog  Incircuit      Vacuum Off                  660     651        9
+Digital Incircuit      Vacuum Off                   38      38        0
+Analog  Functional     Vacuum Off                   27      27        0
+BScan   Interconnect   Vacuum Off                    2       2        0
+BScan   Incircuit      Vacuum Off                    0       0        0
+Analog  Incircuit      Quality                    6600    6600        0      65
+Digital Incircuit      Quality                     550     550        0       1
+Analog  Functional     Quality                     440     440        0       0
+BScan   Interconnect   Quality                     190     190        0       5
+BScan   Incircuit      Quality                     170     170        0       5
+Digital Incircuit      Fault Coverage             1044     985       59

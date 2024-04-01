@@ -1,0 +1,13 @@
+!!!!    2    0    1 1529027699   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:00 2018
+on failure
+   report parallel devices
+   report "r20_mvr 4.75k"
+   report "r20_vr 4.75k"
+end on failure
+disconnect all
+connect s to "P3_3VA"
+connect i to "PMBUS1_SDA"
+jumper 1.91k, re4, wb, ar500m, op
+! "r186" test.
+off failure

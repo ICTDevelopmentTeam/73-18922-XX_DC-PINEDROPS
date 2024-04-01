@@ -1,0 +1,13 @@
+!!!!    2    0    1 1530585630  V6389                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:30 2018
+on failure
+report parallel devices
+report "c6_f"
+end on failure
+disconnect all
+connect s to "FAN01_TACH0_F"
+connect i to "GND"
+!B!diode 916m, 467m, idc25m, co3.0, ar916m
+diode 950m,467m,idc25m,co3.0,ar916m
+! "cr666_f%d1" test.
+off failure

@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531145429   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:24 2018
+disconnect all
+connect s to "GND"
+connect i to "VFB1_VPP"
+connect g to "VCCSUS3_3"
+!B!resistor 10k, 5.10, 5.10, re4, wb, ar100m, ed, wa132u
+resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa132u
+! "r3_vpp" test.

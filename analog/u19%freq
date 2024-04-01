@@ -1,0 +1,15 @@
+!!!!    2    0    1 1529040336  V55fd                                         
+
+ test powered analog
+   on failure
+      report "Test U19 at Nodes: CLK125M_FPGA "
+      report "Freq Measuremet = 125.00M"
+      report "Use Clock Divider. 125.00M/80"
+   end on failure
+
+     connect rcva to nodes  "OUT_CLK_DIV_1"
+
+     detector frequency, gate 1, expect (125.00M * 0.0125), threshold 2.5
+     measure (125.00M * 0.0125) * 1.02, (125.00M * 0.0125) *.98
+ off failure
+ end test

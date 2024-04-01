@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027761   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:02 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "SPI_GOLD_CS0_L_CP"
+resistor 100k, 30.00, 30.00, re5, wb, ar100m
+! "r398_cp" test.

@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582922  V36b5                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:42 2018
+disconnect all
+connect s to "BUF_SPI_FLSH_SEL_CP"
+connect i to "FPGA_SPI_GOLD_SEL"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m
+resistor 1k,25.00, 20.00,re3,ar100m
+! "r393_cp" test.

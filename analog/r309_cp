@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583084  Vb271                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:20 2018
+disconnect all
+connect s to "BDX_RTCRST_N_CP"
+connect i to "UNNAMED_6_HDR1X3_I462_A_CP"
+!B!resistor 100, 11.00, 6.00, re2, ar100m
+resistor 100,30.00, 20.00,re2,ar100m
+! "r309_cp" test.

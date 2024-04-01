@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531966284   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:45 2018
+disconnect all
+connect i to "SRT_CPUVR_PMBUS1_SCL"
+connect s to "P3_3VA"
+connect g to "SRT_MEMVR_PMBUS1_SCL"
+resistor 4.75k,25.00, 20.00,re4,wb,ar200m,ed
+! "r21_vr" test.

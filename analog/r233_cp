@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582945  V0379                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:46 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "XDP_CPU_TMS_CP"
+!B!resistor 4.75k, 6.00, 6.00, re4, wb, ar200m
+resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+! "r233_cp" test.

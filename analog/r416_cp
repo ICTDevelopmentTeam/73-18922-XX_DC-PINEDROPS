@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027705   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:06 2018
+on failure
+   report parallel devices
+   report "r417_cp 200k"
+end on failure
+disconnect all
+connect s to "UNNAMED_41_CAP_I44_A_CP"
+connect i to "P3_3V"
+jumper 9.47k, re4, wb, ar100m, op
+! "r416_cp" test.
+off failure

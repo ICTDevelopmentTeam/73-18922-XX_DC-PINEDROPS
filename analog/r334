@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583026  V13c5                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:08 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "SVID_ALERT_VRM_CPU_L"
+!B!resistor 49.9, 16.02, 6.00, re2, ar200m
+resistor 49.9,30.00, 25.00,re2,ar200m
+! "r334" test.

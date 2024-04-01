@@ -1,0 +1,10 @@
+!!!!    2    0    1 1531145630   0000                                         
+!* 100 ohm in BOM list but reading 0 ohm on the sample board.
+! IPG: rev 07.20pd Fri Jun 15 09:56:24 2018
+disconnect all
+connect s to "GND"
+connect i to "P1V05C_SNS_N"
+!B!resistor 100, 15.00, 10.00, re2, ar100m
+jumper 16, re1, ar200m
+!resistor 100,25.00,20.00,re2,ar100m
+! "r496" test.

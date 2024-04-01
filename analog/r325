@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027723   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:24 2018
+on failure
+   report parallel devices
+   report "r22_mvr 10.0k"
+end on failure
+disconnect all
+connect s to "P3_3VA"
+connect i to "P1V2_VDDQ_PGOOD"
+resistor 909.09, 25.00, 20.00, re3, ar100m
+! "r325" test.
+off failure

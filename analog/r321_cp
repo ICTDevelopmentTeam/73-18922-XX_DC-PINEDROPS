@@ -1,0 +1,7 @@
+!!!!    2    0    1 1602140394   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:32 2018
+disconnect all
+connect s to "SMB_DDR01_SDA_CP"; a to "SMB_DDR01_SDA_CP"
+connect i to "SMB_DDR01_SDA_R_CP"; b to "SMB_DDR01_SDA_R_CP"
+jumper 20, re1, ar200m, ed
+! "r321_cp" is a limited test.

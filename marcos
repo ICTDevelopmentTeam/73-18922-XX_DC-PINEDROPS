@@ -1,0 +1,665 @@
+analog/a_c810:capacitor 779u, 35, 35, fr128, re1, ar800m, ed, sa, sb, en, nocomp, wb
+analog/bptest:  test "Presence"
+analog/bptest:subtest "Presence"
+analog/c01_mvr:capacitor 3.3n, 30.00, 30.00, fr8192, re3, wb, ar50.0m,sl,en,wa100m,nocomp,am.25
+analog/c01_mvr:warning "device under test appears open or excessive noise is present."
+analog/c01_vr:capacitor 3.3n, 30.00, 30.00, fr8192, re2, wb, ar50.0m, ed,en, wa50m,nocomp,am.2
+analog/c02_mvr:capacitor 3.3n, 30.00, 30.00, fr8192, re3, wb, ar50.0m,sl,en,wa100m,nocomp,am.25
+analog/c03_mvr:capacitor 10n, 35.00, 40.00, fr1024, re2, ar20.0m, sa, en, nocomp
+analog/c03_vr:capacitor 10n, 35.00, 40.00, fr1024, re2, ar20.0m, sa, en, nocomp
+analog/c04_mvr:capacitor 10n, 35.00, 40.00, fr1024, re2, wb, ar100m, en,ed, nocomp
+analog/c04_mvr:warning "device under test appears open or excessive noise is present."
+analog/c04_vr:capacitor 10n, 35.00, 40.00, fr1024, re3, wb, ar100m, sa, en, nocomp
+analog/c04_vr:warning "device under test appears open or excessive noise is present."
+analog/c05_mvr:capacitor 220p+100p, 35, 35, fr8192, re6, wb, ar20m, ed, en, comp
+analog/c05_vr:capacitor 220p, 35.00, 35.00, fr8192, re6, wb, ar20.0m, comp,ed,en,am.25
+analog/c06_3v3:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp
+analog/c06_91_mvr:capacitor 0.47u, 20.00, 20.01, fr128, re1, ar20.0m, ed, nocomp
+analog/c06_91_vr:capacitor 470n, 20.00, 20.00, fr1024, re2, ar50.0m, nocomp
+analog/c06_92_vr:capacitor 470n, 20.00, 20.00, fr1024, re2, ar50.0m, nocomp
+analog/c06_98_mvr:capacitor 0.47u, 20.00, 20.01, fr128, re1, ar20.0m, ed, nocomp
+analog/c06_mvr:capacitor 220p, 35.00, 35.00, fr8192, re5, wb, ar20.0m, comp,am.27,ed, en
+analog/c08_3v3:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp
+analog/c09_mvr:capacitor 1.2u, 35.00, 40.00, fr1024, re2, ar100m, nocomp
+analog/c09_vr:capacitor 1.2u, 35.00, 40.00, fr1024, re2, ar100m, nocomp
+analog/c100:capacitor 10n, 35, 40.00, fr1024, re6, wb, ar100m, sa, sl, ed,en, nocomp,am.25,wa50m 
+analog/c100:warning "device under test appears open or excessive noise is present."
+analog/c105_cp:capacitor 1u, 35.00, 40.00, fr128, re2,ar100m,sa, nocomp,ed,en,am.3
+analog/c10_cp:capacitor 10p, 1.49, 1.27, fr8192, re4, wb, ar20.0m, comp
+analog/c10_mvr:capacitor 10n, 35.00, 40.00, fr1024, re3, wb, ar20.0m, nocomp
+analog/c10_vr:capacitor 10n, 35.00, 40.00, fr1024, re2, ar20.0m, nocomp,ed,en
+analog/c110_cp:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp
+analog/c112_cp:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp
+analog/c114_cp:capacitor 27p, 115.00, 15.00, fr8192, re5, wb, ar50.0m, comp
+analog/c115_cp:capacitor 27p, 115.00, 15.00, fr8192, re5, wb, ar50.0m, comp
+analog/c117_cp:capacitor 27p, 115.00, 15.00, fr8192, re5, wb, ar50.0m, comp
+analog/c118_cp:capacitor 27p, 115.00, 15.00, fr8192, re5, wb, ar50.0m, comp
+analog/c119_cp:capacitor 410n, 35.00, 40.00, fr1024, re2, ar100m, sa, sl, en, nocomp
+analog/c11_3v3:capacitor 344.01u, 35.00, 40.00, fr128, re1, ar400m, ed, sm, sa, sb, en, nocomp
+analog/c11_cp:capacitor 15p, 195.00, 15.00, fr8192, re5, wb, ar50.0m, comp
+analog/c120_cp:capacitor 158u, 35.00, 40.00, fr128, re1, ar200m, ed, sa, sb, en, nocomp
+analog/c12_cp:capacitor 15p, 195.00, 15.00, fr8192, re5, wb, ar50.0m, comp
+analog/c13:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, sa, en, nocomp
+analog/c133_cp:capacitor 200n, 35.00, 40.00, fr1024, re2, ar20.0m, nocomp
+analog/c135_cp:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, sa, sl, en, nocomp
+analog/c136_cp:capacitor 100n, 35.00, 40.00, fr8192, re3, wb, ar100m, sa,ed,en, nocomp
+analog/c13_91_vr:capacitor 3.268m, 35.00, 40.00, fr128, re1, ar800m, ed,nocomp,sm
+analog/c13_cp:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp,ed,am.25
+analog/c14_cp:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp, ed, am0.25, en
+analog/c15_cp:capacitor 1u, 35.00, 40.00, fr1024, re1, ar100m, nocomp, ed, en, wb, wa40m, sm
+analog/c16_cp:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp, sm
+analog/c17:capacitor 1n, 35.00, 35.00, fr1024, re5, wb, ar100m, sa,en, comp
+analog/c178_cp:capacitor 1u, 35.00, 40.00,fr128,re2,ar100m,sa,nocomp,am.3,ed,en,wa20m
+analog/c17_cp:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp,ed,en, am0.25
+analog/c18_cp:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp,ed,en, am0.25
+analog/c19:capacitor 1n, 22.70, 20.00, fr8192, re5, wb, ar100m, sa, ed,en, comp
+analog/c20:capacitor 1n, 35.00, 35.00, fr1024, re5, wb, ar100m, sa, en, comp
+analog/c21:capacitor 1n, 35, 40, fr8192, re5, wb, ar100m, sa, ed,en, comp
+analog/c214:capacitor 225.9u, 35.00, 40, fr128, re1, ar400m, ed, sa, sb, en, nocomp
+analog/c216:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp,ed,en
+analog/c218:capacitor 8u, 35.00, 40.00, fr1024, re1, ar100m, sa, sb, en, nocomp
+analog/c226:capacitor 139u, 35.00, 40.00, fr128, re1, ar200m, ed, sa, sb, en, nocomp
+analog/c227:capacitor 108.7u, 35.00, 40.00, fr128, re1, ar200m, ed, sa, sb, en, nocomp
+analog/c229:capacitor 1n, 35.00, 35.00, fr1024, re3, wb, ar100m, ed, en, comp
+analog/c229:warning "device under test appears open or excessive noise is present."
+analog/c233:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp
+analog/c237:capacitor 560p, 35.00, 35.00, fr1024, re5, wb, ar50.0m, comp
+analog/c238:capacitor 560p, 35.00, 35.00, fr1024, re5, wb, ar50.0m, comp
+analog/c24_cp:capacitor 1.1u, 35.00, 40.00, fr1024, re2, ar100m, sa, en, nocomp, am0.25
+analog/c252:capacitor 46u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp
+analog/c254:capacitor 42u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp
+analog/c291:capacitor 1.1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp
+analog/c2_5v:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp
+analog/c2_adv:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp
+analog/c2_vpp:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp
+analog/c3:capacitor 2.480m, 35.00, 40.00, fr128, re1, ar800m, ed, sa, sb, en, nocomp
+analog/c302:capacitor 4.4n, 35.00, 40.00, fr8192, re2, ar20.0m, ed,en,nocomp
+analog/c303:capacitor 100n, 35.00, 40.00, fr8192, re1, ar100m, en, ed,nocomp,am.15,sa,sb
+analog/c3283:capacitor 47.1u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp
+analog/c348:capacitor 560p, 35.00, 35.00, fr1024, re5, wb, ar50.0m, comp
+analog/c57:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp
+analog/c58:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp
+analog/c5_5v:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp, en
+analog/c5_adv:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp
+analog/c5_vpp:capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp
+analog/c7_5v:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp, ed, en
+analog/c7_adv:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp, ed
+analog/c7_vpp:capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp, ed
+analog/c87:capacitor 50.3u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp,am.25
+analog/c8_5v:capacitor 391.54u-50u, 35.00, 40.00, fr128, re1, ar400m, ed, sm, sa, sb, nocomp
+analog/c8_vpp:capacitor 252.61u, 35.00, 40.00, fr128, re1, ar400m, ed, sm, sa, sb, en, nocomp
+analog/c92_cp:capacitor 1.075m+700u, 35.00, 40.00, fr128, re1, ar800m, ed, sa, sb, en, nocomp
+analog/c9_5v:capacitor 174u, 35.00, 40, fr128, re1, ar200m, ed, sa, sb, en, nocomp
+analog/c9_adv:capacitor 220p, 35.00, 35.00, fr1024, re5, wb, ar20.0m, comp
+analog/c9_vpp:capacitor 163.1u, 35.00, 40, fr128, re1, ar200m, ed, sa, sb, en, nocomp
+analog/h2280%presence.l:analog/h2280%presence
+analog/io_c23:capacitor 11u, 35.00, 40.00, fr1024, re1, ar100m, sa, sb, en, nocomp
+analog/power_relay_check:test "u11_cp_3_relay_close"
+analog/power_relay_check:test "FPGA_DBG_JMPR3_relay_close"
+analog/power_relay_check:subtest "u11_cp_3_relay_close"
+analog/power_relay_check:subtest "FPGA_DBG_JMPR3_relay_close"
+analog/r09_mvr:resistor 1k,25.00, 20.00,re3,ar100m,wa10m,ed
+analog/r09_vr:resistor 1k,25.00, 20.00,re3,ar100m,wa10m,ed
+analog/r101_cp:resistor 49.9,30.00, 20,re2,ar200m
+analog/r102_cp:resistor 49.9,30.00, 20,re2,ar200m
+analog/r103_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r104_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r105_cp:resistor 1k, 25.00, 20.00, re3, ar100m
+analog/r106_cp:resistor 7.5k,25.00, 20.00,re4,wb,ar100m
+analog/r107_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r108_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r10_mvr:resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa50m,ed
+analog/r10_vr:resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa50m,ed
+analog/r111_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r112_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r113_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r114_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r115_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r116_cp:resistor 7.5k,25.00, 20.00,re4,wb,ar100m
+analog/r117_cp:resistor 150,30.00, 20,re3,ar1.00
+analog/r118_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r119_cp:resistor 75,30.00, 20,re2,ar100m
+analog/r11_mvr:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r11_vr:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r120_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r121_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r122_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r123_cp:resistor 49.9,30.00, 25.00,re2,ar200m
+analog/r124_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r125_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r126_cp:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r127_cp:resistor 8.2k,25.00, 20.00,re4,wb,ar100m
+analog/r128_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r129_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r12_vr:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r130_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r133_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r134_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r135_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r136_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r138_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r139_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r140_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r141_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r142_cp:resistor 10k,25.00, 20.00,re5,wb,ar100m,ed, wa20m
+analog/r143_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en, wa100m
+analog/r144_cp:resistor 10k,25.00, 20.00,re5,wb,ar100m,ed,en
+analog/r145_cp:resistor 10k,25.00, 25.00,re4,wb,ar100m,ed,en,sl,wa1m
+analog/r146_cp:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r147:resistor 22,40.00, 25.00,re2,ar500m
+analog/r147_cp:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r148_cp:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r149_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m,ed
+analog/r150_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r151_cp:resistor 2.2k, 25.00, 20.00, re4, wb, ar500m,ed,wa20m
+analog/r152_cp:resistor 51,30.00, 25.00,re2,ar200m
+analog/r153:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r153_cp:resistor 33,40.00, 25.00,re2,ar200m
+analog/r154:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r154_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r155:resistor 68.1,30.00, 25.00,re2,ar100m
+analog/r156:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r158_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r159:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r160_cp:resistor 8.2k,25.00, 20.00,re4,wb,ar100m
+analog/r161_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r162:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r163:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r163_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r164_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r165_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa2m
+analog/r166_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r167_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r168_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r169_cp:resistor 165,30.00, 25.00,re3,ar500m
+analog/r170_cp:resistor 75,30.00, 25.00,re2,ar100m
+analog/r171:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r1712:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r171_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r172_cp:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r174:resistor 22,40.00, 25.00,re2,ar500m
+analog/r174_cp:resistor 1k,25.00, 20.00,re3,ar100m,ed,wa20m
+analog/r175:resistor 22,40.00, 25.00,re2,ar500m, sb,en
+analog/r175_cp:resistor 1k,25.00, 20.00,re3,ar100m,ed,wa73.1u
+analog/r177_cp:resistor 2.67k,25.00, 20.00,re4,wb,ar500m
+analog/r178:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r178_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r179:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r179_cp:resistor 1k, 25.00, 20.00, re3, ar100m
+analog/r180:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r180_cp:resistor 240,30.00, 25.00,re3,ar500m
+analog/r181_cp:resistor 240,30.00, 25.00,re3,ar500m
+analog/r182:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r182_cp:resistor 330k, 30.00, 30.00, re6, wb, ar500m, wa2.69u
+analog/r183_cp:resistor 330k, 30.00, 30.00, re6, wb, ar500m, wa2.69u
+analog/r184_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r185_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r186_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r187:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r187_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r188:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r188_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r189:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r189_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r18_mvr:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r190:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r190_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r191_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r192_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r193:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r193_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa10m
+analog/r194:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r194_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa10m
+analog/r195:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r195_cp:resistor 5.11k,10.00,10.00,re4,wb,ar200m,wa20m
+analog/r196:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r196_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,en
+analog/r197_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r198_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r199:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r1997:resistor 3.57k,25.00, 20.00,re4,wb,ar200m,wa24.6u
+analog/r199_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r1_5v:resistor 10k,25.00, 20.00,re4,wb,ar100m,wa84.1u
+analog/r1_adv:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa72.0u
+analog/r1_vpp:resistor 10k,25.00, 20.00,re4,wb,ar100m,wa7.50u
+analog/r200:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r200_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r201_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r202_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r203_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r204_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r205_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r206_cp:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r207:resistor 33,40.00, 25.00,re2,ar200m
+analog/r208_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r209_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r20_mvr:resistor 2.375k,25.00, 20.00,re4,wb,ar500m
+analog/r210:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r210_cp:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r211:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r211_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r212:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r212_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r213:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r213_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r214:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r214_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r215:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r215_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r216:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r216_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r217:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r217_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r218:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m,ed
+analog/r218_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r219:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m,ed
+analog/r21_mvr:resistor 4.75k,25.00, 20.00,re4,wb,ar200m,ed
+analog/r21_vr:resistor 4.75k,25.00, 20.00,re4,wb,ar200m,ed
+analog/r220_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r221:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r221_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r222:resistor 2.2k, 25.00, 20.00, re4, wb, ar500m
+analog/r222_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r223:resistor 2.2k, 25.00, 20.00, re4, wb, ar500m
+analog/r224_cp:resistor 51,30.00, 25.00,re2,ar200m
+analog/r225_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r226:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r2265:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r226_cp:resistor 51,30.00, 25.00,re2,ar200m
+analog/r227:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r227_cp:resistor 51,30.00, 25.00,re2,ar200m
+analog/r228:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r228_cp:resistor 3.3k, 25.00, 20.00, re4, wb, ar500m, wa5.64u,ed
+analog/r229_cp:resistor 51,30.00, 25.00,re2,ar200m
+analog/r230_cp:resistor 51,30.00, 25.00,re2,ar200m
+analog/r231_cp:resistor 51,30.00, 25.00,re2,ar200m
+analog/r232_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r233_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r234_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r235:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r235_cp:resistor 150,30.00, 25.00,re3,ar1.00
+analog/r236_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r237_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r238_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m
+analog/r239_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,en
+analog/r23_mvr:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r240:resistor 33,40.00, 25.00,re2,ar200m
+analog/r240_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,en
+analog/r241:resistor 33,40.00, 25.00,re2,ar200m
+analog/r241_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r242_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,en,wa10m
+analog/r243:resistor 1k, 25.00, 20.00, re3, ar100m
+analog/r243_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,en,wa10m
+analog/r244:resistor 1k, 25.00, 20.00, re3, ar100m
+analog/r244_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa10m
+analog/r245:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r245_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa10m
+analog/r246:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r246_cp:resistor 10k, 25.00, 20.00, re4, wb, ar100m,ed,en, wa50m
+analog/r247_cp:resistor 75,30.00, 25.00,re2,ar100m
+analog/r248_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r249_cp:resistor 150,30.00, 20.00,re3,ar1.00
+analog/r24_mvr:resistor 2.4k,25.00, 20.00,re4,wb,ar500m,wa199u,ed
+analog/r24_vr:resistor 2.4k,25.00, 20.00,re4,wb,ar500m,wa199u,ed
+analog/r250_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r251_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r252_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r253_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r254_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r255:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r255_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r256:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r256_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r257:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r257_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r258:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r258_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r259:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r259_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r25_mvr:resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa2.82m
+analog/r25_vr:resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa2.82m
+analog/r260_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r261:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r262_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r263_cp:resistor 200k, 30.00, 30.00, re5, wb, ar500m, ed,wa26m
+analog/r265_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r266_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r267_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r268_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r270:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r270_cp:resistor 75,30.00, 25.00,re2,ar100m
+analog/r271_cp:resistor 75,30.00, 25.00,re2,ar100m
+analog/r272_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r273_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r274_cp:resistor 49.9,30.00, 25.00,re2,ar200m
+analog/r275_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r276:resistor 33,40.00, 25.00,re2,ar200m
+analog/r276_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r277:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r277_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r278:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r278_cp:resistor 75,30.00, 25.00,re2,ar100m
+analog/r279:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa5m
+analog/r279_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r280_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r282_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r283:resistor 33,40.00, 25.00,re2,ar200m
+analog/r283_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r284:resistor 33,40.00, 25.00,re2,ar200m
+analog/r284_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r285:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r285_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r286:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r286_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r287:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r287_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r288:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r288_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r289:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r29:resistor 30.1k,25.00, 25.00,re5,wb,ar500m,wa20m,ed
+analog/r290_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r291_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r292:resistor 33,40.00, 25.00,re2,ar200m
+analog/r292_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r293:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r294:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r294_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r295_cp:resistor 75,30.00, 25.00,re2,ar100m
+analog/r296_cp:resistor 10k, 25.00, 20.00, re4, wb, ar100m,ed,en,wa2m
+analog/r297_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r298_cp:resistor 10k, 25.00, 20.00, re4, en, ar100m,ed, wa100m
+analog/r299_cp:resistor 51,30.00, 25.00,re2,ar200m
+analog/r29_mvr:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r29_vr:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r2_adv:resistor 33.2k,25.00, 25.00,re5,wb,ar200m,wa71.5u
+analog/r30:resistor 10k,25.00, 20.00,re4,wb,ar100m,wa11m,ed
+analog/r300_cp:resistor 100k, 30.00, 30.00, re5, wb, ar100m
+analog/r301_cp:resistor 33,40.00, 25.00,re2,ar200m
+analog/r302_cp:resistor 33,40.00, 25.00,re2,ar200m
+analog/r303_cp:resistor 1M, 21.00, 21.00, re6, wb, ar100m, wa5.17u
+analog/r304:resistor 4.75k,25.00, 20.00,re4,wb,ar200m,wa23.9u
+analog/r304_cp:resistor 10M, 30.00, 30.00, re6, wb, ar20.0m, wa7.69u,ed
+analog/r305:resistor 2.94k,25.00, 20.00,re4,wb,ar500m,wa23.9u, ed
+analog/r305_cp:resistor 14.5k+2k, 25.00, 25, re4, ar200m, wb,ed,en
+analog/r306:resistor 12k,25.00, 25.00,re5,wb,ar1.00,wa64.3u,ed
+analog/r306_cp:resistor 1M, 30.00, 30.00, re6, wb, ar100m, wa5.07u
+analog/r307:resistor 13.7k,25.00, 25.00,re5,wb,ar1.00
+analog/r307_cp:resistor 1k,25.00, 20.00,re3,ar100m,wa8.92u
+analog/r308:resistor 220,30.00, 20.00,re3,ar500m
+analog/r308_cp:resistor 20k,25.00, 25.00,re5,wb,ar500m,wa31.5u,ed
+analog/r309:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r309_cp:resistor 100,30.00, 20.00,re2,ar100m
+analog/r31:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r310:resistor 34.05,40.00, 25.00,re2,ar200m
+analog/r310_cp:resistor 100,30.00, 20.00,re2,ar100m
+analog/r311_cp:resistor 20k,25.00, 25.00,re5,wb,ar500m,wa31.5u,ed
+analog/r312:resistor 4.75k,25.00, 20.00,re4,wb,ar200m,wa22.0u
+analog/r312_cp:resistor 100,30.00, 20.00,re2,ar100m
+analog/r313:resistor 4.12k,25.00, 20.00,re4,wb,ar200m,wa2m,ed
+analog/r314:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r314_cp:resistor 33,40.00, 25.00,re2,ar200m
+analog/r315:resistor 34.05,40.00, 25.00,re2,ar200m
+analog/r315_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r316_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r317_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r318_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r320_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r323:resistor 909.09, 25.00, 20.00, re3, ar100m
+analog/r323_cp:resistor 220,30.00, 20.00,re3,ar500m
+analog/r324_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r325:resistor 909.09, 25.00, 20.00, re3, ar100m
+analog/r325_cp:resistor 33,40.00, 25.00,re2,ar200m
+analog/r326:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r326_cp:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r328:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r328_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r329:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r329_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r330:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r331_cp:resistor 33,40.00, 25.00,re2,ar200m
+analog/r332_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r333_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r334:resistor 49.9,30.00, 25.00,re2,ar200m
+analog/r334_cp:resistor 4.75k,25.00, 20.00,re4,wb,ar200m
+analog/r335:resistor 220,30.00, 20.00,re3,ar500m
+analog/r336_cp:resistor 2.7k,25.00, 20.00,re4,wb,ar500m,wa8.06u
+analog/r338:resistor 60,30.00, 25.00,re2,ar200m
+analog/r34:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r342:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r343:resistor 2.2k, 25.00, 20.00, re4, wb, ar500m
+analog/r343_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r344:resistor 2.2k, 25.00, 20.00, re4, wb, ar500m
+analog/r344_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r345:resistor 2.2k, 25.00, 20.00, re4, wb, ar500m
+analog/r346:resistor 2.2k, 25.00, 20.00, re4, wb, ar500m
+analog/r347:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r348:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r349:resistor 33,40.00, 25.00,re2,ar200m
+analog/r35:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r350:resistor 33,25.00,25.00,re2,ar200m
+analog/r351:resistor 20k,25.00, 25.00,re5,wb,ar500m,wa10m,ed
+analog/r352:resistor 13.7k,25.00, 25.00,re5,wb,ar1.00
+analog/r353:resistor 2.67k,25.00, 20.00,re4,wb,ar500m
+analog/r355_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r356_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r358_cp:resistor 10k,25.00, 20.00,re5,wb,ar100m,ed,en
+analog/r359_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r35_cp:resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r360_cp:resistor 33,40.00, 25.00,re2,ar200m
+analog/r362_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r364_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r365_cp:resistor 33,40.00, 25.00,re2,ar200m,sa,sb,ed,en
+analog/r366_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r367_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r37:resistor 33,25.00,25.00,re2,ar200m
+analog/r370:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r371_cp:resistor 240,30.00, 25.00,re3,ar500m
+analog/r372_cp:resistor 240,30.00, 25.00,re3,ar500m
+analog/r373_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r374_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r375:resistor 200,30.00, 20.00,re3,ar500m
+analog/r375_cp:resistor 22.6,40.00, 25.00,re2,ar500m
+analog/r376_cp:resistor 22.6,40.00, 25.00,re2,ar500m
+analog/r377_cp:resistor 1.5k,25.00, 20.00,re4,wb,ar1.00
+analog/r378_cp:resistor 1.5k,25.00, 20.00,re4,wb,ar1.00
+analog/r379_cp:resistor 1.5k,25.00, 20.00,re4,wb,ar1.00
+analog/r380:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r380_cp:resistor 1.5k,25.00, 20.00,re4,wb,ar1.00
+analog/r381_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r382_cp:resistor 51,30.00, 25.00,re2,ar200m
+analog/r383:resistor 220,30.00, 20.00,re3,ar500m
+analog/r383_cp:resistor 220,30.00, 20.00,re3,ar500m
+analog/r384_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r385_cp:resistor 220,30.00, 20.00,re3,ar500m
+analog/r386_cp:resistor 220,30.00, 20.00,re3,ar500m
+analog/r387_cp:resistor 220,30.00, 20.00,re3,ar500m
+analog/r388_cp:resistor 220,30.00, 20.00,re3,ar500m
+analog/r389_cp:resistor 220,30.00, 20.00,re3,ar500m
+analog/r390_cp:resistor 22,32.73,25.00,re2,ar500m
+analog/r391_cp:resistor 22,40.00, 25.00,re2,ar500m
+analog/r392_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r393_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r394_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r395_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r397_cp:resistor 100k, 30.00, 30.00, re5, wb, ar100m
+analog/r398_cp:resistor 100k, 30.00, 30.00, re5, wb, ar100m
+analog/r399_cp:resistor 2.61k,25.00, 20.00,re4,wb,ar500m
+analog/r3_5v:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r3_adv:resistor 10k,25.00, 20.00,re4,wb,ar100m,wa116u,ed,en
+analog/r3_vpp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa132u
+analog/r40:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r401_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r402_cp:resistor 33,40.00, 25.00,re2,ar200m,ed,en,sa,sb
+analog/r405_cp:resistor 22,40.00, 25.00,re2,ar500m
+analog/r406_cp:resistor 22,40.00, 25.00,re2,ar500m
+analog/r407_cp:resistor 220,30.00, 20.00,re3,ar500m
+analog/r408:resistor 825,25.00, 20.00,re3,ar100m
+analog/r409_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r41:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r410_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r411_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r412:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r414_cp:resistor 750,25.00, 20.00,re3,ar100m
+analog/r415_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r417:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r417_cp:resistor 200k, 30.00, 30.00, re4, wb, ar500m, ed, wa26m
+analog/r418:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r419:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r419_cp:resistor 1.5k,25.00, 20.00,re4,wb,ar1.00
+analog/r420_cp:resistor 1.5k,25.00, 20.00,re4,wb,ar1.00
+analog/r421_cp:resistor 1.5k,25.00, 20.00,re4,wb,ar1.00
+analog/r422_cp:resistor 1.5k,25.00, 20.00,re4,wb,ar1.00
+analog/r423_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r424:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r424_cp:resistor 33,40.00, 25.00,re2,ar200m
+analog/r425:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r425_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r426:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r427:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r427_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r428_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r429_cp:resistor 220,30.00, 20.00,re3,ar500m
+analog/r431_cp:resistor 220,30.00, 20.00,re3,ar500m, ed
+analog/r433:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r433_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r434:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r435:resistor 1k, 25.00, 20.00, re3, ar100m
+analog/r435_cp:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r436:resistor 1k, 25.00, 20.00, re3, ar100m
+analog/r437:resistor 33,40.00, 25.00,re2,ar200m
+analog/r437_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r438:resistor 33,40.00, 25.00,re2,ar200m
+analog/r438_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r439_cp:resistor 100k, 30.00, 30.00, re5, wb, ar100m
+analog/r447:resistor 22,40.00, 25.00,re2,ar500m
+analog/r448:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r449:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r451:resistor 1.5k, 25.00, 20.00, re4, wb, ar1.00
+analog/r452:resistor 1.5k, 25.00, 20.00, re4, wb, ar1.00
+analog/r453:resistor 1.5k, 25.00, 20.00, re4, wb, ar1.00
+analog/r454:resistor 1.5k, 25.00, 20.00, re4, wb, ar1.00
+analog/r455:resistor 1.5k, 25.00, 20.00, re4, wb, ar1.00
+analog/r456:resistor 1.5k, 25.00, 20.00, re4, wb, ar1.00
+analog/r457:resistor 220,30.00, 20.00,re3,ar500m
+analog/r460:resistor 150,30.00, 20.00,re3,ar1.00
+analog/r462:resistor 150,30.00, 20.00,re3,ar1.00
+analog/r471:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r472:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r473:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r474:resistor 10k, 25.00, 20.00, re4, wb, ar100m
+analog/r475:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r477:resistor 40.2,30.00, 25.00,re2,ar200m
+analog/r478:resistor 200,30.00, 20.00,re3,ar500m
+analog/r483:resistor 150,30.00, 20.00,re3,ar1.00
+analog/r485:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r486:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r490:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r493:resistor 100k, 30.00, 30.00, re5, wb, ar100m
+analog/r494:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r495:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r498:resistor 22,40.00, 25.00,re2,ar500m
+analog/r499:resistor 22,50.00, 25.00,re2,ar500m
+analog/r4_3v3:resistor 1k, 25.00, 20.00, re3, ar100m
+analog/r4_5v:resistor 57.6k,25.00, 25.00,re5,wb,ar200m,wa10m,ed
+analog/r4_adv:resistor 5.76k,25.00, 20.00,re4,wb,ar200m,wa116u,ed,en
+analog/r4_vpp:resistor 33.2k,25.00, 25.00,re5,wb,ar200m,wa41.7u,ed
+analog/r500:resistor 22,40.00, 25.00,re2,ar500m, ed
+analog/r501:resistor 1k, 25.00, 20.00, re3, ar100m
+analog/r502:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r504:resistor 5.49k,25.00, 20.00,re4,wb,ar200m,wa1.01u
+analog/r513:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r514:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r515:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r516:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r517:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r518:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r519:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r520:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r521:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r522:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r523:resistor 47k, 25.00, 25.00, re5, wb, ar200m
+analog/r525:resistor 22,50.00, 25.00,re2,ar500m
+analog/r526:resistor 22,40.00, 25.00,re2,ar500m,ed,en,sa,sb
+analog/r530:resistor 220,30.00, 20.00,re3,ar500m
+analog/r531:resistor 220,30.00, 20.00,re3,ar500m
+analog/r539:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r541:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r576:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r577:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r579:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r58:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r580:resistor 220,30.00, 20.00,re3,ar500m
+analog/r59:resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+analog/r5_3v3:resistor 57.6k,25.00, 25.00,re5,wb,ar200m
+analog/r5_5v:resistor 13.7k,25.00, 25.00,re5,wb,ar1.00
+analog/r5_vpp:resistor 13.7k,25.00, 25.00,re5,wb,ar1.00
+analog/r60:resistor 10k, 25.00, 20.00, re4, wb, ar100m,ed,wa50m
+analog/r61:resistor 10k, 25.00, 20.00, re4, wb, ar100m, wa5m,ed,am.13
+analog/r62:resistor 100k, 30.00, 30.00, re5, wb, ar100m, wa9.08u
+analog/r64:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r645:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r65:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r66:resistor 100k, 30.00, 30.00, re5, wb, ar100m
+analog/r661:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r666:resistor 2.87k, 25.00, 20.00, re4, wb, ar500m, wa24.6u
+analog/r667:resistor 33,40.00, 25.00,re2,ar200m
+analog/r668:resistor 33,40.00, 25.00,re2,ar200m
+analog/r669:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r67:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r670:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r671:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r672:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r673:resistor 2k,25.00, 20.00,re4,wb,ar500m
+analog/r68:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r69:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r78_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r79_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r80_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r81_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m
+analog/r82_cp:resistor 22.6,40.00, 25.00,re2,ar500m, sb, en
+analog/r83_cp:resistor 22.6,40.00, 25.00,re2,ar500m, en, ed
+analog/r86_cp:resistor 121,30.00, 25.00,re3,ar1.00
+analog/r87_cp:resistor 40.2,30.00, 25.00,re2,ar200m
+analog/r88_cp:resistor 130,30.00, 25.00,re3,ar1.00
+analog/r89_cp:resistor 7.5k,25.00, 20.00,re4,wb,ar100m
+analog/r90_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r912:resistor 105k, 30.00, 30.00, re6, wb, ar1.00, wa2.06u
+analog/r913:resistor 249k, 30.00, 30.00, re6, wb, ar500m, ed, wa10m
+analog/r91_cp:resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r922:resistor 4.42k,25.00, 20.00,re4,wb,ar200m,wa17m,ed
+analog/r92_cp:resistor 20,50.00, 25.00,re2,ar500m
+analog/r935:resistor 1k,25.00, 20.00,re3,ar100m,ed,wa10m,en
+analog/r936:resistor 84.5,30.00, 20.00,re2,ar100m,wa179u,ed
+analog/r937:resistor 150k, 30.00, 30.00, re6, wb, ar1.00, wa2.24u
+analog/r94_cp:resistor 1k,25.00, 20.00,re3,ar100m
+analog/r95_cp:resistor 240,30.00, 25.00,re3,ar500m
+analog/r98_cp:resistor 7.5k,25.00, 20.00,re4,wb,ar100m
+analog/r99_cp:resistor 22.6,40.00, 25.00,re2,ar500m
+analog/u10_cp%presence.l:analog/u10_cp%presence
+analog/u19%freq:     detector frequency, gate 1, expect (125.00M * 0.0125), threshold 2.5
+analog/y1:  test "Freq_in"
+analog/y1:  test "Freq_out"
+analog/y1:subtest "Freq_in"
+analog/y1:  detector frequency, expect  32.768k
+analog/y1:subtest "Freq_out"
+analog/y1:  detector frequency, expect  32.768k
+analog/y1.o:ÿÿÿÿy1.freq_in
+analog/y1.o:ÿÿÿÿy1.freq_in
+analog/y1_cp:  test "Freq_out"
+analog/y1_cp:  test "Freq_in"
+analog/y1_cp:subtest "Freq_out"
+analog/y1_cp:  detector frequency, expect  32.768k
+analog/y1_cp:subtest "Freq_in"
+analog/y1_cp:  detector frequency, expect  32.768k
+analog/y2_cp:  test "Freq_in"
+analog/y2_cp:  test "Freq_out"
+analog/y2_cp:subtest "Freq_in"
+analog/y2_cp:  detector frequency, expect  25M
+analog/y2_cp:subtest "Freq_out"
+analog/y2_cp:  detector frequency, expect  25M
+analog/y3_cp:  test "Freq_in"
+analog/y3_cp:  test "Freq_out"
+analog/y3_cp:subtest "Freq_in"
+analog/y3_cp:  detector frequency, expect  25M
+analog/y3_cp:subtest "Freq_out"
+analog/y3_cp:  detector frequency, expect  25M

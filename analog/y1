@@ -1,0 +1,22 @@
+!!!!    2    0    1 1529027814  V474e                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:55 2018
+test powered analog
+
+  nonanalog pins 2
+
+  test "Freq_in"
+  test "Freq_out"
+end test
+
+subtest "Freq_in"
+  clear connect rcvc to pins 1
+  detector frequency, expect  32.768k
+  measure   32.768k * 1.05,  32.768k * .95
+end subtest
+
+subtest "Freq_out"
+  clear connect rcvc to pins 2
+  detector frequency, expect  32.768k
+  measure   32.768k * 1.05,  32.768k * .95
+end subtest
+

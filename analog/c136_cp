@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531983429   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:18 2018
+disconnect all
+connect s to "GND"; a to "GND"
+connect i to "XDP_CPU_PWR_DEBUG_N_CP"
+connect g to "P1V05C"; l to "P1V05C" 
+capacitor 100n, 35.00, 40.00, fr8192, re3, wb, ar100m, sa,ed,en, nocomp
+warning "excessive plus tolerance or high limit."
+! "c136_cp" is a commented test.

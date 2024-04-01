@@ -1,0 +1,13 @@
+!!!!    2    0    1 1530583114  Vee1f                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:25 2018
+on failure
+report parallel devices
+report "c10_mvr 10.0n"
+end on failure
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_29_RES_I264_B"
+!B!resistor 5.49k, 6.00, 6.00, re4, wb, ar200m, wa1.01u
+resistor 5.49k,25.00, 20.00,re4,wb,ar200m,wa1.01u
+! "r504" test.
+off failure

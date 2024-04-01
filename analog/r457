@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583080  V0af5                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:19 2018
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_26_PI3B3253_I1_EA"
+!B!resistor 220, 8.27, 6.00, re3, ar500m
+resistor 220,30.00, 20.00,re3,ar500m
+! "r457" test.

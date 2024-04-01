@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531968318   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:27 2018
+disconnect all
+connect s to "VCCSUS3_3"
+connect i to "GPIO59"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+! "r164_cp" test.

@@ -1,0 +1,12 @@
+!!!!    2    0    1 1687932061   0000                                         
+!* Measure the value is 14.5k in golden sample
+! IPG: rev 07.20pd Fri Jun 15 09:56:17 2018
+disconnect all
+connect s to "XTAL_KR_EPHY_REFCLK_IN_CP"
+connect i to "XTAL_KR_EPHY_REFCLK_OUT_CP"
+connect g to "GND" 
+resistor 14.5k, 30.00, 30, re2, ar200m, wb,ed,en
+!~resistor 14.5k, 25, 18, re4, ar200m, wb,ed,en,wa20m
+!resistor 1M, 21.00, 21.00, re6, wb, ar100m,ed, wa5.17u
+! "r305_cp" test.
+

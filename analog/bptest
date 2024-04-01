@@ -1,0 +1,46 @@
+!!!!    2    0    1 1350450901  V543f                                         
+!analog powered
+
+test powered analog
+  disconnect all
+
+  test "Diode"
+  test "Presence"
+end test
+
+
+subtest "Diode"
+connect s to nodes "BPANODE"       !~Opto Diode Anode !pin2
+connect i to nodes "BPANODE"       !~Opto Diode Anode ! pin2
+connect g to nodes "BPCATHODE"     !~Opto Diode Cathode  ! pin1
+connect g to ground                !~Tie Grounds to System Ground
+connect l to ground                !~Reference measurement to Ground
+
+source dcv, amplitude 5, on , icompliance 1, terminated  5k
+detector dcv,  expect 1
+wait 50m
+measure 1.2, 0.8
+end subtest
+
+!~When wiring, add a current limiting resistor between the ASRU aux source
+!~and the probe for BPANODE
+subtest "Presence"
+connect s to nodes "BPSOURCE"      !~Opto Transistor Reciever Collector! pin 3
+connect a to nodes "BPANODE"       !~Opto Diode Anode (need resistor) ! pin 2
+
+connect g to nodes "BPCATHODE"     !~Opto Diode Cathode  ! pin 1
+connect g to nodes "BPSENSE"       !~Opto Transistor Reciever Emitter  ! pin 4
+connect g to ground                !~Tie Grounds to System Ground
+
+connect l to ground                !~Reference measuremet from Ground
+connect i to nodes "BPSOURCE"      !~Take measuremet at Terminatred Collector ! pin 3
+
+detector dcv,  expect 5
+source dcv, amplitude 5, on , icompliance 1, terminated  500
+auxiliary dcv, amplitude 5, on, icompliance 1
+wait 50m
+measure 5.1,4
+end subtest
+
+!!end test
+

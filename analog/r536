@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027709   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:10 2018
+disconnect all
+connect s to "SRT_CLK_100M_PHY3_N"
+connect i to "CLK_100M_PE_FP_N"
+jumper 6.04, re1, ar200m
+! "r536" test.

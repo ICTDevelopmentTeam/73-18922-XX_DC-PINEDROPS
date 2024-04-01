@@ -1,0 +1,23 @@
+!!!!    2    0    1 1530585631  Vd6b8                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:30 2018
+disconnect all
+connect s to "GND"
+connect i to "FAN23_PWM_BASE_F"
+!B!diode "B-E", 805m, 603m, idc10m, co3.0, ar805m
+diode "B-E",950m,603m,idc25m,co3.0,ar805m
+! "q1_f%q1 B-E" test.
+disconnect all
+connect s to "FAN_23_PWM_F"
+connect i to "FAN23_PWM_BASE_F"
+!B!diode "B-C", 805m, 603m, idc10m, co3.0, ar805m
+diode "B-C",950m,603m,idc25m,co3.0,ar805m
+! "q1_f%q1 B-C" test.
+! The preceding simplified transistor test was generated to minimize
+! The following beta test may be used for transistors requiring such
+! tests, though it may require tuning.
+disconnect all
+connect s to "GND"
+connect i to "FAN23_PWM_BASE_F"
+connect g to "FAN_23_PWM_F"
+! npn "BETA", 1.00k, 40.1, idc1.0m, idelta10, co10
+npn "BETA", 800, 20, idc20m, idelta10, co10

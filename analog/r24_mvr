@@ -1,0 +1,13 @@
+!!!!    2    0    1 1531145004   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:47 2018
+on failure
+report parallel devices
+report "c04_mvr 10.0n"
+end on failure
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_7_CAP_I279_B_MVR"
+connect g to "P5V"
+resistor 2.4k,25.00, 20.00,re4,wb,ar500m,wa199u,ed
+! "r24_mvr" test.
+off failure

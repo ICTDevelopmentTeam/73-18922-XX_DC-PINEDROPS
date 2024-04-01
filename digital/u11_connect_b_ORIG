@@ -1,0 +1,361 @@
+!!!!   24    0    1 1529027816  Ve9bc                                         
+! Copyright (c) Agilent Technologies, Inc. 1995-1996, 1998-2000, 2002-2003, 2006-2008
+!IPG: rev 07.20pd Fri Jun 15 09:56:57 2018
+
+connect "u11"
+
+!IPG: User may add option statements here if needed.
+
+ground bounce suppression   on
+!IPG  family "???"
+!IPG: Family information could not be found for any node; TTL will be assumed
+
+!IPG: Connect test generated with CONNECTMAX value of 100
+
+chain "u11_u11"
+  tdi "JTAG_TDI_FPGA_3V3"
+  tdo "JTAG_TDO_FPGA_3V3"
+  tms "JTAG_TMS_FPGA_3V3"
+  tck "UNNAMED_24_HDR2X5_I306_P1"
+  devices
+    "u11", "custom_lib/16-4243-01.bsd", "FBGA484", no
+  end devices
+end chain
+
+!IPG: Family information could not be found for node JTAG_TDI_FPGA_3V3
+!IPG: Family information could not be found for node JTAG_TDO_FPGA_3V3
+!IPG: Family information could not be found for node JTAG_TMS_FPGA_3V3
+!IPG: Family information could not be found for node UNNAMED_24_HDR2X5_I306_P1
+
+disables "disable vector"
+  node "BUF_SPI_FLSH_SEL_CP" family "LVT_2V5" hybrid default "0"
+  node "DIMM_THERM_EVENT_L_2V5_CP" family "TTL" hybrid default "1"
+  node "ERR_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "ERR_OE2_CP" family "FLASH_1V8" hybrid default "1"
+  node "FAULT_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "FPGA_LB_NVRAM_CS0" family "LVT" hybrid default "0"
+  node "FPGA_LB_NVRAM_CS1" family "LVT" hybrid default "0"
+  node "FPGA_LB_NVRAM_CS2" family "LVT" hybrid default "0"
+  node "FPGA_LB_NVRAM_CS3" family "LVT" hybrid default "0"
+  node "FPGA_LB_OE_L" family "TTL" hybrid default "1"
+  node "HOT_OE_CP" family "LVT" hybrid default "1"
+  node "JTAG_1V05SB_TDO_CP" family "TTL" hybrid default "1"
+  node "JTAG_BDX_TCK_CP" family "TTL" hybrid default "1"
+  node "RTC_NVRAM_CS_PROT_L" family "TTL" hybrid default "1"
+  node "SMBUS_FAN_SCL" family "LVT" hybrid default "1"
+  node "SRT_ACT2_SCL" family "LVT" hybrid default "1"
+  node "TH_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "UNNAMED_15_PCA9617_I66_EN" family "LVT" hybrid default "0"
+  node "UNNAMED_18_LVC2244_I41_OE" family "LVT" hybrid default "1"
+  node "UNNAMED_18_LVC2244_I42_OE" family "LVT" hybrid default "1"
+  node "UNNAMED_38_AVC8T245_I91_OE_CP" family "LVT" hybrid default "1"
+  node "UNNAMED_38_AVC8T245_I146_OE_CP" family "LVT" hybrid default "1"
+  node "UNNAMED_43_PI3B3257PG_I28_E_CP" family "LVT" hybrid default "1"
+
+  pcf order is nodes "BUF_SPI_FLSH_SEL_CP","DIMM_THERM_EVENT_L_2V5_CP"
+  pcf order is nodes "ERR_OE1_CP","ERR_OE2_CP","FAULT_OE1_CP"
+  pcf order is nodes "FPGA_LB_NVRAM_CS0","FPGA_LB_NVRAM_CS1"
+  pcf order is nodes "FPGA_LB_NVRAM_CS2","FPGA_LB_NVRAM_CS3"
+  pcf order is nodes "FPGA_LB_OE_L","HOT_OE_CP","JTAG_1V05SB_TDO_CP"
+  pcf order is nodes "JTAG_BDX_TCK_CP","RTC_NVRAM_CS_PROT_L"
+  pcf order is nodes "SMBUS_FAN_SCL","SRT_ACT2_SCL","TH_OE1_CP"
+  pcf order is nodes "UNNAMED_15_PCA9617_I66_EN"
+  pcf order is nodes "UNNAMED_18_LVC2244_I41_OE"
+  pcf order is nodes "UNNAMED_18_LVC2244_I42_OE"
+  pcf order is nodes "UNNAMED_38_AVC8T245_I91_OE_CP"
+  pcf order is nodes "UNNAMED_38_AVC8T245_I146_OE_CP"
+  pcf order is nodes "UNNAMED_43_PI3B3257PG_I28_E_CP"
+  unit "disable_1"
+  pcf
+  "01111000011111111011111"
+  end pcf
+  end unit
+end disables
+
+!IPG: The disable section above disables or conditions the following pins:
+!IPG:   act2.13  u100.11  u100.12  u100.13  u100.14  u100.15  u100.16
+!IPG:   u100.17  u100.18  u100.2  u100.3  u100.4  u100.5  u100.6
+!IPG:   u100.7  u100.8  u100.9  u12.12  u12.14  u12.16  u12.18  u12.2
+!IPG:   u12.4  u12.6  u12.8  u14_cp.10  u14_cp.11  u14_cp.12  u14_cp.13
+!IPG:   u14_cp.4  u14_cp.5  u14_cp.6  u14_cp.7  u15_cp.12  u15_cp.13
+!IPG:   u15_cp.4  u15_cp.5  u17_cp.10  u17_cp.14  u17_cp.15  u17_cp.16
+!IPG:   u17_cp.17  u17_cp.18  u17_cp.19  u17_cp.20  u17_cp.21  u17_cp.3
+!IPG:   u17_cp.4  u17_cp.5  u17_cp.6  u17_cp.7  u17_cp.8  u17_cp.9
+!IPG:   u18_cp.10  u18_cp.14  u18_cp.15  u18_cp.16  u18_cp.17  u18_cp.18
+!IPG:   u18_cp.19  u18_cp.20  u18_cp.21  u18_cp.3  u18_cp.4  u18_cp.5
+!IPG:   u18_cp.6  u18_cp.7  u18_cp.8  u18_cp.9  u19_cp.12  u19_cp.13
+!IPG:   u19_cp.4  u19_cp.5  u20_cp.10  u20_cp.14  u20_cp.15  u20_cp.16
+!IPG:   u20_cp.17  u20_cp.18  u20_cp.19  u20_cp.20  u20_cp.21  u20_cp.3
+!IPG:   u20_cp.4  u20_cp.5  u20_cp.6  u20_cp.7  u20_cp.8  u20_cp.9
+!IPG:   u22_cp.4  u23.11  u23.12  u23.13  u23.15  u23.16  u23.17
+!IPG:   u23.18  u23.19  u24.29  u24.30  u24.31  u24.32  u24.33  u24.34
+!IPG:   u24.35  u24.36  u24.38  u24.39  u24.40  u24.41  u24.42  u24.43
+!IPG:   u24.44  u24.45  u29.2  u29.3  u29.6  u29.7  u30.12  u31_cp.4
+!IPG:   u33_cp.4  u3_cp.12  u3_cp.4  u3_cp.7  u3_cp.9  u4.29  u4.30
+!IPG:   u4.31  u4.32  u4.33  u4.34  u4.35  u4.36  u4.38  u4.39
+!IPG:   u4.40  u4.41  u4.42  u4.43  u4.44  u4.45  u4_cp.1  u4_cp.4
+!IPG:   u5.29  u5.30  u5.31  u5.32  u5.33  u5.34  u5.35  u5.36
+!IPG:   u5.38  u5.39  u5.40  u5.41  u5.42  u5.43  u5.44  u5.45
+!IPG:   u6.29  u6.30  u6.31  u6.32  u6.33  u6.34  u6.35  u6.36
+!IPG:   u6.38  u6.39  u6.40  u6.41  u6.42  u6.43  u6.44  u6.45
+
+!IPG: Safeguard will ignore disabled outputs
+disabled device "act2" pins 13
+!IPG: with pin 12 on node "SRT_ACT2_SCL"
+disabled device "u100" pins 11,12,13,14,15,16,17,18,2,3,4,5,6,7,8,9
+!IPG: with pin 1 on node "UNNAMED_18_LVC2244_I41_OE"
+!IPG:      pin 19 on node "UNNAMED_18_LVC2244_I41_OE"
+disabled device "u12" pins 12,14,16,18,2,4,6,8
+!IPG: with pin 1 on node "UNNAMED_18_LVC2244_I42_OE"
+disabled device "u14_cp" pins 10,11,12,13,4,5,6,7
+!IPG: with pin 15 on node "ERR_OE1_CP"
+!IPG:      pin 14 on node "ERR_OE2_CP"
+disabled device "u15_cp" pins 12,13,4,5
+!IPG: with pin 15 on node "FAULT_OE1_CP"
+disabled device "u17_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u17_cp" pins 9
+!IPG: with pin 22 on node "UNNAMED_38_AVC8T245_I146_OE_CP"
+disabled device "u18_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u18_cp" pins 9
+!IPG: with pin 22 on node "UNNAMED_38_AVC8T245_I91_OE_CP"
+disabled device "u19_cp" pins 12,13,4,5
+!IPG: with pin 15 on node "TH_OE1_CP"
+disabled device "u20_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u20_cp" pins 9
+!IPG: with pin 22 on node "HOT_OE_CP"
+disabled device "u22_cp" pins 4
+!IPG: with pin 1 on node "JTAG_1V05SB_TDO_CP"
+disabled device "u23" pins 11,12,13,15,16,17,18,19
+!IPG: with pin 22 on node "FPGA_LB_OE_L"
+disabled device "u24" pins 29,30,31,32,33,34,35,36,38,39,40,41,42,43
+disabled device "u24" pins 44,45
+!IPG: with pin 12 on node "FPGA_LB_NVRAM_CS0"
+!IPG:      pin 26 on node "RTC_NVRAM_CS_PROT_L"
+!IPG:      pin 28 on node "FPGA_LB_OE_L"
+disabled device "u29" pins 2,3,6,7
+!IPG: with pin 5 on node "UNNAMED_15_PCA9617_I66_EN"
+disabled device "u30" pins 12
+!IPG: with pin 14 on node "SMBUS_FAN_SCL"
+disabled device "u31_cp" pins 4
+!IPG: with pin 1 on node "JTAG_BDX_TCK_CP"
+disabled device "u33_cp" pins 4
+!IPG: with pin 1 on node "DIMM_THERM_EVENT_L_2V5_CP"
+disabled device "u3_cp" pins 12,4,7,9
+!IPG: with pin 15 on node "UNNAMED_43_PI3B3257PG_I28_E_CP"
+disabled device "u4" pins 29,30,31,32,33,34,35,36,38,39,40,41,42,43
+disabled device "u4" pins 44,45
+!IPG: with pin 12 on node "FPGA_LB_NVRAM_CS1"
+!IPG:      pin 26 on node "RTC_NVRAM_CS_PROT_L"
+!IPG:      pin 28 on node "FPGA_LB_OE_L"
+disabled device "u4_cp" pins 1,4
+!IPG: with pin 6 on node "BUF_SPI_FLSH_SEL_CP"
+disabled device "u5" pins 29,30,31,32,33,34,35,36,38,39,40,41,42,43
+disabled device "u5" pins 44,45
+!IPG: with pin 12 on node "FPGA_LB_NVRAM_CS3"
+!IPG:      pin 26 on node "RTC_NVRAM_CS_PROT_L"
+!IPG:      pin 28 on node "FPGA_LB_OE_L"
+disabled device "u6" pins 29,30,31,32,33,34,35,36,38,39,40,41,42,43
+disabled device "u6" pins 44,45
+!IPG: with pin 12 on node "FPGA_LB_NVRAM_CS2"
+!IPG:      pin 26 on node "RTC_NVRAM_CS_PROT_L"
+!IPG:      pin 28 on node "FPGA_LB_OE_L"
+
+!IPG: User may add VCL pass-through statements here if needed.
+
+nodes
+  node "BOARD_ID1" hybrid test "u11.L22"
+  node "BUF_PCH_PLTRST_L" hybrid test "u11.H17"
+  node "CLK25M_FPGA_TCXO_AC_P" hybrid test "u11.M8"
+  node "CLK125M_FPGA" hybrid test "u11.M11"
+  node "CONSOLE_RXD" hybrid test "u11.D16"
+  node "CPU_FPGA_CPU2PCH_THROT" hybrid test "u11.E5"
+  node "CPU_FPGA_ERR0" hybrid test "u11.D11"
+  node "CPU_FPGA_ERR1" hybrid test "u11.D10"
+  node "CPU_FPGA_PLTRST_PROC_L" hybrid test "u11.E8"
+  node "CPU_PROCHOT_3V3_L" hybrid test "u11.E6"
+  node "CPU_THERMTRIP_3V3_L" hybrid test "u11.D14"
+  node "DC_CONSOLE_RXD" hybrid test "u11.K10"
+  node "DC_CONSOLE_TXD" hybrid test "u11.E17"
+  node "FAN45_PG" hybrid test "u11.H12"
+  node "FAN45_PRSNT_L" hybrid test "u11.G12"
+  node "FPGA_BDX_CPU_RSMRST_N" hybrid test "u11.G20"
+  node "FPGA_CPU_BRD_ID1" hybrid test "u11.F18"
+  node "FPGA_CPU_MFG_MODE_STRAP" hybrid test "u11.J15"
+  node "FPGA_CPU_PCH_PLTRST_N" hybrid test "u11.J19"
+  node "FPGA_CPU_THERMTRIP_3V3_L" hybrid test "u11.K19"
+  node "FPGA_FAST_PROCHOT" hybrid test "u11.E20"
+  node "FPGA_LB_ADDR<0>" hybrid test "u11.J22"
+  node "FPGA_LB_ADDR<21>" hybrid test "u11.L13"
+  node "FPGA_LB_DATA<0>" hybrid test "u11.H21"
+  node "FPGA_LB_DATA<1>" hybrid test "u11.G21"
+  node "FPGA_LB_DATA<2>" hybrid test "u11.E22"
+  node "FPGA_LB_DATA<3>" hybrid test "u11.D22"
+  node "FPGA_LB_DATA<8>" hybrid test "u11.G22"
+  node "FPGA_LB_DATA<9>" hybrid test "u11.F22"
+  node "FPGA_LB_DATA<10>" hybrid test "u11.E21"
+  node "FPGA_LB_DATA<11>" hybrid test "u11.D21"
+  node "FPGA_LB_NVRAM_CE_L" hybrid test "u11.M19"
+!IPG used for disable:   node "FPGA_LB_NVRAM_CS1" hybrid test "u11.D15"
+!IPG used for disable:   node "FPGA_LB_NVRAM_CS2" hybrid test "u11.G15"
+!IPG used for disable:   node "FPGA_LB_NVRAM_CS3" hybrid test "u11.K12"
+!IPG used for disable:   node "FPGA_LB_OE_L" hybrid test "u11.H22"
+  node "FPGA_MGMT_SFP_SDA" hybrid test "u11.F8"
+  node "FPGA_PCH_APWROK" hybrid test "u11.L19"
+  node "FPGA_PCH_CATERR_DLY_L" hybrid test "u11.H13"
+  node "FPGA_PCH_PWRBTN_L" hybrid test "u11.D19"
+  node "FPGA_PCH_PWROK" hybrid test "u11.K14"
+  node "FPGA_PCH_SRTCRST" hybrid test "u11.M14"
+  node "FPGA_PCH_SYS_RESET_L" hybrid test "u11.K13"
+  node "FPGA_PCH_WDT_L" hybrid test "u11.H9"
+  node "FPGA_PWRGOOD_CPU" hybrid test "u11.L20"
+  node "FPGA_SDO" hybrid test "u11.K4"
+  node "FPGA_SPARE_PIN_1" hybrid test "u11.J14"
+  node "IO_MI2_FPGA_SPARE<0>" hybrid test "u11.F16"
+  node "IO_MI2_FPGA_SPARE<1>" hybrid test "u11.H14"
+  node "IO_MI2_FPGA_SPARE<2>" hybrid test "u11.J12"
+  node "IO_MI_FPGA_SPARE<0>" hybrid test "u11.H7"
+  node "IO_MI_FPGA_SPARE<1>" hybrid test "u11.G7"
+  node "IO_MI_FPGA_SPARE<2>" hybrid test "u11.G6"
+  node "JTAG_CABLE_PRSNT_L" hybrid test "u11.G14"
+  node "JTAG_FPGA_CPU_TDI_3V3" hybrid test "u11.M17"
+  node "JTAG_FPGA_CPU_TMS_3V3" hybrid test "u11.M13"
+  node "JTAG_FPGA_CPU_TRST_3V3" hybrid test "u11.F20"
+  node "MDIO_SEL0" hybrid test "u11.K20"
+  node "MDIO_SEL1" hybrid test "u11.D20"
+  node "MGMT_CONSOLE_RXD" hybrid test "u11.J10"
+  node "P5V_PGOOD" hybrid test "u11.D13"
+  node "PCH_FPGA_SLP_S3_L" hybrid test "u11.L15"
+  node "PCH_FPGA_SLP_S4_L" hybrid test "u11.L14"
+  node "PCH_LPC_LAD<1>" hybrid test "u11.M16"
+  node "PCH_LPC_LAD<2>" hybrid test "u11.L16"
+  node "PCH_LPC_LAD<3>" hybrid test "u11.M18"
+  node "PCH_PSU_POWER_CYCLE_L" hybrid test "u11.L21"
+  node "PCH_SERIRQ" hybrid test "u11.J16"
+  node "PMBUS2_ALERT_L" hybrid test "u11.H20"
+  node "PMBUS2_SDA" hybrid test "u11.J21"
+  node "PSU1_AC_OK" hybrid test "u11.G17"
+  node "PSU1_DC_OK" hybrid test "u11.G18"
+  node "PSU2_AC_OK" hybrid test "u11.K22"
+  node "PSU2_DC_OK" hybrid test "u11.G16"
+  node "R_SPI_PCH_MISO" hybrid test "u11.G19"
+  node "SPI_PCH_CS0_L" hybrid test "u11.H15"
+  node "SPI_PCH_CS1_L" hybrid test "u11.H16"
+  node "SRT_CLK100M_FPGA_PE_P" hybrid test "u11.M7"
+  node "SRT_FPGA_PCH_SPARE2" hybrid test "u11.G10"
+  node "SRT_FPGA_SPI_CS_L" hybrid test "u11.J4"
+  node "SRT_IO_MI2_DATA" hybrid test "u11.J13"
+  node "SRT_IO_MI_DATA" hybrid test "u11.G8"
+  node "SRT_IO_MI_STROBE" hybrid test "u11.H8"
+  node "SRT_IOFPGA_MIFPGA_LEDCLK" hybrid test "u11.D17"
+  node "SRT_MI2_IO_DATA" hybrid test "u11.F12"
+  node "SRT_MI_IO_DATA" hybrid test "u11.D12"
+  node "SRT_MIFPGA_OK" hybrid test "u11.F6"
+  node "SRT_PMBUS2_SCL" hybrid test "u11.J20"
+  node "UNNAMED_24_EP4CGX50FG484_I251_GXBRX1N" hybrid test "u11.H1"
+  node "UNNAMED_24_EP4CGX50FG484_I251_GXBRX1N" hybrid test "u11.M1"
+  node "UNNAMED_24_EP4CGX50FG484_I251_GXBRX1N" hybrid test "u11.T1"
+  node "UNNAMED_24_EP4CGX50FG484_I251_GXBRX1P" hybrid test "u11.H2"
+  node "UNNAMED_24_EP4CGX50FG484_I251_GXBRX1P" hybrid test "u11.M2"
+  node "UNNAMED_24_EP4CGX50FG484_I251_GXBRX1P" hybrid test "u11.T2"
+  node "VCCSUS3_3_PGOOD" hybrid test "u11.M15"
+
+!IPG: Disable problems, the following nodes retained for fixture wiring.
+  node "CPU_VR_FAULT_L" hybrid test "u11.F17" !Not disabled
+  node "P1V2_VDDQ_EN" hybrid test "u11.K17" !Not disabled
+end nodes
+
+!IPG: Family information could not be found for node BOARD_ID1
+!IPG: Family information could not be found for node BUF_PCH_PLTRST_L
+!IPG: Family information could not be found for node CLK25M_FPGA_TCXO_AC_P
+!IPG: Family information could not be found for node CLK125M_FPGA
+!IPG: Family information could not be found for node CONSOLE_RXD
+!IPG: Family information could not be found for node CPU_FPGA_CPU2PCH_THROT
+!IPG: Family information could not be found for node CPU_FPGA_ERR0
+!IPG: Family information could not be found for node CPU_FPGA_ERR1
+!IPG: Family information could not be found for node CPU_FPGA_PLTRST_PROC_L
+!IPG: Family information could not be found for node CPU_PROCHOT_3V3_L
+!IPG: Family information could not be found for node CPU_THERMTRIP_3V3_L
+!IPG: Family information could not be found for node DC_CONSOLE_RXD
+!IPG: Family information could not be found for node DC_CONSOLE_TXD
+!IPG: Family information could not be found for node FAN45_PG
+!IPG: Family information could not be found for node FAN45_PRSNT_L
+!IPG: Family information could not be found for node FPGA_BDX_CPU_RSMRST_N
+!IPG: Family information could not be found for node FPGA_CPU_BRD_ID1
+!IPG: Family information could not be found for node FPGA_CPU_MFG_MODE_STRAP
+!IPG: Family information could not be found for node FPGA_CPU_PCH_PLTRST_N
+!IPG: Family information could not be found for node FPGA_CPU_THERMTRIP_3V3_L
+!IPG: Family information could not be found for node FPGA_FAST_PROCHOT
+!IPG: Family information could not be found for node FPGA_LB_ADDR<0>
+!IPG: Family information could not be found for node FPGA_LB_ADDR<21>
+!IPG: Family information could not be found for node FPGA_LB_DATA<0>
+!IPG: Family information could not be found for node FPGA_LB_DATA<1>
+!IPG: Family information could not be found for node FPGA_LB_DATA<2>
+!IPG: Family information could not be found for node FPGA_LB_DATA<3>
+!IPG: Family information could not be found for node FPGA_LB_DATA<8>
+!IPG: Family information could not be found for node FPGA_LB_DATA<9>
+!IPG: Family information could not be found for node FPGA_LB_DATA<10>
+!IPG: Family information could not be found for node FPGA_LB_DATA<11>
+!IPG: Family information could not be found for node FPGA_LB_NVRAM_CE_L
+!IPG: Family information could not be found for node FPGA_LB_NVRAM_CS1
+!IPG: Family information could not be found for node FPGA_LB_NVRAM_CS2
+!IPG: Family information could not be found for node FPGA_LB_NVRAM_CS3
+!IPG: Family information could not be found for node FPGA_LB_OE_L
+!IPG: Family information could not be found for node FPGA_MGMT_SFP_SDA
+!IPG: Family information could not be found for node FPGA_PCH_APWROK
+!IPG: Family information could not be found for node FPGA_PCH_CATERR_DLY_L
+!IPG: Family information could not be found for node FPGA_PCH_PWRBTN_L
+!IPG: Family information could not be found for node FPGA_PCH_PWROK
+!IPG: Family information could not be found for node FPGA_PCH_SRTCRST
+!IPG: Family information could not be found for node FPGA_PCH_SYS_RESET_L
+!IPG: Family information could not be found for node FPGA_PCH_WDT_L
+!IPG: Family information could not be found for node FPGA_PWRGOOD_CPU
+!IPG: Family information could not be found for node FPGA_SDO
+!IPG: Family information could not be found for node FPGA_SPARE_PIN_1
+!IPG: Family information could not be found for node IO_MI2_FPGA_SPARE<0>
+!IPG: Family information could not be found for node IO_MI2_FPGA_SPARE<1>
+!IPG: Family information could not be found for node IO_MI2_FPGA_SPARE<2>
+!IPG: Family information could not be found for node IO_MI_FPGA_SPARE<0>
+!IPG: Family information could not be found for node IO_MI_FPGA_SPARE<1>
+!IPG: Family information could not be found for node IO_MI_FPGA_SPARE<2>
+!IPG: Family information could not be found for node JTAG_CABLE_PRSNT_L
+!IPG: Family information could not be found for node JTAG_FPGA_CPU_TDI_3V3
+!IPG: Family information could not be found for node JTAG_FPGA_CPU_TMS_3V3
+!IPG: Family information could not be found for node JTAG_FPGA_CPU_TRST_3V3
+!IPG: Family information could not be found for node MDIO_SEL0
+!IPG: Family information could not be found for node MDIO_SEL1
+!IPG: Family information could not be found for node MGMT_CONSOLE_RXD
+!IPG: Family information could not be found for node P5V_PGOOD
+!IPG: Family information could not be found for node PCH_FPGA_SLP_S3_L
+!IPG: Family information could not be found for node PCH_FPGA_SLP_S4_L
+!IPG: Family information could not be found for node PCH_LPC_LAD<1>
+!IPG: Family information could not be found for node PCH_LPC_LAD<2>
+!IPG: Family information could not be found for node PCH_LPC_LAD<3>
+!IPG: Family information could not be found for node PCH_PSU_POWER_CYCLE_L
+!IPG: Family information could not be found for node PCH_SERIRQ
+!IPG: Family information could not be found for node PMBUS2_ALERT_L
+!IPG: Family information could not be found for node PMBUS2_SDA
+!IPG: Family information could not be found for node PSU1_AC_OK
+!IPG: Family information could not be found for node PSU1_DC_OK
+!IPG: Family information could not be found for node PSU2_AC_OK
+!IPG: Family information could not be found for node PSU2_DC_OK
+!IPG: Family information could not be found for node R_SPI_PCH_MISO
+!IPG: Family information could not be found for node SPI_PCH_CS0_L
+!IPG: Family information could not be found for node SPI_PCH_CS1_L
+!IPG: Family information could not be found for node SRT_CLK100M_FPGA_PE_P
+!IPG: Family information could not be found for node SRT_FPGA_PCH_SPARE2
+!IPG: Family information could not be found for node SRT_FPGA_SPI_CS_L
+!IPG: Family information could not be found for node SRT_IO_MI2_DATA
+!IPG: Family information could not be found for node SRT_IO_MI_DATA
+!IPG: Family information could not be found for node SRT_IO_MI_STROBE
+!IPG: Family information could not be found for node SRT_IOFPGA_MIFPGA_LEDCLK
+!IPG: Family information could not be found for node SRT_MI2_IO_DATA
+!IPG: Family information could not be found for node SRT_MI_IO_DATA
+!IPG: Family information could not be found for node SRT_MIFPGA_OK
+!IPG: Family information could not be found for node SRT_PMBUS2_SCL
+!IPG: Family information could not be found for node UNNAMED_24_EP4CGX50FG484_I251_GXBRX1N
+!IPG: Family information could not be found for node UNNAMED_24_EP4CGX50FG484_I251_GXBRX1P
+!IPG: Family information could not be found for node VCCSUS3_3_PGOOD
+!IPG: Family information could not be found for node CPU_VR_FAULT_L
+!IPG: Family information could not be found for node P1V2_VDDQ_EN
+end connect
+

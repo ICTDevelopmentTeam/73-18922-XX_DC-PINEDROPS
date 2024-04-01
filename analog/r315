@@ -1,0 +1,13 @@
+!!!!    2    0    1 1619493310   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:13 2018
+on failure
+report parallel devices
+report "r316 68.1"
+end on failure
+disconnect all
+connect s to "P1V5_PCH"
+connect i to "P1V5_C"
+!B!resistor 34.05, 20.68, 6.00, re2, ar200m
+resistor 34.05,40.00, 25.00,re2,ar200m
+! "r315" test.
+off failure

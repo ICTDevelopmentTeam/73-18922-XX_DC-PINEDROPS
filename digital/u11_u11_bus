@@ -1,0 +1,57 @@
+!!!!   24    0    1 1529027819  V2a0b                                         
+! Copyright (c) Agilent Technologies, Inc. 1995-1996, 1998-2000, 2002-2003, 2006-2008
+!IPG: rev 07.20pd Fri Jun 15 09:57:00 2018
+
+buswire "u11_u11_bus"
+
+!IPG: User may add option statements here if needed.
+
+ground bounce suppression   on
+!IPG  family "???"
+!IPG: Family information could not be found for any node; TTL will be assumed
+
+
+chain "u11_u11"
+  tdi "JTAG_TDI_FPGA_3V3"
+  tdo "JTAG_TDO_FPGA_3V3"
+  tms "JTAG_TMS_FPGA_3V3"
+  tck "UNNAMED_24_HDR2X5_I306_P1"
+  devices
+    "u11", "custom_lib/16-4243-01.bsd", "FBGA484", no
+  end devices
+end chain
+
+!IPG: Family information could not be found for node JTAG_TDI_FPGA_3V3
+!IPG: Family information could not be found for node JTAG_TDO_FPGA_3V3
+!IPG: Family information could not be found for node JTAG_TMS_FPGA_3V3
+!IPG: Family information could not be found for node UNNAMED_24_HDR2X5_I306_P1
+
+
+!IPG: The following pins are disabled by Boundary-Scan:
+!IPG:   u5_cp_pch.BA19  u5_cp_pch.BP9  u5_cp_pch.BF1  u5_cp_pch.BW22
+!IPG:   u5_cp_pch.BH7  u5_cp_pch.BR4  u5_cp_pch.BP13  u5_cp_pch.BV16
+!IPG:   u5_cp_pch.BE4  u5_cp_pch.AW3  u5_cp_pch.BG4  u5_cp_pch.BN14
+!IPG:   u5_cp_pch.BU18  u5_cp_pch.BJ20  u5_cp_pch.BG2  u5_cp_pch.BD3
+!IPG:   u5_cp_pch.BT13  u5_cp_pch.BD22  u5_cp_pch.BU14  u5_cp_pch.AW1
+!IPG:   u5_cp_pch.AY2  u5_cp_pch.AL3  u5_cp_pch.BW18  u5_cp_pch.U4
+!IPG:   u5_cp_pch.AG4  u5_cp_pch.AF1  u5_cp_pch.U2  u5_cp_pch.AA9
+!IPG:   u5_cp_pch.BB18  u5_cp_pch.AF3  u5_cp_pch.BD11  u5_cp_pch.BE24
+!IPG:   u5_cp_pch.BB16  u5_cp_pch.BT16
+
+!IPG: Safeguard will ignore disabled outputs
+disabled device "u5_cp_pch" pins "AA9","AF1","AF3","AG4","AL3","AW1"
+disabled device "u5_cp_pch" pins "AW3","AY2","BA19","BB16","BB18"
+disabled device "u5_cp_pch" pins "BD11","BD22","BD3","BE24","BE4"
+disabled device "u5_cp_pch" pins "BF1","BG2","BG4","BH7","BJ20"
+disabled device "u5_cp_pch" pins "BN14","BP13","BP9","BR4","BT13"
+disabled device "u5_cp_pch" pins "BT16","BU14","BU18","BV16","BW18"
+disabled device "u5_cp_pch" pins "BW22","U2","U4"
+!IPG: with boundary scan disabling
+
+!IPG: User may add VCL pass-through statements here if needed.
+
+nodes
+end nodes
+
+end buswire
+

@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582994  V0e7a                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:03 2018
+disconnect all
+connect s to "P3_3VA"
+connect i to "PMBUS2_SDA"
+!B!resistor 2k, 6.00, 6.00, re4, wb, ar500m
+resistor 2k,25.00, 20.00,re4,wb,ar500m
+! "r188" test.

@@ -1,0 +1,18 @@
+!!!!    2    0    1 1529027713   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:14 2018
+on failure
+   report parallel devices
+   report "c84 10.0u"
+   report "c258 10.0u"
+   report "c151_cp 1.00u"
+   report "c152_cp 1.00u"
+   report "c153_cp 1.00u"
+   report "c154_cp 1.00u"
+end on failure
+disconnect all
+connect s to "P1V3"
+connect i to "GND"
+connect g to "P1V3_FB" 
+capacitor 46u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp
+! "c252" test.
+off failure

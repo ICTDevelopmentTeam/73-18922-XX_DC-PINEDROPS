@@ -1,0 +1,85 @@
+!!!!    6    0    1 1490319131  Vb75a                                         
+! IPG: rev 08.30p  Fri Mar 24 09:32:12 2017
+!#!created by : FLEX
+!#!04/06/2016
+
+vector cycle 10u
+receive delay 8u
+
+default device "u13_cp"
+set terminators to on
+assign VDD  to pins *
+assign GND  to pins *
+
+assign EN   to pins 5
+assign SCL0 to pins 2
+assign SCL1 to pins 7
+assign SDA0 to pins 3
+assign SDA1 to pins 6
+
+power VDD, GND
+inputs EN, SCL0, SDA0
+outputs SCL1, SDA1
+
+family LVT_1V05
+family LVT_2V5 on SCL1, SDA1, EN
+
+disable SCL0 with EN to "0"
+disable SCL1 with EN to "0"
+disable SDA0 with EN to "0"
+disable SDA1 with EN to "0"
+
+set  load on groups SCL0, SDA0 to pull up
+
+!IPG: Add defaults or loads to floating inputs and bidirs.
+assign Floating__Inputs to pins 5 default "0"
+inputs Floating__Inputs
+
+!******************************************************************************
+vector V0to1_L
+  set EN to "1"
+  set SCL0 to "0"
+  set SDA0 to "0"
+  set SCL1 to "0"
+  set SDA1 to "0"
+end vector
+
+vector V0to1_H
+  set EN to "1"
+  set SCL0 to "1"
+  set SDA0 to "1"
+  set SCL1 to "1"
+  set SDA1 to "1"
+end vector
+
+vector V1to0_L
+  set EN to "1"
+  set SCL1 to "0"
+  set SDA1 to "0"
+  set SCL0 to "0"
+  set SDA0 to "0"
+end vector
+
+vector V1to0_H
+  set EN to "1"
+  set SCL1 to "1"
+  set SDA1 to "1"
+  set SCL0 to "1"
+  set SDA0 to "1"
+end vector
+
+vector V0to1_L_EN_0
+  set EN to "0"
+  set SCL1 to "1"
+  set SDA1 to "1"
+  set SCL0 to "0"
+  set SDA0 to "0"
+end vector
+
+unit "i2c bus repeater"
+  execute V0to1_L
+  execute V0to1_H
+  execute V0to1_L_EN_0 ! to test EN low
+end unit
+
+

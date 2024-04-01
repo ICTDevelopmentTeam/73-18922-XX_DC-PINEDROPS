@@ -1,0 +1,11 @@
+!!!!    2    0    1 1487059933  V6729                                         
+!*CISCO P-PIN check test automation tool
+on failure
+report "check nodes SMB_DDR_SDA_LV2V5_CP P-Pin resistance"
+report "check nodes SMB_DDR_SDA_LV2V5_R_CP P-Pin resistance"
+end on failure
+disconnect all
+connect s to "SMB_DDR_SDA_LV2V5_CP"
+connect i to "SMB_DDR_SDA_LV2V5_R_CP"
+resistor 10,20,100, re1, ar100m,ed
+off failure

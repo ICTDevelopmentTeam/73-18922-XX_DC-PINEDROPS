@@ -1,0 +1,58 @@
+----------------------------------------
+CHEK-POINT Report for "pins_long".
+Thu Nov 30 14:21:31 2023
+73-19246-05_2old
+----------------------------------------
+Failed Open #1
+(223136) PVCCIN_SNS_N
+                r04_vr.1
+                 r497.1
+               u5_cp.AT75
+             u5_cp_pch.AT75
+----------------------------------------
+Failed Open #2
+(219157) UNNAMED_7_MPPS04_I306_EN_MVR
+               r29_mvr.2
+              r79_91_mvr.2
+              r79_98_mvr.2
+----------------------------------------
+Failed Open #3
+(120172) xdp_cpu_tdi_cp
+               r232_cp.1
+                u1_cp.5
+               xdp_cp.56
+----------------------------------------
+Failed Open #4
+(222107) SMB_DDR01_SCL_CP
+               r322_cp.1
+               u5_cp.CD58
+             u5_cp_pch.CD58
+----------------------------------------
+Failed Open #5
+(20554) PU_MBP0_MBPM0_N_CP
+               r437_cp.2
+               u5_cp.W75
+             u5_cp_pch.W75
+----------------------------------------
+Failed Open #6
+(205137) ts_vcc
+                 c303.1
+                 r529.2
+                 u30.2
+                 u30.15
+----------------------------------------
+Failed Open #7
+(205107) c33_spi_10gbe_cs_n_cp
+               r146_cp.1
+                u11_cp.1
+                u18_cp.6
+----------------------------------------
+Failed Open #8
+(11671) pch_sus_stat_l
+                  p6.4
+                r76_cp.2
+               tpm_cp.19
+               u5_cp.BB18
+             u5_cp_pch.BB18
+                u11.P20
+------End, 8 Problems Reported----------

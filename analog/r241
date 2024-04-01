@@ -1,0 +1,8 @@
+!!!!    2    0    1 1693481995   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:11 2018
+disconnect all
+connect s to "SRT_IO_MI_DATA"
+connect i to "IO_MI_DATA"
+!B!resistor 33, 21.15, 6.00, re2, ar200m
+resistor 33,40.00, 25.00,re2,ar200m
+! "r241" test.

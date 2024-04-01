@@ -1,0 +1,17 @@
+-------------------------------------------------------------------------------
+AGILENT 3070 BOARD TEST GRADER               Sat Jul 21 09:36:19 2018  page 1  
+
+BScan   Interconnect   Vacuum Off REPORT
+-------------------------------------------------------------------------------
+
+Board Path:              ./
+Board Serial #:          Board1
+Date of Data generation: Fri Jul 20 15:19:24 2018
+
+Number of test runs (in config.bdg): 1
+Number of tests: 2
+Number of tests performing correctly (i.e. failed): 2
+Number of tests performing incorrectly (i.e. passed): 0
+
+
+For more Information, please examine: bscan_inter_vac_off.dat

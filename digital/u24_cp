@@ -1,0 +1,113 @@
+!!!!    6    0    1 1529656967  V38a0                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:51 2018
+
+!    nc7sz125
+!    Buffer
+!    revision A.01.00
+!
+combinatorial
+
+default device "u24_cp"
+set terminators to on
+assign VCC    to pins *
+assign GND    to pins *
+
+assign E1_Input   to pins 2
+assign E1_Enable  to pins 1
+assign E1_Output  to pins 4
+
+assign All_Enables  to pins 1
+
+power  VCC, GND
+
+family  LVT_1V05
+
+inputs E1_Input, E1_Enable, All_Enables
+outputs  E1_Output
+
+
+disable E1_Output  with  E1_Enable  to  "1"
+
+when E1_Enable is "1"   inactive E1_Output
+
+trace E1_Output   to E1_Input, E1_Enable
+
+assign Disablegroup to nodes "UNNAMED_17_ICS553_I181_OE" default "0"
+inputs Disablegroup
+
+assign DisableFamilyLVT to nodes "UNNAMED_17_ICS553_I181_OE"
+family LVT on DisableFamilyLVT
+inputs DisableFamilyLVT
+
+!IPG: Safeguard will ignore disabled outputs
+disabled device "u14" pins 2,3,6,7
+!IPG: with pin 8 on node "UNNAMED_17_ICS553_I181_OE"
+
+!***************************************************************************
+!***************************************************************************
+
+vector E1_Input_Low__Disable_Others
+     set E1_Enable to "0"
+     set E1_Input  to "0"
+     set E1_Output to "0"
+end vector
+
+vector E1_Input_High__Disable_Others
+     set E1_Enable to "0"
+     set E1_Input  to "1"
+     set E1_Output to "1"
+end vector
+
+vector E1_Input_Low__Ignore_Others
+     set E1_Enable  to "0"
+     set E1_Input   to "0"
+     set E1_Output  to "0"
+end vector
+
+vector E1_Input_High__Ignore_Others
+     set E1_Enable  to "0"
+     set E1_Input   to "1"
+     set E1_Output  to "1"
+end vector
+
+vector E1_Input_Low__Disabled
+     set E1_Enable  to "1"
+     set E1_Input   to "0"
+     set E1_Output  to "0"
+end vector
+
+vector E1_Input_High__Disabled
+     set E1_Enable  to "1"
+     set E1_Input   to "1"
+     set E1_Output  to "1"
+end vector
+
+!**************************************************************************
+!**************************************************************************
+
+
+sub DisableSub
+  execute DisableVector
+end sub
+
+unit "DisableUnit"
+  call DisableSub
+end unit
+
+unit  "Element 1, with all others ignored"
+
+     execute E1_Input_Low__Ignore_Others
+     execute E1_Input_High__Ignore_Others
+
+end unit
+
+unit disable test "Element 1"
+
+     execute E1_Input_Low__Disabled
+     execute E1_Input_High__Disabled
+     execute E1_Input_Low__Disabled
+
+end unit
+
+!    End of Test
+

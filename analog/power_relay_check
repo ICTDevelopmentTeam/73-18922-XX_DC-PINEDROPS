@@ -1,0 +1,50 @@
+!!!!    2    0    1 1602143966  V50a5                                         
+test analog
+
+test "u11_cp_3_relay_close"
+test "FPGA_DBG_JMPR3_relay_close"
+test "U19_OE_close"
+test "U14_OE_close"
+
+end test
+
+
+subtest "u11_cp_3_relay_close"
+
+disconnect all
+gpconnect 20654 to 20655
+connect s to "GND"
+connect i to "UNNAMED_16_MT25Q8P_I92_WPMVPPDQ2_CP"
+jumper 18, re1, wb, ar100m, ed    !add 10ohm resistor
+gpdisconnect 20654 from 20655
+
+end subtest
+
+subtest "FPGA_DBG_JMPR3_relay_close"
+disconnect all
+gpconnect "FPGA_DBG_JMPR3" to "GND"
+connect s to "GND"
+connect i to "FPGA_DBG_JMPR3"
+jumper 18, re1, wb, ar100m, ed
+gpdisconnect "FPGA_DBG_JMPR3" from "GND"
+end subtest
+
+
+subtest "U19_OE_close"
+disconnect all
+gpconnect "UNNAMED_20_OSC_I16_OE" to "GND"
+connect i to "UNNAMED_20_OSC_I16_OE"
+connect s to "GND"
+jumper 20, re1, wb, ar100m
+gpdisconnect "UNNAMED_20_OSC_I16_OE" from "GND"
+end subtest
+
+
+subtest "U14_OE_close"
+disconnect all
+gpconnect "UNNAMED_17_ICS553_I181_OE" to "GND"
+connect i to "UNNAMED_17_ICS553_I181_OE"
+connect s to "GND"
+jumper 18, re1, wb, ar100m
+gpdisconnect "UNNAMED_17_ICS553_I181_OE" from "GND"
+end subtest

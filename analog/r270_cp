@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583031  V1426                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:09 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "FM_BDXDE_ERR1_GTL_N_CP"
+!B!resistor 75, 12.67, 6.00, re2, ar100m
+resistor 75,30.00, 25.00,re2,ar100m
+! "r270_cp" test.

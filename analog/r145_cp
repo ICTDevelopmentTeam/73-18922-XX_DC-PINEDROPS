@@ -1,0 +1,8 @@
+!!!!    2    0    1 1698167755   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:26 2018
+disconnect all
+connect i to "GND"
+connect s to "PD_LAN_JRST_N_SDP1_1_CP"
+!connect gl to "P1V05C"
+resistor 10k, 35, 30, re2, wb, ar 200m,ed, en
+! "r145_cp" test.

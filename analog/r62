@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027760   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:01 2018
+disconnect all
+connect s to "P12V"
+connect i to "P3V3_SSD_EN_12V"
+resistor 100k, 30.00, 30.00, re5, wb, ar100m, wa9.08u
+! "r62" test.

@@ -1,0 +1,13 @@
+!!!!    2    0    1 1700067701   0000                                         
+
+on failure
+   report "Check for U10_CP presence."
+end on failure
+
+disconnect all
+connect s to ground
+connect i to "U10_CP_PRESENCE_SWITCH_PIN_2"
+jumper 16, re1, ar200m,wa10m
+
+off failure
+

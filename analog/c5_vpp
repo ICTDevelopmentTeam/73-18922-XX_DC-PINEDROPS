@@ -1,0 +1,7 @@
+!!!!    2    0    1 1623062794   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:17 2018
+disconnect all
+connect s to "SW1_VPP"
+connect i to "VBST1_VPP"
+capacitor 100n, 35.00, 40.00, fr1024, re4, wb, ar100m, nocomp
+! "c5_vpp" test.

@@ -1,0 +1,46 @@
+!!!!    2    0    1 1639090914   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:40 2018
+!
+! Cisco Part#:          20-0671-02
+!
+! Note:                 Pin G     = Gate
+!                       Pin D     = Drain
+!                       Pin S     = Source
+!
+! ***************************************************************************
+
+test powered analog
+
+ test "FET_OFF"
+ test "FET_ON"
+
+end test
+
+! ***************************************************************************
+
+subtest "FET_OFF"
+ connect s to pins  "D"     ! Drain
+ connect i to pins  "D"     ! Drain
+ connect l to pins  "S"     ! Source
+ connect a to pins  "G"     ! Gate
+
+ source dcv, am2.5, terminated 50, on
+ auxiliary dcv, am0.0, on
+ detector dcv, expect 2.5
+ measure  2.625,  2.25      ! Measurement taken at Drain
+end subtest
+
+ subtest "FET_ON"
+  connect s to pins  "D"     ! Drain
+  connect i to pins  "D"     ! Drain
+  connect l to pins  "S"     ! Source
+  connect a to pins  "G"     ! Gate
+
+  source dcv, am.4, terminated 50, on
+  auxiliary dcv, am2.5, on, ico1
+  detector dcv, expect 0.1
+  measure  0.5, -0.2       ! Measurement taken at Drain
+ end subtest
+
+
+

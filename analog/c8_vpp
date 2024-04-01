@@ -1,0 +1,35 @@
+!!!!    2    0    1 1529027712   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:13 2018
+on failure
+   report parallel devices
+   report "c6_vpp 22.0u"
+   report "c34_cp 1.00u"
+   report "c37_cp 1.00u"
+   report "c44_cp 1.00u"
+   report "c45_cp 1.00u"
+   report "c99_cp 1.00u"
+   report "c103_cp 1.00u"
+   report "c104_cp 1.00u"
+   report "c106_cp 1.00u"
+   report "c108_cp 1.00u"
+   report "c142_cp 1.00u"
+   report "c25_cp 100n"
+   report "c28_cp 100n"
+   report "c31_cp 100n"
+   report "c40_cp 100n"
+   report "c41_cp 100n"
+   report "c143_cp 100n"
+   report "c141_cp 10.0n"
+end on failure
+disconnect all
+connect s to "VCCSUS3_3"; a to "VCCSUS3_3"
+connect i to "GND"; b to "GND"
+connect g to "FP_PWR_BTN_N_CP" 
+connect g to "CPU_PROCHOT_3V3_L" 
+connect g to "CPU_THERMTRIP_3V3_L" 
+connect g to "FPGA_PCH_CATERR_DLY_L" 
+connect g to "FPGA_PCH_WDT_L" 
+connect g to "VFB1_VPP" 
+capacitor 252.61u, 35.00, 40.00, fr128, re1, ar400m, ed, sm, sa, sb, en, nocomp
+! "c8_vpp" test.
+off failure

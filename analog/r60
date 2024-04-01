@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531557122   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:00 2018
+disconnect all
+connect s to "P1V2_VDDQ"
+connect i to "SRT_DDR_VTT_REF"
+connect g to "GND" 
+resistor 10k, 25.00, 20.00, re4, wb, ar100m,ed,wa50m
+! "r60" test.

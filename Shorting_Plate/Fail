@@ -1,0 +1,711 @@
+----------------------------------------
+73-19246-05_2old
+Thu Oct 12 11:01:19 2023
+----------------------------------------
+c09_mvr HAS FAILED
+11-2667-02 CAP,CE,1uF,6.3V,X5R,20%,SM,04
+Measured:   -25.336k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes ISENRTN_MVR P-Pin resistance
+----------------------------------------
+c08_3v3 HAS FAILED
+11-2821-01 CAP,CE,0.1uF,25V,10%,X7R,SM,0
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes PWR_LV_DIDT_3V3 P-Pin resistance
+check nodes UNNAMED_1_CAP_I79_B_3V3 P-Pin resistance
+----------------------------------------
+c57 HAS FAILED
+11-2330-02 CAP,CE, .1uF, 10V,10%,SM,0402
+Measured:   152.01k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes HSD_PE_CPU_RC_LN0_IOFPGA_N P-Pin resistance
+check nodes HSD_PE_CPU_RC_LN0_IOFPGA_AC_P P-Pin resistance
+----------------------------------------
+c09_vr HAS FAILED
+11-2667-02 CAP,CE,1uF,6.3V,X5R,20%,SM,04
+Measured:   -21.713k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes ISENRTN_VR P-Pin resistance
+----------------------------------------
+c105_cp HAS FAILED
+11-3636-01 CAP,CE,1.0uF,25.0 V,10%,X7R,S
+Measured:   -25.336k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_41_CAP_I28_A_CP P-Pin resistance
+----------------------------------------
+c58 HAS FAILED
+11-2330-02 CAP,CE, .1uF, 10V,10%,SM,0402
+Measured:   50.656k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes HSD_PE_CPU_RC_LN0_IOFPGA_P P-Pin resistance
+check nodes HSD_PE_CPU_RC_LN0_IOFPGA_AC_N P-Pin resistance
+----------------------------------------
+c237 HAS FAILED
+11-2693-01 CAP,CE,560pF,50V,X7R,10%,SM,0
+Measured:   -25.336k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_31_CAP_I53_B P-Pin resistance
+----------------------------------------
+r171 HAS FAILED
+12-2570-02 RES,TKF,10 k ohm,0.063W,1%,SM
+Measured:   30.392k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes UNNAMED_17_ICS553_I181_OE P-Pin resistance
+----------------------------------------
+r182 HAS FAILED
+12-2570-02 RES,TKF,10 k ohm,0.063W,1%,SM
+Measured:   30.392k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3VA P-Pin resistance
+check nodes FPGA_SPARE_PU P-Pin resistance
+----------------------------------------
+r277_cp HAS FAILED
+12-2570-02 RES,TKF,10 k ohm,0.063W,1%,SM
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes VCCSUS3_3 P-Pin resistance
+check nodes TH_DIR2_CP P-Pin resistance
+----------------------------------------
+r280_cp HAS FAILED
+12-2570-02 RES,TKF,10 k ohm,0.063W,1%,SM
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes VCCSUS3_3 P-Pin resistance
+check nodes TH_DIR1_CP P-Pin resistance
+----------------------------------------
+r285 HAS FAILED
+12-2570-02 RES,TKF,10 k ohm,0.063W,1%,SM
+Measured:   -18.996k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes FPGA_CE_L P-Pin resistance
+----------------------------------------
+r381_cp HAS FAILED
+12-2570-02 RES,TKF,10 k ohm,0.063W,1%,SM
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes VCCSUS3_3 P-Pin resistance
+check nodes CPU_FPGA_THROTTLE_LVC3_N P-Pin resistance
+----------------------------------------
+r438_cp HAS FAILED
+12-2570-02 RES,TKF,10 k ohm,0.063W,1%,SM
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes GPIO21 P-Pin resistance
+----------------------------------------
+r243 HAS FAILED
+12-2475-02 RES,TKF,1 k ohm,0.063W,5%,SM,
+Measured:   75.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes BOARD_ID0 P-Pin resistance
+----------------------------------------
+r244 HAS FAILED
+12-2475-02 RES,TKF,1 k ohm,0.063W,5%,SM,
+Measured:   50.656k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes CHIMAY_U P-Pin resistance
+----------------------------------------
+r11_mvr HAS FAILED
+12-5890-01 RES,TNF,1 k ohm,0.063W,0.1%,S
+Measured:   -38.029k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes ISENRTN_MVR P-Pin resistance
+check nodes ISEN1_MVR P-Pin resistance
+----------------------------------------
+r11_vr HAS FAILED
+12-5890-01 RES,TNF,1 k ohm,0.063W,0.1%,S
+Measured:   -25.336k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes ISENRTN_VR P-Pin resistance
+check nodes ISEN1_VR P-Pin resistance
+----------------------------------------
+r12_vr HAS FAILED
+12-5890-01 RES,TNF,1 k ohm,0.063W,0.1%,S
+Measured:   -21.713k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes ISENRTN_VR P-Pin resistance
+check nodes ISEN2_VR P-Pin resistance
+----------------------------------------
+r265_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   37.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_38_AVC8T245_I146_OE_CP P-Pin resistance
+----------------------------------------
+r267_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   30.392k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes VCCSUS3_3 P-Pin resistance
+check nodes UNNAMED_38_AVC8T245_I146_DIR_CP P-Pin resistance
+----------------------------------------
+r268_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   50.656k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_38_AVC8T245_I91_DIR_CP P-Pin resistance
+----------------------------------------
+r273_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   50.656k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes TH_OE1_CP P-Pin resistance
+----------------------------------------
+r275_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   75.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_39_AVC8T245_I243_B_CP P-Pin resistance
+----------------------------------------
+r276_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   50.656k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes TH_OE2_CP P-Pin resistance
+----------------------------------------
+r18_mvr HAS FAILED
+12-5890-01 RES,TNF,1 k ohm,0.063W,0.1%,S
+Measured:   -21.713k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes ISENRTN_MVR P-Pin resistance
+check nodes ISEN8_MVR P-Pin resistance
+----------------------------------------
+r258_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   -30.785k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes FAULT_OE2_CP P-Pin resistance
+----------------------------------------
+r260_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes FAULT_OE1_CP P-Pin resistance
+----------------------------------------
+r291_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   75.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_39_AVC8T245_I243_A_1_CP P-Pin resistance
+----------------------------------------
+r324_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   -21.713k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_40_RES_I60_A_CP P-Pin resistance
+----------------------------------------
+r415_cp HAS FAILED
+12-2537-02 RES,TKF,1 k ohm,0.063W,1%,SM,
+Measured:   -30.785k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes CPU_RESET_3V3_L_CP P-Pin resistance
+----------------------------------------
+r58 HAS FAILED
+12-2905-02 RES,TKF,4.7 k ohm,.063W,5%,SM
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes LJTAG_TDI_HDR_3V3 P-Pin resistance
+----------------------------------------
+r59 HAS FAILED
+12-2905-02 RES,TKF,4.7 k ohm,.063W,5%,SM
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes LJTAG_TMS_HDR_3V3 P-Pin resistance
+----------------------------------------
+r292_cp HAS FAILED
+12-2373-02 RES,TKF,4.75 k ohm,0.063W,1%,
+Measured:   30.392k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes VCCSUS3_3 P-Pin resistance
+check nodes PHY_WAKE_N_R_CP P-Pin resistance
+----------------------------------------
+r163 HAS FAILED
+12-2905-02 RES,TKF,4.7 k ohm,.063W,5%,SM
+Measured:   75.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes LJTAG_TRST_L_HDR_3V3 P-Pin resistance
+----------------------------------------
+r370 HAS FAILED
+12-2905-02 RES,TKF,4.7 k ohm,.063W,5%,SM
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes LJTAG_CABLE_PRSNT_L P-Pin resistance
+----------------------------------------
+r485 HAS FAILED
+12-2905-02 RES,TKF,4.7 k ohm,.063W,5%,SM
+Measured:   75.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3VA P-Pin resistance
+check nodes BOARD_ID1 P-Pin resistance
+----------------------------------------
+r185_cp HAS FAILED
+12-2574-02 RES,TKF,5.11 k ohm,0.063W,1%,
+Measured:   -30.785k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes FM_ADR_TRIGGER_N_GPIO37_CP P-Pin resistance
+----------------------------------------
+r186_cp HAS FAILED
+12-2574-02 RES,TKF,5.11 k ohm,0.063W,1%,
+Measured:   -30.785k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes PU_SATA1GP_GPIO19_CP P-Pin resistance
+----------------------------------------
+r162 HAS FAILED
+12-2905-02 RES,TKF,4.7 k ohm,.063W,5%,SM
+Measured:   -21.713k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes LJTAG_TCK_HDR_3V3 P-Pin resistance
+----------------------------------------
+r237_cp HAS FAILED
+12-2574-02 RES,TKF,5.11 k ohm,0.063W,1%,
+Measured:   -38.491k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes VCCSUS3_3 P-Pin resistance
+check nodes PU_SUSACK_N_CP P-Pin resistance
+----------------------------------------
+r147_cp HAS FAILED
+12-2478-02 RES,TKF,10 k ohm,0.063W,5%,SM
+Measured:   -38.491k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes UNNAMED_16_MT25Q8P_I92_WPMVPPDQ2_CP P-Pin resistance
+----------------------------------------
+r148_cp HAS FAILED
+12-2478-02 RES,TKF,10 k ohm,0.063W,5%,SM
+Measured:   -25.651k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes UNNAMED_16_MT25Q8P_I92_HOLDMDQ3_CP P-Pin resistance
+----------------------------------------
+r288 HAS FAILED
+12-2585-02 RES,TKF,2 k ohm,0.063W,1%,SM,
+Measured:   -25.336k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_24_EP4CGX50FG484_I251_RREF0 P-Pin resistance
+----------------------------------------
+r397_cp HAS FAILED
+12-2544-02 RES,TKF,100 k ohm,0.063W,1%,S
+Measured:   -30.785k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes SPI_STD_CS0_L_CP P-Pin resistance
+----------------------------------------
+r174 HAS FAILED
+12-2887-02 RES,TKF,22 ohm,0.063W,5%,SM,0
+Measured:   25.326k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes SRT_JTAG_TCK_PCH_3V3 P-Pin resistance
+check nodes JTAG_TCK_PCH_3V3 P-Pin resistance
+----------------------------------------
+r175 HAS FAILED
+12-2887-02 RES,TKF,22 ohm,0.063W,5%,SM,0
+Measured:   37.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes SRT_JTAG_TCK_CPU_3V3 P-Pin resistance
+check nodes JTAG_TCK_CPU_3V3 P-Pin resistance
+----------------------------------------
+r447 HAS FAILED
+12-2887-02 RES,TKF,22 ohm,0.063W,5%,SM,0
+Measured:   37.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes SRT_JTAG_TCK_FPGA_CPU_3V3 P-Pin resistance
+check nodes JTAG_TCK_FPGA_CPU_3V3 P-Pin resistance
+----------------------------------------
+r498 HAS FAILED
+12-2887-02 RES,TKF,22 ohm,0.063W,5%,SM,0
+Measured:   50.656k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes FPGA_OBFL_CLK P-Pin resistance
+check nodes SRT_FPGA_OBFL_CLK P-Pin resistance
+----------------------------------------
+r299_cp HAS FAILED
+12-2793-01 RES,TKF,51 ohm,0.063W,5%,SM,0
+Measured:   -25.336k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P1V05C P-Pin resistance
+check nodes JTAG_1V05SB_CPU_TDO_CP P-Pin resistance
+----------------------------------------
+r406_cp HAS FAILED
+12-2887-02 RES,TKF,22 ohm,0.063W,5%,SM,0
+Measured:   -38.491k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes SPI_FLSH_MISO_CP P-Pin resistance
+check nodes SRT_FLSHP_MISO_CP P-Pin resistance
+----------------------------------------
+r155 HAS FAILED
+12-0809-01 RES,TKF,68.1 ohm,0.125W,1%,SM
+Measured:   30.392k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3V3_SSD P-Pin resistance
+check nodes P3V3_SSD_DISCHARGE P-Pin resistance
+----------------------------------------
+r183_cp HAS FAILED
+12-2804-01 RES,TKF,330 k ohm,0.063W,5%,S
+Measured:   -38.491k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3V3_VBAT_CP P-Pin resistance
+check nodes PU_PCH_DSWODVREN_CP P-Pin resistance
+----------------------------------------
+r383 HAS FAILED
+12-4974-01 RES,TKF,220 ohm,0.063W,1%,SM,
+Measured:   37.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_17_PI3B3257PG_I429_E P-Pin resistance
+----------------------------------------
+r385_cp HAS FAILED
+12-2781-02 RES,TKF,220 ohm,0.063W,5%,SM,
+Measured:   30.392k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_42_AUC1G125_I202_OE_CP P-Pin resistance
+----------------------------------------
+r388_cp HAS FAILED
+12-2781-02 RES,TKF,220 ohm,0.063W,5%,SM,
+Measured:   30.392k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_42_AUC1G125_I178_OE_CP P-Pin resistance
+----------------------------------------
+r407_cp HAS FAILED
+12-2781-02 RES,TKF,220 ohm,0.063W,5%,SM,
+Measured:   30.392k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_42_AUC1G125_I272_A_CP P-Pin resistance
+----------------------------------------
+r429_cp HAS FAILED
+12-2781-02 RES,TKF,220 ohm,0.063W,5%,SM,
+Measured:   -21.713k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes GND P-Pin resistance
+check nodes UNNAMED_18_AUC1G125_I18_A_CP P-Pin resistance
+----------------------------------------
+r379_cp HAS FAILED
+12-2588-02 RES,TKF,1.5 k ohm,0.063W,1%,S
+Measured:   37.990k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes PCH_FPGA_MDC0_CP P-Pin resistance
+----------------------------------------
+r380_cp HAS FAILED
+12-2588-02 RES,TKF,1.5 k ohm,0.063W,1%,S
+Measured:   50.656k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes PCH_FPGA_MDIO0_CP P-Pin resistance
+----------------------------------------
+r263_cp HAS FAILED
+12-4947-01 RES,TKF,200 k ohm,0.063W,1%,S
+Measured:   -30.785k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes P3_3V P-Pin resistance
+check nodes UNNAMED_41_LSF0102_I19_EN_CP P-Pin resistance
+----------------------------------------
+r312_cp HAS FAILED
+12-2607-02 RES,TKF,100 ohm,0.063W,1%,SM,
+Measured:   -30.785k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes BDX_RTCRST_N_CP P-Pin resistance
+check nodes UNNAMED_6_RES_I482_B_CP P-Pin resistance
+----------------------------------------
+r246 HAS FAILED
+12-2905-02 RES,TKF,4.7 k ohm,.063W,5%,SM
+Measured:   -25.336k
+Nominal:    10.000
+High Limit: 12.000
+Low Limit:  0.0000
+Resistance in OHMS
+----------------------------------------
+check nodes FIL_CLK125M_P3V3 P-Pin resistance
+check nodes UNNAMED_20_OSC_I16_OE P-Pin resistance
+----------------------------------------
+Serial #: FLM10122023
+
+
+
+
+
+
+
+
+
+
+
+
+

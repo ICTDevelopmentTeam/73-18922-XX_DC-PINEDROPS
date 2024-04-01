@@ -1,0 +1,551 @@
+!!!!   24    0    1 1529027818  Vc4c1                                         
+! Copyright (c) Agilent Technologies, Inc. 1995-1996, 1998-2000, 2002-2003, 2006-2008
+!IPG: rev 07.20pd Fri Jun 15 09:56:59 2018
+
+powered shorts "u5_cp_u5_cp_pch_ps"
+
+!IPG: User may add option statements here if needed.
+
+ground bounce suppression   on
+family "LVT"
+
+
+!IPG: Warning: TAP Reset Pin has been overridden. The following
+!IPG:          TRST pin(s) will not be included in the disable section:
+!IPG:
+!IPG:    u5_cp.U75
+!IPG:
+!IPG: Warning: TAP Reset Pin has been overridden. The following
+!IPG:          TRST pin(s) will not be included in the disable section:
+!IPG:
+!IPG:    u5_cp.U75
+!IPG:
+
+chain "u5_cp_u5_cp_pch"
+  tdi "LJTAG_TDI_HDR_3V3"
+  tdo "LJTAG_TDO_HDR_3V3" family "TTL"
+  tms "LJTAG_TMS_HDR_3V3"
+  tck "JTAG_HDR_TCK"
+  trst "LJTAG_TRST_L_HDR_3V3"
+  devices
+    "u5_cp", "custom_lib/bdx_de_a0_cust_rev2.bsdl", "LGA", no
+    "u5_cp_pch", "custom_lib/broadwell_pch.bsm", "bga1", no
+  end devices
+end chain
+
+
+disables "disable vector"
+  node "C105_PWRGD_CPU_CP" hybrid default "1"
+  node "DIMM_THERM_EVENT_L_2V5_CP" family "TTL" hybrid default "1"
+  node "ERR_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "FAULT_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "HOT_OE_CP" hybrid default "1"
+  node "PWRGD_BDXDE_LAN_CP" family "FLASH_1V8" hybrid default "1"
+  node "UNNAMED_36_PCA9617_I50_EN_CP" hybrid default "0"
+  node "UNNAMED_38_AVC8T245_I91_OE_CP" hybrid default "1"
+
+  pcf order is nodes "C105_PWRGD_CPU_CP","DIMM_THERM_EVENT_L_2V5_CP"
+  pcf order is nodes "ERR_OE1_CP","FAULT_OE1_CP","HOT_OE_CP"
+  pcf order is nodes "PWRGD_BDXDE_LAN_CP","UNNAMED_36_PCA9617_I50_EN_CP"
+  pcf order is nodes "UNNAMED_38_AVC8T245_I91_OE_CP"
+  unit "disable_1"
+  pcf
+  "11111101"
+  end pcf
+  end unit
+end disables
+
+!IPG: The disable section above disables or conditions the following pins:
+!IPG:   u13_cp.2  u13_cp.3  u13_cp.6  u13_cp.7  u14_cp.12  u14_cp.13
+!IPG:   u14_cp.4  u14_cp.5  u15_cp.12  u15_cp.13  u15_cp.4  u15_cp.5
+!IPG:   u18_cp.10  u18_cp.14  u18_cp.15  u18_cp.16  u18_cp.17  u18_cp.18
+!IPG:   u18_cp.19  u18_cp.20  u18_cp.21  u18_cp.3  u18_cp.4  u18_cp.5
+!IPG:   u18_cp.6  u18_cp.7  u18_cp.8  u18_cp.9  u20_cp.10  u20_cp.14
+!IPG:   u20_cp.15  u20_cp.16  u20_cp.17  u20_cp.18  u20_cp.19  u20_cp.20
+!IPG:   u20_cp.21  u20_cp.3  u20_cp.4  u20_cp.5  u20_cp.6  u20_cp.7
+!IPG:   u20_cp.8  u20_cp.9  u33_cp.4
+
+!IPG: The following pins are disabled by Boundary-Scan:
+!IPG:   u11.N11  u11.M18  u11.T18  u11.M16  u11.L16  u11.L14  u11.D19
+!IPG:   u11.L15  u11.AB13  u11.Y13  u11.P20  u11.H13  u11.U18  u11.J15
+!IPG:   u11.D14  u11.W14  u11.C14  u11.H9  u11.E6  u11.C20  u11.G19
+!IPG:   u11.F18  u11.AB15  u11.D6  u11.D5  u11.H16  u11.Y18  u11.J16
+!IPG:   u11.G10  u11.D11  u11.L21  u11.C15  u11.N7  u11.M7
+
+!IPG: Safeguard will ignore disabled outputs
+disabled device "u11" pins "AB13","AB15","C14","C15","C20","D11"
+disabled device "u11" pins "D14","D19","D5","D6","E6","F18","G10"
+disabled device "u11" pins "G19","H13","H16","H9","J15","J16","L14"
+disabled device "u11" pins "L15","L16","L21","M16","M18","M7","N11"
+disabled device "u11" pins "N7","P20","T18","U18","W14","Y13","Y18"
+!IPG: with boundary scan disabling
+disabled device "u13_cp" pins 2,3,6,7
+!IPG: with pin 5 on node "UNNAMED_36_PCA9617_I50_EN_CP"
+disabled device "u14_cp" pins 12,13,4,5
+!IPG: with pin 15 on node "ERR_OE1_CP"
+disabled device "u15_cp" pins 12,13,4,5
+!IPG: with pin 15 on node "FAULT_OE1_CP"
+disabled device "u18_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u18_cp" pins 9
+!IPG: with pin 22 on node "UNNAMED_38_AVC8T245_I91_OE_CP"
+disabled device "u20_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u20_cp" pins 9
+!IPG: with pin 22 on node "HOT_OE_CP"
+disabled device "u33_cp" pins 4
+!IPG: with pin 1 on node "DIMM_THERM_EVENT_L_2V5_CP"
+
+!IPG: User may add VCL pass-through statements here if needed.
+
+nodes
+!IPG not disabled:   silicon node "C105_PCH_FPGA_MDIO0_CP" test "u5_cp.W69"
+!IPG not disabled:   silicon node "C105_PCH_FPGA_MDIO1_CP" test "u5_cp.T67"
+!IPG: The following node statement was segmented into multiple lines.
+!IPG: All lines for this node must be uncommented to fully test this node.
+!IPG nailed:   silicon node "CPLD_FAST_PROCHOT_N_CP" test "u5_cp.AG71"
+!IPG nailed:   silicon node "CPLD_FAST_PROCHOT_N_CP" test "u5_cp.CC56"
+!IPG nailed:   silicon node "CPU_FPGA_CATERR_3V3_L" test "u5_cp_pch.BW22"
+!IPG nailed:   silicon node "CPU_FPGA_ERR0" test "u5_cp_pch.BV16"
+!IPG nailed:   silicon node "CPU_FPGA_SMI_ACTIVE_N" test "u5_cp_pch.BR4"
+!IPG: Node "GPIO41" is aliased to "CPU_PROCHOT_3V3_L"
+!IPG nailed:   silicon node "CPU_PROCHOT_3V3_L" test "u5_cp_pch.BG4"
+!IPG nailed:   silicon node "CPU_PWRGD_PCH_CP" test "u5_cp_pch.BU11"
+!IPG: Node "GPIO43" is aliased to "CPU_THERMTRIP_3V3_L"
+!IPG nailed:   silicon node "CPU_THERMTRIP_3V3_L" test "u5_cp_pch.BE4"
+!IPG: Node "GPIO10" is aliased to "DIMM_THERM_EVENT_L"
+!IPG nailed:   silicon node "DIMM_THERM_EVENT_L" test "u5_cp_pch.BF1"
+!IPG nailed:   silicon node "FM_ADR_TRIGGER_N_GPIO37_CP" test "u5_cp_pch.BL2"
+!IPG nailed:   silicon node "FM_BDXDE_CATERR_GTL_N_CP" test "u5_cp.Y67"
+!IPG: The following node statement was segmented into multiple lines.
+!IPG: All lines for this node must be uncommented to fully test this node.
+!IPG nailed:   silicon node "FM_BDXDE_PMSYNC_PCH_CPU_CP" test "u5_cp.H77"
+!IPG nailed:   silicon node "FM_BDXDE_PMSYNC_PCH_CPU_CP" test "u5_cp_pch.BT9"
+!IPG nailed:   silicon node "FM_BIOS_RCVR_BOOT_N_CP" test "u5_cp_pch.BU22"
+!IPG nailed:   silicon node "FM_CPU_THROTTLE_N_CP" test "u5_cp_pch.BN2"
+!IPG: The following node statement was segmented into multiple lines.
+!IPG: All lines for this node must be uncommented to fully test this node.
+!IPG nailed:   silicon node "FM_PCH_HOT_N_CP" test "u5_cp.AL76"
+!IPG nailed:   silicon node "FM_PCH_HOT_N_CP" test "u5_cp_pch.BF7"
+!IPG nailed:   silicon node "FM_SLP_A_N_CP" test "u5_cp_pch.BB7"
+!IPG nailed:   silicon node "FPGA_CPU_MFG_MODE_STRAP" test "u5_cp_pch.BD22"
+!IPG: Node "GPIO14" is aliased to "FPGA_PCH_CATERR_DLY_L"
+!IPG nailed:   silicon node "FPGA_PCH_CATERR_DLY_L" test "u5_cp_pch.BD3"
+!IPG: Node "GPIO42" is aliased to "FPGA_PCH_WDT_L"
+!IPG nailed:   silicon node "FPGA_PCH_WDT_L" test "u5_cp_pch.BG2"
+!IPG not disabled:   silicon node "GPIO1" test "u5_cp_pch.AM4"
+!IPG nailed:   silicon node "GPIO6" test "u5_cp_pch.AV11"
+!IPG nailed:   silicon node "GPIO7" test "u5_cp_pch.AG2"
+!IPG nailed:   silicon node "GPIO8" test "u5_cp_pch.BJ4"
+!IPG nailed:   silicon node "GPIO9" test "u5_cp_pch.BF3"
+!IPG nailed:   silicon node "GPIO11" test "u5_cp_pch.BH7"
+!IPG nailed:   silicon node "GPIO15" test "u5_cp_pch.BA23"
+!IPG nailed:   silicon node "GPIO17" test "u5_cp_pch.AN3"
+!IPG nailed:   silicon node "GPIO21" test "u5_cp_pch.BR2"
+!IPG nailed:   silicon node "GPIO22" test "u5_cp_pch.BN14"
+!IPG nailed:   silicon node "GPIO24" test "u5_cp_pch.BB21"
+!IPG nailed:   silicon node "GPIO26" test "u5_cp_pch.BB14"
+!IPG nailed:   silicon node "GPIO28" test "u5_cp_pch.BB23"
+!IPG nailed:   silicon node "GPIO31" test "u5_cp_pch.BC9"
+!IPG nailed:   silicon node "GPIO32" test "u5_cp_pch.BB27"
+!IPG nailed:   silicon node "GPIO35" test "u5_cp_pch.BP1"
+!IPG nailed:   silicon node "GPIO40" test "u5_cp_pch.BE2"
+!IPG nailed:   silicon node "GPIO44" test "u5_cp_pch.BD18"
+!IPG nailed:   silicon node "GPIO45" test "u5_cp_pch.BA21"
+!IPG nailed:   silicon node "GPIO48" test "u5_cp_pch.BT16"
+!IPG nailed:   silicon node "GPIO49" test "u5_cp_pch.BM1"
+!IPG nailed:   silicon node "GPIO58" test "u5_cp_pch.BG9"
+!IPG nailed:   silicon node "GPIO59" test "u5_cp_pch.BH1"
+!IPG nailed:   silicon node "GPIO60" test "u5_cp_pch.BL7"
+!IPG nailed:   silicon node "GPIO68" test "u5_cp_pch.AV7"
+!IPG nailed:   silicon node "GPIO69" test "u5_cp_pch.AU9"
+!IPG nailed:   silicon node "GPIO70" test "u5_cp_pch.AU14"
+!IPG nailed:   silicon node "GPIO71" test "u5_cp_pch.AM2"
+!IPG nailed:   silicon node "GPIO72_CP" test "u5_cp_pch.BB4"
+!IPG nailed:   silicon node "GPIO75" test "u5_cp_pch.BB11"
+!IPG nailed:   silicon node "HSD_USB0_N" test "u5_cp_pch.AD3"
+!IPG nailed:   silicon node "HSD_USB0_P" test "u5_cp_pch.AD1"
+!IPG nailed:   silicon node "HSD_USB1_CPU_FP_N" test "u5_cp_pch.AK9"
+!IPG nailed:   silicon node "HSD_USB1_CPU_FP_P" test "u5_cp_pch.AH9"
+!IPG nailed:   silicon node "HSD_USB3_N" test "u5_cp_pch.AG7"
+!IPG nailed:   silicon node "HSD_USB3_P" test "u5_cp_pch.AJ7"
+  silicon node "HSD_USB_EUSB_DRIVE_N" test "u5_cp_pch.AE4"
+          node "PCH_LPC_LAD<1>" hybrid test "u5_cp.AG4" ! (39 mils from u5_cp.AE4)
+          node "PCH_LPC_LAD<0>" hybrid test "u5_cp.AF3" ! (27 mils from u5_cp.AE4)
+          node "HSD_USB0_N" hybrid test "u5_cp.AD3" ! (27 mils from u5_cp.AE4)
+  silicon node "HSD_USB_EUSB_DRIVE_P" test "u5_cp_pch.AE2"
+          node "GPIO7" hybrid test "u5_cp.AG2" ! (39 mils from u5_cp.AE2)
+          node "PCH_LPC_LAD<0>" hybrid test "u5_cp.AF3" ! (27 mils from u5_cp.AE2)
+          node "PCH_LPC_LAD<3>" hybrid test "u5_cp.AF1" ! (34 mils from u5_cp.AE2)
+          node "HSD_USB0_N" hybrid test "u5_cp.AD3" ! (27 mils from u5_cp.AE2)
+          node "HSD_USB0_P" hybrid test "u5_cp.AD1" ! (34 mils from u5_cp.AE2)
+          node "PECI_ID<1>_CP" hybrid test "u5_cp_pch.AD78" ! (0 mils from u5_cp_pch.AE2)
+!IPG nailed:   silicon node "IRQ_SERIRQ_DATA_CP" test "u5_cp.AE75"
+!IPG nailed:   silicon node "LAN_I2C0_SCL_1P0V_CP" test "u5_cp.R72"
+!IPG nailed:   silicon node "LAN_I2C0_SDA_1P0V_CP" test "u5_cp.U72"
+!IPG nailed:   silicon node "LAN_I2C1_SCL_1P0V_CP" test "u5_cp.P71"
+!IPG nailed:   silicon node "LAN_I2C1_SDA_1P0V_CP" test "u5_cp.T71"
+!IPG nailed:   silicon node "LAN_SEL<0>_CP" test "u5_cp.E75"
+!IPG nailed:   silicon node "LAN_SEL<1>_CP" test "u5_cp.N72"
+!IPG nailed:   silicon node "LPC_LFRAME_R_N_CP" test "u5_cp_pch.AH1"
+!IPG nailed:   silicon node "M_A_ALERT_N_CP" test "u5_cp.CK33"
+!IPG nailed:   silicon node "M_A_DQ<0>_CP" test "u5_cp.BY2"
+!IPG nailed:   silicon node "M_A_DQ<1>_CP" test "u5_cp.BY4"
+!IPG nailed:   silicon node "M_A_DQ<2>_CP" test "u5_cp.CD2"
+!IPG nailed:   silicon node "M_A_DQ<3>_CP" test "u5_cp.CD4"
+!IPG nailed:   silicon node "M_A_DQ<4>_CP" test "u5_cp.BW1"
+!IPG nailed:   silicon node "M_A_DQ<5>_CP" test "u5_cp.BW3"
+!IPG nailed:   silicon node "M_A_DQ<6>_CP" test "u5_cp.CC1"
+!IPG nailed:   silicon node "M_A_DQ<7>_CP" test "u5_cp.CC3"
+!IPG nailed:   silicon node "M_A_DQ<8>_CP" test "u5_cp.CC7"
+!IPG nailed:   silicon node "M_A_DQ<9>_CP" test "u5_cp.CB9"
+!IPG nailed:   silicon node "M_A_DQ<10>_CP" test "u5_cp.CM7"
+!IPG nailed:   silicon node "M_A_DQ<11>_CP" test "u5_cp.CL9"
+!IPG nailed:   silicon node "M_A_DQ<12>_CP" test "u5_cp.CA7"
+!IPG nailed:   silicon node "M_A_DQ<13>_CP" test "u5_cp.BY9"
+!IPG nailed:   silicon node "M_A_DQ<14>_CP" test "u5_cp.CK7"
+!IPG nailed:   silicon node "M_A_DQ<15>_CP" test "u5_cp.CJ9"
+!IPG nailed:   silicon node "M_A_DQ<16>_CP" test "u5_cp.CB13"
+!IPG nailed:   silicon node "M_A_DQ<17>_CP" test "u5_cp.CC14"
+!IPG nailed:   silicon node "M_A_DQ<18>_CP" test "u5_cp.CL13"
+!IPG nailed:   silicon node "M_A_DQ<19>_CP" test "u5_cp.CM14"
+!IPG nailed:   silicon node "M_A_DQ<20>_CP" test "u5_cp.BY13"
+!IPG nailed:   silicon node "M_A_DQ<21>_CP" test "u5_cp.CA14"
+!IPG nailed:   silicon node "M_A_DQ<22>_CP" test "u5_cp.CJ13"
+!IPG nailed:   silicon node "M_A_DQ<23>_CP" test "u5_cp.CK14"
+!IPG nailed:   silicon node "M_A_DQ<24>_CP" test "u5_cp.CD20"
+!IPG nailed:   silicon node "M_A_DQ<25>_CP" test "u5_cp.CB20"
+!IPG nailed:   silicon node "M_A_DQ<26>_CP" test "u5_cp.CD28"
+!IPG nailed:   silicon node "M_A_DQ<27>_CP" test "u5_cp.CB28"
+!IPG nailed:   silicon node "M_A_DQ<28>_CP" test "u5_cp.CF18"
+!IPG nailed:   silicon node "M_A_DQ<29>_CP" test "u5_cp.CC18"
+!IPG nailed:   silicon node "M_A_DQ<30>_CP" test "u5_cp.CF26"
+!IPG nailed:   silicon node "M_A_DQ<31>_CP" test "u5_cp.CC26"
+!IPG nailed:   silicon node "M_A_DQ<32>_CP" test "u5_cp.CD66"
+!IPG nailed:   silicon node "M_A_DQ<33>_CP" test "u5_cp.CB66"
+!IPG nailed:   silicon node "M_A_DQ<34>_CP" test "u5_cp.CD72"
+!IPG nailed:   silicon node "M_A_DQ<35>_CP" test "u5_cp.CB72"
+!IPG nailed:   silicon node "M_A_DQ<36>_CP" test "u5_cp.CF64"
+!IPG nailed:   silicon node "M_A_DQ<37>_CP" test "u5_cp.CC64"
+!IPG nailed:   silicon node "M_A_DQ<38>_CP" test "u5_cp.CF71"
+!IPG nailed:   silicon node "M_A_DQ<39>_CP" test "u5_cp.CC71"
+!IPG nailed:   silicon node "M_A_DQ<40>_CP" test "u5_cp.CL66"
+!IPG nailed:   silicon node "M_A_DQ<41>_CP" test "u5_cp.CJ66"
+!IPG nailed:   silicon node "M_A_DQ<42>_CP" test "u5_cp.CL72"
+!IPG nailed:   silicon node "M_A_DQ<43>_CP" test "u5_cp.CJ72"
+!IPG nailed:   silicon node "M_A_DQ<44>_CP" test "u5_cp.CM64"
+!IPG nailed:   silicon node "M_A_DQ<45>_CP" test "u5_cp.CK64"
+!IPG nailed:   silicon node "M_A_DQ<46>_CP" test "u5_cp.CM71"
+!IPG nailed:   silicon node "M_A_DQ<47>_CP" test "u5_cp.CK71"
+!IPG nailed:   silicon node "M_A_DQ<48>_CP" test "u5_cp.BT72"
+!IPG nailed:   silicon node "M_A_DQ<49>_CP" test "u5_cp.BU71"
+!IPG nailed:   silicon node "M_A_DQ<50>_CP" test "u5_cp.BG72"
+!IPG nailed:   silicon node "M_A_DQ<51>_CP" test "u5_cp.BH71"
+!IPG nailed:   silicon node "M_A_DQ<52>_CP" test "u5_cp.BV72"
+!IPG nailed:   silicon node "M_A_DQ<53>_CP" test "u5_cp.BW71"
+!IPG nailed:   silicon node "M_A_DQ<54>_CP" test "u5_cp.BJ72"
+!IPG nailed:   silicon node "M_A_DQ<55>_CP" test "u5_cp.BL71"
+!IPG nailed:   silicon node "M_A_DQ<56>_CP" test "u5_cp.BU67"
+!IPG nailed:   silicon node "M_A_DQ<57>_CP" test "u5_cp.BT66"
+!IPG nailed:   silicon node "M_A_DQ<58>_CP" test "u5_cp.BH67"
+!IPG nailed:   silicon node "M_A_DQ<59>_CP" test "u5_cp.BG66"
+!IPG nailed:   silicon node "M_A_DQ<60>_CP" test "u5_cp.BW67"
+!IPG nailed:   silicon node "M_A_DQ<61>_CP" test "u5_cp.BV66"
+!IPG nailed:   silicon node "M_A_DQ<62>_CP" test "u5_cp.BL67"
+!IPG nailed:   silicon node "M_A_DQ<63>_CP" test "u5_cp.BJ66"
+!IPG nailed:   silicon node "M_A_ECC<0>_CP" test "u5_cp.CL20"
+!IPG nailed:   silicon node "M_A_ECC<1>_CP" test "u5_cp.CJ20"
+!IPG nailed:   silicon node "M_A_ECC<2>_CP" test "u5_cp.CL28"
+!IPG nailed:   silicon node "M_A_ECC<3>_CP" test "u5_cp.CJ28"
+!IPG nailed:   silicon node "M_A_ECC<4>_CP" test "u5_cp.CM18"
+!IPG nailed:   silicon node "M_A_ECC<5>_CP" test "u5_cp.CK18"
+!IPG nailed:   silicon node "M_A_ECC<6>_CP" test "u5_cp.CM26"
+!IPG nailed:   silicon node "M_A_ECC<7>_CP" test "u5_cp.CK26"
+!IPG nailed:   silicon node "M_B_ALERT_N_CP" test "u5_cp.CT42"
+!IPG nailed:   silicon node "M_B_DQ<0>_CP" test "u5_cp.CG1"
+!IPG nailed:   silicon node "M_B_DQ<1>_CP" test "u5_cp.CG3"
+!IPG nailed:   silicon node "M_B_DQ<2>_CP" test "u5_cp.CM3"
+!IPG nailed:   silicon node "M_B_DQ<3>_CP" test "u5_cp.CN4"
+!IPG nailed:   silicon node "M_B_DQ<4>_CP" test "u5_cp.CF2"
+!IPG nailed:   silicon node "M_B_DQ<5>_CP" test "u5_cp.CF4"
+!IPG nailed:   silicon node "M_B_DQ<6>_CP" test "u5_cp.CL2"
+!IPG nailed:   silicon node "M_B_DQ<7>_CP" test "u5_cp.CK4"
+!IPG nailed:   silicon node "M_B_DQ<8>_CP" test "u5_cp.CU8"
+!IPG nailed:   silicon node "M_B_DQ<9>_CP" test "u5_cp.CR8"
+!IPG nailed:   silicon node "M_B_DQ<10>_CP" test "u5_cp.CU13"
+!IPG nailed:   silicon node "M_B_DQ<11>_CP" test "u5_cp.CR13"
+!IPG nailed:   silicon node "M_B_DQ<12>_CP" test "u5_cp.CU5"
+!IPG nailed:   silicon node "M_B_DQ<13>_CP" test "u5_cp.CT7"
+!IPG nailed:   silicon node "M_B_DQ<14>_CP" test "u5_cp.CV12"
+!IPG nailed:   silicon node "M_B_DQ<15>_CP" test "u5_cp.CT12"
+!IPG nailed:   silicon node "M_B_DQ<16>_CP" test "u5_cp.CV16"
+!IPG nailed:   silicon node "M_B_DQ<17>_CP" test "u5_cp.CT16"
+!IPG nailed:   silicon node "M_B_DQ<18>_CP" test "u5_cp.CV20"
+!IPG nailed:   silicon node "M_B_DQ<19>_CP" test "u5_cp.CT20"
+!IPG nailed:   silicon node "M_B_DQ<20>_CP" test "u5_cp.CU15"
+!IPG nailed:   silicon node "M_B_DQ<21>_CP" test "u5_cp.CR15"
+!IPG nailed:   silicon node "M_B_DQ<22>_CP" test "u5_cp.CU19"
+!IPG nailed:   silicon node "M_B_DQ<23>_CP" test "u5_cp.CR19"
+!IPG nailed:   silicon node "M_B_DQ<24>_CP" test "u5_cp.CU24"
+!IPG nailed:   silicon node "M_B_DQ<25>_CP" test "u5_cp.CR24"
+!IPG nailed:   silicon node "M_B_DQ<26>_CP" test "u5_cp.CU28"
+!IPG nailed:   silicon node "M_B_DQ<27>_CP" test "u5_cp.CR28"
+!IPG nailed:   silicon node "M_B_DQ<28>_CP" test "u5_cp.CV23"
+!IPG nailed:   silicon node "M_B_DQ<29>_CP" test "u5_cp.CT23"
+!IPG nailed:   silicon node "M_B_DQ<30>_CP" test "u5_cp.CV27"
+!IPG nailed:   silicon node "M_B_DQ<31>_CP" test "u5_cp.CT27"
+!IPG nailed:   silicon node "M_B_DQ<32>_CP" test "u5_cp.CT73"
+!IPG nailed:   silicon node "M_B_DQ<33>_CP" test "u5_cp.CU74"
+!IPG nailed:   silicon node "M_B_DQ<34>_CP" test "u5_cp.CJ78"
+!IPG nailed:   silicon node "M_B_DQ<35>_CP" test "u5_cp.CJ76"
+!IPG nailed:   silicon node "M_B_DQ<36>_CP" test "u5_cp.CU71"
+!IPG nailed:   silicon node "M_B_DQ<37>_CP" test "u5_cp.CR71"
+!IPG nailed:   silicon node "M_B_DQ<38>_CP" test "u5_cp.CL77"
+!IPG nailed:   silicon node "M_B_DQ<39>_CP" test "u5_cp.CK75"
+!IPG nailed:   silicon node "M_B_DQ<40>_CP" test "u5_cp.CF77"
+!IPG nailed:   silicon node "M_B_DQ<41>_CP" test "u5_cp.CF75"
+!IPG nailed:   silicon node "M_B_DQ<42>_CP" test "u5_cp.CB77"
+!IPG nailed:   silicon node "M_B_DQ<43>_CP" test "u5_cp.CB75"
+!IPG nailed:   silicon node "M_B_DQ<44>_CP" test "u5_cp.CG78"
+!IPG nailed:   silicon node "M_B_DQ<45>_CP" test "u5_cp.CG76"
+!IPG nailed:   silicon node "M_B_DQ<46>_CP" test "u5_cp.CC78"
+!IPG nailed:   silicon node "M_B_DQ<47>_CP" test "u5_cp.CC76"
+!IPG nailed:   silicon node "M_B_DQ<48>_CP" test "u5_cp.BW78"
+!IPG nailed:   silicon node "M_B_DQ<49>_CP" test "u5_cp.BW76"
+!IPG nailed:   silicon node "M_B_DQ<50>_CP" test "u5_cp.BP78"
+!IPG nailed:   silicon node "M_B_DQ<51>_CP" test "u5_cp.BP76"
+!IPG nailed:   silicon node "M_B_DQ<52>_CP" test "u5_cp.BY77"
+!IPG nailed:   silicon node "M_B_DQ<53>_CP" test "u5_cp.BY75"
+!IPG nailed:   silicon node "M_B_DQ<54>_CP" test "u5_cp.BR77"
+!IPG nailed:   silicon node "M_B_DQ<55>_CP" test "u5_cp.BR75"
+!IPG nailed:   silicon node "M_B_DQ<56>_CP" test "u5_cp.BL77"
+!IPG nailed:   silicon node "M_B_DQ<57>_CP" test "u5_cp.BL75"
+!IPG nailed:   silicon node "M_B_DQ<58>_CP" test "u5_cp.BG77"
+!IPG nailed:   silicon node "M_B_DQ<59>_CP" test "u5_cp.BG75"
+!IPG nailed:   silicon node "M_B_DQ<60>_CP" test "u5_cp.BM78"
+!IPG nailed:   silicon node "M_B_DQ<61>_CP" test "u5_cp.BM76"
+!IPG nailed:   silicon node "M_B_DQ<62>_CP" test "u5_cp.BH78"
+!IPG nailed:   silicon node "M_B_DQ<63>_CP" test "u5_cp.BH76"
+!IPG nailed:   silicon node "M_B_ECC<0>_CP" test "u5_cp.CV31"
+!IPG nailed:   silicon node "M_B_ECC<1>_CP" test "u5_cp.CT31"
+!IPG nailed:   silicon node "M_B_ECC<2>_CP" test "u5_cp.CV36"
+!IPG nailed:   silicon node "M_B_ECC<3>_CP" test "u5_cp.CT36"
+!IPG nailed:   silicon node "M_B_ECC<4>_CP" test "u5_cp.CU30"
+!IPG nailed:   silicon node "M_B_ECC<5>_CP" test "u5_cp.CR30"
+!IPG nailed:   silicon node "M_B_ECC<6>_CP" test "u5_cp.CU35"
+!IPG nailed:   silicon node "M_B_ECC<7>_CP" test "u5_cp.CR35"
+!IPG nailed:   silicon node "MB_PCH_INT_L_CP" test "u5_cp_pch.BN22"
+!IPG nailed:   silicon node "NC_SATALED_N_CP" test "u5_cp_pch.BF14"
+  silicon node "NC_SPI_PCH_IO2_CP" test "u5_cp_pch.BF18"
+          node "PU_PIRQA_N_CP" hybrid test "u5_cp.BG20" ! (39 mils from u5_cp.BF18)
+          node "PECI_PCH_R_CP" hybrid test "u5_cp.BG16" ! (39 mils from u5_cp.BF18)
+          node "PU_PME_N_CP" hybrid test "u5_cp.BE16" ! (39 mils from u5_cp.BF18)
+          node "GPIO44" hybrid test "u5_cp.BD18" ! (39 mils from u5_cp.BF18)
+          node "NC_SATALED_N_CP" hybrid test "u5_cp_pch.BF14" ! (0 mils from u5_cp_pch.BF18)
+          node "PU_PIRQB_N_CP" hybrid test "u5_cp_pch.BF22" ! (0 mils from u5_cp_pch.BF18)
+  silicon node "NC_SPI_PCH_IO3_CP" test "u5_cp_pch.BE20"
+          node "PU_PIRQA_N_CP" hybrid test "u5_cp.BG20" ! (39 mils from u5_cp.BE20)
+          node "PU_PIRQB_N_CP" hybrid test "u5_cp.BF22" ! (39 mils from u5_cp.BE20)
+          node "FPGA_CPU_MFG_MODE_STRAP" hybrid test "u5_cp.BD22" ! (39 mils from u5_cp.BE20)
+          node "GPIO44" hybrid test "u5_cp.BD18" ! (39 mils from u5_cp.BE20)
+          node "PU_PME_N_CP" hybrid test "u5_cp_pch.BE16" ! (0 mils from u5_cp_pch.BE20)
+          node "PCH_PLTRST_L" hybrid test "u5_cp_pch.BE24" ! (0 mils from u5_cp_pch.BE20)
+!IPG nailed:   silicon node "PCH_FPGA_SLP_S3_L" test "u5_cp_pch.AY2"
+!IPG nailed:   silicon node "PCH_FPGA_SLP_S4_L" test "u5_cp_pch.AW1"
+!IPG nailed:   silicon node "PCH_FPGA_SUS_CLK" test "u5_cp_pch.BD11"
+!IPG: Node "GPIO27" is aliased to "PCH_GP27_MIFPGA2_PERST_L"
+!IPG nailed:   silicon node "PCH_GP27_MIFPGA2_PERST_L" test "u5_cp_pch.BB16"
+!IPG nailed:   silicon node "PCH_GP50_PSU_POWER_CYCLE_ENABLE_CP" test "u5_cp_pch.BV20"
+!IPG: Node "GPIO57" is aliased to "PCH_GP57_MIFPGA_PERST_L"
+!IPG nailed:   silicon node "PCH_GP57_MIFPGA_PERST_L" test "u5_cp_pch.BP9"
+!IPG: Node "GPIO46" is aliased to "PCH_GP72_FPGA_PERST_L"
+!IPG nailed:   silicon node "PCH_GP72_FPGA_PERST_L" test "u5_cp_pch.BA19"
+!IPG nailed:   silicon node "PCH_LPC_LAD<0>" test "u5_cp_pch.AF3"
+!IPG nailed:   silicon node "PCH_LPC_LAD<1>" test "u5_cp_pch.AG4"
+!IPG nailed:   silicon node "PCH_LPC_LAD<2>" test "u5_cp_pch.AL3"
+!IPG nailed:   silicon node "PCH_LPC_LAD<3>" test "u5_cp_pch.AF1"
+!IPG nailed:   silicon node "PCH_PLTRST_L" test "u5_cp_pch.BE24"
+!IPG nailed:   silicon node "PCH_PSU_POWER_CYCLE_L" test "u5_cp_pch.BW18"
+!IPG nailed:   silicon node "PCH_SERIRQ" test "u5_cp_pch.BU14"
+!IPG nailed:   silicon node "PCH_SUS_STAT_L" test "u5_cp_pch.BB18"
+!IPG nailed:   silicon node "PCH_TPM_CLKRUN_L_CP" test "u5_cp_pch.BA5"
+!IPG nailed:   silicon node "PD_DMI_TERMINATION_GPIO33_CP" test "u5_cp_pch.AN11"
+!IPG nailed:   silicon node "PD_DMI_TERMINATION_GPIO36_CP" test "u5_cp_pch.BT1"
+!IPG nailed:   silicon node "PD_GPIO52_CPUSV_CP" test "u5_cp_pch.BP16"
+!IPG nailed:   silicon node "PD_GPIO53_GSXDIN_CP" test "u5_cp_pch.BT20"
+!IPG nailed:   silicon node "PD_LAN_JRST_N_SDP1_1_CP" test "u5_cp.N69"
+!IPG nailed:   silicon node "PD_PHY_JTDI_SDP0_0_CP" test "u5_cp.G74"
+!IPG nailed:   silicon node "PD_SPARE<1>_CP" test "u5_cp.AC64"
+!IPG nailed:   silicon node "PD_SPARE<2>_CP" test "u5_cp.AN78"
+!IPG nailed:   silicon node "PD_SPARE<3>_CP" test "u5_cp.AG67"
+!IPG nailed:   silicon node "PD_SPARE<4>_CP" test "u5_cp.AJ67"
+!IPG nailed:   silicon node "PD_SPARE<5>_CP" test "u5_cp.D71"
+!IPG: Node "PECI_PCH_R_CP" is aliased to "PECI_CPU_CP"
+!IPG: Testing through devices "r93_cp", "r92_cp"
+!IPG: The following node statement was segmented into multiple lines.
+!IPG: All lines for this node must be uncommented to fully test this node.
+!IPG nailed:   silicon node "PECI_CPU_CP" test "u5_cp.AL78"
+!IPG nailed:   silicon node "PECI_CPU_CP" test "u5_cp_pch.BG16"
+!IPG nailed:   silicon node "PECI_ID<0>_CP" test "u5_cp.L72"
+!IPG nailed:   silicon node "PHY_WAKE_N_CP" test "u5_cp_pch.BA1"
+!IPG: Node "RESET_CPU_N_CP" is aliased to "PLTRST_PROC_N_CP"
+!IPG: Testing through device "r261_cp"
+!IPG: The following node statement was segmented into multiple lines.
+!IPG: All lines for this node must be uncommented to fully test this node.
+!IPG nailed:   silicon node "PLTRST_PROC_N_CP" test "u5_cp.L76"
+!IPG nailed:   silicon node "PLTRST_PROC_N_CP" test "u5_cp_pch.BU7"
+!IPG nailed:   silicon node "PU_BMBUSY_M_GPIO0_CP" test "u5_cp_pch.BB28"
+!IPG nailed:   silicon node "PU_DDR3_4_STRAP_CP" test "u5_cp.AK69"
+!IPG nailed:   silicon node "PU_GPIO51_GSXDOUT_CP" test "u5_cp_pch.BL18"
+!IPG nailed:   silicon node "PU_IRQG_N_CP" test "u5_cp_pch.BL22"
+!IPG nailed:   silicon node "PU_LAN_JTMS_SDP0_1_CP" test "u5_cp.C76"
+!IPG nailed:   silicon node "PU_MBP0_MBPM0_N_CP" test "u5_cp.W75"
+!IPG nailed:   silicon node "PU_MBP0_MBPM1_N_CP" test "u5_cp.AD72"
+!IPG nailed:   silicon node "PU_PE_HP_SCL_CP" test "u5_cp.AR67"
+!IPG nailed:   silicon node "PU_PE_HP_SDA_CP" test "u5_cp.AN67"
+!IPG nailed:   silicon node "PU_PHY_JTDI_SDP1_0_CP" test "u5_cp.F76"
+!IPG nailed:   silicon node "PU_PIRQA_N_CP" test "u5_cp_pch.BG20"
+!IPG nailed:   silicon node "PU_PIRQB_N_CP" test "u5_cp_pch.BF22"
+!IPG nailed:   silicon node "PU_PIRQC_N_CP" test "u5_cp_pch.AR11"
+!IPG nailed:   silicon node "PU_PIRQD_N_CP" test "u5_cp_pch.BH22"
+!IPG nailed:   silicon node "PU_PME_N_CP" test "u5_cp_pch.BE16"
+!IPG nailed:   silicon node "PU_SATA1GP_GPIO19_CP" test "u5_cp_pch.BT3"
+!IPG nailed:   silicon node "PU_SLP_WLAN_M_GPIO29_CP" test "u5_cp_pch.BB12"
+!IPG nailed:   silicon node "PU_SUSWARN_N_GPIO30_CP" test "u5_cp_pch.AY11"
+!IPG nailed:   silicon node "R_SPI_PCH_MISO" test "u5_cp_pch.BJ20"
+!IPG nailed:   silicon node "SMB_10GBE_ALRT_N_CP" test "u5_cp.AN71"
+!IPG nailed:   silicon node "SMB_10GBE_CLK_CP" test "u5_cp.AM75"
+!IPG nailed:   silicon node "SMB_10GBE_DATA_CP" test "u5_cp.AM77"
+!IPG nailed:   silicon node "SMB_DDR01_SCL_CP" test "u5_cp.CD58"
+!IPG nailed:   silicon node "SMB_DDR01_SDA_CP" test "u5_cp.CC60"
+!IPG nailed:   silicon node "SMB_HOST_3V3_CLK_CP" test "u5_cp_pch.BN11"
+!IPG nailed:   silicon node "SMB_HOST_3V3_DAT_CP" test "u5_cp_pch.BJ13"
+!IPG nailed:   silicon node "SML0CLK_CP" test "u5_cp_pch.BR7"
+!IPG nailed:   silicon node "SML0DATA_CP" test "u5_cp_pch.BN18"
+!IPG nailed:   silicon node "SPEAKER_PCH_CP" test "u5_cp_pch.BP20"
+!IPG nailed:   silicon node "SPI_PCH_CS0_L_CP" test "u5_cp_pch.BN7"
+!IPG nailed:   silicon node "SPI_PCH_CS1_L" test "u5_cp_pch.BT13"
+!IPG nailed:   silicon node "SPI_PCH_CS2_N_CP" test "u5_cp_pch.BJ9"
+!IPG: Node "GPIO38" is aliased to "SRT_FPGA_PCH_SPARE1"
+!IPG nailed:   silicon node "SRT_FPGA_PCH_SPARE1" test "u5_cp_pch.BP13"
+!IPG: Node "GPIO39" is aliased to "SRT_FPGA_PCH_SPARE2"
+!IPG nailed:   silicon node "SRT_FPGA_PCH_SPARE2" test "u5_cp_pch.BU18"
+!IPG nailed:   silicon node "SRT_PCH_FPGA_MDC0_CP" test "u5_cp.U69"
+!IPG nailed:   silicon node "SRT_PCH_FPGA_MDC1_CP" test "u5_cp.V67"
+!IPG nailed:   silicon node "SRT_SPI_PCH_CLK_CP" test "u5_cp_pch.BG13"
+!IPG nailed:   silicon node "SRT_SPI_PCI_MOSI_CP" test "u5_cp_pch.BL11"
+!IPG nailed:   silicon node "SRT_SVID_DIO_CPU" test "u5_cp.AJ71"
+  silicon node "TP_CLKOUTFLEX1_GPIO65_CP" test "u5_cp_pch.AC4"
+          node "HSD_USB0_N" hybrid test "u5_cp.AD3" ! (27 mils from u5_cp.AC4)
+!Untestable (Inaccessible): PD_CLKIN_DOT96_DP_CP, u5_cp.AB3 (near u5_cp.AC4)
+          node "CLK_33M_PCH_PCH_R_CP" hybrid test "u5_cp.AA4" ! (39 mils from u5_cp.AC4)
+          node "CLK_33M_PCH_CP" hybrid test "u5_cp_pch.AC7" ! (0 mils from u5_cp_pch.AC4)
+  silicon node "TP_CLKOUTFLEX3_GPIO67_CP" test "u5_cp_pch.AA2"
+!Untestable (Inaccessible): PD_CLKIN_DOT96_DP_CP, u5_cp.AB3 (near u5_cp.AA2)
+!Untestable (Inaccessible): PD_CLKIN_DOT96_DN_CP, u5_cp.AB1 (near u5_cp.AA2)
+          node "CLK_33M_PCH_PCH_R_CP" hybrid test "u5_cp.AA4" ! (39 mils from u5_cp.AA2)
+          node "SRT_CLK100M_PE_CPU_MIFPGA_P" hybrid test "u5_cp.Y3" ! (27 mils from u5_cp.AA2)
+          node "SRT_CLK100M_PE_CPU_MIFPGA_N" hybrid test "u5_cp.Y1" ! (34 mils from u5_cp.AA2)
+!Untestable (Inaccessible): TP_CLKOUT_PEG_B_DN_CP, u5_cp.W2 (near u5_cp.AA2)
+          node "CLK_33M_PCH_PCH_R_CP" hybrid test "u5_cp_pch.AA4" ! (0 mils from u5_cp_pch.AA2)
+!IPG nailed:   silicon node "TP_CPU_SLP_SUS_N_CP" test "u5_cp_pch.AY7"
+!IPG nailed:   silicon node "TP_LAN_DISABLE_N_CP" test "u5_cp_pch.BD26"
+  silicon node "TP_LDRQ1_CP" test "u5_cp_pch.AL5"
+          node "HSD_USB3_P" hybrid test "u5_cp.AJ7" ! (43 mils from u5_cp.AL5)
+          node "PCH_LPC_LAD<2>" hybrid test "u5_cp.AL3" ! (38 mils from u5_cp.AL5)
+          node "TPM_PCH_DRQ_L0_CP" hybrid test "u5_cp.AK4" ! (27 mils from u5_cp.AL5)
+          node "PCH_LPC_LAD<2>" hybrid test "u5_cp_pch.AL3" ! (0 mils from u5_cp_pch.AL5)
+!IPG: the following node is commented (no 'node' statement to test the node)
+!  silicon node "TP_RSVD65_CP" test "u5_cp.AE62"
+!Untestable (Inaccessible): TP_RSVD73_CP, u5_cp.AG60 (near u5_cp.AE62)
+!Untestable (Inaccessible): TP_RSVD72_CP, u5_cp.AC62 (near u5_cp.AE62)
+!Untestable (Inaccessible): TP_RSVD71_CP, u5_cp.AC60 (near u5_cp.AE62)
+  silicon node "TP_RSVD66_CP" test "u5_cp.AM66"
+          node "PU_PE_HP_SDA_CP" hybrid test "u5_cp.AN67" ! (39 mils from u5_cp.AM66)
+!Untestable (Inaccessible): TP_RSVD79_CP, u5_cp.AP66 (near u5_cp.AM66)
+          node "PD_EXT_BGREF_CP" hybrid test "u5_cp.AK66" ! (39 mils from u5_cp.AM66)
+!Untestable (Inaccessible): TP_RSVD82_CP, u5_cp_pch.AM62 (near u5_cp_pch.AM66)
+          node "CPU_BIST_ENABLE_CP" hybrid test "u5_cp_pch.AM69" ! (0 mils from u5_cp_pch.AM66)
+!IPG: the following node is commented (no 'node' statement to test the node)
+!  silicon node "TP_RSVD67_CP" test "u5_cp.AE60"
+!Untestable (Inaccessible): TP_RSVD73_CP, u5_cp.AG60 (near u5_cp.AE60)
+!Untestable (Inaccessible): TP_RSVD64_CP, u5_cp.AG58 (near u5_cp.AE60)
+!Untestable (Inaccessible): TP_RSVD72_CP, u5_cp.AC62 (near u5_cp.AE60)
+!Untestable (Inaccessible): TP_RSVD63_CP, u5_cp.AE58 (near u5_cp.AE60)
+!Untestable (Inaccessible): TP_RSVD71_CP, u5_cp.AC60 (near u5_cp.AE60)
+!Untestable (Inaccessible): TP_RSVD63_CP, u5_cp_pch.AE58 (near u5_cp_pch.AE60)
+  silicon node "TP_RSVD68_CP" test "u5_cp.AN64"
+!Untestable (Inaccessible): TP_RSVD80_CP, u5_cp.AR64 (near u5_cp.AN64)
+!Untestable (Inaccessible): TP_RSVD79_CP, u5_cp.AP66 (near u5_cp.AN64)
+!Untestable (Inaccessible): TP_RSVD81_CP, u5_cp.AP62 (near u5_cp.AN64)
+!Untestable (Inaccessible): TP_RSVD82_CP, u5_cp.AM62 (near u5_cp.AN64)
+          node "PD_DMI_TERMINATION_GPIO33_CP" hybrid test "u5_cp_pch.AN11" ! (0 mils from u5_cp_pch.AN64)
+          node "PU_PE_HP_SDA_CP" hybrid test "u5_cp_pch.AN67" ! (0 mils from u5_cp_pch.AN64)
+  silicon node "TP_SRC1CLKRQB_GPIO18_CP" test "u5_cp_pch.BN4"
+          node "FPGA_PCH_SYS_PWROK" hybrid test "u5_cp.BP5" ! (27 mils from u5_cp.BN4)
+          node "JTAG_1V05SB_PCH_TDI_CP" hybrid test "u5_cp.BM5" ! (27 mils from u5_cp.BN4)
+          node "CPU_FPGA_SMI_ACTIVE_N" hybrid test "u5_cp.BR4" ! (39 mils from u5_cp.BN4)
+          node "FM_CPU_THROTTLE_N_CP" hybrid test "u5_cp.BN2" ! (39 mils from u5_cp.BN4)
+          node "JTAG_TCK_PCH_1V05_CP" hybrid test "u5_cp.BM3" ! (27 mils from u5_cp.BN4)
+          node "XDP_RST_PCH_SYSRST_N_CP" hybrid test "u5_cp.BL4" ! (39 mils from u5_cp.BN4)
+          node "FM_CPU_THROTTLE_N_CP" hybrid test "u5_cp_pch.BN2" ! (0 mils from u5_cp_pch.BN4)
+          node "SPI_PCH_CS0_L_CP" hybrid test "u5_cp_pch.BN7" ! (0 mils from u5_cp_pch.BN4)
+!IPG nailed:   silicon node "XDP_CPU_OBSDATA_A_MBP2_N_CP" test "u5_cp.N78"
+!IPG nailed:   silicon node "XDP_CPU_OBSDATA_A_MBP3_N_CP" test "u5_cp.M75"
+!IPG nailed:   silicon node "XDP_CPU_OBSDATA_A_MBP4_N_CP" test "u5_cp.J78"
+!IPG nailed:   silicon node "XDP_CPU_OBSDATA_A_MBP5_N_CP" test "u5_cp.H75"
+!IPG nailed:   silicon node "XDP_CPU_OBSFN_B_MBP6_N_CP" test "u5_cp.K75"
+!IPG nailed:   silicon node "XDP_CPU_OBSFN_B_MBP7_N_CP" test "u5_cp.J76"
+!IPG nailed:   silicon node "XDP_CPU_PREQ_N_CP" test "u5_cp.K77"
+end nodes
+
+!IPG: disable problems
+!IPG: node "C105_PCH_FPGA_MDIO0_CP"
+!IPG: node "C105_PCH_FPGA_MDIO1_CP"
+!IPG: node "GPIO1"
+
+!IPG: Family information could not be found for node PCH_LPC_LAD<1>
+!IPG: Family information could not be found for node PCH_LPC_LAD<0>
+!IPG: Family information could not be found for node HSD_USB0_N
+!IPG: Family information could not be found for node GPIO7
+!IPG: Family information could not be found for node PCH_LPC_LAD<0>
+!IPG: Family information could not be found for node PCH_LPC_LAD<3>
+!IPG: Family information could not be found for node HSD_USB0_N
+!IPG: Family information could not be found for node HSD_USB0_P
+!IPG: Family information could not be found for node PECI_ID<1>_CP
+!IPG: Family information could not be found for node PU_PIRQA_N_CP
+!IPG: Family information could not be found for node PECI_PCH_R_CP
+!IPG: Family information could not be found for node PU_PME_N_CP
+!IPG: Family information could not be found for node GPIO44
+!IPG: Family information could not be found for node NC_SATALED_N_CP
+!IPG: Family information could not be found for node PU_PIRQB_N_CP
+!IPG: Family information could not be found for node PU_PIRQA_N_CP
+!IPG: Family information could not be found for node PU_PIRQB_N_CP
+!IPG: Family information could not be found for node FPGA_CPU_MFG_MODE_STRAP
+!IPG: Family information could not be found for node GPIO44
+!IPG: Family information could not be found for node PU_PME_N_CP
+!IPG: Family information could not be found for node PCH_PLTRST_L
+!IPG: Family information could not be found for node HSD_USB0_N
+!IPG: Family information could not be found for node CLK_33M_PCH_PCH_R_CP
+!IPG: Family information could not be found for node CLK_33M_PCH_CP
+!IPG: Family information could not be found for node CLK_33M_PCH_PCH_R_CP
+!IPG: Family information could not be found for node SRT_CLK100M_PE_CPU_MIFPGA_P
+!IPG: Family information could not be found for node SRT_CLK100M_PE_CPU_MIFPGA_N
+!IPG: Family information could not be found for node CLK_33M_PCH_PCH_R_CP
+!IPG: Family information could not be found for node HSD_USB3_P
+!IPG: Family information could not be found for node PCH_LPC_LAD<2>
+!IPG: Family information could not be found for node TPM_PCH_DRQ_L0_CP
+!IPG: Family information could not be found for node PCH_LPC_LAD<2>
+!IPG: Family information could not be found for node PU_PE_HP_SDA_CP
+!IPG: Family information could not be found for node PD_EXT_BGREF_CP
+!IPG: Family information could not be found for node CPU_BIST_ENABLE_CP
+!IPG: Family information could not be found for node PD_DMI_TERMINATION_GPIO33_CP
+!IPG: Family information could not be found for node PU_PE_HP_SDA_CP
+!IPG: Family information could not be found for node FPGA_PCH_SYS_PWROK
+!IPG: Family information could not be found for node JTAG_1V05SB_PCH_TDI_CP
+!IPG: Family information could not be found for node CPU_FPGA_SMI_ACTIVE_N
+!IPG: Family information could not be found for node FM_CPU_THROTTLE_N_CP
+!IPG: Family information could not be found for node JTAG_TCK_PCH_1V05_CP
+!IPG: Family information could not be found for node XDP_RST_PCH_SYSRST_N_CP
+!IPG: Family information could not be found for node FM_CPU_THROTTLE_N_CP
+!IPG: Family information could not be found for node SPI_PCH_CS0_L_CP
+end powered shorts
+

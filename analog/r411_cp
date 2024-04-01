@@ -1,0 +1,7 @@
+!!!!    2    0    1 1531966022   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:30 2018
+disconnect all
+connect s to "VCCSUS3_3"
+connect i to "GPIO72_CP"
+resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+! "r411_cp" test.

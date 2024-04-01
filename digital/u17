@@ -1,0 +1,686 @@
+!!!!    6    0    1 1529027807  V86d7                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:48 2018
+!
+!***  All contents copyright 2002 Cisco Systems Inc.
+!***  All rights reserved.
+!***  No portion of this software may be used or reproduced in any form, or
+!***  by any means, without prior written permission from Cisco Systems, Inc.
+!
+! Part Name:         QS3253
+! Alias:             PI3B3253,74ALS253,74CBTLV3253
+! Part Type:         VLSI
+! Description:       Dual 4 to 1 Multiplexer
+! Manufacturer:      Quality Semiconductor, Pericom, TI
+! Package Style:     16 pin SOP
+! Created:           Jan 13, 1998
+! Updated:           Nov 06, 2001. Added alias and Cisco part number.
+! Updated:           Dec 28, 2001. Added alias and Cisco part number.
+! Updated:           Apr 27, 2004. Updated to bidirectional tests.
+! Programmer:        sama
+! Tester:            HP3070
+! Processor:         VPU
+! Vector Format:     VCL
+! Testjet Testable:  yes
+! JTAG Device:       no
+! Fault coverage:    100%
+! Constraints:       No
+! Cisco Part #:      15-2358-01,15-1132-01,15-4259-01
+
+sequential
+
+vector cycle 500n
+receive delay 400n
+
+default device "u17"
+set terminators to on
+assign VCC   to pins *
+assign GND   to pins *
+
+assign S1    to pins 2
+assign S0    to pins 14
+
+assign EAB   to pins 1
+assign AIN0  to pins 6
+assign AIN1  to pins 5
+assign AIN2  to pins 4
+assign AIN3  to pins *
+assign YAIN  to pins 7
+assign AOUT0 to pins 6
+assign AOUT1 to pins 5
+assign AOUT2 to pins 4
+assign AOUT3 to pins *
+assign YAOUT to pins 7
+
+assign EBB   to pins 15
+assign BIN0  to pins 10
+assign BIN1  to pins 11
+assign BIN2  to pins 12
+assign BIN3  to pins *
+assign YBIN  to pins 9
+assign BOUT0 to pins 10
+assign BOUT1 to pins 11
+assign BOUT2 to pins 12
+assign BOUT3 to pins *
+assign YBOUT to pins 9
+
+power   VCC,GND
+inputs  AIN0,AIN1,AIN2,AIN3,BIN0
+inputs  BIN1,BIN2,BIN3,YAIN,YBIN
+inputs  S1,S0,EAB,EBB
+outputs AOUT0,AOUT1,AOUT2,AOUT3,YAOUT
+outputs BOUT0,BOUT1,BOUT2,BOUT3,YBOUT
+
+disable AOUT0,AOUT1,AOUT2,AOUT3,YAOUT with EAB to "1"
+disable BOUT0,BOUT1,BOUT2,BOUT3,YBOUT with EBB to "1"
+
+family LVT
+
+set load on groups AOUT0,AOUT1,AOUT2,AOUT3,YAOUT to pull up
+set load on groups BOUT0,BOUT1,BOUT2,BOUT3,YBOUT to pull up
+
+!IPG: Add defaults or loads to floating inputs and bidirs.
+assign Floating__Inputs to pins 2,14 default "00"
+inputs Floating__Inputs
+
+vector AIN0_YAOUT_0
+ set EAB   to "0"
+ set S1    to "0"
+ set S0    to "0"
+ set AIN0  to "0"
+ set YAOUT to "0"
+end vector
+
+vector AIN0_YAOUT_1
+ set EAB   to "0"
+ set S1    to "0"
+ set S0    to "0"
+ set AIN0  to "1"
+ set YAOUT to "1"
+end vector
+
+vector AIN0_YAOUT_Z
+ set EAB   to "1"
+ set S1    to "0"
+ set S0    to "0"
+ set AIN0  to "0"
+ set YAOUT to "1"
+end vector
+
+vector AIN1_YAOUT_0
+ set EAB   to "0"
+ set S1    to "0"
+ set S0    to "1"
+ set AIN1  to "0"
+ set YAOUT to "0"
+end vector
+
+vector AIN1_YAOUT_1
+ set EAB   to "0"
+ set S1    to "0"
+ set S0    to "1"
+ set AIN1  to "1"
+ set YAOUT to "1"
+end vector
+
+vector AIN1_YAOUT_Z
+ set EAB   to "1"
+ set S1    to "0"
+ set S0    to "1"
+ set AIN1  to "0"
+ set YAOUT to "1"
+end vector
+
+vector AIN2_YAOUT_0
+ set EAB   to "0"
+ set S1    to "1"
+ set S0    to "0"
+ set AIN2  to "0"
+ set YAOUT to "0"
+end vector
+
+vector AIN2_YAOUT_1
+ set EAB   to "0"
+ set S1    to "1"
+ set S0    to "0"
+ set AIN2  to "1"
+ set YAOUT to "1"
+end vector
+
+vector AIN2_YAOUT_Z
+ set EAB   to "1"
+ set S1    to "1"
+ set S0    to "0"
+ set AIN2  to "0"
+ set YAOUT to "1"
+end vector
+
+vector AIN3_YAOUT_0
+ set EAB   to "0"
+ set S1    to "1"
+ set S0    to "1"
+ set AIN3  to "0"
+ set YAOUT to "0"
+end vector
+
+vector AIN3_YAOUT_1
+ set EAB   to "0"
+ set S1    to "1"
+ set S0    to "1"
+ set AIN3  to "1"
+ set YAOUT to "1"
+end vector
+
+vector AIN3_YAOUT_Z
+ set EAB   to "1"
+ set S1    to "1"
+ set S0    to "1"
+ set AIN3  to "0"
+ set YAOUT to "1"
+end vector
+
+! ************************************************************************
+
+vector YAIN_AOUT0_0
+ set EAB   to "0"
+ set S1    to "0"
+ set S0    to "0"
+ set YAIN  to "0"
+ set AOUT0 to "0"
+end vector
+
+vector YAIN_AOUT0_1
+ set EAB   to "0"
+ set S1    to "0"
+ set S0    to "0"
+ set YAIN  to "1"
+ set AOUT0 to "1"
+end vector
+
+vector YAIN_AOUT0_Z
+ set EAB   to "1"
+ set S1    to "0"
+ set S0    to "0"
+ set YAIN  to "0"
+ set AOUT0 to "1"
+end vector
+
+vector YAIN_AOUT1_0
+ set EAB   to "0"
+ set S1    to "0"
+ set S0    to "1"
+ set YAIN  to "0"
+ set AOUT1 to "0"
+end vector
+
+vector YAIN_AOUT1_1
+ set EAB   to "0"
+ set S1    to "0"
+ set S0    to "1"
+ set YAIN  to "1"
+ set AOUT1 to "1"
+end vector
+
+vector YAIN_AOUT1_Z
+ set EAB   to "1"
+ set S1    to "0"
+ set S0    to "1"
+ set YAIN  to "0"
+ set AOUT1 to "1"
+end vector
+
+vector YAIN_AOUT2_0
+ set EAB   to "0"
+ set S1    to "1"
+ set S0    to "0"
+ set YAIN  to "0"
+ set AOUT2 to "0"
+end vector
+
+vector YAIN_AOUT2_1
+ set EAB   to "0"
+ set S1    to "1"
+ set S0    to "0"
+ set YAIN  to "1"
+ set AOUT2 to "1"
+end vector
+
+vector YAIN_AOUT2_Z
+ set EAB   to "1"
+ set S1    to "1"
+ set S0    to "0"
+ set YAIN  to "0"
+ set AOUT2 to "1"
+end vector
+
+vector YAIN_AOUT3_0
+ set EAB   to "0"
+ set S1    to "1"
+ set S0    to "1"
+ set YAIN  to "0"
+ set AOUT3 to "0"
+end vector
+
+vector YAIN_AOUT3_1
+ set EAB   to "0"
+ set S1    to "1"
+ set S0    to "1"
+ set YAIN  to "1"
+ set AOUT3 to "1"
+end vector
+
+vector YAIN_AOUT3_Z
+ set EAB   to "1"
+ set S1    to "1"
+ set S0    to "1"
+ set YAIN  to "0"
+ set AOUT3 to "1"
+end vector
+
+! ************************************************************************
+
+vector BIN0_YBOUT_0
+ set EBB   to "0"
+ set S1    to "0"
+ set S0    to "0"
+ set BIN0  to "0"
+ set YBOUT to "0"
+end vector
+
+vector BIN0_YBOUT_1
+ set EBB   to "0"
+ set S1    to "0"
+ set S0    to "0"
+ set BIN0  to "1"
+ set YBOUT to "1"
+end vector
+
+vector BIN0_YBOUT_Z
+ set EBB   to "1"
+ set S1    to "0"
+ set S0    to "0"
+ set BIN0  to "0"
+ set YBOUT to "1"
+end vector
+
+vector BIN1_YBOUT_0
+ set EBB   to "0"
+ set S1    to "0"
+ set S0    to "1"
+ set BIN1  to "0"
+ set YBOUT to "0"
+end vector
+
+vector BIN1_YBOUT_1
+ set EBB   to "0"
+ set S1    to "0"
+ set S0    to "1"
+ set BIN1  to "1"
+ set YBOUT to "1"
+end vector
+
+vector BIN1_YBOUT_Z
+ set EBB   to "1"
+ set S1    to "0"
+ set S0    to "1"
+ set BIN1  to "0"
+ set YBOUT to "1"
+end vector
+
+vector BIN2_YBOUT_0
+ set EBB   to "0"
+ set S1    to "1"
+ set S0    to "0"
+ set BIN2  to "0"
+ set YBOUT to "0"
+end vector
+
+vector BIN2_YBOUT_1
+ set EBB   to "0"
+ set S1    to "1"
+ set S0    to "0"
+ set BIN2  to "1"
+ set YBOUT to "1"
+end vector
+
+vector BIN2_YBOUT_Z
+ set EBB   to "1"
+ set S1    to "1"
+ set S0    to "0"
+ set BIN2  to "0"
+ set YBOUT to "1"
+end vector
+
+vector BIN3_YBOUT_0
+ set EBB   to "0"
+ set S1    to "1"
+ set S0    to "1"
+ set BIN3  to "0"
+ set YBOUT to "0"
+end vector
+
+vector BIN3_YBOUT_1
+ set EBB   to "0"
+ set S1    to "1"
+ set S0    to "1"
+ set BIN3  to "1"
+ set YBOUT to "1"
+end vector
+
+vector BIN3_YBOUT_Z
+ set EBB   to "1"
+ set S1    to "1"
+ set S0    to "1"
+ set BIN3  to "0"
+ set YBOUT to "1"
+end vector
+
+! ************************************************************************
+
+vector YBIN_BOUT0_0
+ set EBB   to "0"
+ set S1    to "0"
+ set S0    to "0"
+ set YBIN  to "0"
+ set BOUT0 to "0"
+end vector
+
+vector YBIN_BOUT0_1
+ set EBB   to "0"
+ set S1    to "0"
+ set S0    to "0"
+ set YBIN  to "1"
+ set BOUT0 to "1"
+end vector
+
+vector YBIN_BOUT0_Z
+ set EBB   to "1"
+ set S1    to "0"
+ set S0    to "0"
+ set YBIN  to "0"
+ set BOUT0 to "1"
+end vector
+
+vector YBIN_BOUT1_0
+ set EBB   to "0"
+ set S1    to "0"
+ set S0    to "1"
+ set YBIN  to "0"
+ set BOUT1 to "0"
+end vector
+
+vector YBIN_BOUT1_1
+ set EBB   to "0"
+ set S1    to "0"
+ set S0    to "1"
+ set YBIN  to "1"
+ set BOUT1 to "1"
+end vector
+
+vector YBIN_BOUT1_Z
+ set EBB   to "1"
+ set S1    to "0"
+ set S0    to "1"
+ set YBIN  to "0"
+ set BOUT1 to "1"
+end vector
+
+vector YBIN_BOUT2_0
+ set EBB   to "0"
+ set S1    to "1"
+ set S0    to "0"
+ set YBIN  to "0"
+ set BOUT2 to "0"
+end vector
+
+vector YBIN_BOUT2_1
+ set EBB   to "0"
+ set S1    to "1"
+ set S0    to "0"
+ set YBIN  to "1"
+ set BOUT2 to "1"
+end vector
+
+vector YBIN_BOUT2_Z
+ set EBB   to "1"
+ set S1    to "1"
+ set S0    to "0"
+ set YBIN  to "0"
+ set BOUT2 to "1"
+end vector
+
+vector YBIN_BOUT3_0
+ set EBB   to "0"
+ set S1    to "1"
+ set S0    to "1"
+ set YBIN  to "0"
+ set BOUT3 to "0"
+end vector
+
+vector YBIN_BOUT3_1
+ set EBB   to "0"
+ set S1    to "1"
+ set S0    to "1"
+ set YBIN  to "1"
+ set BOUT3 to "1"
+end vector
+
+vector YBIN_BOUT3_Z
+ set EBB   to "1"
+ set S1    to "1"
+ set S0    to "1"
+ set YBIN  to "0"
+ set BOUT3 to "1"
+end vector
+
+! ****************** A0,A1,A2,A3 Inputs, YA Output tests ******************
+
+unit "YAOUT vs AIN0, Low"
+ execute AIN0_YAOUT_0
+end unit
+
+unit "YAOUT vs AIN0, High"
+ execute AIN0_YAOUT_1
+end unit
+
+unit "YAOUT vs AIN0, HighZ"
+ execute AIN0_YAOUT_Z
+end unit
+
+unit "YAOUT vs AIN1, Low"
+ execute AIN1_YAOUT_0
+end unit
+
+unit "YAOUT vs AIN1, High"
+ execute AIN1_YAOUT_1
+end unit
+
+unit "YAOUT vs AIN1, HighZ"
+ execute AIN1_YAOUT_Z
+end unit
+
+unit "YAOUT vs AIN2, Low"
+ execute AIN2_YAOUT_0
+end unit
+
+unit "YAOUT vs AIN2, High"
+ execute AIN2_YAOUT_1
+end unit
+
+unit "YAOUT vs AIN2, HighZ"
+ execute AIN2_YAOUT_Z
+end unit
+
+!IPG: Unit removed due to conflict in vector AIN3_YAOUT_0
+!IPG: Pin 3 conflicts with an unconnected pin.
+!*IPG*unit "YAOUT vs AIN3, Low"
+!*IPG* execute AIN3_YAOUT_0
+!*IPG*end unit
+
+!IPG: Unit removed due to conflict in vector AIN3_YAOUT_1
+!IPG: Pin 3 conflicts with an unconnected pin.
+!*IPG*unit "YAOUT vs AIN3, High"
+!*IPG* execute AIN3_YAOUT_1
+!*IPG*end unit
+
+!IPG: Unit removed due to conflict in vector AIN3_YAOUT_Z
+!IPG: Pin 3 conflicts with an unconnected pin.
+!*IPG*unit "YAOUT vs AIN3, HighZ"
+!*IPG* execute AIN3_YAOUT_Z
+!*IPG*end unit
+
+! ****************** YA Input, A0,A1,A2,A3 Outputs tests ******************
+
+unit "AOUT0 vs YAIN, Low"
+ execute YAIN_AOUT0_0
+end unit
+
+unit "AOUT0 vs YAIN, High"
+ execute YAIN_AOUT0_1
+end unit
+
+unit "AOUT0 vs YAIN, HighZ"
+ execute YAIN_AOUT0_Z
+end unit
+
+unit "AOUT1 vs YAIN, Low"
+ execute YAIN_AOUT1_0
+end unit
+
+unit "AOUT1 vs YAIN, High"
+ execute YAIN_AOUT1_1
+end unit
+
+unit "AOUT1 vs YAIN, HighZ"
+ execute YAIN_AOUT1_Z
+end unit
+
+unit "AOUT2 vs YAIN, Low"
+ execute YAIN_AOUT2_0
+end unit
+
+unit "AOUT2 vs YAIN, High"
+ execute YAIN_AOUT2_1
+end unit
+
+unit "AOUT2 vs YAIN, HighZ"
+ execute YAIN_AOUT2_Z
+end unit
+
+unit "AOUT3 vs YAIN, Low"
+ execute YAIN_AOUT3_0
+end unit
+
+unit "AOUT3 vs YAIN, High"
+ execute YAIN_AOUT3_1
+end unit
+
+unit "AOUT3 vs YAIN, HighZ"
+ execute YAIN_AOUT3_Z
+end unit
+
+! ****************** B0,B1,B2,B3 Inputs, YB Output tests ******************
+
+unit "YBOUT vs BIN0, Low"
+ execute BIN0_YBOUT_0
+end unit
+
+unit "YBOUT vs BIN0, High"
+ execute BIN0_YBOUT_1
+end unit
+
+unit "YBOUT vs BIN0, HighZ"
+ execute BIN0_YBOUT_Z
+end unit
+
+unit "YBOUT vs BIN1, Low"
+ execute BIN1_YBOUT_0
+end unit
+
+unit "YBOUT vs BIN1, High"
+ execute BIN1_YBOUT_1
+end unit
+
+unit "YBOUT vs BIN1, HighZ"
+ execute BIN1_YBOUT_Z
+end unit
+
+unit "YBOUT vs BIN2, Low"
+ execute BIN2_YBOUT_0
+end unit
+
+unit "YBOUT vs BIN2, High"
+ execute BIN2_YBOUT_1
+end unit
+
+unit "YBOUT vs BIN2, HighZ"
+ execute BIN2_YBOUT_Z
+end unit
+
+!IPG: Unit removed due to conflict in vector BIN3_YBOUT_0
+!IPG: Pin 13 conflicts with an unconnected pin.
+!*IPG*unit "YBOUT vs BIN3, Low"
+!*IPG* execute BIN3_YBOUT_0
+!*IPG*end unit
+
+!IPG: Unit removed due to conflict in vector BIN3_YBOUT_1
+!IPG: Pin 13 conflicts with an unconnected pin.
+!*IPG*unit "YBOUT vs BIN3, High"
+!*IPG* execute BIN3_YBOUT_1
+!*IPG*end unit
+
+!IPG: Unit removed due to conflict in vector BIN3_YBOUT_Z
+!IPG: Pin 13 conflicts with an unconnected pin.
+!*IPG*unit "YBOUT vs BIN3, HighZ"
+!*IPG* execute BIN3_YBOUT_Z
+!*IPG*end unit
+
+! ****************** YB input, B0,B1,B2,B3 Outputs tests ******************
+
+unit "BOUT0 vs YBIN, Low"
+ execute YBIN_BOUT0_0
+end unit
+
+unit "BOUT0 vs YBIN, High"
+ execute YBIN_BOUT0_1
+end unit
+
+unit "BOUT0 vs YBIN, HighZ"
+ execute YBIN_BOUT0_Z
+end unit
+
+unit "BOUT1 vs YBIN, Low"
+ execute YBIN_BOUT1_0
+end unit
+
+unit "BOUT1 vs YBIN, High"
+ execute YBIN_BOUT1_1
+end unit
+
+unit "BOUT1 vs YBIN, HighZ"
+ execute YBIN_BOUT1_Z
+end unit
+
+unit "BOUT2 vs YBIN, Low"
+ execute YBIN_BOUT2_0
+end unit
+
+unit "BOUT2 vs YBIN, High"
+ execute YBIN_BOUT2_1
+end unit
+
+unit "BOUT2 vs YBIN, HighZ"
+ execute YBIN_BOUT2_Z
+end unit
+
+unit "BOUT3 vs YBIN, Low"
+ execute YBIN_BOUT3_0
+end unit
+
+unit "BOUT3 vs YBIN, High"
+ execute YBIN_BOUT3_1
+end unit
+
+unit "BOUT3 vs YBIN, HighZ"
+ execute YBIN_BOUT3_Z
+end unit
+

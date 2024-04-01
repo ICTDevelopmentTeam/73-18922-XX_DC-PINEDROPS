@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583054  V1e79                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:11 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "JTAG_1V05SB_TDO_CP"
+!B!resistor 51, 19.80, 10.00, re2, ar200m
+resistor 51,30.00, 25.00,re2,ar200m
+! "r382_cp" test.

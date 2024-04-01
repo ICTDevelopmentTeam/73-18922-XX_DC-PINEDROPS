@@ -1,0 +1,27 @@
+-------------------------------------------------------------------------------
+AGILENT 3070 BOARD TEST GRADER               Sat Jul 21 09:36:19 2018  page 1  
+
+Analog  Incircuit      Vacuum Off REPORT
+-------------------------------------------------------------------------------
+
+Board Path:              ./
+Board Serial #:          Board1
+Date of Data generation: Thu Jul 19 16:02:25 2018
+
+Number of test runs (in config.bdg): 1
+Number of tests: 660
+Number of tests performing correctly (i.e. failed): 651
+Number of tests performing incorrectly (i.e. passed): 9
+
+Tests that executed with vacuum off incorrectly (i.e. passed):
+q2_cp,FET_OFF
+q1_cp,FET_OFF
+q3,FET_OFF
+q6,FET_OFF
+q15,FET_OFF
+q20,FET_OFF
+q21,FET_OFF
+q38,FET_OFF
+q7,FET_OFF
+
+For more Information, please examine: ana_inc_vac_off.dat

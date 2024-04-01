@@ -1,0 +1,8 @@
+!!!!    2    0    1 1654248915   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:42 2018
+disconnect all
+connect s to "FPGA_SPI_STD_WP_L"
+connect i to "UNNAMED_43_HDR2X4_I20_P1_CP"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m
+resistor 1k,25.00, 20.00,re3,ar100m
+! "r401_cp" test.

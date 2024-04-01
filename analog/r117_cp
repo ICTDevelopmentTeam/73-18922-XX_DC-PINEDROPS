@@ -1,0 +1,8 @@
+!!!!    2    0    1 1610146392   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:08 2018
+disconnect all
+connect s to "SERIRQ_CLK_CP"
+connect i to "SERIRQ_CLK_R_CP"
+!B!resistor 150, 9.33, 6.00, re3, ar1.00
+resistor 150,30.00, 20,re3,ar1.00
+! "r117_cp" test.

@@ -1,0 +1,9 @@
+!!!!    2    0    1 1635313574   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:00 2018
+disconnect all
+connect i to "P1V05C"
+connect s to "IRQ_SERIRQ_DATA_CP"
+!connect g to "GND"
+resistor 10k, 25.00, 30.00, re4, wb, ar100m,ed,en, wa50m
+! "r246_cp" test.
+

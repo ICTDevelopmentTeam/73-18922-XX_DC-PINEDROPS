@@ -1,0 +1,8 @@
+!!!!    2    0    1 1638591019   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:20 2018
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_42_AUC1G125_I289_A_CP"
+!B!resistor 220, 12.27, 10.00, re3, ar500m
+resistor 220,30.00, 20.00,re2,ar500m, ed
+! "r431_cp" test.

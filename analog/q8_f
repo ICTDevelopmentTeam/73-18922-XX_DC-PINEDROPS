@@ -1,0 +1,46 @@
+!!!!    2    0    1 1529027799  V648c                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:40 2018
+!
+! Cisco Part#:          20-0614-01
+!
+! Note:                 Pin 1     = Gate
+!                       Pin 3     = Drain
+!                       Pin 2     = Source
+!
+! ***************************************************************************
+
+test powered analog
+
+ test "FET_OFF"
+ test "FET_ON"
+
+end test
+
+! ***************************************************************************
+
+subtest "FET_OFF"
+ connect s to pins   3      ! Drain
+ connect i to pins   3      ! Drain
+ connect l to pins   2      ! Source
+ connect a to pins   1      ! Gate
+
+ source dcv, am2.5, terminated 50, on
+ auxiliary dcv, am0.0, on
+ detector dcv, expect 2.5
+ measure  2.625,  2.25      ! Measurement taken at Drain
+end subtest
+
+ subtest "FET_ON"
+  connect s to pins   3      ! Drain
+  connect i to pins   3      ! Drain
+  connect l to pins   2      ! Source
+  connect a to pins   1      ! Gate
+
+  source dcv, am2.5, terminated 50, on
+  auxiliary dcv, am2.5, on, ico1
+  detector dcv, expect 0.1
+  measure  0.2, -0.2       ! Measurement taken at Drain
+ end subtest
+
+
+

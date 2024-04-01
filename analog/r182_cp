@@ -1,0 +1,7 @@
+!!!!    2    0    1 1689382023   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:14 2018
+disconnect all
+connect s to "P3V3_VBAT_CP"
+connect i to "PU_PCH_INTVRMEN_CP"
+resistor 330k, 30.00, 30.00, re4, wb, ar500m, wa2.69u,ed
+! "r182_cp" test.

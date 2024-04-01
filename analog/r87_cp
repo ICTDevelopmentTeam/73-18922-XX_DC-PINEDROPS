@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583012  V7b7f                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:05 2018
+disconnect all
+connect s to "GND"
+connect i to "PD_DDR01_RCOMP_1_CP"
+!B!resistor 40.2, 18.44, 6.00, re2, ar200m
+resistor 40.2,30.00, 25.00,re2,ar200m
+! "r87_cp" test.

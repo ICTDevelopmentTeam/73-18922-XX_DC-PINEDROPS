@@ -1,0 +1,9 @@
+!!!!    2    0    1 1658818006   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:26 2018
+disconnect all
+connect i to "P1V05C"
+connect s to "PU_LAN_JTMS_SDP0_1_CP"
+!@connect g to "GND"
+resistor 10k,35.00, 35.00,re4,wb,ar100m,ed,en!, wa100m
+! "r143_cp" test.
+

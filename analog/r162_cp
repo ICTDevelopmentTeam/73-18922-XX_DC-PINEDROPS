@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027698   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:59 2018
+on failure
+   report parallel devices
+   report "r256_cp 10.0k"
+end on failure
+disconnect all
+connect s to "VCCSUS3_3"
+connect i to "GPIO41"
+jumper 4.98k, re4, wb, ar200m, op
+! "r162_cp" test.
+off failure

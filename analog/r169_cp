@@ -1,0 +1,8 @@
+!!!!    2    0    1 1657988709   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:13 2018
+disconnect all
+connect s to "PCH_FPGA_SLP_S3_L"
+connect i to "BDXDE_SLP3_CPU_N_CP"
+!B!resistor 165, 9.03, 6.00, re3, ar500m
+resistor 165,30.00, 25.00,re3,ar500m
+! "r169_cp" test.

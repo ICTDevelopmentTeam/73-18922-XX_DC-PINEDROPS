@@ -1,0 +1,8 @@
+!!!!    2    0    1 1610146332   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:07 2018
+disconnect all
+connect s to "GND"
+connect i to "PD_TEST<1>_CP"
+!B!resistor 49.9, 16.02, 6.00, re2, ar200m
+resistor 49.9,30.00, 20,re2,ar200m
+! "r101_cp" test.

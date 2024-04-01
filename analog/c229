@@ -1,0 +1,14 @@
+!!!!    2    0    1 1635860238   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:22 2018
+on failure
+   report parallel devices
+   report "r61 10.0k"
+end on failure
+disconnect all
+connect s to "GND"; a to "GND"
+connect i to "SRT_DDR_VTT_REF"
+!connect g to "P1V2_VDDQ"; l to "P1V2_VDDQ" 
+capacitor 1n, 40, 35.00, fr1024, re3, wb, ar100m, ed, en, comp
+warning "device under test appears open or excessive noise is present."
+! "c229" is a commented test.
+off failure

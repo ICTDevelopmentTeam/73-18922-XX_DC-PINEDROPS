@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027683   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:44 2018
+on failure
+   report parallel devices
+   report "r4_adv 5.76k"
+end on failure
+disconnect all
+connect s to "P1_2VA"
+connect i to "UNNAMED_2_RES_I471_B_ADV"
+jumper 3.64k, re4, wb, ar200m, op
+! "c12_adv" test.
+off failure

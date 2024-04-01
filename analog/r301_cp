@@ -1,0 +1,9 @@
+!!!!    2    0    1 1702679561   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:11 2018
+disconnect all
+connect s to "IRQ_SERIRQ_DATA_CP"
+connect i to "IRQ_SERIRQ_DATA_R_CP"
+connect g to "GND"
+!B!resistor 33, 21.15, 6.00, re2, ar200m
+resistor 33+13,45.00, 25.00,re2,ar100m,en,ed,pm,am1m,wa10m
+! "r301_cp" test.

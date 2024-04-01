@@ -1,0 +1,25 @@
+!!!!    2    0    1 1591770052   0000                                         
+!* q22%q1 C-E tied together on node "TEMP_D2_P".
+! IPG: rev 07.20pd Fri Jun 15 09:56:31 2018
+! Common Lead Resistance 100m, Common Lead Inductance 1.00u
+! Fixture: EXPRESS
+on failure
+   report parallel devices
+   report "c302 1.00u"
+   report "c304 1.00u"
+end on failure
+disconnect all
+connect s to "TEMP_D2_N"
+connect i to "TEMP_D2_P"
+diode "B-E", 809m, 606m, idc15m, co3.0, ar809m
+warning "A 'wait' option may be required to correctly fail a reversed diode"
+! "q22%q1 B-E" test.
+! DUT: nominal 700m, plus tol 14.3 %, minus tol 14.3 %
+! DUT: high 800m, low 600m
+! TEST: high limit 809.215m, low limit 605.776m
+! Tolerance Multiplier 1.00
+! Remote Sensing is Allowed
+! Bias Current is 2m
+off failure
+! "q22%q1 C B" has pins tied together on node "TEMP_D2_P".
+! "q22%q1 E B" has pins tied together on node "TEMP_D2_P".

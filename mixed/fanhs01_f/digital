@@ -1,0 +1,42 @@
+!!!!    6    0    1 1529027794  V40ea                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:35 2018
+! 5/19/2006
+
+vector cycle  1000n
+receive delay  800n
+!default device "fanhs45_f"
+default device "fanhs01_f"
+set terminators to on
+assign VCC to pins *
+assign GND to pins *
+assign NC to  pins *,*,*,*,*,*
+
+assign EN to pins 1
+
+
+family LVT_1V05
+
+power GND, VCC
+inputs  EN
+nondigital NC
+
+!IPG: Add defaults or loads to floating inputs and bidirs.
+assign Floating__Inputs to pins 1 default "0"
+inputs Floating__Inputs
+
+vector Dr_0
+   set EN to "0"
+ end vector
+
+vector Dr_x
+   set EN  to "x"
+end vector
+
+unit "OUT_DIG"
+  execute Dr_x
+  continue analog
+  execute Dr_0
+  continue analog
+end unit
+
+

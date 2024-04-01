@@ -1,0 +1,13 @@
+!!!!    2    0    1 1641997021   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:15 2018
+on failure
+   report parallel devices
+   report "c347 100n"
+end on failure
+disconnect all
+connect s to "GND"
+connect i to "P1V8"
+connect g to "UNNAMED_15_RES_I55_B" 
+capacitor 47.1u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp,am150m
+! "c3283" test.
+off failure

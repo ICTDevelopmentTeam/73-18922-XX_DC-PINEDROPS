@@ -1,0 +1,13 @@
+!!!!    2    0    1 1531982534   0000                                         
+!* In parallel with 20 Ohms impedance by U1_MVR, test unstalbe.
+! IPG: rev 07.20pd Fri Jun 15 09:55:16 2018
+disconnect all
+connect s to "DGND_SENSE_R_MVR"
+connect i to "DVDD_SENSE_R_MVR"
+connect g to "PVCCIN";l to "PVCCIN"
+connect g to "P1V05C"!; l to "P1V05C"
+connect g to "GND"
+connect g to "P3_3V"
+capacitor 3.3n, 30.00, 30.00, fr8192, re3, wb, ar50.0m,sl,en,wa100m,nocomp,am.25
+warning "device under test appears open or excessive noise is present."
+! "c01_mvr" is a commented test.

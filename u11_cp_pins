@@ -1,0 +1,8 @@
+!!!!   16    0    1 1591772769  V08fa                                         
+   nodes "c33_spi_10gbe_clk_cp"!                to  11461 drive
+   nodes "c33_spi_10gbe_cs_n_cp"!               to 205107 drive
+   nodes "c33_spi_10gbe_mosi_cp"!               to  11470 drive
+   nodes "unnamed_16_mt25q8p_i92_holdmdq3_cp"!  to  20411 drive
+   nodes "unnamed_16_mt25q8p_i92_wpmvppdq2_cp"! to 204110 drive
+   nodes "unnamed_38_avc8t245_i91_oe_cp"!       to 120157 drive
+   nodes "10gbe_flshp_miso_cp"!                 to  12048 receive

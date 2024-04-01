@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027689   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:50 2018
+disconnect all
+connect s to "VCCSUS3_3"
+connect i to "FPGA_CPU_MFG_MODE_STRAP"
+jumper 7.58k, re4, wb, ar100m, op
+! "r20_cp" test.

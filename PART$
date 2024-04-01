@@ -1,0 +1,614 @@
+if boardfailed and Status <> Failed_In_Preshorts then
+! and preshorts/shorts are run "just in case" -- to avoid bad learns & damage.
+global PreshortsMsg$, ShortsMsg$, PowerMsg$, DigitalMsg$, AnalogMsg$
+global Status, Failed_In_Preshorts, Failed_In_Shorts, Failed_In_Functional
+global BScanPShortsMsg$
+global Using_IYET, Sampling, IYET_Preshorts_Attempts, IYET_Shorts_Attempts
+if (not Using_IYET) or (Using_IYET and IYET_Preshorts_Attempts = 0) then
+   call Pre_Shorts (Failed_In_Preshorts, Mode$ & PreshortsMsg$)
+   if IYET_Preshorts_Attempts > 0 then
+       call IYET (PreshortsMsg$, IYET_Preshorts_Attempts)
+       print PreshortsMsg$, IYET_Max_Msg$
+if (not Using_IYET) or (Using_IYET and IYET_Shorts_Attempts = 0) then
+   call Shorts (Failed_In_Shorts, Mode$ & ShortsMsg$)
+   if IYET_Shorts_Attempts > 0 then
+       call IYET (ShortsMsg$, IYET_Shorts_Attempts)
+       print ShortsMsg$, IYET_Max_Msg$
+!call BScan_Powered_Shorts_Tests (Failed_In_Shorts, Mode$ & BScanPShortsMsg$)
+global PreshortsMsg$, ShortsMsg$, PowerMsg$, DigitalMsg$, AnalogMsg$
+global Failed_In_Learn, Failed_Pin_Test, Failed_In_Preshorts, Failed_In_Shorts
+global BScanPShortsMsg$, No_Version_Init_Warning$
+Failed_In_Shorts         = 4
+Failed_In_Preshorts      = 10
+PreshortsMsg$            = "Preshorts"
+ShortsMsg$               = "Shorts"
+BScanPShortsMsg$         = "Boundary Scan Powered Shorts"
+global Using_IYET, IYET_Shorts_Attempts, IYET_Analog_Tests_Attempts
+global IYET_Report_On, IYET_VectorlessTest_Attempts, IYET_Preshorts_Attempts
+IYET_Preshorts_Attempts      = 6         !   Preshorts re-test attempts
+IYET_Shorts_Attempts         = 6         !   Shorts re-test attempts
+   ! Look for shorts, vectorless test failures
+   ! Look for shorts, vectorless test failures
+global Failed_In_Preshorts, PreshortsMsg$, Failed_In_Shorts, ShortsMsg$
+if TestType$ = PreshortsMsg$ then
+   call Pre_Shorts (Failed_In_Preshorts, Mode$ & PreshortsMsg$)
+if TestType$ = ShortsMsg$ then
+   call Shorts (Failed_In_Shorts, Mode$ & ShortsMsg$)
+sub Pre_Shorts (Status_Code, Message$)
+sub Shorts (Status_Code, Message$)
+   test "shorts"
+sub BScan_Powered_Shorts_Tests (Status_Code, Message$)
+      print "BScan disable failure; powered shorts tests skipped"
+!   test "analog/c1"                                     ! Nostuff !Pre_Shorts
+!   test "analog/c1_cp"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c1_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c1_p1v2_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/c2"                                     ! Nostuff !Pre_Shorts
+!   test "analog/c2_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c2_p2v5_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/c3_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c3_p1v2_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/c3_p2v5_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/c4"                                     ! Nostuff !Pre_Shorts
+!   test "analog/c4_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c4_p1v2_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/c4_p2v5_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/c5"                                     ! Nostuff !Pre_Shorts
+!   test "analog/c5_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c5_p1v2_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/c6_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c7_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c8"                                     ! Nostuff !Pre_Shorts
+!   test "analog/c8_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c9"                                     ! Nostuff !Pre_Shorts
+!   test "analog/c9_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c10"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c10_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c11"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c11_adv"                                ! Nostuff !Pre_Shorts
+!   test "analog/c12_5v"                                 ! Nostuff !Pre_Shorts
+!   test "analog/c12_adv"                                ! Nostuff !Pre_Shorts
+!   test "analog/c12_vpp"                                ! Nostuff !Pre_Shorts
+!   test "analog/c13_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c14_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c15_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c16_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c17_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c18_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c19_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c20_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c21_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c22_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c23_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c24_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c25_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c26_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c29_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c30_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c32"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c33"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c33_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c34"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c34_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c35"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c41_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c43_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c44_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c45_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c46_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c47_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c52"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c53"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c53_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c54"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c55"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c59"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c60"                                    ! Nostuff !Pre_Shorts
+!   test "analog/c95_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c96_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c97_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c98_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c99_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/c100_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/c101_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/c140_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/c239"                                   ! Nostuff !Pre_Shorts
+!   test "analog/c270"                                   ! Nostuff !Pre_Shorts
+!   test "analog/l1_p1v2_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/r1"                                     ! Nostuff !Pre_Shorts
+!   test "analog/r1_cp"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r1_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r1_p1v2_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/r1_p2v5_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/r2_91_mvr"                              ! Nostuff !Pre_Shorts
+!   test "analog/r2_91_vr"                               ! Nostuff !Pre_Shorts
+!   test "analog/r2_92_vr"                               ! Nostuff !Pre_Shorts
+!   test "analog/r2_98_mvr"                              ! Nostuff !Pre_Shorts
+!   test "analog/r2_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r3_cp"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r3_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r3_p2v5_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/r4_cp"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r4_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r4_p1v2_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/r5_cp"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r5_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r5_p1v2_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/r6_cp"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r6_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r7_cp"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r7_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r07_mvr"                                ! Nostuff !Pre_Shorts
+!   test "analog/r07_vr"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r8"                                     ! Nostuff !Pre_Shorts
+!   test "analog/r8_cp"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r8_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r8_p1v2_a"                              ! Nostuff !Pre_Shorts
+!   test "analog/r08_mvr"                                ! Nostuff !Pre_Shorts
+!   test "analog/r08_vr"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r9"                                     ! Nostuff !Pre_Shorts
+!   test "analog/r9_cp"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r9_f"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r10"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r10_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r10_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r11_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r11_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r12_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r12_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r13_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r13_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r14_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r14_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r15_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r15_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r16_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r16_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r17"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r17_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r17_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r18"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r18_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r18_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r19"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r19_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r19_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r20"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r20_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r20_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r21"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r21_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r21_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r22"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r22_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r22_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r23"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r23_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r23_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r24"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r24_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r24_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r25"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r25_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r25_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r26"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r26_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r26_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r27"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r27_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r27_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r27_mvr"                                ! Nostuff !Pre_Shorts
+!   test "analog/r27_vr"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r28_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r28_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r29_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r29_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r30_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r30_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r31_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r31_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r32_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r32_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r33"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r33_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r33_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r34_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r34_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r35_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r36_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r36_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r37_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r37_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r38"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r38_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r38_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r39"                                    ! Nostuff !Pre_Shorts
+!   test "analog/r39_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r39_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r40_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r40_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r41_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r41_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r42_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r42_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r43_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r44_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r44_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r45_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r46_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r46_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r47_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r47_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r48_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r48_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r49_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r49_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r50_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r50_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r51_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r51_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r52_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r52_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r53_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r53_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r54_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r54_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r55_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r55_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r56_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r56_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r57_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r57_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r58_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r58_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r59_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r59_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r60_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r60_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r61_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r61_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r62_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r62_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r63_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r63_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r64_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r64_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r65_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r65_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r66_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r66_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r67_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r67_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r68_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r69_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r69_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r70_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r70_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r71_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r72_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r72_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r73_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r73_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r74_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r74_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r75_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r75_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r76_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r76_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r77_cp"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r77_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r78_f"                                  ! Nostuff !Pre_Shorts
+!   test "analog/r79_mvr"                                ! Nostuff !Pre_Shorts
+!   test "analog/r79_vr"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r86_mvr"                                ! Nostuff !Pre_Shorts
+!   test "analog/r86_vr"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r87_mvr"                                ! Nostuff !Pre_Shorts
+!   test "analog/r119"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r120"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r121"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r122"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r123"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r124"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r125"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r126"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r127"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r128"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r129"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r130"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r131"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r131_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r132"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r132_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r133"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r134"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r155_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r156_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r157_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r162_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r169"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r176_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r181"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r185"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r186"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r195_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r201"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r202"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r203"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r204"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r220"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r230"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r247"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r248"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r249"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r250"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r251"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r252"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r253"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r254"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r257_a"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r258_a"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r262"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r263"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r264"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r265"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r266"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r267"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r268"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r269"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r281_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r289_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r324"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r327"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r327_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r333"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r337_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r340_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r347_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r348_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r349_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r350_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r351_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r354_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r357_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r358_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r361"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r364"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r365"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r368"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r369_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r370_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r371_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r372_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r373"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r374"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r374_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r375_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r378_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r379_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r380_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r381_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r382_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r383_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r384_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r385_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r386_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r387_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r388_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r389"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r389_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r390"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r390_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r391"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r391_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r392"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r392_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r393"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r393_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r394"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r394_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r395"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r395_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r396"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r396_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r397"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r397_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r398"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r398_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r399"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r399_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r400"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r401"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r402"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r403"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r404"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r405"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r406"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r407"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r408_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r410"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r411"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r412_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r413"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r414"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r415"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r416_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r429"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r430"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r430_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r431"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r432"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r432_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r434_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r436_cp"                                ! Nostuff !Pre_Shorts
+!   test "analog/r444_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r458"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r459"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r463"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r464"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r465"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r466"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r467"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r468"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r469"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r470"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r473_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r476_f"                                 ! Nostuff !Pre_Shorts
+!   test "analog/r505"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r512"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r528"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r532"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r534"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r537"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r538"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r540"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r542"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r543"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r550"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r551"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r552"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r553"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r651"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r662"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r663"                                   ! Nostuff !Pre_Shorts
+!   test "analog/r826_a"                                 ! Nostuff !Pre_Shorts
+!   test "analog/l1_5v"                                  !Pre_Shorts
+!   test "analog/l1_adv"                                 !Pre_Shorts
+!   test "analog/l1_cp"                                  !Pre_Shorts
+!   test "analog/l1_vpp"                                 !Pre_Shorts
+!   test "analog/l01_3v3"                                !Pre_Shorts
+!   test "analog/l2_5v"                                  !Pre_Shorts
+!   test "analog/l2_adv"                                 !Pre_Shorts
+!   test "analog/l2_cp"                                  !Pre_Shorts
+!   test "analog/l2_vpp"                                 !Pre_Shorts
+!   test "analog/l5"                                     !Pre_Shorts
+!   test "analog/l6"                                     !Pre_Shorts
+!   test "analog/l7"                                     !Pre_Shorts
+!   test "analog/l8"                                     !Pre_Shorts
+!   test "analog/l9"                                     !Pre_Shorts
+!   test "analog/l10"                                    !Pre_Shorts
+!   test "analog/r1_3v3"                                 ! Zero Ohm !Pre_Shorts
+!   test "analog/r2_3v3"                                 ! Zero Ohm !Pre_Shorts
+!   test "analog/r02_mvr"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r3_3v3"                                 ! Zero Ohm !Pre_Shorts
+!   test "analog/r3_91_mvr"                              ! Zero Ohm !Pre_Shorts
+!   test "analog/r3_91_vr"                               ! Zero Ohm !Pre_Shorts
+!   test "analog/r3_92_vr"                               ! Zero Ohm !Pre_Shorts
+!   test "analog/r3_98_mvr"                              ! Zero Ohm !Pre_Shorts
+!   test "analog/r4_91_mvr"                              ! Zero Ohm !Pre_Shorts
+!   test "analog/r4_91_vr"                               ! Zero Ohm !Pre_Shorts
+!   test "analog/r4_92_vr"                               ! Zero Ohm !Pre_Shorts
+!   test "analog/r4_98_mvr"                              ! Zero Ohm !Pre_Shorts
+!   test "analog/r04_mvr"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r04_vr"                                 ! Zero Ohm !Pre_Shorts
+!   test "analog/r5_91_mvr"                              ! Zero Ohm !Pre_Shorts
+!   test "analog/r5_91_vr"                               ! Zero Ohm !Pre_Shorts
+!   test "analog/r5_92_vr"                               ! Zero Ohm !Pre_Shorts
+!   test "analog/r5_98_mvr"                              ! Zero Ohm !Pre_Shorts
+!   test "analog/r05_mvr"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r05_vr"                                 ! Zero Ohm !Pre_Shorts
+!   test "analog/r06_mvr"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r26_mvr"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r28_mvr"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r28_vr"                                 ! Zero Ohm !Pre_Shorts
+!   test "analog/r32"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r36"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r43"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r48"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r49"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r50"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r51"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r52"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r53"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r54"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r55"                                    ! Zero Ohm !Pre_Shorts
+!   test "analog/r79_91_mvr"                             ! Zero Ohm !Pre_Shorts
+!   test "analog/r79_91_vr"                              ! Zero Ohm !Pre_Shorts
+!   test "analog/r79_92_vr"                              ! Zero Ohm !Pre_Shorts
+!   test "analog/r79_98_mvr"                             ! Zero Ohm !Pre_Shorts
+!   test "analog/r93_cp"                                 ! Zero Ohm !Pre_Shorts
+!   test "analog/r135"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r136"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r137"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r137_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r138"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r139"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r140"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r141"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r142"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r143"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r144"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r157"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r158"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r161"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r164"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r165"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r166"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r167"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r168"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r170"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r173_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r205"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r206"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r208"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r209"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r219_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r223_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r236"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r237"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r238"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r239"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r242"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r260"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r261_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r264_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r271"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r272"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r273"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r274"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r275"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r280"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r281"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r282"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r290"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r293_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r313_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r330_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r335_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r336"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r337"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r338_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r339_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r340"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r341"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r341_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r342_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r345_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r346_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r347_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r348_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r349_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r355"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r357_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r363"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r376"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r379"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r396_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r400_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r403_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r404_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r418_cp"                                ! Zero Ohm !Pre_Shorts
+!   test "analog/r428"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r439"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r440"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r441"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r442"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r443"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r450"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r479"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r480"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r481"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r482"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r527"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r535"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r536"                                   ! Zero Ohm !Pre_Shorts
+!   test "analog/r650"                                   ! Zero Ohm !Pre_Shorts

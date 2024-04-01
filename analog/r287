@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531145099   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:29 2018
+disconnect all
+connect i to "GND"
+connect s to "UNNAMED_24_EP4CGX50FG484_I251_GXBRX1N"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+! "r287" test.

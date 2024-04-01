@@ -1,0 +1,9 @@
+!!!!    2    0    1 1684843992   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:20 2018
+disconnect all
+connect s to "GND"; a to "GND"
+connect i to "P3V3_SSD_EN_12V"
+connect g to "P12V"; l to "P12V" 
+capacitor 10n, 40, 40.00, fr1024, re4, wb, ar100m, sa, sl, ed, en, nocomp,am.25,wa50m 
+warning "device under test appears open or excessive noise is present."
+! "c100" is a commented test.

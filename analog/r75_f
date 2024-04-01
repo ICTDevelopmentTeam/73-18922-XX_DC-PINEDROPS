@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027696   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:57 2018
+disconnect all
+connect i to "UNNAMED_4_ADT7470_I79_PWM2_F"
+connect s to "P3_3VA"
+jumper 10.0k, re4, wb, ar100m, op
+! "r75_f" test.

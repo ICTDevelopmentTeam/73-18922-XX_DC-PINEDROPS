@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583050  V2cd7                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:10 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "XDP_CPU_OBSDATA_A_MBP2_N_CP"
+!B!resistor 51, 19.80, 10.00, re2, ar200m
+resistor 51,30.00, 25.00,re2,ar200m
+! "r227_cp" test.

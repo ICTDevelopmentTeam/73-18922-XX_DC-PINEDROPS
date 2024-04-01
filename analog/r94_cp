@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582867  V0ed6                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:37 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "CPLD_THERMTRIP_PCH_N_CP"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m
+resistor 1k,25.00, 20.00,re3,ar100m
+! "r94_cp" test.

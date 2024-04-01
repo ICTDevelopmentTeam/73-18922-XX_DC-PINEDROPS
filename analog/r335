@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583088  V3f27                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:20 2018
+disconnect all
+connect s to "SVID_ALERT_VRM_CPU_L"
+connect i to "SRT_SVID_ALERT_CPU_L"
+!B!resistor 220, 12.27, 10.00, re3, ar500m
+resistor 220,30.00, 20.00,re3,ar500m
+! "r335" test.

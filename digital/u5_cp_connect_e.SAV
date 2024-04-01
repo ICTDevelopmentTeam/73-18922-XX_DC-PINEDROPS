@@ -1,0 +1,257 @@
+!!!!   24    0    1 1529027815  V53c0                                         
+! Copyright (c) Agilent Technologies, Inc. 1995-1996, 1998-2000, 2002-2003, 2006-2008
+!IPG: rev 07.20pd Fri Jun 15 09:56:56 2018
+
+connect "u5_cp"
+
+!IPG: User may add option statements here if needed.
+
+ground bounce suppression   on
+family "LVT"
+
+!IPG: Connect test generated with CONNECTMAX value of 100
+
+!IPG: Warning: TAP Reset Pin has been overridden. The following
+!IPG:          TRST pin(s) will not be included in the disable section:
+!IPG:
+!IPG:    u5_cp.U75
+!IPG:
+!IPG: TDI was moved to the end of the chain.
+!IPG: TDO was moved to the end of the chain.
+
+chain "u5_cp_u5_cp_pch"
+  tdi "LJTAG_TDI_HDR_3V3"
+  tdo "LJTAG_TDO_HDR_3V3"
+  tms "LJTAG_TMS_HDR_3V3"
+  tck "JTAG_HDR_TCK"
+  trst "LJTAG_TRST_L_HDR_3V3"
+  devices
+    "u5_cp", "custom_lib/bdx_de_a0_cust_rev2.bsdl", "LGA", no
+    "u5_cp_pch", "custom_lib/broadwell_pch.bsm_noidcode", "bga1", no
+  end devices
+end chain
+
+!IPG: Family information could not be found for node LJTAG_TDI_HDR_3V3
+!IPG: Family information could not be found for node LJTAG_TDO_HDR_3V3
+
+disables "disable vector"
+!IPG: Family information could not be found for node BDXDE_DRAM_PWROK_CP
+  node "BDXDE_DRAM_PWROK_CP" hybrid default "1"
+  node "C105_PWRGD_CPU_CP" hybrid default "1"
+  node "ERR_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "ERR_OE2_CP" family "FLASH_1V8" hybrid default "1"
+  node "FAULT_OE1_CP" family "FLASH_1V8" hybrid default "1"
+  node "HOT_OE_CP" hybrid default "1"
+  node "PWRGD_BDXDE_LAN_CP" family "FLASH_1V8" hybrid default "1"
+  node "UNNAMED_36_PCA9617_I50_EN_CP" hybrid default "0"
+  node "UNNAMED_38_AVC8T245_I91_OE_CP" hybrid default "1"
+  node "UNNAMED_38_AVC8T245_I146_OE_CP" hybrid default "1"
+
+  pcf order is nodes "BDXDE_DRAM_PWROK_CP","C105_PWRGD_CPU_CP"
+  pcf order is nodes "ERR_OE1_CP","ERR_OE2_CP","FAULT_OE1_CP"
+  pcf order is nodes "HOT_OE_CP","PWRGD_BDXDE_LAN_CP"
+  pcf order is nodes "UNNAMED_36_PCA9617_I50_EN_CP"
+  pcf order is nodes "UNNAMED_38_AVC8T245_I91_OE_CP"
+  pcf order is nodes "UNNAMED_38_AVC8T245_I146_OE_CP"
+  unit "disable_1"
+  pcf
+  "1111111011"
+  end pcf
+  end unit
+end disables
+
+!IPG: The disable section above disables or conditions the following pins:
+!IPG:   u13_cp.2  u13_cp.3  u13_cp.6  u13_cp.7  u14_cp.10  u14_cp.11
+!IPG:   u14_cp.12  u14_cp.13  u14_cp.4  u14_cp.5  u14_cp.6  u14_cp.7
+!IPG:   u15_cp.12  u15_cp.13  u15_cp.4  u15_cp.5  u17_cp.10  u17_cp.14
+!IPG:   u17_cp.15  u17_cp.16  u17_cp.17  u17_cp.18  u17_cp.19  u17_cp.20
+!IPG:   u17_cp.21  u17_cp.3  u17_cp.4  u17_cp.5  u17_cp.6  u17_cp.7
+!IPG:   u17_cp.8  u17_cp.9  u18_cp.10  u18_cp.14  u18_cp.15  u18_cp.16
+!IPG:   u18_cp.17  u18_cp.18  u18_cp.19  u18_cp.20  u18_cp.21  u18_cp.3
+!IPG:   u18_cp.4  u18_cp.5  u18_cp.6  u18_cp.7  u18_cp.8  u18_cp.9
+!IPG:   u20_cp.10  u20_cp.14  u20_cp.15  u20_cp.16  u20_cp.17  u20_cp.18
+!IPG:   u20_cp.19  u20_cp.20  u20_cp.21  u20_cp.3  u20_cp.4  u20_cp.5
+!IPG:   u20_cp.6  u20_cp.7  u20_cp.8  u20_cp.9
+
+!IPG: Safeguard will ignore disabled outputs
+disabled device "u13_cp" pins 2,3,6,7
+!IPG: with pin 5 on node "UNNAMED_36_PCA9617_I50_EN_CP"
+disabled device "u14_cp" pins 10,11,12,13,4,5,6,7
+!IPG: with pin 15 on node "ERR_OE1_CP"
+!IPG:      pin 14 on node "ERR_OE2_CP"
+disabled device "u15_cp" pins 12,13,4,5
+!IPG: with pin 15 on node "FAULT_OE1_CP"
+disabled device "u17_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u17_cp" pins 9
+!IPG: with pin 22 on node "UNNAMED_38_AVC8T245_I146_OE_CP"
+disabled device "u18_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u18_cp" pins 9
+!IPG: with pin 22 on node "UNNAMED_38_AVC8T245_I91_OE_CP"
+disabled device "u20_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u20_cp" pins 9
+!IPG: with pin 22 on node "HOT_OE_CP"
+
+!IPG: User may add VCL pass-through statements here if needed.
+
+nodes
+  node "C105_SPI_10GBE_MISO_CP" hybrid test "u5_cp.D74"
+  node "FM_BDXDE_PMSYNC_PCH_CPU_CP" hybrid test "u5_cp.H77"
+  node "HSD_PE_CPU_RC_LN0_IOFPGA_N" hybrid test "u5_cp.D30"
+  node "HSD_PE_CPU_SA_LN0_N" hybrid test "u5_cp.D21"
+  node "HSD_PE_CPU_SA_LN2_N" hybrid test "u5_cp.D24"
+  node "HSD_SGMII0_CPU_LINE_N" hybrid test "u5_cp.J62"
+  node "HSD_SGMII0_CPU_LINE_P" hybrid test "u5_cp.F62"
+  node "HSD_SGMII1_CPU_LINE_N" hybrid test "u5_cp.J66"
+  node "HSD_SGMII1_CPU_LINE_P" hybrid test "u5_cp.F66"
+  node "LAN_SEL<0>_CP" hybrid test "u5_cp.E75"
+  node "M_B_ACT_N_CP" hybrid test "u5_cp.CU41"
+  node "M_B_BG<1>_CP" hybrid test "u5_cp.CV42"
+  node "M_B_CKE<1>_CP" hybrid test "u5_cp.CV38"
+  node "M_B_CKE<2>_CP" hybrid test "u5_cp.CV40"
+  node "M_B_CLK_DP<0>_CP" hybrid test "u5_cp.CV58"
+  node "M_B_CLK_DP<1>_CP" hybrid test "u5_cp.CU54"
+  node "M_B_CLK_DP<2>_CP" hybrid test "u5_cp.CU57"
+  node "M_B_CLK_DP<3>_CP" hybrid test "u5_cp.CV53"
+  node "M_B_CS_N<1>_CP" hybrid test "u5_cp.CV66"
+  node "M_B_DQ<14>_CP" hybrid test "u5_cp.CV12"
+  node "M_B_DQ<16>_CP" hybrid test "u5_cp.CV16"
+  node "M_B_DQ<18>_CP" hybrid test "u5_cp.CV20"
+  node "M_B_DQ<22>_CP" hybrid test "u5_cp.CU19"
+  node "M_B_DQ<24>_CP" hybrid test "u5_cp.CU24"
+  node "M_B_DQ<26>_CP" hybrid test "u5_cp.CU28"
+  node "M_B_DQ<28>_CP" hybrid test "u5_cp.CV23"
+  node "M_B_DQ<30>_CP" hybrid test "u5_cp.CV27"
+  node "M_B_DQ<33>_CP" hybrid test "u5_cp.CU74"
+  node "M_B_DQ<36>_CP" hybrid test "u5_cp.CU71"
+  node "M_B_DQS_DN<2>_CP" hybrid test "u5_cp.CV18"
+  node "M_B_DQS_DN<3>_CP" hybrid test "u5_cp.CU26"
+  node "M_B_DQS_DN<8>_CP" hybrid test "u5_cp.CV34"
+  node "M_B_DQS_DP<10>_CP" hybrid test "u5_cp.CV9"
+  node "M_B_DQS_DP<12>_CP" hybrid test "u5_cp.CV25"
+  node "M_B_DQS_DP<17>_CP" hybrid test "u5_cp.CU32"
+  node "M_B_ECC<0>_CP" hybrid test "u5_cp.CV31"
+  node "M_B_ECC<2>_CP" hybrid test "u5_cp.CV36"
+  node "M_B_ECC<4>_CP" hybrid test "u5_cp.CU30"
+  node "M_B_ECC<6>_CP" hybrid test "u5_cp.CU35"
+  node "M_B_MA<0>_CP" hybrid test "u5_cp.CV60"
+  node "M_B_MA<1>_CP" hybrid test "u5_cp.CU50"
+  node "M_B_MA<4>_CP" hybrid test "u5_cp.CV49"
+  node "M_B_MA<8>_CP" hybrid test "u5_cp.CV47"
+  node "M_B_MA<10>_CP" hybrid test "u5_cp.CU61"
+  node "M_B_MA<11>_CP" hybrid test "u5_cp.CU46"
+  node "M_B_MA<12>_CP" hybrid test "u5_cp.CV44"
+  node "M_B_MA<14>_CP" hybrid test "u5_cp.CV62"
+  node "M_B_ODT<0>_CP" hybrid test "u5_cp.CV64"
+  node "M_B_ODT<3>_CP" hybrid test "u5_cp.CV68"
+  node "PD_PHY_JTDI_SDP0_0_CP" hybrid test "u5_cp.G74"
+  node "PD_SPARE<5>_CP" hybrid test "u5_cp.D71"
+  node "PD_TEST<0>_CP" hybrid test "u5_cp.CU76"
+  node "PU_PHY_JTDI_SDP1_0_CP" hybrid test "u5_cp.F76"
+  node "XDP_CPU_OBSDATA_A_MBP4_N_CP" hybrid test "u5_cp.J78"
+  node "XDP_CPU_OBSDATA_A_MBP5_N_CP" hybrid test "u5_cp.H75"
+  node "XDP_CPU_OBSFN_B_MBP7_N_CP" hybrid test "u5_cp.J76"
+end nodes
+
+!IPG: Inaccessible nodes
+!IPG: node "HSD_PE_CPU_MDOT2_LN0_AC_N"
+!IPG: node "HSD_PE_CPU_MDOT2_LN2_AC_N"
+!IPG: node "PE1_TX_D2_N_CP"
+!IPG: node "PE1_TX_D4_N_CP"
+!IPG: node "PE1_TX_D6_N_CP"
+!IPG: node "PE1_TX_D8_N_CP"
+!IPG: node "PE1_TX_D10_N_CP"
+!IPG: node "PE1_TX_D12_N_CP"
+!IPG: node "PE1_TX_D14_N_CP"
+!IPG: node "LAN_KX4_RX0_DP<0>_CP"
+!IPG: node "LAN_KX4_RX0_DP<2>_CP"
+!IPG: node "LAN_KX4_RX1_DP<0>_CP"
+!IPG: node "LAN_KX4_RX1_DP<2>_CP"
+!IPG: node "LAN_KX4_TX0_DP<1>_CP"
+!IPG: node "LAN_KX4_TX0_DP<3>_CP"
+!IPG: node "LAN_KX4_TX1_DP<0>_CP"
+!IPG: node "LAN_KX4_TX1_DP<2>_CP"
+!IPG: node "HSD_PE_IOFPGA_CPU_RC_LN0_AC_P"
+!IPG: node "PE1_RX_D2_P_CP"
+!IPG: node "PE1_RX_D4_P_CP"
+!IPG: node "PE1_RX_D6_P_CP"
+!IPG: node "PE1_RX_D8_P_CP"
+!IPG: node "PE1_RX_D10_P_CP"
+!IPG: node "PE1_RX_D12_P_CP"
+!IPG: node "PE1_RX_D14_P_CP"
+!IPG: node "HSD_PE_SA_CPU_LN0_AC_P"
+!IPG: node "PE1_RX_D1_P_CP"
+!IPG: node "PE1_RX_D3_P_CP"
+!IPG: node "PE1_RX_D5_P_CP"
+!IPG: node "PE1_RX_D7_P_CP"
+!IPG: node "PE1_RX_D9_P_CP"
+!IPG: node "PE1_RX_D11_P_CP"
+!IPG: node "PE1_RX_D13_P_CP"
+!IPG: node "PE1_RX_D15_P_CP"
+!IPG: node "HSD_PE_IOFPGA_CPU_RC_LN0_AC_N"
+!IPG: node "PE1_RX_D2_N_CP"
+!IPG: node "PE1_RX_D4_N_CP"
+!IPG: node "PE1_RX_D6_N_CP"
+!IPG: node "PE1_RX_D8_N_CP"
+!IPG: node "PE1_RX_D10_N_CP"
+!IPG: node "PE1_RX_D12_N_CP"
+!IPG: node "PE1_RX_D14_N_CP"
+!IPG: node "HSD_PE_SA_CPU_LN0_AC_N"
+
+!IPG: Family information could not be found for node C105_SPI_10GBE_MISO_CP
+!IPG: Family information could not be found for node FM_BDXDE_PMSYNC_PCH_CPU_CP
+!IPG: Family information could not be found for node HSD_PE_CPU_RC_LN0_IOFPGA_N
+!IPG: Family information could not be found for node HSD_PE_CPU_SA_LN0_N
+!IPG: Family information could not be found for node HSD_PE_CPU_SA_LN2_N
+!IPG: Family information could not be found for node HSD_SGMII0_CPU_LINE_N
+!IPG: Family information could not be found for node HSD_SGMII0_CPU_LINE_P
+!IPG: Family information could not be found for node HSD_SGMII1_CPU_LINE_N
+!IPG: Family information could not be found for node HSD_SGMII1_CPU_LINE_P
+!IPG: Family information could not be found for node LAN_SEL<0>_CP
+!IPG: Family information could not be found for node M_B_ACT_N_CP
+!IPG: Family information could not be found for node M_B_BG<1>_CP
+!IPG: Family information could not be found for node M_B_CKE<1>_CP
+!IPG: Family information could not be found for node M_B_CKE<2>_CP
+!IPG: Family information could not be found for node M_B_CLK_DP<0>_CP
+!IPG: Family information could not be found for node M_B_CLK_DP<1>_CP
+!IPG: Family information could not be found for node M_B_CLK_DP<2>_CP
+!IPG: Family information could not be found for node M_B_CLK_DP<3>_CP
+!IPG: Family information could not be found for node M_B_CS_N<1>_CP
+!IPG: Family information could not be found for node M_B_DQ<14>_CP
+!IPG: Family information could not be found for node M_B_DQ<16>_CP
+!IPG: Family information could not be found for node M_B_DQ<18>_CP
+!IPG: Family information could not be found for node M_B_DQ<22>_CP
+!IPG: Family information could not be found for node M_B_DQ<24>_CP
+!IPG: Family information could not be found for node M_B_DQ<26>_CP
+!IPG: Family information could not be found for node M_B_DQ<28>_CP
+!IPG: Family information could not be found for node M_B_DQ<30>_CP
+!IPG: Family information could not be found for node M_B_DQ<33>_CP
+!IPG: Family information could not be found for node M_B_DQ<36>_CP
+!IPG: Family information could not be found for node M_B_DQS_DN<2>_CP
+!IPG: Family information could not be found for node M_B_DQS_DN<3>_CP
+!IPG: Family information could not be found for node M_B_DQS_DN<8>_CP
+!IPG: Family information could not be found for node M_B_DQS_DP<10>_CP
+!IPG: Family information could not be found for node M_B_DQS_DP<12>_CP
+!IPG: Family information could not be found for node M_B_DQS_DP<17>_CP
+!IPG: Family information could not be found for node M_B_ECC<0>_CP
+!IPG: Family information could not be found for node M_B_ECC<2>_CP
+!IPG: Family information could not be found for node M_B_ECC<4>_CP
+!IPG: Family information could not be found for node M_B_ECC<6>_CP
+!IPG: Family information could not be found for node M_B_MA<0>_CP
+!IPG: Family information could not be found for node M_B_MA<1>_CP
+!IPG: Family information could not be found for node M_B_MA<4>_CP
+!IPG: Family information could not be found for node M_B_MA<8>_CP
+!IPG: Family information could not be found for node M_B_MA<10>_CP
+!IPG: Family information could not be found for node M_B_MA<11>_CP
+!IPG: Family information could not be found for node M_B_MA<12>_CP
+!IPG: Family information could not be found for node M_B_MA<14>_CP
+!IPG: Family information could not be found for node M_B_ODT<0>_CP
+!IPG: Family information could not be found for node M_B_ODT<3>_CP
+!IPG: Family information could not be found for node PD_PHY_JTDI_SDP0_0_CP
+!IPG: Family information could not be found for node PD_SPARE<5>_CP
+!IPG: Family information could not be found for node PD_TEST<0>_CP
+!IPG: Family information could not be found for node PU_PHY_JTDI_SDP1_0_CP
+!IPG: Family information could not be found for node XDP_CPU_OBSDATA_A_MBP4_N_CP
+!IPG: Family information could not be found for node XDP_CPU_OBSDATA_A_MBP5_N_CP
+!IPG: Family information could not be found for node XDP_CPU_OBSFN_B_MBP7_N_CP
+end connect
+

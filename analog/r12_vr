@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582862  V8dde                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:37 2018
+disconnect all
+connect s to "ISENRTN_VR"
+connect i to "ISEN2_VR"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m
+resistor 1k,25.00, 20.00,re3,ar100m
+! "r12_vr" test.

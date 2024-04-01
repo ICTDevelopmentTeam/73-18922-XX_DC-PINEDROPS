@@ -1,0 +1,56 @@
+!!!!    2    0    1 1529476987  Vf0a5                                         
+! IPG: rev 08.30p  Wed Oct 11 15:50:45 2017
+test powered analog
+   power pins 4,13,8,17,1,16,3,14
+   nonanalog pins 2,5,6,7,9,10,11,12,15
+
+   test "VIN1"
+   test "SW1"
+   test "SW2"
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+
+subtest "VIN1"
+
+   connect i to pins  1
+   connect l to pins  8
+
+   detector dcv, expect  12
+
+   measure  12.0 * 1.05, 12.0 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "SW1"
+
+   connect i to nodes "VCCSUS3_3"    !pins  3
+   connect l to pins  8
+
+   detector dcv, expect  3.3
+
+   measure  3.3 * 1.05, 3.3 * 0.95         !change to fit reading value
+
+end subtest
+
+
+subtest "SW2"
+
+   connect i to nodes "DDR4_VPP"    !pins  14
+   connect l to pins  8
+
+   detector dcv, expect  2.6
+
+   measure  2.6 * 1.1, 2.6 * 0.9         !change to fit reading value
+
+end subtest
+
+
+!
+!  End test
+!
+
+
+

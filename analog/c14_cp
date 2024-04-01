@@ -1,0 +1,9 @@
+!!!!    2    0    1 1635983666   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:18 2018
+disconnect all
+connect s to "GND"
+connect i to "A_VCCUSB3SUS_1P05_CP"
+!connect g to  "A_VCCSUS_1P05_CP"
+!connect g to "A_VCCDSW_1P05_CP"
+capacitor 1u-0.1u, 35.00, 45.00, fr1024, re1, ar100m, nocomp, ed, en, sm
+! "c14_cp" test.

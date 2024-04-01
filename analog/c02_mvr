@@ -1,0 +1,12 @@
+!!!!    2    0    1 1531982516   0000                                         
+!* In parallel with 20ohm impedance by U1_MVR, test unstalbe.
+! IPG: rev 07.20pd Fri Jun 15 09:55:17 2018
+disconnect all
+connect s to "AGND_SENSE_R_MVR"
+connect i to "AVDD_SENSE_R_MVR"
+connect g to "P1V05C"; l to "P1V05C" 
+connect g to "GND" 
+connect g to "P3_3V"
+capacitor 3.3n, 30.00, 30.00, fr8192, re3, wb, ar50.0m,sl,en,wa100m,nocomp,am.25
+warning "excessive minus tolerance or low limit."
+! "c02_mvr" is a commented test.

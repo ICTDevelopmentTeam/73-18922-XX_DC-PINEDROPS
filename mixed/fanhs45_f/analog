@@ -1,0 +1,29 @@
+!!!!    2    0    1 1529027795  V052e                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:36 2018
+
+test powered mixed
+   
+   test "OUT_Disable_1"
+   continue digital
+   wait 200m
+   test "OUT_Enable_1"
+
+end test
+
+!----------------------------------------------------------
+
+subtest "OUT_Enable_1"
+   clear connect i to pins 7
+   connect l to ground
+
+   detector dcv, expect 12
+   measure 12 * 1.1 , 12 * 0.9
+end subtest
+
+subtest "OUT_Disable_1"
+
+   clear connect i to pins 7
+   connect l to ground
+   detector dcv, expect 0.9
+   measure 0.8, 0.0
+end subtest

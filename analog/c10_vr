@@ -1,0 +1,12 @@
+!!!!    2    0    1 1531965694   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:20 2018
+on failure
+   report parallel devices
+   report "r408 825"
+end on failure
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_29_RES_I143_B"
+capacitor 10n, 35.00, 40.00, fr1024, re2, ar20.0m, nocomp,ed,en
+! "c10_vr" test.
+off failure

@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583101  Vb6b1                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:21 2018
+disconnect all
+connect s to "SVID_CLK_CPU_VRM"
+connect i to "SRT_SVID_CLK_MEM_VRM"
+!B!resistor 200, 8.50, 6.00, re3, ar500m
+resistor 200,30.00, 20.00,re3,ar500m
+! "r478" test.

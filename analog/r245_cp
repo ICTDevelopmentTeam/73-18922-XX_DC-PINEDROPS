@@ -1,0 +1,8 @@
+!!!!    2    0    1 1700919007   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:59 2018
+disconnect all
+connect s to "GND"
+connect i to "C105_PCH_CONSOLE2_TXD_CP"
+connect g to "P1V05C"
+resistor 5.11k, 30.00, 30.00, re5, ar200m, ed
+! "r245_cp" test.

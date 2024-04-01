@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531986407  V20dd                                         
+!* UNNAMED_42_AUC1G125_I192_Y_CP top side probe removed for power up stable ready.
+! IPG: rev 07.20pd Fri Jun 15 09:56:10 2018
+disconnect all
+connect s to "JTAG_TCK_CPU_BUF_1V05_CP"
+connect i to "UNNAMED_42_AUC1G125_I192_Y_CP"
+!B!resistor 22, 32.73, 10.00, re2, ar500m
+resistor 22,32.73,25.00,re2,ar500m
+! "r390_cp" test.

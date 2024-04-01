@@ -1,0 +1,75 @@
+-------------------------------------------------------------------------------
+AGILENT 3070 BOARD TEST GRADER               Sat Jul 21 09:36:19 2018  page 1  
+
+BScan   Interconnect   Quality REPORT
+-------------------------------------------------------------------------------
+
+Board Path:              ./
+Board Serial #:          Board1
+Date of Data generation: Fri Jul 20 15:19:25 2018
+
+Number of test runs (in config.bdg): 10
+Number of tests: 19
+
+Report Flags:
+          F = Test failed
+          M = Mean not centered 66.67%
+          C = Coefficient of producibility too small 10.00
+
+Designator            ---Programmed----   --------Computed---------   #  Flg Com
+                      Nom    Low   High   Mean StdDev    CPK     CP  Bad     Ref
+
+pwr_check,P12V        N/A   11.4   12.6   12.1   866u    186    231    0     ...
+pwr_check,P3_3VA      N/A   3.14   3.47   3.33   302u    154    182    0     ...
+pwr_check,P3V3_SSD    N/A   3.14   3.47   3.31   127u    417    433    0     ...
+pwr_check,P2_5VA      N/A   2.38   2.63   2.55   170u    151    245    0     ...
+pwr_check,P1_2VA      N/A   1.14   1.26   1.26   160u   2.72    125    0 MC  ...
+pwr_check,P5V         N/A   4.75   5.25   5.19  1.67m   11.4   50.0    0 M   ...
+pwr_check,P1V7        N/A   1.62   1.79   1.77   153u   37.2    185    0 M   ...
+pwr_check,P1V5_PCH    N/A   1.43   1.58   1.54   162u   65.5    154    0     ...
+pwr_check,P1V3        N/A   1.24   1.37   1.34   194u   36.4    112    0 M   ...
+pwr_check,P1V2_VDDQ
+                      N/A   1.14   1.26   1.25   319u   5.28   62.7    0 MC  ...
+pwr_check,P0V6_VTT    N/A   570m   720m   654m   125u    178    201    0     ...
+pwr_check,DDR4_VPP    N/A   2.38   2.63   2.55   306u   81.9    136    0     ...
+pwr_check,PVCCIN      N/A   1.71   1.89   1.85   184u   71.3    163    0     ...
+pwr_check,P1V8        N/A   1.71   1.89   1.81  67.4u    398    445    0     ...
+pwr_check,P3_3V       N/A   3.14   3.47   3.31   180u    296    306    0     ...
+pwr_check,P1V05C      N/A   998m   1.10   1.06   157u   86.1    111    0     ...
+pwr_check,VCCSUS3_3
+                      N/A   3.14   3.47   3.31  2.33m   21.8   23.6    0     ...
+
+
+
+Designator                                                        Num  Num Com
+                                                                 Pass Fail Ref
+
+u5_cp_u5_cp_pch_dis                                                10    0 ...
+u11_u11_dis                                                        10    0 ...
+
+The columns have the following meaning:
+Designator: This is the main device designator.  If a device test has several
+            test statements (e.g. diode tests on the emitter-base and
+            base-collector junctions of a transistor) a sub-designator is added
+Thr:        The threshold for determining an open or closed result.
+O/C:        Open or closed, depending on the test.
+Nom:        The nominal value in the test statement.
+Low:        The lower limit in the test statement.
+High:       The upper limit in the test statement.
+Mean:       The mean of the values obtained by repeating the test.
+StdDev:     The standard deviation of the obtained by repeating the test.
+Margin:     The difference between the threshold and the closed measurements.
+CPK:        The coefficient of producibility. CPK greater than 10 provides
+            confidence in the producibility and stability of the test.
+CP:         The minimum value where the CPK is determined by the limit 
+	    closest to the mean.  CP is equal to CPK where the mean 
+            is centered.  
+# Bad:      The number of times the test failed. 
+Flg:        These columns will have a warning flag character in the
+            corresponding column (e.g. M if the mean is not centered in the
+            limits band).
+Com Ref:    This will allow the user to enter the comment number specified in
+            the comment files.
+
+
+For more Information, please examine: bscan_inter_qua.dat

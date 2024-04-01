@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531965597  V1de5                                         
+!* Small value capacitor(27pf), test unstable.
+! IPG: rev 07.20pd Fri Jun 15 09:55:22 2018
+disconnect all
+connect s to "GND"
+connect i to "XTAL_KR_EPHY_REFCLK_IN_CP"
+connect g to "XTAL_KR_EPHY_REFCLK_OUT_CP"
+capacitor 27p, 115.00, 15.00, fr8192, re5, wb, ar50.0m, comp
+! "c117_cp" test.

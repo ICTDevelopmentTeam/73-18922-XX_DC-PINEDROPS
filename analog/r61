@@ -1,0 +1,13 @@
+!!!!    2    0    1 1531555223   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:00 2018
+on failure
+   report parallel devices
+   report "c229 1.00n"
+end on failure
+disconnect all
+connect s to "GND"
+connect i to "SRT_DDR_VTT_REF"
+connect g to "P1V2_VDDQ" 
+resistor 10k, 25.00, 20.00, re4, wb, ar100m, wa5m,ed,am.13
+! "r61" test.
+off failure

@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531966443   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:48 2018
+disconnect all
+connect s to "P12V"
+connect i to "UNNAMED_28_CAP_I126_B"
+connect g to "GND"
+!B!resistor 30.1k, 6.00, 6.00, re5, wb, ar500m, wa1.27m
+resistor 30.1k,25.00, 25.00,re5,wb,ar500m,wa20m,ed
+! "r29" test.

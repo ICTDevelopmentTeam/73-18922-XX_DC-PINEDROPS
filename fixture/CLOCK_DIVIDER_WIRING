@@ -1,0 +1,58 @@
+
+                    CLOCK DIVIDER BOARD LAYOUT                     
+   ----------------------------------------------------------------
+   | (GND1)  (IN-)                                          (GND4)|
+   |                                                        (OUT) |
+   |                                                              |
+   | (+5V)   (BYP-)                                               |
+   | (GND2)  (BYP+)                                               |
+   |                                                              |
+   |                                                              |
+   | (GND3)  (IN+)                                                |
+   ----------------------------------------------------------------
+   Instruction For Wiring                                          
+     1.CONNECT Board(+5V)  To CLCKDIV-PWR-ISLAND(+) *RED*
+     2.CONNECT Board(GND2) To CLCKDIV-PWR-ISLAND(-) *BLACK*
+     3.(IN-) AND (GND1) TWISTED PAIR 
+     4.(IN+) AND (GND3) TWISTED PAIR 
+     5.(OUT_CLK_DIV) AND (GND4) TWISTED PAIR 
+     6.PUT BOARD as close as possible to IN(+) and IN(-) PROBES
+===============================================================================
+===============================================================================
+REMOVE WIRE LIST
+-Remove   :(1 19.00  43.0) from [1 14.46  69.4] <CLK125M_FPGA>
+===============================================================================
+ADDED WIRE LIST
+Power Supply#: 5
+CLCKDIV-PWR-ISLAND(+)
+ -Connect (2 01.00  03.0) To (2 01.00  04.0) *RED*
+ -Connect (2 01.00  03.0) To (2 01.00  06.0) *RED*
+ -Connect (2 01.00  06.0) To CLCKDIV-PWR-ISLAND(+) *RED*
+CLCKDIV-GND-ISLAND(-)
+ -Connect (2 01.00  01.0) To (2 01.00  02.0) *BLACK*
+ -Connect (2 01.00  01.0) To (2 01.00  05.0) *BLACK*
+ -Connect (2 01.00  05.0) To FixtureGroundPlane *BLACK*
+ -Connect (2 01.00  05.0) To CLCKDIV-GND-ISLAND(-) *BLACK*
+
+CLOCK DIVIDER # 1 to test : U19 
+ -Connect   :CLKDIV1(+5V)    To CLCKDIV-PWR-ISLAND(+) *RED*
+ -Connect   :CLKDIV1(GND2)   To CLCKDIV-PWR-ISLAND(-) *BLACK*
+ -Connect   :[1 14.46  69.4] To CLKDIV1(IN+) *TwistPair*<CLK125M_FPGA>
+ -Connect   :(1 19.00  43.0) To CLKDIV1(BYP+) *Blue*<CLK125M_FPGA>
+CLOCK DIVIDER OUTPUT CONNECTION: 
+ -Connect (1 22.00  24.0) To CLKDIV1(OUT) *TwistPair*
+
+
+
+Wednesday, October 11, 2017 16:51:14
+|-------------------------------|
+| Flextronics' Infrastructure   |
+| ICT Development               |
+| 12455 Research Boulevard      |
+| Austin, Texas 78759           |
+| USA                           |
+|-------------------------------|
+    //--- //    //--- \\  // 
+   //__  //    //__    \\// 
+  //    //    //       //\   
+ //    //___ //___    // \\ 

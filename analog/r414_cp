@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583110  V2eeb                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:23 2018
+disconnect all
+connect s to "FPGA_PCH_SYS_RESET_L"
+connect i to "XDP_RST_PCH_SYSRST_N_CP"
+!B!resistor 750, 10.00, 10.00, re3, ar100m
+resistor 750,25.00, 20.00,re3,ar100m
+! "r414_cp" test.

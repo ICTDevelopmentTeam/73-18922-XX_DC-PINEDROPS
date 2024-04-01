@@ -1,0 +1,5 @@
+!!!!    2    0    1 1529027725   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:26 2018
+! Common Lead Resistance 100m, Common Lead Inductance 1.00u
+! Fixture: EXPRESS
+! "r110_cp" is not accessible at node "PD_CLKIN_DOT96_DN_CP".

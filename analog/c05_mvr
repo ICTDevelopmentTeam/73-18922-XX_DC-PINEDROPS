@@ -1,0 +1,8 @@
+!!!!    2    0    1 1644302394   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:20 2018
+disconnect all
+connect s to "GND"
+connect i to "TSEN1_R_MVR"
+connect g to "P3_3V"
+capacitor 220p, 35, 45, fr8192, re3, wb, ar20m, comp!, en
+! "c05_mvr" test.

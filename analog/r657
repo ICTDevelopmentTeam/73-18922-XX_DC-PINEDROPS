@@ -1,0 +1,6 @@
+!!!!    2    0    1 1529027709   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:10 2018
+! Common Lead Resistance 100m, Common Lead Inductance 1.00u
+! Fixture: EXPRESS
+! "r657" is not accessible at node "HSD_SATA1_SSD_TO_PCH_P".
+! "r657" is not accessible at node "HSD_SSD_MDOT2_CPU_LN0_P".

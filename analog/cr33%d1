@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530585612  V1673                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:30 2018
+disconnect all
+connect s to "UNNAMED_20_LED_I106_A"
+connect i to "LED_PORT80_0L"
+!B!diode 916m, 467m, idc25m, co3.0, ar916m
+diode 950m,467m,idc25m,co3.0,ar916m
+! "cr33%d1" test.

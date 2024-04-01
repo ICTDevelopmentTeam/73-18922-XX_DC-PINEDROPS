@@ -1,0 +1,17 @@
+!!!!    2    0    1 1633440280   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:11 2018
+on failure
+   report parallel devices
+   report "c3_5v 22.0u"
+   report "c256 22.0u"
+   report "c83 10.0u"
+   report "c85 10.0u"
+   report "c260 10.0u"
+end on failure
+disconnect all
+connect s to "GND"; a to "GND"
+connect i to "P1V7"; b to "P1V7"
+connect g to "P1V7_FP2" 
+capacitor 174u, 35.00, 40, fr128, re1, ar200m, ed, sa, sb, en, nocomp,am300m
+! "c9_5v" test.
+off failure

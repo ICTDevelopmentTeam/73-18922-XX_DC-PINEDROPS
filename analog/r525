@@ -1,0 +1,8 @@
+!!!!    2    0    1 1606285053   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:10 2018
+disconnect all
+connect s to "PMBUS_PSU2_SCL"
+connect i to "SRT_PMBUS_PSU2_SCL"
+!B!resistor 22, 32.73, 10.00, re2, ar500m
+resistor 22,50.00, 25.00,re2,ar500m
+! "r525" test.

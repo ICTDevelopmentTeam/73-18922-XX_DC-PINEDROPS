@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531965801   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:59 2018
+disconnect all
+connect s to "SPI_FLSH_MISO_CP" ;a to "SPI_FLSH_MISO_CP"
+connect i to "SPI_FPGA_MISO";b to "SPI_FPGA_MISO"
+!B!resistor 33, 25.15, 10.00, re2, ar200m
+resistor 33,40.00, 25.00,re2,ar200m,ed,en,sa,sb
+! "r402_cp" test.

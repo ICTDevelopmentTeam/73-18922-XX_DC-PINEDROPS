@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583000  V8219                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:03 2018
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_24_EP4CGX50FG484_I251_RREF0"
+!B!resistor 2k, 6.00, 6.00, re4, wb, ar500m
+resistor 2k,25.00, 20.00,re4,wb,ar500m
+! "r288" test.

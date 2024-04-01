@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027690   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:51 2018
+disconnect all
+connect s to "P3_3VA"
+connect i to "IO_MI_SPARE2"
+jumper 10.0k, re4, wb, ar100m, op
+! "r21" test.

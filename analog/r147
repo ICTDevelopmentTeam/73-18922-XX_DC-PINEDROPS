@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583036  V8f94                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:10 2018
+disconnect all
+connect s to "SRT_CLK33M_PCI0"
+connect i to "CLK33M_FPGA"
+!B!resistor 22, 32.73, 10.00, re2, ar500m
+resistor 22,40.00, 25.00,re2,ar500m
+! "r147" test.

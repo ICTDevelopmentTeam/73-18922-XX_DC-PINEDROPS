@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531965543  Vfe11                                         
+!* Small value capacitor(10pf), test unstable.
+! IPG: rev 07.20pd Fri Jun 15 09:55:21 2018
+disconnect all
+connect s to "GND"
+connect i to "PECI_CPU_CP"
+capacitor 10p, 1.49, 1.27, fr8192, re4, wb, ar20.0m, comp
+! "c10_cp" test.

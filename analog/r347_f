@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027701   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:02 2018
+on failure
+   report parallel devices
+   report "r352_f"
+end on failure
+disconnect all
+connect s to "P12V"
+connect i to "HS2_12V_SNS_F"
+jumper 5.00k, re4, wb, ar200m, op
+! "r347_f" test.
+off failure

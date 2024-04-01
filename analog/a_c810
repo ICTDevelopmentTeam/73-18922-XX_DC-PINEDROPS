@@ -1,0 +1,46 @@
+!!!!    2    0    1 1656192730   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:10 2018
+on failure
+   report parallel devices
+   report "a_c811 47.0u"
+   report "a_c812 47.0u"
+   report "a_c793 22.0u"
+   report "a_c794 22.0u"
+   report "c11_91_mvr 22.0u"
+   report "c12_91_mvr 22.0u"
+   report "c13_91_mvr 22.0u"
+   report "c14_91_mvr 22.0u"
+!   report "c65_cp 22.0u"
+!   report "c68_cp 22.0u"
+!   report "c71_cp 22.0u"
+!   report "c72_cp 22.0u"
+!   report "c75_cp 22.0u"
+!   report "c155_cp 22.0u"
+!   report "c157_cp 22.0u"
+!   report "c158_cp 22.0u"
+!   report "c159_cp 22.0u"
+!   report "c160_cp 22.0u"
+!   report "c161_cp 22.0u"
+!   report "c163_cp 22.0u"
+!   report "c164_cp 22.0u"
+!   report "c165_cp 22.0u"
+!   report "c167_cp 22.0u"
+!   report "c168_cp 22.0u"
+!   report "c169_cp 22.0u"
+!   report "c170_cp 22.0u"
+!   report "c172_cp 22.0u"
+!   report "c173_cp 22.0u"
+!   report "c174_cp 22.0u"
+!   report "c230 22.0u"
+!   report "c231 22.0u"
+end on failure
+disconnect all
+connect s to "P1V2_VDDQ"; a to "P1V2_VDDQ"
+connect i to "GND"; b to "GND"
+connect g to "M_AB_VREF_R_CP" 
+connect g to "DVDD_SENSE_R_MVR" 
+connect g to "SRT_DDR_VTT_REF" 
+capacitor 779u+20u, 45, 35, fr128, re2, ar800m, ed, sa, sb, nocomp, en
+!capacitor 779u, 55, 35, fr128, re1, ar800m, ed, sa, sb, en, nocomp
+! "a_c810" test.
+off failure

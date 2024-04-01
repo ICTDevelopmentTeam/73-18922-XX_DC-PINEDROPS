@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531144983   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:23 2018
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_2_RES_I472_B_ADV"
+connect g to "P3_3VA"
+resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa72.0u
+! "r1_adv" test.

@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027696   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:57 2018
+on failure
+   report parallel devices
+   report "r263_cp 200k"
+end on failure
+disconnect all
+connect s to "UNNAMED_41_CAP_I28_A_CP"
+connect i to "P3_3V"
+jumper 9.47k, re4, wb, ar100m, op
+! "r63_cp" test.
+off failure

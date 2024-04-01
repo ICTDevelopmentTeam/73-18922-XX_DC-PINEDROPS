@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027706   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:07 2018
+on failure
+   report parallel devices
+   report "r223 2.20k"
+end on failure
+disconnect all
+connect i to "SMBUS_FAN_SDA"
+connect s to "P3_3VA"
+jumper 1.73k, re4, wb, ar500m, op
+! "r532" test.
+off failure

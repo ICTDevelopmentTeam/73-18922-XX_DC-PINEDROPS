@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583085  Vf77a                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:20 2018
+disconnect all
+connect s to "BDX_RTCRST_N_CP"
+connect i to "UNNAMED_6_RES_I482_B_CP"
+!B!resistor 100, 11.00, 6.00, re2, ar100m
+resistor 100,30.00, 20.00,re2,ar100m
+! "r312_cp" test.

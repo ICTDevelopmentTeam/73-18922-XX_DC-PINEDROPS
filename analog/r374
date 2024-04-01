@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027702   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:03 2018
+on failure
+   report parallel devices
+   report "r477 40.2"
+end on failure
+disconnect all
+connect s to "P1V05C"
+connect i to "SVID_CLK_CPU_VRM"
+jumper 43.0, re2, ar200m, op
+! "r374" test.
+off failure

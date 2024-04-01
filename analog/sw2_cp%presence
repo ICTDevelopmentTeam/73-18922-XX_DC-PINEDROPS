@@ -1,0 +1,13 @@
+!!!!    2    0    1 1531895012  Veb82                                         
+
+on failure
+   report "Check for SW1_CP presence."
+end on failure
+
+disconnect all
+connect s to nodes "UNNAMED_40_RES_I60_A_CP"
+connect i to nodes "BDX_RTCRST_N_CP"
+jumper 9, re1, ar200m
+
+off failure
+

@@ -1,0 +1,19 @@
+!!!!    2    0    1 1636699591   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:12 2018
+on failure
+   report parallel devices
+   report "c3_vpp 22.0u"
+   report "c121_cp 10.0u"
+   report "c124_cp 10.0u"
+   report "c127_cp 10.0u"
+   report "c130_cp 10.0u"
+   report "c179_cp 1.00u"
+   report "c138_cp 100n"
+end on failure
+disconnect all
+connect s to "GND"; a to "GND"
+connect i to "DDR4_VPP"; b to "DDR4_VPP"
+connect g to "VFB2_VPP" 
+capacitor 163.1u, 35.00, 40, fr128, re1, ar200m, ed, sa, sb,  nocomp, am0.35
+! "c9_vpp" test.
+off failure

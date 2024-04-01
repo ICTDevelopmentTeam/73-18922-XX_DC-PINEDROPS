@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582810  Ve946                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:27 2018
+disconnect all
+connect s to "VCCSUS3_3"
+connect i to "PU_SLP_WLAN_M_GPIO29_CP"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 20.00,re4,wb,ar100m
+! "r208_cp" test.

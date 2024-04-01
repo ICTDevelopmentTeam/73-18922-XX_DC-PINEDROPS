@@ -1,0 +1,7 @@
+!!!!    2    0    1 1531966170   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:15 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "XDP_CPU_SYSPWROK_CP"
+resistor 3.3k, 25.00, 20.00, re4, wb, ar500m, wa5.64u,ed
+! "r228_cp" test.

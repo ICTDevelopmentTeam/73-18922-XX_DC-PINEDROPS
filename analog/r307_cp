@@ -1,0 +1,9 @@
+!!!!    2    0    1 1530582909  V9fda                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:41 2018
+disconnect all
+connect s to "NVRAM_VCC_3V3_FLTR"
+connect i to "P3V3_VBAT_CP"
+connect g to "GND"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m, wa8.92u
+resistor 1k,25.00, 20.00,re3,ar100m,wa8.92u
+! "r307_cp" test.

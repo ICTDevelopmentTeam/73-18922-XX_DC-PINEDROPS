@@ -1,0 +1,19 @@
+!!!!    2    0    1 1637825928   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:19 2018
+on failure
+   report parallel devices
+   report "c219 1.00u"
+   report "c220 1.00u"
+   report "c221 1.00u"
+   report "c222 1.00u"
+   report "c223 1.00u"
+   report "c224 1.00u"
+   report "c225 1.00u"
+end on failure
+disconnect all
+connect s to "GND"; a to "GND"
+connect i to "NVRAM_VCC_3V3_FLTR"; b to "NVRAM_VCC_3V3_FLTR"
+connect g to "P3V3_VBAT_CP" 
+capacitor 8u, 35.00, 41.00, fr1024, re2, ar50m, sa, sb, en, nocomp
+! "c218" test.
+off failure

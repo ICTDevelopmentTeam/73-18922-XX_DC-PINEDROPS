@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582774  Vd442                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:25 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "SPI_PROG_IO3_CP"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 20.00,re4,wb,ar100m
+! "r78_cp" test.

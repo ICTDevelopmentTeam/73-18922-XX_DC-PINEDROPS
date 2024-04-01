@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583098  V896a                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:21 2018
+disconnect all
+connect s to "VCCSUS3_3"
+connect i to "FP_PWR_SW_CP"
+!B!resistor 2.7k, 10.00, 10.00, re4, wb, ar500m, wa8.06u
+resistor 2.7k,25.00, 20.00,re4,wb,ar500m,wa8.06u
+! "r336_cp" test.

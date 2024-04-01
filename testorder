@@ -1,0 +1,2025 @@
+!!!!   14    0    1 1611371768   0000                                         
+! IPG: Fri Jan 22 21:16:09 2021
+testplan generation off
+test shorts "shorts"; permanent
+test pins "pins"; permanent
+test capacitor ".discharge"; permanent
+test jumper "c1"; preshorts, permanent
+test jumper "c1_cp"; preshorts, permanent
+test jumper "c1_f"; preshorts, permanent
+test jumper "c1_p1v2_a"; preshorts, permanent
+test jumper "c1_p2v5_a"; permanent, nulltest !tested in parallel with c1_p1v2_a
+test jumper "c2_p1v2_a"; permanent, nulltest !tested in parallel with c1_p1v2_a
+test jumper "c35_f"; permanent, nulltest !tested in parallel with c1_p1v2_a
+test jumper "c36_f"; permanent, nulltest !tested in parallel with c1_p1v2_a
+test jumper "c37_f"; permanent, nulltest !tested in parallel with c1_p1v2_a
+test jumper "c38_f"; permanent, nulltest !tested in parallel with c1_p1v2_a
+test jumper "c93_f"; permanent, nulltest !tested in parallel with c1_p1v2_a
+test jumper "c94_f"; permanent, nulltest !tested in parallel with c1_p1v2_a
+test jumper "c2"; preshorts, permanent
+test jumper "c2_f"; preshorts, permanent
+test jumper "c2_p2v5_a"; preshorts, permanent
+test jumper "c3_f"; preshorts, permanent
+test jumper "c3_p1v2_a"; preshorts, permanent
+test jumper "r6_p1v2_a"; permanent, nulltest !tested in parallel with c3_p1v2_a
+test jumper "c3_p2v5_a"; preshorts, permanent
+test jumper "r2_p2v5_a"; permanent, nulltest !tested in parallel with c3_p2v5_a
+test jumper "c4"; preshorts, permanent
+test jumper "c11_f"; permanent, nulltest !tested in parallel with c4
+test jumper "c12_f"; permanent, nulltest !tested in parallel with c4
+test jumper "c31_f"; permanent, nulltest !tested in parallel with c4
+test jumper "c32_f"; permanent, nulltest !tested in parallel with c4
+test jumper "c40_f"; permanent, nulltest !tested in parallel with c4
+test jumper "c42_f"; permanent, nulltest !tested in parallel with c4
+test jumper "c4_f"; preshorts, permanent
+test jumper "c4_p1v2_a"; preshorts, permanent
+test jumper "r7_p1v2_a"; permanent, nulltest !tested in parallel with c4_p1v2_a
+test jumper "c4_p2v5_a"; preshorts, permanent
+test jumper "c5_p2v5_a"; permanent, nulltest !tested in parallel with c4_p2v5_a
+test jumper "r5_p2v5_a"; permanent, nulltest !tested in parallel with c4_p2v5_a
+test jumper "c5"; preshorts, permanent
+test jumper "c5_f"; preshorts, permanent
+test jumper "c5_p1v2_a"; preshorts, permanent
+test jumper "c6_f"; preshorts, permanent
+test jumper "c7_f"; preshorts, permanent
+test jumper "c8"; preshorts, permanent
+test jumper "c8_f"; preshorts, permanent
+test jumper "c9"; preshorts, permanent
+test jumper "c9_f"; preshorts, permanent
+test jumper "c27_f"; permanent, nulltest !tested in parallel with c9_f
+test jumper "c10"; preshorts, permanent
+test jumper "c10_f"; preshorts, permanent
+test jumper "c28_f"; permanent, nulltest !tested in parallel with c10_f
+test jumper "c11"; preshorts, permanent
+test jumper "c11_adv"; preshorts, permanent
+test jumper "c12_5v"; preshorts, permanent
+test jumper "c12_adv"; preshorts, permanent
+test jumper "c12_vpp"; preshorts, permanent
+test jumper "c13_f"; preshorts, permanent
+test jumper "c14_f"; preshorts, permanent
+test jumper "c15_f"; preshorts, permanent
+test jumper "c16_f"; preshorts, permanent
+test jumper "c17_f"; preshorts, permanent
+test jumper "c18_f"; preshorts, permanent
+test jumper "c19_f"; preshorts, permanent
+test jumper "c20_f"; preshorts, permanent
+test jumper "c21_f"; preshorts, permanent
+test jumper "c22_f"; preshorts, permanent
+test jumper "c23_f"; preshorts, permanent
+test jumper "c24_f"; preshorts, permanent
+test jumper "c25_f"; preshorts, permanent
+test jumper "c26_f"; preshorts, permanent
+test jumper "c29_f"; preshorts, permanent
+test jumper "c30_f"; preshorts, permanent
+test jumper "c32"; preshorts, permanent
+test jumper "c33"; preshorts, permanent
+test jumper "c33_f"; preshorts, permanent
+test jumper "c34"; preshorts, permanent
+test jumper "c34_f"; preshorts, permanent
+test jumper "c35"; preshorts, permanent
+test jumper "c41_f"; preshorts, permanent
+test jumper "c43_f"; preshorts, permanent
+test jumper "c44_f"; preshorts, permanent
+test jumper "c45_f"; preshorts, permanent
+test jumper "c46_f"; preshorts, permanent
+test jumper "c47_f"; preshorts, permanent
+test jumper "c52"; preshorts, permanent
+test jumper "c53"; preshorts, permanent
+test jumper "c53_f"; preshorts, permanent
+test jumper "c102_f"; permanent, nulltest !tested in parallel with c53_f
+test jumper "c54"; preshorts, permanent
+test jumper "c55"; preshorts, permanent
+test jumper "c59"; preshorts, permanent
+test jumper "c60"; preshorts, permanent
+test jumper "c95_f"; preshorts, permanent
+test jumper "c96_f"; preshorts, permanent
+test jumper "c97_f"; preshorts, permanent
+test jumper "c98_f"; preshorts, permanent
+test jumper "c99_f"; preshorts, permanent
+test jumper "c100_f"; preshorts, permanent
+test jumper "c101_f"; preshorts, permanent
+test jumper "c140_cp"; preshorts, permanent
+test jumper "c239"; preshorts, permanent
+test jumper "c270"; preshorts, permanent
+test jumper "l1_f%jp1_8"; preshorts, permanent
+test jumper "l1_f%jp2_7"; preshorts, permanent
+test jumper "l1_f%jp3_6"; preshorts, permanent
+test jumper "l1_f%jp4_5"; preshorts, permanent
+test jumper "l1_p1v2_a"; preshorts, permanent
+test jumper "l2_f%jp1_8"; preshorts, permanent
+test jumper "l2_f%jp2_7"; preshorts, permanent
+test jumper "l2_f%jp3_6"; preshorts, permanent
+test jumper "l2_f%jp4_5"; permanent, nulltest
+test jumper "l3_f%jp1_8"; preshorts, permanent
+test jumper "l3_f%jp2_7"; preshorts, permanent
+test jumper "l3_f%jp3_6"; preshorts, permanent
+test jumper "l3_f%jp4_5"; permanent, nulltest
+test jumper "l4_f%jp1_8"; preshorts, permanent
+test jumper "l4_f%jp2_7"; preshorts, permanent
+test jumper "l4_f%jp3_6"; preshorts, permanent
+test jumper "l4_f%jp4_5"; preshorts, permanent
+test jumper "l12_f%jp1_8"; preshorts, permanent
+test jumper "l12_f%jp2_7"; preshorts, permanent
+test jumper "l12_f%jp3_6"; preshorts, permanent
+test jumper "l12_f%jp4_5"; preshorts, permanent
+test jumper "l666_f%jp1_8"; preshorts, permanent
+test jumper "l666_f%jp2_7"; preshorts, permanent
+test jumper "l666_f%jp3_6"; preshorts, permanent
+test jumper "l666_f%jp4_5"; permanent, nulltest
+test jumper "r1"; preshorts, permanent
+test jumper "r1_cp"; preshorts, permanent
+test jumper "r2_cp"; permanent, nulltest !tested in parallel with r1_cp
+test jumper "r1_f"; preshorts, permanent
+test jumper "r1_p1v2_a"; preshorts, permanent
+test jumper "r1_p2v5_a"; preshorts, permanent
+test jumper "r2_91_mvr"; preshorts, permanent
+test jumper "r2_91_vr"; preshorts, permanent
+test jumper "r2_92_vr"; preshorts, permanent
+test jumper "r2_98_mvr"; preshorts, permanent
+test jumper "r2_f"; preshorts, permanent
+test jumper "r3_cp"; preshorts, permanent
+test jumper "r3_f"; preshorts, permanent
+test jumper "r3_p2v5_a"; preshorts, permanent
+test jumper "r4"; permanent, nulltest
+test jumper "r4_cp"; preshorts, permanent
+test jumper "r4_f"; preshorts, permanent
+test jumper "r4_p1v2_a"; preshorts, permanent
+test jumper "r5"; permanent, nulltest
+test jumper "r5_cp"; preshorts, permanent
+test jumper "r5_f"; preshorts, permanent
+test jumper "r5_p1v2_a"; preshorts, permanent
+test jumper "r6"; permanent, nulltest
+test jumper "r6_cp"; preshorts, permanent
+test jumper "r6_f"; preshorts, permanent
+test jumper "r7"; permanent, nulltest
+test jumper "r7_cp"; preshorts, permanent
+test jumper "r7_f"; preshorts, permanent
+test jumper "r07_mvr"; preshorts, permanent
+test jumper "r07_vr"; preshorts, permanent
+test jumper "r8"; preshorts, permanent
+test jumper "r8_cp"; preshorts, permanent
+test jumper "r8_f"; preshorts, permanent
+test jumper "r8_p1v2_a"; preshorts, permanent
+test jumper "r08_mvr"; preshorts, permanent
+test jumper "r08_vr"; preshorts, permanent
+test jumper "r9"; preshorts, permanent
+test jumper "r9_cp"; preshorts, permanent
+test jumper "r9_f"; preshorts, permanent
+test jumper "r10"; preshorts, permanent
+test jumper "r10_cp"; preshorts, permanent
+test jumper "r10_f"; preshorts, permanent
+test jumper "r11_cp"; preshorts, permanent
+test jumper "r11_f"; preshorts, permanent
+test jumper "r12_cp"; preshorts, permanent
+test jumper "r12_f"; preshorts, permanent
+test jumper "r13_cp"; preshorts, permanent
+test jumper "r13_f"; preshorts, permanent
+test jumper "r14_cp"; preshorts, permanent
+test jumper "r14_f"; preshorts, permanent
+test jumper "r15_cp"; preshorts, permanent
+test jumper "r15_f"; preshorts, permanent
+test jumper "r16_cp"; preshorts, permanent
+test jumper "r16_f"; preshorts, permanent
+test jumper "r17"; preshorts, permanent
+test jumper "r17_cp"; preshorts, permanent
+test jumper "r17_f"; preshorts, permanent
+test jumper "r18"; preshorts, permanent
+test jumper "r18_cp"; preshorts, permanent
+test jumper "r18_f"; preshorts, permanent
+test jumper "r19"; preshorts, permanent
+test jumper "r19_cp"; preshorts, permanent
+test jumper "r19_f"; preshorts, permanent
+test jumper "r20"; preshorts, permanent
+test jumper "r20_cp"; preshorts, permanent
+test jumper "r20_f"; preshorts, permanent
+test jumper "r21"; preshorts, permanent
+test jumper "r21_cp"; preshorts, permanent
+test jumper "r21_f"; preshorts, permanent
+test jumper "r22"; preshorts, permanent
+test jumper "r22_cp"; preshorts, permanent
+test jumper "r22_f"; preshorts, permanent
+test jumper "r23"; preshorts, permanent
+test jumper "r23_cp"; preshorts, permanent
+test jumper "r23_f"; preshorts, permanent
+test jumper "r24"; preshorts, permanent
+test jumper "r24_cp"; preshorts, permanent
+test jumper "r24_f"; preshorts, permanent
+test jumper "r25"; preshorts, permanent
+test jumper "r25_cp"; preshorts, permanent
+test jumper "r25_f"; preshorts, permanent
+test jumper "r26"; preshorts, permanent
+test jumper "r26_cp"; preshorts, permanent
+test jumper "r26_f"; preshorts, permanent
+test jumper "r26_vr"; permanent, nulltest
+test jumper "r27"; preshorts, permanent
+test jumper "r27_cp"; preshorts, permanent
+test jumper "r27_f"; preshorts, permanent
+test jumper "r27_mvr"; preshorts, permanent
+test jumper "r27_vr"; preshorts, permanent
+test jumper "r28_cp"; preshorts, permanent
+test jumper "r28_f"; preshorts, permanent
+test jumper "r29_cp"; preshorts, permanent
+test jumper "r29_f"; preshorts, permanent
+test jumper "r30_cp"; preshorts, permanent
+test jumper "r30_f"; preshorts, permanent
+test jumper "r31_cp"; preshorts, permanent
+test jumper "r31_f"; preshorts, permanent
+test jumper "r32_cp"; preshorts, permanent
+test jumper "r32_f"; preshorts, permanent
+test jumper "r33"; preshorts, permanent
+test jumper "r33_cp"; preshorts, permanent
+test jumper "r33_f"; preshorts, permanent
+test jumper "r34_cp"; preshorts, permanent
+test jumper "r34_f"; preshorts, permanent
+test jumper "r35_f"; preshorts, permanent
+test jumper "r36_cp"; preshorts, permanent
+test jumper "r36_f"; preshorts, permanent
+test jumper "r37_cp"; preshorts, permanent
+test jumper "r37_f"; preshorts, permanent
+test jumper "r38"; preshorts, permanent
+test jumper "r38_cp"; preshorts, permanent
+test jumper "r38_f"; preshorts, permanent
+test jumper "r39"; preshorts, permanent
+test jumper "r39_cp"; preshorts, permanent
+test jumper "r39_f"; preshorts, permanent
+test jumper "r40_cp"; preshorts, permanent
+test jumper "r40_f"; preshorts, permanent
+test jumper "r41_cp"; preshorts, permanent
+test jumper "r41_f"; preshorts, permanent
+test jumper "r42"; permanent, nulltest
+test jumper "r42_cp"; preshorts, permanent
+test jumper "r42_f"; preshorts, permanent
+test jumper "r43_f"; permanent, nulltest !tested in parallel with r42_f
+test jumper "r43_cp"; preshorts, permanent
+test jumper "r44"; permanent, nulltest
+test jumper "r44_cp"; preshorts, permanent
+test jumper "r44_f"; preshorts, permanent
+test jumper "r45_f"; permanent, nulltest !tested in parallel with r44_f
+test jumper "r45"; permanent, nulltest
+test jumper "r45_cp"; preshorts, permanent
+test jumper "r46"; permanent, nulltest
+test jumper "r46_cp"; preshorts, permanent
+test jumper "r46_f"; preshorts, permanent
+test jumper "r47"; permanent, nulltest
+test jumper "r47_cp"; preshorts, permanent
+test jumper "r47_f"; preshorts, permanent
+test jumper "r48_cp"; preshorts, permanent
+test jumper "r48_f"; preshorts, permanent
+test jumper "r49_cp"; preshorts, permanent
+test jumper "r49_f"; preshorts, permanent
+test jumper "r50_cp"; preshorts, permanent
+test jumper "r50_f"; preshorts, permanent
+test jumper "r51_cp"; preshorts, permanent
+test jumper "r51_f"; preshorts, permanent
+test jumper "r52_cp"; preshorts, permanent
+test jumper "r52_f"; preshorts, permanent
+test jumper "r53_cp"; preshorts, permanent
+test jumper "r53_f"; preshorts, permanent
+test jumper "r54_cp"; preshorts, permanent
+test jumper "r54_f"; preshorts, permanent
+test jumper "r55_cp"; preshorts, permanent
+test jumper "r55_f"; preshorts, permanent
+test jumper "r56"; permanent, nulltest
+test jumper "r56_cp"; preshorts, permanent
+test jumper "r56_f"; preshorts, permanent
+test jumper "r57"; permanent, nulltest
+test jumper "r57_cp"; preshorts, permanent
+test jumper "r57_f"; preshorts, permanent
+test jumper "r58_cp"; preshorts, permanent
+test jumper "r58_f"; preshorts, permanent
+test jumper "r59_cp"; preshorts, permanent
+test jumper "r59_f"; preshorts, permanent
+test jumper "r60_cp"; preshorts, permanent
+test jumper "r60_f"; preshorts, permanent
+test jumper "r61_cp"; preshorts, permanent
+test jumper "r61_f"; preshorts, permanent
+test jumper "r62_cp"; preshorts, permanent
+test jumper "r62_f"; preshorts, permanent
+test jumper "r63_cp"; preshorts, permanent
+test jumper "r63_f"; preshorts, permanent
+test jumper "r64_cp"; preshorts, permanent
+test jumper "r64_f"; preshorts, permanent
+test jumper "r65_cp"; preshorts, permanent
+test jumper "r65_f"; preshorts, permanent
+test jumper "r66_cp"; preshorts, permanent
+test jumper "r66_f"; preshorts, permanent
+test jumper "r67_cp"; preshorts, permanent
+test jumper "r67_f"; preshorts, permanent
+test jumper "r68_f"; preshorts, permanent
+test jumper "r69_cp"; preshorts, permanent
+test jumper "r69_f"; preshorts, permanent
+test jumper "r70_cp"; preshorts, permanent
+test jumper "r70_f"; preshorts, permanent
+test jumper "r71_f"; preshorts, permanent
+test jumper "r72_cp"; preshorts, permanent
+test jumper "r72_f"; preshorts, permanent
+test jumper "r73_cp"; preshorts, permanent
+test jumper "r73_f"; preshorts, permanent
+test jumper "r74_cp"; preshorts, permanent
+test jumper "r74_f"; preshorts, permanent
+test jumper "r75_cp"; preshorts, permanent
+test jumper "r75_f"; preshorts, permanent
+test jumper "r76_cp"; preshorts, permanent
+test jumper "r76_f"; preshorts, permanent
+test jumper "r77_cp"; preshorts, permanent
+test jumper "r77_f"; preshorts, permanent
+test jumper "r78_f"; preshorts, permanent
+test jumper "r533"; permanent, nulltest !tested in parallel with r78_f
+test jumper "r79_mvr"; preshorts, permanent
+test jumper "r79_vr"; preshorts, permanent
+test jumper "r86_mvr"; preshorts, permanent
+test jumper "r86_vr"; preshorts, permanent
+test jumper "r87_mvr"; preshorts, permanent
+test jumper "r87_vr"; permanent, nulltest !tested in parallel with r87_mvr
+test jumper "r119"; preshorts, permanent
+test jumper "r120"; preshorts, permanent
+test jumper "r121"; preshorts, permanent
+test jumper "r122"; preshorts, permanent
+test jumper "r123"; preshorts, permanent
+test jumper "r124"; preshorts, permanent
+test jumper "r125"; preshorts, permanent
+test jumper "r126"; preshorts, permanent
+test jumper "r127"; preshorts, permanent
+test jumper "r128"; preshorts, permanent
+test jumper "r129"; preshorts, permanent
+test jumper "r130"; preshorts, permanent
+test jumper "r131"; preshorts, permanent
+test jumper "r131_cp"; preshorts, permanent
+test jumper "r132"; preshorts, permanent
+test jumper "r132_cp"; preshorts, permanent
+test jumper "r133"; preshorts, permanent
+test jumper "r134"; preshorts, permanent
+test jumper "r155_cp"; preshorts, permanent
+test jumper "r156_cp"; preshorts, permanent
+test jumper "r157_cp"; preshorts, permanent
+test jumper "r159_cp"; permanent, nulltest !tested in parallel with r157_cp
+test jumper "r162_cp"; preshorts, permanent
+test jumper "r169"; preshorts, permanent
+test jumper "r371"; permanent, nulltest !tested in parallel with r169
+test jumper "r172"; permanent, nulltest
+test jumper "r173"; permanent, nulltest
+test jumper "r176_cp"; preshorts, permanent
+test jumper "r181"; preshorts, permanent
+test jumper "r185"; preshorts, permanent
+test jumper "r186"; preshorts, permanent
+test jumper "r195_cp"; preshorts, permanent
+test jumper "r201"; preshorts, permanent
+test jumper "r202"; preshorts, permanent
+test jumper "r203"; preshorts, permanent
+test jumper "r204"; preshorts, permanent
+test jumper "r220"; preshorts, permanent
+test jumper "r230"; preshorts, permanent
+test jumper "r247"; preshorts, permanent
+test jumper "r248"; preshorts, permanent
+test jumper "r249"; preshorts, permanent
+test jumper "r250"; preshorts, permanent
+test jumper "r251"; preshorts, permanent
+test jumper "r252"; preshorts, permanent
+test jumper "r253"; preshorts, permanent
+test jumper "r254"; preshorts, permanent
+test jumper "r257_a"; preshorts, permanent
+test jumper "r258_a"; preshorts, permanent
+test jumper "r262"; preshorts, permanent
+test jumper "r263"; preshorts, permanent
+test jumper "r264"; preshorts, permanent
+test jumper "r265"; preshorts, permanent
+test jumper "r266"; preshorts, permanent
+test jumper "r267"; preshorts, permanent
+test jumper "r268"; preshorts, permanent
+test jumper "r269"; preshorts, permanent
+test jumper "r281_cp"; preshorts, permanent
+test jumper "r289_cp"; preshorts, permanent
+test jumper "r291"; permanent, nulltest
+test jumper "r324"; preshorts, permanent
+test jumper "r327"; preshorts, permanent
+test jumper "r327_cp"; preshorts, permanent
+test jumper "r333"; preshorts, permanent
+test jumper "r337_cp"; preshorts, permanent
+test jumper "r339"; permanent, nulltest
+test jumper "r340_cp"; preshorts, permanent
+test jumper "r347_f"; preshorts, permanent
+test jumper "r352_f"; permanent, nulltest !tested in parallel with r347_f
+test jumper "r348_f"; preshorts, permanent
+test jumper "r349_f"; preshorts, permanent
+test jumper "r350_f"; preshorts, permanent
+test jumper "r351_f"; preshorts, permanent
+test jumper "r354_f"; preshorts, permanent
+test jumper "r357"; permanent, nulltest
+test jumper "r357_f"; preshorts, permanent
+test jumper "r358"; permanent, nulltest
+test jumper "r358_f"; preshorts, permanent
+test jumper "r359"; permanent, nulltest
+test jumper "r360"; permanent, nulltest
+test jumper "r361"; preshorts, permanent
+test jumper "r362"; permanent, nulltest
+test jumper "r364"; preshorts, permanent
+test jumper "r365"; preshorts, permanent
+test jumper "r366"; permanent, nulltest
+test jumper "r367"; permanent, nulltest
+test jumper "r368"; preshorts, permanent
+test jumper "r369"; permanent, nulltest
+test jumper "r369_f"; preshorts, permanent
+test jumper "r370_f"; preshorts, permanent
+test jumper "r371_f"; preshorts, permanent
+test jumper "r372_f"; preshorts, permanent
+test jumper "r373"; preshorts, permanent
+test jumper "r374"; preshorts, permanent
+test jumper "r374_f"; preshorts, permanent
+test jumper "r375_f"; preshorts, permanent
+test jumper "r378_f"; preshorts, permanent
+test jumper "r379_f"; preshorts, permanent
+test jumper "r380_f"; preshorts, permanent
+test jumper "r381_f"; preshorts, permanent
+test jumper "r382_f"; preshorts, permanent
+test jumper "r383_f"; preshorts, permanent
+test jumper "r384_f"; preshorts, permanent
+test jumper "r385_f"; preshorts, permanent
+test jumper "r386_f"; preshorts, permanent
+test jumper "r387_f"; preshorts, permanent
+test jumper "r388_f"; preshorts, permanent
+test jumper "r389"; preshorts, permanent
+test jumper "r389_f"; preshorts, permanent
+test jumper "r390"; preshorts, permanent
+test jumper "r390_f"; preshorts, permanent
+test jumper "r391"; preshorts, permanent
+test jumper "r391_f"; preshorts, permanent
+test jumper "r392"; preshorts, permanent
+test jumper "r392_f"; preshorts, permanent
+test jumper "r393"; preshorts, permanent
+test jumper "r393_f"; preshorts, permanent
+test jumper "r394"; preshorts, permanent
+test jumper "r394_f"; preshorts, permanent
+test jumper "r395"; preshorts, permanent
+test jumper "r395_f"; preshorts, permanent
+test jumper "r396"; preshorts, permanent
+test jumper "r396_f"; preshorts, permanent
+test jumper "r397"; preshorts, permanent
+test jumper "r397_f"; preshorts, permanent
+test jumper "r398"; preshorts, permanent
+test jumper "r398_f"; preshorts, permanent
+test jumper "r399"; preshorts, permanent
+test jumper "r399_f"; preshorts, permanent
+test jumper "r400"; preshorts, permanent
+test jumper "r401"; preshorts, permanent
+test jumper "r402"; preshorts, permanent
+test jumper "r403"; preshorts, permanent
+test jumper "r404"; preshorts, permanent
+test jumper "r405"; preshorts, permanent
+test jumper "r406"; preshorts, permanent
+test jumper "r407"; preshorts, permanent
+test jumper "r408_cp"; preshorts, permanent
+test jumper "r410"; preshorts, permanent
+test jumper "r411"; preshorts, permanent
+test jumper "r412_cp"; preshorts, permanent
+test jumper "r413"; preshorts, permanent
+test jumper "r414"; preshorts, permanent
+test jumper "r415"; preshorts, permanent
+test jumper "r416_cp"; preshorts, permanent
+test jumper "r429"; preshorts, permanent
+test jumper "r430"; preshorts, permanent
+test jumper "r430_cp"; preshorts, permanent
+test jumper "r431"; preshorts, permanent
+test jumper "r432"; preshorts, permanent
+test jumper "r432_cp"; preshorts, permanent
+test jumper "r434_cp"; preshorts, permanent
+test jumper "r436_cp"; preshorts, permanent
+test jumper "r444_f"; preshorts, permanent
+test jumper "r458"; preshorts, permanent
+test jumper "r459"; preshorts, permanent
+test jumper "r463"; preshorts, permanent
+test jumper "r464"; preshorts, permanent
+test jumper "r465"; preshorts, permanent
+test jumper "r466"; preshorts, permanent
+test jumper "r467"; preshorts, permanent
+test jumper "r468"; preshorts, permanent
+test jumper "r469"; preshorts, permanent
+test jumper "r470"; preshorts, permanent
+test jumper "r473_f"; preshorts, permanent
+test jumper "r476_f"; preshorts, permanent
+test jumper "r505"; preshorts, permanent
+test jumper "r512"; preshorts, permanent
+test jumper "r528"; preshorts, permanent
+test jumper "r532"; preshorts, permanent
+test jumper "r534"; preshorts, permanent
+test jumper "r537"; preshorts, permanent
+test jumper "r538"; preshorts, permanent
+test jumper "r540"; preshorts, permanent
+test jumper "r542"; preshorts, permanent
+test jumper "r543"; preshorts, permanent
+test jumper "r550"; preshorts, permanent
+test jumper "r551"; preshorts, permanent
+test jumper "r552"; preshorts, permanent
+test jumper "r553"; preshorts, permanent
+test jumper "r646"; permanent, nulltest
+test jumper "r647"; permanent, nulltest
+test jumper "r648"; permanent, nulltest
+test jumper "r649"; permanent, nulltest
+test jumper "r651"; preshorts, permanent
+test jumper "r662"; preshorts, permanent
+test jumper "r663"; preshorts, permanent
+test jumper "r826_a"; preshorts, permanent
+test jumper "l1_5v"; preshorts, permanent
+test jumper "l1_91_mvr"; permanent, nulltest
+test jumper "l1_91_vr"; permanent, nulltest
+test jumper "l1_92_vr"; permanent, nulltest
+test jumper "l1_98_mvr"; permanent, nulltest
+test jumper "l1_adv"; preshorts, permanent
+test jumper "l1_cp"; preshorts, permanent
+test jumper "l1_vpp"; preshorts, permanent
+test jumper "l01_3v3"; preshorts, permanent
+test jumper "l2_5v"; preshorts, permanent
+test jumper "l2_adv"; preshorts, permanent
+test jumper "l2_cp"; preshorts, permanent
+test jumper "l2_vpp"; preshorts, permanent
+test jumper "l5"; preshorts, permanent
+test jumper "l6"; preshorts, permanent
+test jumper "l7"; preshorts, permanent
+test jumper "l8"; preshorts, permanent
+test jumper "l9"; preshorts, permanent
+test jumper "l10"; preshorts, permanent
+test jumper "r1_3v3"; preshorts, permanent
+test jumper "r2_3v3"; preshorts, permanent
+test jumper "r02_mvr"; preshorts, permanent
+test jumper "r3_3v3"; preshorts, permanent
+test jumper "r3_91_mvr"; preshorts, permanent
+test jumper "r3_91_vr"; preshorts, permanent
+test jumper "r3_92_vr"; preshorts, permanent
+test jumper "r3_98_mvr"; preshorts, permanent
+test jumper "r4_91_mvr"; preshorts, permanent
+test jumper "r4_91_vr"; preshorts, permanent
+test jumper "r4_92_vr"; preshorts, permanent
+test jumper "r4_98_mvr"; preshorts, permanent
+test jumper "r04_mvr"; preshorts, permanent
+test jumper "r04_vr"; preshorts, permanent
+test jumper "r5_91_mvr"; preshorts, permanent
+test jumper "r5_91_vr"; preshorts, permanent
+test jumper "r5_92_vr"; preshorts, permanent
+test jumper "r5_98_mvr"; preshorts, permanent
+test jumper "r05_mvr"; preshorts, permanent
+test jumper "r05_vr"; preshorts, permanent
+test jumper "r06_mvr"; preshorts, permanent
+test jumper "r26_mvr"; preshorts, permanent
+test jumper "r28_mvr"; preshorts, permanent
+test jumper "r28_vr"; preshorts, permanent
+test jumper "r32"; preshorts, permanent
+test jumper "r36"; preshorts, permanent
+test jumper "r43"; preshorts, permanent
+test jumper "r48"; preshorts, permanent
+test jumper "r49"; preshorts, permanent
+test jumper "r50"; preshorts, permanent
+test jumper "r51"; preshorts, permanent
+test jumper "r52"; preshorts, permanent
+test jumper "r53"; preshorts, permanent
+test jumper "r54"; preshorts, permanent
+test jumper "r55"; preshorts, permanent
+test jumper "r79_91_mvr"; preshorts, permanent
+test jumper "r79_91_vr"; preshorts, permanent
+test jumper "r79_92_vr"; preshorts, permanent
+test jumper "r79_98_mvr"; preshorts, permanent
+test jumper "r93_cp"; preshorts, permanent
+test jumper "r135"; preshorts, permanent
+test jumper "r136"; preshorts, permanent
+test jumper "r137"; preshorts, permanent
+test jumper "r137_cp"; preshorts, permanent
+test jumper "r138"; preshorts, permanent
+test jumper "r139"; preshorts, permanent
+test jumper "r140"; preshorts, permanent
+test jumper "r141"; preshorts, permanent
+test jumper "r142"; preshorts, permanent
+test jumper "r143"; preshorts, permanent
+test jumper "r144"; preshorts, permanent
+test jumper "r145"; permanent, nulltest
+test jumper "r146"; permanent, nulltest
+test jumper "r157"; preshorts, permanent
+test jumper "r158"; preshorts, permanent
+test jumper "r161"; preshorts, permanent
+test jumper "r164"; preshorts, permanent
+test jumper "r165"; preshorts, permanent
+test jumper "r166"; preshorts, permanent
+test jumper "r167"; preshorts, permanent
+test jumper "r168"; preshorts, permanent
+test jumper "r170"; preshorts, permanent
+test jumper "r173_cp"; preshorts, permanent
+test jumper "r205"; preshorts, permanent
+test jumper "r206"; preshorts, permanent
+test jumper "r208"; preshorts, permanent
+test jumper "r209"; preshorts, permanent
+test jumper "r219_cp"; preshorts, permanent
+test jumper "r223_cp"; preshorts, permanent
+test jumper "r236"; preshorts, permanent
+test jumper "r237"; preshorts, permanent
+test jumper "r238"; preshorts, permanent
+test jumper "r239"; preshorts, permanent
+test jumper "r242"; preshorts, permanent
+test jumper "r260"; preshorts, permanent
+test jumper "r261_cp"; preshorts, permanent
+test jumper "r264_cp"; preshorts, permanent
+test jumper "r271"; preshorts, permanent
+test jumper "r272"; preshorts, permanent
+test jumper "r273"; preshorts, permanent
+test jumper "r274"; preshorts, permanent
+test jumper "r275"; preshorts, permanent
+test jumper "r280"; preshorts, permanent
+test jumper "r281"; preshorts, permanent
+test jumper "r282"; preshorts, permanent
+test jumper "r290"; preshorts, permanent
+test jumper "r293_cp"; preshorts, permanent
+test jumper "r313_cp"; preshorts, permanent
+test jumper "r330_cp"; preshorts, permanent
+test jumper "r335_cp"; preshorts, permanent
+test jumper "r336"; preshorts, permanent
+test jumper "r337"; preshorts, permanent
+test jumper "r338_cp"; preshorts, permanent
+test jumper "r339_cp"; preshorts, permanent
+test jumper "r340"; preshorts, permanent
+test jumper "r341"; preshorts, permanent
+test jumper "r341_cp"; preshorts, permanent
+test jumper "r342_cp"; preshorts, permanent
+test jumper "r345_cp"; preshorts, permanent
+test jumper "r346_cp"; preshorts, permanent
+test jumper "r347_cp"; preshorts, permanent
+test jumper "r348_cp"; preshorts, permanent
+test jumper "r349_cp"; preshorts, permanent
+test jumper "r354"; permanent, nulltest
+test jumper "r355"; preshorts, permanent
+test jumper "r356"; permanent, nulltest
+test jumper "r357_cp"; preshorts, permanent
+test jumper "r363"; preshorts, permanent
+test jumper "r376"; preshorts, permanent
+test jumper "r379"; preshorts, permanent
+test jumper "r396_cp"; preshorts, permanent
+test jumper "r400_cp"; preshorts, permanent
+test jumper "r403_cp"; preshorts, permanent
+test jumper "r404_cp"; preshorts, permanent
+test jumper "r418_cp"; preshorts, permanent
+test jumper "r428"; preshorts, permanent
+test jumper "r439"; preshorts, permanent
+test jumper "r440"; preshorts, permanent
+test jumper "r441"; preshorts, permanent
+test jumper "r442"; preshorts, permanent
+test jumper "r443"; preshorts, permanent
+test jumper "r450"; preshorts, permanent
+test jumper "r479"; preshorts, permanent
+test jumper "r480"; preshorts, permanent
+test jumper "r481"; preshorts, permanent
+test jumper "r482"; preshorts, permanent
+test jumper "r527"; preshorts, permanent
+test jumper "r535"; preshorts, permanent
+test jumper "r536"; preshorts, permanent
+test jumper "r650"; preshorts, permanent
+test jumper "r657"; permanent, nulltest
+test jumper "r658"; permanent, nulltest
+test jumper "r659"; permanent, nulltest
+test jumper "r660"; permanent, nulltest
+test capacitor "a_c810"; permanent
+test capacitor "a_c811"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "a_c812"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "a_c793"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "a_c794"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c11_91_mvr"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c12_91_mvr"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c13_91_mvr"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c14_91_mvr"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c65_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c68_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c71_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c72_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c75_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c155_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c157_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c158_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c159_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c160_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c161_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c163_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c164_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c165_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c167_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c168_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c169_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c170_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c172_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c173_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c174_cp"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c230"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c231"; permanent, nulltest !tested in parallel with a_c810
+test capacitor "c13_91_vr"; permanent
+test capacitor "c13_92_vr"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c14_91_vr"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c14_92_vr"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c11_91_vr"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c11_92_vr"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c12_91_vr"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c12_92_vr"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "a_c853"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "a_c887"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "a_c888"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "a_c889"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "a_c841"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "a_c842"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "a_c843"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "a_c844"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c63_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c64_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c66_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c67_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c69_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c70_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c73_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c74_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c76_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c77_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c78_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c79_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c80_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c81_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c82_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c83_cp"; permanent, nulltest !tested in parallel with c13_91_vr
+test capacitor "c9_5v"; permanent
+test capacitor "c3_5v"; permanent, nulltest !tested in parallel with c9_5v
+test capacitor "c256"; permanent, nulltest !tested in parallel with c9_5v
+test capacitor "c83"; permanent, nulltest !tested in parallel with c9_5v
+test capacitor "c85"; permanent, nulltest !tested in parallel with c9_5v
+test capacitor "c260"; permanent, nulltest !tested in parallel with c9_5v
+test capacitor "c226"; permanent
+test capacitor "c3_adv"; permanent, nulltest !tested in parallel with c226
+test capacitor "c14"; permanent, nulltest !tested in parallel with c226
+test capacitor "c282"; permanent, nulltest !tested in parallel with c226
+test capacitor "c232"; permanent, nulltest !tested in parallel with c226
+test capacitor "c8_adv"; permanent, nulltest !tested in parallel with c226
+test capacitor "c21_mvr"; permanent, nulltest !tested in parallel with c226
+test capacitor "c21_vr"; permanent, nulltest !tested in parallel with c226
+test capacitor "c120"; permanent, nulltest !tested in parallel with c226
+test capacitor "c122"; permanent, nulltest !tested in parallel with c226
+test capacitor "c125"; permanent, nulltest !tested in parallel with c226
+test capacitor "c127"; permanent, nulltest !tested in parallel with c226
+test capacitor "c129"; permanent, nulltest !tested in parallel with c226
+test capacitor "c132"; permanent, nulltest !tested in parallel with c226
+test capacitor "c135"; permanent, nulltest !tested in parallel with c226
+test capacitor "c137"; permanent, nulltest !tested in parallel with c226
+test capacitor "c140"; permanent, nulltest !tested in parallel with c226
+test capacitor "c142"; permanent, nulltest !tested in parallel with c226
+test capacitor "c153"; permanent, nulltest !tested in parallel with c226
+test capacitor "c215"; permanent, nulltest !tested in parallel with c226
+test capacitor "c276"; permanent, nulltest !tested in parallel with c226
+test capacitor "c277"; permanent, nulltest !tested in parallel with c226
+test capacitor "c278"; permanent, nulltest !tested in parallel with c226
+test capacitor "c279"; permanent, nulltest !tested in parallel with c226
+test capacitor "c280"; permanent, nulltest !tested in parallel with c226
+test capacitor "c281"; permanent, nulltest !tested in parallel with c226
+test capacitor "c283"; permanent, nulltest !tested in parallel with c226
+test capacitor "c284"; permanent, nulltest !tested in parallel with c226
+test capacitor "c285"; permanent, nulltest !tested in parallel with c226
+test capacitor "c286"; permanent, nulltest !tested in parallel with c226
+test capacitor "c287"; permanent, nulltest !tested in parallel with c226
+test capacitor "c288"; permanent, nulltest !tested in parallel with c226
+test capacitor "c289"; permanent, nulltest !tested in parallel with c226
+test capacitor "c292"; permanent, nulltest !tested in parallel with c226
+test capacitor "c293"; permanent, nulltest !tested in parallel with c226
+test capacitor "c306"; permanent, nulltest !tested in parallel with c226
+test capacitor "c16"; permanent, nulltest !tested in parallel with c226
+test capacitor "c20_mvr"; permanent, nulltest !tested in parallel with c226
+test capacitor "c20_vr"; permanent, nulltest !tested in parallel with c226
+test capacitor "c94"; permanent, nulltest !tested in parallel with c226
+test capacitor "c118"; permanent, nulltest !tested in parallel with c226
+test capacitor "c119"; permanent, nulltest !tested in parallel with c226
+test capacitor "c121"; permanent, nulltest !tested in parallel with c226
+test capacitor "c123"; permanent, nulltest !tested in parallel with c226
+test capacitor "c124"; permanent, nulltest !tested in parallel with c226
+test capacitor "c126"; permanent, nulltest !tested in parallel with c226
+test capacitor "c128"; permanent, nulltest !tested in parallel with c226
+test capacitor "c130"; permanent, nulltest !tested in parallel with c226
+test capacitor "c131"; permanent, nulltest !tested in parallel with c226
+test capacitor "c133"; permanent, nulltest !tested in parallel with c226
+test capacitor "c134"; permanent, nulltest !tested in parallel with c226
+test capacitor "c136"; permanent, nulltest !tested in parallel with c226
+test capacitor "c138"; permanent, nulltest !tested in parallel with c226
+test capacitor "c139"; permanent, nulltest !tested in parallel with c226
+test capacitor "c141"; permanent, nulltest !tested in parallel with c226
+test capacitor "c143"; permanent, nulltest !tested in parallel with c226
+test capacitor "c152"; permanent, nulltest !tested in parallel with c226
+test capacitor "c217"; permanent, nulltest !tested in parallel with c226
+test capacitor "c305"; permanent, nulltest !tested in parallel with c226
+test capacitor "c9_vpp"; permanent
+test capacitor "c3_vpp"; permanent, nulltest !tested in parallel with c9_vpp
+test capacitor "c121_cp"; permanent, nulltest !tested in parallel with c9_vpp
+test capacitor "c124_cp"; permanent, nulltest !tested in parallel with c9_vpp
+test capacitor "c127_cp"; permanent, nulltest !tested in parallel with c9_vpp
+test capacitor "c130_cp"; permanent, nulltest !tested in parallel with c9_vpp
+test capacitor "c179_cp"; permanent, nulltest !tested in parallel with c9_vpp
+test capacitor "c138_cp"; permanent, nulltest !tested in parallel with c9_vpp
+test capacitor "c8_5v"; permanent
+test capacitor "c6_5v"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c07_91_mvr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c07_98_mvr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c08_91_mvr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c08_98_mvr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c09_91_mvr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c09_98_mvr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c103"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c07_91_vr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c07_92_vr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c09_91_vr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c09_92_vr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c81"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c82"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c2888"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c08_91_vr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c08_92_vr"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c15"; permanent, nulltest !tested in parallel with c8_5v
+test capacitor "c214"; permanent
+test capacitor "c228"; permanent, nulltest !tested in parallel with c214
+test capacitor "c6_adv"; permanent, nulltest !tested in parallel with c214
+test capacitor "c147"; permanent, nulltest !tested in parallel with c214
+test capacitor "c151"; permanent, nulltest !tested in parallel with c214
+test capacitor "c182"; permanent, nulltest !tested in parallel with c214
+test capacitor "c213"; permanent, nulltest !tested in parallel with c214
+test capacitor "c158"; permanent, nulltest !tested in parallel with c214
+test capacitor "c160"; permanent, nulltest !tested in parallel with c214
+test capacitor "c162"; permanent, nulltest !tested in parallel with c214
+test capacitor "c178"; permanent, nulltest !tested in parallel with c214
+test capacitor "c180"; permanent, nulltest !tested in parallel with c214
+test capacitor "c183"; permanent, nulltest !tested in parallel with c214
+test capacitor "c184"; permanent, nulltest !tested in parallel with c214
+test capacitor "c185"; permanent, nulltest !tested in parallel with c214
+test capacitor "c186"; permanent, nulltest !tested in parallel with c214
+test capacitor "c187"; permanent, nulltest !tested in parallel with c214
+test capacitor "c188"; permanent, nulltest !tested in parallel with c214
+test capacitor "c189"; permanent, nulltest !tested in parallel with c214
+test capacitor "c190"; permanent, nulltest !tested in parallel with c214
+test capacitor "c191"; permanent, nulltest !tested in parallel with c214
+test capacitor "c192"; permanent, nulltest !tested in parallel with c214
+test capacitor "c146"; permanent, nulltest !tested in parallel with c214
+test capacitor "c150"; permanent, nulltest !tested in parallel with c214
+test capacitor "c159"; permanent, nulltest !tested in parallel with c214
+test capacitor "c161"; permanent, nulltest !tested in parallel with c214
+test capacitor "c163"; permanent, nulltest !tested in parallel with c214
+test capacitor "c177"; permanent, nulltest !tested in parallel with c214
+test capacitor "c179"; permanent, nulltest !tested in parallel with c214
+test capacitor "c181"; permanent, nulltest !tested in parallel with c214
+test capacitor "c193"; permanent, nulltest !tested in parallel with c214
+test capacitor "c194"; permanent, nulltest !tested in parallel with c214
+test capacitor "c195"; permanent, nulltest !tested in parallel with c214
+test capacitor "c196"; permanent, nulltest !tested in parallel with c214
+test capacitor "c197"; permanent, nulltest !tested in parallel with c214
+test capacitor "c198"; permanent, nulltest !tested in parallel with c214
+test capacitor "c199"; permanent, nulltest !tested in parallel with c214
+test capacitor "c200"; permanent, nulltest !tested in parallel with c214
+test capacitor "c201"; permanent, nulltest !tested in parallel with c214
+test capacitor "c202"; permanent, nulltest !tested in parallel with c214
+test capacitor "c203"; permanent, nulltest !tested in parallel with c214
+test capacitor "c204"; permanent, nulltest !tested in parallel with c214
+test capacitor "c205"; permanent, nulltest !tested in parallel with c214
+test capacitor "c206"; permanent, nulltest !tested in parallel with c214
+test capacitor "c207"; permanent, nulltest !tested in parallel with c214
+test capacitor "c208"; permanent, nulltest !tested in parallel with c214
+test capacitor "c209"; permanent, nulltest !tested in parallel with c214
+test capacitor "c210"; permanent, nulltest !tested in parallel with c214
+test capacitor "c211"; permanent, nulltest !tested in parallel with c214
+test capacitor "c212"; permanent, nulltest !tested in parallel with c214
+test capacitor "c8_vpp"; permanent
+test capacitor "c6_vpp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c34_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c37_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c44_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c45_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c99_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c103_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c104_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c106_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c108_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c142_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c25_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c28_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c31_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c40_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c41_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c143_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c141_cp"; permanent, nulltest !tested in parallel with c8_vpp
+test capacitor "c92_cp"; permanent
+test capacitor "c93_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c19_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c20_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c91_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c94_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c132_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c134_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c266"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c267"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c268"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c269"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c11_98_mvr"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c12_98_mvr"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c13_98_mvr"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c14_98_mvr"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c84_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c85_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c86_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c87_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c88_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c89_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c90_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c261"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c262"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c263"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c264"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c265"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c51_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c60_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c21_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c22_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c23_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c26_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c27_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c29_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c30_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c32_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c33_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c35_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c36_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c38_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c39_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c42_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c43_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c46_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c47_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c49_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c56_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c58_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c95_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c97_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c100_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c101_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c102_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c107_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c109_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c144_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c149_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c150_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c177_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c180_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c137_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c145_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c146_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c147_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c148_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c116_cp"; permanent, nulltest !tested in parallel with c92_cp
+test capacitor "c120_cp"; permanent
+test capacitor "c123_cp"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c126_cp"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c129_cp"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c156_cp"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c162_cp"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c166_cp"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c171_cp"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c234"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c235"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c236"; permanent, nulltest !tested in parallel with c120_cp
+test capacitor "c252"; permanent
+test capacitor "c84"; permanent, nulltest !tested in parallel with c252
+test capacitor "c258"; permanent, nulltest !tested in parallel with c252
+test capacitor "c151_cp"; permanent, nulltest !tested in parallel with c252
+test capacitor "c152_cp"; permanent, nulltest !tested in parallel with c252
+test capacitor "c153_cp"; permanent, nulltest !tested in parallel with c252
+test capacitor "c154_cp"; permanent, nulltest !tested in parallel with c252
+test capacitor "c254"; permanent
+test capacitor "c86"; permanent, nulltest !tested in parallel with c254
+test capacitor "c259"; permanent, nulltest !tested in parallel with c254
+test capacitor "c87"; permanent
+test capacitor "c91"; permanent, nulltest !tested in parallel with c87
+test capacitor "c92"; permanent, nulltest !tested in parallel with c87
+test capacitor "c93"; permanent, nulltest !tested in parallel with c87
+test capacitor "c88"; permanent, nulltest !tested in parallel with c87
+test capacitor "c89"; permanent, nulltest !tested in parallel with c87
+test capacitor "c90"; permanent, nulltest !tested in parallel with c87
+test capacitor "c227"; permanent
+test capacitor "c145"; permanent, nulltest !tested in parallel with c227
+test capacitor "c149"; permanent, nulltest !tested in parallel with c227
+test capacitor "c157"; permanent, nulltest !tested in parallel with c227
+test capacitor "c170"; permanent, nulltest !tested in parallel with c227
+test capacitor "c176"; permanent, nulltest !tested in parallel with c227
+test capacitor "c10_adv"; permanent, nulltest !tested in parallel with c227
+test capacitor "c155"; permanent, nulltest !tested in parallel with c227
+test capacitor "c164"; permanent, nulltest !tested in parallel with c227
+test capacitor "c166"; permanent, nulltest !tested in parallel with c227
+test capacitor "c168"; permanent, nulltest !tested in parallel with c227
+test capacitor "c172"; permanent, nulltest !tested in parallel with c227
+test capacitor "c174"; permanent, nulltest !tested in parallel with c227
+test capacitor "c144"; permanent, nulltest !tested in parallel with c227
+test capacitor "c148"; permanent, nulltest !tested in parallel with c227
+test capacitor "c154"; permanent, nulltest !tested in parallel with c227
+test capacitor "c156"; permanent, nulltest !tested in parallel with c227
+test capacitor "c165"; permanent, nulltest !tested in parallel with c227
+test capacitor "c167"; permanent, nulltest !tested in parallel with c227
+test capacitor "c169"; permanent, nulltest !tested in parallel with c227
+test capacitor "c171"; permanent, nulltest !tested in parallel with c227
+test capacitor "c173"; permanent, nulltest !tested in parallel with c227
+test capacitor "c175"; permanent, nulltest !tested in parallel with c227
+test capacitor "c3283"; permanent
+test capacitor "c347"; permanent, nulltest !tested in parallel with c3283
+test capacitor "c3"; permanent
+test capacitor "c39_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c39_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c75"; permanent, nulltest !tested in parallel with c3
+test capacitor "c01_3v3"; permanent, nulltest !tested in parallel with c3
+test capacitor "c01_91_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c01_91_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c01_92_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c01_98_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c02_3v3"; permanent, nulltest !tested in parallel with c3
+test capacitor "c02_91_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c02_91_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c02_92_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c02_98_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c03_3v3"; permanent, nulltest !tested in parallel with c3
+test capacitor "c03_91_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c03_91_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c03_92_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c03_98_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c04_3v3"; permanent, nulltest !tested in parallel with c3
+test capacitor "c04_91_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c04_98_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c05_91_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c05_98_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c15_91_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c15_91_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c15_92_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c15_98_mvr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c76"; permanent, nulltest !tested in parallel with c3
+test capacitor "c1_5v"; permanent, nulltest !tested in parallel with c3
+test capacitor "c1_adv"; permanent, nulltest !tested in parallel with c3
+test capacitor "c1_vpp"; permanent, nulltest !tested in parallel with c3
+test capacitor "c4_5v"; permanent, nulltest !tested in parallel with c3
+test capacitor "c4_adv"; permanent, nulltest !tested in parallel with c3
+test capacitor "c4_vpp"; permanent, nulltest !tested in parallel with c3
+test capacitor "c309"; permanent, nulltest !tested in parallel with c3
+test capacitor "c310"; permanent, nulltest !tested in parallel with c3
+test capacitor "io_c20"; permanent, nulltest !tested in parallel with c3
+test capacitor "io_c21"; permanent, nulltest !tested in parallel with c3
+test capacitor "io_c25"; permanent, nulltest !tested in parallel with c3
+test capacitor "c05_3v3"; permanent, nulltest !tested in parallel with c3
+test capacitor "c04_91_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c04_92_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c07_3v3"; permanent, nulltest !tested in parallel with c3
+test capacitor "c308"; permanent, nulltest !tested in parallel with c3
+test capacitor "io_c18"; permanent, nulltest !tested in parallel with c3
+test capacitor "io_c19"; permanent, nulltest !tested in parallel with c3
+test capacitor "io_c24"; permanent, nulltest !tested in parallel with c3
+test capacitor "c05_91_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c05_92_vr"; permanent, nulltest !tested in parallel with c3
+test capacitor "c307"; permanent, nulltest !tested in parallel with c3
+test capacitor "c11_3v3"; permanent
+test capacitor "c10_3v3"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c3031"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c3_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c6_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c48_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c50_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c52_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c53_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c54_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c55_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c57_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c96_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c98_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c116"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c349"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c2_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c4_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c5_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c7_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c30"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c31"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c59_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c62_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c113_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c115"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c61_cp"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "c09_3v3"; permanent, nulltest !tested in parallel with c11_3v3
+test capacitor "io_c23"; permanent
+test capacitor "io_22"; permanent, nulltest !tested in parallel with io_c23
+test capacitor "c06_91_mvr"; permanent
+test capacitor "c06_98_mvr"; permanent
+test capacitor "c01_mvr"; permanent, comment
+test capacitor "c01_vr"; permanent, comment
+test capacitor "c02_mvr"; permanent, comment
+test capacitor "c02_vr"; permanent, nulltest
+test capacitor "c2_5v"; permanent
+test capacitor "c2_adv"; permanent
+test capacitor "c2_vpp"; permanent
+test capacitor "c5_5v"; permanent
+test capacitor "c5_adv"; permanent
+test capacitor "c5_vpp"; permanent
+test capacitor "c09_mvr"; permanent
+test capacitor "c07_mvr"; permanent, nulltest !tested in parallel with c09_mvr
+test capacitor "c08_mvr"; permanent, nulltest !tested in parallel with c09_mvr
+test capacitor "c09_vr"; permanent
+test capacitor "c07_vr"; permanent, nulltest !tested in parallel with c09_vr
+test capacitor "c08_vr"; permanent, nulltest !tested in parallel with c09_vr
+test capacitor "c08_3v3"; permanent
+test capacitor "c13"; permanent
+test capacitor "c57"; permanent
+test capacitor "c58"; permanent
+test capacitor "c24_cp"; permanent
+test capacitor "c111_cp"; permanent, nulltest !tested in parallel with c24_cp
+test capacitor "c119_cp"; permanent, comment
+test capacitor "c122_cp"; permanent, nulltest !commented: see test c119_cp
+test capacitor "c125_cp"; permanent, nulltest !commented: see test c119_cp
+test capacitor "c128_cp"; permanent, nulltest !commented: see test c119_cp
+test capacitor "c131_cp"; permanent, nulltest !commented: see test c119_cp
+test capacitor "c133_cp"; permanent
+test capacitor "c139_cp"; permanent, nulltest !tested in parallel with c133_cp
+test capacitor "c135_cp"; permanent
+test capacitor "c136_cp"; permanent, comment
+test capacitor "c233"; permanent
+test capacitor "c291"; permanent
+test capacitor "c290"; permanent, nulltest !tested in parallel with c291
+test capacitor "c303"; permanent, comment
+test capacitor "c350"; permanent, nulltest
+test capacitor "c351"; permanent, nulltest
+test capacitor "c352"; permanent, nulltest
+test capacitor "c353"; permanent, nulltest
+test capacitor "c06_3v3"; permanent
+test capacitor "c7_5v"; permanent
+test capacitor "c7_adv"; permanent
+test capacitor "c7_vpp"; permanent
+test capacitor "c13_cp"; permanent
+test capacitor "c14_cp"; permanent
+test capacitor "c15_cp"; permanent
+test capacitor "c16_cp"; permanent
+test capacitor "c17_cp"; permanent
+test capacitor "c18_cp"; permanent
+test capacitor "c105_cp"; permanent
+test capacitor "c110_cp"; permanent
+test capacitor "c112_cp"; permanent
+test capacitor "c178_cp"; permanent
+test capacitor "c216"; permanent
+test capacitor "c218"; permanent
+test capacitor "c219"; permanent, nulltest !tested in parallel with c218
+test capacitor "c220"; permanent, nulltest !tested in parallel with c218
+test capacitor "c221"; permanent, nulltest !tested in parallel with c218
+test capacitor "c222"; permanent, nulltest !tested in parallel with c218
+test capacitor "c223"; permanent, nulltest !tested in parallel with c218
+test capacitor "c224"; permanent, nulltest !tested in parallel with c218
+test capacitor "c225"; permanent, nulltest !tested in parallel with c218
+test capacitor "c302"; permanent
+test capacitor "c304"; permanent, nulltest !tested in parallel with c302
+test capacitor "c03_mvr"; permanent
+test capacitor "c03_vr"; permanent
+test capacitor "c04_mvr"; permanent, comment
+test capacitor "c04_vr"; permanent, comment
+test capacitor "c10_mvr"; permanent
+test capacitor "c10_vr"; permanent
+test capacitor "c97"; permanent, nulltest
+test capacitor "c98"; permanent, nulltest
+test capacitor "c100"; permanent, comment
+test capacitor "c05_mvr"; characterize, permanent
+test capacitor "c05_vr"; characterize, permanent
+test capacitor "c06_mvr"; characterize, permanent
+test capacitor "c06_91_vr"; permanent
+test capacitor "c06_92_vr"; permanent
+test capacitor "c24"; permanent, nulltest
+test capacitor "c25"; permanent, nulltest
+test capacitor "c26"; permanent, nulltest
+test capacitor "c27"; permanent, nulltest
+test capacitor "c28"; permanent, nulltest
+test capacitor "c29"; permanent, nulltest
+test capacitor "c39"; permanent, nulltest
+test capacitor "c40"; permanent, nulltest
+test capacitor "c41"; permanent, nulltest
+test capacitor "c42"; permanent, nulltest
+test capacitor "c43"; permanent, nulltest
+test capacitor "c44"; permanent, nulltest
+test capacitor "c45"; permanent, nulltest
+test capacitor "c46"; permanent, nulltest
+test capacitor "c47"; permanent, nulltest
+test capacitor "c48"; permanent, nulltest
+test capacitor "c49"; permanent, nulltest
+test capacitor "c50"; permanent, nulltest
+test capacitor "c51"; permanent, nulltest
+test capacitor "c56"; permanent, nulltest
+test capacitor "c240"; permanent, nulltest
+test capacitor "c241"; permanent, nulltest
+test capacitor "c242"; permanent, nulltest
+test capacitor "c243"; permanent, nulltest
+test capacitor "c244"; permanent, nulltest
+test capacitor "c245"; permanent, nulltest
+test capacitor "c294"; permanent, nulltest
+test capacitor "c295"; permanent, nulltest
+test capacitor "c296"; permanent, nulltest
+test capacitor "c297"; permanent, nulltest
+test capacitor "c298"; permanent, nulltest
+test capacitor "c299"; permanent, nulltest
+test capacitor "c300"; permanent, nulltest
+test capacitor "c301"; permanent, nulltest
+test capacitor "c9_adv"; characterize, permanent
+test capacitor "c10_cp"; characterize, permanent
+test capacitor "c11_cp"; characterize, permanent
+test capacitor "c12_cp"; characterize, permanent
+test capacitor "c17"; characterize, permanent, comment
+test capacitor "c18"; characterize, permanent, comment
+test capacitor "c19"; characterize, permanent, comment
+test capacitor "c20"; characterize, permanent, comment
+test capacitor "c21"; characterize, permanent, comment
+test capacitor "c114_cp"; characterize, permanent
+test capacitor "c115_cp"; characterize, permanent
+test capacitor "c117_cp"; characterize, permanent
+test capacitor "c118_cp"; characterize, permanent
+test capacitor "c229"; characterize, permanent, comment
+test capacitor "c237"; characterize, permanent
+test capacitor "c238"; characterize, permanent
+test capacitor "c348"; characterize, permanent
+test resistor "r1_5v"; permanent
+test resistor "r1_adv"; permanent
+test resistor "r1_vpp"; permanent
+test resistor "r3_5v"; permanent
+test resistor "r3_adv"; permanent
+test resistor "r3_vpp"; permanent
+test resistor "r325"; permanent
+test resistor "r22_mvr"; permanent, nulltest !tested in parallel with r325
+test resistor "r323"; permanent
+test resistor "r22_vr"; permanent, nulltest !tested in parallel with r323
+test resistor "r23_mvr"; permanent
+test resistor "r30"; permanent
+test resistor "r31"; permanent
+test resistor "r78_cp"; permanent
+test resistor "r79_cp"; permanent
+test resistor "r80_cp"; permanent
+test resistor "r81_cp"; permanent
+test resistor "r90_cp"; permanent
+test resistor "r91_cp"; permanent
+test resistor "r107_cp"; permanent
+test resistor "r108_cp"; permanent
+test resistor "r109_cp"; permanent, nulltest
+test resistor "r110_cp"; permanent, nulltest
+test resistor "r111_cp"; permanent
+test resistor "r112_cp"; permanent
+test resistor "r113_cp"; permanent
+test resistor "r114_cp"; permanent
+test resistor "r115_cp"; permanent
+test resistor "r118_cp"; permanent
+test resistor "r130_cp"; permanent
+test resistor "r135_cp"; permanent
+test resistor "r138_cp"; permanent
+test resistor "r139_cp"; permanent
+test resistor "r140_cp"; permanent
+test resistor "r141_cp"; permanent
+test resistor "r142_cp"; permanent
+test resistor "r143_cp"; permanent
+test resistor "r144_cp"; permanent
+test resistor "r145_cp"; permanent
+test resistor "r153"; permanent
+test resistor "r158_cp"; permanent
+test resistor "r161_cp"; permanent
+test resistor "r163_cp"; permanent
+test resistor "r164_cp"; permanent
+test resistor "r165_cp"; permanent
+test resistor "r166_cp"; permanent
+test resistor "r167_cp"; permanent
+test resistor "r168_cp"; permanent
+test resistor "r171"; permanent
+test resistor "r171_cp"; permanent
+test resistor "r179"; permanent
+test resistor "r182"; permanent
+test resistor "r199"; permanent
+test resistor "r200"; permanent
+test resistor "r201_cp"; permanent
+test resistor "r202_cp"; permanent
+test resistor "r203_cp"; permanent
+test resistor "r205_cp"; permanent
+test resistor "r208_cp"; permanent
+test resistor "r211_cp"; permanent
+test resistor "r213_cp"; permanent
+test resistor "r215_cp"; permanent
+test resistor "r226"; permanent
+test resistor "r227"; permanent
+test resistor "r234_cp"; permanent
+test resistor "r236_cp"; permanent
+test resistor "r241_cp"; permanent
+test resistor "r250_cp"; permanent
+test resistor "r256_cp"; permanent
+test resistor "r272_cp"; permanent
+test resistor "r277_cp"; permanent
+test resistor "r278"; permanent
+test resistor "r279"; permanent
+test resistor "r280_cp"; permanent
+test resistor "r282_cp"; permanent
+test resistor "r284_cp"; permanent
+test resistor "r285"; permanent
+test resistor "r286"; permanent
+test resistor "r286_cp"; permanent
+test resistor "r287"; permanent
+test resistor "r287_cp"; permanent
+test resistor "r315_cp"; permanent
+test resistor "r316_cp"; permanent
+test resistor "r317_cp"; permanent
+test resistor "r318_cp"; permanent
+test resistor "r328_cp"; permanent
+test resistor "r343_cp"; permanent
+test resistor "r344_cp"; permanent
+test resistor "r348"; permanent
+test resistor "r358_cp"; permanent
+test resistor "r359_cp"; permanent
+test resistor "r362_cp"; permanent
+test resistor "r366_cp"; permanent
+test resistor "r367_cp"; permanent
+test resistor "r381_cp"; permanent
+test resistor "r410_cp"; permanent
+test resistor "r411_cp"; permanent
+test resistor "r427_cp"; permanent
+test resistor "r428_cp"; permanent
+test resistor "r437_cp"; permanent
+test resistor "r438_cp"; permanent
+test resistor "r521"; permanent
+test resistor "r539"; permanent
+test resistor "r645"; permanent
+test resistor "r661"; permanent
+test resistor "r1712"; permanent
+test resistor "r01_mvr"; permanent
+test resistor "r03_mvr"; permanent
+test resistor "r03_vr"; permanent
+test resistor "r319_cp"; permanent
+test resistor "r321_cp"; permanent
+test resistor "r322_cp"; permanent
+test resistor "r529"; permanent
+test resistor "r2_adv"; permanent
+test resistor "r4_vpp"; permanent
+test resistor "r4_3v3"; permanent
+test resistor "r105_cp"; permanent
+test resistor "r179_cp"; permanent
+test resistor "r243"; permanent
+test resistor "r244"; permanent
+test resistor "r435"; permanent
+test resistor "r436"; permanent
+test resistor "r501"; permanent
+test resistor "r4_5v"; permanent
+test resistor "r5_3v3"; permanent
+test resistor "r4_adv"; permanent
+test resistor "r5_5v"; permanent
+test resistor "r5_vpp"; permanent
+test resistor "r307"; permanent
+test resistor "r352"; permanent
+test resistor "r09_mvr"; permanent
+test resistor "r09_vr"; permanent
+test resistor "r11_mvr"; permanent
+test resistor "r11_vr"; permanent
+test resistor "r12_vr"; permanent
+test resistor "r18_mvr"; permanent
+test resistor "r67"; permanent
+test resistor "r68"; permanent
+test resistor "r69"; permanent
+test resistor "r94_cp"; permanent
+test resistor "r103_cp"; permanent
+test resistor "r104_cp"; permanent
+test resistor "r120_cp"; permanent
+test resistor "r121_cp"; permanent
+test resistor "r122_cp"; permanent
+test resistor "r136_cp"; permanent
+test resistor "r154"; permanent
+test resistor "r154_cp"; permanent
+test resistor "r156"; permanent
+test resistor "r174_cp"; permanent
+test resistor "r175_cp"; permanent
+test resistor "r178_cp"; permanent
+test resistor "r204_cp"; permanent
+test resistor "r210"; permanent
+test resistor "r211"; permanent
+test resistor "r212"; permanent
+test resistor "r213"; permanent
+test resistor "r214"; permanent
+test resistor "r220_cp"; permanent
+test resistor "r221_cp"; permanent
+test resistor "r222_cp"; permanent
+test resistor "r225_cp"; permanent
+test resistor "r248_cp"; permanent
+test resistor "r251_cp"; permanent
+test resistor "r252_cp"; permanent
+test resistor "r253_cp"; permanent
+test resistor "r254_cp"; permanent
+test resistor "r255_cp"; permanent
+test resistor "r257_cp"; permanent
+test resistor "r258_cp"; permanent
+test resistor "r259_cp"; permanent
+test resistor "r260_cp"; permanent
+test resistor "r262_cp"; permanent
+test resistor "r265_cp"; permanent
+test resistor "r266_cp"; permanent
+test resistor "r267_cp"; permanent
+test resistor "r268_cp"; permanent
+test resistor "r273_cp"; permanent
+test resistor "r275_cp"; permanent
+test resistor "r276_cp"; permanent
+test resistor "r277"; permanent
+test resistor "r279_cp"; permanent
+test resistor "r283_cp"; permanent
+test resistor "r285_cp"; permanent
+test resistor "r288_cp"; permanent
+test resistor "r290_cp"; permanent
+test resistor "r291_cp"; permanent
+test resistor "r294_cp"; permanent
+test resistor "r297_cp"; permanent
+test resistor "r307_cp"; permanent
+test resistor "r309"; permanent
+test resistor "r314"; permanent
+test resistor "r320_cp"; permanent
+test resistor "r324_cp"; permanent
+test resistor "r328"; permanent
+test resistor "r329"; permanent
+test resistor "r330"; permanent
+test resistor "r355_cp"; permanent
+test resistor "r356_cp"; permanent
+test resistor "r364_cp"; permanent
+test resistor "r373_cp"; permanent
+test resistor "r374_cp"; permanent
+test resistor "r384_cp"; permanent
+test resistor "r392_cp"; permanent
+test resistor "r393_cp"; permanent
+test resistor "r394_cp"; permanent
+test resistor "r395_cp"; permanent
+test resistor "r401_cp"; permanent
+test resistor "r409_cp"; permanent
+test resistor "r415_cp"; permanent
+test resistor "r423_cp"; permanent
+test resistor "r425_cp"; permanent
+test resistor "r433"; permanent
+test resistor "r433_cp"; permanent
+test resistor "r490"; permanent
+test resistor "r935"; permanent
+test resistor "r2265"; permanent
+test resistor "r10_mvr"; permanent
+test resistor "r10_vr"; permanent
+test resistor "r25_mvr"; permanent
+test resistor "r25_vr"; permanent
+test resistor "r20_mvr"; permanent
+test resistor "r20_vr"; permanent, nulltest !tested in parallel with r20_mvr
+test resistor "r21_mvr"; permanent
+test resistor "r21_vr"; permanent
+test resistor "r29_mvr"; permanent
+test resistor "r29_vr"; permanent
+test resistor "r133_cp"; permanent
+test resistor "r149_cp"; permanent
+test resistor "r150_cp"; permanent
+test resistor "r212_cp"; permanent
+test resistor "r232_cp"; permanent
+test resistor "r233_cp"; permanent
+test resistor "r292_cp"; permanent
+test resistor "r304"; permanent
+test resistor "r312"; permanent
+test resistor "r329_cp"; permanent
+test resistor "r332_cp"; permanent
+test resistor "r333_cp"; permanent
+test resistor "r334_cp"; permanent
+test resistor "r24_mvr"; permanent
+test resistor "r24_vr"; permanent
+test resistor "r29"; permanent
+test resistor "r34"; permanent
+test resistor "r35"; permanent
+test resistor "r58"; permanent
+test resistor "r59"; permanent
+test resistor "r126_cp"; permanent
+test resistor "r159"; permanent
+test resistor "r162"; permanent
+test resistor "r163"; permanent
+test resistor "r172_cp"; permanent
+test resistor "r178"; permanent
+test resistor "r180"; permanent
+test resistor "r195"; permanent
+test resistor "r196"; permanent
+test resistor "r210_cp"; permanent
+test resistor "r215"; permanent
+test resistor "r216"; permanent
+test resistor "r217"; permanent
+test resistor "r218"; permanent
+test resistor "r219"; permanent
+test resistor "r221"; permanent
+test resistor "r228"; permanent
+test resistor "r235"; permanent
+test resistor "r245"; permanent
+test resistor "r246"; permanent
+test resistor "r255"; permanent
+test resistor "r256"; permanent
+test resistor "r257"; permanent
+test resistor "r258"; permanent
+test resistor "r259"; permanent
+test resistor "r261"; permanent
+test resistor "r270"; permanent
+test resistor "r289"; permanent
+test resistor "r293"; permanent
+test resistor "r294"; permanent
+test resistor "r326"; permanent
+test resistor "r326_cp"; permanent
+test resistor "r342"; permanent
+test resistor "r347"; permanent
+test resistor "r370"; permanent
+test resistor "r380"; permanent
+test resistor "r412"; permanent
+test resistor "r417"; permanent
+test resistor "r418"; permanent
+test resistor "r419"; permanent
+test resistor "r424"; permanent
+test resistor "r425"; permanent
+test resistor "r426"; permanent
+test resistor "r427"; permanent
+test resistor "r434"; permanent
+test resistor "r475"; permanent
+test resistor "r485"; permanent
+test resistor "r486"; permanent
+test resistor "r494"; permanent
+test resistor "r495"; permanent
+test resistor "r502"; permanent
+test resistor "r541"; permanent
+test resistor "r576"; permanent
+test resistor "r577"; permanent
+test resistor "r579"; permanent
+test resistor "r35_cp"; permanent
+test resistor "r124_cp"; permanent
+test resistor "r125_cp"; permanent
+test resistor "r128_cp"; permanent
+test resistor "r129_cp"; permanent
+test resistor "r134_cp"; permanent
+test resistor "r184_cp"; permanent
+test resistor "r185_cp"; permanent
+test resistor "r186_cp"; permanent
+test resistor "r187_cp"; permanent
+test resistor "r188_cp"; permanent
+test resistor "r189_cp"; permanent
+test resistor "r190_cp"; permanent
+test resistor "r191_cp"; permanent
+test resistor "r192_cp"; permanent
+test resistor "r193_cp"; permanent
+test resistor "r194_cp"; permanent
+test resistor "r196_cp"; permanent
+test resistor "r197_cp"; permanent
+test resistor "r198_cp"; permanent
+test resistor "r199_cp"; permanent
+test resistor "r200_cp"; permanent
+test resistor "r209_cp"; permanent
+test resistor "r214_cp"; permanent
+test resistor "r216_cp"; permanent
+test resistor "r217_cp"; permanent
+test resistor "r218_cp"; permanent
+test resistor "r237_cp"; permanent
+test resistor "r238_cp"; permanent
+test resistor "r239_cp"; permanent
+test resistor "r240_cp"; permanent
+test resistor "r242_cp"; permanent
+test resistor "r243_cp"; permanent
+test resistor "r244_cp"; permanent
+test resistor "r245_cp"; permanent
+test resistor "r37"; permanent
+test resistor "r207"; permanent
+test resistor "r314_cp"; permanent
+test resistor "r360_cp"; permanent
+test resistor "r365_cp"; permanent
+test resistor "r402_cp"; permanent
+test resistor "r424_cp"; permanent
+test resistor "r667"; permanent
+test resistor "r668"; permanent
+test resistor "r40"; permanent
+test resistor "r41"; permanent
+test resistor "r60"; permanent
+test resistor "r61"; permanent
+test resistor "r146_cp"; permanent
+test resistor "r147_cp"; permanent
+test resistor "r148_cp"; permanent
+test resistor "r246_cp"; permanent
+test resistor "r296_cp"; permanent
+test resistor "r298_cp"; permanent
+test resistor "r435_cp"; permanent
+test resistor "r471"; permanent
+test resistor "r472"; permanent
+test resistor "r473"; permanent
+test resistor "r474"; permanent
+test resistor "r62"; permanent
+test resistor "r66"; permanent
+test resistor "r300_cp"; permanent
+test resistor "r397_cp"; permanent
+test resistor "r398_cp"; permanent
+test resistor "r439_cp"; permanent
+test resistor "r64"; permanent
+test resistor "r65"; permanent
+test resistor "r187"; permanent
+test resistor "r188"; permanent
+test resistor "r189"; permanent
+test resistor "r190"; permanent
+test resistor "r193"; permanent
+test resistor "r194"; permanent
+test resistor "r206_cp"; permanent
+test resistor "r288"; permanent
+test resistor "r448"; permanent
+test resistor "r449"; permanent
+test resistor "r669"; permanent
+test resistor "r670"; permanent
+test resistor "r671"; permanent
+test resistor "r672"; permanent
+test resistor "r673"; permanent
+test resistor "r82_cp"; permanent
+test resistor "r83_cp"; permanent
+test resistor "r99_cp"; permanent
+test resistor "r375_cp"; permanent
+test resistor "r376_cp"; permanent
+test resistor "r86_cp"; permanent
+test resistor "r87_cp"; permanent
+test resistor "r477"; permanent
+test resistor "r88_cp"; permanent
+test resistor "r89_cp"; permanent
+test resistor "r98_cp"; permanent
+test resistor "r106_cp"; permanent
+test resistor "r116_cp"; permanent
+test resistor "r92_cp"; permanent
+test resistor "r95_cp"; permanent
+test resistor "r180_cp"; permanent
+test resistor "r181_cp"; permanent
+test resistor "r371_cp"; permanent
+test resistor "r372_cp"; permanent
+test resistor "r101_cp"; permanent
+test resistor "r102_cp"; permanent
+test resistor "r123_cp"; permanent
+test resistor "r274_cp"; permanent
+test resistor "r334"; permanent
+test resistor "r117_cp"; permanent
+test resistor "r235_cp"; permanent
+test resistor "r119_cp"; permanent
+test resistor "r170_cp"; permanent
+test resistor "r247_cp"; permanent
+test resistor "r270_cp"; permanent
+test resistor "r271_cp"; permanent
+test resistor "r278_cp"; permanent
+test resistor "r295_cp"; permanent
+test resistor "r127_cp"; permanent
+test resistor "r160_cp"; permanent
+test resistor "r147"; permanent
+test resistor "r174"; permanent
+test resistor "r175"; permanent
+test resistor "r390_cp"; permanent
+test resistor "r391_cp"; permanent
+test resistor "r405_cp"; permanent
+test resistor "r406_cp"; permanent
+test resistor "r447"; permanent
+test resistor "r498"; permanent
+test resistor "r499"; permanent
+test resistor "r500"; permanent
+test resistor "r525"; permanent
+test resistor "r526"; permanent
+test resistor "r151_cp"; permanent
+test resistor "r152_cp"; permanent
+test resistor "r224_cp"; permanent
+test resistor "r226_cp"; permanent
+test resistor "r227_cp"; permanent
+test resistor "r229_cp"; permanent
+test resistor "r230_cp"; permanent
+test resistor "r231_cp"; permanent
+test resistor "r299_cp"; permanent
+test resistor "r382_cp"; permanent
+test resistor "r153_cp"; permanent
+test resistor "r240"; permanent
+test resistor "r241"; permanent
+test resistor "r276"; permanent
+test resistor "r283"; permanent
+test resistor "r284"; permanent
+test resistor "r292"; permanent
+test resistor "r301_cp"; permanent
+test resistor "r302_cp"; permanent
+test resistor "r325_cp"; permanent
+test resistor "r331_cp"; permanent
+test resistor "r349"; permanent
+test resistor "r350"; permanent
+test resistor "r437"; permanent
+test resistor "r438"; permanent
+test resistor "r155"; permanent
+test resistor "r310"; permanent
+test resistor "r311"; permanent, nulltest !tested in parallel with r310
+test resistor "r315"; permanent
+test resistor "r316"; permanent, nulltest !tested in parallel with r315
+test resistor "r169_cp"; permanent
+test resistor "r177_cp"; permanent
+test resistor "r353"; permanent
+test resistor "r182_cp"; permanent
+test resistor "r183_cp"; permanent
+test resistor "r222"; permanent
+test resistor "r223"; permanent
+test resistor "r343"; permanent
+test resistor "r344"; permanent
+test resistor "r345"; permanent
+test resistor "r346"; permanent
+test resistor "r228_cp"; permanent
+test resistor "r249_cp"; permanent
+test resistor "r460"; permanent
+test resistor "r462"; permanent
+test resistor "r483"; permanent
+test resistor "r263_cp"; permanent
+test resistor "r417_cp"; permanent
+test resistor "r303_cp"; permanent
+test resistor "r305_cp"; permanent
+test resistor "r306_cp"; permanent
+test resistor "r304_cp"; permanent
+test resistor "r305"; permanent
+test resistor "r306"; permanent
+test resistor "r308"; permanent
+test resistor "r383"; permanent
+test resistor "r383_cp"; permanent
+test resistor "r457"; permanent
+test resistor "r308_cp"; permanent
+test resistor "r311_cp"; permanent
+test resistor "r351"; permanent
+test resistor "r309_cp"; permanent
+test resistor "r310_cp"; permanent
+test resistor "r312_cp"; permanent
+test resistor "r313"; permanent
+test resistor "r323_cp"; permanent
+test resistor "r335"; permanent
+test resistor "r385_cp"; permanent
+test resistor "r386_cp"; permanent
+test resistor "r387_cp"; permanent
+test resistor "r388_cp"; permanent
+test resistor "r389_cp"; permanent
+test resistor "r407_cp"; permanent
+test resistor "r429_cp"; permanent
+test resistor "r431_cp"; permanent
+test resistor "r530"; permanent
+test resistor "r531"; permanent
+test resistor "r580"; permanent
+test resistor "r336_cp"; permanent
+test resistor "r338"; permanent
+test resistor "r476"; permanent, nulltest !tested in parallel with r338
+test resistor "r375"; permanent
+test resistor "r478"; permanent
+test resistor "r377_cp"; permanent
+test resistor "r378_cp"; permanent
+test resistor "r379_cp"; permanent
+test resistor "r380_cp"; permanent
+test resistor "r419_cp"; permanent
+test resistor "r420_cp"; permanent
+test resistor "r421_cp"; permanent
+test resistor "r422_cp"; permanent
+test resistor "r399_cp"; permanent
+test resistor "r408"; permanent
+test resistor "r414_cp"; permanent
+test resistor "r451"; permanent
+test resistor "r452"; permanent
+test resistor "r453"; permanent
+test resistor "r454"; permanent
+test resistor "r455"; permanent
+test resistor "r456"; permanent
+test resistor "r491"; permanent
+test resistor "r492"; permanent
+test resistor "r496"; permanent
+test resistor "r497"; permanent
+test resistor "r493"; permanent
+test resistor "r504"; permanent
+test resistor "r513"; permanent
+test resistor "r514"; permanent
+test resistor "r515"; permanent
+test resistor "r516"; permanent
+test resistor "r517"; permanent
+test resistor "r518"; permanent
+test resistor "r519"; permanent
+test resistor "r520"; permanent
+test resistor "r522"; permanent
+test resistor "r523"; permanent
+test resistor "r666"; permanent
+test resistor "r912"; permanent
+test resistor "r913"; permanent
+test resistor "r922"; permanent
+test resistor "r936"; permanent
+test resistor "r937"; permanent
+test resistor "r1997"; permanent
+test diode "bcn_led%led1"; permanent
+test diode "fanled01_f%led1"; permanent
+test diode "fanled01_f%led2"; permanent
+test diode "fanled23_f%led1"; permanent
+test diode "fanled23_f%led2"; permanent
+test diode "fanled45_f%led1"; permanent
+test diode "fanled45_f%led2"; permanent
+test diode "ledm2%led1"; permanent
+test diode "stat_led%led1"; permanent
+test diode "stat_led%led2"; permanent
+test diode "cr1%d1"; permanent
+test diode "cr1_cp%d1"; permanent
+test diode "cr1_f%d1"; permanent
+test diode "cr2%d1"; permanent
+test diode "cr2_a%d1"; permanent
+test diode "cr2_f%d1"; permanent
+test diode "cr3_a%d1"; permanent
+test diode "cr3_f%d1"; permanent
+test diode "cr4_f%d1"; permanent
+test diode "cr5_f%d1"; permanent
+test diode "cr6_f%d1"; permanent
+test diode "cr7%d1"; permanent
+test diode "cr7_f%d1"; permanent
+test diode "cr8%d1"; permanent
+test diode "cr8_f%d1"; permanent
+test diode "cr9%d1"; permanent
+test diode "cr9_f%d1"; permanent
+test diode "cr10%d1"; permanent
+test diode "cr11%d1"; permanent
+test diode "cr12%d1"; permanent
+test diode "cr20%d1"; permanent
+test diode "cr21%d1"; permanent
+test diode "cr23_f%d1"; permanent
+test diode "cr26%d1"; permanent
+test diode "cr27%d1"; permanent
+test diode "cr27_f%d1"; permanent
+test diode "cr28%d1"; permanent
+test diode "cr28_f%d1"; permanent
+test diode "cr29%d1"; permanent
+test diode "cr29_f%d1"; permanent
+test diode "cr30%d1"; permanent
+test diode "cr30_f%d1"; permanent
+test diode "cr31%d1"; permanent
+test diode "cr32%d1"; permanent
+test diode "cr33%d1"; permanent
+test diode "cr42%d1"; permanent
+test diode "cr43%d1"; permanent
+test diode "cr44%d1"; permanent
+test diode "cr45%d1"; permanent
+test diode "cr46%d1"; permanent
+test diode "cr47%d1"; permanent
+test diode "cr48%d1"; permanent
+test diode "cr49%d1"; permanent
+test diode "cr50%d1"; permanent
+test diode "cr51%d1"; permanent
+test diode "cr52%d1"; permanent
+test diode "cr53%d1"; permanent
+test diode "cr54%d1"; permanent
+test diode "cr55%d1"; permanent
+test diode "cr56%d1"; permanent
+test diode "cr57%d1"; permanent
+test diode "cr58%d11_8"; permanent
+test diode "cr58%d12_7"; permanent
+test diode "cr58%d13_6"; permanent
+test diode "cr58%d14_5"; permanent
+test diode "cr666_f%d1"; permanent
+test transistor "q1_f%q1"; permanent
+test transistor "q4_f%q1"; permanent
+test transistor "q5%q1"; permanent
+test transistor "q17%q1"; permanent
+test transistor "q19%q1"; permanent
+test transistor "q22%q1"; permanent, nulltest
+test transistor "q666_f%q1"; permanent
+test testjet "testjet"; permanent !; permanent
+test mixed "fanhs01_f"; permanent
+test mixed "fanhs23_f"; permanent
+test mixed "fanhs45_f"; permanent
+test digital "act2"; permanent
+test digital "fanctrl01_f"; permanent, comment !IPG: Bus disable problem
+test digital "fanctrl23_f"; permanent, comment !IPG: Bus disable problem
+test digital "fanctrl45_f"; permanent, comment !IPG: Bus disable problem
+test digital "flshg_cp"; permanent, comment !IPG: Bus disable problem
+test digital "flshp_cp"; permanent, comment !IPG: Bus disable problem
+test analog powered "q1_cp"; permanent
+test analog powered "q2_cp"; permanent
+test analog powered "q2_f"; permanent
+test analog powered "q3"; permanent
+test analog powered "q3_f"; permanent
+test analog powered "q4"; permanent
+test analog powered "q4_cp"; permanent
+test analog powered "q5_f"; permanent
+test analog powered "q6"; permanent
+test analog powered "q6_f"; permanent
+test analog powered "q7"; permanent
+test analog powered "q7_f"; permanent
+test analog powered "q8"
+test analog powered "q8_f"; permanent
+test analog powered "q15"; permanent
+test analog powered "q16"; permanent
+test analog powered "q18"; permanent
+test analog powered "q20"; permanent
+test analog powered "q21"; permanent
+test analog powered "q23"; permanent
+test analog powered "q24"; permanent
+test analog powered "q38"; permanent
+test analog powered "sw1_cp"; permanent
+test analog powered "sw2_cp"; permanent
+test analog powered "u1"; permanent
+test digital "u1_3v3"; permanent, comment !IPG: Bus disable problem
+test analog powered "u1_5v"; permanent
+test analog powered "u1_91_mvr"; permanent, comment
+test analog powered "u1_91_vr"; permanent, comment
+test analog powered "u1_92_vr"; permanent, comment
+test analog powered "u1_98_mvr"; permanent, comment
+test analog powered "u1_adv"; permanent
+test digital "u1_cp"; permanent
+test digital "u1_f"; permanent
+test digital "u1_mvr"; permanent, comment !IPG: Bus disable problem
+test analog powered "u1_p1v2_a"; permanent
+test analog powered "u1_p2v5_a"; permanent
+test analog powered "u1_vpp"; permanent
+test digital "u1_vr"; permanent, comment !IPG: Bus disable problem
+test analog powered "u2"; permanent
+test analog powered "u2_adv"; permanent
+test digital "u2_cp"; permanent
+test digital "u3_cp"; permanent, comment !IPG: Bus disable problem
+test digital "u4"; permanent, comment !IPG: Bus disable problem
+test digital "u4_cp"; permanent
+test digital "u5"; permanent, comment !IPG: Bus disable problem
+test digital "u6"; permanent, comment !IPG: Bus disable problem
+test digital "u7"; permanent
+test analog powered "u10_cp"; permanent
+test digital "u11_cp"; permanent
+test digital "u12"; permanent, comment !IPG: Bus disable problem
+test digital "u12_cp"; permanent
+test digital "u13"; permanent
+test digital "u13_cp"; permanent
+test digital "u14"; permanent
+test digital "u14_cp"; permanent
+test digital "u15"; permanent
+test digital "u15_cp"; permanent, comment !IPG: Bus disable problem
+test digital "u16_cp"; permanent
+test digital "u17"; permanent
+test digital "u17_cp"; permanent, comment !IPG: Bus disable problem
+test digital "u18"; permanent, comment !IPG: Setup test
+test digital "u18_cp"; permanent
+test analog powered "u19"; permanent
+test analog powered "u19%freq"; permanent
+test digital "u19_cp"; permanent
+test digital "u20"; permanent
+test digital "u20_cp"; permanent
+test digital "u21"; permanent, comment !IPG: Bus disable problem
+test digital "u21_cp"; permanent
+test digital "u22"; permanent
+test digital "u22_cp"; permanent
+test digital "u23"; permanent, comment !IPG: Bus disable problem
+test digital "u23_cp"; permanent
+test digital "u24"; permanent, comment !IPG: Bus disable problem
+test digital "u24_cp"; permanent
+test analog powered "u25"; permanent
+test digital "u25_cp"; permanent
+test digital "u26"; permanent
+test digital "u26_cp"; permanent
+test digital "u27"; permanent
+test digital "u27_cp"; permanent
+test digital "u28"; permanent
+test digital "u28_cp"; permanent
+test digital "u29"; permanent
+test digital "u30"; permanent, comment !IPG: Bus disable problem
+test digital "u31"; permanent
+test digital "u31_cp"; permanent
+test digital "u32"; permanent
+test digital "u32_cp"; permanent
+test digital "u33_cp"; permanent
+test digital "u34_cp"; permanent
+test digital "u44_f"; permanent
+test digital "u100"; permanent
+test analog powered "u150"; permanent
+test digital "u666_f"; permanent
+test analog powered "y1"; permanent
+test analog powered "y1_cp"; permanent
+test analog powered "y2_cp"; permanent
+test analog powered "y3_cp"; permanent
+test scan connect "u5_cp_connect_a"; permanent, comment !IPG: Bus disable problem
+test scan connect "u5_cp_connect_b"; permanent, comment !IPG: Bus disable problem
+test scan connect "u5_cp_connect_c"; permanent, comment !IPG: Bus disable problem
+test scan connect "u5_cp_connect_d"; permanent, comment !IPG: Bus disable problem
+test scan connect "u5_cp_connect_e"; permanent, comment !IPG: Bus disable problem
+test scan connect "u5_cp_connect_f"; permanent, comment !IPG: Bus disable problem
+test scan connect "u5_cp_connect_r"
+test scan connect "u5_cp_pch_connect_a"; permanent, comment !IPG: Bus disable problem
+test scan connect "u5_cp_pch_connect_b"; permanent, comment !IPG: Bus disable problem
+test scan connect "u5_cp_pch_connect_c"; permanent, comment !IPG: Bus disable problem
+test scan connect "u11_connect_a"; permanent, comment !IPG: Bus disable problem
+test scan connect "u11_connect_b"; permanent, comment !IPG: Bus disable problem
+test scan connect "u11_connect_c"; permanent, comment !IPG: Bus disable problem
+test scan connect "u11_connect_d"; permanent, comment !IPG: Bus disable problem
+test scan disable "u5_cp_u5_cp_pch_dis"; permanent
+test scan interconnect "u5_cp_u5_cp_pch_aio"; permanent
+test scan interconnect "u5_cp_u5_cp_pch"; permanent
+test scan interconnect "u5_cp_u5_cp_pch_bus"; permanent, nulltest
+test scan shorted caps "u5_cp_u5_cp_pch_sc"; permanent, nulltest
+test scan powered shorts "u5_cp_u5_cp_pch_ps"; permanent
+test scan disable "u11_u11_dis"; permanent
+test scan interconnect "u11_u11"; permanent, nulltest
+test scan interconnect "u11_u11_bus"; permanent, nulltest
+test scan shorted caps "u11_u11_sc"; permanent, nulltest
+test scan powered shorts "u11_u11_ps"; permanent, nulltest
+!+ For Presence Tests (Added by prestest ver. 1.2 on Fri Jun 15 11:01:03 2018)
+test jumper "b1%presence"; preshorts, permanent
+test jumper "fancon01_f%presence"; preshorts, permanent
+test jumper "fancon23_f%presence"; preshorts, permanent
+test jumper "fancon45_f%presence"; preshorts, permanent
+test jumper "io_p1%presence"; preshorts, permanent
+test jumper "ip_p2%presence"; preshorts, permanent
+test jumper "j1%presence"; preshorts, permanent
+test jumper "j3%presence"; preshorts, permanent
+test jumper "m2%presence"; preshorts, permanent
+test jumper "m1%presence"; preshorts, permanent
+test jumper "m4%presence"; preshorts, permanent
+test jumper "p1_cp%presence"; preshorts, permanent
+test jumper "p1_mvr%presence"; preshorts, permanent
+test jumper "p1_vr%presence"; preshorts, permanent
+test jumper "p3%presence"; preshorts, permanent
+test jumper "p6_cp%presence"; preshorts, permanent
+test jumper "p7%presence"; preshorts, permanent
+test jumper "p8%presence"; preshorts, permanent
+test jumper "p9%presence"; preshorts, permanent
+test jumper "spi_cp%presence"; preshorts, permanent
+test jumper "sw3_cp%presence"; preshorts, permanent
+test jumper "tpm_cp%presence"; preshorts, permanent
+test jumper "p2%presence"; preshorts, permanent
+test jumper "p6%presence"; preshorts, permanent
+test jumper "ts%presence"; preshorts, permanent
+!+ For Presence Tests (Added by prestest ver. 1.2 on Thu Jun 21 14:52:21 2018)
+test jumper "h2280%presence"; preshorts, permanent
+!+ For Presence Tests (Added by prestest ver. 1.2 on Fri Jun 29 09:19:27 2018)
+test jumper "u10_cp%presence"; preshorts, permanent
+test analog powered "bptest"

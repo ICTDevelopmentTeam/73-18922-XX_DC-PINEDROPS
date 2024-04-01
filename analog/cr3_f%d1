@@ -1,0 +1,13 @@
+!!!!    2    0    1 1530585589  V9fb0                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:28 2018
+on failure
+report parallel devices
+report "c7_f"
+end on failure
+disconnect all
+connect s to "FAN23_TACH1_F"
+connect i to "GND"
+!B!diode 916m, 467m, idc25m, co3.0, ar916m
+diode 950m,467m,idc25m,co3.0,ar916m
+! "cr3_f%d1" test.
+off failure

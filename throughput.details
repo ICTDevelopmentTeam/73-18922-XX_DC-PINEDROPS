@@ -1,0 +1,374 @@
+                              QuickReport Details
+                 /F=/01_Programs/INSBU/73-18922-XX_DC-PINEDROPS
+                                73-19246-05_2old
+                          Fri Mar 03, 2023 04:21:25 PM
+
+
+     By making suggested changes, tests could be made unstable.
+     Check test operation to verify testability after changes
+     are applied. Also backup files before you try the changes.
+
+
+POSSIBLE PRE-FIXTURE IMPROVEMENTS
+	Use Dual Well
+	Use Throughput Multiplier
+	Test panels where possible
+
+SHORTS
+	Check for phantom shorts during shorts testing.
+
+
+TESTPLAN
+
+     Fixture Vacuum                   
+         Vacuum defaults to 1.5s. The following statements meet
+         or exceed this time:
+
+		5276: call Counter | faon IYET_Vacuum_On_Delay
+
+         You can improve test times by reducing these times to
+         as little as no delays.
+	       example: faon 0.0
+
+     sps Statements                   
+         The following statements do not have the optimize option.
+
+		3593:    sps 2,12.00,2.00          !FAN power supplies
+		3659:    sps 2,0,0          !FAN power supplies
+
+         Add the optimize option to improve test time.
+	       example: sps 5,10.00, 0.05;optimize
+
+     Object Checking                  
+         The default setting for object checking is on.
+
+		1650:   object checking on
+
+         Adding the "object checking off" statement in the
+         Initialize_Constants subroutine will increase production throughput.
+         Object checking can be useful during test development.
+
+     Interrupted Test Flow            
+         The following line numbers break up a test block
+         section, forcing the controller to leave the test mode.
+         This increases your test time.
+
+			2702, 3917-3919, 3924, 3928, 4057-4060, 4066-4069, 4076, 4082-4084, 4090, 5392, 7433-7435, 7437-7441
+
+         Removing or moving the statements to the beginning
+         or end of the test block will improve test time.
+
+     gpconnect/disconnect             
+         The following lines in the testplan have
+         gpconnect or disconnect statements.
+
+		3589:    gpconnect "FPGA_DBG_JMPR3" to "GND"
+		3590:    gpconnect 20654 to 20655  !UNNAMED_16_MT25Q8P_I92_WPMVPPDQ2_CP to GND
+
+         Moving these statements into individual device tests will
+         improve test time.
+
+     Waits                            
+         Check that the following "wait" statements in the
+         testplan are of the necessary length.
+
+		 486:    wait 5
+		 993:    wait 2
+		 999:    wait 2
+		3536:    wait 500m
+		3594:    wait 800m
+		3635:    wait 35
+		3666:    wait 1
+		3669:    wait 5
+		3859:    wait 1
+		3972: wait 2
+		4876:     wait 1.0
+		4885:       wait 1.0
+		7572:      wait 3
+		7948:         wait 2
+		8002:    wait 1
+		8017: wait 180m
+		8031: wait 1800m
+
+
+BOARD CONFIG
+
+     Control XT/XTP                   
+
+         You are using the fastest control card available
+         today.
+
+     ASRU N Revision                  
+         The following modules/cards are not using
+         asru n revision.
+
+		module 1/ card 1
+		module 2/ card 1
+		module 3/ card 1
+
+         Using asru n revision will improve test time.
+         (All ASRU cards must be the same revision to have improvement.)
+
+
+
+ANALOG
+
+    NOTE: Only the uncommented tests in the testorder file were evaluated.
+
+     Test Options                     
+         The following tests contain en, ed, fi options
+         or are without the ar option:
+
+analog/a_c810:43 capacitor 779u+20u, 45, 35, fr128, re2, ar800m, ed, sa, sb, nocomp, en
+analog/c13_91_vr:40 capacitor 3.268m, 35.00, 40.00, fr128, re1, ar800m, ed,nocomp,sm
+analog/c9_5v:15 capacitor 174u, 35.00, 40, fr128, re1, ar200m, ed, sa, sb, en, nocomp,am300m
+analog/c226:68 capacitor 47u, 35.00, 40.00, fr1024, re1, ar200m, ed, sb, en, nocomp, fi2
+analog/c9_vpp:17 capacitor 163.1u, 35.00, 40, fr128, re1, ar200m, ed, sa, sb,  nocomp, am0.35
+analog/c8_5v:30 capacitor 391.54u-50u, 35.00, 40.00, fr128, re1, ar400m, ed, sm, sa, sb, nocomp
+analog/c214:59 capacitor 225.9u, 35.00, 40, fr128, re1, ar400m, ed, sa, sb,  nocomp
+analog/c8_vpp:33 capacitor 252.61u, 35.00, 40.00, fr128, re1, ar400m, ed, sm, sa, sb, en, nocomp
+analog/c92_cp:78 capacitor 1.075m+500u, 35.00, 50.00, fr128, re3, ar800m, ed, sa, sb, en, nocomp,am.90m
+analog/c120_cp:19 capacitor 158u, 35.00, 40.00, fr128, re1, ar200m, ed, sa, sb, en, nocomp
+analog/c252:16 capacitor 46u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp
+analog/c254:12 capacitor 42u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp
+analog/c87:15 capacitor 50.3u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp,am.25
+analog/c227:31 capacitor 108.7u, 35.00, 40.00, fr128, re2, ar100m, ed, sa, sb, en, nocomp, am0.25
+analog/c3283:11 capacitor 47.1u, 35.00, 40.00, fr128, re1, ar50.0m, ed, nocomp,am150m
+analog/c3:63 capacitor 2.480m, 35.00, 40.00, fr128, re1, ar800m, ed, sa, sb, en, nocomp
+analog/c11_3v3:42 capacitor 344.01u, 35.00, 40.00, fr128, re1, ar400m, ed, sm, sa, sb, en, nocomp
+analog/io_c23:10 capacitor 11u, 35.00, 40.00, fr1024, re1, ar100m, sa, sb, en, nocomp
+analog/c06_91_mvr:7 capacitor 0.47u, 20.00, 20.01, fr128, re1, ar20.0m, ed, nocomp
+analog/c06_98_mvr:7 capacitor 0.47u, 20.00, 20.01, fr128, re1, ar20.0m, ed, nocomp
+analog/c01_mvr:11 capacitor 3.3n, 30.00, 30.00, fr8192, re3, wb, ar50.0m,sl,en,wa100m,nocomp,am.25
+analog/c01_vr:10 capacitor 3.3n, 30.00, 30.00, fr8192, re2, wb, ar50.0m, ed,en, wa50m,nocomp,am.2
+analog/c02_mvr:10 capacitor 3.3n, 30.00, 30.00, fr8192, re3, wb, ar50.0m,sl,en,wa100m,nocomp,am.25
+analog/c5_5v:8 capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, nocomp, en
+analog/c13:11 capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, sa, en, nocomp
+analog/c24_cp:13 capacitor 1.1u, 35.00, 40.00, fr1024, re2, ar100m, sa, en, nocomp, am0.25
+analog/c119_cp:15 capacitor 410n, 35.00, 40.00, fr1024, re2, ar100m, sa, sl, en, nocomp
+analog/c135_cp:7 capacitor 100n, 35.00, 40.00, fr1024, re3, wb, ar100m, sa, sl, en, nocomp
+analog/c136_cp:7 capacitor 100n, 35.00, 40.00, fr8192, re3, wb, ar100m, sa,ed,en, nocomp
+analog/c303:7 capacitor 100n, 35.00, 40.00, fr8192, re1, ar100m, en, ed,nocomp,am.15,sa,sb
+analog/c7_5v:6 capacitor 1u, 35.00, 45.00, fr1024, re2, ar300m, nocomp, en
+analog/c7_adv:6 capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp, ed, am0.25
+analog/c7_vpp:6 capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp, ed, am0.25
+analog/c13_cp:6 capacitor 1u, 35.00, 40.00, fr1024, re1, ar100m, nocomp,ed,am.35, en
+analog/c14_cp:8 capacitor 1u-0.1u, 35.00, 45.00, fr1024, re1, ar100m, nocomp, ed, en, sm
+analog/c15_cp:7 capacitor 1u, 35.00, 52.00, fr1024, re1, ar100m, nocomp, ed, en, wa45m
+analog/c18_cp:6 capacitor 1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp,ed,en, am0.29
+analog/c105_cp:7 capacitor 1u, 35.00, 40.00, fr128, re2,ar100m,sa, nocomp,ed,en,am.3
+analog/c178_cp:7 capacitor 1u, 35.00, 40.00,fr128,re2,ar100m,sa,nocomp,am.3,ed,en,wa20m
+analog/c216:6 capacitor 1u, 35.00, 42.00, fr1024, re2, ar100m, nocomp,ed,en
+analog/c218:17 capacitor 8u, 35.00, 41.00, fr1024, re2, ar50m, sa, sb, en, nocomp
+analog/c302:10 capacitor 4.4n, 35.00, 40.00, fr8192, re2, ar20.0m, ed,en,nocomp
+analog/c03_mvr:11 capacitor 10n, 35.00, 40.00, fr1024, re2, ar20.0m, sa, en, nocomp
+analog/c03_vr:11 capacitor 10n, 35.00, 40.00, fr1024, re2, ar20.0m, sa, en, nocomp
+analog/c04_mvr:11 capacitor 10n, 35.00, 40.00, fr1024, re2, wb, ar100m, en,ed, nocomp
+analog/c04_vr:11 capacitor 10n, 35.00, 40.00, fr1024, re3, wb, ar100m, sa, en, nocomp
+analog/c10_vr:10 capacitor 10n, 35.00, 40.00, fr1024, re2, ar20.0m, nocomp,ed,en
+analog/c100:7 capacitor 10n, 40, 40.00, fr1024, re6, wb, ar100m, sa, sl, ed, en, nocomp,am.25,wa50m 
+analog/c05_vr:7 capacitor 220p, 35.00, 35.00, fr8192, re6, wb, ar20.0m, comp,ed,en,am.25
+analog/c06_mvr:7 capacitor 220p, 37.00, 35.00, fr8192, re5, wb, ar20.0m, comp,am.28,ed, en
+analog/c17:7 capacitor 1n, 35.00, 35.00, fr8192, re5, wb, ar100m, sa,en, comp,am.2,wa20m
+analog/c18:7 capacitor 1n, 35, 40, fr8192, re5, wb, ar100m, sa, ed,en, comp
+analog/c19:7 capacitor 1n, 22.70, 20.00, fr8192, re5, wb, ar100m, sa, ed,en, comp
+analog/c20:7 capacitor 1n, 40.00, 35.00, fr1024, re4, wb, ar800m, sa, en, comp
+analog/c21:7 capacitor 1n, 40, 40, fr8192, re5, wb, ar500m, sa,  comp,ed,en
+analog/c229:11 capacitor 1n, 40, 35.00, fr1024, re3, wb, ar100m, ed, en, comp
+analog/r1_adv:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa72.0u
+analog/r3_5v:8 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r3_adv:8 resistor 10k,25.00, 20.00,re4,wb,ar100m,wa116u,ed,en
+analog/r3_vpp:8 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa132u
+analog/r30:12 resistor 10k,25.00, 20.00,re4,wb,ar100m,wa11m,ed
+analog/r31:7 resistor 10k,25.00, 35.00,re3,en,ed,ar 200m,wb
+analog/r90_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r91_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r130_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r142_cp:7 resistor 10k,25.00, 20.00,re5,wb,ar100m,ed, wa20m
+analog/r143_cp:7 resistor 10k,35.00, 35.00,re4,wb,ar100m,ed,en!, wa100m
+analog/r144_cp:7 resistor 10k, 30, 40,re4, ar100m, ed, en, wb, am0.2
+analog/r145_cp:7 resistor 10k, 35, 30, re2, wb, ar 200m,ed
+analog/r161_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r163_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r164_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r165_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa2m
+analog/r166_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r167_cp:6 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r168_cp:6 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r241_cp:7 resistor 10k,25.00, 35.00,re4,wb,ar100m,ed,en
+analog/r256_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r279:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa5m
+analog/r286:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r286_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r287:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r343_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r344_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r358_cp:7 resistor 10k,25.00, 20.00,re5,wb,ar100m,ed,en
+analog/r359_cp:6 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r410_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r411_cp:6 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed
+analog/r437_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+analog/r4_vpp:8 resistor 33.2k,25.00, 25.00,re5,wb,ar200m,wa41.7u,ed
+analog/r4_5v:8 resistor 57.6k,25.00, 25.00,re5,wb,ar200m,wa10m,ed
+analog/r4_adv:8 resistor 5.76k,25.00, 20.00,re4,wb,ar200m,wa116u,ed,en
+analog/r09_mvr:11 resistor 1k,30.00, 30.00,re3,ar100m,wa10m,ed, en
+analog/r09_vr:11 resistor 1k,25.00, 20.00,re3,ar100m,wa10m,ed
+analog/r122_cp:7 resistor 1k,25.00, 20.00,re3,ar100m,ed,en
+analog/r174_cp:8 resistor 1k,25.00, 20.00,re3,ar100m,ed,wa20m
+analog/r175_cp:16 resistor 1k,25.00, 20.00,re3,ar100m,ed,wa73.1u
+analog/r221_cp:7 resistor 1k, 25, 20, re1, ar100m, ed, en
+analog/r415_cp:7 resistor 1k, 25, 25, re3, ar100m, ed
+analog/r935:8 resistor 1k,25.00, 20.00,re3,ar100m,ed,wa10m,en
+analog/r10_mvr:7 resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa50m,ed
+analog/r10_vr:7 resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa50m,ed
+analog/r21_mvr:7 resistor 4.75k,25.00, 20.00,re4,wb,ar200m,ed
+analog/r21_vr:7 resistor 4.75k,25.00, 20.00,re4,wb,ar200m,ed
+analog/r149_cp:7 resistor 4.75k,25.00, 20.00,re4,wb,ar200m,ed
+analog/r24_mvr:11 resistor 2.4k,25.00, 20.00,re4,wb,ar500m,wa199u,ed
+analog/r24_vr:11 resistor 2.4k,25.00, 20.00,re4,wb,ar500m,wa199u,ed
+analog/r29:8 resistor 30.1k,25.00, 25.00,re5,wb,ar500m,wa20m,ed
+analog/r218:7 resistor 4.7k, 25.00, 20.00, re4, wb, ar200m,ed
+analog/r219:7 resistor 4.7k, 25.00, 20.00, re4, wb, ar200m,ed
+analog/r35_cp:7 resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r192_cp:7 resistor 5.11k,30, 30,re4,wb,ar200m,ed,wa20m
+analog/r193_cp:7 resistor 5.11k,38, 20.00,re2,wb,ar200m,ed
+analog/r194_cp:7 resistor 5.11k,25.00, 20.00,re4,ar 200m, ed
+analog/r196_cp:7 resistor 5.11k,25.00, 20.00,re3,ed
+analog/r198_cp:7 resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r199_cp:7 resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r200_cp:7 resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r239_cp:7 resistor 5.11k,35.00, 20.00,re4,wb,ar200m,ed
+analog/r242_cp:7 resistor 5.11k,25.00, 20.00,re2,wb, ar 200m, ed
+analog/r243_cp:7 resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed
+analog/r365_cp:6 resistor 33,40.00, 25.00,re2,ar200m,sa,sb,ed,en
+analog/r402_cp:7 resistor 33,40.00, 25.00,re2,ar200m,ed,en,sa,sb
+analog/r60:7 resistor 10k, 25.00, 20.00, re4, wb, ar100m,ed,wa50m
+analog/r61:11 resistor 10k, 25.00, 20.00, re4, wb, ar100m, wa5m,ed,am.13
+analog/r246_cp:7 resistor 10k, 25.00, 30.00, re4, wb, ar100m,ed,en, wa50m
+analog/r296_cp:7 resistor 10k, 38, 30, re3, wb, ar100m,ed, en
+analog/r298_cp:7 resistor 10k, 25.00, 20.00, re4, en, ar100m,ed, wa100m
+analog/r83_cp:8 resistor 22.6,40.00, 25.00,re2,ar500m, en, ed
+analog/r376_cp:7 resistor 22.6,45.00, 25.00,re2,ar500m,ed,en,wb
+analog/r102_cp:7 resistor 49.9, 35, 25, re1, ar200m, ed, en, wb
+analog/r175:7 resistor 22-5,45.00, 30.00,re2,ar500m, sb,en
+analog/r500:7 resistor 22,40.00, 25.00,re2,ar500m, ed
+analog/r526:7 resistor 22,40.00, 25.00,re2,ar500m,ed,en,sa,sb
+analog/r292:7 resistor 33,40.00, 25.00,re2,ar200m,ed,en
+analog/r302_cp:7 resistor 33,25.00, 25.00,re2,ar200m,ed,en
+analog/r182_cp:6 resistor 330k, 30.00, 30.00, re6, wb, ar500m, wa2.69u,ed
+analog/r223:6 resistor 2.2k, 25.00, 20.00, re4, wb, ar500m,ed,en
+analog/r228_cp:6 resistor 3.3k, 25.00, 20.00, re4, wb, ar500m, wa5.64u,ed
+analog/r263_cp:7 resistor 200k, 30.00, 30.00, re5, wb, ar500m, ed,wa26m
+analog/r417_cp:7 resistor 200k, 30.00, 30.00, re4, wb, ar500m, ed, wa26m
+analog/r305_cp:8 resistor 14.5k, 30.00, 30, re2, ar200m, wb,ed,en
+analog/r306_cp:6 resistor 1M, 30.00, 30.00, re6, wb, ar100m, wa5.07u,ed
+analog/r304_cp:7 resistor 10M, 30.00, 35.00, re5, wb, ar20.0m, wa7.69u,ed
+analog/r305:8 resistor 2.94k,25.00, 20.00,re4,wb,ar500m,wa23.9u, ed
+analog/r306:8 resistor 12k,25.00, 25.00,re5,wb,ar1.00,wa64.3u,ed
+analog/r308_cp:8 resistor 20k,25.00, 25.00,re5,wb,ar500m,wa31.5u,ed
+analog/r311_cp:8 resistor 20k,25.00, 25.00,re5,wb,ar500m,wa31.5u,ed
+analog/r351:7 resistor 20k,25.00, 25.00,re2,wb,ar500m,wa10m,ed
+analog/r313:8 resistor 4.12k,25.00, 20.00,re4,wb,ar200m,wa2m,ed
+analog/r431_cp:7 resistor 220,30.00, 20.00,re2,ar500m, ed
+analog/r515:6 resistor 47k, 25.00, 30.00, re5, wb, ar100m, en, ed, am100m
+analog/r518:6 resistor 47k, 25.00, 30.00, re5, wb, ar200m,en ,ed
+analog/r523:6 resistor 47k, 25.00, 35.00, re5, wb, ar200m, ed
+analog/r913:7 resistor 249k, 30.00, 30.00, re6, wb, ar500m, ed, wa10m
+analog/r922:8 resistor 4.42k,25.00, 20.00,re4,wb,ar200m,wa17m,ed
+analog/r936:8 resistor 84.5,30.00, 20.00,re2,ar100m,wa179u,ed
+analog/io_p1%presence:8 jumper 15, re2, ar200m,ed,en
+
+         Removing the test option may improve test time.
+
+     Delays                           
+         The following tests contain dwa or wa waits:
+
+analog/c01_mvr:11 capacitor 3.3n, 30.00, 30.00, fr8192, re3, wb, ar50.0m,sl,en,wa100m,nocomp,am.25
+analog/c01_vr:10 capacitor 3.3n, 30.00, 30.00, fr8192, re2, wb, ar50.0m, ed,en, wa50m,nocomp,am.2
+analog/c02_mvr:10 capacitor 3.3n, 30.00, 30.00, fr8192, re3, wb, ar50.0m,sl,en,wa100m,nocomp,am.25
+analog/c15_cp:7 capacitor 1u, 35.00, 52.00, fr1024, re1, ar100m, nocomp, ed, en, wa45m
+analog/c178_cp:7 capacitor 1u, 35.00, 40.00,fr128,re2,ar100m,sa,nocomp,am.3,ed,en,wa20m
+analog/c100:7 capacitor 10n, 40, 40.00, fr1024, re6, wb, ar100m, sa, sl, ed, en, nocomp,am.25,wa50m 
+analog/c17:7 capacitor 1n, 35.00, 35.00, fr8192, re5, wb, ar100m, sa,en, comp,am.2,wa20m
+analog/r1_5v:8 resistor 10k,25.00, 20.00,re4,wb,ar100m,wa84.1u
+analog/r1_adv:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa72.0u
+analog/r1_vpp:8 resistor 10k,25.00, 20.00,re3,wb,ar100m,wa7.50u
+analog/r3_adv:8 resistor 10k,25.00, 20.00,re4,wb,ar100m,wa116u,ed,en
+analog/r3_vpp:8 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa132u
+analog/r30:12 resistor 10k,25.00, 20.00,re4,wb,ar100m,wa11m,ed
+analog/r142_cp:7 resistor 10k,25.00, 20.00,re5,wb,ar100m,ed, wa20m
+analog/r165_cp:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa2m
+analog/r279:7 resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,wa5m
+analog/r2_adv:8 resistor 33.2k, 25, 25, re4, ar200m, dwa10m
+analog/r4_vpp:8 resistor 33.2k,25.00, 25.00,re5,wb,ar200m,wa41.7u,ed
+analog/r4_5v:8 resistor 57.6k,25.00, 25.00,re5,wb,ar200m,wa10m,ed
+analog/r4_adv:8 resistor 5.76k,25.00, 20.00,re4,wb,ar200m,wa116u,ed,en
+analog/r09_mvr:11 resistor 1k,30.00, 30.00,re3,ar100m,wa10m,ed, en
+analog/r09_vr:11 resistor 1k,25.00, 20.00,re3,ar100m,wa10m,ed
+analog/r174_cp:8 resistor 1k,25.00, 20.00,re3,ar100m,ed,wa20m
+analog/r175_cp:16 resistor 1k,25.00, 20.00,re3,ar100m,ed,wa73.1u
+analog/r307_cp:8 resistor 1k,25.00, 20.00,re3,ar100m,wa8.92u
+analog/r935:8 resistor 1k,25.00, 20.00,re3,ar100m,ed,wa10m,en
+analog/r10_mvr:7 resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa50m,ed
+analog/r10_vr:7 resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa50m,ed
+analog/r25_mvr:8 resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa2.82m
+analog/r25_vr:8 resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa2.82m
+analog/r304:8 resistor 4.75k,25.00, 20.00,re4,wb,ar200m,wa23.9u
+analog/r312:8 resistor 4.75k,25.00, 20.00,re4,wb,ar200m,wa22.0u
+analog/r24_mvr:11 resistor 2.4k,25.00, 20.00,re4,wb,ar500m,wa199u,ed
+analog/r24_vr:11 resistor 2.4k,25.00, 20.00,re4,wb,ar500m,wa199u,ed
+analog/r29:8 resistor 30.1k,25.00, 25.00,re5,wb,ar500m,wa20m,ed
+analog/r35_cp:7 resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r192_cp:7 resistor 5.11k,30, 30,re4,wb,ar200m,ed,wa20m
+analog/r198_cp:7 resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r199_cp:7 resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r200_cp:7 resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m
+analog/r60:7 resistor 10k, 25.00, 20.00, re4, wb, ar100m,ed,wa50m
+analog/r61:11 resistor 10k, 25.00, 20.00, re4, wb, ar100m, wa5m,ed,am.13
+analog/r246_cp:7 resistor 10k, 25.00, 30.00, re4, wb, ar100m,ed,en, wa50m
+analog/r298_cp:7 resistor 10k, 25.00, 20.00, re4, en, ar100m,ed, wa100m
+analog/r62:6 resistor 100k, 30.00, 30.00, re5, wb, ar100m, wa9.08u
+analog/r182_cp:6 resistor 330k, 30.00, 30.00, re6, wb, ar500m, wa2.69u,ed
+analog/r183_cp:6 resistor 330k, 30.00, 30.00, re6, wb, ar500m, wa2.69u
+analog/r228_cp:6 resistor 3.3k, 25.00, 20.00, re4, wb, ar500m, wa5.64u,ed
+analog/r263_cp:7 resistor 200k, 30.00, 30.00, re5, wb, ar500m, ed,wa26m
+analog/r417_cp:7 resistor 200k, 30.00, 30.00, re4, wb, ar500m, ed, wa26m
+analog/r303_cp:8 resistor 1M, 21.00, 21.00, re6, wb, ar100m, wa5.17u
+analog/r306_cp:6 resistor 1M, 30.00, 30.00, re6, wb, ar100m, wa5.07u,ed
+analog/r304_cp:7 resistor 10M, 30.00, 35.00, re5, wb, ar20.0m, wa7.69u,ed
+analog/r305:8 resistor 2.94k,25.00, 20.00,re4,wb,ar500m,wa23.9u, ed
+analog/r306:8 resistor 12k,25.00, 25.00,re5,wb,ar1.00,wa64.3u,ed
+analog/r308_cp:8 resistor 20k,25.00, 25.00,re5,wb,ar500m,wa31.5u,ed
+analog/r311_cp:8 resistor 20k,25.00, 25.00,re5,wb,ar500m,wa31.5u,ed
+analog/r351:7 resistor 20k,25.00, 25.00,re2,wb,ar500m,wa10m,ed
+analog/r313:8 resistor 4.12k,25.00, 20.00,re4,wb,ar200m,wa2m,ed
+analog/r336_cp:7 resistor 2.7k,25.00, 20.00,re4,wb,ar500m,wa8.06u
+analog/r504:11 resistor 5.49k,25.00, 20.00,re4,wb,ar200m,wa1.01u
+analog/r666:7 resistor 2.87k, 25.00, 20.00, re4, wb, ar500m, wa24.6u
+analog/r912:7 resistor 105k, 30.00, 30.00, re6, wb, ar1.00, wa2.06u
+analog/r913:7 resistor 249k, 30.00, 30.00, re6, wb, ar500m, ed, wa10m
+analog/r922:8 resistor 4.42k,25.00, 20.00,re4,wb,ar200m,wa17m,ed
+analog/r936:8 resistor 84.5,30.00, 20.00,re2,ar100m,wa179u,ed
+analog/r937:6 resistor 150k, 30.00, 30.00, re6, wb, ar1.00, wa2.24u
+analog/r1997:8 resistor 3.57k,25.00, 20.00,re4,wb,ar200m,wa24.6u
+
+         Removing or reducing the delays may improve test time.
+
+
+MIXED
+     Continue Statements              
+         The following tests have "continue analog" or
+         "continue digital" statements:
+
+mixed/fanhs01_f/analog:7    continue digital
+mixed/fanhs01_f/digital:37   continue analog
+mixed/fanhs01_f/digital:39   continue analog
+mixed/fanhs23_f/analog:7    continue digital
+mixed/fanhs23_f/digital:37   continue analog
+mixed/fanhs23_f/digital:39   continue analog
+mixed/fanhs45_f/analog:7    continue digital
+mixed/fanhs45_f/digital:37   continue analog
+mixed/fanhs45_f/digital:39   continue analog
+
+         To reduce test time, reduce the number of these
+         statements.

@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027685   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:46 2018
+on failure
+   report parallel devices
+   report "cr58%d13_6"
+end on failure
+disconnect all
+connect i to "CONSOLE_TXD_LINE"
+connect s to "GND"
+jumper 10.0k, re4, wb, ar100m, op
+! "c54" test.
+off failure

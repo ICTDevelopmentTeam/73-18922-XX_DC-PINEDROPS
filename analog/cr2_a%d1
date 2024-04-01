@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530585586  V7478                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:28 2018
+disconnect all
+connect s to "PWR_A3V3_A2V5_A1V2_PGOOD"
+connect i to "P1V2A_PGOOD_A"
+!B!diode 916m, 467m, idc25m, co3.0, ar916m
+diode 950m,467m,idc25m,co3.0,ar916m
+! "cr2_a%d1" test.

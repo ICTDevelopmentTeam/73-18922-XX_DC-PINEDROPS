@@ -1,0 +1,9 @@
+!!!!    2    0    1 1530583117  Vc768                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:27 2018
+disconnect all
+connect s to "P1V8"
+connect i to "UNNAMED_15_RES_I55_B"
+connect g to "GND"
+!B!resistor 3.57k, 6.00, 6.00, re4, wb, ar200m, wa24.6u
+resistor 3.57k,25.00, 20.00,re4,wb,ar200m,wa24.6u
+! "r1997" test.

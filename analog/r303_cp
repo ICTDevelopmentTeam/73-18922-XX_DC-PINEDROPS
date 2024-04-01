@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531986536  V1962                                         
+!* XTAL_PCH_25M_IN_CP top side probe removed for power up stable ready.
+! IPG: rev 07.20pd Fri Jun 15 09:56:17 2018
+disconnect all
+connect s to "XTAL_PCH_25M_IN_CP"
+connect i to "XTAL_PCH_25M_OUT_CP"
+connect g to "GND"
+resistor 1M, 21.00, 21.00, re6, wb, ar100m, wa5.17u
+! "r303_cp" test.

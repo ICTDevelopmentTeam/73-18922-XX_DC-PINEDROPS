@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583019  Vc3dc                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:07 2018
+disconnect all
+connect s to "GND"
+connect i to "PU_TXT_AGENT_CP"
+!B!resistor 240, 8.08, 6.00, re3, ar500m
+resistor 240,30.00, 25.00,re3,ar500m
+! "r180_cp" test.

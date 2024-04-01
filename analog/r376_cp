@@ -1,0 +1,8 @@
+!!!!    2    0    1 1618377463   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:04 2018
+disconnect all
+connect s to "SMB_DDR_SCL_LV2V5_CP"
+connect i to "SMB_DDR_SCL_LV2V5_R_CP"
+!B!resistor 22.6, 28.12, 6.00, re2, ar500m
+resistor 22.6,45.00, 25.00,re2,ar500m,ed,en,wb
+! "r376_cp" is a limited test.

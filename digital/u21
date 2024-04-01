@@ -1,0 +1,122 @@
+!!!!    6    0    1 1529027808  V6759                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:49 2018
+!*74LVC07A
+!*15-4189-02
+!* Ben
+
+default device "u21"
+set terminators to on
+assign VCC to pins *
+assign GND to pins *
+
+! inputs
+assign A1 to pins 1
+assign A2 to pins 3
+assign A3 to pins 5
+assign A4 to pins 9
+assign A5 to pins 11
+assign A6 to pins 13
+assign Input_Group to groups A1,A2,A3,A4,A5,A6
+
+! outputs
+assign Y1 to pins 2
+assign Y2 to pins 4
+assign Y3 to pins 6
+assign Y4 to pins 8
+assign Y5 to pins 10
+assign Y6 to pins 12
+assign Output_Group to groups Y1,Y2,Y3,Y4,Y5,Y6
+
+family LVT
+
+power VCC,GND
+
+inputs A1,A2,A3,A4,A5,A6,Input_Group
+outputs Y1,Y2,Y3,Y4,Y5,Y6,Output_Group
+!IPG: Voltage reference values for pin or node "UNNAMED_20_CAP_I260_B" have
+!IPG: been adjusted due to conflicts with other devices on this pin or node.
+!IPG:   "u21.5" family "LVT" dh 3.00, dl 0.10
+!IPG:   "u15_cp.4" family "FLASH_1V8" dh 1.70, dl 0.20
+set ref on pins 5 to dh 1.70, dl 0.20
+
+assign Disablegroup to nodes "DIMM_THERM_EVENT_L_2V5_CP" default "1"
+assign Disablegroup to nodes "FAULT_OE1_CP","HOT_OE_CP" default "11"
+inputs Disablegroup
+
+assign DisableFamilyTTL to nodes "DIMM_THERM_EVENT_L_2V5_CP"
+family TTL on DisableFamilyTTL
+inputs DisableFamilyTTL
+
+assign DisableFamilyLVT to nodes "HOT_OE_CP"
+family LVT on DisableFamilyLVT
+inputs DisableFamilyLVT
+
+assign DisableFamilyFLASH_1V8 to nodes "FAULT_OE1_CP"
+family FLASH_1V8 on DisableFamilyFLASH_1V8
+inputs DisableFamilyFLASH_1V8
+
+!IPG: User must manually insert disable information for u21.4
+!IPG: User must manually insert disable information for u21.6
+!IPG: User must manually insert disable information for u21.8
+!IPG: User must manually insert disable information for u21.10
+!IPG: User must manually insert disable information for u21.12
+!IPG: User must manually insert disable information for u21.2
+!IPG: User must manually insert disable information for u21.6
+!IPG: User must manually insert disable information for u21.8
+!IPG: User must manually insert disable information for u21.10
+!IPG: User must manually insert disable information for u21.12
+!IPG: User must manually insert disable information for u21.2
+!IPG: User must manually insert disable information for u21.4
+!IPG: User must manually insert disable information for u21.8
+!IPG: User must manually insert disable information for u21.10
+!IPG: User must manually insert disable information for u21.12
+!IPG: User must manually insert disable information for u21.2
+!IPG: User must manually insert disable information for u21.4
+!IPG: User must manually insert disable information for u21.6
+!IPG: User must manually insert disable information for u21.10
+!IPG: User must manually insert disable information for u21.12
+!IPG: User must manually insert disable information for u21.2
+!IPG: User must manually insert disable information for u21.4
+!IPG: User must manually insert disable information for u21.6
+!IPG: User must manually insert disable information for u21.8
+!IPG: User must manually insert disable information for u21.12
+!IPG: User must manually insert disable information for u21.2
+!IPG: User must manually insert disable information for u21.4
+!IPG: User must manually insert disable information for u21.6
+!IPG: User must manually insert disable information for u21.8
+!IPG: User must manually insert disable information for u21.10
+
+!IPG: Safeguard will ignore disabled outputs
+disabled device "u15_cp" pins 12,13,4,5
+!IPG: with pin 15 on node "FAULT_OE1_CP"
+disabled device "u20_cp" pins 10,14,15,16,17,18,19,20,21,3,4,5,6,7,8
+disabled device "u20_cp" pins 9
+!IPG: with pin 22 on node "HOT_OE_CP"
+disabled device "u33_cp" pins 4
+!IPG: with pin 1 on node "DIMM_THERM_EVENT_L_2V5_CP"
+
+vector Drive_L
+   set Input_Group to "000000"
+   set Output_Group to "000000"
+end vector
+
+vector Drive_H
+   set Input_Group to "111111"
+   set Output_Group to "111111"
+end vector
+
+
+
+sub DisableSub
+  execute DisableVector
+end sub
+
+unit "DisableUnit"
+  call DisableSub
+end unit
+
+unit "Test"
+   execute Drive_H
+   execute Drive_L
+end unit
+

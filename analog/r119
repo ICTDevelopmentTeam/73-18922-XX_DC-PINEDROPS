@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027697   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:58 2018
+disconnect all
+connect s to "GND"
+connect i to "CLK_100M_PHY3_P"
+jumper 10.0k, re4, wb, ar100m, op
+! "r119" test.

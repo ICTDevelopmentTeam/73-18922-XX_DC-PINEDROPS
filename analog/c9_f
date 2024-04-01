@@ -1,0 +1,13 @@
+!!!!    2    0    1 1529027683   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:44 2018
+on failure
+   report parallel devices
+   report "c27_f"
+   report "cr8_f%d1"
+end on failure
+disconnect all
+connect i to "CON_FAN01_12V_F"
+connect s to "GND"
+jumper 5.00k, re4, wb, ar200m, op
+! "c9_f" test.
+off failure

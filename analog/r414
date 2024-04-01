@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027705   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:06 2018
+disconnect all
+connect s to "SRT_CON_TXD"
+connect i to "CONSOLE_TXD_LINE"
+jumper 10.0k, re4, wb, ar100m, op
+! "r414" test.

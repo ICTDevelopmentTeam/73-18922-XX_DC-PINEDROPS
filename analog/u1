@@ -1,0 +1,45 @@
+!!!!    2    0    1 1514457239   0000                                         
+! IPG: rev 08.30p  Wed Oct 11 15:50:42 2017
+!IPG: rev B.03.80 Thu May 11 23:53:58 2006
+
+!  tps51200
+!  Linear Regulator
+!  10-pin son package
+
+
+test powered analog
+   power pins 1,2,5,6,11
+   nonanalog pins 7
+
+    test "VIN"
+    test "VO"
+!    test "PGOOD"
+
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+subtest "VIN"
+   connect i to pins  10
+   connect l to pins 4
+
+   detector dcv, expect 3.3
+   measure 3.5, 3.1
+end subtest
+
+subtest "VO"
+   connect i to pins  3
+   connect l to pins 8
+
+   detector dcv, expect 0.6
+   measure 0.6 * 1.1 , 0.6 * 0.9
+end subtest
+
+subtest "PGOOD"
+   connect i to pins  9
+   connect l to pins 8
+
+   detector dcv, expect 3.3
+   measure 3.3 * 1.05, 3.3 * 0.95
+end subtest

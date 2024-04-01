@@ -1,0 +1,53 @@
+!!!!   24    0    1 1529027817  Va876                                         
+! Copyright (c) Agilent Technologies, Inc. 1995-1996, 1998-2000, 2002-2003, 2006-2008
+!IPG: rev 07.20pd Fri Jun 15 09:56:58 2018
+
+disable "u5_cp_u5_cp_pch"
+
+!IPG: User may add option statements here if needed.
+
+ground bounce suppression   on
+family "LVT"
+
+
+!IPG: Warning: TAP Reset Pin has been overridden. The following
+!IPG:          TRST pin(s) will not be included in the disable section:
+!IPG:
+!IPG:    u5_cp.U75
+!IPG:
+
+chain "u5_cp_u5_cp_pch"
+  tdi "LJTAG_TDI_HDR_3V3"
+  tdo "LJTAG_TDO_HDR_3V3" family "TTL"
+  tms "LJTAG_TMS_HDR_3V3"
+  tck "JTAG_HDR_TCK"
+  trst "LJTAG_TRST_L_HDR_3V3"
+  devices
+    "u5_cp", "custom_lib/bdx_de_a0_cust_rev2.bsdl", "LGA", no
+    "u5_cp_pch", "custom_lib/broadwell_pch.bsm", "bga1", no
+  end devices
+end chain
+
+
+disables "disable vector"
+!IPG: Family information could not be found for node BDXDE_DRAM_PWROK_CP
+  node "BDXDE_DRAM_PWROK_CP" hybrid default "1"
+  node "C105_PWRGD_CPU_CP" hybrid default "1"
+  node "PWRGD_BDXDE_LAN_CP" family "FLASH_1V8" hybrid default "1"
+
+  pcf order is nodes "BDXDE_DRAM_PWROK_CP","C105_PWRGD_CPU_CP"
+  pcf order is nodes "PWRGD_BDXDE_LAN_CP"
+  unit "disable_1"
+  pcf
+  "111"
+  end pcf
+  end unit
+end disables
+
+!IPG: User may add VCL pass-through statements here if needed.
+
+nodes
+end nodes
+
+end disable
+

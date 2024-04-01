@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582857  V93f9                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:36 2018
+disconnect all
+connect s to "P1V7_FP2"
+connect i to "P1V7_FP_B"
+!B!resistor 13.7k, 6.00, 6.00, re5, wb, ar1.00
+resistor 13.7k,25.00, 25.00,re5,wb,ar1.00
+! "r307" test.

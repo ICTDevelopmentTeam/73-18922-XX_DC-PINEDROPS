@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027691   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:52 2018
+disconnect all
+connect i to "SR_FAN23_PRSNT_N_F"
+connect s to "P3_3VA"
+jumper 10.0k, re4, wb, ar100m, op
+! "r27_f" test.

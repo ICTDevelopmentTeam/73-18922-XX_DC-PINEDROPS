@@ -1,0 +1,13 @@
+!!!!    2    0    1 1529027716   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:17 2018
+on failure
+   report parallel devices
+   report "c07_vr 100n"
+   report "c08_vr 100n"
+end on failure
+disconnect all
+connect s to "GND"
+connect i to "ISENRTN_VR"
+capacitor 1.2u, 35.00, 40.00, fr1024, re2, ar100m, nocomp
+! "c09_vr" test.
+off failure

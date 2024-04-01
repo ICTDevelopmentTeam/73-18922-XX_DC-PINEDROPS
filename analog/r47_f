@@ -1,0 +1,7 @@
+!!!!    2    0    1 1686126596   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:54:55 2018
+disconnect all
+connect s to "UNNAMED_2_NMOSFET_I47_G_F"
+connect i to "FAN23_GATE_HV_F"
+jumper 10.0k, re4, wb, ar100m, op
+! "r47_f" test.

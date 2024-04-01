@@ -1,0 +1,7 @@
+!!!!    2    0    1 1647502760   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:08 2018
+disconnect all
+connect i to "VRM2_VDD_P3V3_VR"
+connect s to "P3_3VA"
+jumper 15.00, re2, ar200m
+! "r28_vr" test.

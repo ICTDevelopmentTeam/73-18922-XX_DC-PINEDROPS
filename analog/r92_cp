@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583017  V6167                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:06 2018
+disconnect all
+connect s to "PECI_PCH_CP"
+connect i to "PECI_PCH_R_CP"
+!B!resistor 20, 31.00, 6.00, re2, ar500m
+resistor 20,50.00, 25.00,re2,ar500m
+! "r92_cp" is a limited test.

@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531966136   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:27 2018
+disconnect all
+connect i to "P3V3_VFB"
+connect s to "P5V_R"
+connect g to "P3_3V"
+connect g to "GND"
+resistor 4.42k,25.00, 20.00,re4,wb,ar200m,wa17m,ed
+! "r922" test.

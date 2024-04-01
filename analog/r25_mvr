@@ -1,0 +1,9 @@
+!!!!    2    0    1 1530582935  Veed1                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:44 2018
+disconnect all
+connect i to "UNNAMED_7_CAP_I279_B_MVR"
+connect s to "P5V"
+connect g to "GND"
+!B!resistor 13k, 6.00, 6.00, re5, wb, ar1.00, wa2.82m
+resistor 13k,25.00, 25.00,re5,wb,ar1.00,wa2.82m
+! "r25_mvr" is a limited test.

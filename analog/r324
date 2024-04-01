@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027701   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:02 2018
+on failure
+   report parallel devices
+   report "r23_mvr 10.0k"
+end on failure
+disconnect all
+connect s to "P3_3VA"
+connect i to "P1V05C_PGOOD"
+jumper 4.98k, re4, wb, ar200m, op
+! "r324" test.
+off failure

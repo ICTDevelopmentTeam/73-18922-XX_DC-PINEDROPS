@@ -1,0 +1,8 @@
+!!!!    2    0    1 1685089510   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:00 2018
+disconnect all
+connect i to "P1V05C"
+connect s to "JTAG_BDX_TDI_CP"
+!connect g to "GND"
+resistor 10k-0.6k, 38, 30, re1, wb, ar100m,ed, en
+! "r296_cp" test.

@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531985463  V9c2d                                         
+!* SRT_CLK125M_FPGA top side probe removed for power up stable ready.
+! IPG: rev 07.20pd Fri Jun 15 09:55:59 2018
+disconnect all
+connect s to "SRT_CLK125M_FPGA"
+connect i to "CLK125M_FPGA"
+!B!resistor 33, 25.15, 10.00, re2, ar200m
+resistor 33,25.00,25.00,re2,ar200m
+! "r37" test.

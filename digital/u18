@@ -1,0 +1,44 @@
+!!!!    6    0    1 1529027807  V0d5d                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:48 2018
+
+sequential
+
+vector cycle 500n
+receive delay 400n
+
+default device "u18"
+set terminators to on
+assign VCC      to pins *,*,*,*
+assign VCCQ     to pins *,*,*,*,*
+assign GND      to pins *,*,*,*,*,*,*,*,*
+
+assign DBUS     to pins "A3","A4","A5","B2","B3","B4","B5","B6"
+assign CLK      to pins "M6"
+assign CMD      to pins "M5"
+assign RST      to pins "K5"
+
+assign VDDI     to pins *
+assign RFU      to pins *,*,*,*,*,*,"H5",*
+assign RFU      to pins *,*,*,*,*,*,*,*,"C5"
+assign NC       to pins *,*,*,*,*,*,*,*,*,*,*,*
+assign NC       to pins *,*,*,*,*,*,*,*,*,*,*,*,*,*
+assign NC       to pins *,*,*,*,*,*,*,*,*,*,*,*,*,*
+assign NC       to pins *,*,*,*,*,*,*,*,*,*,*,*,*,*
+assign NC       to pins *,*,*,*,*,*,*,*,*,*,*,*,*,*
+assign NC       to pins *,*,*,*,*,*,*,*,*,*,*,*,*,*
+assign NC       to pins *,*,*,*,*,*,*,*,*,*,*,*,*,*
+assign NC       to pins *,*,*,*,*,*,*,*,*,*
+
+power  VCC,VCCQ,GND
+inputs RFU,CLK,CMD,RST
+bidirectional DBUS
+nondigital VDDI,NC
+
+family LVT
+
+!IPG: Add defaults or loads to floating inputs and bidirs.
+assign Floating__Inputs to pins "M6" default "0"
+inputs Floating__Inputs
+
+!*****************************************************************************
+!****************************Setup Only***************************************

@@ -1,0 +1,10 @@
+!!!!    2    0    1 1531145712   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:34 2018
+disconnect all
+connect s to "P5V"
+connect i to "VFB1_5V"
+connect g to "GND"
+!B!resistor 57.6k, 6.00, 6.00, re5, wb, ar200m, wa198u
+resistor 57.6k,25.00, 25.00,re5,wb,ar200m,wa10m,ed
+!resistor 57.6k,10.00,10.00,re5,wb,ar200m,wa198u
+! "r4_5v" test.

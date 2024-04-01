@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582906  V555b                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:41 2018
+disconnect all
+connect s to "GND"
+connect i to "PWRGD_BDXDE_LAN_CP"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m
+resistor 1k,25.00, 20.00,re3,ar100m
+! "r290_cp" test.

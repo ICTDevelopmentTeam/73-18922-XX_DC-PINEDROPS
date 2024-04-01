@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027753   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:54 2018
+disconnect all
+connect s to "P3V3_SSD"
+connect i to "M2_DAS"
+resistor 4.7k, 25.00, 20.00, re4, wb, ar200m
+! "r579" test.

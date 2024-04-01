@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583014  V21fd                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:06 2018
+disconnect all
+connect s to "P1V5_PCH"
+connect i to "PU_PCIE_RCOMP_CP"
+!B!resistor 7.5k, 6.00, 6.00, re4, wb, ar100m
+resistor 7.5k,25.00, 20.00,re4,wb,ar100m
+! "r89_cp" test.

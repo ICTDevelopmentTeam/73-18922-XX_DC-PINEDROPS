@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583008  Vfaef                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:04 2018
+disconnect all
+connect s to "GND"
+connect i to "USB2_BIAS_CP"
+!B!resistor 22.6, 28.12, 6.00, re2, ar500m
+resistor 22.6,40.00, 25.00,re2,ar500m
+! "r99_cp" is a limited test.

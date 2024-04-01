@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582883  Vc900                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:40 2018
+disconnect all
+connect s to "XDP_CPU_PWRGD_R_CP"
+connect i to "XDP_CPU_PWRGD_CP"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m
+resistor 1k,25.00, 20.00,re3,ar100m
+! "r220_cp" test.

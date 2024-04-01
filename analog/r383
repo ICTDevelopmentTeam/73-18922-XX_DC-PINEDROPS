@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583079  Ve22b                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:19 2018
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_17_PI3B3257PG_I429_E"
+!B!resistor 220, 8.27, 6.00, re3, ar500m
+resistor 220,30.00, 20.00,re3,ar500m
+! "r383" test.

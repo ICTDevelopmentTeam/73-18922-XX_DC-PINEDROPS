@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530585584  V7b85                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:28 2018
+disconnect all
+connect s to "P3V3_VBAT_CP"
+connect i to "P3_3V"
+!B!diode 916m, 467m, idc25m, co3.0, ar916m
+diode 950m,467m,idc25m,co3.0,ar916m
+! "cr1_cp%d1" test.

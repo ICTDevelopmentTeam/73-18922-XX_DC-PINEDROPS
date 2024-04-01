@@ -1,0 +1,8 @@
+!!!!    2    0    1 1698447380   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:10 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "SMB_10GBE_ALRT_N_CP"
+!connect g to "GND"
+resistor 2.2k, 30.00, 30.00, re2 ,ar 500m,am0.01
+! "r151_cp" test.

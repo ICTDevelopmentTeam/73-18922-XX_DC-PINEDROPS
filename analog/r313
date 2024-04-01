@@ -1,0 +1,9 @@
+!!!!    2    0    1 1620747353   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:20 2018
+disconnect all
+connect s to "P1V5_PCH"
+connect i to "P1V5_PCH_FB"
+connect g to "GND"
+!B!resistor 4.12k, 6.00, 6.00, re4, wb, ar200m, wa22.0u
+resistor 4.12k,25.00, 20.00,re4,wb,ar200m,wa2m,ed
+! "r313" test.

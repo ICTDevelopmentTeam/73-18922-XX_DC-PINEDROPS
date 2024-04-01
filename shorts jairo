@@ -1,0 +1,6165 @@
+----------------------------------------
+Shorts Report for "shorts".
+Thu Jan 18 00:30:25 2024
+73-19246-05_2old
+----------------------------------------
+Short #1, Thresh 30, Delay 50us     Ohms
+From: HS0_12V_SNS_F           22356    0
+              fanhs01_f.9
+                 q7_f.2
+                r42_f.2
+                r43_f.2
+  &   PWR_P12V_F_3V3         221156
+               c07_3v3.1
+                r1_3v3.2
+               u1_3v3.19
+  &   P12V                    22211
+                c1_5v.1
+                c1_adv.1
+                c1_vpp.1
+               c01_3v3.1
+              c01_91_mvr.1
+              c01_91_vr.1
+              c01_92_vr.1
+              c01_98_mvr.1
+               c02_3v3.1
+              c02_91_mvr.1
+Too many to print.
+  &   HS1_12V_SNS_F          222153
+              fanhs23_f.9
+                 q8_f.2
+                r44_f.2
+                r45_f.2
+  &   HS2_12V_SNS_F           22256
+              fanhs45_f.9
+                 q3_f.2
+                r347_f.2
+                r352_f.2
+To:   PWR_P12V_F_3V3         221156    0
+               c07_3v3.1
+                r1_3v3.2
+               u1_3v3.19
+      P12V                    22211    0
+                c1_5v.1
+                c1_adv.1
+                c1_vpp.1
+               c01_3v3.1
+              c01_91_mvr.1
+              c01_91_vr.1
+              c01_92_vr.1
+              c01_98_mvr.1
+               c02_3v3.1
+              c02_91_mvr.1
+Too many to print.
+      HS1_12V_SNS_F          222153    0
+              fanhs23_f.9
+                 q8_f.2
+                r44_f.2
+                r45_f.2
+      HS2_12V_SNS_F           22256    0
+              fanhs45_f.9
+                 q3_f.2
+                r347_f.2
+                r352_f.2
+      BMCINIT_CP              22032    0
+                r18_cp.2
+                r19_cp.2
+               u5_cp.AD69
+             u5_cp_pch.AD69
+      buf_pch_pltrst_l        11455    0
+                dbg_1.16
+                  p6.6
+                tpm_cp.5
+                u11.H17
+      c33_spi_10gbe_mosi_cp   11470    0
+                u11_cp.5
+                u18_cp.7
+        v                    120149    0 
+c105_cpu_pch_pltrst_n_cp                
+                r60_cp.2
+               u17_cp.16
+        v                    119148    0 
+c105_pch_console2_rxd_cp                
+                r3_cp.2
+               u5_cp.AH78
+             u5_cp_pch.AH78
+               u17_cp.18
+        v                     21930    0 
+c105_pch_console_rxd_cp                 
+                r4_cp.2
+               u5_cp.AG77
+             u5_cp_pch.AG77
+               u17_cp.17
+      c105_reset_cpu_n_cp     12049    0
+                r61_cp.2
+               u17_cp.19
+      c105_spi_10gbe_clk_cp   21902    0
+               u5_cp.M67
+             u5_cp_pch.M67
+               u18_cp.19
+      c105_spi_10gbe_cs_n_cp 114171    0
+               u5_cp.P67
+             u5_cp_pch.P67
+               u18_cp.18
+      c105_spi_10gbe_miso_cp  11372    0
+               u5_cp.D74
+             u5_cp_pch.D74
+               u17_cp.20
+      c105_spi_10gbe_mosi_cp 113171    0
+               u5_cp.C73
+             u5_cp_pch.C73
+               u18_cp.17
+      srt_clk100m_fpga_pe_n  205126    0
+                 r146.1
+                u5_cp.U2
+              u5_cp_pch.U2
+      srt_clk100m_fpga_pe_p   20526    0
+                 r145.1
+                u5_cp.U4
+              u5_cp_pch.U4
+      SRT_CLK_100M_MDOT2_N    20433    0
+                 r356.1
+                u5_cp.R9
+              u5_cp_pch.R9
+      SRT_CLK_100M_MDOT2_P    20325    0
+                 r354.1
+                u5_cp.N9
+              u5_cp_pch.N9
+      clk_100m_phy3_n         20331    0
+                mgmt.25
+                 r120.2
+                 r134.2
+      clk_100m_phy3_p        203130    0
+                mgmt.24
+                 r119.2
+                 r133.2
+      clk_100m_xdp_n_cp       22007    0
+                r47_cp.1
+                u5_cp.H2
+              u5_cp_pch.H2
+               xdp_cp.42
+      clk_100m_xdp_p_cp      220106    0
+                r46_cp.1
+                u5_cp.H4
+              u5_cp_pch.H4
+               xdp_cp.40
+      CON_FAN01_12V_F        222137    0
+                 c9_f.1
+                c27_f.1
+                cr8_f.1
+               cr8_f%d1.A
+              fancon01_f.1
+              fancon01_f.2
+              fanhs01_f.7
+                 q7_f.3
+      CON_FAN01_DIR_F         11631    0
+              fancon01_f.4
+                l666_f.8
+             l666_f%jp1_8.2
+      CON_FAN01_PRSNT_N_F    116131    0
+              fancon01_f.5
+                l666_f.7
+             l666_f%jp2_7.2
+      CON_FAN01_PWM_F        221154    0
+              fancon01_f.6
+              fancon01_f.7
+                l666_f.6
+             l666_f%jp3_6.2
+      CON_FAN01_TACH0_F      223154    0
+             fancon01_f.14
+                 l1_f.8
+              l1_f%jp1_8.2
+      CON_FAN01_TACH1_F      202148    0
+             fancon01_f.13
+                 l1_f.7
+              l1_f%jp2_7.2
+      CON_FAN01_TACH2_F      207149    1
+             fancon01_f.12
+                 l1_f.6
+              l1_f%jp3_6.2
+      CON_FAN01_TACH3_F       20549    0
+             fancon01_f.11
+                 l1_f.5
+              l1_f%jp4_5.2
+      CON_FAN23_12V_F         21937    0
+                c10_f.1
+                c28_f.1
+                cr9_f.1
+               cr9_f%d1.A
+              fancon23_f.1
+              fancon23_f.2
+              fanhs23_f.7
+                 q8_f.3
+      CON_FAN23_DIR_F        202114    0
+              fancon23_f.4
+                 l2_f.8
+              l2_f%jp1_8.2
+      CON_FAN23_PRSNT_N_F     20215    0
+              fancon23_f.5
+                 l2_f.7
+              l2_f%jp2_7.2
+      CON_FAN23_PWM_F        222154    0
+              fancon23_f.6
+              fancon23_f.7
+                 l2_f.6
+              l2_f%jp3_6.2
+      CON_FAN23_TACH0_F       20248    0
+             fancon23_f.14
+                 l4_f.8
+              l4_f%jp1_8.2
+      CON_FAN23_TACH1_F       20749    0
+             fancon23_f.13
+                 l4_f.7
+              l4_f%jp2_7.2
+      CON_FAN23_TACH2_F       20849    0
+             fancon23_f.12
+                 l4_f.6
+              l4_f%jp3_6.2
+      CON_FAN23_TACH3_F      205149    0
+             fancon23_f.11
+                 l4_f.5
+              l4_f%jp4_5.2
+      CON_FAN45_12V_F        220147    0
+                c53_f.1
+                c102_f.1
+                cr23_f.1
+              cr23_f%d1.A
+              fancon45_f.1
+              fancon45_f.2
+              fanhs45_f.7
+                 q3_f.3
+      CON_FAN45_DIR_F         20349    0
+              fancon45_f.4
+                 l3_f.8
+              l3_f%jp1_8.2
+      CON_FAN45_PRSNT_N_F    203149    0
+              fancon45_f.5
+                 l3_f.7
+              l3_f%jp2_7.2
+      CON_FAN45_PWM_F         20249    0
+              fancon45_f.6
+              fancon45_f.7
+                 l3_f.6
+              l3_f%jp3_6.2
+      CON_FAN45_TACH0_F      202149    0
+             fancon45_f.14
+                l12_f.8
+             l12_f%jp1_8.2
+      CON_FAN45_TACH1_F       20750    0
+             fancon45_f.13
+                l12_f.7
+             l12_f%jp2_7.2
+      CON_FAN45_TACH2_F       22153    0
+             fancon45_f.12
+                l12_f.6
+             l12_f%jp3_6.2
+      CON_FAN45_TACH3_F      221153    0
+             fancon45_f.11
+                l12_f.5
+             l12_f%jp4_5.2
+      CONSOLE_DTR             20536    0
+                 r413.2
+                 u15.11
+      console_rxd            116172    0
+                u11.D16
+                u17_cp.7
+      CONSOLE_RXD_LINE       203117    0
+                 c55.1
+               console.2
+                 cr58.4
+              cr58%d14_5.A
+                 r415.2
+      console_txd             11378    0
+                 u11.B9
+               u18_cp.10
+      CONSOLE_TXD_LINE       203115    0
+                 c54.1
+               console.1
+                 cr58.3
+              cr58%d13_6.A
+                 r414.2
+      cpu_fpga_h_fivr_fault  119138    0
+               dbg_j1.28
+                r59_cp.2
+                 u11.D9
+                u15_cp.5
+      cpu_fpga_pltrst_proc_l 116175    0
+                dbg_j1.8
+                 u11.E8
+                u18_cp.3
+      cpu_pwrgd_pch_cp        11363    0
+                r62_cp.1
+               u5_cp.BU11
+             u5_cp_pch.BU11
+               u20_cp.19
+      db_pwr_en              116151    0
+              rctl_conn.D3
+                 u11.Y6
+      dbg_console_rxd         11468    0
+                 u15.12
+                u17_cp.6
+      dbg_console_txd        114170    0
+                 u15.10
+                u18_cp.9
+      dc_console_txd          11656    0
+              rctl_conn.E3
+                u11.E17
+      FAN01_AMB_LED_F        113129    0
+              fanled01_f.1
+           fanled01_f%led1.A
+                r52_f.2
+      fan01_amb_led_l        120118    0
+              fanled01_f.2
+           fanled01_f%led1.C
+                u11.AB16
+      fan01_dir              121133    0
+                r18_f.1
+                u11.U14
+      FAN01_EN_F              11361    0
+                c29_f.1
+              fanhs01_f.1
+                 q5_f.3
+                r40_f.1
+      FAN01_GATE_HV_F        113127    0
+              fanhs01_f.8
+                r46_f.2
+      FAN01_GRN_LED_F         11429    0
+              fanled01_f.3
+           fanled01_f%led2.A
+                r53_f.2
+      fan01_grn_led_l         11317    0
+              fanled01_f.4
+           fanled01_f%led2.C
+                u11.U15
+      fan01_pg                12133    0
+                 r6_f.2
+                u11.W15
+      FAN01_PROG_F            22337    0
+              fanhs01_f.3
+                r48_f.2
+                r50_f.1
+      fan01_prsnt_l           11362    0
+                 q5_f.1
+                r19_f.1
+                r38_f.1
+                u11.Y15
+      FAN01_PWM_BASE_F        11531    0
+                q666_f.1
+              q666_f%q1.B
+                 r1_f.2
+      FAN01_PWM_F            115132    0
+                 r1_f.1
+                u666_f.4
+      FAN01_REF_F             22164    0
+              fanhs01_f.2
+                r48_f.1
+      FAN01_TACH0_F           20205    0
+                 c6_f.1
+               cr666_f.3
+              cr666_f%d1.C
+             fanctrl01_f.6
+                r10_f.1
+                r61_f.1
+      FAN01_TACH1_F          202103    0
+                 c4_f.1
+                cr2_f.3
+               cr2_f%d1.C
+             fanctrl01_f.7
+                r11_f.1
+                r59_f.1
+      FAN01_TACH2_F          203116    0
+                 c2_f.1
+                cr4_f.3
+               cr4_f%d1.C
+             fanctrl01_f.4
+                r12_f.1
+                r57_f.1
+      FAN01_TACH3_F           22129    0
+                 c1_f.1
+                cr6_f.3
+               cr6_f%d1.C
+             fanctrl01_f.9
+                r13_f.1
+                r56_f.1
+      FAN01_TIMER_F          222109    0
+                c33_f.1
+              fanhs01_f.4
+      FAN23_AMB_LED_F         20447    0
+              fanled23_f.1
+           fanled23_f%led1.A
+                r54_f.2
+      fan23_amb_led_l         12033    0
+              fanled23_f.2
+           fanled23_f%led1.C
+                u11.R14
+      fan23_dir              203121    0
+                r21_f.1
+                u11.R16
+      FAN23_EN_F             207110    0
+                c30_f.1
+              fanhs23_f.1
+                 q6_f.3
+                r41_f.1
+      FAN23_GATE_HV_F         20551    0
+              fanhs23_f.8
+                r47_f.2
+      FAN23_GRN_LED_F        204147    0
+              fanled23_f.3
+           fanled23_f%led2.A
+                r55_f.2
+      fan23_grn_led_l         20321    0
+              fanled23_f.4
+           fanled23_f%led2.C
+                u11.W22
+      fan23_pg               203104    0
+                 r7_f.2
+                u11.P15
+      FAN23_PROG_F           223137    0
+              fanhs23_f.3
+                r49_f.2
+                r51_f.1
+      fan23_prsnt_l          207107    0
+                 q6_f.1
+                r22_f.1
+                r39_f.1
+                u11.N15
+      FAN23_PWM_BASE_F       202107    0
+                 q1_f.1
+               q1_f%q1.B
+                r444_f.2
+      FAN23_PWM_F             20310    0
+                r444_f.1
+                 u1_f.4
+      FAN23_REF_F             22264    0
+              fanhs23_f.2
+                r49_f.1
+      FAN23_TACH0_F           20327    0
+                 c8_f.1
+                cr1_f.3
+               cr1_f%d1.C
+             fanctrl23_f.6
+                r14_f.1
+                r63_f.1
+      FAN23_TACH1_F          202105    0
+                 c7_f.1
+                cr3_f.3
+               cr3_f%d1.C
+             fanctrl23_f.7
+                r15_f.1
+                r62_f.1
+      FAN23_TACH2_F           20204    0
+                 c5_f.1
+                cr5_f.3
+               cr5_f%d1.C
+             fanctrl23_f.4
+                r16_f.1
+                r60_f.1
+      FAN23_TACH3_F           20317    0
+                 c3_f.1
+                cr7_f.3
+               cr7_f%d1.C
+             fanctrl23_f.9
+                r17_f.1
+                r58_f.1
+      FAN23_TIMER_F          222111    0
+                c34_f.1
+              fanhs23_f.4
+      FAN45_AMB_LED_F         20747    0
+              fanled45_f.1
+           fanled45_f%led1.A
+                r473_f.2
+      fan45_amb_led_l         20304    0
+              fanled45_f.2
+           fanled45_f%led1.C
+                u11.P14
+      fan45_dir              203105    0
+                r372_f.1
+                u11.V21
+      FAN45_EN_F              20708    0
+                c41_f.1
+              fanhs45_f.1
+                 q2_f.3
+                r351_f.1
+      FAN45_GATE_HV_F         20451    0
+              fanhs45_f.8
+                r354_f.2
+      FAN45_GRN_LED_F        207147    0
+              fanled45_f.3
+           fanled45_f%led2.A
+                r476_f.2
+      fan45_grn_led_l         20303    0
+              fanled45_f.4
+           fanled45_f%led2.C
+                u11.M20
+      fan45_pg               204109    0
+                r348_f.2
+                u11.H12
+      FAN45_PROG_F           221150    0
+              fanhs45_f.3
+                r357_f.2
+                r358_f.1
+      fan45_prsnt_l          207105    0
+                 q2_f.1
+                r350_f.1
+                r374_f.1
+                u11.G12
+      FAN45_PWM_BASE_F        20208    0
+                 q4_f.1
+               q4_f%q1.B
+                r395_f.2
+      FAN45_PWM_F             20309    0
+                r395_f.1
+                u44_f.4
+      FAN45_REF_F             22363    0
+              fanhs45_f.2
+                r357_f.1
+      FAN45_TACH0_F          203126    0
+                c47_f.1
+                cr27_f.3
+              cr27_f%d1.C
+             fanctrl45_f.6
+                r388_f.1
+                r396_f.1
+      FAN45_TACH1_F           20326    0
+                c46_f.1
+                cr28_f.3
+              cr28_f%d1.C
+             fanctrl45_f.7
+                r387_f.1
+                r397_f.1
+      FAN45_TACH2_F          203118    0
+                c45_f.1
+                cr29_f.3
+              cr29_f%d1.C
+             fanctrl45_f.4
+                r386_f.1
+                r398_f.1
+      FAN45_TACH3_F           20318    0
+                c44_f.1
+                cr30_f.3
+              cr30_f%d1.C
+             fanctrl45_f.9
+                r385_f.1
+                r399_f.1
+      FAN45_TIMER_F           22047    0
+                c43_f.1
+              fanhs45_f.4
+      FAN_01_PWM_F            11931    0
+                q666_f.3
+              q666_f%q1.C
+                 r3_f.2
+                 r4_f.2
+                r20_f.1
+      FAN_23_PWM_F            20216    0
+                 q1_f.3
+               q1_f%q1.C
+                 r2_f.2
+                 r5_f.2
+                r23_f.1
+      FAN_45_PWM_F            20449    0
+                 q4_f.3
+               q4_f%q1.C
+                r370_f.2
+                r371_f.2
+                r375_f.1
+        v                    219102    0 
+FM_BDXDE_PMSYNC_PCH_CPU_CP              
+               u5_cp.BT9
+               u5_cp.H77
+             u5_cp_pch.BT9
+             u5_cp_pch.H77
+      FM_SLP_A_N_CP          204144    0
+                r14_cp.1
+               u5_cp.BB7
+             u5_cp_pch.BB7
+      fpga_bdx_cpu_rsmrst_n   11675    0
+                u11.G20
+                u17_cp.9
+      fpga_cpu_pch_pltrst_n   11465    0
+                u11.J19
+                u17_cp.8
+      fpga_fan_gpio_reset_l   12057    0
+                  j1.4
+                u11.C16
+      FPGA_IO_BANK5_PD0      223117    0
+                 r201.2
+      FPGA_IO_BANK5_PD1       22323    0
+                 r202.2
+      FPGA_IO_BANK6_PD1      223123    0
+                 r204.2
+      FPGA_IO_BANK7_PD0       22324    0
+                 r230.2
+      fpga_lb_addr<0>         11358    0
+                 u4.25
+                 u5.25
+                 u6.48
+                u11.J22
+                 u23.10
+                 u24.48
+      fpga_lb_addr<1>         11658    0
+                 u4.24
+                 u5.24
+                  u6.1
+                 u11.A2
+                 u23.9
+                 u24.1
+      fpga_lb_addr<2>        114158    0
+                 u4.23
+                 u5.23
+                  u6.2
+                 u11.A3
+                 u23.8
+                 u24.2
+      fpga_lb_addr<3>        115158    0
+                 u4.22
+                 u5.22
+                  u6.3
+                 u11.B4
+                 u23.7
+                 u24.3
+      fpga_lb_addr<4>         11657    0
+                 u4.21
+                 u5.21
+                  u6.4
+                 u11.A4
+                 u24.4
+      fpga_lb_addr<5>        114157    0
+                 u4.20
+                 u5.20
+                  u6.5
+                 u11.A5
+                 u24.5
+      fpga_lb_addr<6>         11457    0
+                 u4.19
+                 u5.19
+                  u6.6
+                 u11.B3
+                 u24.6
+      fpga_lb_addr<7>        115157    0
+                 u4.18
+                 u5.18
+                  u6.7
+                 u11.A6
+                 u24.7
+      fpga_lb_addr<8>         11557    0
+                  u4.8
+                  u5.8
+                 u6.17
+                u11.A12
+                 u24.17
+      fpga_lb_addr<9>        113158    0
+                  u4.7
+                  u5.7
+                 u6.18
+                u11.B12
+                 u24.18
+      fpga_lb_addr<10>        12075    0
+                  u4.6
+                  u5.6
+                 u6.19
+                u11.A13
+                 u24.19
+      fpga_lb_addr<11>       119157    0
+                  u4.5
+                  u5.5
+                 u6.20
+                u11.B13
+                 u24.20
+      fpga_lb_addr<12>        11957    0
+                  u4.4
+                  u5.4
+                 u6.21
+                u11.A14
+                 u24.21
+      fpga_lb_addr<13>       119158    0
+                  u4.3
+                  u5.3
+                 u6.22
+                u11.A15
+                 u24.22
+      fpga_lb_addr<14>        11958    0
+                  u4.2
+                  u5.2
+                 u6.23
+                u11.B15
+                 u24.23
+      fpga_lb_addr<15>       119175    0
+                  u4.1
+                  u5.1
+                 u6.24
+                u11.A16
+                 u24.24
+      fpga_lb_addr<16>        11977    0
+                 u4.48
+                 u5.48
+                 u6.25
+                u11.A19
+                 u24.25
+      fpga_lb_addr<17>       113157    0
+                 u4.17
+                 u5.17
+                  u6.8
+                 u11.B7
+                 u24.8
+      fpga_lb_addr<18>        11357    0
+                 u4.16
+                 u5.16
+                  u6.9
+                 u11.A7
+                 u24.9
+      fpga_lb_addr<19>       116157    0
+                  u4.9
+                  u5.9
+                 u6.16
+                u11.C12
+                 u24.16
+      fpga_lb_addr<20>        11573    0
+                u11.R19
+      fpga_lb_addr<21>        11555    0
+                u11.L13
+      fpga_lb_addr<22>       120158    0
+                u11.A18
+      fpga_lb_addr<23>       113168    0
+                u11.B18
+      fpga_lb_addr<24>       115170    0
+                 u11.C6
+      fpga_lb_data<0>        113175    0
+                 u4.29
+                 u5.29
+                 u6.45
+                u11.H21
+                 u23.11
+                 u24.45
+      fpga_lb_data<1>         11577    0
+                 u4.31
+                 u5.31
+                 u6.43
+                u11.G21
+                 u23.12
+                 u24.43
+      fpga_lb_data<2>        113178    0
+                 u4.33
+                 u5.33
+                 u6.41
+                u11.E22
+                 u23.13
+                 u24.41
+      fpga_lb_data<3>         11376    0
+                 u4.35
+                 u5.35
+                 u6.39
+                u11.D22
+                 u23.15
+                 u24.39
+      fpga_lb_data<4>         11377    0
+                 u4.38
+                 u5.38
+                 u6.36
+                u11.C22
+                 u23.16
+                 u24.36
+      fpga_lb_data<5>        114177    0
+                 u4.40
+                 u5.40
+                 u6.34
+                u11.A22
+                 u23.17
+                 u24.34
+      fpga_lb_data<6>        114178    0
+                 u4.42
+                 u5.42
+                 u6.32
+                u11.A21
+                 u23.18
+                 u24.32
+      fpga_lb_data<7>         11478    0
+                 u4.44
+                 u5.44
+                 u6.30
+                u11.A20
+                 u23.19
+                 u24.30
+      fpga_lb_data<8>        115176    0
+                 u4.30
+                 u5.30
+                 u6.44
+                u11.G22
+                 u24.44
+      fpga_lb_data<9>         11576    0
+                 u4.32
+                 u5.32
+                 u6.42
+                u11.F22
+                 u24.42
+      fpga_lb_data<10>        11458    0
+                 u4.34
+                 u5.34
+                 u6.40
+                u11.E21
+                 u24.40
+      fpga_lb_data<11>        11676    0
+                 u4.36
+                 u5.36
+                 u6.38
+                u11.D21
+                 u24.38
+      fpga_lb_data<12>       116177    0
+                 u4.39
+                 u5.39
+                 u6.35
+                u11.B22
+                 u24.35
+      fpga_lb_data<13>        11677    0
+                 u4.41
+                 u5.41
+                 u6.33
+                u11.B21
+                 u24.33
+      fpga_lb_data<14>       116178    0
+                 u4.43
+                 u5.43
+                 u6.31
+                u11.B20
+                 u24.31
+      fpga_lb_data<15>        11471    0
+                 u4.45
+                 u5.45
+                 u6.29
+                u11.B19
+                 u24.29
+      fpga_lb_nvram_bhe_l    116158    0
+                 u4.14
+                 u5.14
+                 u6.15
+                u11.B10
+                 u24.15
+      fpga_lb_nvram_ble_l    119176    0
+                 u4.15
+                 u5.15
+                 u6.14
+                 u11.A8
+                 u24.14
+      fpga_lb_nvram_cs0       12058    0
+                u11.A17
+                 u24.12
+      fpga_lb_nvram_cs1      120175    0
+                 u4.12
+                u11.D15
+      fpga_lb_nvram_cs2      120176    0
+                 u6.12
+                u11.G15
+      fpga_lb_nvram_cs3       12078    0
+                 u5.12
+                u11.K12
+      FPGA_LB_OE_L           115177    0
+                 u4.28
+                 u5.28
+                 u6.28
+                u11.H22
+                 u23.22
+                 u24.28
+      fpga_lb_rtc_cs_l        11572    0
+                 u11.C8
+                 u23.21
+      fpga_lb_we_l            11558    0
+                 u4.11
+                 u5.11
+                 u6.11
+                u11.A11
+                 u23.27
+                 u24.11
+      fpga_led_rear_bcn_blue  21954    0
+                mgmt.55
+                  q8.3
+                 r540.1
+        v                    121157    0 
+fpga_led_rear_stat_grn_l                
+                mgmt.54
+                 r550.2
+                u11.AB22
+                 u31.2
+        v                     11973    0 
+fpga_led_rear_stat_red_l                
+                mgmt.53
+                 r551.2
+                u11.W19
+                 u32.2
+      fpga_led_stat_grn       20414    0
+                 r553.1
+                 u31.4
+      FPGA_LED_STAT_RED      204133    0
+                 r552.1
+                 u32.4
+      fpga_m2_perst_l         11369    0
+                 m2.50
+                u11.Y12
+      fpga_m2_susclk          11561    0
+                 m2.68
+                 u11.C7
+      fpga_mphy_reset_l       20721    0
+                 mgmt.9
+                 u11.A1
+      FPGA_PCH_CRCERR         12164    0
+                 q15.G
+                 u22.4
+        v                     11356    0 
+fpga_pch_gbe_aux_pwr_ok                 
+                dbg_1.10
+                u11.A10
+                u19_cp.4
+      fpga_pwrgood_cpu       114173    0
+               dbg_j1.35
+                u11.L20
+               u17_cp.10
+      fpga_spare1             11438    0
+                  r4.2
+                u11.AA6
+      fpga_spare2            113138    0
+                  r5.2
+                u11.AB4
+      fpga_spare3             11538    0
+                  r6.2
+                u11.AB5
+      fpga_spare4             11338    0
+                  r7.2
+                u11.AB7
+      fpga_spare_pin_0       113169    0
+                u11.B16
+      fpga_spare_pin_1       116156    0
+                u11.J14
+      fpga_xdp_cpu_pwrgd     113173    0
+                 u11.T9
+                u17_cp.3
+      gp2_mvr                223124    0
+               r27_mvr.2
+               u1_mvr.33
+      gp2_vr                  22325    0
+                r27_vr.2
+                u1_vr.33
+      GPIO8                   20704    0
+                 r366.2
+               u5_cp.BJ4
+             u5_cp_pch.BJ4
+      GPIO15                  20222    0
+                 r365.2
+               u5_cp.BA23
+             u5_cp_pch.BA23
+      GPIO17                 205103    0
+                 r44.1
+               u5_cp.AN3
+             u5_cp_pch.AN3
+      GPIO24                  20444    0
+                 r364.2
+               u5_cp.BB21
+             u5_cp_pch.BB21
+      GPIO32                  20503    0
+                 r359.2
+               u5_cp.BB27
+             u5_cp_pch.BB27
+      GPIO44                  20802    0
+                 r357.2
+               u5_cp.BD18
+             u5_cp_pch.BD18
+      GPIO45                  20829    0
+                 r291.2
+               u5_cp.BA21
+             u5_cp_pch.BA21
+      GPIO70                 205102    0
+                 r42.1
+               u5_cp.AU14
+             u5_cp_pch.AU14
+      GPIO71                 207102    0
+                 r369.1
+               u5_cp.AM2
+             u5_cp_pch.AM2
+      h_bdxde_fivr_fault_cp  120153    0
+                r58_cp.2
+               u5_cp.AP69
+             u5_cp_pch.AP69
+               u15_cp.12
+      hsd_pcie_cpu_fp1_n     116164    0
+              lctl_conn.F8
+                u5_cp.J5
+              u5_cp_pch.J5
+      hsd_pcie_cpu_fp1_p      11664    0
+              lctl_conn.E8
+                u5_cp.G5
+              u5_cp_pch.G5
+      hsd_pcie_cpu_fp2_n     116153    0
+              lctl_conn.A7
+                u5_cp.C3
+              u5_cp_pch.C3
+      hsd_pcie_cpu_fp2_p     116154    0
+              lctl_conn.B7
+                u5_cp.E4
+              u5_cp_pch.E4
+      hsd_pcie_cpu_fp3_n     116166    0
+              lctl_conn.B6
+               u5_cp.T14
+             u5_cp_pch.T14
+      hsd_pcie_cpu_fp3_p     116163    0
+              lctl_conn.C6
+               u5_cp.P14
+             u5_cp_pch.P14
+      hsd_pcie_fp1_cpu_n      11324    0
+                 c243.2
+              lctl_conn.H7
+      hsd_pcie_fp1_cpu_p     120124    0
+                 c242.2
+              lctl_conn.G7
+      hsd_pcie_fp2_cpu_n      12024    0
+                 c25.2
+              lctl_conn.J6
+      hsd_pcie_fp2_cpu_p     114124    0
+                 c24.2
+              lctl_conn.H6
+      hsd_pcie_fp3_cpu_n      11424    0
+                 c241.2
+              lctl_conn.F6
+      hsd_pcie_fp3_cpu_p     119124    0
+                 c240.2
+              lctl_conn.E6
+      hsd_pcie_phy1_cpu_n    207154    0
+                 c27.2
+                mgmt.31
+      hsd_pcie_phy1_cpu_p     20754    0
+                 c51.2
+                mgmt.30
+      hsd_pcie_phy2_cpu_n    208154    0
+                 c50.2
+                 mgmt.3
+      hsd_pcie_phy2_cpu_p     20854    0
+                 c49.2
+                 mgmt.2
+      hsd_pcie_phy3_cpu_n    202153    0
+                 c48.2
+                mgmt.64
+      hsd_pcie_phy3_cpu_p     20253    0
+                 c47.2
+                mgmt.63
+      hsd_pe_cpu_mifpga2_n   116161    0
+              lctl_conn.B8
+                u5_cp.K7
+              u5_cp_pch.K7
+      hsd_pe_cpu_mifpga2_p    11661    0
+              lctl_conn.C8
+                u5_cp.H7
+              u5_cp_pch.H7
+      hsd_pe_cpu_mifpga_n     11648    0
+              rctl_conn.F2
+                u5_cp.J9
+              u5_cp_pch.J9
+      hsd_pe_cpu_mifpga_p     11649    0
+              rctl_conn.E2
+                u5_cp.F9
+              u5_cp_pch.F9
+      hsd_pe_cpu_sa_ln0_n     11552    1
+              rctl_conn.C6
+               u5_cp.D21
+             u5_cp_pch.D21
+      hsd_pe_cpu_sa_ln0_p    116145    0
+              rctl_conn.B6
+               u5_cp.B21
+             u5_cp_pch.B21
+      hsd_pe_cpu_sa_ln1_n     11646    0
+              rctl_conn.A7
+               u5_cp.C23
+             u5_cp_pch.C23
+      hsd_pe_cpu_sa_ln1_p    116146    0
+              rctl_conn.B7
+               u5_cp.A23
+             u5_cp_pch.A23
+      hsd_pe_cpu_sa_ln2_n    116147    0
+              rctl_conn.F8
+               u5_cp.D24
+             u5_cp_pch.D24
+      hsd_pe_cpu_sa_ln2_p     11647    0
+              rctl_conn.E8
+               u5_cp.B24
+             u5_cp_pch.B24
+      hsd_pe_cpu_sa_ln3_n    116148    0
+              rctl_conn.B8
+               u5_cp.C25
+             u5_cp_pch.C25
+      hsd_pe_cpu_sa_ln3_p     11652    0
+              rctl_conn.C8
+               u5_cp.A25
+             u5_cp_pch.A25
+      hsd_pe_mifpga2_cpu_n    11924    0
+                 c29.2
+              lctl_conn.J8
+      hsd_pe_mifpga2_cpu_p   115124    0
+                 c28.2
+              lctl_conn.H8
+      hsd_pe_mifpga_cpu_n     11524    0
+                 c245.2
+              rctl_conn.F4
+      hsd_pe_mifpga_cpu_p    116124    0
+                 c244.2
+              rctl_conn.E4
+      hsd_pe_sa_cpu_ln0_n     11624    0
+                 c46.2
+              rctl_conn.G7
+      hsd_pe_sa_cpu_ln0_p    122125    0
+                 c45.2
+              rctl_conn.H7
+      hsd_pe_sa_cpu_ln1_n     12225    0
+                 c44.2
+              rctl_conn.F6
+      hsd_pe_sa_cpu_ln1_p    121125    0
+                 c43.2
+              rctl_conn.E6
+      hsd_pe_sa_cpu_ln2_n     12125    0
+                 c42.2
+              rctl_conn.J6
+      hsd_pe_sa_cpu_ln2_p    120125    0
+                 c41.2
+              rctl_conn.H6
+      hsd_pe_sa_cpu_ln3_n     12025    0
+                 c40.2
+              rctl_conn.H8
+      hsd_pe_sa_cpu_ln3_p    114125    0
+                 c39.2
+              rctl_conn.J8
+        v                    208103    0 
+HSD_SATA_SSD_TO_PCH_AC_N                
+                 c98.1
+               u5_cp.CA33
+             u5_cp_pch.CA33
+        v                    208102    0 
+HSD_SATA_SSD_TO_PCH_AC_P                
+                 c97.1
+               u5_cp.BY32
+             u5_cp_pch.BY32
+      hsd_sgmii0_cpu_line_n   11663    0
+              lctl_conn.J4
+               u5_cp.J62
+             u5_cp_pch.J62
+      hsd_sgmii0_cpu_line_p  116152    0
+              lctl_conn.H4
+               u5_cp.F62
+             u5_cp_pch.F62
+      hsd_sgmii0_line_cpu_n  119125    0
+                 c353.2
+              lctl_conn.F4
+      hsd_sgmii0_line_cpu_p   11925    0
+                 c352.2
+              lctl_conn.E4
+      hsd_sgmii1_cpu_line_n   11653    0
+              lctl_conn.E5
+               u5_cp.J66
+             u5_cp_pch.J66
+      hsd_sgmii1_cpu_line_p   11654    0
+              lctl_conn.D5
+               u5_cp.F66
+             u5_cp_pch.F66
+      hsd_sgmii1_line_cpu_n  115125    0
+                 c351.2
+              lctl_conn.B5
+      hsd_sgmii1_line_cpu_p   11525    0
+                 c350.2
+              lctl_conn.A5
+      hsd_usb0_n             207128    0
+                mgmt.41
+               u5_cp.AD3
+             u5_cp_pch.AD3
+      hsd_usb0_p              20728    0
+                mgmt.42
+               u5_cp.AD1
+             u5_cp_pch.AD1
+      hsd_usb1_cpu_fp_n      116155    0
+              lctl_conn.C4
+               u5_cp.AK9
+             u5_cp_pch.AK9
+      hsd_usb1_cpu_fp_p       11655    0
+              lctl_conn.B4
+               u5_cp.AH9
+             u5_cp_pch.AH9
+      HSD_USB3_N             207101    0
+                  p8.2
+               u5_cp.AG7
+             u5_cp_pch.AG7
+      HSD_USB3_P             208101    0
+                  p8.3
+               u5_cp.AJ7
+             u5_cp_pch.AJ7
+      imon_tp_vr              22371    0
+                r26_vr.2
+                u1_vr.20
+      JTAG_BDX_TDO_CP         11368    0
+                u2_cp.4
+               u5_cp.T78
+             u5_cp_pch.T78
+      jtag_fpga_cpu_tdi_3v3  113155    0
+                u11.M17
+                 u13.3
+      jtag_fpga_cpu_tms_3v3   20502    0
+                u11.M13
+                 u13.6
+      jtag_fpga_cpu_trst_3v3  11355    0
+                u11.F20
+                 u13.10
+      jtag_mux_tck            11370    0
+                 u13.12
+                 u14.5
+      jtag_mux_tdi           114169    0
+                 u13.4
+                u25_cp.2
+      jtag_mux_tms           205104    0
+                 u13.7
+                u26_cp.2
+      jtag_mux_trst_l         11367    0
+                 u13.9
+                u27_cp.2
+        v                     11544    0 
+jtag_tdi_cpu_buf_1v05_cp                
+                r70_cp.2
+                u1_cp.6
+                u25_cp.4
+      jtag_trst_l_1v05_cp    114144    0
+                r75_cp.2
+                u1_cp.13
+                u27_cp.4
+      LED_BCN_BLUE_R         219136    0
+               bcn_led.2
+             bcn_led%led1.C
+                 r540.2
+      LED_DBG_L<0>           115164    0
+                 dbg0.C
+                 u27.15
+      LED_DBG_L<1>            11566    0
+                 dbg1.C
+                 u27.1
+      LED_DBG_L<2>           115165    0
+                 dbg2.C
+                 u27.2
+      LED_DBG_L<3>            11565    0
+                 dbg3.C
+                 u27.3
+      LED_DBG_L<4>           116170    0
+                 dbg4.C
+                 u27.4
+      LED_DBG_L<5>            11670    0
+                 dbg5.C
+                 u27.5
+      LED_DBG_L<6>            11669    0
+                 dbg6.C
+                 u27.6
+      LED_DBG_L<7>           116165    0
+                 dbg7.C
+                 u27.7
+      LED_PORT80_0L          122169    0
+                 cr33.1
+               cr33%d1.A
+                 u28.15
+      LED_PORT80_1L           12273    0
+                 cr21.1
+               cr21%d1.A
+                 u28.1
+      LED_PORT80_2L           12272    0
+                 cr20.1
+               cr20%d1.A
+                 u28.2
+      LED_PORT80_3L          122170    0
+                 cr32.1
+               cr32%d1.A
+                 u28.3
+      LED_PORT80_4L          121149    0
+                 cr31.1
+               cr31%d1.A
+                 u28.4
+      LED_PORT80_5L           12149    0
+                 cr30.1
+               cr30%d1.A
+                 u28.5
+      LED_PORT80_6L          121150    0
+                 cr29.1
+               cr29%d1.A
+                 u28.6
+      LED_PORT80_7L           12150    0
+                 cr28.1
+               cr28%d1.A
+                 u28.7
+      LED_SB_L<0>            122168    0
+                 cr27.1
+               cr27%d1.A
+                 u26.15
+      LED_SB_L<1>            122167    0
+                 cr26.1
+               cr26%d1.A
+                 u26.1
+      LED_SB_L<2>             12267    0
+                 cr12.1
+               cr12%d1.A
+                 u26.2
+      LED_SB_L<3>            121151    0
+                 cr11.1
+               cr11%d1.A
+                 u26.3
+      LED_SB_L<4>             12151    0
+                 cr10.1
+               cr10%d1.A
+                 u26.4
+      LED_SB_L<5>            121152    0
+                 cr9.1
+                cr9%d1.A
+                 u26.5
+      LED_SB_L<6>             12152    0
+                 cr8.1
+                cr8%d1.A
+                 u26.6
+      LED_SB_L<7>            121161    0
+                 cr7.1
+                cr7%d1.A
+                 u26.7
+      LED_STAT_GRN           220149    0
+                 q23.3
+                 r543.1
+      LED_STAT_GRN_R         219158    0
+                 r543.2
+               stat_led.3
+            stat_led%led2.C
+      LED_STAT_RED           220150    0
+                 q24.3
+                 r542.1
+      LED_STAT_RED_R          21958    0
+                 r542.2
+               stat_led.2
+            stat_led%led1.C
+      m2_sleep                11452    0
+                 m2.38
+                u11.AB18
+      m_a_act_n_cp           221161    0
+               u5_cp.CF33
+             u5_cp_pch.CF33
+                u6_cp.62
+                u7_cp.62
+      m_a_alert_n_cp         220118    0
+               u5_cp.CK33
+             u5_cp_pch.CK33
+               u6_cp.208
+               u7_cp.208
+      m_a_ba<0>_cp            21962    0
+               u5_cp.CH52
+             u5_cp_pch.CH52
+                u6_cp.81
+                u7_cp.81
+      m_a_ba<1>_cp            22161    0
+               u5_cp.CL51
+             u5_cp_pch.CL51
+               u6_cp.224
+               u7_cp.224
+      m_a_bg<0>_cp           221146    0
+               u5_cp.CM33
+             u5_cp_pch.CM33
+                u6_cp.63
+                u7_cp.63
+      m_a_bg<1>_cp            22146    0
+               u5_cp.CD35
+             u5_cp_pch.CD35
+               u6_cp.207
+               u7_cp.207
+      m_a_cke<0>_cp          204142    0
+               u5_cp.CD32
+             u5_cp_pch.CD32
+                u6_cp.60
+      m_a_cke<1>_cp          204117    0
+               u5_cp.CG32
+             u5_cp_pch.CG32
+               u6_cp.203
+      m_a_cke<2>_cp           20442    0
+               u5_cp.CL32
+             u5_cp_pch.CL32
+                u7_cp.60
+      m_a_cke<3>_cp           20417    0
+               u5_cp.CJ32
+             u5_cp_pch.CJ32
+               u7_cp.203
+      m_a_clk_dn<0>_cp        22226    0
+               u5_cp.CJ47
+             u5_cp_pch.CJ47
+                u6_cp.75
+      m_a_clk_dn<1>_cp        22063    0
+               u5_cp.CM45
+             u5_cp_pch.CM45
+                u7_cp.75
+      m_a_clk_dn<2>_cp       222125    0
+               u5_cp.CG47
+             u5_cp_pch.CG47
+               u6_cp.219
+      m_a_clk_dn<3>_cp       219163    0
+               u5_cp.CL43
+             u5_cp_pch.CL43
+               u7_cp.219
+      m_a_clk_dp<0>_cp        21963    0
+               u5_cp.CL47
+             u5_cp_pch.CL47
+                u6_cp.74
+      m_a_clk_dp<1>_cp       221164    0
+               u5_cp.CK45
+             u5_cp_pch.CK45
+                u7_cp.74
+      m_a_clk_dp<2>_cp       219164    0
+               u5_cp.CF45
+             u5_cp_pch.CF45
+               u6_cp.218
+      m_a_clk_dp<3>_cp        22163    0
+               u5_cp.CJ43
+             u5_cp_pch.CJ43
+               u7_cp.218
+      m_a_cs_n<0>_cp         221162    0
+               u5_cp.CL54
+             u5_cp_pch.CL54
+                u6_cp.84
+      m_a_cs_n<1>_cp          22162    0
+               u5_cp.CJ58
+             u5_cp_pch.CJ58
+                u6_cp.89
+      m_a_cs_n<4>_cp         220162    0
+               u5_cp.CD54
+             u5_cp_pch.CD54
+                u7_cp.84
+      m_a_cs_n<5>_cp          22225    0
+               u5_cp.CF52
+             u5_cp_pch.CF52
+                u7_cp.89
+      m_a_dq<0>_cp           207127    0
+               u5_cp.BY2
+             u5_cp_pch.BY2
+                u6_cp.5
+                u7_cp.5
+      m_a_dq<1>_cp            20726    0
+               u5_cp.BY4
+             u5_cp_pch.BY4
+               u6_cp.150
+               u7_cp.150
+      m_a_dq<2>_cp           207111    0
+               u5_cp.CD2
+             u5_cp_pch.CD2
+                u6_cp.12
+                u7_cp.12
+      m_a_dq<3>_cp           207125    0
+               u5_cp.CD4
+             u5_cp_pch.CD4
+               u6_cp.157
+               u7_cp.157
+      m_a_dq<4>_cp            20828    0
+               u5_cp.BW1
+             u5_cp_pch.BW1
+                u6_cp.3
+                u7_cp.3
+      m_a_dq<5>_cp           208127    0
+               u5_cp.BW3
+             u5_cp_pch.BW3
+               u6_cp.148
+               u7_cp.148
+      m_a_dq<6>_cp            20725    0
+               u5_cp.CC1
+             u5_cp_pch.CC1
+                u6_cp.10
+                u7_cp.10
+      m_a_dq<7>_cp           207124    0
+               u5_cp.CC3
+             u5_cp_pch.CC3
+               u6_cp.155
+               u7_cp.155
+      m_a_dq<8>_cp            20724    0
+               u5_cp.CC7
+             u5_cp_pch.CC7
+                u6_cp.16
+                u7_cp.16
+      m_a_dq<9>_cp            20827    0
+               u5_cp.CB9
+             u5_cp_pch.CB9
+               u6_cp.161
+               u7_cp.161
+      m_a_dq<10>_cp          205122    0
+               u5_cp.CM7
+             u5_cp_pch.CM7
+                u6_cp.23
+                u7_cp.23
+      m_a_dq<11>_cp           20522    0
+               u5_cp.CL9
+             u5_cp_pch.CL9
+               u6_cp.168
+               u7_cp.168
+      m_a_dq<12>_cp           20727    0
+               u5_cp.CA7
+             u5_cp_pch.CA7
+                u6_cp.14
+                u7_cp.14
+      m_a_dq<13>_cp          207126    0
+               u5_cp.BY9
+             u5_cp_pch.BY9
+               u6_cp.159
+               u7_cp.159
+      m_a_dq<14>_cp           20524    0
+               u5_cp.CK7
+             u5_cp_pch.CK7
+                u6_cp.21
+                u7_cp.21
+      m_a_dq<15>_cp           20744    0
+               u5_cp.CJ9
+             u5_cp_pch.CJ9
+               u6_cp.166
+               u7_cp.166
+      m_a_dq<16>_cp          208111    0
+               u5_cp.CB13
+             u5_cp_pch.CB13
+                u6_cp.27
+                u7_cp.27
+      m_a_dq<17>_cp          208144    0
+               u5_cp.CC14
+             u5_cp_pch.CC14
+               u6_cp.172
+               u7_cp.172
+      m_a_dq<18>_cp          205121    0
+               u5_cp.CL13
+             u5_cp_pch.CL13
+                u6_cp.34
+                u7_cp.34
+      m_a_dq<19>_cp          207144    0
+               u5_cp.CM14
+             u5_cp_pch.CM14
+               u6_cp.179
+               u7_cp.179
+      m_a_dq<20>_cp           20811    0
+               u5_cp.BY13
+             u5_cp_pch.BY13
+                u6_cp.25
+                u7_cp.25
+      m_a_dq<21>_cp          208112    0
+               u5_cp.CA14
+             u5_cp_pch.CA14
+               u6_cp.170
+               u7_cp.170
+      m_a_dq<22>_cp           20844    0
+               u5_cp.CJ13
+             u5_cp_pch.CJ13
+                u6_cp.32
+                u7_cp.32
+      m_a_dq<23>_cp          207143    0
+               u5_cp.CK14
+             u5_cp_pch.CK14
+               u6_cp.177
+               u7_cp.177
+      m_a_dq<24>_cp           20743    0
+               u5_cp.CD20
+             u5_cp_pch.CD20
+                u6_cp.38
+                u7_cp.38
+      m_a_dq<25>_cp           20812    0
+               u5_cp.CB20
+             u5_cp_pch.CB20
+               u6_cp.183
+               u7_cp.183
+      m_a_dq<26>_cp          208143    0
+               u5_cp.CD28
+             u5_cp_pch.CD28
+                u6_cp.45
+                u7_cp.45
+      m_a_dq<27>_cp          208128    0
+               u5_cp.CB28
+             u5_cp_pch.CB28
+               u6_cp.190
+               u7_cp.190
+      m_a_dq<28>_cp           20843    0
+               u5_cp.CF18
+             u5_cp_pch.CF18
+                u6_cp.36
+                u7_cp.36
+      m_a_dq<29>_cp          207142    0
+               u5_cp.CC18
+             u5_cp_pch.CC18
+               u6_cp.181
+               u7_cp.181
+      m_a_dq<30>_cp           20711    0
+               u5_cp.CF26
+             u5_cp_pch.CF26
+                u6_cp.43
+                u7_cp.43
+      m_a_dq<31>_cp           20712    0
+               u5_cp.CC26
+             u5_cp_pch.CC26
+               u6_cp.188
+               u7_cp.188
+      m_a_dq<32>_cp           22018    0
+               u5_cp.CD66
+             u5_cp_pch.CD66
+                u6_cp.97
+                u7_cp.97
+      m_a_dq<33>_cp          221142    0
+               u5_cp.CB66
+             u5_cp_pch.CB66
+               u6_cp.242
+               u7_cp.242
+      m_a_dq<34>_cp          220124    0
+               u5_cp.CD72
+             u5_cp_pch.CD72
+               u6_cp.104
+               u7_cp.104
+      m_a_dq<35>_cp           22142    0
+               u5_cp.CB72
+             u5_cp_pch.CB72
+               u6_cp.249
+               u7_cp.249
+      m_a_dq<36>_cp           22024    0
+               u5_cp.CF64
+             u5_cp_pch.CF64
+                u6_cp.95
+                u7_cp.95
+      m_a_dq<37>_cp          220123    0
+               u5_cp.CC64
+             u5_cp_pch.CC64
+               u6_cp.240
+               u7_cp.240
+      m_a_dq<38>_cp           22023    0
+               u5_cp.CF71
+             u5_cp_pch.CF71
+               u6_cp.102
+               u7_cp.102
+      m_a_dq<39>_cp           21946    0
+               u5_cp.CC71
+             u5_cp_pch.CC71
+               u6_cp.247
+               u7_cp.247
+      m_a_dq<40>_cp           21945    0
+               u5_cp.CL66
+             u5_cp_pch.CL66
+               u6_cp.108
+               u7_cp.108
+      m_a_dq<41>_cp          219144    0
+               u5_cp.CJ66
+             u5_cp_pch.CJ66
+               u6_cp.253
+               u7_cp.253
+      m_a_dq<42>_cp           21944    0
+               u5_cp.CL72
+             u5_cp_pch.CL72
+               u6_cp.115
+               u7_cp.115
+      m_a_dq<43>_cp          219143    0
+               u5_cp.CJ72
+             u5_cp_pch.CJ72
+               u6_cp.260
+               u7_cp.260
+      m_a_dq<44>_cp          219126    0
+               u5_cp.CM64
+             u5_cp_pch.CM64
+               u6_cp.106
+               u7_cp.106
+      m_a_dq<45>_cp           21943    0
+               u5_cp.CK64
+             u5_cp_pch.CK64
+               u6_cp.251
+               u7_cp.251
+      m_a_dq<46>_cp           21926    0
+               u5_cp.CM71
+             u5_cp_pch.CM71
+               u6_cp.113
+               u7_cp.113
+      m_a_dq<47>_cp          219125    0
+               u5_cp.CK71
+             u5_cp_pch.CK71
+               u6_cp.258
+               u7_cp.258
+      m_a_dq<48>_cp          221141    0
+               u5_cp.BT72
+             u5_cp_pch.BT72
+               u6_cp.119
+               u7_cp.119
+      m_a_dq<49>_cp           22141    0
+               u5_cp.BU71
+             u5_cp_pch.BU71
+               u6_cp.264
+               u7_cp.264
+      m_a_dq<50>_cp          221117    0
+               u5_cp.BG72
+             u5_cp_pch.BG72
+               u6_cp.126
+               u7_cp.126
+      m_a_dq<51>_cp           22117    0
+               u5_cp.BH71
+             u5_cp_pch.BH71
+               u6_cp.271
+               u7_cp.271
+      m_a_dq<52>_cp          221118    0
+               u5_cp.BV72
+             u5_cp_pch.BV72
+               u6_cp.117
+               u7_cp.117
+      m_a_dq<53>_cp           22118    0
+               u5_cp.BW71
+             u5_cp_pch.BW71
+               u6_cp.262
+               u7_cp.262
+      m_a_dq<54>_cp          221124    0
+               u5_cp.BJ72
+             u5_cp_pch.BJ72
+               u6_cp.124
+               u7_cp.124
+      m_a_dq<55>_cp           22124    0
+               u5_cp.BL71
+             u5_cp_pch.BL71
+               u6_cp.269
+               u7_cp.269
+      m_a_dq<56>_cp          221123    0
+               u5_cp.BU67
+             u5_cp_pch.BU67
+               u6_cp.130
+               u7_cp.130
+      m_a_dq<57>_cp           22123    0
+               u5_cp.BT66
+             u5_cp_pch.BT66
+               u6_cp.275
+               u7_cp.275
+      m_a_dq<58>_cp          220142    0
+               u5_cp.BH67
+             u5_cp_pch.BH67
+               u6_cp.137
+               u7_cp.137
+      m_a_dq<59>_cp           22042    0
+               u5_cp.BG66
+             u5_cp_pch.BG66
+               u6_cp.282
+               u7_cp.282
+      m_a_dq<60>_cp          219142    0
+               u5_cp.BW67
+             u5_cp_pch.BW67
+               u6_cp.128
+               u7_cp.128
+      m_a_dq<61>_cp          220141    0
+               u5_cp.BV66
+             u5_cp_pch.BV66
+               u6_cp.273
+               u7_cp.273
+      m_a_dq<62>_cp           22041    0
+               u5_cp.BL67
+             u5_cp_pch.BL67
+               u6_cp.135
+               u7_cp.135
+      m_a_dq<63>_cp          220122    0
+               u5_cp.BJ66
+             u5_cp_pch.BJ66
+               u6_cp.280
+               u7_cp.280
+      m_a_dqs_dn<0>_cp        20518    0
+               u5_cp.CB4
+             u5_cp_pch.CB4
+               u6_cp.152
+               u7_cp.152
+      m_a_dqs_dn<1>_cp        20418    0
+               u5_cp.CH7
+             u5_cp_pch.CH7
+               u6_cp.163
+               u7_cp.163
+      m_a_dqs_dn<2>_cp        20422    0
+               u5_cp.CG13
+             u5_cp_pch.CG13
+               u6_cp.174
+               u7_cp.174
+      m_a_dqs_dn<3>_cp       205144    0
+               u5_cp.CD24
+             u5_cp_pch.CD24
+               u6_cp.185
+               u7_cp.185
+      m_a_dqs_dn<4>_cp       221144    0
+               u5_cp.CD69
+             u5_cp_pch.CD69
+               u6_cp.244
+               u7_cp.244
+      m_a_dqs_dn<5>_cp        22144    1
+               u5_cp.CL69
+             u5_cp_pch.CL69
+               u6_cp.255
+               u7_cp.255
+      m_a_dqs_dn<6>_cp        22322    0
+               u5_cp.BM72
+             u5_cp_pch.BM72
+               u6_cp.266
+               u7_cp.266
+      m_a_dqs_dn<7>_cp       223121    0
+               u5_cp.BN67
+             u5_cp_pch.BN67
+               u6_cp.277
+               u7_cp.277
+      m_a_dqs_dn<8>_cp       204122    0
+               u5_cp.CL24
+             u5_cp_pch.CL24
+               u6_cp.196
+               u7_cp.196
+      m_a_dqs_dn<9>_cp        20707    0
+               u5_cp.CA1
+             u5_cp_pch.CA1
+                u6_cp.8
+                u7_cp.8
+      m_a_dqs_dn<10>_cp      204118    0
+               u5_cp.CD9
+             u5_cp_pch.CD9
+                u6_cp.19
+                u7_cp.19
+      m_a_dqs_dn<11>_cp      204124    0
+               u5_cp.CF14
+             u5_cp_pch.CF14
+                u6_cp.30
+                u7_cp.30
+      m_a_dqs_dn<12>_cp      204123    0
+               u5_cp.CC22
+             u5_cp_pch.CC22
+                u6_cp.41
+                u7_cp.41
+      m_a_dqs_dn<13>_cp       22145    0
+               u5_cp.CC67
+             u5_cp_pch.CC67
+               u6_cp.100
+               u7_cp.100
+      m_a_dqs_dn<14>_cp      221145    0
+               u5_cp.CK67
+             u5_cp_pch.CK67
+               u6_cp.111
+               u7_cp.111
+      m_a_dqs_dn<15>_cp       22318    0
+               u5_cp.BR71
+             u5_cp_pch.BR71
+               u6_cp.122
+               u7_cp.122
+      m_a_dqs_dn<16>_cp      223122    0
+               u5_cp.BP66
+             u5_cp_pch.BP66
+               u6_cp.133
+               u7_cp.133
+      m_a_dqs_dn<17>_cp       20423    0
+               u5_cp.CK22
+             u5_cp_pch.CK22
+                u6_cp.52
+                u7_cp.52
+      m_a_dqs_dp<0>_cp       207109    0
+               u5_cp.CB2
+             u5_cp_pch.CB2
+               u6_cp.153
+               u7_cp.153
+      m_a_dqs_dp<1>_cp       205124    0
+               u5_cp.CG9
+             u5_cp_pch.CG9
+               u6_cp.164
+               u7_cp.164
+      m_a_dqs_dp<2>_cp       205123    0
+               u5_cp.CH14
+             u5_cp_pch.CH14
+               u6_cp.175
+               u7_cp.175
+      m_a_dqs_dp<3>_cp        20710    0
+               u5_cp.CB24
+             u5_cp_pch.CB24
+               u6_cp.186
+               u7_cp.186
+      m_a_dqs_dp<4>_cp        22242    0
+               u5_cp.CB69
+             u5_cp_pch.CB69
+               u6_cp.245
+               u7_cp.245
+      m_a_dqs_dp<5>_cp       221113    0
+               u5_cp.CJ69
+             u5_cp_pch.CJ69
+               u6_cp.256
+               u7_cp.256
+      m_a_dqs_dp<6>_cp       222141    0
+               u5_cp.BN71
+             u5_cp_pch.BN71
+               u6_cp.267
+               u7_cp.267
+      m_a_dqs_dp<7>_cp        22241    0
+               u5_cp.BM66
+             u5_cp_pch.BM66
+               u6_cp.278
+               u7_cp.278
+      m_a_dqs_dp<8>_cp        20523    0
+               u5_cp.CJ24
+             u5_cp_pch.CJ24
+               u6_cp.197
+               u7_cp.197
+      m_a_dqs_dp<9>_cp       207112    0
+               u5_cp.CA3
+             u5_cp_pch.CA3
+                u6_cp.7
+                u7_cp.7
+      m_a_dqs_dp<10>_cp       20544    0
+               u5_cp.CF7
+             u5_cp_pch.CF7
+                u6_cp.18
+                u7_cp.18
+      m_a_dqs_dp<11>_cp      205143    0
+               u5_cp.CD13
+             u5_cp_pch.CD13
+                u6_cp.29
+                u7_cp.29
+      m_a_dqs_dp<12>_cp       20543    0
+               u5_cp.CF22
+             u5_cp_pch.CF22
+                u6_cp.40
+                u7_cp.40
+      m_a_dqs_dp<13>_cp      221143    0
+               u5_cp.CF67
+             u5_cp_pch.CF67
+                u6_cp.99
+                u7_cp.99
+      m_a_dqs_dp<14>_cp       22143    0
+               u5_cp.CM67
+             u5_cp_pch.CM67
+               u6_cp.110
+               u7_cp.110
+      m_a_dqs_dp<15>_cp       22321    0
+               u5_cp.BP72
+             u5_cp_pch.BP72
+               u6_cp.121
+               u7_cp.121
+      m_a_dqs_dp<16>_cp      222142    0
+               u5_cp.BR67
+             u5_cp_pch.BR67
+               u6_cp.132
+               u7_cp.132
+      m_a_dqs_dp<17>_cp       20424    0
+               u5_cp.CM22
+             u5_cp_pch.CM22
+                u6_cp.51
+                u7_cp.51
+      m_a_ecc<0>_cp           20742    0
+               u5_cp.CL20
+             u5_cp_pch.CL20
+                u6_cp.49
+                u7_cp.49
+      m_a_ecc<1>_cp          207118    0
+               u5_cp.CJ20
+             u5_cp_pch.CJ20
+               u6_cp.194
+               u7_cp.194
+      m_a_ecc<2>_cp          208142    0
+               u5_cp.CL28
+             u5_cp_pch.CL28
+                u6_cp.56
+                u7_cp.56
+      m_a_ecc<3>_cp          208126    0
+               u5_cp.CJ28
+             u5_cp_pch.CJ28
+               u6_cp.201
+               u7_cp.201
+      m_a_ecc<4>_cp           20842    0
+               u5_cp.CM18
+             u5_cp_pch.CM18
+                u6_cp.47
+                u7_cp.47
+      m_a_ecc<5>_cp           20826    0
+               u5_cp.CK18
+             u5_cp_pch.CK18
+               u6_cp.192
+               u7_cp.192
+      m_a_ecc<6>_cp          207141    0
+               u5_cp.CM26
+             u5_cp_pch.CM26
+                u6_cp.54
+                u7_cp.54
+      m_a_ecc<7>_cp          208125    0
+               u5_cp.CK26
+             u5_cp_pch.CK26
+               u6_cp.199
+               u7_cp.199
+      m_a_ma<0>_cp            22113    0
+               u5_cp.CK49
+             u5_cp_pch.CK49
+                u6_cp.79
+                u7_cp.79
+      m_a_ma<1>_cp           221125    0
+               u5_cp.CK41
+             u5_cp_pch.CK41
+                u6_cp.72
+                u7_cp.72
+      m_a_ma<2>_cp           221115    0
+               u5_cp.CM41
+             u5_cp_pch.CM41
+               u6_cp.216
+               u7_cp.216
+      m_a_ma<3>_cp            22125    0
+               u5_cp.CF41
+             u5_cp_pch.CF41
+                u6_cp.71
+                u7_cp.71
+      m_a_ma<4>_cp           221122    0
+               u5_cp.CL39
+             u5_cp_pch.CL39
+               u6_cp.214
+               u7_cp.214
+      m_a_ma<5>_cp            22122    0
+               u5_cp.CG39
+             u5_cp_pch.CG39
+               u6_cp.213
+               u7_cp.213
+      m_a_ma<6>_cp            21961    0
+               u5_cp.CK37
+             u5_cp_pch.CK37
+                u6_cp.69
+                u7_cp.69
+      m_a_ma<7>_cp           220146    0
+               u5_cp.CD39
+             u5_cp_pch.CD39
+               u6_cp.211
+               u7_cp.211
+      m_a_ma<8>_cp           221121    0
+               u5_cp.CM37
+             u5_cp_pch.CM37
+                u6_cp.68
+                u7_cp.68
+      m_a_ma<9>_cp           220145    0
+               u5_cp.CJ35
+             u5_cp_pch.CJ35
+                u6_cp.66
+                u7_cp.66
+      m_a_ma<10>_cp          220161    0
+               u5_cp.CJ51
+             u5_cp_pch.CJ51
+               u6_cp.225
+               u7_cp.225
+      m_a_ma<11>_cp           22114    0
+               u5_cp.CG35
+             u5_cp_pch.CG35
+               u6_cp.210
+               u7_cp.210
+      m_a_ma<12>_cp           22061    0
+               u5_cp.CF37
+             u5_cp_pch.CF37
+                u6_cp.65
+                u7_cp.65
+      m_a_ma<13>_cp          221116    0
+               u5_cp.CK56
+             u5_cp_pch.CK56
+               u6_cp.232
+               u7_cp.232
+      m_a_ma<14>_cp           22126    0
+               u5_cp.CM52
+             u5_cp_pch.CM52
+               u6_cp.228
+               u7_cp.228
+      m_a_ma<15>_cp          221126    0
+               u5_cp.CJ54
+             u5_cp_pch.CJ54
+                u6_cp.86
+                u7_cp.86
+      m_a_ma<16>_cp          219161    0
+               u5_cp.CF49
+             u5_cp_pch.CF49
+                u6_cp.82
+                u7_cp.82
+      m_a_odt<0>_cp           22062    0
+               u5_cp.CF56
+             u5_cp_pch.CF56
+                u6_cp.87
+      m_a_odt<1>_cp          219162    0
+               u5_cp.CM60
+             u5_cp_pch.CM60
+                u6_cp.91
+      m_a_odt<2>_cp          222143    0
+               u5_cp.CM56
+             u5_cp_pch.CM56
+                u7_cp.87
+      m_a_odt<3>_cp           22218    0
+               u5_cp.CH60
+             u5_cp_pch.CH60
+                u7_cp.91
+      m_a_par_cp              22121    0
+               u5_cp.CM49
+             u5_cp_pch.CM49
+               u6_cp.222
+               u7_cp.222
+      m_ab_reset_n_cp         20823    0
+               u5_cp.CR43
+             u5_cp_pch.CR43
+                u6_cp.58
+                u7_cp.58
+                u8_cp.58
+                u9_cp.58
+      m_b_act_n_cp           219148    0
+               u5_cp.CU41
+             u5_cp_pch.CU41
+                u8_cp.62
+                u9_cp.62
+      m_b_alert_n_cp         219111    0
+               u5_cp.CT42
+             u5_cp_pch.CT42
+               u8_cp.208
+               u9_cp.208
+      m_b_ba<0>_cp            22115    0
+               u5_cp.CR61
+             u5_cp_pch.CR61
+                u8_cp.81
+                u9_cp.81
+      m_b_ba<1>_cp           221114    0
+               u5_cp.CT60
+             u5_cp_pch.CT60
+               u8_cp.224
+               u9_cp.224
+      m_b_bg<0>_cp            22116    0
+               u5_cp.CR41
+             u5_cp_pch.CR41
+                u8_cp.63
+                u9_cp.63
+      m_b_bg<1>_cp            21948    0
+               u5_cp.CV42
+             u5_cp_pch.CV42
+               u8_cp.207
+               u9_cp.207
+      m_b_cke<0>_cp          204141    0
+               u5_cp.CT40
+             u5_cp_pch.CT40
+                u8_cp.60
+      m_b_cke<1>_cp           20845    0
+               u5_cp.CV38
+             u5_cp_pch.CV38
+               u8_cp.203
+      m_b_cke<2>_cp          205118    0
+               u5_cp.CV40
+             u5_cp_pch.CV40
+                u9_cp.60
+      m_b_cke<3>_cp           20441    0
+               u5_cp.CT38
+             u5_cp_pch.CT38
+               u9_cp.203
+      m_b_clk_dn<0>_cp        22243    0
+               u5_cp.CT58
+             u5_cp_pch.CT58
+                u8_cp.75
+      m_b_clk_dn<1>_cp       222124    0
+               u5_cp.CR54
+             u5_cp_pch.CR54
+                u9_cp.75
+      m_b_clk_dn<2>_cp        22224    0
+               u5_cp.CR57
+             u5_cp_pch.CR57
+               u8_cp.219
+      m_b_clk_dn<3>_cp       222123    0
+               u5_cp.CT53
+             u5_cp_pch.CT53
+               u9_cp.219
+      m_b_clk_dp<0>_cp        22028    0
+               u5_cp.CV58
+             u5_cp_pch.CV58
+                u8_cp.74
+      m_b_clk_dp<1>_cp       220127    0
+               u5_cp.CU54
+             u5_cp_pch.CU54
+                u9_cp.74
+      m_b_clk_dp<2>_cp        22027    0
+               u5_cp.CU57
+             u5_cp_pch.CU57
+               u8_cp.218
+      m_b_clk_dp<3>_cp       220111    0
+               u5_cp.CV53
+             u5_cp_pch.CV53
+               u9_cp.218
+      m_b_cs_n<0>_cp          22223    0
+               u5_cp.CR63
+             u5_cp_pch.CR63
+                u8_cp.84
+      m_b_cs_n<1>_cp          22011    0
+               u5_cp.CV66
+             u5_cp_pch.CV66
+                u8_cp.89
+      m_b_cs_n<4>_cp         222117    1
+               u5_cp.CR65
+             u5_cp_pch.CR65
+                u9_cp.84
+      m_b_cs_n<5>_cp          22217    1
+               u5_cp.CT68
+             u5_cp_pch.CT68
+                u9_cp.89
+      m_b_dq<0>_cp            20825    0
+               u5_cp.CG1
+             u5_cp_pch.CG1
+                u8_cp.5
+                u9_cp.5
+      M_B_DQ<1>_CP           208113    0
+               u5_cp.CG3
+             u5_cp_pch.CG3
+               u8_cp.150
+               u9_cp.150
+      m_b_dq<2>_cp           207116    0
+               u5_cp.CM3
+             u5_cp_pch.CM3
+                u8_cp.12
+                u9_cp.12
+      m_b_dq<3>_cp            20716    0
+               u5_cp.CN4
+             u5_cp_pch.CN4
+               u8_cp.157
+               u9_cp.157
+      m_b_dq<4>_cp            20813    0
+               u5_cp.CF2
+             u5_cp_pch.CF2
+                u8_cp.3
+                u9_cp.3
+      m_b_dq<5>_cp           208114    0
+               u5_cp.CF4
+             u5_cp_pch.CF4
+               u8_cp.148
+               u9_cp.148
+      m_b_dq<6>_cp           208122    0
+               u5_cp.CL2
+             u5_cp_pch.CL2
+                u8_cp.10
+                u9_cp.10
+      m_b_dq<7>_cp            20816    0
+               u5_cp.CK4
+             u5_cp_pch.CK4
+               u8_cp.155
+               u9_cp.155
+      m_b_dq<8>_cp            20822    0
+               u5_cp.CU8
+             u5_cp_pch.CU8
+                u8_cp.16
+                u9_cp.16
+      m_b_dq<9>_cp           208121    0
+               u5_cp.CR8
+             u5_cp_pch.CR8
+               u8_cp.161
+               u9_cp.161
+      m_b_dq<10>_cp           20521    0
+               u5_cp.CU13
+             u5_cp_pch.CU13
+                u8_cp.23
+                u9_cp.23
+      m_b_dq<11>_cp          205114    0
+               u5_cp.CR13
+             u5_cp_pch.CR13
+               u8_cp.168
+               u9_cp.168
+      m_b_dq<12>_cp          205115    0
+               u5_cp.CU5
+             u5_cp_pch.CU5
+                u8_cp.14
+                u9_cp.14
+      m_b_dq<13>_cp           20515    0
+               u5_cp.CT7
+             u5_cp_pch.CT7
+               u8_cp.159
+               u9_cp.159
+      m_b_dq<14>_cp          207113    0
+               u5_cp.CV12
+             u5_cp_pch.CV12
+                u8_cp.21
+                u9_cp.21
+      m_b_dq<15>_cp           20741    0
+               u5_cp.CT12
+             u5_cp_pch.CT12
+               u8_cp.166
+               u9_cp.166
+      m_b_dq<16>_cp          207123    0
+               u5_cp.CV16
+             u5_cp_pch.CV16
+                u8_cp.27
+                u9_cp.27
+      m_b_dq<17>_cp          208141    0
+               u5_cp.CT16
+             u5_cp_pch.CT16
+               u8_cp.172
+               u9_cp.172
+      m_b_dq<18>_cp          207114    0
+               u5_cp.CV20
+             u5_cp_pch.CV20
+                u8_cp.34
+                u9_cp.34
+      m_b_dq<19>_cp           20841    0
+               u5_cp.CT20
+             u5_cp_pch.CT20
+               u8_cp.179
+               u9_cp.179
+      m_b_dq<20>_cp           20516    0
+               u5_cp.CU15
+             u5_cp_pch.CU15
+                u8_cp.25
+                u9_cp.25
+      m_b_dq<21>_cp           20723    0
+               u5_cp.CR15
+             u5_cp_pch.CR15
+               u8_cp.170
+               u9_cp.170
+      m_b_dq<22>_cp           20718    0
+               u5_cp.CU19
+             u5_cp_pch.CU19
+                u8_cp.32
+                u9_cp.32
+      m_b_dq<23>_cp          207122    0
+               u5_cp.CR19
+             u5_cp_pch.CR19
+               u8_cp.177
+               u9_cp.177
+      m_b_dq<24>_cp          208124    0
+               u5_cp.CU24
+             u5_cp_pch.CU24
+                u8_cp.38
+                u9_cp.38
+      m_b_dq<25>_cp           20722    0
+               u5_cp.CR24
+             u5_cp_pch.CR24
+               u8_cp.183
+               u9_cp.183
+      m_b_dq<26>_cp           20824    0
+               u5_cp.CU28
+             u5_cp_pch.CU28
+                u8_cp.45
+                u9_cp.45
+      m_b_dq<27>_cp          207121    0
+               u5_cp.CR28
+             u5_cp_pch.CR28
+               u8_cp.190
+               u9_cp.190
+      m_b_dq<28>_cp          208123    0
+               u5_cp.CV23
+             u5_cp_pch.CV23
+                u8_cp.36
+                u9_cp.36
+      m_b_dq<29>_cp          207117    0
+               u5_cp.CT23
+             u5_cp_pch.CT23
+               u8_cp.181
+               u9_cp.181
+      m_b_dq<30>_cp           20821    0
+               u5_cp.CV27
+             u5_cp_pch.CV27
+                u8_cp.43
+                u9_cp.43
+      m_b_dq<31>_cp           20717    0
+               u5_cp.CT27
+             u5_cp_pch.CT27
+               u8_cp.188
+               u9_cp.188
+      m_b_dq<32>_cp           21925    0
+               u5_cp.CT73
+             u5_cp_pch.CT73
+                u8_cp.97
+                u9_cp.97
+      m_b_dq<33>_cp           21912    0
+               u5_cp.CU74
+             u5_cp_pch.CU74
+               u8_cp.242
+               u9_cp.242
+      m_b_dq<34>_cp          219124    0
+               u5_cp.CJ78
+             u5_cp_pch.CJ78
+               u8_cp.104
+               u9_cp.104
+      m_b_dq<35>_cp           21924    0
+               u5_cp.CJ76
+             u5_cp_pch.CJ76
+               u8_cp.249
+               u9_cp.249
+      m_b_dq<36>_cp          219113    0
+               u5_cp.CU71
+             u5_cp_pch.CU71
+                u8_cp.95
+                u9_cp.95
+      m_b_dq<37>_cp           21913    0
+               u5_cp.CR71
+             u5_cp_pch.CR71
+               u8_cp.240
+               u9_cp.240
+      m_b_dq<38>_cp          219114    0
+               u5_cp.CL77
+             u5_cp_pch.CL77
+               u8_cp.102
+               u9_cp.102
+      m_b_dq<39>_cp           21914    0
+               u5_cp.CK75
+             u5_cp_pch.CK75
+               u8_cp.247
+               u9_cp.247
+      m_b_dq<40>_cp          219123    0
+               u5_cp.CF77
+             u5_cp_pch.CF77
+               u8_cp.108
+               u9_cp.108
+      m_b_dq<41>_cp           21923    0
+               u5_cp.CF75
+             u5_cp_pch.CF75
+               u8_cp.253
+               u9_cp.253
+      m_b_dq<42>_cp           22022    0
+               u5_cp.CB77
+             u5_cp_pch.CB77
+               u8_cp.115
+               u9_cp.115
+      m_b_dq<43>_cp          220121    0
+               u5_cp.CB75
+             u5_cp_pch.CB75
+               u8_cp.260
+               u9_cp.260
+      m_b_dq<44>_cp           21916    0
+               u5_cp.CG78
+             u5_cp_pch.CG78
+               u8_cp.106
+               u9_cp.106
+      m_b_dq<45>_cp           21915    0
+               u5_cp.CG76
+             u5_cp_pch.CG76
+               u8_cp.251
+               u9_cp.251
+      m_b_dq<46>_cp          219118    0
+               u5_cp.CC78
+             u5_cp_pch.CC78
+               u8_cp.113
+               u9_cp.113
+      m_b_dq<47>_cp          219117    0
+               u5_cp.CC76
+             u5_cp_pch.CC76
+               u8_cp.258
+               u9_cp.258
+      m_b_dq<48>_cp           21942    0
+               u5_cp.BW78
+             u5_cp_pch.BW78
+               u8_cp.119
+               u9_cp.119
+      m_b_dq<49>_cp           22021    0
+               u5_cp.BW76
+             u5_cp_pch.BW76
+               u8_cp.264
+               u9_cp.264
+      m_b_dq<50>_cp          220115    0
+               u5_cp.BP78
+             u5_cp_pch.BP78
+               u8_cp.126
+               u9_cp.126
+      M_B_DQ<51>_CP           22015    0
+               u5_cp.BP76
+             u5_cp_pch.BP76
+               u8_cp.271
+               u9_cp.271
+      m_b_dq<52>_cp          220116    1
+               u5_cp.BY77
+             u5_cp_pch.BY77
+               u8_cp.117
+               u9_cp.117
+      m_b_dq<53>_cp           22014    0
+               u5_cp.BY75
+             u5_cp_pch.BY75
+               u8_cp.262
+               u9_cp.262
+      m_b_dq<54>_cp          219141    0
+               u5_cp.BR77
+             u5_cp_pch.BR77
+               u8_cp.124
+               u9_cp.124
+      m_b_dq<55>_cp           21941    0
+               u5_cp.BR75
+             u5_cp_pch.BR75
+               u8_cp.269
+               u9_cp.269
+      m_b_dq<56>_cp          219122    0
+               u5_cp.BL77
+             u5_cp_pch.BL77
+               u8_cp.130
+               u9_cp.130
+      m_b_dq<57>_cp           21922    0
+               u5_cp.BL75
+             u5_cp_pch.BL75
+               u8_cp.275
+               u9_cp.275
+      m_b_dq<58>_cp          219121    0
+               u5_cp.BG77
+             u5_cp_pch.BG77
+               u8_cp.137
+               u9_cp.137
+      m_b_dq<59>_cp           21921    0
+               u5_cp.BG75
+             u5_cp_pch.BG75
+               u8_cp.282
+               u9_cp.282
+      m_b_dq<60>_cp          219116    0
+               u5_cp.BM78
+             u5_cp_pch.BM78
+               u8_cp.128
+               u9_cp.128
+      m_b_dq<61>_cp          219115    0
+               u5_cp.BM76
+             u5_cp_pch.BM76
+               u8_cp.273
+               u9_cp.273
+      m_b_dq<62>_cp           21918    0
+               u5_cp.BH78
+             u5_cp_pch.BH78
+               u8_cp.135
+               u9_cp.135
+      m_b_dq<63>_cp           21917    0
+               u5_cp.BH76
+             u5_cp_pch.BH76
+               u8_cp.280
+               u9_cp.280
+      m_b_dqs_dn<0>_cp       205113    0
+               u5_cp.CJ1
+             u5_cp_pch.CJ1
+               u8_cp.152
+               u9_cp.152
+      m_b_dqs_dn<1>_cp        20415    0
+               u5_cp.CU10
+             u5_cp_pch.CU10
+               u8_cp.163
+               u9_cp.163
+      m_b_dqs_dn<2>_cp        20513    0
+               u5_cp.CV18
+             u5_cp_pch.CV18
+               u8_cp.174
+               u9_cp.174
+      m_b_dqs_dn<3>_cp       205117    0
+               u5_cp.CU26
+             u5_cp_pch.CU26
+               u8_cp.185
+               u9_cp.185
+      m_b_dqs_dn<4>_cp       220144    0
+               u5_cp.CM76
+             u5_cp_pch.CM76
+               u8_cp.244
+               u9_cp.244
+      m_b_dqs_dn<5>_cp        22044    0
+               u5_cp.CD77
+             u5_cp_pch.CD77
+               u8_cp.255
+               u9_cp.255
+      m_b_dqs_dn<6>_cp       222121    0
+               u5_cp.BT78
+             u5_cp_pch.BT78
+               u8_cp.266
+               u9_cp.266
+      m_b_dqs_dn<7>_cp        22221    0
+               u5_cp.BJ77
+             u5_cp_pch.BJ77
+               u8_cp.277
+               u9_cp.277
+      m_b_dqs_dn<8>_cp       207130    0
+               u5_cp.CV34
+             u5_cp_pch.CV34
+               u8_cp.196
+               u9_cp.196
+      m_b_dqs_dn<9>_cp        20517    0
+               u5_cp.CH4
+             u5_cp_pch.CH4
+                u8_cp.8
+                u9_cp.8
+      m_b_dqs_dn<10>_cp      204121    0
+               u5_cp.CT9
+             u5_cp_pch.CT9
+                u8_cp.19
+                u9_cp.19
+      m_b_dqs_dn<11>_cp       20421    1
+               u5_cp.CR17
+             u5_cp_pch.CR17
+                u8_cp.30
+                u9_cp.30
+      m_b_dqs_dn<12>_cp      204116    0
+               u5_cp.CT25
+             u5_cp_pch.CT25
+                u8_cp.41
+                u9_cp.41
+      m_b_dqs_dn<13>_cp       22046    0
+               u5_cp.CR74
+             u5_cp_pch.CR74
+               u8_cp.100
+               u9_cp.100
+      m_b_dqs_dn<14>_cp       22045    0
+               u5_cp.CE76
+             u5_cp_pch.CE76
+               u8_cp.111
+               u9_cp.111
+      m_b_dqs_dn<15>_cp      222122    0
+               u5_cp.BU75
+             u5_cp_pch.BU75
+               u8_cp.122
+               u9_cp.122
+      m_b_dqs_dn<16>_cp       22222    0
+               u5_cp.BK76
+             u5_cp_pch.BK76
+               u8_cp.133
+               u9_cp.133
+      m_b_dqs_dn<17>_cp      204115    0
+               u5_cp.CR32
+             u5_cp_pch.CR32
+                u8_cp.52
+                u9_cp.52
+      m_b_dqs_dp<0>_cp        20514    0
+               u5_cp.CJ3
+             u5_cp_pch.CJ3
+               u8_cp.153
+               u9_cp.153
+      m_b_dqs_dp<1>_cp       205142    0
+               u5_cp.CR10
+             u5_cp_pch.CR10
+               u8_cp.164
+               u9_cp.164
+      m_b_dqs_dp<2>_cp        20542    1
+               u5_cp.CT18
+             u5_cp_pch.CT18
+               u8_cp.175
+               u9_cp.175
+      m_b_dqs_dp<3>_cp       205141    0
+               u5_cp.CR26
+             u5_cp_pch.CR26
+               u8_cp.186
+               u9_cp.186
+      m_b_dqs_dp<4>_cp        22043    0
+               u5_cp.CN75
+             u5_cp_pch.CN75
+               u8_cp.245
+               u9_cp.245
+      m_b_dqs_dp<5>_cp        22013    0
+               u5_cp.CD75
+             u5_cp_pch.CD75
+               u8_cp.256
+               u9_cp.256
+      m_b_dqs_dp<6>_cp        22215    0
+               u5_cp.BT76
+             u5_cp_pch.BT76
+               u8_cp.267
+               u9_cp.267
+      m_b_dqs_dp<7>_cp        22214    0
+               u5_cp.BJ75
+             u5_cp_pch.BJ75
+               u8_cp.278
+               u9_cp.278
+      m_b_dqs_dp<8>_cp        20541    0
+               u5_cp.CT34
+             u5_cp_pch.CT34
+               u8_cp.197
+               u9_cp.197
+      m_b_dqs_dp<9>_cp       205116    0
+               u5_cp.CH2
+             u5_cp_pch.CH2
+                u8_cp.7
+                u9_cp.7
+      m_b_dqs_dp<10>_cp       20730    0
+               u5_cp.CV9
+             u5_cp_pch.CV9
+                u8_cp.18
+                u9_cp.18
+      m_b_dqs_dp<11>_cp       20416    0
+               u5_cp.CU17
+             u5_cp_pch.CU17
+                u8_cp.29
+                u9_cp.29
+      m_b_dqs_dp<12>_cp       20729    0
+               u5_cp.CV25
+             u5_cp_pch.CV25
+                u8_cp.40
+                u9_cp.40
+      m_b_dqs_dp<13>_cp      220143    0
+               u5_cp.CR76
+             u5_cp_pch.CR76
+                u8_cp.99
+                u9_cp.99
+      m_b_dqs_dp<14>_cp      220113    0
+               u5_cp.CE78
+             u5_cp_pch.CE78
+               u8_cp.110
+               u9_cp.110
+      m_b_dqs_dp<15>_cp      222116    0
+               u5_cp.BU77
+             u5_cp_pch.BU77
+               u8_cp.121
+               u9_cp.121
+      m_b_dqs_dp<16>_cp      222115    0
+               u5_cp.BK78
+             u5_cp_pch.BK78
+               u8_cp.132
+               u9_cp.132
+      m_b_dqs_dp<17>_cp       20709    0
+               u5_cp.CU32
+             u5_cp_pch.CU32
+                u8_cp.51
+                u9_cp.51
+      M_B_ECC<0>_CP          208117    0
+               u5_cp.CV31
+             u5_cp_pch.CV31
+                u8_cp.49
+                u9_cp.49
+      m_b_ecc<1>_cp          208118    0
+               u5_cp.CT31
+             u5_cp_pch.CT31
+               u8_cp.194
+               u9_cp.194
+      m_b_ecc<2>_cp           20815    0
+               u5_cp.CV36
+             u5_cp_pch.CV36
+                u8_cp.56
+                u9_cp.56
+      m_b_ecc<3>_cp          208115    0
+               u5_cp.CT36
+             u5_cp_pch.CT36
+               u8_cp.201
+               u9_cp.201
+      m_b_ecc<4>_cp          208116    0
+               u5_cp.CU30
+             u5_cp_pch.CU30
+                u8_cp.47
+                u9_cp.47
+      m_b_ecc<5>_cp           20814    0
+               u5_cp.CR30
+             u5_cp_pch.CR30
+               u8_cp.192
+               u9_cp.192
+      m_b_ecc<6>_cp           20818    0
+               u5_cp.CU35
+             u5_cp_pch.CU35
+                u8_cp.54
+                u9_cp.54
+      m_b_ecc<7>_cp           20817    0
+               u5_cp.CR35
+             u5_cp_pch.CR35
+               u8_cp.199
+               u9_cp.199
+      m_b_ma<0>_cp           219147    1
+               u5_cp.CV60
+             u5_cp_pch.CV60
+                u8_cp.79
+                u9_cp.79
+      m_b_ma<1>_cp            21927    0
+               u5_cp.CU50
+             u5_cp_pch.CU50
+                u8_cp.72
+                u9_cp.72
+      m_b_ma<2>_cp            22025    0
+               u5_cp.CR50
+             u5_cp_pch.CR50
+               u8_cp.216
+               u9_cp.216
+      m_b_ma<3>_cp           220114    0
+               u5_cp.CT49
+             u5_cp_pch.CT49
+                u8_cp.71
+                u9_cp.71
+      m_b_ma<4>_cp            21911    0
+               u5_cp.CV49
+             u5_cp_pch.CV49
+               u8_cp.214
+               u9_cp.214
+      m_b_ma<5>_cp            22016    0
+               u5_cp.CR48
+             u5_cp_pch.CR48
+               u8_cp.213
+               u9_cp.213
+      m_b_ma<6>_cp           220117    0
+               u5_cp.CT47
+             u5_cp_pch.CT47
+                u8_cp.69
+                u9_cp.69
+      m_b_ma<7>_cp            22017    0
+               u5_cp.CR46
+             u5_cp_pch.CR46
+               u8_cp.211
+               u9_cp.211
+      m_b_ma<8>_cp           219112    0
+               u5_cp.CV47
+             u5_cp_pch.CV47
+                u8_cp.68
+                u9_cp.68
+      m_b_ma<10>_cp           21947    0
+               u5_cp.CU61
+             u5_cp_pch.CU61
+               u8_cp.225
+               u9_cp.225
+      m_b_ma<11>_cp          219128    0
+               u5_cp.CU46
+             u5_cp_pch.CU46
+               u8_cp.210
+               u9_cp.210
+      m_b_ma<12>_cp           21928    0
+               u5_cp.CV44
+             u5_cp_pch.CV44
+                u8_cp.65
+                u9_cp.65
+      m_b_ma<13>_cp          220126    0
+               u5_cp.CT66
+             u5_cp_pch.CT66
+               u8_cp.232
+               u9_cp.232
+      m_b_ma<14>_cp          219127    0
+               u5_cp.CV62
+             u5_cp_pch.CV62
+               u8_cp.228
+               u9_cp.228
+      m_b_ma<15>_cp           22026    0
+               u5_cp.CT64
+             u5_cp_pch.CT64
+                u8_cp.86
+                u9_cp.86
+      m_b_ma<16>_cp          220125    0
+               u5_cp.CT62
+             u5_cp_pch.CT62
+                u8_cp.82
+                u9_cp.82
+      m_b_odt<0>_cp          220112    0
+               u5_cp.CV64
+             u5_cp_pch.CV64
+                u8_cp.87
+      m_b_odt<1>_cp          222118    0
+               u5_cp.CR69
+             u5_cp_pch.CR69
+                u8_cp.91
+      m_b_odt<2>_cp           22216    0
+               u5_cp.CR67
+             u5_cp_pch.CR67
+                u9_cp.87
+      m_b_odt<3>_cp           22012    0
+               u5_cp.CV68
+             u5_cp_pch.CV68
+                u9_cp.91
+      m_b_par_cp             219145    1
+               u5_cp.CR59
+             u5_cp_pch.CR59
+               u8_cp.222
+               u9_cp.222
+      mdio_sel0              115156    0
+                u11.K20
+                 u17.14
+      mdio_sel1               11556    0
+                u11.D20
+                 u17.2
+      mgmt_console_dsr       203153    0
+                mgmt.45
+      mgmt_console_dtr        20353    0
+                mgmt.47
+      mgmt_console_txd        11371    0
+                mgmt.48
+                 u11.V7
+      mifpga2_por_l          116162    0
+              lctl_conn.B2
+                u11.T13
+      mifpga_por_l            11650    0
+              rctl_conn.G1
+                u11.R13
+      MPHY_FPGA_P0_INT_L      20217    0
+                 r18.2
+      mphy_pwr_en            114172    0
+                mgmt.21
+                u11.R21
+      NC_CLK25M_FPGA_TCXO_N   12128    0
+                 c60.2
+      NC_CLK25M_FPGA_TCXO_P  120128    0
+                 c59.2
+      NC_CONSOLE_DSR          20810    1
+                 u15.9
+      NC_CONSOLE_DSR_LINE    205138    0
+                 c53.1
+                 cr58.2
+              cr58%d12_7.A
+                 r33.2
+                 r411.2
+      NC_CONSOLE_DTR_LINE     20538    0
+                 c52.1
+                 cr58.1
+              cr58%d11_8.A
+                 r33.1
+                 r410.2
+      NC_CPU_PCH_PECI         11425    0
+                 p6.10
+      nc_d0a17_cp            222171    0
+               u6_cp.234
+      nc_d1a17_cp             22271    0
+               u7_cp.234
+      nc_d2a17_cp            221171    0
+               u8_cp.234
+      nc_d3a17_cp             22171    0
+               u9_cp.234
+      NC_FANCON01_F_3        113125    0
+              fancon01_f.3
+      NC_FANCON23_F_3        204153    0
+              fancon23_f.3
+      NC_FANCON45_F_3        202152    0
+              fancon45_f.3
+      NC_J3_8                 20252    0
+                  j3.8
+      nc_l_d3                116125    0
+              lctl_conn.D3
+      nc_l_e3                 11625    0
+              lctl_conn.E3
+      nc_lctl_conn_d7        122126    0
+              lctl_conn.D7
+      nc_lctl_conn_e7         12226    0
+              lctl_conn.E7
+      NC_PCH_CPU_PWRGOOD      11325    0
+                 p6.17
+        v                    121126    0 
+NC_PCH_CPU_SM_DRAM_PWRGD                
+                 p6.15
+      NC_PCH_FPGA_SLP_S5_L    12126    0
+                  p6.5
+      NC_PCH_FPGA_SW_CHK_PT1 203150    0
+                 r361.1
+      NC_PCH_FPGA_SW_CHK_PT2 208151    0
+                 r364.1
+      NC_PCH_FPGA_SW_CHK_PT3  20751    0
+                 r365.1
+      nc_r_h4                114126    0
+              rctl_conn.H4
+      nc_r_j4                 11426    0
+              rctl_conn.J4
+        v                     11578    0 
+nc_spare0_3v3_buffer_cp                 
+                u18_cp.4
+        v                     20504    0 
+nc_spare1_3v3_buffer_cp                 
+                u18_cp.8
+      nc_u6_cp_1              20453    0
+                u6_cp.1
+      nc_u6_cp_144           220171    0
+               u6_cp.144
+      nc_u6_cp_145           205153    0
+               u6_cp.145
+      nc_u6_cp_205            20553    0
+               u6_cp.205
+      nc_u6_cp_227            22071    0
+               u6_cp.227
+      nc_u7_cp_1             207153    0
+                u7_cp.1
+      nc_u7_cp_144           219171    0
+               u7_cp.144
+      nc_u7_cp_145            20753    0
+               u7_cp.145
+      nc_u7_cp_205           208153    0
+               u7_cp.205
+      nc_u7_cp_227            21971    0
+               u7_cp.227
+      nc_u8_cp_1             203152    0
+                u8_cp.1
+      nc_u8_cp_144           223170    0
+               u8_cp.144
+      nc_u8_cp_145            20352    0
+               u8_cp.145
+      nc_u8_cp_205            20853    0
+               u8_cp.205
+      nc_u8_cp_227            22370    0
+               u8_cp.227
+      nc_u9_cp_1             204152    0
+                u9_cp.1
+      nc_u9_cp_144           222170    0
+               u9_cp.144
+      nc_u9_cp_145            20452    0
+               u9_cp.145
+      nc_u9_cp_205           207152    0
+               u9_cp.205
+      nc_u9_cp_227            22270    0
+               u9_cp.227
+      P1V2A_DCDC_A           220155    0
+              r4_p1v2_a.1
+              u1_p1v2_a.7
+      P1V2A_DCDC_DIDT_A      223151    0
+              l1_p1v2_a.1
+              u1_p1v2_a.1
+              u1_p1v2_a.2
+              u1_p1v2_a.3
+      P1V2A_EN_A             202118    1
+              r1_p1v2_a.2
+              u1_p1v2_a.13
+      P1V2A_PGOOD_A          202129    0
+                cr2_a.1
+               cr2_a%d1.A
+                r257_a.1
+              u1_p1v2_a.4
+      P1V2A_SS_A             222127    0
+              c5_p1v2_a.1
+              u1_p1v2_a.9
+      P1V2A_VOS_A             22155    0
+              c3_p1v2_a.1
+              r5_p1v2_a.2
+              r6_p1v2_a.1
+              u1_p1v2_a.14
+      P2V5A_EN_A             202122    0
+              r1_p2v5_a.2
+              u1_p2v5_a.14
+      P2V5A_PGOOD_A           20230    0
+                cr3_a.1
+               cr3_a%d1.A
+                r258_a.1
+              u1_p2v5_a.4
+      pch_fpga_slp_s4_l      114156    0
+               dbg_j1.16
+                  p6.7
+               u5_cp.AW1
+             u5_cp_pch.AW1
+                u11.L14
+      pch_lpc_lad<0>          11374    0
+               tpm_cp.11
+               u5_cp.AF3
+             u5_cp_pch.AF3
+                u11.T18
+      pch_lpc_lad<1>         114176    0
+               tpm_cp.10
+               u5_cp.AG4
+             u5_cp_pch.AG4
+                u11.M16
+      pch_lpc_lad<2>          11476    0
+                tpm_cp.8
+               u5_cp.AL3
+             u5_cp_pch.AL3
+                u11.L16
+      pch_lpc_lad<3>          11373    0
+                tpm_cp.7
+               u5_cp.AF1
+             u5_cp_pch.AF1
+                u11.M18
+      pch_mifpga2_perst_l     11662    0
+              lctl_conn.H3
+                u11.AB14
+      pch_mifpga_perst_l      11651    0
+              rctl_conn.B3
+                u11.Y14
+      pch_pltrst_l            20807    0
+               dbg_j1.12
+               u5_cp.BE24
+             u5_cp_pch.BE24
+                u11.W14
+                u21_cp.1
+      pch_sus_stat_l          11671    0
+                  p6.4
+                r76_cp.2
+               tpm_cp.19
+               u5_cp.BB18
+             u5_cp_pch.BB18
+                u11.P20
+      PD_EXT_BGREF_CP        220107    0
+               r132_cp.2
+               u5_cp.AK66
+             u5_cp_pch.AK66
+      PD_EXT_SC_BGREF_CP      22315    0
+               r131_cp.2
+               u5_cp.E72
+             u5_cp_pch.E72
+      PD_RSVD<21>_CP          22101    0
+                r8_cp.1
+               u5_cp.AP75
+             u5_cp_pch.AP75
+      PMOD_P2V5A_FB_A        223133    0
+              c3_p2v5_a.2
+              r2_p2v5_a.2
+              r3_p2v5_a.1
+              u1_p2v5_a.3
+      PMOD_P2V5A_SS_A         22206    0
+              c2_p2v5_a.1
+              u1_p2v5_a.13
+      PU_ADR_IN_CP           121147    0
+                r48_cp.2
+               u5_cp.AD66
+             u5_cp_pch.AD66
+      PU_DDR3_4_STRAP_CP      12173    0
+                r33_cp.2
+                r34_cp.1
+               u5_cp.AK69
+             u5_cp_pch.AK69
+      PU_EAR_N_CP            121148    0
+                r49_cp.2
+               u5_cp.AH62
+             u5_cp_pch.AH62
+      PU_NCTF<4>_CP           22362    0
+                r9_cp.2
+               u5_cp.BA18
+             u5_cp_pch.BA18
+      PU_PME_N_CP            203106    0
+                r50_cp.2
+               u5_cp.BE16
+             u5_cp_pch.BE16
+      PU_SAFE_MODE_BOOT_CP    12148    0
+                r17_cp.2
+               u5_cp.AF69
+             u5_cp_pch.AF69
+      pvccin_en               11418    0
+                dbg_1.19
+                 r327.2
+                u1_vr.13
+                u11.AA7
+      pwm1_mvr                20752    0
+              u1_91_mvr.34
+                u1_mvr.8
+      pwm1_vr                221170    0
+              u1_91_vr.34
+                u1_vr.8
+      pwm2_vr                 22170    0
+              u1_92_vr.34
+                u1_vr.7
+      pwm8_mvr               208152    0
+              u1_98_mvr.34
+                u1_mvr.1
+      PWM_FAN01_F            120144    0
+             fanctrl01_f.15
+                 r3_f.1
+                r76_f.1
+                u666_f.2
+      PWM_FAN23_F            204113    0
+             fanctrl23_f.15
+                 r2_f.1
+                r77_f.1
+                 u1_f.2
+      PWM_FAN45_F            120145    0
+             fanctrl45_f.15
+                r370_f.1
+                r394_f.1
+                u44_f.2
+      rtc_nvram_cs_prot_l     11978    1
+                 u4.26
+                 u5.26
+                 u6.26
+                 u23.25
+                 u24.26
+      RVC_A1                 113126    0
+                 tp2.1
+      RVC_COM1                11326    0
+                 rvc1.1
+                 rvc1.2
+                 rvc1.3
+                 rvc1.4
+                 rvc1.5
+                 rvc1.6
+                 rvc1.7
+                 rvc1.8
+                 rvc1.9
+      sfp_present_l          119153    0
+                mgmt.60
+                  r1.1
+                u11.N14
+      spi_pch_cs0_l_cp        20801    0
+                u3_cp.10
+               u5_cp.BN7
+             u5_cp_pch.BN7
+      spi_pch_cs1_l          113156    0
+               u5_cp.BT13
+             u5_cp_pch.BT13
+                u11.H16
+      SPI_PCH_CS2_N_CP       203125    0
+                r5_cp.1
+               u5_cp.BJ9
+             u5_cp_pch.BJ9
+      spi_prog_clk_cp         20701    0
+                spi_cp.4
+                u3_cp.5
+      spi_prog_cs_l_cp       208106    0
+                spi_cp.3
+                u3_cp.11
+      spi_prog_miso_cp        20806    0
+                spi_cp.5
+                u3_cp.14
+      spi_prog_mosi_cp       208105    0
+                spi_cp.6
+                u3_cp.2
+      SR1_SOUT                11562    0
+                 u26.9
+                 u27.14
+      SR2_OUT                 11961    0
+                 u27.9
+      sr_din                 116168    0
+                u11.Y16
+                 u28.14
+      SR_FAN01_DIR_F          12032    0
+                c13_f.1
+                l666_f.1
+             l666_f%jp1_8.1
+                r18_f.2
+                r24_f.1
+      SR_FAN01_PRSNT_N_F     120132    0
+                c15_f.1
+                l666_f.2
+             l666_f%jp2_7.1
+                r19_f.2
+                r26_f.1
+      SR_FAN01_PWM_F          22112    0
+                c17_f.1
+                l666_f.3
+             l666_f%jp3_6.1
+                r20_f.2
+                r28_f.1
+      SR_FAN01_TACH0_F       221127    0
+                c19_f.1
+                 l1_f.1
+              l1_f%jp1_8.1
+                r10_f.2
+                r30_f.1
+      SR_FAN01_TACH1_F       203112    0
+                c21_f.1
+                 l1_f.2
+              l1_f%jp2_7.1
+                r11_f.2
+                r32_f.1
+      SR_FAN01_TACH2_F        20314    0
+                c23_f.1
+                 l1_f.3
+              l1_f%jp3_6.1
+                r12_f.2
+                r34_f.1
+      SR_FAN01_TACH3_F        20315    0
+                c25_f.1
+                 l1_f.4
+              l1_f%jp4_5.1
+                r13_f.2
+                r36_f.1
+      SR_FAN23_DIR_F         203110    0
+                c14_f.1
+                 l2_f.1
+              l2_f%jp1_8.1
+                r21_f.2
+                r25_f.1
+      SR_FAN23_PRSNT_N_F      20311    0
+                c16_f.1
+                 l2_f.2
+              l2_f%jp2_7.1
+                r22_f.2
+                r27_f.1
+      SR_FAN23_PWM_F          22127    0
+                c18_f.1
+                 l2_f.3
+              l2_f%jp3_6.1
+                r23_f.2
+                r29_f.1
+      SR_FAN23_TACH0_F        20312    0
+                c20_f.1
+                 l4_f.1
+              l4_f%jp1_8.1
+                r14_f.2
+                r31_f.1
+      SR_FAN23_TACH1_F        20313    0
+                c22_f.1
+                 l4_f.2
+              l4_f%jp2_7.1
+                r15_f.2
+                r33_f.1
+      SR_FAN23_TACH2_F       203114    0
+                c24_f.1
+                 l4_f.3
+              l4_f%jp3_6.1
+                r16_f.2
+                r35_f.1
+      SR_FAN23_TACH3_F        20316    0
+                c26_f.1
+                 l4_f.4
+              l4_f%jp4_5.1
+                r17_f.2
+                r37_f.1
+      SR_FAN45_DIR_F         203127    0
+                c95_f.1
+                 l3_f.1
+              l3_f%jp1_8.1
+                r372_f.2
+                r378_f.1
+      SR_FAN45_PRSNT_N_F     203128    0
+                c96_f.1
+                 l3_f.2
+              l3_f%jp2_7.1
+                r374_f.2
+                r379_f.1
+      SR_FAN45_PWM_F          20206    0
+                c97_f.1
+                 l3_f.3
+              l3_f%jp3_6.1
+                r375_f.2
+                r380_f.1
+      SR_FAN45_TACH0_F       202106    0
+                c98_f.1
+                l12_f.1
+             l12_f%jp1_8.1
+                r381_f.1
+                r396_f.2
+      SR_FAN45_TACH1_F        20207    0
+                c99_f.1
+                l12_f.2
+             l12_f%jp2_7.1
+                r382_f.1
+                r397_f.2
+      SR_FAN45_TACH2_F        22035    0
+                c100_f.1
+                l12_f.3
+             l12_f%jp3_6.1
+                r383_f.1
+                r398_f.2
+      SR_FAN45_TACH3_F       220136    1
+                c101_f.1
+                l12_f.4
+             l12_f%jp4_5.1
+                r384_f.1
+                r399_f.2
+      SR_SOUT                 11667    0
+                 u26.14
+                 u28.9
+      SRT_CLK33M_PCI1         20803    0
+                 r339.1
+                u5_cp.Y7
+              u5_cp_pch.Y7
+      SRT_CON_DSR            207136    0
+                 r411.1
+                 u15.8
+      SRT_CON_DTR             20736    0
+                 r410.1
+                 u15.14
+      SRT_CON_RXD            205135    0
+                 r415.1
+                 u15.13
+      SRT_CON_TXD             20535    0
+                 r414.1
+                 u15.7
+        v                    113142    0 
+srt_jtag_tck_pch_ep_3v3                 
+                 r173.1
+                 u14.6
+      srt_jtag_tck_spare_3v3  11342    0
+                 r172.1
+                 u14.7
+      tp_ch_a_nv_save_n_0_cp 220170    0
+               u6_cp.230
+      tp_ch_a_nv_save_n_1_cp  22070    0
+               u7_cp.230
+      tp_ch_b_nv_save_n_0_cp 219170    0
+               u8_cp.230
+      tp_ch_b_nv_save_n_1_cp  21970    0
+               u9_cp.230
+      TP_CPU_SLP_SUS_N_CP     20703    0
+               u5_cp.AY7
+             u5_cp_pch.AY7
+        v                    223169    0 
+TP_KR_EPHY_DFTANA<0>_CP                 
+               u5_cp.K71
+             u5_cp_pch.K71
+      TP_KR_EPHY_MON_DP_CP    22369    0
+               u5_cp.H64
+             u5_cp_pch.H64
+      TP_LAN_DISABLE_N_CP    208108    0
+               u5_cp.BD26
+             u5_cp_pch.BD26
+      tp_m_a_c2_0_cp         222169    0
+               u6_cp.235
+      tp_m_a_c2_1_cp          22269    0
+               u7_cp.235
+      tp_m_a_cs_c0_cp        221169    0
+                u6_cp.93
+      tp_m_a_cs_c1_cp         22169    0
+               u6_cp.237
+      tp_m_a_cs_c2_cp        220169    0
+                u7_cp.93
+      tp_m_a_cs_c3_cp         22069    0
+               u7_cp.237
+      tp_m_b_c2_0_cp         219169    0
+               u8_cp.235
+      tp_m_b_c2_1_cp          21969    0
+               u9_cp.235
+      tp_m_b_cs_c0_cp        223168    0
+                u8_cp.93
+      tp_m_b_cs_c1_cp         22368    0
+               u8_cp.237
+      tp_m_b_cs_c2_cp        222168    0
+                u9_cp.93
+      tp_m_b_cs_c3_cp         22268    0
+               u9_cp.237
+      TP_RSVD48_CP           221168    0
+               u5_cp.BM62
+             u5_cp_pch.BM62
+        v                    120126    0 
+tp_xdp_cpu_obsdata_c0_cp                
+               xdp_cp.10
+        v                     12026    0 
+tp_xdp_cpu_obsdata_c1_cp                
+               xdp_cp.12
+        v                    119126    0 
+tp_xdp_cpu_obsdata_c2_cp                
+               xdp_cp.16
+        v                     11926    0 
+tp_xdp_cpu_obsdata_c3_cp                
+               xdp_cp.18
+        v                    115126    0 
+tp_xdp_cpu_obsdata_d0_cp                
+               xdp_cp.28
+        v                     11526    0 
+tp_xdp_cpu_obsdata_d1_cp                
+               xdp_cp.30
+        v                    116126    0 
+tp_xdp_cpu_obsdata_d2_cp                
+               xdp_cp.34
+        v                     11626    0 
+tp_xdp_cpu_obsdata_d3_cp                
+               xdp_cp.36
+      tp_xdp_cpu_obsfn_c0_cp 122127    0
+                xdp_cp.4
+      tp_xdp_cpu_obsfn_c1_cp  12227    0
+                xdp_cp.6
+      tp_xdp_cpu_obsfn_d0_cp 121127    0
+               xdp_cp.22
+      tp_xdp_cpu_obsfn_d1_cp  12127    0
+               xdp_cp.24
+      tp_xdp_cpu_tck1_cp     115127    0
+               xdp_cp.55
+        v                     11527    0 
+tp_xdp_cpuobsdata_b0_cp                 
+               xdp_cp.27
+        v                    120127    0 
+tp_xdp_cpuobsdata_b1_cp                 
+               xdp_cp.29
+        v                    116127    0 
+tp_xdp_cpuobsdata_b2_cp                 
+               xdp_cp.33
+        v                     11627    0 
+tp_xdp_cpuobsdata_b3_cp                 
+               xdp_cp.35
+      UNNAMED_1_CAP_I14_A_A  223143    0
+              c3_p1v2_a.2
+              r6_p1v2_a.2
+              r8_p1v2_a.1
+              u1_p1v2_a.5
+        v                    204151    0 
+UNNAMED_2_NMOSFET_I40_G_F               
+                 q3_f.1
+                r354_f.1
+        v                    205151    1 
+UNNAMED_2_NMOSFET_I47_G_F               
+                 q8_f.1
+                r47_f.1
+        v                     11427    0 
+UNNAMED_2_NMOSFET_I69_G_F               
+                 q7_f.1
+                r46_f.1
+      UNNAMED_2_RES_I53_A_F  202136    0
+              fanhs45_f.6
+                r348_f.1
+                r349_f.1
+      UNNAMED_2_RES_I60_A_F  203148    0
+              fanhs23_f.6
+                 r7_f.1
+                 r9_f.1
+      UNNAMED_2_RES_I61_B     22150    0
+              r2_91_mvr.2
+              u1_91_mvr.37
+      UNNAMED_2_RES_I61_B_91  22327    0
+               r2_91_vr.2
+              u1_91_vr.37
+      UNNAMED_2_RES_I61_B_92 223127    0
+               r2_92_vr.2
+              u1_92_vr.37
+      UNNAMED_2_RES_I61_B_98  22328    0
+              r2_98_mvr.2
+              u1_98_mvr.37
+      UNNAMED_2_RES_I65_A_F   11529    0
+              fanhs01_f.6
+                 r6_f.1
+                 r8_f.1
+        v                     22331    0 
+UNNAMED_4_ADT7470_I71_ADDR_F            
+             fanctrl45_f.11
+                r389_f.2
+        v                     20241    0 
+UNNAMED_4_ADT7470_I71_FULLSPEEDMTMPSTA_F
+             fanctrl45_f.13
+                r392_f.1
+        v                     20242    0 
+UNNAMED_4_ADT7470_I71_PWM2_F            
+             fanctrl45_f.5
+                r393_f.1
+        v                     20238    0 
+UNNAMED_4_ADT7470_I71_PWM3_F            
+             fanctrl45_f.8
+                r391_f.1
+        v                    202137    0 
+UNNAMED_4_ADT7470_I71_PWM4_F            
+             fanctrl45_f.10
+                r390_f.1
+        v                     20237    0 
+UNNAMED_4_ADT7470_I71_TMPIN_F           
+             fanctrl45_f.12
+                r369_f.2
+        v                    223141    0 
+UNNAMED_4_ADT7470_I79_ADDR_F            
+             fanctrl23_f.11
+                r64_f.2
+        v                    205148    0 
+UNNAMED_4_ADT7470_I79_FULLSPEEDMTMPSTA_F
+             fanctrl23_f.13
+                r73_f.1
+        v                    204148    0 
+UNNAMED_4_ADT7470_I79_PWM2_F            
+             fanctrl23_f.5
+                r75_f.1
+        v                     20548    0 
+UNNAMED_4_ADT7470_I79_PWM3_F            
+             fanctrl23_f.8
+                r72_f.1
+        v                    208148    0 
+UNNAMED_4_ADT7470_I79_PWM4_F            
+             fanctrl23_f.10
+                r69_f.1
+        v                    202147    0 
+UNNAMED_4_ADT7470_I79_TMPIN_F           
+             fanctrl23_f.12
+                r67_f.2
+        v                    203147    0 
+UNNAMED_4_ADT7470_I105_ADDR_F           
+             fanctrl01_f.11
+                r65_f.2
+        v                    207148    0 
+UNNAMED_4_ADT7470_I105_FULLSPEEDMTMPST_F
+             fanctrl01_f.13
+                r71_f.1
+        v                     20448    0 
+UNNAMED_4_ADT7470_I105_PWM2_F           
+             fanctrl01_f.5
+                r74_f.1
+        v                     20748    0 
+UNNAMED_4_ADT7470_I105_PWM3_F           
+             fanctrl01_f.8
+                r70_f.1
+        v                     20848    0 
+UNNAMED_4_ADT7470_I105_PWM4_F           
+             fanctrl01_f.10
+                r68_f.1
+        v                     20247    0 
+UNNAMED_4_ADT7470_I105_TMPIN_F          
+             fanctrl01_f.12
+                r66_f.2
+        v                     11929    0 
+UNNAMED_6_RES_I480_A_CP                 
+                r66_cp.1
+                u10_cp.2
+        v                     22302    0 
+unnamed_7_ir35215_i192_tsen2vauxsenps_vr
+                r08_vr.2
+                u1_vr.35
+      UNNAMED_9_CAP_I132_A    20351    0
+                 c34.2
+                 u15.1
+      UNNAMED_9_CAP_I132_B   203151    0
+                 c34.1
+                 u15.3
+      UNNAMED_9_CAP_I133_A    20251    0
+                 c35.2
+                 u15.5
+      UNNAMED_9_CAP_I133_B   202151    0
+                 c35.1
+                 u15.4
+      UNNAMED_9_CAP_I134_A   219150    0
+                 c32.2
+                 u15.2
+      UNNAMED_9_CAP_I135_A    21951    0
+                 c33.2
+                 u15.6
+        v                    207151    1 
+UNNAMED_11_NMOSFET_I297_G               
+                 q24.1
+                 r552.2
+        v                     20250    0 
+UNNAMED_11_NMOSFET_I303_G               
+                 q23.1
+                 r553.2
+        v                     11937    0 
+UNNAMED_15_PCA9617_I66_EN               
+                 r663.2
+                 u29.5
+      UNNAMED_18_LED_I108_A   11630    0
+                 cr50.1
+               cr50%d1.A
+                 r400.1
+      UNNAMED_18_LED_I108_K   12045    0
+                 cr50.2
+               cr50%d1.C
+                 u100.9
+      UNNAMED_18_LED_I109_A   12030    0
+                 cr54.1
+               cr54%d1.A
+                 r404.1
+      UNNAMED_18_LED_I109_K  120146    0
+                 cr54.2
+               cr54%d1.C
+                 u100.5
+      UNNAMED_18_LED_I110_A   12130    0
+                 cr56.1
+               cr56%d1.A
+                 r406.1
+      UNNAMED_18_LED_I110_K   11332    0
+                 cr56.2
+               cr56%d1.C
+                 u100.3
+      UNNAMED_18_LED_I114_A   11930    0
+                 cr52.1
+               cr52%d1.A
+                 r402.1
+      UNNAMED_18_LED_I114_K   11433    0
+                 cr52.2
+               cr52%d1.C
+                 u100.7
+      UNNAMED_18_LED_I117_A   11530    0
+                 cr48.1
+               cr48%d1.A
+                 r398.1
+      UNNAMED_18_LED_I117_K   11634    0
+                 cr48.2
+               cr48%d1.C
+                u100.12
+      UNNAMED_18_LED_I119_A   11430    0
+                 cr46.1
+               cr46%d1.A
+                 r396.1
+      UNNAMED_18_LED_I119_K  115134    0
+                 cr46.2
+               cr46%d1.C
+                u100.14
+      UNNAMED_18_LED_I121_A   11330    0
+                 cr44.1
+               cr44%d1.A
+                 r394.1
+      UNNAMED_18_LED_I121_K   11935    0
+                 cr44.2
+               cr44%d1.C
+                u100.16
+      UNNAMED_18_LED_I123_A   12131    0
+                 cr42.1
+               cr42%d1.A
+                 r392.1
+      UNNAMED_18_LED_I123_K  119141    0
+                 cr42.2
+               cr42%d1.C
+                u100.18
+      UNNAMED_18_LED_I124_A  116130    0
+                 cr51.1
+               cr51%d1.A
+                 r401.1
+      UNNAMED_18_LED_I124_K   11941    0
+                 cr51.2
+               cr51%d1.C
+                 u12.9
+      UNNAMED_18_LED_I125_A  120130    0
+                 cr55.1
+               cr55%d1.A
+                 r405.1
+      UNNAMED_18_LED_I125_K  119142    0
+                 cr55.2
+               cr55%d1.C
+                 u12.5
+      UNNAMED_18_LED_I126_A  121130    0
+                 cr57.1
+               cr57%d1.A
+                 r407.1
+      UNNAMED_18_LED_I126_K   11636    0
+                 cr57.2
+               cr57%d1.C
+                 u12.3
+      UNNAMED_18_LED_I130_A  119130    0
+                 cr53.1
+               cr53%d1.A
+                 r403.1
+      UNNAMED_18_LED_I130_K  115136    0
+                 cr53.2
+               cr53%d1.C
+                 u12.7
+      UNNAMED_18_LED_I133_A  115130    0
+                 cr49.1
+               cr49%d1.A
+                 r399.1
+      UNNAMED_18_LED_I133_K   11942    0
+                 cr49.2
+               cr49%d1.C
+                 u12.12
+      UNNAMED_18_LED_I135_A  114130    0
+                 cr47.1
+               cr47%d1.A
+                 r397.1
+      UNNAMED_18_LED_I135_K  119143    0
+                 cr47.2
+               cr47%d1.C
+                 u12.14
+      UNNAMED_18_LED_I137_A  113130    0
+                 cr45.1
+               cr45%d1.A
+                 r395.1
+      UNNAMED_18_LED_I137_K  116141    0
+                 cr45.2
+               cr45%d1.C
+                 u12.16
+      UNNAMED_18_LED_I139_A  121131    0
+                 cr43.1
+               cr43%d1.A
+                 r393.1
+      UNNAMED_18_LED_I139_K   11641    0
+                 cr43.2
+               cr43%d1.C
+                 u12.18
+        v                    113118    0 
+UNNAMED_18_LVC2244_I41_OE               
+                 r463.2
+                 u100.1
+                u100.19
+        v                    114134    0 
+UNNAMED_18_LVC2244_I42_A0               
+                 r390.2
+                 u12.11
+                 u12.13
+                 u12.15
+                 u12.17
+        v                     11435    0 
+UNNAMED_18_LVC2244_I42_A3               
+                 r389.2
+                 u12.8
+        v                     11318    0 
+UNNAMED_18_LVC2244_I42_OE               
+                 r391.2
+                 u12.1
+                 u12.19
+      UNNAMED_20_LED_I106_A   12247    0
+                 cr33.2
+               cr33%d1.C
+                 r269.2
+      UNNAMED_20_LED_I107_A  122148    0
+                 cr21.2
+               cr21%d1.C
+                 r268.2
+      UNNAMED_20_LED_I108_A   12248    0
+                 cr20.2
+               cr20%d1.C
+                 r267.2
+      UNNAMED_20_LED_I109_A  122149    0
+                 cr32.2
+               cr32%d1.C
+                 r266.2
+      UNNAMED_20_LED_I110_A   12249    0
+                 cr31.2
+               cr31%d1.C
+                 r265.2
+      UNNAMED_20_LED_I115_A  122150    0
+                 cr30.2
+               cr30%d1.C
+                 r264.2
+      UNNAMED_20_LED_I116_A   12250    0
+                 cr29.2
+               cr29%d1.C
+                 r263.2
+      UNNAMED_20_LED_I117_A  122151    0
+                 cr28.2
+               cr28%d1.C
+                 r262.2
+      UNNAMED_20_LED_I232_A  122162    0
+                 cr7.2
+                cr7%d1.C
+                 r247.2
+      UNNAMED_20_LED_I233_A   12255    0
+                 cr8.2
+                cr8%d1.C
+                 r248.2
+      UNNAMED_20_LED_I236_A  122154    0
+                 cr9.2
+                cr9%d1.C
+                 r249.2
+      UNNAMED_20_LED_I237_A   12253    0
+                 cr10.2
+               cr10%d1.C
+                 r250.2
+      UNNAMED_20_LED_I238_A  122153    0
+                 cr11.2
+               cr11%d1.C
+                 r251.2
+      UNNAMED_20_LED_I242_A   12252    0
+                 cr12.2
+               cr12%d1.C
+                 r252.2
+      UNNAMED_20_LED_I243_A  122152    0
+                 cr26.2
+               cr26%d1.C
+                 r253.2
+      UNNAMED_20_LED_I244_A   12251    0
+                 cr27.2
+               cr27%d1.C
+                 r254.2
+      UNNAMED_20_LED_I276_A   20446    0
+                 dbg3.A
+                 r464.2
+      UNNAMED_20_LED_I277_A  204146    0
+                 dbg2.A
+                 r465.2
+      UNNAMED_20_LED_I278_A   20346    0
+                 dbg1.A
+                 r466.2
+      UNNAMED_20_LED_I283_A  203146    0
+                 dbg0.A
+                 r467.2
+      UNNAMED_20_LED_I293_A  202146    0
+                 dbg4.A
+                 r470.2
+      UNNAMED_20_LED_I295_A   20246    0
+                 dbg5.A
+                 r469.2
+      UNNAMED_20_LED_I299_A  208147    0
+                 dbg6.A
+                 r512.2
+      UNNAMED_20_LED_I302_A   20847    1
+                 dbg7.A
+                 r505.2
+        v                    115152    0 
+unnamed_20_max811_i140_mr               
+                 cr1.1
+                cr1%d1.A
+                 cr2.1
+                cr2%d1.A
+                  r8.1
+                  u7.3
+        v                     11473    0 
+unnamed_25_bq4802_i20_x1                
+                 u23.2
+                  y1.1
+        v                    114174    0 
+unnamed_25_bq4802_i20_x2                
+                 u23.3
+                  y1.2
+        v                     22209    0 
+UNNAMED_36_PCA9617_I50_EN_CP            
+                r67_cp.2
+                u13_cp.5
+        v                     11546    0 
+unnamed_39_avc8t245_i243_a_cp           
+               r289_cp.2
+                u20_cp.6
+      UNNAMED_40_RES_I5_B_CP  12264    0
+               r327_cp.1
+               r337_cp.2
+                sw3_cp.2
+      m_b_ma<9>_cp           219146    0
+               u5_cp.CT44
+             u5_cp_pch.CT44
+                u8_cp.66
+                u9_cp.66
+      BDX_INTRUDER_N_CP      208145    0
+                r41_cp.1
+               r306_cp.2
+               u5_cp.AK2
+             u5_cp_pch.AK2
+      PU_PCH_DSWODVREN_CP    202121    0
+               r183_cp.2
+               u5_cp.AL1
+             u5_cp_pch.AL1
+      PU_PCH_INTVRMEN_CP     203142    0
+               r182_cp.1
+               u5_cp.AP2
+             u5_cp_pch.AP2
+      P3V3_PVOUT_MODE        122132    0
+                 r937.1
+               u1_3v3.21
+      spi_gold_cs0_l_cp       11965    0
+               flshg_cp.1
+               r398_cp.1
+                u4_cp.1
+      spi_std_cs0_l_cp        20402    0
+               flshp_cp.1
+               r397_cp.1
+                u4_cp.3
+      c33_spi_10gbe_clk_cp    11461    0
+               r439_cp.2
+                u11_cp.6
+                u18_cp.5
+      fpga_por_l             119168    0
+                 r66.1
+                  u7.2
+                 u11.U6
+      P3V3_ADDR               22344    0
+                 r912.2
+                 r913.1
+                u1_3v3.1
+      TRIP_3V3                22341    0
+                r5_3v3.2
+               u1_3v3.25
+      obfl_fpga_ds            12038    0
+                 r523.1
+                u11.C17
+                 u18.H5
+      fpga_obfl_rst_l         11643    0
+                 r522.1
+                 u11.Y7
+                 u18.K5
+      fpga_obfl_io<0>        114153    0
+                 r520.1
+                 u11.V6
+                 u18.A3
+      fpga_obfl_io<1>         11453    0
+                 r519.1
+                u11.U12
+                 u18.A4
+      fpga_obfl_io<2>         11672    0
+                 r518.1
+                u11.W10
+                 u18.A5
+      fpga_obfl_io<3>         11938    0
+                 r517.1
+                u11.AB3
+                 u18.B1
+                 u18.B2
+      fpga_obfl_io<4>        115154    0
+                 r516.1
+                 u11.W5
+                 u18.A1
+                 u18.A2
+                 u18.B3
+      fpga_obfl_io<5>        116173    0
+                 r515.1
+                 u11.Y8
+                 u18.B4
+                 u18.C3
+                 u18.D1
+                 u18.D2
+                 u18.D3
+      fpga_obfl_io<6>         11554    0
+                 r514.1
+                 u11.W9
+                 u18.B5
+                 u18.C5
+      fpga_obfl_io<7>        114154    0
+                 r513.1
+                 u11.Y9
+                 u18.A8
+                 u18.B6
+                 u18.B7
+                 u18.B8
+      UNNAMED_30_CAP_I99_A   222157    0
+               c12_vpp.2
+                r5_vpp.2
+        v                     21957    0 
+UNNAMED_2_CAP_I517_A_5V                 
+                c12_5v.2
+                r5_5v.2
+      VPP_FP_B                22263    0
+                 c239.2
+                 r352.2
+      P1V7_FP_B              223162    0
+                 c11.2
+                 r307.2
+      psu2_ac_ok             116134    0
+                 r226.2
+                u11.K22
+      GPIO69                 121165    0
+                 r226.1
+               u5_cp.AU9
+             u5_cp_pch.AU9
+      psu2_dc_ok              11534    0
+                 r227.2
+                u11.G16
+      GPIO68                  12163    0
+                 r227.1
+               u5_cp.AV7
+             u5_cp_pch.AV7
+      psu1_ac_ok             120134    0
+                 r179.2
+                u11.G17
+      GPIO7                   12052    0
+                 r179.1
+               u5_cp.AG2
+             u5_cp_pch.AG2
+      psu1_dc_ok              12034    0
+                r1712.2
+                u11.G18
+      GPIO6                   12156    0
+                r1712.1
+               u5_cp.AV11
+             u5_cp_pch.AV11
+      m2_fpga_alert          116138    0
+                 q38.D
+                 r661.2
+                 r662.2
+                u11.AB17
+      GPIO21                 202102    0
+                 r367.2
+               r438_cp.2
+               u5_cp.BR2
+             u5_cp_pch.BR2
+      fpga_pch_sys_pwrok     119137    0
+                dbg_1.15
+               r366_cp.2
+               r412_cp.1
+               u5_cp.BP5
+             u5_cp_pch.BP5
+                u11.C19
+      unnamed_20_cap_i267_b   11551    0
+                  c2.1
+                 r333.2
+                 r348.2
+                 u21.9
+      TPM_PCH_DRQ_L0_CP       20305    0
+               r328_cp.1
+               tpm_cp.20
+               u5_cp.AK4
+             u5_cp_pch.AK4
+      cpu_fpga_cpu2pch_throt 116137    0
+               dbg_j1.10
+               r250_cp.2
+                 u11.E5
+                u14_cp.6
+      PU_PIRQA_N_CP           20530    0
+               r215_cp.2
+               u5_cp.BG20
+             u5_cp_pch.BG20
+      FM_CPU_THROTTLE_N_CP   205112    0
+               r205_cp.2
+               u5_cp.BN2
+             u5_cp_pch.BN2
+                u21_cp.2
+      cpu_fpga_caterr_3v3_l  113137    0
+               dbg_j1.18
+               r203_cp.2
+               u5_cp.BW22
+             u5_cp_pch.BW22
+                u11.C15
+                u14_cp.4
+      cpu_fpga_err0           20808    0
+               dbg_j1.24
+               r202_cp.2
+               u5_cp.BV16
+             u5_cp_pch.BV16
+                u11.D11
+                u14_cp.5
+      PU_BMBUSY_M_GPIO0_CP   203122    0
+               r201_cp.2
+               u5_cp.BB28
+             u5_cp_pch.BB28
+        v                    113141    0 
+UNNAMED_17_ICS553_I181_OE               
+                 r171.2
+                 u14.8
+      GPIO49                 120152    0
+               r158_cp.2
+                 r368.2
+               u5_cp.BM1
+             u5_cp_pch.BM1
+      NC_SATALED_N_CP         20426    0
+               r118_cp.1
+               u5_cp.BF14
+             u5_cp_pch.BF14
+        v                     20508    0 
+unnamed_43_n25qxx_i126_holdmdq3_cp      
+               flshg_cp.7
+               flshp_cp.7
+                r81_cp.1
+      fpga_spi_gold_wp_l     205106    0
+               flshg_cp.3
+                r80_cp.1
+                u11.U20
+      spi_prog_io3_cp        204105    0
+                r78_cp.1
+                spi_cp.8
+                u3_cp.1
+                u28_cp.2
+        v                    122136    0 
+unnamed_24_ep4cgx50fg484_i251_gxbrx1n   
+                 r287.2
+                 u11.H1
+                 u11.M1
+                 u11.T1
+        v                     12236    0 
+unnamed_24_ep4cgx50fg484_i251_gxbrx1p   
+                 r286.2
+                 u11.H2
+                 u11.M2
+                 u11.T2
+      fpga_ce_l              223125    0
+                 r285.2
+                 u11.D2
+      C105_PWRGD_CPU_CP      115178    0
+                r45_cp.1
+                r62_cp.2
+               r171_cp.2
+               u5_cp.CR39
+               u5_cp.V76
+             u5_cp_pch.CR39
+             u5_cp_pch.V76
+               u17_cp.14
+        v                    121171    0 
+PD_LAN_JRST_N_SDP1_1_CP                 
+               r145_cp.1
+               u5_cp.N69
+             u5_cp_pch.N69
+      PD_PHY_JTDI_SDP0_0_CP  121172    0
+               r144_cp.1
+               u5_cp.G74
+             u5_cp_pch.G74
+      PD_LAN_NCSI_TX_EN_CP   220131    1
+               r141_cp.2
+               u5_cp.AA75
+             u5_cp_pch.AA75
+        v                     12153    0 
+PD_LAN_NCSI_CLKIN_EN_CP                 
+               r140_cp.2
+               u5_cp.AA72
+             u5_cp_pch.AA72
+      PD_LAN_NCSI_TXD1_EN_CP  12154    0
+               r139_cp.2
+               u5_cp.Y78
+             u5_cp_pch.Y78
+      PD_LAN_NCSI_TXD0_EN_CP 121154    0
+               r138_cp.2
+               u5_cp.W77
+             u5_cp_pch.W77
+      PD_REFCLK14IN_CP        20434    0
+               r115_cp.2
+                u5_cp.W9
+              u5_cp_pch.W9
+      PD_CLKIN_CPY_DN_CP      22304    0
+               r114_cp.2
+               u5_cp.Y30
+             u5_cp_pch.Y30
+      PD_CLKIN_CPY_DP_CP     223103    0
+               r113_cp.2
+               u5_cp.AA30
+             u5_cp_pch.AA30
+      PD_CLKIN_DMI_DN_CP      22303    0
+               r112_cp.2
+               u5_cp.N35
+             u5_cp_pch.N35
+      PD_CLKIN_DMI_DP_CP     223102    0
+               r111_cp.2
+               u5_cp.P33
+             u5_cp_pch.P33
+      PD_CLK_SATA_DN_CP      221149    0
+               r108_cp.2
+               u5_cp.BG32
+             u5_cp_pch.BG32
+      PD_CLK_SATA_DP_CP       22149    0
+               r107_cp.2
+               u5_cp.BH33
+             u5_cp_pch.BH33
+      PU_MBP0_MBPM0_N_CP      22003    0
+               r437_cp.2
+               u5_cp.W75
+             u5_cp_pch.W75
+      LAN_I2C1_SCL_1P0V_CP   121168    0
+               r359_cp.2
+               u5_cp.P71
+             u5_cp_pch.P71
+      LAN_I2C1_SDA_1P0V_CP   220104    0
+               r358_cp.2
+               u5_cp.T71
+             u5_cp_pch.T71
+      LAN_I2C0_SCL_1P0V_CP    12167    0
+               r344_cp.2
+               u5_cp.R72
+             u5_cp_pch.R72
+      LAN_I2C0_SDA_1P0V_CP   220105    0
+               r343_cp.2
+               u5_cp.U72
+             u5_cp_pch.U72
+      PU_NCSI_ARB_OUT_CP     220101    0
+                r53_cp.1
+               r241_cp.2
+               u5_cp.AB78
+             u5_cp_pch.AB78
+      xdp_present_n_cp        11673    0
+               r234_cp.1
+               r432_cp.2
+               u5_cp.M77
+             u5_cp_pch.M77
+                u34_cp.1
+               xdp_cp.60
+        v                     12070    0 
+xdp_cpu_obsdata_a_mbp4_n_cp             
+               r168_cp.2
+               u5_cp.J78
+             u5_cp_pch.J78
+               xdp_cp.15
+        v                    120171    0 
+xdp_cpu_obsdata_a_mbp5_n_cp             
+               r167_cp.2
+               u5_cp.H75
+             u5_cp_pch.H75
+               xdp_cp.17
+      PU_MBP0_MBPM1_N_CP      22029    0
+               r166_cp.2
+               u5_cp.AD72
+             u5_cp_pch.AD72
+      xdp_cpu_prdy_n_cp       12176    0
+               r165_cp.2
+               u5_cp.L78
+             u5_cp_pch.L78
+                xdp_cp.5
+      PU_LAN_JTMS_SDP0_1_CP  120142    0
+               r143_cp.1
+               u5_cp.C76
+             u5_cp_pch.C76
+      PU_PHY_JTDI_SDP1_0_CP  220128    0
+                r12_cp.1
+               r142_cp.1
+               u5_cp.F76
+             u5_cp_pch.F76
+      PD_SPARE<5>_CP          12041    0
+               r130_cp.1
+               u5_cp.D71
+             u5_cp_pch.D71
+      PU_PE_HP_SCL_CP         12043    0
+                r91_cp.2
+               u5_cp.AR67
+             u5_cp_pch.AR67
+      PU_PE_HP_SDA_CP        219132    0
+                r90_cp.2
+               u5_cp.AN67
+             u5_cp_pch.AN67
+      GPIO72_CP              203123    0
+               r411_cp.2
+               u5_cp.BB4
+             u5_cp_pch.BB4
+      SML0CLK_CP             204128    0
+               r318_cp.2
+               u5_cp.BR7
+             u5_cp_pch.BR7
+      SML0DATA_CP             20428    0
+               r317_cp.2
+               u5_cp.BN18
+             u5_cp_pch.BN18
+      GPIO75                  20323    0
+                 r45.1
+               r316_cp.2
+               u5_cp.BB11
+             u5_cp_pch.BB11
+      GPIO58                 203141    0
+                 r46.1
+               r315_cp.2
+               u5_cp.BG9
+             u5_cp_pch.BG9
+      cpu_fpga_pch_hot_l      11553    0
+               dbg_j1.30
+               r287_cp.2
+                 u11.W7
+                u20_cp.7
+      cpu_fpga_err2           11637    0
+               dbg_j1.20
+               r284_cp.2
+                 u11.C9
+                u20_cp.9
+      cpu_fpga_err1           11645    0
+               dbg_j1.22
+                r42_cp.1
+               r282_cp.2
+                u11.D10
+               u20_cp.10
+      th_dir1_cp             203103    1
+               r280_cp.2
+                u19_cp.2
+      th_dir2_cp             204111    0
+               r277_cp.2
+                u19_cp.3
+        v                    116143    0 
+fpga_cpu_thermtrip_3v3_l                
+                dbg_1.14
+               r272_cp.2
+                u11.K19
+                u19_cp.5
+      PU_RI_N_CP              20221    0
+               r236_cp.2
+               u5_cp.BF11
+             u5_cp_pch.BF11
+        v                     20836    0 
+PU_SLP_WLAN_M_GPIO29_CP                 
+               r208_cp.2
+               u5_cp.BB12
+             u5_cp_pch.BB12
+      GPIO59                  20341    0
+                 r57.2
+               r164_cp.2
+               u5_cp.BH1
+             u5_cp_pch.BH1
+      GPIO40                  20203    0
+                 r56.2
+               r163_cp.2
+               u5_cp.BE2
+             u5_cp_pch.BE2
+      GPIO31                  20342    0
+               r135_cp.2
+                 r360.2
+               u5_cp.BC9
+             u5_cp_pch.BC9
+        v                     21908    0 
+dimm_therm_event_l_2v5_cp               
+               r427_cp.2
+               r430_cp.1
+                u6_cp.78
+                u7_cp.78
+                u8_cp.78
+                u9_cp.78
+                u33_cp.1
+      fan_fpga_gpio_int_l     12018    1
+                  j1.5
+                 r539.2
+                 u11.D8
+      fpga_obfl_cmd           12037    0
+                 r521.1
+                u11.AB11
+                 u18.M5
+      pch_psu_power_cycle_l  205111    0
+               dbg_j1.36
+               r362_cp.2
+               u5_cp.BW18
+             u5_cp_pch.BW18
+                u11.L21
+      fpga_init_done         119167    0
+                 cr1.3
+                cr1%d1.C
+                 r279.2
+                 u11.W8
+                 u22.2
+      fpga_crcerr             12258    0
+                 r278.2
+                u11.AA4
+                 u22.1
+      fpga_status_l          202123    0
+                 r200.2
+                 u11.R8
+      fpga_config_done        20218    0
+                 r199.2
+                 u11.U5
+      fpga_spare_pu           11618    0
+                 r182.2
+                u11.AB19
+      p1v05c_pgood           113153    0
+                dbg_1.22
+               r23_mvr.1
+                 r324.2
+               u1_mvr.16
+                 u11.R9
+                 u100.4
+      P3V3_SSD_EN_L12V        22148    0
+                  q3.D
+                  q6.G
+                 r153.2
+        v                     20411    0 
+unnamed_16_mt25q8p_i92_holdmdq3_cp      
+               r148_cp.1
+                u11_cp.7
+        v                    204110    0 
+unnamed_16_mt25q8p_i92_wpmvppdq2_cp     
+               r147_cp.1
+                u11_cp.3
+      c33_spi_10gbe_cs_n_cp  205107    0
+               r146_cp.1
+                u11_cp.1
+                u18_cp.6
+      mgmt_console_rxd        20735    0
+                mgmt.46
+                 r472.2
+                u11.J10
+      dc_console_rxd         120133    0
+                 r471.2
+              rctl_conn.G3
+                u11.K10
+      clk25m_fpga_tcxo_ac_n  120135    0
+                 c60.1
+                 r39.2
+                 r41.1
+                 u11.N8
+      clk25m_fpga_tcxo_ac_p   12035    0
+                 c59.1
+                 r38.2
+                 r40.1
+                 u11.M8
+      jtag_bdx_tms_cp        121169    0
+               r298_cp.1
+                u1_cp.9
+               u5_cp.R75
+             u5_cp_pch.R75
+      jtag_bdx_tdi_cp        121166    0
+               r296_cp.1
+                u1_cp.7
+               u5_cp.V78
+             u5_cp_pch.V78
+      PU_IRQG_N_CP            20429    0
+               r160_cp.2
+               u5_cp.BL22
+             u5_cp_pch.BL22
+      PD_NCTF_TP5_CP          22312    0
+               r127_cp.1
+               u5_cp.P11
+             u5_cp_pch.P11
+        v                     22317    0 
+UNNAMED_2_RES_I472_B_ADV                
+               c11_adv.2
+                r1_adv.2
+                r2_adv.1
+               u1_adv.10
+      DIFFCLK_BIASREF_CP      21956    0
+               r116_cp.2
+               u5_cp.AA18
+             u5_cp_pch.AA18
+      PU_SATA_RCOMP_CP       223155    0
+               r106_cp.2
+               u5_cp.BB32
+             u5_cp_pch.BB32
+      SOC_RCOMP_CP            22156    0
+                r98_cp.2
+               u5_cp.AA28
+             u5_cp_pch.AA28
+      PU_PCIE_RCOMP_CP       220156    0
+                r89_cp.2
+               u5_cp.AA27
+             u5_cp_pch.AA27
+      VFB1_5V                223132    0
+                r3_5v.2
+                r4_5v.1
+                r5_5v.1
+                u1_5v.7
+      MB_PCH_INT_L_CP         20443    0
+               r238_cp.2
+               u5_cp.BN22
+             u5_cp_pch.BN22
+      PU_PIRQD_N_CP          208136    0
+               r218_cp.2
+               u5_cp.BH22
+             u5_cp_pch.BH22
+      PU_PIRQC_N_CP           20322    0
+               r217_cp.2
+               u5_cp.AR11
+             u5_cp_pch.AR11
+      PU_PIRQB_N_CP          205128    1
+               r216_cp.2
+               u5_cp.BF22
+             u5_cp_pch.BF22
+      PU_SUSWARN_N_GPIO30_CP  20306    0
+               r209_cp.1
+               u5_cp.AY11
+             u5_cp_pch.AY11
+      FM_BIOS_RCVR_BOOT_N_CP  20737    0
+                r28_cp.1
+               r190_cp.2
+               u5_cp.BU22
+             u5_cp_pch.BU22
+      PU_GPIO51_GSXDOUT_CP    20529    0
+                r26_cp.1
+               r188_cp.2
+               u5_cp.BL18
+             u5_cp_pch.BL18
+      PU_SATA1GP_GPIO19_CP    20302    0
+                r24_cp.1
+               r186_cp.2
+               u5_cp.BT3
+             u5_cp_pch.BT3
+        v                     11352    0 
+c105_pch_console2_txd_cp                
+                r57_cp.2
+               r245_cp.1
+               u5_cp.AH76
+             u5_cp_pch.AH76
+               u18_cp.15
+        v                     11454    0 
+c105_pch_console_txd_cp                 
+                r56_cp.2
+               r244_cp.1
+               u5_cp.AG75
+             u5_cp_pch.AG75
+               u18_cp.14
+      PD_SPARE<3>_CP          21935    0
+                r55_cp.2
+               r243_cp.1
+               u5_cp.AG67
+             u5_cp_pch.AG67
+      PD_SPARE<4>_CP         219133    0
+                r54_cp.2
+               r242_cp.1
+               u5_cp.AJ67
+             u5_cp_pch.AJ67
+      PD_SPARE<2>_CP          12063    0
+                r52_cp.2
+               r240_cp.1
+               u5_cp.AN78
+             u5_cp_pch.AN78
+      PD_SPARE<1>_CP          12056    0
+                r51_cp.2
+               r239_cp.1
+               u5_cp.AC64
+             u5_cp_pch.AC64
+      PD_GPIO52_CPUSV_CP     208134    0
+                r43_cp.2
+               r214_cp.2
+               u5_cp.BP16
+             u5_cp_pch.BP16
+      SPEAKER_PCH_CP          20834    0
+                r37_cp.2
+               r197_cp.1
+               u5_cp.BP20
+             u5_cp_pch.BP20
+      LAN_SEL<1>_CP           12061    0
+                r36_cp.2
+               r196_cp.1
+               u5_cp.N72
+             u5_cp_pch.N72
+      PECI_ID<0>_CP           21933    0
+                r32_cp.2
+               r194_cp.1
+               u5_cp.L72
+             u5_cp_pch.L72
+      PECI_ID<1>_CP          120166    0
+                r31_cp.2
+               r193_cp.1
+               u5_cp.AD78
+             u5_cp_pch.AD78
+      fm_cpu2pch_throt_cp    116171    0
+                r30_cp.2
+               r192_cp.1
+               u5_cp.AL74
+             u5_cp_pch.AL74
+               u14_cp.11
+      PD_GPIO53_GSXDIN_CP    205129    0
+                r29_cp.2
+               r191_cp.1
+               u5_cp.BT20
+             u5_cp_pch.BT20
+        v                    205125    0 
+PD_DMI_TERMINATION_GPIO33_CP            
+                r25_cp.2
+               r187_cp.1
+               u5_cp.AN11
+             u5_cp_pch.AN11
+        v                    203102    0 
+FM_ADR_TRIGGER_N_GPIO37_CP              
+                r23_cp.2
+               r185_cp.1
+               u5_cp.BL2
+             u5_cp_pch.BL2
+        v                     20734    0 
+PD_DMI_TERMINATION_GPIO36_CP            
+                r22_cp.2
+               r184_cp.1
+               u5_cp.BT1
+             u5_cp_pch.BT1
+        v                    223115    0 
+PD_TEST_CPU_TSTSTRAP_CP                 
+                r10_cp.1
+               r134_cp.1
+               u5_cp.E55
+             u5_cp_pch.E55
+      PD_CPU_TSTCLK_DN_CP     22314    0
+               r129_cp.1
+               u5_cp.F54
+             u5_cp_pch.F54
+      PD_TSTCLK_SC_DN_CP     223109    0
+               r125_cp.2
+               u5_cp.A73
+             u5_cp_pch.A73
+      PD_TSTCLK_SC_DP_CP     223108    0
+               r124_cp.2
+               u5_cp.A74
+             u5_cp_pch.A74
+      PU_NCSI_RXD0_CP         12042    0
+                r40_cp.1
+               r200_cp.1
+               u5_cp.Y71
+             u5_cp_pch.Y71
+      PU_NCSI_RXD1_CP        120143    0
+                r39_cp.1
+               r199_cp.2
+               u5_cp.W72
+             u5_cp_pch.W72
+      IRQ_SERIRQ_DIR_CP      120163    0
+                r38_cp.1
+               r198_cp.2
+               u5_cp.AD74
+             u5_cp_pch.AD74
+                u12_cp.5
+      LAN_SEL<0>_CP           12054    0
+                r35_cp.2
+               r195_cp.1
+               u5_cp.E75
+             u5_cp_pch.E75
+      PU_SUSACK_N_CP         202104    0
+               r237_cp.2
+               u5_cp.AY4
+             u5_cp_pch.AY4
+      pch_fpga_sus_clk        11463    0
+                  p6.3
+                r27_cp.1
+               r189_cp.2
+               u5_cp.BD11
+             u5_cp_pch.BD11
+                u11.U18
+      VFB1_VPP                22334    0
+                r3_vpp.2
+                r4_vpp.1
+                r5_vpp.1
+                u1_vpp.7
+      cpu_fpga_smi_active_n   11537    0
+               dbg_j1.38
+               r329_cp.1
+               u5_cp.BR4
+             u5_cp_pch.BR4
+                 u11.D5
+      GPIO35                  20324    0
+               r212_cp.1
+                 r358.2
+               u5_cp.BP1
+             u5_cp_pch.BP1
+      PU_A20GATE_CP           20344    0
+               r133_cp.2
+               u5_cp.BL14
+             u5_cp_pch.BL14
+      xdp_cpu_tms_cp          11947    0
+               r233_cp.1
+                u1_cp.11
+               xdp_cp.58
+      xdp_cpu_tdi_cp         120172    0
+               r232_cp.1
+                u1_cp.5
+               xdp_cp.56
+      SMB_10GBE_DATA_CP      121174    0
+               r150_cp.1
+               u5_cp.AM77
+             u5_cp_pch.AM77
+      SMB_10GBE_CLK_CP       220102    0
+               r149_cp.1
+               u5_cp.AM75
+             u5_cp_pch.AM75
+      GPIO60                 204143    0
+                 r47.1
+               r332_cp.1
+               u5_cp.BL7
+             u5_cp_pch.BL7
+      p5v_usb0_fault_l        20732    0
+                mgmt.13
+                 r475.2
+                u11.AB21
+      PU_TEST_RCIN_N_CP      202110    0
+               r126_cp.1
+               u5_cp.BA27
+             u5_cp_pch.BA27
+        v                    113132    0 
+unnamed_10_at90so72_i557_a2             
+                 act2.3
+                 r412.2
+      fpga_led_bcn_blue_l    208130    0
+                  q8.1
+                 r159.1
+                u11.AA19
+        v                    114132    0 
+unnamed_10_at90so72_i557_a0             
+                 act2.2
+                 r35.2
+        v                     11432    0 
+unnamed_10_at90so72_i557_a1             
+                act2.14
+                 r34.2
+      M2_DAS                  11428    0
+                 m2.10
+                 q20.G
+                 r579.2
+                 r651.1
+      m2_pedet                11333    0
+                 m2.69
+                 r577.2
+                u11.W17
+      m2_clkreq_l            122138    0
+                 m2.52
+                 r576.2
+                u11.AA18
+        v                    114131    0 
+UNNAMED_15_NMOSFET_I147_D               
+                 q20.D
+                 q21.G
+                 r541.2
+                 r651.2
+      SR_CLR_L                11444    0
+                 r502.2
+                 u26.10
+                 u27.10
+                 u28.10
+      mem_vr_fault_l          20512    0
+               r79_mvr.1
+                 r495.2
+               u1_mvr.15
+                 u11.C4
+      cpu_vr_fault_l         219104    0
+                r79_vr.1
+                 r494.2
+                u1_vr.15
+                u11.F17
+      mem_vrhot_l            204108    0
+               r86_mvr.1
+                 r486.2
+               u1_mvr.14
+                u11.M22
+      board_id1              122155    0
+                 r203.2
+                 r485.2
+                u11.L22
+      vccsus3_3_pgood         11336    0
+                dbg_1.18
+                 r434.2
+                u1_vpp.6
+                u11.M15
+                 u12.6
+      mifpga2_cpu_int_l      119163    0
+              lctl_conn.A3
+                 r427.2
+                u11.Y19
+      mifpga_cpu_int_l        12136    0
+                 r426.2
+              rctl_conn.B1
+                u11.N21
+      cpu_vrhot_l             12077    0
+                r86_vr.1
+                 r380.2
+                u1_vr.14
+                u11.W13
+      mphy_int_3v3_l         113135    0
+                mgmt.10
+                 r342.2
+                u11.T22
+      ddr4_vpp_pgood         116136    0
+                dbg_1.30
+                 r326.2
+               u1_vpp.11
+                u11.W18
+                 u100.8
+      fpga_lb_nvram_ce_l     119155    0
+                 r294.2
+                u11.M19
+                 u23.26
+      fpga_lb_byte_pu        120156    0
+                 r293.2
+                 u4.47
+                 u5.47
+                 u6.47
+                u11.R20
+                 u24.47
+      jtag_tdo_fpga_3v3      115169    1
+                  p7.3
+                 r289.1
+                 u11.E3
+        v                     12069    0 
+unnamed_20_m25pxx_i131_wp               
+                 r259.1
+                 r468.2
+                 u20.9
+        v                     12171    0 
+unnamed_20_m25pxx_i131_hold             
+                 r258.1
+                 u20.1
+      fpga_dbg_jmpr1         119134    0
+                 p6.14
+                 r257.1
+                 u11.Y5
+      fpga_dbg_jmpr2         116133    0
+                 p6.18
+                 r256.1
+                 u11.W4
+      FPGA_DBG_JMPR3          11334    0
+                 p6.20
+                 r255.1
+                 u11.Y4
+      fpga_dbg_jmpr_l         11934    0
+                  p3.1
+                 r245.2
+                u11.V22
+      fpga_spare5            116118    0
+                 r235.2
+                u11.AA10
+      fan_fpga_alert_l       114137    0
+             fanctrl01_f.14
+             fanctrl23_f.14
+             fanctrl45_f.14
+                  j1.1
+                r78_f.1
+                 r228.2
+                 r533.1
+                 u11.C1
+                 u30.11
+      p1v5_pch_pgood         208110    1
+                dbg_1.28
+                 r219.2
+                u11.N22
+                 u25.3
+                u100.17
+      p1v3_pgood              11456    0
+                dbg_1.26
+                 r218.2
+                  u2.3
+                u11.Y10
+                u100.15
+      p5v_pgood              113136    0
+                dbg_1.38
+                 r217.2
+                u1_5v.6
+                u11.D13
+                 u12.2
+      p1v7_pgood             115153    0
+                dbg_1.24
+                 r216.2
+                u1_5v.11
+                u11.W16
+                u100.13
+      p0v6_pgood             208129    0
+                dbg_1.34
+                 r215.2
+                  u1.9
+                u11.V13
+                u100.11
+      pmbus2_alert_l         121134    0
+                 r196.2
+                u11.H20
+      pmbus1_alert_l         205105    0
+               r87_mvr.1
+                r87_vr.1
+                 r195.2
+               u1_3v3.26
+               u1_mvr.11
+                u1_vr.11
+                 u11.U7
+      mphy_pwr_good          120136    0
+                mgmt.22
+                 r180.2
+                u11.T21
+      db_pgood               119135    0
+                 r178.2
+              rctl_conn.H3
+                 u11.W6
+      UNNAMED_20_OSC_I16_OE   22347    0
+                 r246.1
+                 u19.1
+      VFB2_VPP               223118    0
+                r1_vpp.2
+                 r351.1
+                 r352.1
+               u1_vpp.10
+      p3v3_pgood             113154    0
+                dbg_1.36
+                 r221.2
+                 r937.2
+                u1_3v3.2
+                u11.P10
+                 u12.4
+      P1V7_FP2               223116    0
+                r1_5v.2
+                 r306.1
+                 r307.1
+                u1_5v.10
+        v                     22333    0 
+UNNAMED_2_RES_I471_B_ADV                
+               c12_adv.2
+                r3_adv.2
+                r4_adv.1
+                u1_adv.7
+      BDXDE_DRAM_PWROK_CP    204125    0
+               r177_cp.2
+               u5_cp.BA9
+               u5_cp.CV55
+             u5_cp_pch.BA9
+             u5_cp_pch.CV55
+      pmbus1_sda             208107    0
+                p1_mvr.3
+                p1_vr.3
+               r20_mvr.2
+                r20_vr.2
+                 r186.2
+               u1_3v3.27
+                u1_mvr.9
+                u1_vr.9
+                 u11.V9
+      VPP_FP_A               222163    0
+                 r351.2
+                 r353.1
+      P1V5_PCH_FB             22329    0
+                 r312.2
+                 r313.1
+                 u25.8
+      pmbus_psu1_sda          12036    0
+                 r346.2
+              rctl_conn.A5
+                u11.W21
+      pmbus_psu2_sda          12053    0
+                 r344.2
+              rctl_conn.D7
+                u11.R17
+      smbus_fan_sda          113164    0
+             fanctrl01_f.16
+             fanctrl23_f.16
+             fanctrl45_f.16
+                  j1.3
+                 r223.2
+                 r532.1
+                u11.N20
+                 u30.12
+      fpga_m2_scl             12138    0
+                 r673.2
+                 u11.D7
+                 u29.7
+      fpga_m2_sda            120137    0
+                 r672.2
+                 u11.C2
+                 u29.6
+        v                     22326    0 
+unnamed_24_ep4cgx50fg484_i251_rref0     
+                 r288.2
+                u11.AB1
+      M2_ALERT_L_1V8         115129    0
+                 m2.44
+                 q38.G
+                 r662.1
+                 r671.2
+      SMB_10GBE_ALRT_N_CP     22001    0
+                r13_cp.1
+               r151_cp.2
+               u5_cp.AN71
+             u5_cp_pch.AN71
+      fpga_dc_sfp_sda         11635    0
+              lctl_conn.F2
+                 r449.2
+                u11.T14
+      fpga_dbg_jmpr5         119118    0
+                  p9.3
+                 r194.2
+                u11.AB6
+      fpga_dbg_jmpr4         115133    0
+                  p9.2
+                 r193.2
+                 u11.T8
+      fpga_mgmt_sfp_sda      207132    0
+                mgmt.58
+                 r190.2
+                 u11.F8
+      pmbus2_sda              12134    0
+                 r188.2
+                u11.J21
+      P1V3_FB                223128    0
+                 r304.2
+                 r305.1
+                  u2.8
+      UNNAMED_15_RES_I55_B   115131    0
+                 r666.2
+                r1997.1
+                 u150.8
+      pch_mdio               114166    0
+               r422_cp.1
+                 u17.9
+                u32_cp.6
+      pch_mdc                 11365    0
+               r421_cp.1
+                 u17.7
+                u32_cp.5
+      PCH_FPGA_MDIO0_CP       12170    0
+               r380_cp.1
+                u16_cp.6
+      PCH_FPGA_MDC0_CP        12169    0
+               r379_cp.1
+                u16_cp.5
+      C105_PCH_FPGA_MDIO1_CP  21905    0
+               r420_cp.1
+               u5_cp.T67
+             u5_cp_pch.T67
+                u32_cp.3
+      C105_PCH_FPGA_MDIO0_CP 219106    0
+               r378_cp.1
+               u5_cp.W69
+             u5_cp_pch.W69
+                u16_cp.3
+      pch_dc_mdc             114147    0
+              lctl_conn.H2
+                 r456.1
+                 u17.4
+      pch_mgmt_mdc           119165    0
+                mgmt.50
+                 r455.1
+                 u17.5
+      pch_fpga_mdc            11464    0
+                 r454.1
+                u11.P22
+                 u17.6
+      pch_dc_mdio             11447    0
+              lctl_conn.J2
+                 r453.1
+                 u17.12
+      pch_mgmt_mdio          113148    0
+                mgmt.51
+                 r452.1
+                 u17.11
+      pch_fpga_mdio           11568    0
+                 r451.1
+                u11.N17
+                 u17.10
+      xdp_cpu_pwrgd_r_cp      11567    0
+                r44_cp.2
+                r45_cp.2
+               r220_cp.1
+               u17_cp.21
+      xdp_cpu_pwrgd_cp        12231    0
+               r220_cp.2
+               xdp_cp.39
+      fpga_spi_gold_sel       12278    0
+               r393_cp.1
+                u11.T16
+      BUF_SPI_FLSH_SEL_CP    121178    0
+                p6_cp.2
+                r77_cp.2
+               r393_cp.2
+                u4_cp.6
+                u28_cp.4
+      UNNAMED_15_RES_I77_B    20211    0
+                r2265.2
+                 u150.5
+      xdp_present_3v3_n_cp    11569    0
+               r433_cp.2
+               r434_cp.2
+                u1_cp.1
+                u2_cp.6
+                u34_cp.4
+      jtag_tck_cpu_fpga_3v3  120138    0
+               r409_cp.2
+                u11.AA22
+                u31_cp.4
+        v                     20212    0 
+UNNAMED_43_HDR1X3_I37_C_CP              
+                p6_cp.3
+               r394_cp.1
+        v                     12047    0 
+unnamed_43_hdr2x4_i20_p1_cp             
+               flshp_cp.3
+               r401_cp.2
+                spi_cp.1
+      p3v3_ssd_pwrdown_l      11337    0
+                  q3.G
+                  q4.G
+                 r181.2
+                 r490.2
+                u11.AA13
+      vccsus3_3_en           113134    0
+                dbg_1.17
+                 r433.2
+                u1_vpp.5
+                u11.U22
+      fpga_pch_apwrok        119133    0
+                dbg_1.11
+               r425_cp.2
+               u5_cp.BE13
+             u5_cp_pch.BE13
+                u11.L19
+        v                     11946    0 
+unnamed_38_avc8t245_i91_b_1_cp          
+               r423_cp.2
+               u18_cp.16
+      cpu_reset_3v3_l_cp      20409    0
+               r415_cp.2
+                u17_cp.5
+        v                     20702    0 
+unnamed_43_pi3b3257pg_i28_e_cp          
+               r395_cp.2
+                u3_cp.15
+        v                    223131    0 
+UNNAMED_43_HDR1X3_I37_A_CP              
+                p6_cp.1
+               r392_cp.2
+      fpga_pch_srtcrst       119156    0
+                q2_cp.G
+               r356_cp.1
+                u11.M14
+      fpga_pch_rtcrst        116144    0
+                q1_cp.G
+               r355_cp.1
+                u11.N13
+      ddr4_vpp_en             22010    0
+                dbg_1.29
+                 r330.2
+               u1_vpp.12
+                u11.AA20
+      p1v05c_en               11434    0
+                dbg_1.21
+                 r328.2
+                u11.R11
+        v                    202108    0 
+UNNAMED_40_RES_I60_A_CP                 
+               r324_cp.1
+                sw2_cp.1
+        v                    203109    0 
+PCH_GP50_PSU_POWER_CYCLE_ENABLE_CP      
+               r320_cp.2
+               u5_cp.BV20
+             u5_cp_pch.BV20
+      JTAG_BDX_TRST_N_CP      22005    0
+               r297_cp.2
+                u1_cp.12
+               u5_cp.U75
+             u5_cp_pch.U75
+      fpga_fast_prochot       11436    0
+                dbg_1.12
+                q4_cp.1
+               r294_cp.2
+                u11.E20
+        v                    120170    0 
+unnamed_39_avc8t245_i243_a_1_cp         
+               r291_cp.2
+                u20_cp.3
+      PWRGD_BDXDE_LAN_CP     113167    0
+                r44_cp.1
+               r290_cp.2
+               u5_cp.AE77
+             u5_cp_pch.AE77
+               u19_cp.13
+      cpu_fpga_pwrgd_pch     115137    0
+               dbg_j1.37
+               r288_cp.2
+                 u11.B1
+                u20_cp.5
+      hot_dir_cp             121167    0
+               r285_cp.2
+                u20_cp.2
+      hot_oe_cp               12178    0
+               r283_cp.2
+               u20_cp.22
+        v                    114146    0 
+unnamed_39_avc8t245_i243_b_1_cp         
+               r279_cp.2
+               u20_cp.21
+      th_oe2_cp               11933    0
+               r276_cp.2
+               u19_cp.14
+        v                     12073    0 
+unnamed_39_avc8t245_i243_b_cp           
+               r275_cp.2
+               r281_cp.2
+               u20_cp.18
+      th_oe1_cp               11638    0
+               r273_cp.2
+               u19_cp.15
+        v                    115141    0 
+unnamed_38_avc8t245_i91_dir_cp          
+               r268_cp.2
+                u18_cp.2
+        v                    120157    0 
+unnamed_38_avc8t245_i91_oe_cp           
+               r266_cp.2
+               u18_cp.22
+        v                    114138    0 
+unnamed_38_avc8t245_i146_oe_cp          
+               r265_cp.2
+               u17_cp.22
+        v                    115146    0 
+unnamed_38_avc8t245_i91_b_cp            
+               r262_cp.2
+               u18_cp.20
+      fault_oe1_cp            20401    0
+               r260_cp.2
+               u15_cp.15
+      fault_dir1_cp           12162    0
+               r259_cp.2
+                u15_cp.2
+      fault_oe2_cp            20308    0
+               r258_cp.2
+               u15_cp.14
+      fault_dir2_cp          121163    0
+               r257_cp.2
+                u15_cp.3
+        v                    119146    0 
+unnamed_37_avch4t245_i319_b12_cp        
+               r255_cp.2
+               u15_cp.10
+               u15_cp.11
+      err_oe1_cp              20410    0
+               r254_cp.2
+               u14_cp.15
+      err_dir1_cp            207135    0
+               r253_cp.2
+                u14_cp.2
+      err_oe2_cp              20425    0
+               r252_cp.2
+               u14_cp.14
+      err_dir2_cp            205134    0
+               r251_cp.2
+                u14_cp.3
+        v                    208132    0 
+unnamed_37_avch4t245_i192_b22_cp        
+               r248_cp.2
+               u14_cp.10
+      xdp_cpu_trst_n_cp       12072    0
+               r225_cp.2
+                u1_cp.14
+               xdp_cp.54
+      xdp_cpu_tck0_cp        119147    0
+               r221_cp.2
+                u1_cp.2
+               xdp_cp.57
+      p1v5_pch_en            208109    0
+                dbg_1.27
+                 q18.G
+                 r214.2
+                u11.C11
+                 u25.5
+      p1v3_en                 11353    0
+                dbg_1.25
+                 q16.G
+                 r213.2
+                  u2.5
+                u11.W12
+      p5v_en                  11518    0
+                dbg_1.37
+                 r212.2
+                u1_5v.5
+                u11.C13
+      p1v7_en                 12238    0
+                dbg_1.23
+                 r211.2
+                u1_5v.12
+                u11.AA9
+      p0v6_en                115118    0
+                dbg_1.33
+                 r210.2
+                  u1.7
+                u11.AB8
+      bdx_cpu_rsmrst_n_cp    113152    0
+                r16_cp.2
+               r178_cp.1
+               u5_cp.R77
+             u5_cp_pch.R77
+               u17_cp.15
+      fm_bdxde_reset_n_r_cp  122131    0
+               r222_cp.1
+               xdp_cp.46
+      fpga_act2_reset_l       11536    0
+                 act2.4
+                 r156.2
+                u11.R22
+      fpga_pch_pwrok          11633    0
+                dbg_1.13
+                 p6.11
+               r122_cp.2
+               u5_cp.AN1
+             u5_cp_pch.AN1
+                u11.K14
+      PU_KR_EPHY_RBIAS_CP     22058    0
+               r121_cp.1
+               u5_cp.P56
+             u5_cp_pch.P56
+      jtag_tms_1v05_cp        11964    0
+                r74_cp.2
+               r103_cp.2
+                u1_cp.10
+               u5_cp.BJ2
+             u5_cp_pch.BJ2
+                u26_cp.4
+        v                     20507    0 
+cpld_thermtrip_pch_n_cp                 
+                r65_cp.2
+                r94_cp.2
+               u5_cp.BJ16
+             u5_cp_pch.BJ16
+               u19_cp.12
+      isen2_vr               220153    0
+                r12_vr.1
+              u1_92_vr.38
+                u1_vr.24
+      isen1_vr                22053    0
+                r11_vr.1
+              u1_91_vr.38
+                u1_vr.23
+      isen8_mvr              223152    0
+               r18_mvr.2
+              u1_98_mvr.38
+               u1_mvr.32
+      isen1_mvr               22352    0
+               r11_mvr.2
+              u1_91_mvr.38
+               u1_mvr.23
+      GPIO26                  20202    0
+                 r362.2
+               r364_cp.2
+               u5_cp.BB14
+             u5_cp_pch.BB14
+        v                    115142    0 
+unnamed_38_avc8t245_i146_dir_cp         
+               r267_cp.1
+                u17_cp.2
+      GPIO28                 204126    0
+               r136_cp.2
+                 r361.2
+               u5_cp.BB23
+             u5_cp_pch.BB23
+      P1V5_B                 203129    0
+                 q18.D
+                 q19.B
+                q19%q1.B
+                 r314.2
+      P1V3_B                  22245    0
+                 q16.D
+                 q17.B
+                q17%q1.B
+                 r309.2
+        v                     20330    0 
+UNNAMED_10_NMOSFET_I631_D               
+                  q4.D
+                  q5.B
+                q5%q1.B
+                 r154.2
+      jtag_tms_fpga_3v3      121158    0
+                  p7.5
+                 r68.2
+                 u11.G5
+      jtag_tdi_fpga_3v3       12157    0
+                  p7.9
+                 r67.2
+                 u11.F5
+      SR_OE_L                 11945    0
+                 r501.2
+                 u26.13
+                 u27.13
+                 u28.13
+      mifpga_iofpga_crcerr   122166    0
+                 r436.2
+              rctl_conn.E1
+                 u11.C5
+      mifpga2_iofpga_crcerr  114135    0
+              lctl_conn.B3
+                 r435.2
+                u11.T15
+      chimay_u               113117    0
+                 r10.1
+                 r244.2
+                u11.AB12
+      board_id0               11417    0
+                  r9.1
+                 r243.2
+                u11.AA12
+        v                     20525    0 
+fpga_cpu_mfg_mode_strap                 
+                r20_cp.2
+               r179_cp.1
+               u5_cp.BD22
+             u5_cp_pch.BD22
+                u11.J15
+      jtag_bdx_tck_cp         12177    0
+               r105_cp.2
+               r408_cp.2
+                u1_cp.4
+               u5_cp.T76
+             u5_cp_pch.T76
+                u31_cp.1
+      p3v3_en                114118    0
+                dbg_1.35
+                r4_3v3.2
+                 r220.2
+                u1_3v3.3
+                u11.AB9
+      fpga_spi_std_wp_l      121136    0
+                r79_cp.2
+               r401_cp.1
+                u11.T20
+      pvccin_pgood            11354    0
+                dbg_1.20
+                r22_vr.1
+                 r323.2
+                u1_vr.12
+                u11.R10
+                 u100.2
+      p1v2_vddq_pgood        116135    0
+                dbg_1.32
+               r22_mvr.1
+                 r325.2
+               u1_mvr.12
+                u11.AB20
+                 u100.6
+      P3V3_VFB               223144    0
+                 r922.1
+                 r935.1
+               u1_3v3.23
+        v                    120173    0 
+XDP_RST_PCH_SYSRST_N_CP                 
+               r340_cp.2
+               r414_cp.2
+               u5_cp.BL4
+             u5_cp_pch.BL4
+      fpga_pch_sys_reset_l   115135    0
+                dbg_1.8
+               r326_cp.2
+               r414_cp.1
+                u11.K13
+      PD_TXT_PLTEN_CP        121173    0
+               r181_cp.1
+               u5_cp.AP72
+             u5_cp_pch.AP72
+      PU_TXT_AGENT_CP        120167    0
+                r21_cp.2
+               r180_cp.1
+               u5_cp.AM72
+             u5_cp_pch.AM72
+      CPU_BIST_ENABLE_CP     220103    0
+                r95_cp.2
+               u5_cp.AM69
+             u5_cp_pch.AM69
+        v                    113145    0 
+unnamed_26_pi3b3253_i1_ea               
+                 r457.1
+                 u17.1
+                 u17.15
+        v                    115161    0 
+unnamed_42_pi3b3257pg_i223_e_cp         
+               r383_cp.1
+                u1_cp.15
+        v                     11344    0 
+unnamed_17_pi3b3257pg_i429_e            
+                 r383.1
+                 u13.15
+      P1V7_FP_A              220163    0
+                 r306.2
+                 r308.1
+        v                     22247    0 
+UNNAMED_15_NMOSFET_I151_D               
+                 q21.D
+                 r580.2
+      UNNAMED_15_LED_I153_K  116129    0
+                ledm2.2
+              ledm2%led1.A
+                 r580.1
+      ts_add0                121175    0
+                 r531.2
+                 u30.10
+      ts_add1                 12175    0
+                 r530.2
+                 u30.6
+        v                    121162    0 
+UNNAMED_42_AUC1G125_I289_A_CP           
+               r431_cp.2
+                u34_cp.2
+        v                     22006    0 
+UNNAMED_18_AUC1G125_I18_A_CP            
+               r429_cp.2
+                u33_cp.2
+        v                     12168    0 
+unnamed_42_auc1g125_i272_a_cp           
+               r407_cp.2
+                u31_cp.2
+        v                     12046    0 
+UNNAMED_42_AUC1G125_I171_OE_CP          
+               r389_cp.2
+                u27_cp.1
+        v                    121176    0 
+UNNAMED_42_AUC1G125_I178_OE_CP          
+               r388_cp.2
+                u26_cp.1
+        v                    120147    0 
+UNNAMED_42_AUC1G125_I183_OE_CP          
+               r387_cp.2
+                u25_cp.1
+        v                     11446    0 
+unnamed_42_auc1g125_i192_oe_cp          
+               r386_cp.2
+                u24_cp.1
+        v                     11542    0 
+unnamed_42_auc1g125_i202_oe_cp          
+               r385_cp.2
+                u23_cp.1
+        v                     12161    0 
+UNNAMED_42_AUC1G125_I251_A_CP           
+               r323_cp.2
+                u22_cp.2
+      SRT_SVID_ALERT_CPU_L   220130    0
+                 r335.2
+               u5_cp.AK72
+             u5_cp_pch.AK72
+      srt_svid_clk_mem_vrm   219167    0
+                 r478.2
+               u1_mvr.17
+      srt_svid_clk_vrm       223166    0
+                 r375.2
+                u1_vr.17
+      pch_fpga_slp_s3_l       11963    0
+               dbg_j1.14
+                  p6.9
+               r169_cp.2
+               u5_cp.AY2
+             u5_cp_pch.AY2
+                u11.L15
+      SERIRQ_CLK_R_CP         20413    0
+               r117_cp.1
+               u5_cp.V11
+             u5_cp_pch.V11
+        v                     20731    0 
+fm_bdxde_caterr_gtl_n_cp                
+               r249_cp.2
+               u5_cp.Y67
+             u5_cp_pch.Y67
+               u14_cp.13
+      SRT_3V3_PMBUS1_SCL     203108    0
+                 r460.2
+               u1_3v3.28
+      srt_cpuvr_pmbus1_scl    21904    0
+                p1_vr.5
+                r21_vr.2
+                 r462.2
+                u1_vr.10
+      srt_memvr_pmbus1_scl    20403    0
+                p1_mvr.5
+               r21_mvr.2
+                 r483.2
+               u1_mvr.10
+      PD_DDR01_RCOMP_0_CP    222151    0
+                r88_cp.2
+               u5_cp.CC52
+             u5_cp_pch.CC52
+      PD_DDR01_RCOMP_2_CP    222150    0
+                r86_cp.2
+               u5_cp.CC49
+             u5_cp_pch.CC49
+        v                     20209    0 
+UNNAMED_6_RES_I482_B_CP                 
+               r312_cp.2
+                u10_cp.1
+        v                    208150    0 
+UNNAMED_6_HDR1X3_I462_A_CP              
+                p1_cp.1
+               r309_cp.2
+        v                     12234    0 
+UNNAMED_6_HDR1X3_I462_C_CP              
+                p1_cp.3
+               r310_cp.1
+      P5V_R                   20213    0
+                 r922.2
+                 r936.1
+      cpld_fast_prochot_n_cp 114168    0
+                q4_cp.3
+               r295_cp.2
+               u5_cp.AG71
+               u5_cp.CC56
+             u5_cp_pch.AG71
+             u5_cp_pch.CC56
+               u15_cp.13
+      fm_pch_hot_n_cp        115171    0
+               r278_cp.2
+               u5_cp.AL76
+               u5_cp.BF7
+             u5_cp_pch.AL76
+             u5_cp_pch.BF7
+               u20_cp.17
+      fm_bdxde_err2_gtl_n_cp  11364    0
+               r271_cp.2
+               u5_cp.AB76
+             u5_cp_pch.AB76
+               u20_cp.15
+      fm_bdxde_err1_gtl_n_cp  11564    0
+               r270_cp.2
+               u5_cp.AC75
+             u5_cp_pch.AC75
+               u20_cp.14
+      fm_bdxde_err0_gtl_n_cp  20831    0
+               r247_cp.2
+               u5_cp.AC77
+             u5_cp_pch.AC77
+               u14_cp.12
+      P3V3_SSD_DISCHARGE      11328    0
+                  q5.C
+                q5%q1.C
+                 r155.2
+      BDXDE_SLP3_CPU_N_CP     11462    0
+               r169_cp.1
+               r170_cp.2
+               r176_cp.2
+               u5_cp.AC71
+             u5_cp_pch.AC71
+      SERIRQ_CLK_CP           20510    0
+               r117_cp.2
+               r119_cp.1
+               u5_cp.AC67
+             u5_cp_pch.AC67
+      PD_TEST_NOA_COMP_CP     22307    0
+               r123_cp.2
+               u5_cp.AA66
+             u5_cp_pch.AA66
+      PD_TEST<0>_CP           22110    0
+               r102_cp.1
+               u5_cp.CU76
+             u5_cp_pch.CU76
+      PD_TEST<1>_CP           22244    0
+               r101_cp.1
+               u5_cp.CM78
+             u5_cp_pch.CM78
+        v                    113165    0 
+fm_bdxde_thermtrip_n_cp                 
+               r274_cp.2
+               u5_cp.AF72
+             u5_cp_pch.AF72
+               u20_cp.16
+        v                     11970    0 
+xdp_cpu_obsfn_b_mbp7_n_cp               
+               r231_cp.1
+               u5_cp.J76
+             u5_cp_pch.J76
+               xdp_cp.23
+        v                     11968    0 
+xdp_cpu_obsfn_b_mbp6_n_cp               
+               r230_cp.1
+               u5_cp.K75
+             u5_cp_pch.K75
+               xdp_cp.21
+        v                    120177    0 
+xdp_cpu_obsdata_a_mbp3_n_cp             
+               r229_cp.1
+               u5_cp.M75
+             u5_cp_pch.M75
+               xdp_cp.11
+        v                     12074    0 
+xdp_cpu_obsdata_a_mbp2_n_cp             
+               r227_cp.1
+               u5_cp.N78
+             u5_cp_pch.N78
+                xdp_cp.9
+      xdp_cpu_preq_n_cp      119171    0
+               r226_cp.1
+               u5_cp.K77
+             u5_cp_pch.K77
+                xdp_cp.3
+      xdp_cpu_tdo_cp         119173    0
+               r224_cp.1
+                u2_cp.3
+               xdp_cp.52
+      PHY_BDXDE_WAKE_N_R_CP  220129    0
+               r152_cp.1
+               u5_cp.AD76
+             u5_cp_pch.AD76
+      phy_bdxde_wake_n_cp    219103    0
+                r64_cp.2
+               r152_cp.2
+               r154_cp.2
+               u20_cp.20
+      PD_DDR01_RCOMP_1_CP    221151    0
+                r87_cp.2
+               u5_cp.CD51
+             u5_cp_pch.CD51
+      P1V5_C                 208149    0
+                 q19.C
+                q19%q1.C
+                 r315.2
+                 r316.2
+      P1V3_C                 222155    0
+                 q17.C
+                q17%q1.C
+                 r310.2
+                 r311.2
+      pch_lpc_lframe_l       121153    0
+               r331_cp.2
+                tpm_cp.3
+                u11.T17
+      LPC_LFRAME_R_N_CP      120165    0
+               r331_cp.1
+               u5_cp.AH1
+             u5_cp_pch.AH1
+      srt_io_mi_strobe       120154    0
+                 r240.1
+                 u11.H8
+      io_mi_strobe            12029    0
+                 r240.2
+              rctl_conn.B2
+      srt_io_mi_data         121155    0
+                 r241.1
+                 u11.G8
+      io_mi_data              12129    0
+                 r241.2
+              rctl_conn.C2
+      srt_io_mi2_strobe      121137    0
+                 r437.1
+                u11.C10
+      io_mi2_strobe           12229    0
+              lctl_conn.E1
+                 r437.2
+      srt_io_mi2_data         11936    0
+                 r438.1
+                u11.J13
+      io_mi2_data            121129    0
+              lctl_conn.D1
+                 r438.2
+      srt_fpga_sdo            12068    0
+                 r276.1
+                 u20.8
+      fpga_sdo                12270    0
+                 r276.2
+                 u11.K4
+      LPC_SERIRQ_R_CP        120164    0
+               r302_cp.1
+                u12_cp.4
+      srt_fpga_dclk          119128    0
+                 r284.2
+                 u11.D3
+      jtag_tck_fpga_3v3      122133    0
+                 r349.1
+                 u11.E4
+      IRQ_SERIRQ_DATA_R_CP   120155    0
+               r301_cp.2
+                u12_cp.3
+      PHY_WAKE_N_CP          119145    0
+               r153_cp.1
+               u5_cp.BA1
+             u5_cp_pch.BA1
+      srt_fpga_spi_cs_l      119136    0
+                 r292.1
+                 u11.J4
+      srt_fpga_sdi            12271    0
+                 r350.1
+                 u11.D1
+        v                     12235    0 
+unnamed_24_ep4cgx50fg484_i251_config    
+                 r283.2
+                 u11.H4
+      fpga_dclk              119150    0
+                 r284.1
+                 r493.2
+                 u20.16
+      pch_serirq             119177    0
+               r302_cp.2
+               r367_cp.2
+               tpm_cp.16
+               u5_cp.BU14
+             u5_cp_pch.BU14
+                u11.J16
+        v                    122147    0 
+PWR_A3V3_A2V5_A1V2_PGOOD                
+                 cr2.3
+                cr2%d1.C
+                cr2_a.2
+               cr2_a%d1.C
+                cr3_a.2
+               cr3_a%d1.C
+                 r31.2
+                 r283.1
+                r826_a.2
+                u1_adv.6
+Too many to print.
+      IRQ_SERIRQ_DATA_CP      11952    0
+               r246_cp.2
+               r301_cp.1
+               u5_cp.AE75
+             u5_cp_pch.AE75
+      phy_wake_n_r_cp         11974    0
+               r153_cp.2
+               r292_cp.1
+                u20_cp.4
+      fpga_spi_cs_l           11445    0
+                 r292.2
+                 r347.1
+                 u20.7
+      fpga_sdi               119151    0
+                 r261.1
+                 r350.2
+                 u20.15
+      FP_PWR_SW_CP            12269    0
+               r325_cp.1
+               r336_cp.2
+                sw1_cp.2
+        v                     12158    0 
+UNNAMED_24_HDR2X5_I306_P1               
+                  p7.1
+                 r69.1
+                 r349.2
+      SRT_SPI_PCI_MOSI_CP     20833    0
+               r314_cp.2
+               u5_cp.BL11
+             u5_cp_pch.BL11
+      spi_pch_mosi_cp         20406    0
+               r314_cp.1
+                u3_cp.3
+      spi_fpga_miso           20509    0
+               r402_cp.1
+                u11.T19
+        v                     12055    0 
+srt_iofpga_mifpga_ledclk                
+                 r207.1
+                u11.D17
+        v                     12230    0 
+NC_IOFPGA_MIFPGA_LEDCLK                 
+                 r207.2
+      SRT_CLK125M_FPGA        11969    0
+                 r37.1
+                 u19.3
+      clk125m_fpga           122156    0
+                 r37.2
+                u11.M11
+      M2_SDA_1V8             114128    0
+                 m2.42
+                 r667.1
+      M2_SCL_1V8             119129    0
+                 m2.40
+                 r668.1
+      SRT_PCH_FPGA_MDC1_CP   219130    0
+               r360_cp.1
+               u5_cp.V67
+             u5_cp_pch.V67
+      SRT_PCH_FPGA_MDC0_CP   115145    0
+               r424_cp.1
+               u5_cp.U69
+             u5_cp_pch.U69
+      10gbe_flshp_miso_cp     12048    0
+               r365_cp.1
+                u11_cp.2
+      c33_spi_10gbe_miso_cp  115163    0
+               r365_cp.2
+               r435_cp.1
+                u17_cp.4
+      SRT_M2_SDA_1V8          11349    0
+                 r667.2
+                 r670.2
+                 u29.3
+      SRT_M2_SCL_1V8          11449    0
+                 r668.2
+                 r669.2
+                 u29.2
+      C105_PCH_FPGA_MDC1_CP   21929    0
+               r360_cp.2
+               r419_cp.1
+                u32_cp.4
+      C105_PCH_FPGA_MDC0_CP  119149    0
+               r377_cp.1
+               r424_cp.2
+                u16_cp.4
+      CLK_33M_PCH_PCH_R_CP   204127    0
+                r83_cp.1
+               u5_cp.AA4
+             u5_cp_pch.AA4
+      CLK_33M_PCH_CP         204130    0
+                r83_cp.2
+               u5_cp.AC7
+             u5_cp_pch.AC7
+      CLK_33M_TPM_R_CP       204129    0
+                r82_cp.1
+               u5_cp.Y11
+             u5_cp_pch.Y11
+      CLK33M_TPM_CP          202150    0
+                r82_cp.2
+                tpm_cp.1
+      USB2_BIAS_CP            22345    0
+                r99_cp.2
+               u5_cp.AG11
+               u5_cp.AJ11
+             u5_cp_pch.AG11
+             u5_cp_pch.AJ11
+      smb_ddr_scl_lv2v5_cp    22267    0
+               r376_cp.2
+               u6_cp.141
+               u7_cp.141
+               u8_cp.141
+               u9_cp.141
+      smb_ddr_sda_lv2v5_cp    22167    0
+               r375_cp.2
+               u6_cp.285
+               u7_cp.285
+               u8_cp.285
+               u9_cp.285
+      SMB_DDR_SCL_LV2V5_R_CP 219109    0
+               r374_cp.2
+               r376_cp.1
+                u13_cp.7
+      SMB_DDR_SDA_LV2V5_R_CP  21910    0
+               r373_cp.2
+               r375_cp.1
+                u13_cp.6
+      srt_sr_store_clk       121138    0
+                 r500.1
+                u11.AA15
+      SR_STORE_CLK            11548    0
+                 r500.2
+                 u26.12
+                 u27.12
+                 u28.12
+      srt_sr_clk              12137    0
+                 r499.1
+                u11.AA16
+      SR_CLK                 115148    0
+                 r499.2
+                 u26.11
+                 u27.11
+                 u28.11
+      srt_flshp_miso_cp      204103    0
+               flshp_cp.2
+               r406_cp.1
+      srt_flshg_miso_cp      204104    0
+               flshg_cp.2
+               r405_cp.1
+      srt_jtag_tck_pch_3v3    11443    0
+                 r174.1
+                 u14.3
+      jtag_tck_pch_3v3       115144    0
+                 r174.2
+                u23_cp.2
+        v                     11550    0 
+srt_jtag_tck_fpga_cpu_3v3               
+                 r447.1
+                u11.Y20
+      jtag_tck_fpga_cpu_3v3  114141    0
+                 r447.2
+                 u13.13
+        v                    113143    0 
+unnamed_42_auc1g125_i192_y_cp           
+               r390_cp.1
+                u24_cp.4
+        v                    119162    0 
+jtag_tck_cpu_buf_1v05_cp                
+                r73_cp.2
+               r390_cp.2
+                u1_cp.3
+      srt_jtag_tck_cpu_3v3    11442    0
+                 r175.1
+                 u14.2
+      jtag_tck_cpu_3v3        11543    0
+                 r175.2
+                u24_cp.2
+      srt_fpga_obfl_clk       12243    0
+                 r498.2
+                u11.AB10
+      fpga_obfl_clk          116142    0
+                 r498.1
+                 u18.M6
+      SRT_CLK33M_PCI0         12174    0
+                 r147.1
+               u5_cp.AA9
+             u5_cp_pch.AA9
+      clk33m_fpga            122178    0
+                 r147.2
+                u11.N11
+        v                    113146    0 
+unnamed_42_auc1g125_i202_y_cp           
+               r391_cp.1
+                u23_cp.4
+      srt_pmbus_psu1_scl      11954    0
+                 r526.2
+                u11.P13
+      srt_pmbus_psu2_scl     113150    0
+                 r525.2
+                u11.Y22
+      pmbus_psu1_scl          12031    0
+                 r345.2
+                 r526.1
+              rctl_conn.B5
+      pmbus_psu2_scl          12245    0
+                 r343.2
+                 r525.1
+              rctl_conn.E7
+      JTAG_TCK_PCH_1V05_CP   119164    0
+                r72_cp.2
+               r104_cp.2
+               r391_cp.2
+               u5_cp.BM3
+             u5_cp_pch.BM3
+      PECI_PCH_R_CP          207131    0
+                r92_cp.2
+               u5_cp.BG16
+             u5_cp_pch.BG16
+      SRT_SPI_PCH_CLK_CP      20733    0
+               r319_cp.1
+               u5_cp.BG13
+             u5_cp_pch.BG13
+      spi_pch_clk_cp          20407    0
+               r319_cp.2
+                u3_cp.6
+      SMB_DDR01_SCL_CP       222107    0
+               r322_cp.1
+               u5_cp.CD58
+             u5_cp_pch.CD58
+      SMB_DDR01_SDA_CP       222106    0
+               r321_cp.1
+               u5_cp.CC60
+             u5_cp_pch.CC60
+      SMB_DDR01_SCL_R_CP     219108    0
+               r322_cp.2
+               r372_cp.2
+                u13_cp.2
+      SMB_DDR01_SDA_R_CP      21907    0
+               r321_cp.2
+               r371_cp.2
+                u13_cp.3
+      spi_flsh_miso_cp       207103    0
+               r402_cp.2
+               r405_cp.2
+               r406_cp.2
+                u3_cp.12
+      XTAL_RTCX2_CP           20804    0
+                c12_cp.1
+               r304_cp.2
+               u5_cp.AT4
+             u5_cp_pch.AT4
+                y1_cp.2
+      XTAL_RTCX1_CP          208104    0
+                c11_cp.1
+               r304_cp.1
+               u5_cp.AT2
+             u5_cp_pch.AT2
+                y1_cp.1
+        v                     21901    0 
+XTAL_KR_EPHY_REFCLK_OUT_CP              
+               c118_cp.1
+               r305_cp.2
+               u5_cp.F58
+             u5_cp_pch.F58
+                y3_cp.3
+        v                    219101    0 
+XTAL_KR_EPHY_REFCLK_IN_CP               
+               c117_cp.1
+               r305_cp.1
+               u5_cp.J58
+             u5_cp_pch.J58
+                y3_cp.1
+      XTAL_PCH_25M_IN_CP      20501    0
+               c114_cp.1
+               r303_cp.1
+                u5_cp.K2
+              u5_cp_pch.K2
+                y2_cp.1
+        v                     22152    0 
+UNNAMED_2_CAP_I478_A_ADV                
+                c9_adv.2
+                u2_adv.2
+      UNNAMED_15_CAP_I57_B   222110    0
+                 c348.1
+                 u150.7
+      UNNAMED_31_CAP_I19_B   221138    0
+                 c238.1
+                 u25.7
+      UNNAMED_31_CAP_I53_B   221137    0
+                 c237.1
+                  u2.7
+      SRT_DDR_VTT_REF        219149    0
+                 c229.1
+                 r60.2
+                 r61.2
+                  u1.1
+      avdd_sense_r_mvr        22067    0
+               c02_mvr.2
+                p1_mvr.8
+               r01_mvr.2
+               u1_mvr.30
+      dvdd_sense_r_vr         22365    0
+                c01_vr.2
+                p1_vr.4
+                r03_vr.2
+                u1_vr.21
+      dvdd_sense_r_mvr       219166    0
+               c01_mvr.2
+                p1_mvr.4
+               r03_mvr.2
+               u1_mvr.21
+        v                    221101    0 
+unnamed_7_cap_i279_b_vr                 
+                c04_vr.1
+                r24_vr.2
+                r25_vr.2
+                u1_vr.37
+        v                    220110    0 
+unnamed_7_cap_i279_b_mvr                
+               c04_mvr.1
+               r24_mvr.2
+               r25_mvr.2
+               u1_mvr.37
+      unnamed_29_res_i143_b  221103    0
+                c10_vr.1
+                 r408.2
+                u1_vr.34
+      unnamed_29_res_i264_b   22037    0
+               c10_mvr.1
+                 r504.2
+               u1_mvr.34
+        v                    220109    0 
+unnamed_7_cap_i276_b_vr                 
+                c03_vr.1
+                r09_vr.2
+                r10_vr.2
+                u1_vr.38
+        v                    220108    0 
+unnamed_7_cap_i276_b_mvr                
+               c03_mvr.1
+               r09_mvr.2
+               r10_mvr.2
+               u1_mvr.38
+      P3V3_SSD_EN_12V        220135    0
+                 c100.1
+                  q6.D
+                  q7.4
+                 r62.2
+      UNNAMED_28_CAP_I126_B  220138    0
+                 c13.1
+                 r29.2
+                 r30.2
+                u1_adv.5
+               u1_adv.12
+               u2_adv.12
+        v                     11932    0 
+HSD_PE_CPU_RC_LN0_IOFPGA_N              
+                 c57.2
+               u5_cp.D30
+             u5_cp_pch.D30
+        v                    114117    0 
+hsd_pe_cpu_rc_ln0_iofpga_ac_p           
+                 c57.1
+                 u11.Y2
+        v                    116132    0 
+HSD_PE_CPU_RC_LN0_IOFPGA_P              
+                 c58.2
+               u5_cp.B30
+             u5_cp_pch.B30
+        v                     11517    0 
+hsd_pe_cpu_rc_ln0_iofpga_ac_n           
+                 c58.1
+                 u11.Y1
+      UNNAMED_30_CAP_I149_A   21950    0
+                 c233.2
+                  u1.6
+      xdp_cpu_syspwrok_cp     12277    0
+               c135_cp.1
+               r228_cp.1
+               r412_cp.2
+               xdp_cp.47
+      VBST1_VPP              219165    0
+                c5_vpp.2
+                u1_vpp.2
+        v                    223164    0 
+UNNAMED_2_CAP_I486_A_ADV                
+                c5_adv.2
+                u1_adv.2
+      VBST1_5V               222164    0
+                c5_5v.2
+                u1_5v.2
+      VBST2_VPP               22065    0
+                c2_vpp.2
+               u1_vpp.15
+        v                     21965    0 
+UNNAMED_2_CAP_I487_A_ADV                
+                c2_adv.2
+               u1_adv.15
+      VBST2_5V                22364    0
+                c2_5v.2
+                u1_5v.15
+      ts_vcc                  22207    0
+                 c303.1
+                 r529.2
+                 u30.2
+                 u30.15
+      xdp_cpu_pwr_debug_n_cp 119178    0
+               c136_cp.1
+               r235_cp.1
+               u5_cp.U77
+             u5_cp_pch.U77
+               xdp_cp.45
+      VDD_BOOT_92             22068    0
+              c06_92_vr.2
+              u1_92_vr.33
+      VDD_BOOT_91            222167    0
+              c06_91_vr.2
+              u1_91_vr.33
+      BDX_SRTCRST_N_CP       114165    0
+               c110_cp.1
+                q2_cp.D
+                r66_cp.2
+               r308_cp.2
+               r310_cp.2
+               u5_cp.AP4
+             u5_cp_pch.AP4
+      nvram_bat2_fltr         22133    0
+                  b1.1
+                 c216.1
+                 u23.24
+      BDX_RTCRST_N_CP         20506    0
+               c112_cp.1
+                q1_cp.D
+               r309_cp.1
+               r311_cp.2
+               r312_cp.1
+                sw2_cp.2
+               u5_cp.AP9
+             u5_cp_pch.AP9
+      A_VCCRTCEXT_CP         221112    0
+                c18_cp.1
+               u5_cp.AW16
+             u5_cp_pch.AW16
+Common Devices:
+               fanhs01_f
+                  q7_f
+                 r42_f
+                 r43_f
+                c07_3v3
+                 r1_3v3
+                 u1_3v3
+                 c1_5v
+                 c1_adv
+                 c1_vpp
+Too many to print.
+Total of 1682 nodes, 1409 reported.
+Message is:  None.
+------End, 1 Problem Reported-----------

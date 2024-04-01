@@ -1,0 +1,2788 @@
+------------------------------------------------------------------------------
+AGILENT ICT IPG Summary Report Rev 07.20pd Fri Jun 15 09:54:24 2018      
+
+73-19246-05_2old
+------------------------------------------------------------------------------
+
+Reading "testorder".
+
+
+
+Test Program Generation Options:
+    Incremental Generation
+    Shorts Test Is To Be Generated
+    Chek-Point Pins Test Is To Be Generated
+    Capacitor Discharge Test Is To Be Generated
+
+
+  Node _d_ACT2_21 is inaccessible.
+  Node _d_U5_CP_BG28 is inaccessible.
+  Node _d_U5_CP_BH26 is inaccessible.
+  Node _d_U5_CP_BJ28 is inaccessible.
+  Node _d_U5_CP_BJ32 is inaccessible.
+  Node _d_U5_CP_BL26 is inaccessible.
+  Node _d_U5_CP_BL33 is inaccessible.
+  Node _d_U5_CP_BM28 is inaccessible.
+  Node _d_U5_CP_BM32 is inaccessible.
+  Node _d_U5_CP_BN26 is inaccessible.
+  Node _d_U5_CP_BN33 is inaccessible.
+  Node _d_U5_CP_BP28 is inaccessible.
+  Node _d_U5_CP_BP32 is inaccessible.
+  Node _d_U5_CP_BR33 is inaccessible.
+  Node _d_U5_CP_BT32 is inaccessible.
+  Node _d_U5_CP_BU33 is inaccessible.
+  Node _d_U30_1 is inaccessible.
+  Node _d_U30_5 is inaccessible.
+  Node _d_U30_9 is inaccessible.
+  Node _d_U30_13 is inaccessible.
+  Node _d_U30_16 is inaccessible.
+  Node CLK100M_FPGA_PE_N is inaccessible.
+  Node CLK100M_FPGA_PE_P is inaccessible.
+  Node CLK_100M_MDOT2_N is inaccessible.
+  Node CLK_100M_MDOT2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_P is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_P is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_P is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_P is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_N is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_P is inaccessible.
+  Node LAN_KX4_RX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<3>_CP is inaccessible.
+  Node NC_LAN_NCSI_ARB_IN_CP is inaccessible.
+  Node NC_LAN_NCSI_CRS_DV_CP is inaccessible.
+  Node NC_NCTF_TP1_CP is inaccessible.
+  Node NC_NCTF_TP2_CP is inaccessible.
+  Node NC_NCTF_TP3_CP is inaccessible.
+  Node NC_NCTF_TP4_CP is inaccessible.
+  Node NC_NCTF_TP6_CP is inaccessible.
+  Node NC_NCTF_TP7_CP is inaccessible.
+  Node NC_NCTF_TP8_CP is inaccessible.
+  Node NC_NCTF_TP9_CP is inaccessible.
+  Node NC_NCTF_TP10_CP is inaccessible.
+  Node NC_NCTF_TP11_CP is inaccessible.
+  Node NC_NCTF_TP14_CP is inaccessible.
+  Node NC_NCTF_TP15_CP is inaccessible.
+  Node NC_NCTF_TP16_CP is inaccessible.
+  Node NC_SPI_PCH_IO2_CP is inaccessible.
+  Node NC_SPI_PCH_IO3_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DN_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DP_CP is inaccessible.
+  Node PE1_RX_D1_N_CP is inaccessible.
+  Node PE1_RX_D1_P_CP is inaccessible.
+  Node PE1_RX_D2_N_CP is inaccessible.
+  Node PE1_RX_D2_P_CP is inaccessible.
+  Node PE1_RX_D3_N_CP is inaccessible.
+  Node PE1_RX_D3_P_CP is inaccessible.
+  Node PE1_RX_D4_N_CP is inaccessible.
+  Node PE1_RX_D4_P_CP is inaccessible.
+  Node PE1_RX_D5_N_CP is inaccessible.
+  Node PE1_RX_D5_P_CP is inaccessible.
+  Node PE1_RX_D6_N_CP is inaccessible.
+  Node PE1_RX_D6_P_CP is inaccessible.
+  Node PE1_RX_D7_N_CP is inaccessible.
+  Node PE1_RX_D7_P_CP is inaccessible.
+  Node PE1_RX_D8_N_CP is inaccessible.
+  Node PE1_RX_D8_P_CP is inaccessible.
+  Node PE1_RX_D9_N_CP is inaccessible.
+  Node PE1_RX_D9_P_CP is inaccessible.
+  Node PE1_RX_D10_N_CP is inaccessible.
+  Node PE1_RX_D10_P_CP is inaccessible.
+  Node PE1_RX_D11_N_CP is inaccessible.
+  Node PE1_RX_D11_P_CP is inaccessible.
+  Node PE1_RX_D12_N_CP is inaccessible.
+  Node PE1_RX_D12_P_CP is inaccessible.
+  Node PE1_RX_D13_N_CP is inaccessible.
+  Node PE1_RX_D13_P_CP is inaccessible.
+  Node PE1_RX_D14_N_CP is inaccessible.
+  Node PE1_RX_D14_P_CP is inaccessible.
+  Node PE1_RX_D15_N_CP is inaccessible.
+  Node PE1_RX_D15_P_CP is inaccessible.
+  Node PE1_TX_D1_N_CP is inaccessible.
+  Node PE1_TX_D1_P_CP is inaccessible.
+  Node PE1_TX_D2_N_CP is inaccessible.
+  Node PE1_TX_D2_P_CP is inaccessible.
+  Node PE1_TX_D3_N_CP is inaccessible.
+  Node PE1_TX_D3_P_CP is inaccessible.
+  Node PE1_TX_D4_N_CP is inaccessible.
+  Node PE1_TX_D4_P_CP is inaccessible.
+  Node PE1_TX_D5_N_CP is inaccessible.
+  Node PE1_TX_D5_P_CP is inaccessible.
+  Node PE1_TX_D6_N_CP is inaccessible.
+  Node PE1_TX_D6_P_CP is inaccessible.
+  Node PE1_TX_D7_N_CP is inaccessible.
+  Node PE1_TX_D7_P_CP is inaccessible.
+  Node PE1_TX_D8_N_CP is inaccessible.
+  Node PE1_TX_D8_P_CP is inaccessible.
+  Node PE1_TX_D9_N_CP is inaccessible.
+  Node PE1_TX_D9_P_CP is inaccessible.
+  Node PE1_TX_D10_N_CP is inaccessible.
+  Node PE1_TX_D10_P_CP is inaccessible.
+  Node PE1_TX_D11_N_CP is inaccessible.
+  Node PE1_TX_D11_P_CP is inaccessible.
+  Node PE1_TX_D12_N_CP is inaccessible.
+  Node PE1_TX_D12_P_CP is inaccessible.
+  Node PE1_TX_D13_N_CP is inaccessible.
+  Node PE1_TX_D13_P_CP is inaccessible.
+  Node PE1_TX_D14_N_CP is inaccessible.
+  Node PE1_TX_D14_P_CP is inaccessible.
+  Node PE1_TX_D15_N_CP is inaccessible.
+  Node PE1_TX_D15_P_CP is inaccessible.
+  Node TP_ADR_COMPLETE_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DN_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DP_CP is inaccessible.
+  Node TP_CLKOUTFLEX1_GPIO65_CP is inaccessible.
+  Node TP_CLKOUTFLEX3_GPIO67_CP is inaccessible.
+  Node TP_DDR_VREFDQ0_CP is inaccessible.
+  Node TP_DDR_VREFDQ1_CP is inaccessible.
+  Node TP_KR_EPHY_DFTANA<1>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<0>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<1>_CP is inaccessible.
+  Node TP_KR_EPHY_MON_DN_CP is inaccessible.
+  Node TP_LDRQ1_CP is inaccessible.
+  Node TP_PWM0_CP is inaccessible.
+  Node TP_RSVD15_CP is inaccessible.
+  Node TP_RSVD16_CP is inaccessible.
+  Node TP_RSVD23_CP is inaccessible.
+  Node TP_RSVD24_CP is inaccessible.
+  Node TP_RSVD25_CP is inaccessible.
+  Node TP_RSVD26_CP is inaccessible.
+  Node TP_RSVD27_CP is inaccessible.
+  Node TP_RSVD28_CP is inaccessible.
+  Node TP_RSVD29_CP is inaccessible.
+  Node TP_RSVD30_CP is inaccessible.
+  Node TP_RSVD31_CP is inaccessible.
+  Node TP_RSVD32_CP is inaccessible.
+  Node TP_RSVD33_CP is inaccessible.
+  Node TP_RSVD34_CP is inaccessible.
+  Node TP_RSVD35_CP is inaccessible.
+  Node TP_RSVD36_CP is inaccessible.
+  Node TP_RSVD37_CP is inaccessible.
+  Node TP_RSVD38_CP is inaccessible.
+  Node TP_RSVD39_CP is inaccessible.
+  Node TP_RSVD40_CP is inaccessible.
+  Node TP_RSVD41_CP is inaccessible.
+  Node TP_RSVD42_CP is inaccessible.
+  Node TP_RSVD43_CP is inaccessible.
+  Node TP_RSVD44_CP is inaccessible.
+  Node TP_RSVD45_CP is inaccessible.
+  Node TP_RSVD46_CP is inaccessible.
+  Node TP_RSVD47_CP is inaccessible.
+  Node TP_RSVD49_CP is inaccessible.
+  Node TP_RSVD50_CP is inaccessible.
+  Node TP_RSVD51_CP is inaccessible.
+  Node TP_RSVD52_CP is inaccessible.
+  Node TP_RSVD53_CP is inaccessible.
+  Node TP_RSVD54_CP is inaccessible.
+  Node TP_RSVD55_CP is inaccessible.
+  Node TP_RSVD56_CP is inaccessible.
+  Node TP_RSVD63_CP is inaccessible.
+  Node TP_RSVD64_CP is inaccessible.
+  Node TP_RSVD65_CP is inaccessible.
+  Node TP_RSVD66_CP is inaccessible.
+  Node TP_RSVD67_CP is inaccessible.
+  Node TP_RSVD68_CP is inaccessible.
+  Node TP_RSVD69_CP is inaccessible.
+  Node TP_RSVD70_CP is inaccessible.
+  Node TP_RSVD71_CP is inaccessible.
+  Node TP_RSVD72_CP is inaccessible.
+  Node TP_RSVD73_CP is inaccessible.
+  Node TP_RSVD74_CP is inaccessible.
+  Node TP_RSVD75_CP is inaccessible.
+  Node TP_RSVD76_CP is inaccessible.
+  Node TP_RSVD77_CP is inaccessible.
+  Node TP_RSVD78_CP is inaccessible.
+  Node TP_RSVD79_CP is inaccessible.
+  Node TP_RSVD80_CP is inaccessible.
+  Node TP_RSVD81_CP is inaccessible.
+  Node TP_RSVD82_CP is inaccessible.
+  Node TP_RSVD83_CP is inaccessible.
+  Node TP_RSVD84_CP is inaccessible.
+  Node TP_RSVD86_CP is inaccessible.
+  Node TP_RSVD87_CP is inaccessible.
+  Node TP_RSVD88_CP is inaccessible.
+  Node TP_RSVD89_CP is inaccessible.
+  Node TP_RSVD90_CP is inaccessible.
+  Node TP_RSVD91_CP is inaccessible.
+  Node TP_RSVD92_CP is inaccessible.
+  Node TP_RSVD93_CP is inaccessible.
+  Node TP_SRC1CLKRQB_GPIO18_CP is inaccessible.
+  Node TP_TEST_EDM0_CP is inaccessible.
+  Node TP_TEST_EDM1_CP is inaccessible.
+  Node TP_TEST_KX_AMONI_CP is inaccessible.
+  Node TP_TEST_KX_AMONV_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DN_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DP_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DN_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DP_CP is inaccessible.
+  Node UNNAMED_7_CAP_I220_A_VR is inaccessible.
+  Node UNNAMED_7_CAP_I220_B_VR is inaccessible.
+  Node USB3_RX_D1_N_CP is inaccessible.
+  Node USB3_RX_D1_P_CP is inaccessible.
+  Node USB3_RX_D2_N_CP is inaccessible.
+  Node USB3_RX_D2_P_CP is inaccessible.
+  Node USB3_TX_D1_N_CP is inaccessible.
+  Node USB3_TX_D1_P_CP is inaccessible.
+  Node USB3_TX_D2_N_CP is inaccessible.
+  Node USB3_TX_D2_P_CP is inaccessible.
+  Node VDD_SW is inaccessible.
+  Node VDD_SW_91 is inaccessible.
+  Node VDD_SW_92 is inaccessible.
+  Node VDD_SW_98 is inaccessible.
+  Node VSENSE_VCCSCSUS_SENSE_CP is inaccessible.
+  Node VSENSE_VSS_VCCSCSUS_SENSE_CP is inaccessible.
+Writing shorts test.
+Writing Chek-Point pins test.
+Writing capacitor discharge test.
+Writing analog tests.
+Test "q22%q1" may require a 'wait' option.
+Writing testjet test.
+
+Writing library-based and boundary scan tests.
+Loading Boundary-Scan info for u5_cp.
+Loading Boundary-Scan info for u5_cp_pch.
+Loading Boundary-Scan info for u11.
+
+Device Test: fanhs01_f
+50% of Pin States reached in test,  1 pins under-tested.
+
+Device Test: fanhs23_f
+50% of Pin States reached in test,  1 pins under-tested.
+
+Device Test: fanhs45_f
+50% of Pin States reached in test,  1 pins under-tested.
+
+Device Test: act2
+71% of Pin States reached in test,  5 pins under-tested.
+
+Device Test: fanctrl01_f
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: fanctrl23_f
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: fanctrl45_f
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: flshg_cp
+92% of Pin States reached in test,  1 pins under-tested.
+Could Not Disable Bus
+
+Device Test: flshp_cp
+92% of Pin States reached in test,  1 pins under-tested.
+Could Not Disable Bus
+
+Device Test: q1_cp
+
+Device Test: q2_cp
+
+Device Test: q2_f
+
+Device Test: q3
+
+Device Test: q3_f
+
+Device Test: q4
+
+Device Test: q4_cp
+
+Device Test: q5_f
+
+Device Test: q6
+
+Device Test: q6_f
+
+Device Test: q7
+
+Device Test: q7_f
+
+Device Test: q8
+
+Device Test: q8_f
+
+Device Test: q15
+
+Device Test: q16
+
+Device Test: q18
+
+Device Test: q20
+
+Device Test: q21
+
+Device Test: q23
+
+Device Test: q24
+
+Device Test: q38
+
+Device Test: sw1_cp
+
+Device Test: sw2_cp
+
+Device Test: u1
+
+Device Test: u1_3v3
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u1_5v
+
+Device Test: u1_91_mvr
+Insufficient pin or node access for this device. Check the comment(s)
+   in the source file. (WARNING IPG2800)
+
+Device Test: u1_91_vr
+Insufficient pin or node access for this device. Check the comment(s)
+   in the source file. (WARNING IPG2800)
+
+Device Test: u1_92_vr
+Insufficient pin or node access for this device. Check the comment(s)
+   in the source file. (WARNING IPG2800)
+
+Device Test: u1_98_mvr
+Insufficient pin or node access for this device. Check the comment(s)
+   in the source file. (WARNING IPG2800)
+
+Device Test: u1_adv
+
+Device Test: u1_cp
+All Pin States Reached In Test
+
+Device Test: u1_f
+All Pin States Reached In Test
+
+Device Test: u1_mvr
+  Power pin u1_mvr.17 (node SRT_SVID_CLK_MEM_VRM) is not connected to a fixed node.
+  Power pin u1_mvr.18 (node SRT_SVID_DIO_MEM_VRM) is not connected to a fixed node.
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u1_p1v2_a
+
+Device Test: u1_p2v5_a
+
+Device Test: u1_vpp
+
+Device Test: u1_vr
+  Power pin u1_vr.17 (node SRT_SVID_CLK_VRM) is not connected to a fixed node.
+  Power pin u1_vr.18 (node SRT_SVID_DIO_VRM) is not connected to a fixed node.
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u2
+
+Device Test: u2_adv
+
+Device Test: u2_cp
+All Pin States Reached In Test
+
+Device Test: u3_cp
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u4
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u4_cp
+All Pin States Reached In Test
+
+Device Test: u5
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u6
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u7
+All Pin States Reached In Test
+
+Device Test: u10_cp
+
+Device Test: u11_cp
+83% of Pin States reached in test,  2 pins under-tested.
+
+Device Test: u12
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u12_cp
+All Pin States Reached In Test
+
+Device Test: u13
+All Pin States Reached In Test
+
+Device Test: u13_cp
+All Pin States Reached In Test
+
+Device Test: u14
+All Pin States Reached In Test
+
+Device Test: u14_cp
+81% of Pin States reached in test,  1 pins under-tested.
+
+Device Test: u15
+All Pin States Reached In Test
+
+Device Test: u15_cp
+84% of Pin States reached in test,  1 pins under-tested.
+Could Not Disable Bus
+
+Device Test: u16_cp
+50% of Pin States reached in test,  0 pins under-tested.
+
+Device Test: u17
+All Pin States Reached In Test
+
+Device Test: u17_cp
+99% of Pin States reached in test,  1 pins under-tested.
+Could Not Disable Bus
+
+Device Test: u18
+No Vectors In Test
+
+Device Test: u18_cp
+99% of Pin States reached in test,  1 pins under-tested.
+
+Device Test: u19
+
+Device Test: u19_cp
+83% of Pin States reached in test,  2 pins under-tested.
+
+Device Test: u20
+92% of Pin States reached in test,  1 pins under-tested.
+
+Device Test: u20_cp
+99% of Pin States reached in test,  1 pins under-tested.
+
+Device Test: u21
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u21_cp
+All Pin States Reached In Test
+
+Device Test: u22
+All Pin States Reached In Test
+
+Device Test: u22_cp
+All Pin States Reached In Test
+
+Device Test: u23
+84% of Pin States reached in test,  6 pins under-tested.
+Could Not Disable Bus
+
+Device Test: u23_cp
+All Pin States Reached In Test
+
+Device Test: u24
+All Pin States Reached In Test
+Could Not Disable Bus
+
+Device Test: u24_cp
+All Pin States Reached In Test
+
+Device Test: u25
+
+Device Test: u25_cp
+All Pin States Reached In Test
+
+Device Test: u26
+All Pin States Reached In Test
+
+Device Test: u26_cp
+All Pin States Reached In Test
+
+Device Test: u27
+All Pin States Reached In Test
+
+Device Test: u27_cp
+All Pin States Reached In Test
+
+Device Test: u28
+All Pin States Reached In Test
+
+Device Test: u28_cp
+All Pin States Reached In Test
+
+Device Test: u29
+All Pin States Reached In Test
+
+Device Test: u30
+44% of Pin States reached in test, 10 pins under-tested.
+Could Not Disable Bus
+
+Device Test: u31
+All Pin States Reached In Test
+
+Device Test: u31_cp
+All Pin States Reached In Test
+
+Device Test: u32
+All Pin States Reached In Test
+
+Device Test: u32_cp
+50% of Pin States reached in test,  0 pins under-tested.
+
+Device Test: u33_cp
+All Pin States Reached In Test
+
+Device Test: u34_cp
+All Pin States Reached In Test
+
+Device Test: u44_f
+All Pin States Reached In Test
+
+Device Test: u100
+All Pin States Reached In Test
+
+Device Test: u150
+
+Device Test: u666_f
+All Pin States Reached In Test
+
+Device Test: y1
+
+Device Test: y1_cp
+
+Device Test: y2_cp
+
+Device Test: y3_cp
+writing connect test for "u5_cp_connect_a"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u5_cp_connect_b"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u5_cp_connect_c"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u5_cp_connect_d"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u5_cp_connect_e"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u5_cp_connect_f"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u5_cp_pch_connect_a"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u5_cp_pch_connect_b"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u5_cp_pch_connect_c"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u11_connect_a"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u11_connect_b"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u11_connect_c"
+  Family information could not be found for one or more nodes in test. 
+writing connect test for "u11_connect_d"
+  Family information could not be found for one or more nodes in test. 
+writing Boundary Scan disable for chain "u5_cp_u5_cp_pch_dis"
+  Family information could not be found for one or more nodes in test. 
+writing aio interconnect test for chain "u5_cp_u5_cp_pch"
+writing interconnect test for chain "u5_cp_u5_cp_pch"
+writing aio buswire test for chain "u5_cp_u5_cp_pch"
+writing buswire test for chain "u5_cp_u5_cp_pch"
+writing shorted caps test for chain "u5_cp_u5_cp_pch"
+writing aio powered shorts test for chain "u5_cp_u5_cp_pch"
+writing powered shorts test for chain "u5_cp_u5_cp_pch"
+  Family information could not be found for one or more nodes in test. 
+writing raw testability report (for chain "u5_cp_u5_cp_pch") named "u5_cp_u5_cp_pch_tr"
+writing Boundary Scan disable for chain "u11_u11_dis"
+  Family information could not be found for one or more nodes in test. 
+writing aio interconnect test for chain "u11_u11"
+writing interconnect test for chain "u11_u11"
+  Family information could not be found for one or more nodes in test. 
+writing aio buswire test for chain "u11_u11"
+writing buswire test for chain "u11_u11"
+  Family information could not be found for one or more nodes in test. 
+writing shorted caps test for chain "u11_u11"
+  Family information could not be found for one or more nodes in test. 
+writing aio powered shorts test for chain "u11_u11"
+writing powered shorts test for chain "u11_u11"
+  Family information could not be found for one or more nodes in test. 
+writing raw testability report (for chain "u11_u11") named "u11_u11_tr"
+
+  *** Summary ***
+
+Shorts Test Summary
+  Number of shorts          =  141
+  Total number of nodes     = 1996
+  Shorts threshold          =    8
+  Opens threshold           =    8
+  Inaccessible nodes        =  315
+
+Chek-Point Pins Test Summary
+  Number of nodes           = 1996
+  Inaccessible nodes        =  315
+  Isolated nodes            =  605
+
+Capacitor Discharge Test Summary
+  Discharge statements      =   21
+  Capacitors not discharged =    0
+  Maximum voltage           =   12
+
+Analog Subtests for Capacitors
+  Normal subtests           =   47
+  Parallel subtests         =  449
+  Limited subtests          =    2
+  Commented subtests        =   19
+  Null subtests             =    0
+  Nontestable subtests      =   41
+
+Analog Subtests for Diodes
+  Normal subtests           =   66
+  Parallel subtests         =    0
+  Limited subtests          =    0
+  Commented subtests        =    0
+  Null subtests             =    0
+  Nontestable subtests      =    0
+
+Analog Subtests for Jumpers
+  Normal subtests           =  577
+  Parallel subtests         =   47
+  Limited subtests          =    0
+  Commented subtests        =    0
+  Null subtests             =    0
+  Nontestable subtests      =   43
+
+Analog Subtests for Resistors
+  Normal subtests           =  523
+  Parallel subtests         =   12
+  Limited subtests          =   18
+  Commented subtests        =    0
+  Null subtests             =    0
+  Nontestable subtests      =    2
+
+Analog Subtests for Transistors
+  Normal subtests           =   13
+  Parallel subtests         =    0
+  Limited subtests          =    0
+  Commented subtests        =    6
+  Null subtests             =    0
+  Nontestable subtests      =    2
+
+Analog Powered Tests Summary
+  Number tests generated    =   44
+  Number tests total        =   44
+
+Digital Tests Summary
+  Devices fully tested      =   45
+  Devices partially tested  =   15
+  Devices not tested        =    0
+  Non digital devices       =    0
+  Setup libraries           =    1
+  Enabled bus problems      =   19
+  Null tests                =    0
+
+Mixed Tests Summary
+  Devices fully tested      =    0
+  Devices partially tested  =    3
+  Devices not tested        =    0
+  Non digital devices       =    0
+  Setup libraries           =    0
+  Enabled bus problems      =    0
+  Null tests                =    0
+  Number analog test parts generated   =    3
+  Number total analog test parts       =    3
+
+Interconnect, Buswire & Powered Shorts Tests Summary
+  Number tests generated               =   11
+  Number null tests (no nodes)         =    6
+  Number of tests with disable problem =    5
+
+Connect Tests Summary
+  Number tests generated               =   13
+  Number null tests (no nodes)         =    0
+  Number of tests with disable problem =   13
+
+TestJet Test Summary
+  Devices tested            =   39
+  Devices not tested        =    0
+
+
+
+  An analog powered test or analog part of a mixed test contained pins
+  or nodes that were not accessible or not connected or defined in the board
+  file. Consult the ipg/summary file to identify the problem device(s). IPG
+  will mark the tests 'nulltest' in the testorder file if any pins or nodes
+  in the test are unconnected or undefined in the board file. (WARNING IPG2800)
+
+
+
+  Nodes on this board are not accessible.  Check the ipg/summary file 
+  to identify the nodes, and verify that they should be inaccessible.
+
+
+
+  A capacitor discharge test was generated, and is in the analog 
+  directory.  Deletions of IPG-generated discharge statements in 
+  the discharge file may result in damage to the scanner relays.
+
+
+
+  Tests were generated for diodes and/or zeners that contain large-value
+  parallel capacitors. To work correctly, including failing when the
+  component is reversed, these tests may require a wait statement (wa) to
+  be added manually.
+
+Board Results
+
+     library and bscan tests : 132
+         total units         : 336
+         units retained      : 328 (97.6%)
+         total vectors       : 5367
+         vectors retained    : 5328 (99.3%)
+         total pin states    : 1570
+         pin states used     : 1457 (92.8%)
+         bus enabled tests   : 19
+         nondigital tests    : 0
+         complete tests      : 44
+         full tests          : 1
+         partial tests       : 18
+         empty tests         : 0
+         setup tests         : 1
+         analog null tests   : 4
+         skipped tests       : 0
+
+     analog devices       : 1779
+         limited analog   : 20
+         commented analog : 25
+         skipped analog   : 0
+
+     total shorts nodes : 1996
+         nodes tested   : 1681
+
+     total known shorts      : 153
+         known shorts tested : 141
+
+     total pins nodes      : 1996
+         pins nodes tested : 1076
+
+
+     The following digital tests had an enabled bus problem :
+          fanctrl01_f
+          fanctrl23_f
+          fanctrl45_f
+          flshg_cp
+          flshp_cp
+          u1_3v3
+          u1_mvr
+          u1_vr
+          u3_cp
+          u4
+          u5
+          u6
+          u12
+          u15_cp
+          u17_cp
+          u21
+          u23
+          u24
+          u30
+
+     The following digital tests had no vectors removed :
+          fanctrl01_f
+          fanctrl23_f
+          fanctrl45_f
+          u1_3v3
+          u1_cp
+          u1_f
+          u1_mvr
+          u1_vr
+          u2_cp
+          u3_cp
+          u4
+          u4_cp
+          u5
+          u6
+          u7
+          u12
+          u12_cp
+          u13
+          u13_cp
+          u14
+          u15
+          u21
+          u21_cp
+          u22
+          u22_cp
+          u23_cp
+          u24
+          u24_cp
+          u25_cp
+          u26
+          u26_cp
+          u27
+          u27_cp
+          u28
+          u28_cp
+          u29
+          u31
+          u31_cp
+          u32
+          u33_cp
+          u34_cp
+          u44_f
+          u100
+          u666_f
+
+     The following digital tests exercise all pins, but
+         some vectors were removed :
+          u17
+
+     The following digital tests have some vectors removed :
+          u14_cp
+          u15_cp
+          u16_cp
+          u19_cp
+          u30
+          u32_cp
+
+     The following digital tests did not exercise all pins :
+          act2
+          fanhs01_f
+          fanhs23_f
+          fanhs45_f
+          flshg_cp
+          flshp_cp
+          u11_cp
+          u17_cp
+          u18_cp
+          u20
+          u20_cp
+          u23
+
+     The following digital tests are setups only :
+          u18
+
+     The following analog or mixed tests had a pin
+     missing from board or inaccessible and must be
+     fixed or marked NT (not tested) in board :
+          u1_91_mvr
+          u1_91_vr
+          u1_92_vr
+          u1_98_mvr
+
+     The following analog tests are commented :
+          c01_mvr
+          c01_vr
+          c02_mvr
+          c04_mvr
+          c04_vr
+          c17
+          c18
+          c19
+          c20
+          c21
+          c100
+          c119_cp
+          c122_cp
+          c125_cp
+          c128_cp
+          c131_cp
+          c136_cp
+          c229
+          c303
+          q1_f%q1
+          q4_f%q1
+          q5%q1
+          q17%q1
+          q19%q1
+          q666_f%q1
+
+     The following analog tests are limited :
+          c03_mvr
+          c03_vr
+          r01_mvr
+          r03_mvr
+          r03_vr
+          r10_mvr
+          r10_vr
+          r25_mvr
+          r25_vr
+          r82_cp
+          r83_cp
+          r92_cp
+          r99_cp
+          r175_cp
+          r319_cp
+          r321_cp
+          r322_cp
+          r375_cp
+          r376_cp
+          r529
+------------------------------------------------------------------------------
+AGILENT ICT IPG Summary Report Rev 07.20pd Thu Jun 21 14:40:15 2018      
+
+73-19246-05_2old
+------------------------------------------------------------------------------
+
+Reading "testorder".
+Device "testjet" was marked permanent in testorder.  No test generated. (WARNING IPG1061)
+
+
+
+Test Program Generation Options:
+    Incremental Generation
+    Shorts Test Is NOT To Be Generated
+    Chek-Point Pins Test Is NOT To Be Generated
+    Capacitor Discharge Test Is NOT To Be Generated
+
+
+  Node _d_ACT2_21 is inaccessible.
+  Node _d_U5_CP_BG28 is inaccessible.
+  Node _d_U5_CP_BH26 is inaccessible.
+  Node _d_U5_CP_BJ28 is inaccessible.
+  Node _d_U5_CP_BJ32 is inaccessible.
+  Node _d_U5_CP_BL26 is inaccessible.
+  Node _d_U5_CP_BL33 is inaccessible.
+  Node _d_U5_CP_BM28 is inaccessible.
+  Node _d_U5_CP_BM32 is inaccessible.
+  Node _d_U5_CP_BN26 is inaccessible.
+  Node _d_U5_CP_BN33 is inaccessible.
+  Node _d_U5_CP_BP28 is inaccessible.
+  Node _d_U5_CP_BP32 is inaccessible.
+  Node _d_U5_CP_BR33 is inaccessible.
+  Node _d_U5_CP_BT32 is inaccessible.
+  Node _d_U5_CP_BU33 is inaccessible.
+  Node _d_U30_1 is inaccessible.
+  Node _d_U30_5 is inaccessible.
+  Node _d_U30_9 is inaccessible.
+  Node _d_U30_13 is inaccessible.
+  Node _d_U30_16 is inaccessible.
+  Node CLK100M_FPGA_PE_N is inaccessible.
+  Node CLK100M_FPGA_PE_P is inaccessible.
+  Node CLK_100M_MDOT2_N is inaccessible.
+  Node CLK_100M_MDOT2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_P is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_P is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_P is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_P is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_N is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_P is inaccessible.
+  Node LAN_KX4_RX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<3>_CP is inaccessible.
+  Node NC_LAN_NCSI_ARB_IN_CP is inaccessible.
+  Node NC_LAN_NCSI_CRS_DV_CP is inaccessible.
+  Node NC_NCTF_TP1_CP is inaccessible.
+  Node NC_NCTF_TP2_CP is inaccessible.
+  Node NC_NCTF_TP3_CP is inaccessible.
+  Node NC_NCTF_TP4_CP is inaccessible.
+  Node NC_NCTF_TP6_CP is inaccessible.
+  Node NC_NCTF_TP7_CP is inaccessible.
+  Node NC_NCTF_TP8_CP is inaccessible.
+  Node NC_NCTF_TP9_CP is inaccessible.
+  Node NC_NCTF_TP10_CP is inaccessible.
+  Node NC_NCTF_TP11_CP is inaccessible.
+  Node NC_NCTF_TP14_CP is inaccessible.
+  Node NC_NCTF_TP15_CP is inaccessible.
+  Node NC_NCTF_TP16_CP is inaccessible.
+  Node NC_SPI_PCH_IO2_CP is inaccessible.
+  Node NC_SPI_PCH_IO3_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DN_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DP_CP is inaccessible.
+  Node PE1_RX_D1_N_CP is inaccessible.
+  Node PE1_RX_D1_P_CP is inaccessible.
+  Node PE1_RX_D2_N_CP is inaccessible.
+  Node PE1_RX_D2_P_CP is inaccessible.
+  Node PE1_RX_D3_N_CP is inaccessible.
+  Node PE1_RX_D3_P_CP is inaccessible.
+  Node PE1_RX_D4_N_CP is inaccessible.
+  Node PE1_RX_D4_P_CP is inaccessible.
+  Node PE1_RX_D5_N_CP is inaccessible.
+  Node PE1_RX_D5_P_CP is inaccessible.
+  Node PE1_RX_D6_N_CP is inaccessible.
+  Node PE1_RX_D6_P_CP is inaccessible.
+  Node PE1_RX_D7_N_CP is inaccessible.
+  Node PE1_RX_D7_P_CP is inaccessible.
+  Node PE1_RX_D8_N_CP is inaccessible.
+  Node PE1_RX_D8_P_CP is inaccessible.
+  Node PE1_RX_D9_N_CP is inaccessible.
+  Node PE1_RX_D9_P_CP is inaccessible.
+  Node PE1_RX_D10_N_CP is inaccessible.
+  Node PE1_RX_D10_P_CP is inaccessible.
+  Node PE1_RX_D11_N_CP is inaccessible.
+  Node PE1_RX_D11_P_CP is inaccessible.
+  Node PE1_RX_D12_N_CP is inaccessible.
+  Node PE1_RX_D12_P_CP is inaccessible.
+  Node PE1_RX_D13_N_CP is inaccessible.
+  Node PE1_RX_D13_P_CP is inaccessible.
+  Node PE1_RX_D14_N_CP is inaccessible.
+  Node PE1_RX_D14_P_CP is inaccessible.
+  Node PE1_RX_D15_N_CP is inaccessible.
+  Node PE1_RX_D15_P_CP is inaccessible.
+  Node PE1_TX_D1_N_CP is inaccessible.
+  Node PE1_TX_D1_P_CP is inaccessible.
+  Node PE1_TX_D2_N_CP is inaccessible.
+  Node PE1_TX_D2_P_CP is inaccessible.
+  Node PE1_TX_D3_N_CP is inaccessible.
+  Node PE1_TX_D3_P_CP is inaccessible.
+  Node PE1_TX_D4_N_CP is inaccessible.
+  Node PE1_TX_D4_P_CP is inaccessible.
+  Node PE1_TX_D5_N_CP is inaccessible.
+  Node PE1_TX_D5_P_CP is inaccessible.
+  Node PE1_TX_D6_N_CP is inaccessible.
+  Node PE1_TX_D6_P_CP is inaccessible.
+  Node PE1_TX_D7_N_CP is inaccessible.
+  Node PE1_TX_D7_P_CP is inaccessible.
+  Node PE1_TX_D8_N_CP is inaccessible.
+  Node PE1_TX_D8_P_CP is inaccessible.
+  Node PE1_TX_D9_N_CP is inaccessible.
+  Node PE1_TX_D9_P_CP is inaccessible.
+  Node PE1_TX_D10_N_CP is inaccessible.
+  Node PE1_TX_D10_P_CP is inaccessible.
+  Node PE1_TX_D11_N_CP is inaccessible.
+  Node PE1_TX_D11_P_CP is inaccessible.
+  Node PE1_TX_D12_N_CP is inaccessible.
+  Node PE1_TX_D12_P_CP is inaccessible.
+  Node PE1_TX_D13_N_CP is inaccessible.
+  Node PE1_TX_D13_P_CP is inaccessible.
+  Node PE1_TX_D14_N_CP is inaccessible.
+  Node PE1_TX_D14_P_CP is inaccessible.
+  Node PE1_TX_D15_N_CP is inaccessible.
+  Node PE1_TX_D15_P_CP is inaccessible.
+  Node TP_ADR_COMPLETE_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DN_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DP_CP is inaccessible.
+  Node TP_CLKOUTFLEX1_GPIO65_CP is inaccessible.
+  Node TP_CLKOUTFLEX3_GPIO67_CP is inaccessible.
+  Node TP_DDR_VREFDQ0_CP is inaccessible.
+  Node TP_DDR_VREFDQ1_CP is inaccessible.
+  Node TP_KR_EPHY_DFTANA<1>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<0>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<1>_CP is inaccessible.
+  Node TP_KR_EPHY_MON_DN_CP is inaccessible.
+  Node TP_LDRQ1_CP is inaccessible.
+  Node TP_PWM0_CP is inaccessible.
+  Node TP_RSVD15_CP is inaccessible.
+  Node TP_RSVD16_CP is inaccessible.
+  Node TP_RSVD23_CP is inaccessible.
+  Node TP_RSVD24_CP is inaccessible.
+  Node TP_RSVD25_CP is inaccessible.
+  Node TP_RSVD26_CP is inaccessible.
+  Node TP_RSVD27_CP is inaccessible.
+  Node TP_RSVD28_CP is inaccessible.
+  Node TP_RSVD29_CP is inaccessible.
+  Node TP_RSVD30_CP is inaccessible.
+  Node TP_RSVD31_CP is inaccessible.
+  Node TP_RSVD32_CP is inaccessible.
+  Node TP_RSVD33_CP is inaccessible.
+  Node TP_RSVD34_CP is inaccessible.
+  Node TP_RSVD35_CP is inaccessible.
+  Node TP_RSVD36_CP is inaccessible.
+  Node TP_RSVD37_CP is inaccessible.
+  Node TP_RSVD38_CP is inaccessible.
+  Node TP_RSVD39_CP is inaccessible.
+  Node TP_RSVD40_CP is inaccessible.
+  Node TP_RSVD41_CP is inaccessible.
+  Node TP_RSVD42_CP is inaccessible.
+  Node TP_RSVD43_CP is inaccessible.
+  Node TP_RSVD44_CP is inaccessible.
+  Node TP_RSVD45_CP is inaccessible.
+  Node TP_RSVD46_CP is inaccessible.
+  Node TP_RSVD47_CP is inaccessible.
+  Node TP_RSVD49_CP is inaccessible.
+  Node TP_RSVD50_CP is inaccessible.
+  Node TP_RSVD51_CP is inaccessible.
+  Node TP_RSVD52_CP is inaccessible.
+  Node TP_RSVD53_CP is inaccessible.
+  Node TP_RSVD54_CP is inaccessible.
+  Node TP_RSVD55_CP is inaccessible.
+  Node TP_RSVD56_CP is inaccessible.
+  Node TP_RSVD63_CP is inaccessible.
+  Node TP_RSVD64_CP is inaccessible.
+  Node TP_RSVD65_CP is inaccessible.
+  Node TP_RSVD66_CP is inaccessible.
+  Node TP_RSVD67_CP is inaccessible.
+  Node TP_RSVD68_CP is inaccessible.
+  Node TP_RSVD69_CP is inaccessible.
+  Node TP_RSVD70_CP is inaccessible.
+  Node TP_RSVD71_CP is inaccessible.
+  Node TP_RSVD72_CP is inaccessible.
+  Node TP_RSVD73_CP is inaccessible.
+  Node TP_RSVD74_CP is inaccessible.
+  Node TP_RSVD75_CP is inaccessible.
+  Node TP_RSVD76_CP is inaccessible.
+  Node TP_RSVD77_CP is inaccessible.
+  Node TP_RSVD78_CP is inaccessible.
+  Node TP_RSVD79_CP is inaccessible.
+  Node TP_RSVD80_CP is inaccessible.
+  Node TP_RSVD81_CP is inaccessible.
+  Node TP_RSVD82_CP is inaccessible.
+  Node TP_RSVD83_CP is inaccessible.
+  Node TP_RSVD84_CP is inaccessible.
+  Node TP_RSVD86_CP is inaccessible.
+  Node TP_RSVD87_CP is inaccessible.
+  Node TP_RSVD88_CP is inaccessible.
+  Node TP_RSVD89_CP is inaccessible.
+  Node TP_RSVD90_CP is inaccessible.
+  Node TP_RSVD91_CP is inaccessible.
+  Node TP_RSVD92_CP is inaccessible.
+  Node TP_RSVD93_CP is inaccessible.
+  Node TP_SRC1CLKRQB_GPIO18_CP is inaccessible.
+  Node TP_TEST_EDM0_CP is inaccessible.
+  Node TP_TEST_EDM1_CP is inaccessible.
+  Node TP_TEST_KX_AMONI_CP is inaccessible.
+  Node TP_TEST_KX_AMONV_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DN_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DP_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DN_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DP_CP is inaccessible.
+  Node UNNAMED_7_CAP_I220_A_VR is inaccessible.
+  Node UNNAMED_7_CAP_I220_B_VR is inaccessible.
+  Node USB3_RX_D1_N_CP is inaccessible.
+  Node USB3_RX_D1_P_CP is inaccessible.
+  Node USB3_RX_D2_N_CP is inaccessible.
+  Node USB3_RX_D2_P_CP is inaccessible.
+  Node USB3_TX_D1_N_CP is inaccessible.
+  Node USB3_TX_D1_P_CP is inaccessible.
+  Node USB3_TX_D2_N_CP is inaccessible.
+  Node USB3_TX_D2_P_CP is inaccessible.
+  Node VDD_SW is inaccessible.
+  Node VDD_SW_91 is inaccessible.
+  Node VDD_SW_92 is inaccessible.
+  Node VDD_SW_98 is inaccessible.
+  Node VSENSE_VCCSCSUS_SENSE_CP is inaccessible.
+  Node VSENSE_VSS_VCCSCSUS_SENSE_CP is inaccessible.
+No summary reports were generated.
+
+
+
+  A test was not generated for a device because it was marked permanent
+  in the testorder file.  In order to generate a test for the device, the
+  testorder file must be modified to remove the permanent option from the
+  test. (WARNING IPG1061)
+
+
+
+  Nodes on this board are not accessible.  Check the ipg/summary file 
+  to identify the nodes, and verify that they should be inaccessible.
+------------------------------------------------------------------------------
+AGILENT ICT IPG Summary Report Rev 07.20pd Thu Jun 21 14:40:50 2018      
+
+73-19246-05_2old
+------------------------------------------------------------------------------
+
+Reading "testorder".
+
+
+
+Test Program Generation Options:
+    Incremental Generation
+    Shorts Test Is NOT To Be Generated
+    Chek-Point Pins Test Is NOT To Be Generated
+    Capacitor Discharge Test Is NOT To Be Generated
+
+
+  Node _d_ACT2_21 is inaccessible.
+  Node _d_U5_CP_BG28 is inaccessible.
+  Node _d_U5_CP_BH26 is inaccessible.
+  Node _d_U5_CP_BJ28 is inaccessible.
+  Node _d_U5_CP_BJ32 is inaccessible.
+  Node _d_U5_CP_BL26 is inaccessible.
+  Node _d_U5_CP_BL33 is inaccessible.
+  Node _d_U5_CP_BM28 is inaccessible.
+  Node _d_U5_CP_BM32 is inaccessible.
+  Node _d_U5_CP_BN26 is inaccessible.
+  Node _d_U5_CP_BN33 is inaccessible.
+  Node _d_U5_CP_BP28 is inaccessible.
+  Node _d_U5_CP_BP32 is inaccessible.
+  Node _d_U5_CP_BR33 is inaccessible.
+  Node _d_U5_CP_BT32 is inaccessible.
+  Node _d_U5_CP_BU33 is inaccessible.
+  Node _d_U30_1 is inaccessible.
+  Node _d_U30_5 is inaccessible.
+  Node _d_U30_9 is inaccessible.
+  Node _d_U30_13 is inaccessible.
+  Node _d_U30_16 is inaccessible.
+  Node CLK100M_FPGA_PE_N is inaccessible.
+  Node CLK100M_FPGA_PE_P is inaccessible.
+  Node CLK_100M_MDOT2_N is inaccessible.
+  Node CLK_100M_MDOT2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_P is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_P is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_P is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_P is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_N is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_P is inaccessible.
+  Node LAN_KX4_RX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<3>_CP is inaccessible.
+  Node NC_LAN_NCSI_ARB_IN_CP is inaccessible.
+  Node NC_LAN_NCSI_CRS_DV_CP is inaccessible.
+  Node NC_NCTF_TP1_CP is inaccessible.
+  Node NC_NCTF_TP2_CP is inaccessible.
+  Node NC_NCTF_TP3_CP is inaccessible.
+  Node NC_NCTF_TP4_CP is inaccessible.
+  Node NC_NCTF_TP6_CP is inaccessible.
+  Node NC_NCTF_TP7_CP is inaccessible.
+  Node NC_NCTF_TP8_CP is inaccessible.
+  Node NC_NCTF_TP9_CP is inaccessible.
+  Node NC_NCTF_TP10_CP is inaccessible.
+  Node NC_NCTF_TP11_CP is inaccessible.
+  Node NC_NCTF_TP14_CP is inaccessible.
+  Node NC_NCTF_TP15_CP is inaccessible.
+  Node NC_NCTF_TP16_CP is inaccessible.
+  Node NC_SPI_PCH_IO2_CP is inaccessible.
+  Node NC_SPI_PCH_IO3_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DN_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DP_CP is inaccessible.
+  Node PE1_RX_D1_N_CP is inaccessible.
+  Node PE1_RX_D1_P_CP is inaccessible.
+  Node PE1_RX_D2_N_CP is inaccessible.
+  Node PE1_RX_D2_P_CP is inaccessible.
+  Node PE1_RX_D3_N_CP is inaccessible.
+  Node PE1_RX_D3_P_CP is inaccessible.
+  Node PE1_RX_D4_N_CP is inaccessible.
+  Node PE1_RX_D4_P_CP is inaccessible.
+  Node PE1_RX_D5_N_CP is inaccessible.
+  Node PE1_RX_D5_P_CP is inaccessible.
+  Node PE1_RX_D6_N_CP is inaccessible.
+  Node PE1_RX_D6_P_CP is inaccessible.
+  Node PE1_RX_D7_N_CP is inaccessible.
+  Node PE1_RX_D7_P_CP is inaccessible.
+  Node PE1_RX_D8_N_CP is inaccessible.
+  Node PE1_RX_D8_P_CP is inaccessible.
+  Node PE1_RX_D9_N_CP is inaccessible.
+  Node PE1_RX_D9_P_CP is inaccessible.
+  Node PE1_RX_D10_N_CP is inaccessible.
+  Node PE1_RX_D10_P_CP is inaccessible.
+  Node PE1_RX_D11_N_CP is inaccessible.
+  Node PE1_RX_D11_P_CP is inaccessible.
+  Node PE1_RX_D12_N_CP is inaccessible.
+  Node PE1_RX_D12_P_CP is inaccessible.
+  Node PE1_RX_D13_N_CP is inaccessible.
+  Node PE1_RX_D13_P_CP is inaccessible.
+  Node PE1_RX_D14_N_CP is inaccessible.
+  Node PE1_RX_D14_P_CP is inaccessible.
+  Node PE1_RX_D15_N_CP is inaccessible.
+  Node PE1_RX_D15_P_CP is inaccessible.
+  Node PE1_TX_D1_N_CP is inaccessible.
+  Node PE1_TX_D1_P_CP is inaccessible.
+  Node PE1_TX_D2_N_CP is inaccessible.
+  Node PE1_TX_D2_P_CP is inaccessible.
+  Node PE1_TX_D3_N_CP is inaccessible.
+  Node PE1_TX_D3_P_CP is inaccessible.
+  Node PE1_TX_D4_N_CP is inaccessible.
+  Node PE1_TX_D4_P_CP is inaccessible.
+  Node PE1_TX_D5_N_CP is inaccessible.
+  Node PE1_TX_D5_P_CP is inaccessible.
+  Node PE1_TX_D6_N_CP is inaccessible.
+  Node PE1_TX_D6_P_CP is inaccessible.
+  Node PE1_TX_D7_N_CP is inaccessible.
+  Node PE1_TX_D7_P_CP is inaccessible.
+  Node PE1_TX_D8_N_CP is inaccessible.
+  Node PE1_TX_D8_P_CP is inaccessible.
+  Node PE1_TX_D9_N_CP is inaccessible.
+  Node PE1_TX_D9_P_CP is inaccessible.
+  Node PE1_TX_D10_N_CP is inaccessible.
+  Node PE1_TX_D10_P_CP is inaccessible.
+  Node PE1_TX_D11_N_CP is inaccessible.
+  Node PE1_TX_D11_P_CP is inaccessible.
+  Node PE1_TX_D12_N_CP is inaccessible.
+  Node PE1_TX_D12_P_CP is inaccessible.
+  Node PE1_TX_D13_N_CP is inaccessible.
+  Node PE1_TX_D13_P_CP is inaccessible.
+  Node PE1_TX_D14_N_CP is inaccessible.
+  Node PE1_TX_D14_P_CP is inaccessible.
+  Node PE1_TX_D15_N_CP is inaccessible.
+  Node PE1_TX_D15_P_CP is inaccessible.
+  Node TP_ADR_COMPLETE_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DN_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DP_CP is inaccessible.
+  Node TP_CLKOUTFLEX1_GPIO65_CP is inaccessible.
+  Node TP_CLKOUTFLEX3_GPIO67_CP is inaccessible.
+  Node TP_DDR_VREFDQ0_CP is inaccessible.
+  Node TP_DDR_VREFDQ1_CP is inaccessible.
+  Node TP_KR_EPHY_DFTANA<1>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<0>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<1>_CP is inaccessible.
+  Node TP_KR_EPHY_MON_DN_CP is inaccessible.
+  Node TP_LDRQ1_CP is inaccessible.
+  Node TP_PWM0_CP is inaccessible.
+  Node TP_RSVD15_CP is inaccessible.
+  Node TP_RSVD16_CP is inaccessible.
+  Node TP_RSVD23_CP is inaccessible.
+  Node TP_RSVD24_CP is inaccessible.
+  Node TP_RSVD25_CP is inaccessible.
+  Node TP_RSVD26_CP is inaccessible.
+  Node TP_RSVD27_CP is inaccessible.
+  Node TP_RSVD28_CP is inaccessible.
+  Node TP_RSVD29_CP is inaccessible.
+  Node TP_RSVD30_CP is inaccessible.
+  Node TP_RSVD31_CP is inaccessible.
+  Node TP_RSVD32_CP is inaccessible.
+  Node TP_RSVD33_CP is inaccessible.
+  Node TP_RSVD34_CP is inaccessible.
+  Node TP_RSVD35_CP is inaccessible.
+  Node TP_RSVD36_CP is inaccessible.
+  Node TP_RSVD37_CP is inaccessible.
+  Node TP_RSVD38_CP is inaccessible.
+  Node TP_RSVD39_CP is inaccessible.
+  Node TP_RSVD40_CP is inaccessible.
+  Node TP_RSVD41_CP is inaccessible.
+  Node TP_RSVD42_CP is inaccessible.
+  Node TP_RSVD43_CP is inaccessible.
+  Node TP_RSVD44_CP is inaccessible.
+  Node TP_RSVD45_CP is inaccessible.
+  Node TP_RSVD46_CP is inaccessible.
+  Node TP_RSVD47_CP is inaccessible.
+  Node TP_RSVD49_CP is inaccessible.
+  Node TP_RSVD50_CP is inaccessible.
+  Node TP_RSVD51_CP is inaccessible.
+  Node TP_RSVD52_CP is inaccessible.
+  Node TP_RSVD53_CP is inaccessible.
+  Node TP_RSVD54_CP is inaccessible.
+  Node TP_RSVD55_CP is inaccessible.
+  Node TP_RSVD56_CP is inaccessible.
+  Node TP_RSVD63_CP is inaccessible.
+  Node TP_RSVD64_CP is inaccessible.
+  Node TP_RSVD65_CP is inaccessible.
+  Node TP_RSVD66_CP is inaccessible.
+  Node TP_RSVD67_CP is inaccessible.
+  Node TP_RSVD68_CP is inaccessible.
+  Node TP_RSVD69_CP is inaccessible.
+  Node TP_RSVD70_CP is inaccessible.
+  Node TP_RSVD71_CP is inaccessible.
+  Node TP_RSVD72_CP is inaccessible.
+  Node TP_RSVD73_CP is inaccessible.
+  Node TP_RSVD74_CP is inaccessible.
+  Node TP_RSVD75_CP is inaccessible.
+  Node TP_RSVD76_CP is inaccessible.
+  Node TP_RSVD77_CP is inaccessible.
+  Node TP_RSVD78_CP is inaccessible.
+  Node TP_RSVD79_CP is inaccessible.
+  Node TP_RSVD80_CP is inaccessible.
+  Node TP_RSVD81_CP is inaccessible.
+  Node TP_RSVD82_CP is inaccessible.
+  Node TP_RSVD83_CP is inaccessible.
+  Node TP_RSVD84_CP is inaccessible.
+  Node TP_RSVD86_CP is inaccessible.
+  Node TP_RSVD87_CP is inaccessible.
+  Node TP_RSVD88_CP is inaccessible.
+  Node TP_RSVD89_CP is inaccessible.
+  Node TP_RSVD90_CP is inaccessible.
+  Node TP_RSVD91_CP is inaccessible.
+  Node TP_RSVD92_CP is inaccessible.
+  Node TP_RSVD93_CP is inaccessible.
+  Node TP_SRC1CLKRQB_GPIO18_CP is inaccessible.
+  Node TP_TEST_EDM0_CP is inaccessible.
+  Node TP_TEST_EDM1_CP is inaccessible.
+  Node TP_TEST_KX_AMONI_CP is inaccessible.
+  Node TP_TEST_KX_AMONV_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DN_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DP_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DN_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DP_CP is inaccessible.
+  Node UNNAMED_7_CAP_I220_A_VR is inaccessible.
+  Node UNNAMED_7_CAP_I220_B_VR is inaccessible.
+  Node USB3_RX_D1_N_CP is inaccessible.
+  Node USB3_RX_D1_P_CP is inaccessible.
+  Node USB3_RX_D2_N_CP is inaccessible.
+  Node USB3_RX_D2_P_CP is inaccessible.
+  Node USB3_TX_D1_N_CP is inaccessible.
+  Node USB3_TX_D1_P_CP is inaccessible.
+  Node USB3_TX_D2_N_CP is inaccessible.
+  Node USB3_TX_D2_P_CP is inaccessible.
+  Node VDD_SW is inaccessible.
+  Node VDD_SW_91 is inaccessible.
+  Node VDD_SW_92 is inaccessible.
+  Node VDD_SW_98 is inaccessible.
+  Node VSENSE_VCCSCSUS_SENSE_CP is inaccessible.
+  Node VSENSE_VSS_VCCSCSUS_SENSE_CP is inaccessible.
+Writing testjet test.
+
+  *** Summary ***
+
+TestJet Test Summary
+  Devices tested            =   40
+  Devices not tested        =    0
+
+
+
+  Nodes on this board are not accessible.  Check the ipg/summary file 
+  to identify the nodes, and verify that they should be inaccessible.
+
+Board Results
+
+------------------------------------------------------------------------------
+AGILENT ICT IPG Summary Report Rev 07.20pd Wed Jul  4 10:30:04 2018      
+
+73-19246-05_2old
+------------------------------------------------------------------------------
+
+Reading "testorder".
+Device "q8" was marked permanent in testorder.  No test generated. (WARNING IPG1061)
+
+
+
+Test Program Generation Options:
+    Incremental Generation
+    Shorts Test Is NOT To Be Generated
+    Chek-Point Pins Test Is NOT To Be Generated
+    Capacitor Discharge Test Is NOT To Be Generated
+
+
+  Node _d_ACT2_21 is inaccessible.
+  Node _d_U5_CP_BG28 is inaccessible.
+  Node _d_U5_CP_BH26 is inaccessible.
+  Node _d_U5_CP_BJ28 is inaccessible.
+  Node _d_U5_CP_BJ32 is inaccessible.
+  Node _d_U5_CP_BL26 is inaccessible.
+  Node _d_U5_CP_BL33 is inaccessible.
+  Node _d_U5_CP_BM28 is inaccessible.
+  Node _d_U5_CP_BM32 is inaccessible.
+  Node _d_U5_CP_BN26 is inaccessible.
+  Node _d_U5_CP_BN33 is inaccessible.
+  Node _d_U5_CP_BP28 is inaccessible.
+  Node _d_U5_CP_BP32 is inaccessible.
+  Node _d_U5_CP_BR33 is inaccessible.
+  Node _d_U5_CP_BT32 is inaccessible.
+  Node _d_U5_CP_BU33 is inaccessible.
+  Node _d_U30_1 is inaccessible.
+  Node _d_U30_5 is inaccessible.
+  Node _d_U30_9 is inaccessible.
+  Node _d_U30_13 is inaccessible.
+  Node _d_U30_16 is inaccessible.
+  Node CLK100M_FPGA_PE_N is inaccessible.
+  Node CLK100M_FPGA_PE_P is inaccessible.
+  Node CLK_100M_MDOT2_N is inaccessible.
+  Node CLK_100M_MDOT2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_P is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_P is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_P is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_P is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_N is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_P is inaccessible.
+  Node LAN_KX4_RX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<3>_CP is inaccessible.
+  Node NC_LAN_NCSI_ARB_IN_CP is inaccessible.
+  Node NC_LAN_NCSI_CRS_DV_CP is inaccessible.
+  Node NC_NCTF_TP1_CP is inaccessible.
+  Node NC_NCTF_TP2_CP is inaccessible.
+  Node NC_NCTF_TP3_CP is inaccessible.
+  Node NC_NCTF_TP4_CP is inaccessible.
+  Node NC_NCTF_TP6_CP is inaccessible.
+  Node NC_NCTF_TP7_CP is inaccessible.
+  Node NC_NCTF_TP8_CP is inaccessible.
+  Node NC_NCTF_TP9_CP is inaccessible.
+  Node NC_NCTF_TP10_CP is inaccessible.
+  Node NC_NCTF_TP11_CP is inaccessible.
+  Node NC_NCTF_TP14_CP is inaccessible.
+  Node NC_NCTF_TP15_CP is inaccessible.
+  Node NC_NCTF_TP16_CP is inaccessible.
+  Node NC_SPI_PCH_IO2_CP is inaccessible.
+  Node NC_SPI_PCH_IO3_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DN_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DP_CP is inaccessible.
+  Node PE1_RX_D1_N_CP is inaccessible.
+  Node PE1_RX_D1_P_CP is inaccessible.
+  Node PE1_RX_D2_N_CP is inaccessible.
+  Node PE1_RX_D2_P_CP is inaccessible.
+  Node PE1_RX_D3_N_CP is inaccessible.
+  Node PE1_RX_D3_P_CP is inaccessible.
+  Node PE1_RX_D4_N_CP is inaccessible.
+  Node PE1_RX_D4_P_CP is inaccessible.
+  Node PE1_RX_D5_N_CP is inaccessible.
+  Node PE1_RX_D5_P_CP is inaccessible.
+  Node PE1_RX_D6_N_CP is inaccessible.
+  Node PE1_RX_D6_P_CP is inaccessible.
+  Node PE1_RX_D7_N_CP is inaccessible.
+  Node PE1_RX_D7_P_CP is inaccessible.
+  Node PE1_RX_D8_N_CP is inaccessible.
+  Node PE1_RX_D8_P_CP is inaccessible.
+  Node PE1_RX_D9_N_CP is inaccessible.
+  Node PE1_RX_D9_P_CP is inaccessible.
+  Node PE1_RX_D10_N_CP is inaccessible.
+  Node PE1_RX_D10_P_CP is inaccessible.
+  Node PE1_RX_D11_N_CP is inaccessible.
+  Node PE1_RX_D11_P_CP is inaccessible.
+  Node PE1_RX_D12_N_CP is inaccessible.
+  Node PE1_RX_D12_P_CP is inaccessible.
+  Node PE1_RX_D13_N_CP is inaccessible.
+  Node PE1_RX_D13_P_CP is inaccessible.
+  Node PE1_RX_D14_N_CP is inaccessible.
+  Node PE1_RX_D14_P_CP is inaccessible.
+  Node PE1_RX_D15_N_CP is inaccessible.
+  Node PE1_RX_D15_P_CP is inaccessible.
+  Node PE1_TX_D1_N_CP is inaccessible.
+  Node PE1_TX_D1_P_CP is inaccessible.
+  Node PE1_TX_D2_N_CP is inaccessible.
+  Node PE1_TX_D2_P_CP is inaccessible.
+  Node PE1_TX_D3_N_CP is inaccessible.
+  Node PE1_TX_D3_P_CP is inaccessible.
+  Node PE1_TX_D4_N_CP is inaccessible.
+  Node PE1_TX_D4_P_CP is inaccessible.
+  Node PE1_TX_D5_N_CP is inaccessible.
+  Node PE1_TX_D5_P_CP is inaccessible.
+  Node PE1_TX_D6_N_CP is inaccessible.
+  Node PE1_TX_D6_P_CP is inaccessible.
+  Node PE1_TX_D7_N_CP is inaccessible.
+  Node PE1_TX_D7_P_CP is inaccessible.
+  Node PE1_TX_D8_N_CP is inaccessible.
+  Node PE1_TX_D8_P_CP is inaccessible.
+  Node PE1_TX_D9_N_CP is inaccessible.
+  Node PE1_TX_D9_P_CP is inaccessible.
+  Node PE1_TX_D10_N_CP is inaccessible.
+  Node PE1_TX_D10_P_CP is inaccessible.
+  Node PE1_TX_D11_N_CP is inaccessible.
+  Node PE1_TX_D11_P_CP is inaccessible.
+  Node PE1_TX_D12_N_CP is inaccessible.
+  Node PE1_TX_D12_P_CP is inaccessible.
+  Node PE1_TX_D13_N_CP is inaccessible.
+  Node PE1_TX_D13_P_CP is inaccessible.
+  Node PE1_TX_D14_N_CP is inaccessible.
+  Node PE1_TX_D14_P_CP is inaccessible.
+  Node PE1_TX_D15_N_CP is inaccessible.
+  Node PE1_TX_D15_P_CP is inaccessible.
+  Node TP_ADR_COMPLETE_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DN_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DP_CP is inaccessible.
+  Node TP_CLKOUTFLEX1_GPIO65_CP is inaccessible.
+  Node TP_CLKOUTFLEX3_GPIO67_CP is inaccessible.
+  Node TP_DDR_VREFDQ0_CP is inaccessible.
+  Node TP_DDR_VREFDQ1_CP is inaccessible.
+  Node TP_KR_EPHY_DFTANA<1>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<0>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<1>_CP is inaccessible.
+  Node TP_KR_EPHY_MON_DN_CP is inaccessible.
+  Node TP_LDRQ1_CP is inaccessible.
+  Node TP_PWM0_CP is inaccessible.
+  Node TP_RSVD15_CP is inaccessible.
+  Node TP_RSVD16_CP is inaccessible.
+  Node TP_RSVD23_CP is inaccessible.
+  Node TP_RSVD24_CP is inaccessible.
+  Node TP_RSVD25_CP is inaccessible.
+  Node TP_RSVD26_CP is inaccessible.
+  Node TP_RSVD27_CP is inaccessible.
+  Node TP_RSVD28_CP is inaccessible.
+  Node TP_RSVD29_CP is inaccessible.
+  Node TP_RSVD30_CP is inaccessible.
+  Node TP_RSVD31_CP is inaccessible.
+  Node TP_RSVD32_CP is inaccessible.
+  Node TP_RSVD33_CP is inaccessible.
+  Node TP_RSVD34_CP is inaccessible.
+  Node TP_RSVD35_CP is inaccessible.
+  Node TP_RSVD36_CP is inaccessible.
+  Node TP_RSVD37_CP is inaccessible.
+  Node TP_RSVD38_CP is inaccessible.
+  Node TP_RSVD39_CP is inaccessible.
+  Node TP_RSVD40_CP is inaccessible.
+  Node TP_RSVD41_CP is inaccessible.
+  Node TP_RSVD42_CP is inaccessible.
+  Node TP_RSVD43_CP is inaccessible.
+  Node TP_RSVD44_CP is inaccessible.
+  Node TP_RSVD45_CP is inaccessible.
+  Node TP_RSVD46_CP is inaccessible.
+  Node TP_RSVD47_CP is inaccessible.
+  Node TP_RSVD49_CP is inaccessible.
+  Node TP_RSVD50_CP is inaccessible.
+  Node TP_RSVD51_CP is inaccessible.
+  Node TP_RSVD52_CP is inaccessible.
+  Node TP_RSVD53_CP is inaccessible.
+  Node TP_RSVD54_CP is inaccessible.
+  Node TP_RSVD55_CP is inaccessible.
+  Node TP_RSVD56_CP is inaccessible.
+  Node TP_RSVD63_CP is inaccessible.
+  Node TP_RSVD64_CP is inaccessible.
+  Node TP_RSVD65_CP is inaccessible.
+  Node TP_RSVD66_CP is inaccessible.
+  Node TP_RSVD67_CP is inaccessible.
+  Node TP_RSVD68_CP is inaccessible.
+  Node TP_RSVD69_CP is inaccessible.
+  Node TP_RSVD70_CP is inaccessible.
+  Node TP_RSVD71_CP is inaccessible.
+  Node TP_RSVD72_CP is inaccessible.
+  Node TP_RSVD73_CP is inaccessible.
+  Node TP_RSVD74_CP is inaccessible.
+  Node TP_RSVD75_CP is inaccessible.
+  Node TP_RSVD76_CP is inaccessible.
+  Node TP_RSVD77_CP is inaccessible.
+  Node TP_RSVD78_CP is inaccessible.
+  Node TP_RSVD79_CP is inaccessible.
+  Node TP_RSVD80_CP is inaccessible.
+  Node TP_RSVD81_CP is inaccessible.
+  Node TP_RSVD82_CP is inaccessible.
+  Node TP_RSVD83_CP is inaccessible.
+  Node TP_RSVD84_CP is inaccessible.
+  Node TP_RSVD86_CP is inaccessible.
+  Node TP_RSVD87_CP is inaccessible.
+  Node TP_RSVD88_CP is inaccessible.
+  Node TP_RSVD89_CP is inaccessible.
+  Node TP_RSVD90_CP is inaccessible.
+  Node TP_RSVD91_CP is inaccessible.
+  Node TP_RSVD92_CP is inaccessible.
+  Node TP_RSVD93_CP is inaccessible.
+  Node TP_SRC1CLKRQB_GPIO18_CP is inaccessible.
+  Node TP_TEST_EDM0_CP is inaccessible.
+  Node TP_TEST_EDM1_CP is inaccessible.
+  Node TP_TEST_KX_AMONI_CP is inaccessible.
+  Node TP_TEST_KX_AMONV_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DN_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DP_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DN_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DP_CP is inaccessible.
+  Node UNNAMED_7_CAP_I220_A_VR is inaccessible.
+  Node UNNAMED_7_CAP_I220_B_VR is inaccessible.
+  Node USB3_RX_D1_N_CP is inaccessible.
+  Node USB3_RX_D1_P_CP is inaccessible.
+  Node USB3_RX_D2_N_CP is inaccessible.
+  Node USB3_RX_D2_P_CP is inaccessible.
+  Node USB3_TX_D1_N_CP is inaccessible.
+  Node USB3_TX_D1_P_CP is inaccessible.
+  Node USB3_TX_D2_N_CP is inaccessible.
+  Node USB3_TX_D2_P_CP is inaccessible.
+  Node VDD_SW is inaccessible.
+  Node VDD_SW_91 is inaccessible.
+  Node VDD_SW_92 is inaccessible.
+  Node VDD_SW_98 is inaccessible.
+  Node VSENSE_VCCSCSUS_SENSE_CP is inaccessible.
+  Node VSENSE_VSS_VCCSCSUS_SENSE_CP is inaccessible.
+No summary reports were generated.
+
+
+
+  A test was not generated for a device because it was marked permanent
+  in the testorder file.  In order to generate a test for the device, the
+  testorder file must be modified to remove the permanent option from the
+  test. (WARNING IPG1061)
+
+
+
+  Nodes on this board are not accessible.  Check the ipg/summary file 
+  to identify the nodes, and verify that they should be inaccessible.
+------------------------------------------------------------------------------
+AGILENT ICT IPG Summary Report Rev 07.20pd Wed Jul  4 10:30:43 2018      
+
+73-19246-05_2old
+------------------------------------------------------------------------------
+
+Reading "testorder".
+
+
+
+Test Program Generation Options:
+    Incremental Generation
+    Shorts Test Is NOT To Be Generated
+    Chek-Point Pins Test Is NOT To Be Generated
+    Capacitor Discharge Test Is NOT To Be Generated
+
+
+  Node _d_ACT2_21 is inaccessible.
+  Node _d_U5_CP_BG28 is inaccessible.
+  Node _d_U5_CP_BH26 is inaccessible.
+  Node _d_U5_CP_BJ28 is inaccessible.
+  Node _d_U5_CP_BJ32 is inaccessible.
+  Node _d_U5_CP_BL26 is inaccessible.
+  Node _d_U5_CP_BL33 is inaccessible.
+  Node _d_U5_CP_BM28 is inaccessible.
+  Node _d_U5_CP_BM32 is inaccessible.
+  Node _d_U5_CP_BN26 is inaccessible.
+  Node _d_U5_CP_BN33 is inaccessible.
+  Node _d_U5_CP_BP28 is inaccessible.
+  Node _d_U5_CP_BP32 is inaccessible.
+  Node _d_U5_CP_BR33 is inaccessible.
+  Node _d_U5_CP_BT32 is inaccessible.
+  Node _d_U5_CP_BU33 is inaccessible.
+  Node _d_U30_1 is inaccessible.
+  Node _d_U30_5 is inaccessible.
+  Node _d_U30_9 is inaccessible.
+  Node _d_U30_13 is inaccessible.
+  Node _d_U30_16 is inaccessible.
+  Node CLK100M_FPGA_PE_N is inaccessible.
+  Node CLK100M_FPGA_PE_P is inaccessible.
+  Node CLK_100M_MDOT2_N is inaccessible.
+  Node CLK_100M_MDOT2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_P is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_P is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_P is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_P is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_N is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_P is inaccessible.
+  Node LAN_KX4_RX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<3>_CP is inaccessible.
+  Node NC_LAN_NCSI_ARB_IN_CP is inaccessible.
+  Node NC_LAN_NCSI_CRS_DV_CP is inaccessible.
+  Node NC_NCTF_TP1_CP is inaccessible.
+  Node NC_NCTF_TP2_CP is inaccessible.
+  Node NC_NCTF_TP3_CP is inaccessible.
+  Node NC_NCTF_TP4_CP is inaccessible.
+  Node NC_NCTF_TP6_CP is inaccessible.
+  Node NC_NCTF_TP7_CP is inaccessible.
+  Node NC_NCTF_TP8_CP is inaccessible.
+  Node NC_NCTF_TP9_CP is inaccessible.
+  Node NC_NCTF_TP10_CP is inaccessible.
+  Node NC_NCTF_TP11_CP is inaccessible.
+  Node NC_NCTF_TP14_CP is inaccessible.
+  Node NC_NCTF_TP15_CP is inaccessible.
+  Node NC_NCTF_TP16_CP is inaccessible.
+  Node NC_SPI_PCH_IO2_CP is inaccessible.
+  Node NC_SPI_PCH_IO3_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DN_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DP_CP is inaccessible.
+  Node PE1_RX_D1_N_CP is inaccessible.
+  Node PE1_RX_D1_P_CP is inaccessible.
+  Node PE1_RX_D2_N_CP is inaccessible.
+  Node PE1_RX_D2_P_CP is inaccessible.
+  Node PE1_RX_D3_N_CP is inaccessible.
+  Node PE1_RX_D3_P_CP is inaccessible.
+  Node PE1_RX_D4_N_CP is inaccessible.
+  Node PE1_RX_D4_P_CP is inaccessible.
+  Node PE1_RX_D5_N_CP is inaccessible.
+  Node PE1_RX_D5_P_CP is inaccessible.
+  Node PE1_RX_D6_N_CP is inaccessible.
+  Node PE1_RX_D6_P_CP is inaccessible.
+  Node PE1_RX_D7_N_CP is inaccessible.
+  Node PE1_RX_D7_P_CP is inaccessible.
+  Node PE1_RX_D8_N_CP is inaccessible.
+  Node PE1_RX_D8_P_CP is inaccessible.
+  Node PE1_RX_D9_N_CP is inaccessible.
+  Node PE1_RX_D9_P_CP is inaccessible.
+  Node PE1_RX_D10_N_CP is inaccessible.
+  Node PE1_RX_D10_P_CP is inaccessible.
+  Node PE1_RX_D11_N_CP is inaccessible.
+  Node PE1_RX_D11_P_CP is inaccessible.
+  Node PE1_RX_D12_N_CP is inaccessible.
+  Node PE1_RX_D12_P_CP is inaccessible.
+  Node PE1_RX_D13_N_CP is inaccessible.
+  Node PE1_RX_D13_P_CP is inaccessible.
+  Node PE1_RX_D14_N_CP is inaccessible.
+  Node PE1_RX_D14_P_CP is inaccessible.
+  Node PE1_RX_D15_N_CP is inaccessible.
+  Node PE1_RX_D15_P_CP is inaccessible.
+  Node PE1_TX_D1_N_CP is inaccessible.
+  Node PE1_TX_D1_P_CP is inaccessible.
+  Node PE1_TX_D2_N_CP is inaccessible.
+  Node PE1_TX_D2_P_CP is inaccessible.
+  Node PE1_TX_D3_N_CP is inaccessible.
+  Node PE1_TX_D3_P_CP is inaccessible.
+  Node PE1_TX_D4_N_CP is inaccessible.
+  Node PE1_TX_D4_P_CP is inaccessible.
+  Node PE1_TX_D5_N_CP is inaccessible.
+  Node PE1_TX_D5_P_CP is inaccessible.
+  Node PE1_TX_D6_N_CP is inaccessible.
+  Node PE1_TX_D6_P_CP is inaccessible.
+  Node PE1_TX_D7_N_CP is inaccessible.
+  Node PE1_TX_D7_P_CP is inaccessible.
+  Node PE1_TX_D8_N_CP is inaccessible.
+  Node PE1_TX_D8_P_CP is inaccessible.
+  Node PE1_TX_D9_N_CP is inaccessible.
+  Node PE1_TX_D9_P_CP is inaccessible.
+  Node PE1_TX_D10_N_CP is inaccessible.
+  Node PE1_TX_D10_P_CP is inaccessible.
+  Node PE1_TX_D11_N_CP is inaccessible.
+  Node PE1_TX_D11_P_CP is inaccessible.
+  Node PE1_TX_D12_N_CP is inaccessible.
+  Node PE1_TX_D12_P_CP is inaccessible.
+  Node PE1_TX_D13_N_CP is inaccessible.
+  Node PE1_TX_D13_P_CP is inaccessible.
+  Node PE1_TX_D14_N_CP is inaccessible.
+  Node PE1_TX_D14_P_CP is inaccessible.
+  Node PE1_TX_D15_N_CP is inaccessible.
+  Node PE1_TX_D15_P_CP is inaccessible.
+  Node TP_ADR_COMPLETE_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DN_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DP_CP is inaccessible.
+  Node TP_CLKOUTFLEX1_GPIO65_CP is inaccessible.
+  Node TP_CLKOUTFLEX3_GPIO67_CP is inaccessible.
+  Node TP_DDR_VREFDQ0_CP is inaccessible.
+  Node TP_DDR_VREFDQ1_CP is inaccessible.
+  Node TP_KR_EPHY_DFTANA<1>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<0>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<1>_CP is inaccessible.
+  Node TP_KR_EPHY_MON_DN_CP is inaccessible.
+  Node TP_LDRQ1_CP is inaccessible.
+  Node TP_PWM0_CP is inaccessible.
+  Node TP_RSVD15_CP is inaccessible.
+  Node TP_RSVD16_CP is inaccessible.
+  Node TP_RSVD23_CP is inaccessible.
+  Node TP_RSVD24_CP is inaccessible.
+  Node TP_RSVD25_CP is inaccessible.
+  Node TP_RSVD26_CP is inaccessible.
+  Node TP_RSVD27_CP is inaccessible.
+  Node TP_RSVD28_CP is inaccessible.
+  Node TP_RSVD29_CP is inaccessible.
+  Node TP_RSVD30_CP is inaccessible.
+  Node TP_RSVD31_CP is inaccessible.
+  Node TP_RSVD32_CP is inaccessible.
+  Node TP_RSVD33_CP is inaccessible.
+  Node TP_RSVD34_CP is inaccessible.
+  Node TP_RSVD35_CP is inaccessible.
+  Node TP_RSVD36_CP is inaccessible.
+  Node TP_RSVD37_CP is inaccessible.
+  Node TP_RSVD38_CP is inaccessible.
+  Node TP_RSVD39_CP is inaccessible.
+  Node TP_RSVD40_CP is inaccessible.
+  Node TP_RSVD41_CP is inaccessible.
+  Node TP_RSVD42_CP is inaccessible.
+  Node TP_RSVD43_CP is inaccessible.
+  Node TP_RSVD44_CP is inaccessible.
+  Node TP_RSVD45_CP is inaccessible.
+  Node TP_RSVD46_CP is inaccessible.
+  Node TP_RSVD47_CP is inaccessible.
+  Node TP_RSVD49_CP is inaccessible.
+  Node TP_RSVD50_CP is inaccessible.
+  Node TP_RSVD51_CP is inaccessible.
+  Node TP_RSVD52_CP is inaccessible.
+  Node TP_RSVD53_CP is inaccessible.
+  Node TP_RSVD54_CP is inaccessible.
+  Node TP_RSVD55_CP is inaccessible.
+  Node TP_RSVD56_CP is inaccessible.
+  Node TP_RSVD63_CP is inaccessible.
+  Node TP_RSVD64_CP is inaccessible.
+  Node TP_RSVD65_CP is inaccessible.
+  Node TP_RSVD66_CP is inaccessible.
+  Node TP_RSVD67_CP is inaccessible.
+  Node TP_RSVD68_CP is inaccessible.
+  Node TP_RSVD69_CP is inaccessible.
+  Node TP_RSVD70_CP is inaccessible.
+  Node TP_RSVD71_CP is inaccessible.
+  Node TP_RSVD72_CP is inaccessible.
+  Node TP_RSVD73_CP is inaccessible.
+  Node TP_RSVD74_CP is inaccessible.
+  Node TP_RSVD75_CP is inaccessible.
+  Node TP_RSVD76_CP is inaccessible.
+  Node TP_RSVD77_CP is inaccessible.
+  Node TP_RSVD78_CP is inaccessible.
+  Node TP_RSVD79_CP is inaccessible.
+  Node TP_RSVD80_CP is inaccessible.
+  Node TP_RSVD81_CP is inaccessible.
+  Node TP_RSVD82_CP is inaccessible.
+  Node TP_RSVD83_CP is inaccessible.
+  Node TP_RSVD84_CP is inaccessible.
+  Node TP_RSVD86_CP is inaccessible.
+  Node TP_RSVD87_CP is inaccessible.
+  Node TP_RSVD88_CP is inaccessible.
+  Node TP_RSVD89_CP is inaccessible.
+  Node TP_RSVD90_CP is inaccessible.
+  Node TP_RSVD91_CP is inaccessible.
+  Node TP_RSVD92_CP is inaccessible.
+  Node TP_RSVD93_CP is inaccessible.
+  Node TP_SRC1CLKRQB_GPIO18_CP is inaccessible.
+  Node TP_TEST_EDM0_CP is inaccessible.
+  Node TP_TEST_EDM1_CP is inaccessible.
+  Node TP_TEST_KX_AMONI_CP is inaccessible.
+  Node TP_TEST_KX_AMONV_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DN_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DP_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DN_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DP_CP is inaccessible.
+  Node UNNAMED_7_CAP_I220_A_VR is inaccessible.
+  Node UNNAMED_7_CAP_I220_B_VR is inaccessible.
+  Node USB3_RX_D1_N_CP is inaccessible.
+  Node USB3_RX_D1_P_CP is inaccessible.
+  Node USB3_RX_D2_N_CP is inaccessible.
+  Node USB3_RX_D2_P_CP is inaccessible.
+  Node USB3_TX_D1_N_CP is inaccessible.
+  Node USB3_TX_D1_P_CP is inaccessible.
+  Node USB3_TX_D2_N_CP is inaccessible.
+  Node USB3_TX_D2_P_CP is inaccessible.
+  Node VDD_SW is inaccessible.
+  Node VDD_SW_91 is inaccessible.
+  Node VDD_SW_92 is inaccessible.
+  Node VDD_SW_98 is inaccessible.
+  Node VSENSE_VCCSCSUS_SENSE_CP is inaccessible.
+  Node VSENSE_VSS_VCCSCSUS_SENSE_CP is inaccessible.
+
+Writing library-based and boundary scan tests.
+
+Device Test: q8
+
+  *** Summary ***
+
+Analog Powered Tests Summary
+  Number tests generated    =    1
+  Number tests total        =    1
+
+
+
+  Nodes on this board are not accessible.  Check the ipg/summary file 
+  to identify the nodes, and verify that they should be inaccessible.
+
+Board Results
+
+     library and bscan tests : 1
+         total units         : 0
+         units retained      : 0 ( 0.0%)
+         total vectors       : 0
+         vectors retained    : 0 ( 0.0%)
+         total pin states    : 0
+         pin states used     : 0 ( 0.0%)
+         bus enabled tests   : 0
+         nondigital tests    : 0
+         complete tests      : 0
+         full tests          : 0
+         partial tests       : 0
+         empty tests         : 0
+         setup tests         : 0
+         analog null tests   : 0
+         skipped tests       : 0
+
+------------------------------------------------------------------------------
+AGILENT ICT IPG Summary Report Rev 07.20p  Tue Jul 10 18:50:31 2018      
+
+73-19246-05_2old
+------------------------------------------------------------------------------
+
+Reading "testorder".
+
+
+
+Test Program Generation Options:
+    Incremental Generation
+    Shorts Test Is NOT To Be Generated
+    Chek-Point Pins Test Is NOT To Be Generated
+    Capacitor Discharge Test Is NOT To Be Generated
+
+
+  Node _d_ACT2_21 is inaccessible.
+  Node _d_U5_CP_BG28 is inaccessible.
+  Node _d_U5_CP_BH26 is inaccessible.
+  Node _d_U5_CP_BJ28 is inaccessible.
+  Node _d_U5_CP_BJ32 is inaccessible.
+  Node _d_U5_CP_BL26 is inaccessible.
+  Node _d_U5_CP_BL33 is inaccessible.
+  Node _d_U5_CP_BM28 is inaccessible.
+  Node _d_U5_CP_BM32 is inaccessible.
+  Node _d_U5_CP_BN26 is inaccessible.
+  Node _d_U5_CP_BN33 is inaccessible.
+  Node _d_U5_CP_BP28 is inaccessible.
+  Node _d_U5_CP_BP32 is inaccessible.
+  Node _d_U5_CP_BR33 is inaccessible.
+  Node _d_U5_CP_BT32 is inaccessible.
+  Node _d_U5_CP_BU33 is inaccessible.
+  Node _d_U30_1 is inaccessible.
+  Node _d_U30_5 is inaccessible.
+  Node _d_U30_9 is inaccessible.
+  Node _d_U30_13 is inaccessible.
+  Node _d_U30_16 is inaccessible.
+  Node CLK100M_FPGA_PE_N is inaccessible.
+  Node CLK100M_FPGA_PE_P is inaccessible.
+  Node CLK_100M_MDOT2_N is inaccessible.
+  Node CLK_100M_MDOT2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY1_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY2_P is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_N is inaccessible.
+  Node HSD_PCIE_CPU_PHY3_P is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_FP3_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY1_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY2_CPU_AC_P is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_N is inaccessible.
+  Node HSD_PCIE_PHY3_CPU_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN1_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN2_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_AC_P is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_N is inaccessible.
+  Node HSD_PE_CPU_MDOT2_LN3_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_AC_P is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_N is inaccessible.
+  Node HSD_PE_IOFPGA_CPU_RC_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN1_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN2_P is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_N is inaccessible.
+  Node HSD_PE_MDOT2_CPU_LN3_P is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA2_CPU_AC_P is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_N is inaccessible.
+  Node HSD_PE_MIFPGA_CPU_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN0_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN1_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN2_AC_P is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_N is inaccessible.
+  Node HSD_PE_SA_CPU_LN3_AC_P is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA1_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA1_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_N is inaccessible.
+  Node HSD_SATA_PCH_TO_SSD_P is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_N is inaccessible.
+  Node HSD_SATA_SSD_TO_PCH_P is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII0_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_N is inaccessible.
+  Node HSD_SGMII1_LINE_CPU_AC_P is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_N is inaccessible.
+  Node HSD_SSD_CPU_MDOT2_LN0_P is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_N is inaccessible.
+  Node HSD_SSD_MDOT2_CPU_LN0_P is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_N is inaccessible.
+  Node HSD_USB_EUSB_DRIVE_P is inaccessible.
+  Node LAN_KX4_RX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_RX1_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX0_DP<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DN<3>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<0>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<1>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<2>_CP is inaccessible.
+  Node LAN_KX4_TX1_DP<3>_CP is inaccessible.
+  Node NC_LAN_NCSI_ARB_IN_CP is inaccessible.
+  Node NC_LAN_NCSI_CRS_DV_CP is inaccessible.
+  Node NC_NCTF_TP1_CP is inaccessible.
+  Node NC_NCTF_TP2_CP is inaccessible.
+  Node NC_NCTF_TP3_CP is inaccessible.
+  Node NC_NCTF_TP4_CP is inaccessible.
+  Node NC_NCTF_TP6_CP is inaccessible.
+  Node NC_NCTF_TP7_CP is inaccessible.
+  Node NC_NCTF_TP8_CP is inaccessible.
+  Node NC_NCTF_TP9_CP is inaccessible.
+  Node NC_NCTF_TP10_CP is inaccessible.
+  Node NC_NCTF_TP11_CP is inaccessible.
+  Node NC_NCTF_TP14_CP is inaccessible.
+  Node NC_NCTF_TP15_CP is inaccessible.
+  Node NC_NCTF_TP16_CP is inaccessible.
+  Node NC_SPI_PCH_IO2_CP is inaccessible.
+  Node NC_SPI_PCH_IO3_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DN_CP is inaccessible.
+  Node PD_CLKIN_DOT96_DP_CP is inaccessible.
+  Node PE1_RX_D1_N_CP is inaccessible.
+  Node PE1_RX_D1_P_CP is inaccessible.
+  Node PE1_RX_D2_N_CP is inaccessible.
+  Node PE1_RX_D2_P_CP is inaccessible.
+  Node PE1_RX_D3_N_CP is inaccessible.
+  Node PE1_RX_D3_P_CP is inaccessible.
+  Node PE1_RX_D4_N_CP is inaccessible.
+  Node PE1_RX_D4_P_CP is inaccessible.
+  Node PE1_RX_D5_N_CP is inaccessible.
+  Node PE1_RX_D5_P_CP is inaccessible.
+  Node PE1_RX_D6_N_CP is inaccessible.
+  Node PE1_RX_D6_P_CP is inaccessible.
+  Node PE1_RX_D7_N_CP is inaccessible.
+  Node PE1_RX_D7_P_CP is inaccessible.
+  Node PE1_RX_D8_N_CP is inaccessible.
+  Node PE1_RX_D8_P_CP is inaccessible.
+  Node PE1_RX_D9_N_CP is inaccessible.
+  Node PE1_RX_D9_P_CP is inaccessible.
+  Node PE1_RX_D10_N_CP is inaccessible.
+  Node PE1_RX_D10_P_CP is inaccessible.
+  Node PE1_RX_D11_N_CP is inaccessible.
+  Node PE1_RX_D11_P_CP is inaccessible.
+  Node PE1_RX_D12_N_CP is inaccessible.
+  Node PE1_RX_D12_P_CP is inaccessible.
+  Node PE1_RX_D13_N_CP is inaccessible.
+  Node PE1_RX_D13_P_CP is inaccessible.
+  Node PE1_RX_D14_N_CP is inaccessible.
+  Node PE1_RX_D14_P_CP is inaccessible.
+  Node PE1_RX_D15_N_CP is inaccessible.
+  Node PE1_RX_D15_P_CP is inaccessible.
+  Node PE1_TX_D1_N_CP is inaccessible.
+  Node PE1_TX_D1_P_CP is inaccessible.
+  Node PE1_TX_D2_N_CP is inaccessible.
+  Node PE1_TX_D2_P_CP is inaccessible.
+  Node PE1_TX_D3_N_CP is inaccessible.
+  Node PE1_TX_D3_P_CP is inaccessible.
+  Node PE1_TX_D4_N_CP is inaccessible.
+  Node PE1_TX_D4_P_CP is inaccessible.
+  Node PE1_TX_D5_N_CP is inaccessible.
+  Node PE1_TX_D5_P_CP is inaccessible.
+  Node PE1_TX_D6_N_CP is inaccessible.
+  Node PE1_TX_D6_P_CP is inaccessible.
+  Node PE1_TX_D7_N_CP is inaccessible.
+  Node PE1_TX_D7_P_CP is inaccessible.
+  Node PE1_TX_D8_N_CP is inaccessible.
+  Node PE1_TX_D8_P_CP is inaccessible.
+  Node PE1_TX_D9_N_CP is inaccessible.
+  Node PE1_TX_D9_P_CP is inaccessible.
+  Node PE1_TX_D10_N_CP is inaccessible.
+  Node PE1_TX_D10_P_CP is inaccessible.
+  Node PE1_TX_D11_N_CP is inaccessible.
+  Node PE1_TX_D11_P_CP is inaccessible.
+  Node PE1_TX_D12_N_CP is inaccessible.
+  Node PE1_TX_D12_P_CP is inaccessible.
+  Node PE1_TX_D13_N_CP is inaccessible.
+  Node PE1_TX_D13_P_CP is inaccessible.
+  Node PE1_TX_D14_N_CP is inaccessible.
+  Node PE1_TX_D14_P_CP is inaccessible.
+  Node PE1_TX_D15_N_CP is inaccessible.
+  Node PE1_TX_D15_P_CP is inaccessible.
+  Node TP_ADR_COMPLETE_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DN_CP is inaccessible.
+  Node TP_CLKOUT_PEG_B_DP_CP is inaccessible.
+  Node TP_CLKOUTFLEX1_GPIO65_CP is inaccessible.
+  Node TP_CLKOUTFLEX3_GPIO67_CP is inaccessible.
+  Node TP_DDR_VREFDQ0_CP is inaccessible.
+  Node TP_DDR_VREFDQ1_CP is inaccessible.
+  Node TP_KR_EPHY_DFTANA<1>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<0>_CP is inaccessible.
+  Node TP_KR_EPHY_DFTDIG<1>_CP is inaccessible.
+  Node TP_KR_EPHY_MON_DN_CP is inaccessible.
+  Node TP_LDRQ1_CP is inaccessible.
+  Node TP_PWM0_CP is inaccessible.
+  Node TP_RSVD15_CP is inaccessible.
+  Node TP_RSVD16_CP is inaccessible.
+  Node TP_RSVD23_CP is inaccessible.
+  Node TP_RSVD24_CP is inaccessible.
+  Node TP_RSVD25_CP is inaccessible.
+  Node TP_RSVD26_CP is inaccessible.
+  Node TP_RSVD27_CP is inaccessible.
+  Node TP_RSVD28_CP is inaccessible.
+  Node TP_RSVD29_CP is inaccessible.
+  Node TP_RSVD30_CP is inaccessible.
+  Node TP_RSVD31_CP is inaccessible.
+  Node TP_RSVD32_CP is inaccessible.
+  Node TP_RSVD33_CP is inaccessible.
+  Node TP_RSVD34_CP is inaccessible.
+  Node TP_RSVD35_CP is inaccessible.
+  Node TP_RSVD36_CP is inaccessible.
+  Node TP_RSVD37_CP is inaccessible.
+  Node TP_RSVD38_CP is inaccessible.
+  Node TP_RSVD39_CP is inaccessible.
+  Node TP_RSVD40_CP is inaccessible.
+  Node TP_RSVD41_CP is inaccessible.
+  Node TP_RSVD42_CP is inaccessible.
+  Node TP_RSVD43_CP is inaccessible.
+  Node TP_RSVD44_CP is inaccessible.
+  Node TP_RSVD45_CP is inaccessible.
+  Node TP_RSVD46_CP is inaccessible.
+  Node TP_RSVD47_CP is inaccessible.
+  Node TP_RSVD49_CP is inaccessible.
+  Node TP_RSVD50_CP is inaccessible.
+  Node TP_RSVD51_CP is inaccessible.
+  Node TP_RSVD52_CP is inaccessible.
+  Node TP_RSVD53_CP is inaccessible.
+  Node TP_RSVD54_CP is inaccessible.
+  Node TP_RSVD55_CP is inaccessible.
+  Node TP_RSVD56_CP is inaccessible.
+  Node TP_RSVD63_CP is inaccessible.
+  Node TP_RSVD64_CP is inaccessible.
+  Node TP_RSVD65_CP is inaccessible.
+  Node TP_RSVD66_CP is inaccessible.
+  Node TP_RSVD67_CP is inaccessible.
+  Node TP_RSVD68_CP is inaccessible.
+  Node TP_RSVD69_CP is inaccessible.
+  Node TP_RSVD70_CP is inaccessible.
+  Node TP_RSVD71_CP is inaccessible.
+  Node TP_RSVD72_CP is inaccessible.
+  Node TP_RSVD73_CP is inaccessible.
+  Node TP_RSVD74_CP is inaccessible.
+  Node TP_RSVD75_CP is inaccessible.
+  Node TP_RSVD76_CP is inaccessible.
+  Node TP_RSVD77_CP is inaccessible.
+  Node TP_RSVD78_CP is inaccessible.
+  Node TP_RSVD79_CP is inaccessible.
+  Node TP_RSVD80_CP is inaccessible.
+  Node TP_RSVD81_CP is inaccessible.
+  Node TP_RSVD82_CP is inaccessible.
+  Node TP_RSVD83_CP is inaccessible.
+  Node TP_RSVD84_CP is inaccessible.
+  Node TP_RSVD86_CP is inaccessible.
+  Node TP_RSVD87_CP is inaccessible.
+  Node TP_RSVD88_CP is inaccessible.
+  Node TP_RSVD89_CP is inaccessible.
+  Node TP_RSVD90_CP is inaccessible.
+  Node TP_RSVD91_CP is inaccessible.
+  Node TP_RSVD92_CP is inaccessible.
+  Node TP_RSVD93_CP is inaccessible.
+  Node TP_SRC1CLKRQB_GPIO18_CP is inaccessible.
+  Node TP_TEST_EDM0_CP is inaccessible.
+  Node TP_TEST_EDM1_CP is inaccessible.
+  Node TP_TEST_KX_AMONI_CP is inaccessible.
+  Node TP_TEST_KX_AMONV_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DN_CP is inaccessible.
+  Node TP_TEST_KX_DFX_DP_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DN_CP is inaccessible.
+  Node TP_TEST_KX_HSCLK_DP_CP is inaccessible.
+  Node UNNAMED_7_CAP_I220_A_VR is inaccessible.
+  Node UNNAMED_7_CAP_I220_B_VR is inaccessible.
+  Node USB3_RX_D1_N_CP is inaccessible.
+  Node USB3_RX_D1_P_CP is inaccessible.
+  Node USB3_RX_D2_N_CP is inaccessible.
+  Node USB3_RX_D2_P_CP is inaccessible.
+  Node USB3_TX_D1_N_CP is inaccessible.
+  Node USB3_TX_D1_P_CP is inaccessible.
+  Node USB3_TX_D2_N_CP is inaccessible.
+  Node USB3_TX_D2_P_CP is inaccessible.
+  Node VDD_SW is inaccessible.
+  Node VDD_SW_91 is inaccessible.
+  Node VDD_SW_92 is inaccessible.
+  Node VDD_SW_98 is inaccessible.
+  Node VSENSE_VCCSCSUS_SENSE_CP is inaccessible.
+  Node VSENSE_VSS_VCCSCSUS_SENSE_CP is inaccessible.
+
+Writing library-based and boundary scan tests.
+
+Device Test: q8
+
+  *** Summary ***
+
+Analog Powered Tests Summary
+  Number tests generated    =    1
+  Number tests total        =    1
+
+
+
+  Nodes on this board are not accessible.  Check the ipg/summary file 
+  to identify the nodes, and verify that they should be inaccessible.
+
+Board Results
+
+     library and bscan tests : 1
+         total units         : 0
+         units retained      : 0 ( 0.0%)
+         total vectors       : 0
+         vectors retained    : 0 ( 0.0%)
+         total pin states    : 0
+         pin states used     : 0 ( 0.0%)
+         bus enabled tests   : 0
+         nondigital tests    : 0
+         complete tests      : 0
+         full tests          : 0
+         partial tests       : 0
+         empty tests         : 0
+         setup tests         : 0
+         analog null tests   : 0
+         skipped tests       : 0
+

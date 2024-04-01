@@ -1,0 +1,13 @@
+!!!!    2    0    1 1530583099  V9662                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:21 2018
+on failure
+report parallel devices
+report "r476 120"
+end on failure
+disconnect all
+connect s to "P1V05C"
+connect i to "SVID_DIO_CPU_VRM"
+!B!resistor 60, 14.33, 6.00, re2, ar200m
+resistor 60,30.00, 25.00,re2,ar200m
+! "r338" test.
+off failure

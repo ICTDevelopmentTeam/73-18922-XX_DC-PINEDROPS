@@ -1,0 +1,56 @@
+!!!!    2    0    1 1529465051  V29a3                                         
+! IPG: rev 08.30p  Wed Oct 11 15:50:43 2017
+test powered analog
+   power pins 4,13,8,17,1,16,3,14
+   nonanalog pins 2,5,6,7,9,10,11,12,15
+
+   test "VIN1"
+   test "SW1"
+   test "SW2"
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+
+subtest "VIN1"
+
+   connect i to pins  1
+   connect l to pins  8
+
+   detector dcv, expect  12
+
+   measure  12.0 * 1.05, 12.0 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "SW1"
+
+   connect i to nodes "P5V"     !pins  3
+   connect l to pins  8
+
+   detector dcv, expect  5.20
+
+   measure  5.20 * 1.05, 5.20 * 0.95         !change to fit reading value
+
+end subtest
+
+
+subtest "SW2"
+
+   connect i to nodes "P1V7"   !pins  14
+   connect l to pins  8
+
+   detector dcv, expect  1.7
+
+   measure  1.7 * 1.05, 1.7 * 0.95         !change to fit reading value
+
+end subtest
+
+
+!
+!  End test
+!
+
+
+

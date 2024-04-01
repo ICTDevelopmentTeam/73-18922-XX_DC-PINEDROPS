@@ -1,0 +1,8 @@
+!!!!    2    0    1 1627962477   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:25 2018
+disconnect all
+connect i to "P3_3VA"
+connect s to "PWR_A3V3_A2V5_A1V2_PGOOD"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 35.00,re3,en,ed,ar 200m,wb
+! "r31" test.

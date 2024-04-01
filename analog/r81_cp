@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582777  Vc23a                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:26 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "UNNAMED_43_N25QXX_I126_HOLDMDQ3_CP"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 20.00,re4,wb,ar100m
+! "r81_cp" test.

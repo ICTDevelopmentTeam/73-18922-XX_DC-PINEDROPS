@@ -1,0 +1,13 @@
+!!!!    2    0    1 1530583068  V4486                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:12 2018
+on failure
+report parallel devices
+report "r311 68.1"
+end on failure
+disconnect all
+connect s to "P1V3"
+connect i to "P1V3_C"
+!B!resistor 34.05, 20.68, 6.00, re2, ar200m
+resistor 34.05,40.00, 25.00,re2,ar200m
+! "r310" test.
+off failure

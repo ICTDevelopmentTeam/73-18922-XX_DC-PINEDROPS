@@ -1,0 +1,11 @@
+!!!!    2    0    1 1487059933  V6729                                         
+!*CISCO P-PIN check test automation tool
+on failure
+report "check nodes ISENRTN_VR P-Pin resistance"
+report "check nodes ISEN2_VR P-Pin resistance"
+end on failure
+disconnect all
+connect s to "ISENRTN_VR"
+connect i to "ISEN2_VR"
+resistor 10,20,100, re1, ar100m,ed
+off failure

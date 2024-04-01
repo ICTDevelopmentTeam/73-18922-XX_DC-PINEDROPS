@@ -1,0 +1,9 @@
+!!!!    2    0    1 1691248644   0000                                         
+on failure
+   report "Check for IP_P2 presence."
+end on failure
+disconnect all
+connect s to ground
+connect i to "IP_P2_PRESENCE_SWITCH_PIN_2"
+jumper 25, re2, ar200m
+off failure

@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530585614  Vda84                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:30 2018
+disconnect all
+connect s to "UNNAMED_18_LED_I121_K"
+connect i to "UNNAMED_18_LED_I121_A"
+!B!diode 916m, 467m, idc25m, co3.0, ar916m
+diode 950m,467m,idc25m,co3.0,ar916m
+! "cr44%d1" test.

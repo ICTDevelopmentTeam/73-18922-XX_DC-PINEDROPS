@@ -1,0 +1,13 @@
+!!!!    2    0    1 1530582936  Va6cb                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:44 2018
+on failure
+report parallel devices
+report "r20_vr 4.75k"
+end on failure
+disconnect all
+connect s to "P3_3VA"
+connect i to "PMBUS1_SDA"
+!B!resistor 2.375k, 6.00, 6.00, re4, wb, ar500m
+resistor 2.375k,25.00, 20.00,re4,wb,ar500m
+! "r20_mvr" test.
+off failure

@@ -1,0 +1,6 @@
+!!!!    2    0    1 1529027720   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:21 2018
+! Common Lead Resistance 100m, Common Lead Inductance 1.00u
+! Fixture: EXPRESS
+! "c296" is not accessible at node "HSD_PE_CPU_MDOT2_LN2_AC_P".
+! "c296" is not accessible at node "HSD_PE_CPU_MDOT2_LN2_P".

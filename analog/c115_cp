@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531986985  V7f0d                                         
+!* UNNAMED_7_CAP_I261_B_CP top side probe removed for BSCAN test stable ready
+! IPG: rev 07.20pd Fri Jun 15 09:55:22 2018
+disconnect all
+connect s to "GND"
+connect i to "UNNAMED_7_CAP_I261_B_CP"
+connect g to "XTAL_PCH_25M_IN_CP"
+capacitor 27p, 115.00, 15.00, fr8192, re5, wb, ar50.0m, comp
+! "c115_cp" test.

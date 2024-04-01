@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027701   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:02 2018
+disconnect all
+connect s to "UNNAMED_40_RES_I5_B_CP"
+connect i to "RST_FP_SYSRST_BTN_N_CP"
+jumper 10.0k, re4, wb, ar100m, op
+! "r327_cp" test.

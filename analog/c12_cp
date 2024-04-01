@@ -1,0 +1,9 @@
+!!!!    2    0    1 1531965575  Vf0aa                                         
+!* Small value capacitor(15pf), test unstable.
+! IPG: rev 07.20pd Fri Jun 15 09:55:21 2018
+disconnect all
+connect s to "GND"
+connect i to "XTAL_RTCX2_CP"
+connect g to "XTAL_RTCX1_CP"
+capacitor 15p, 195.00, 15.00, fr8192, re5, wb, ar50.0m, comp
+! "c12_cp" test.

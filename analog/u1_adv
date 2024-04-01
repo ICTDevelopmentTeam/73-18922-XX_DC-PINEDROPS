@@ -1,0 +1,56 @@
+!!!!    2    0    1 1529475711  V6abb                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:43 2018
+test powered analog
+   power pins 4,13,8,17,1,16,3,14
+   nonanalog pins 2,5,6,7,9,10,11,12,15
+
+   test "VIN1"
+   test "SW1"
+   test "SW2"
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+
+subtest "VIN1"
+
+   connect i to pins  1
+   connect l to pins  8
+
+   detector dcv, expect 12.0
+
+   measure 12.0 * 1.05,12.0 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "SW1"
+
+   connect i to nodes "P1_2VA"     !pins  3
+   connect l to pins  8
+
+   detector dcv, expect  1.2
+
+   measure  1.2 * 1.05, 1.2 * 0.95         !change to fit reading value
+
+end subtest
+
+
+subtest "SW2"
+
+   connect i to nodes "P3_3VA"    !pins  14
+   connect l to pins  8
+
+   detector dcv, expect  3.3
+
+   measure  3.3 * 1.05, 3.3 * 0.95         !change to fit reading value
+
+end subtest
+
+
+!
+!  End test
+!
+
+
+

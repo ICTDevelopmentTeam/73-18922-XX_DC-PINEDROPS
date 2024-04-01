@@ -1,0 +1,7 @@
+!!!!    2    0    1 1662031975   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:14 2018
+disconnect all
+connect s to "P3_3VA"
+connect i to "SMBUS_FAN_SDA"
+resistor 2.2k, 25.00, 20.00, re4, wb, ar500m,ed,en
+! "r223" test.

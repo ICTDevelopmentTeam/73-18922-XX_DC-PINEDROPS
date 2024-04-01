@@ -1,0 +1,9 @@
+!!!!    2    0    1 1658818088   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:28 2018
+disconnect all
+connect i to "P1V05C"
+connect s to "PU_NCSI_ARB_OUT_CP"
+!connect g to "GND"
+resistor 10k,25.00, 35.00,re4,wb,ar100m,ed,en
+! "r241_cp" test.
+

@@ -1,0 +1,304 @@
+!!!!    2    0    1 1701235964   0000                                         
+test powered analog
+
+ test "P12V"
+ test "P3_3VA"
+ test "P2_5VA"
+ test "P1_2VA"
+ test "P5V"
+  test "P3_3V"
+ test "P3V3_SSD"
+ test "P1V8"
+ test "P1V7"
+ test "P1V5_PCH"
+ test "P1V3"
+ test "P1V2_VDDQ"
+ test "P1V05C"
+ test "P0V6_VTT"
+ test "DDR4_VPP"
+ test "VCCSUS3_3"
+!test "PVCCIN"       !1.8
+
+  !test "P1V7_FP2"    !to short probe
+  !test "P1V7_FP_A"   !to short probe
+  !test "P1V7_FP_B"   !to short probe
+  !test "P1V5_B"      !to short probe
+  !test "P1V5_C"      !to short probe
+  !test "P1V3_B"      !to short probe
+  !test "P1V3_C"      !to short probe
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+
+subtest "P12V"
+
+   connect i to nodes "P12V"
+   connect l to nodes "GND"
+
+   detector dcv, expect  12.0
+
+   measure  12.0 * 1.05, 12.0 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P3_3VA"
+
+   connect i to nodes "P3_3VA"
+   connect l to nodes "GND"
+
+   detector dcv, expect  3.3
+
+   measure  3.3 * 1.05, 3.3 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P2_5VA"
+
+   connect i to nodes "P2_5VA"
+   connect l to nodes "GND"
+
+   detector dcv, expect  2.5
+
+   measure  2.5 * 1.05, 2.5 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1_2VA"
+
+   connect i to nodes "P1_2VA"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.2
+
+   measure  1.2 * 1.05, 1.2 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P3_3V"
+
+   connect i to nodes "P3_3V"
+   connect l to nodes "GND"
+
+   detector dcv, expect  3.3
+
+   measure  3.3 * 1.05, 3.3 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P0V6_VTT"
+
+   connect i to nodes "P0V6_VTT"
+   connect l to nodes "GND"
+
+   detector dcv, expect  0.6
+
+   measure  0.6 * 1.2, 0.6 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V2_VDDQ"
+
+   connect i to nodes "P1V2_VDDQ"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.2
+
+   measure  1.2 * 1.05, 1.2 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V3"
+
+   connect i to nodes "P1V3"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.3
+
+  ! measure  1.3 * 1.05, 1.3 * 0.95         !change to fit reading value
+   measure  1.3 * 1.10, 1.3 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V3_B"
+
+   connect i to nodes "P1V3_B"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.3
+
+   measure  1.3 * 1.05, 1.3 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V3_C"
+
+   connect i to nodes "P1V3_C"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.3
+
+   measure  1.3 * 1.05, 1.3 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V5_B"
+
+   connect i to nodes "P1V5_B"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.5
+
+   measure  1.5 * 1.05, 1.5 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V5_C"
+
+   connect i to nodes "P1V5_C"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.5
+
+   measure  1.5 * 1.05, 1.5 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V5_PCH"
+
+   connect i to nodes "P1V5_PCH"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.5
+
+   measure  1.5 * 1.1, 1.5 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V05C"
+
+   connect i to nodes "P1V05C"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.05
+
+   measure  1.05 * 1.05, 1.05 * 0.93       !change to fit reading value
+
+end subtest
+
+subtest "P1V7"
+
+   connect i to nodes "P1V7"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.7
+
+   measure  1.7 * 1.05, 1.7 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V7_FP2"
+
+   connect i to nodes "P1V7_FP2"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.7
+
+   measure  1.7 * 1.05, 1.7 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V7_FP_A"
+
+   connect i to nodes "P1V7_FP_A"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.7
+
+   measure  1.7 * 1.05, 1.7 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V7_FP_B"
+
+   connect i to nodes "P1V7_FP_B"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.7
+
+   measure  1.7 * 1.05, 1.7 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P1V8"
+
+   connect i to nodes "P1V8"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.8
+
+   measure  1.8 * 1.05, 1.8 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P3V3_SSD"
+
+   connect i to nodes "P3V3_SSD"
+   connect l to nodes "GND"
+
+   detector dcv, expect  3.3     !5.0
+
+   measure  3.3 * 1.05, 3.3 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "P5V"
+
+   connect i to nodes "P5V"
+   connect l to nodes "GND"
+
+   detector dcv, expect  5.0
+
+   measure  5.0 * 1.10, 5.0 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "DDR4_VPP"
+
+   connect i to nodes "DDR4_VPP"
+   connect l to nodes "GND"
+
+   detector dcv, expect  2.5    !0.75
+
+   measure  2.5 * 1.05, 2.5 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "VCCSUS3_3"
+
+   connect i to nodes "VCCSUS3_3"
+   connect l to nodes "GND"
+
+   detector dcv, expect  3.3      !0.75
+
+   measure  3.3 * 1.05, 3.3 * 0.95         !change to fit reading value
+
+end subtest
+
+subtest "PVCCIN"
+
+   connect i to nodes "PVCCIN"
+   connect l to nodes "GND"
+
+   detector dcv, expect  1.80
+
+   measure  1.80 * 1.05, 1.80 * 0.95         !change to fit reading value
+
+end subtest
+!
+!  End test
+!
+
+
+

@@ -1,0 +1,21 @@
+!!!!    2    0    1 1632452926   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:31 2018
+disconnect all
+connect s to "GND"
+connect i to "P1V3_B"
+diode "B-E",950m,602m,idc5m,co3.0,ar804m
+! "q17%q1 B-E" test.
+disconnect all
+connect s to "P1V3_C"
+connect i to "P1V3_B"
+diode "B-C",950m,603m,idc5m,co3.0,ar804m
+! "q17%q1 B-C" test.
+! The preceding simplified transistor test was generated to minimize
+! The following beta test may be used for transistors requiring such
+! tests, though it may require tuning.
+disconnect all
+connect s to "GND"
+connect i to "P1V3_B"
+connect g to "P1V3_C"
+! npn "BETA", 1.00k, 40.1, idc1.1m, idelta10, co10
+npn "BETA", 1.00k, 20.5, idc35m, idelta10, co10,ed

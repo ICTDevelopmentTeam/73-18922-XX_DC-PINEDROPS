@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583107  V16e0                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:22 2018
+disconnect all
+connect s to "P3_3V"
+connect i to "PCH_MDC"
+!B!resistor 1.5k, 6.00, 6.00, re4, wb, ar1.00
+resistor 1.5k,25.00, 20.00,re4,wb,ar1.00
+! "r421_cp" test.

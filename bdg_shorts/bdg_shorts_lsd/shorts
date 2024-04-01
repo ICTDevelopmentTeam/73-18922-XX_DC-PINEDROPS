@@ -1,0 +1,2547 @@
+!!!!    9    0    1 1532071057  Vc7f6                                         
+!IPG: rev 07.20pd Fri Jun 15 09:54:35 2018
+
+report netlist, common devices
+
+threshold 15
+settling delay 4.5e-05
+
+!failure "Check r491"  !Pre_Shorts        !100ohm -->0ohm   to GNDis12ohm
+short "P1V05C_SNS_P" to "P1V05C"
+!failure ""
+!failure "Check r492"  !Pre_Shorts        !100ohm -->0ohm    to GNDis12ohm
+short "PVCCIN_SNS_P" to "PVCCIN"
+!failure ""
+!failure "Check r496"  !Pre_Shorts        !100ohm -->0ohm      to GNDis 0ohm
+short "P1V05C_SNS_N" to "GND"
+!failure ""
+!failure "Check r497"  !Pre_Shorts        !100ohm -->0ohm       to GNDis 0ohm
+short "PVCCIN_SNS_N" to "GND"
+!failure ""
+
+short "p1v05c" to "A_VCCCORE_1P05_SENSE_CP"  ! two pins is short
+short "GND" to "PD_RSVD_97_CP"            ! reading 0ohm at r436_cp
+short "PD_RSVD_R1_CP" to "PD_RSVD_97_CP"  ! reading 0ohm at r436_cp
+short "PD_RSVD_R2_CP" to "PD_RSVD_97_CP"  ! reading 0ohm at r436_cp
+failure "Check u10_cp.2 u10_cp.1"
+short "UNNAMED_6_RES_I480_A_CP" to "UNNAMED_6_RES_I482_B_CP"
+failure ""
+
+failure "Check u1_91_vr 19 to 32"
+!@@short "VDD_BOOT_R_91" to "PVCCIN"    !TOP side probe removed
+failure ""
+failure "Check u1_92_vr 19 to 32"
+!@@short "VDD_BOOT_R_92" to "PVCCIN"    !TOP side probe removed
+failure ""
+failure "Check u1_91_mvr 19 to 32"
+!@@short "VDD_BOOT_R" to "P1V2_VDDQ"    !TOP side probe removed
+failure ""
+failure "Check u1_98_mvr 19 to 32"
+!@@short "VDD_BOOT_R_98" to "P1V05C"    !TOP side probe removed
+failure ""
+
+
+
+!#############################################################
+!! Start of Section 1
+failure "Check r4_98_mvr"  !Pre_Shorts
+!@@short "VDD_BOOT_R_98" to "VDD_PH_98"   !TOP side probe removed
+failure ""
+failure "Check r4_92_vr"  !Pre_Shorts
+!@@short "VDD_BOOT_R_92" to "VDD_PH_92"   !TOP side probe removed
+failure ""
+failure "Check r4_91_vr"  !Pre_Shorts
+!@@short "VDD_BOOT_R_91" to "VDD_PH_91"   !TOP side probe removed
+failure ""
+failure "Check r4_91_mvr"  !Pre_Shorts
+!@@short "VDD_BOOT_R" to "VDD_PH"         !TOP side probe removed
+failure ""
+failure "Check r403_cp"  !Pre_Shorts
+short "SPI_FLSH_MOSI" to "SPI_FLSH_MOSI_CP"
+failure ""
+failure "Check r396_cp"  !Pre_Shorts
+short "SPI_CS0_L_CP" to "SPI_PCH_CS0_L"
+failure ""
+failure "Check r335_cp"  !Pre_Shorts
+short "RST_FP_SYSRST_BTN_N_CP" to "RST_FP_SYSRST_BTN_N_R_CP"
+failure ""
+failure "Check r313_cp"  !Pre_Shorts
+short "R_SPI_PCH_MISO" to "SPI_PCH_MISO_CP"
+failure ""
+failure "Check r239"  !Pre_Shorts
+short "IO_MI_FPGA_SPARE<3>" to "IO_MI_SPARE3"
+failure ""
+failure "Check r238"  !Pre_Shorts
+short "IO_MI_FPGA_SPARE<2>" to "IO_MI_SPARE2"
+failure ""
+failure "Check r237"  !Pre_Shorts
+short "IO_MI_FPGA_SPARE<1>" to "IO_MI_SPARE1"
+failure ""
+failure "Check r236"  !Pre_Shorts
+short "IO_MI_FPGA_SPARE<0>" to "IO_MI_SPARE0"
+failure ""
+failure "Check r443"  !Pre_Shorts
+short "IO_MI2_FPGA_SPARE<3>" to "IO_MI2_SPARE3"
+failure ""
+failure "Check r442"  !Pre_Shorts
+short "IO_MI2_FPGA_SPARE<2>" to "IO_MI2_SPARE2"
+failure ""
+failure "Check r441"  !Pre_Shorts
+short "IO_MI2_FPGA_SPARE<1>" to "IO_MI2_SPARE1"
+failure ""
+failure "Check r440"  !Pre_Shorts
+short "IO_MI2_FPGA_SPARE<0>" to "IO_MI2_SPARE0"
+failure ""
+!short "HSD_SATA1_SSD_TO_PCH_P" to "HSD_SSD_MDOT2_CPU_LN0_P"     ! A node is not accessible
+!short "HSD_SATA1_SSD_TO_PCH_N" to "HSD_SSD_MDOT2_CPU_LN0_N"     ! A node is not accessible
+!short "HSD_SATA1_PCH_TO_SSD_P" to "HSD_SSD_CPU_MDOT2_LN0_P"     ! A node is not accessible
+!short "HSD_SATA1_PCH_TO_SSD_N" to "HSD_SSD_CPU_MDOT2_LN0_N"     ! A node is not accessible
+failure "Check r135"  !Pre_Shorts
+short "CLK_100M_PHY2_P" to "SRT_CLK_100M_PHY2_P"
+failure ""
+failure "Check r136"  !Pre_Shorts
+short "CLK_100M_PHY2_N" to "SRT_CLK_100M_PHY2_N"
+failure ""
+failure "Check r137"  !Pre_Shorts
+short "CLK_100M_PHY1_P" to "SRT_CLK_100M_PHY1_P"
+failure ""
+failure "Check r138"  !Pre_Shorts
+short "CLK_100M_PHY1_N" to "SRT_CLK_100M_PHY1_N"
+failure ""
+failure "Check r535"  !Pre_Shorts
+short "CLK_100M_PE_FP_P" to "SRT_CLK_100M_PHY3_P"
+failure ""
+failure "Check r536"  !Pre_Shorts
+short "CLK_100M_PE_FP_N" to "SRT_CLK_100M_PHY3_N"
+failure ""
+!short "CLK_100M_MDOT2_P" to "SRT_CLK_100M_MDOT2_P"     ! A node is not accessible
+!short "CLK_100M_MDOT2_N" to "SRT_CLK_100M_MDOT2_N"     ! A node is not accessible
+failure "Check r139"  !Pre_Shorts
+short "CLK100M_PE_CPU_SA_P" to "SRT_CLK100M_PE_CPU_SA_P"
+failure ""
+failure "Check r140"  !Pre_Shorts
+short "CLK100M_PE_CPU_SA_N" to "SRT_CLK100M_PE_CPU_SA_N"
+failure ""
+failure "Check r143"  !Pre_Shorts
+short "CLK100M_PE_CPU_MIFPGA_P" to "SRT_CLK100M_PE_CPU_MIFPGA_P"
+failure ""
+failure "Check r144"  !Pre_Shorts
+short "CLK100M_PE_CPU_MIFPGA_N" to "SRT_CLK100M_PE_CPU_MIFPGA_N"
+failure ""
+failure "Check r141"  !Pre_Shorts
+short "CLK100M_PE_CPU_MIFPGA2_P" to "SRT_CLK100M_PE_CPU_MIFPGA2_P"
+failure ""
+failure "Check r142"  !Pre_Shorts
+short "CLK100M_PE_CPU_MIFPGA2_N" to "SRT_CLK100M_PE_CPU_MIFPGA2_N"
+failure ""
+!short "CLK100M_FPGA_PE_P" to "SRT_CLK100M_FPGA_PE_P"     ! A node is not accessible
+!short "CLK100M_FPGA_PE_N" to "SRT_CLK100M_FPGA_PE_N"     ! A node is not accessible
+failure "Check r170"  !Pre_Shorts
+short "JTAG_TDO_CPU_3V3" to "LJTAG_TDO_HDR_3V3"
+failure ""
+failure "Check r164"  !Pre_Shorts
+short "LJTAG_CABLE_PRSNT_L" to "JTAG_CABLE_PRSNT_L"
+failure ""
+failure "Check r43"  !Pre_Shorts
+short "PCH_NMI_L" to "GPIO1"
+failure ""
+failure "Check r52"  !Pre_Shorts
+short "FPGA_PCH_CRCERR_L" to "GPIO9"
+failure ""
+failure "Check r355"  !Pre_Shorts
+short "GPIO48" to "FPGA_PCH_SPARE3"
+failure ""
+failure "Check r206"  !Pre_Shorts
+short "FPGA_PCH_SPARE2" to "SRT_FPGA_PCH_SPARE2"
+failure ""
+failure "Check r341"  !Pre_Shorts
+short "GPIO39" to "FPGA_PCH_SPARE2"
+failure ""
+failure "Check r205"  !Pre_Shorts
+short "FPGA_PCH_SPARE1" to "SRT_FPGA_PCH_SPARE1"
+failure ""
+failure "Check r340"  !Pre_Shorts
+short "GPIO38" to "FPGA_PCH_SPARE1"
+failure ""
+failure "Check r49"  !Pre_Shorts
+short "GPIO22" to "FPGA_CPU_BRD_ID1"
+failure ""
+failure "Check r167"  !Pre_Shorts
+short "LJTAG_TMS_HDR_3V3" to "JTAG_HDR_TMS"
+failure ""
+failure "Check r166"  !Pre_Shorts
+short "LJTAG_TDI_HDR_3V3" to "JTAG_HDR_TDI"
+failure ""
+failure "Check r242"  !Pre_Shorts
+short "MI_IO_DATA" to "SRT_MI_IO_DATA"
+failure ""
+failure "Check r439"  !Pre_Shorts
+short "MI2_IO_DATA" to "SRT_MI2_IO_DATA"
+failure ""
+failure "Check r400_cp"  !Pre_Shorts
+short "R_PCH_TPM_CLKRUN_L_CP" to "PCH_TPM_CLKRUN_L_CP"
+failure ""
+failure "Check r26_mvr"  !Pre_Shorts
+short "P1V2_VDDQ_EN" to "IMON_TP_MVR"
+failure ""
+failure "Check r404_cp"  !Pre_Shorts
+short "SPI_FLSH_CLK_CP" to "SPI_FLSH_CLK"
+failure ""
+failure "Check r261_cp"  !Pre_Shorts
+short "RESET_CPU_N_CP" to "PLTRST_PROC_N_CP"
+failure ""
+failure "Check r168"  !Pre_Shorts
+short "LJTAG_TRST_L_HDR_3V3" to "JTAG_HDR_TRST_L"
+failure ""
+failure "Check r165"  !Pre_Shorts
+short "LJTAG_TCK_HDR_3V3" to "JTAG_HDR_TCK"
+failure ""
+failure "Check r341_cp"  !Pre_Shorts
+short "PCH_DPWROK_CP" to "FPGA_PCH_RSMRST_L"
+failure ""
+failure "Check r3_3v3"  !Pre_Shorts
+short "UNNAMED_1_CAP_I79_B_3V3" to "UNNAMED_1_RES_I78_A_3V3"
+failure ""
+failure "Check r418_cp"  !Pre_Shorts
+short "UNNAMED_41_CAP_I44_A_CP" to "UNNAMED_41_LSF0102_I37_EN_CP"
+failure ""
+failure "Check r357_cp"  !Pre_Shorts
+!@@short "XTAL_PCH_25M_OUT_CP" to "UNNAMED_7_CAP_I261_B_CP" !top side prove removed
+failure ""
+failure "Check r264_cp"  !Pre_Shorts
+short "UNNAMED_41_CAP_I28_A_CP" to "UNNAMED_41_LSF0102_I19_EN_CP"
+failure ""
+failure "Check r527"  !Pre_Shorts
+short "M2_PEWAKE_L" to "RES_M2_PEWAKE_L"
+failure ""
+failure "Check r51"  !Pre_Shorts
+short "DIMM_THERM_EVENT_L" to "GPIO10"
+failure ""
+failure "Check r274"  !Pre_Shorts
+short "UNNAMED_20_CAP_I259_B" to "DIMM_THERM_EVENT_L"
+failure ""
+failure "Check r02_mvr"  !Pre_Shorts
+short "AGND_SENSE_R_MVR" to "P1V05C_SNS_N"
+failure ""
+failure "Check r337"  !Pre_Shorts
+short "SVID_CLK_CPU_VRM" to "SRT_SVID_CLK_CPU"
+failure ""
+failure "Check r330_cp"  !Pre_Shorts
+short "JTAG_1V05SB_TDO_CP" to "JTAG_TDO_R_CP"
+failure ""
+failure "Check r479"  !Pre_Shorts
+short "SVID_DIO_CPU_VRM" to "SRT_SVID_DIO_MEM_VRM"
+failure ""
+failure "Check r376"  !Pre_Shorts
+short "SVID_DIO_CPU_VRM" to "SRT_SVID_DIO_VRM"
+failure ""
+failure "Check r336"  !Pre_Shorts
+short "SVID_DIO_CPU_VRM" to "SRT_SVID_DIO_CPU"
+failure ""
+failure "Check r482"  !Pre_Shorts
+short "SVID_ALERT_VRM_CPU_L" to "SRT_SVID_ALERT_MEM_VRM_L"
+failure ""
+failure "Check r379"  !Pre_Shorts
+short "SVID_ALERT_VRM_CPU_L" to "SRT_SVID_ALERT_VRM_L"
+failure ""
+failure "Check r339_cp"  !Pre_Shorts
+short "JTAG_1V05SB_CPU_TDO_CP" to "JTAG_1V05SB_PCH_TDI_CP"
+failure ""
+failure "Check r338_cp"  !Pre_Shorts
+short "JTAG_1V05SB_CPU_TDO_CP" to "UNNAMED_42_PI5A3157_I263_B1_CP"
+failure ""
+failure "Check r223_cp"  !Pre_Shorts
+short "P1V05C" to "XDP_CPU_VCCOBS_CD_CP"
+failure ""
+failure "Check r219_cp"  !Pre_Shorts
+short "P1V05C" to "XDP_CPU_VCCOBS_AB_CP"
+failure ""
+failure "Check r137_cp"  !Pre_Shorts
+short "P1V05C" to "FLTR_P1V05_PCH_CP"
+failure ""
+failure "Check l2_cp"  !Pre_Shorts
+short "P1V05C" to "FLTR_PVCCGBE_VCCKRL_CP"
+failure ""
+failure "Check l1_cp"  !Pre_Shorts
+short "P1V05C" to "FLTR_PVCCGBE_VCCS_CP"
+failure ""
+!short "P1V05C" to "VDD_SW_98"     ! A node is not accessible
+failure "Check r93_cp"  !Pre_Shorts
+short "PECI_CPU_CP" to "PECI_PCH_CP"
+failure ""
+failure "Check l9"  !Pre_Shorts
+short "P2_5VA" to "FLTR_FPGA_VCCA_GXB"
+failure ""
+failure "Check l7"  !Pre_Shorts
+short "P2_5VA" to "FLTR_FPGA_VCCA_PLL"
+failure ""
+failure "Check r5_98_mvr"  !Pre_Shorts
+short "TSEN2_MVR" to "TSEN_R_98"
+failure ""
+failure "Check r06_mvr"  !Pre_Shorts
+short "TSEN2_R_MVR" to "TSEN2_MVR"
+failure ""
+failure "Check r273"  !Pre_Shorts
+short "FPGA_PCH_CATERR_DLY_L" to "UNNAMED_20_CAP_I258_B"
+failure ""
+failure "Check r50"  !Pre_Shorts
+short "GPIO14" to "FPGA_PCH_CATERR_DLY_L"
+failure ""
+failure "Check r293_cp"  !Pre_Shorts
+short "CPU_FPGA_THROTTLE_LVC3_N" to "UNNAMED_41_NC7SZ126_I4_Y_CP"
+failure ""
+failure "Check r345_cp"  !Pre_Shorts
+short "FP_PWR_BTN_N_CP" to "XDP_PWRGD_RST_N_CP"
+failure ""
+failure "Check r342_cp"  !Pre_Shorts
+short "FP_PWR_BTN_N_CP" to "FPGA_PCH_PWRBTN_L"
+failure ""
+failure "Check r346_cp"  !Pre_Shorts
+short "SMBUS_PCH_SCL_CP" to "XDP_CPU_SMBCLK_CP"
+failure ""
+failure "Check r348_cp"  !Pre_Shorts
+short "SMB_HOST_3V3_CLK_CP" to "SMBUS_PCH_SCL_CP"
+failure ""
+failure "Check r347_cp"  !Pre_Shorts
+short "SMBUS_PCH_SDA_CP" to "XDP_CPU_SMBDAT_CP"
+failure ""
+failure "Check r349_cp"  !Pre_Shorts
+short "SMB_HOST_3V3_DAT_CP" to "SMBUS_PCH_SDA_CP"
+failure ""
+failure "Check r271"  !Pre_Shorts
+short "CPU_THERMTRIP_3V3_L" to "UNNAMED_20_CAP_I256_B"
+failure ""
+failure "Check r53"  !Pre_Shorts
+short "CPU_THERMTRIP_3V3_L" to "GPIO43"
+failure ""
+failure "Check r275"  !Pre_Shorts
+short "CPU_PROCHOT_3V3_L" to "UNNAMED_20_CAP_I260_B"
+failure ""
+failure "Check r55"  !Pre_Shorts
+short "CPU_PROCHOT_3V3_L" to "GPIO41"
+failure ""
+failure "Check r48"  !Pre_Shorts
+short "GPIO11" to "FPGA_CPU_BRD_ID0"
+failure ""
+failure "Check r272"  !Pre_Shorts
+short "FPGA_PCH_WDT_L" to "UNNAMED_20_CAP_I257_B"
+failure ""
+failure "Check r54"  !Pre_Shorts
+short "GPIO42" to "FPGA_PCH_WDT_L"
+failure ""
+failure "Check l2_vpp"  !Pre_Shorts
+short "VCCSUS3_3" to "SW1_VPP"
+failure ""
+failure "Check l10"  !Pre_Shorts
+short "P1_2VA" to "FLTR_FPGA_VCCL_GXB"
+failure ""
+failure "Check l8"  !Pre_Shorts
+short "P1_2VA" to "FLTR_FPGA_VCCD_PLL"
+failure ""
+failure "Check l2_adv"  !Pre_Shorts
+short "P1_2VA" to "UNNAMED_2_CAP_I486_B_ADV"
+failure ""
+failure "Check r5_92_vr"  !Pre_Shorts
+short "TSEN1_VR" to "TSEN_R_92"
+failure ""
+failure "Check r5_91_vr"  !Pre_Shorts
+short "TSEN1_VR" to "TSEN_R_91"
+failure ""
+failure "Check r05_vr"  !Pre_Shorts
+short "TSEN1_R_VR" to "TSEN1_VR"
+failure ""
+failure "Check r5_91_mvr"  !Pre_Shorts
+short "TSEN1_MVR" to "TSEN_R"
+failure ""
+failure "Check r05_mvr"  !Pre_Shorts
+short "TSEN1_R_MVR" to "TSEN1_MVR"
+failure ""
+failure "Check r79_92_vr"  !Pre_Shorts
+short "UNNAMED_7_MPPS04_I306_EN_VR" to "UNNAMED_2_RES_I151_A_92"
+failure ""
+failure "Check r79_91_vr"  !Pre_Shorts
+short "UNNAMED_7_MPPS04_I306_EN_VR" to "UNNAMED_2_RES_I151_A_91"
+failure ""
+failure "Check r79_98_mvr"  !Pre_Shorts
+short "UNNAMED_7_MPPS04_I306_EN_MVR" to "UNNAMED_2_RES_I151_A_98"
+failure ""
+failure "Check r79_91_mvr"  !Pre_Shorts
+short "UNNAMED_7_MPPS04_I306_EN_MVR" to "UNNAMED_2_RES_I151_A"
+failure ""
+failure "Check r3_98_mvr"  !Pre_Shorts
+short "P5V" to "VDD_VCIN_98"
+failure ""
+failure "Check r3_92_vr"  !Pre_Shorts
+short "P5V" to "VDD_VCIN_92"
+failure ""
+failure "Check r3_91_vr"  !Pre_Shorts
+short "P5V" to "VDD_VCIN_91"
+failure ""
+failure "Check r3_91_mvr"  !Pre_Shorts
+short "P5V" to "VDD_VCIN"
+failure ""
+failure "Check l2_5v"  !Pre_Shorts
+short "P5V" to "SW1_5V"
+failure ""
+failure "Check l1_vpp"  !Pre_Shorts
+short "DDR4_VPP" to "SW2_VPP"
+failure ""
+failure "Check r450"  !Pre_Shorts
+short "SRT_FPGA_DC_SFP_SCL" to "FPGA_DC_SFP_SCL"
+failure ""
+failure "Check r428"  !Pre_Shorts
+short "MIFPGA2_OK" to "SRT_MIFPGA2_OK"
+failure ""
+failure "Check r208"  !Pre_Shorts
+short "MIFPGA_OK" to "SRT_MIFPGA_OK"
+failure ""
+failure "Check r363"  !Pre_Shorts
+short "PCH_GP27_MIFPGA2_PERST_L" to "GPIO27"
+failure ""
+failure "Check r260"  !Pre_Shorts
+short "PCH_GP57_MIFPGA_PERST_L" to "GPIO57"
+failure ""
+failure "Check r290"  !Pre_Shorts
+short "PCH_GP72_FPGA_PERST_L" to "GPIO46"
+failure ""
+failure "Check r209"  !Pre_Shorts
+short "SRT_SMBUS_FAN_SCL" to "SMBUS_FAN_SCL"
+failure ""
+failure "Check r280"  !Pre_Shorts
+short "SRT_FPGA_MGMT_SFP_SCL" to "FPGA_MGMT_SFP_SCL"
+failure ""
+failure "Check r281"  !Pre_Shorts
+short "SRT_PMBUS2_SCL" to "PMBUS2_SCL"
+failure ""
+failure "Check r158"  !Pre_Shorts
+short "I2C_ACT2_SDA" to "SRT_ACT2_SDA"
+failure ""
+failure "Check r157"  !Pre_Shorts
+short "I2C_ACT2_SCL" to "SRT_ACT2_SCL"
+failure ""
+failure "Check r282"  !Pre_Shorts
+short "PMBUS1_SCL" to "SRT_PMBUS1_SCL"
+failure ""
+failure "Check r28_vr"  !Pre_Shorts
+short "P3_3VA" to "VRM2_VDD_P3V3_VR"
+failure ""
+failure "Check r28_mvr"  !Pre_Shorts
+short "P3_3VA" to "VRM2_VDD_P3V3_MVR"
+failure ""
+failure "Check l6"  !Pre_Shorts
+short "P3_3VA" to "FLTR_FPGA_VCC_CLKIN3A"
+failure ""
+failure "Check l5"  !Pre_Shorts
+short "P3_3VA" to "FIL_CLK125M_P3V3"
+failure ""
+failure "Check l1_adv"  !Pre_Shorts
+short "P3_3VA" to "UNNAMED_2_CAP_I487_B_ADV"
+failure ""
+failure "Check l1_5v"  !Pre_Shorts
+short "P1V7" to "SW2_5V"
+failure ""
+failure "Check r1_3v3"  !Pre_Shorts
+short "P12V" to "PWR_P12V_F_3V3"
+failure ""
+failure "Check r04_vr"  !Pre_Shorts
+short "DGND_SENSE_R_VR" to "PVCCIN_SNS_N"
+failure ""
+!short "PVCCIN" to "VDD_SW_92"     ! A node is not accessible
+!short "PVCCIN" to "VDD_SW_91"     ! A node is not accessible
+failure "Check r04_mvr"  !Pre_Shorts
+short "DGND_SENSE_R_MVR" to "VDDQ_SNS_N"
+failure ""
+failure "Check r173_cp"  !Pre_Shorts
+short "M_AB_VREF_R_CP" to "M_AB_VREF_CP"
+failure ""
+failure "Check r480"  !Pre_Shorts
+short "P1V2_VDDQ" to "VDDQ_SNS_P"
+failure ""
+!short "P1V2_VDDQ" to "VDD_SW"     ! A node is not accessible
+failure "Check r650"  !Pre_Shorts
+short "GND" to "UNNAMED_15_PCIEMINI75P8POM_I117_P9"
+failure ""
+failure "Check r36"  !Pre_Shorts
+short "GND" to "UNNAMED_10_AT90SO72_I557_MODE"
+failure ""
+failure "Check r32"  !Pre_Shorts
+short "GND" to "UNNAMED_10_AT90SO72_I557_CLK"
+failure ""
+failure "Check r2_3v3"  !Pre_Shorts
+short "GND" to "LV_SNUB_3V3"
+failure ""
+failure "Check r481"  !Pre_Shorts
+short "GND" to "VDDQ_SNS_N"
+failure ""
+failure "Check l01_3v3"  !Pre_Shorts
+short "P3_3V" to "PWR_LV_DIDT_3V3"
+failure ""
+failure "Check r161"  !Pre_Shorts
+short "P3_3V" to "UNNAMED_17_CAP_I8_B"
+failure ""
+ report phantoms
+!nodes "VDD_SW"     ! Node not accessible
+!nodes "VDD_SW_91"     ! Node not accessible
+!nodes "VDD_SW_92"     ! Node not accessible
+!nodes "VDD_SW_98"     ! Node not accessible
+!nodes "PD_CLKIN_DOT96_DP_CP"     ! Node not accessible
+!nodes "PD_CLKIN_DOT96_DN_CP"     ! Node not accessible
+!nodes "_d_ACT2_21"     ! Node not accessible
+!nodes "_d_U5_CP_BG28"     ! Node not accessible
+!nodes "_d_U5_CP_BH26"     ! Node not accessible
+!nodes "_d_U5_CP_BJ28"     ! Node not accessible
+!nodes "_d_U5_CP_BJ32"     ! Node not accessible
+!nodes "_d_U5_CP_BL26"     ! Node not accessible
+!nodes "_d_U5_CP_BL33"     ! Node not accessible
+!nodes "_d_U5_CP_BM28"     ! Node not accessible
+!nodes "_d_U5_CP_BM32"     ! Node not accessible
+!nodes "_d_U5_CP_BN26"     ! Node not accessible
+!nodes "_d_U5_CP_BN33"     ! Node not accessible
+!nodes "_d_U5_CP_BP28"     ! Node not accessible
+!nodes "_d_U5_CP_BP32"     ! Node not accessible
+!nodes "_d_U5_CP_BR33"     ! Node not accessible
+!nodes "_d_U5_CP_BT32"     ! Node not accessible
+!nodes "_d_U5_CP_BU33"     ! Node not accessible
+!nodes "_d_U30_1"     ! Node not accessible
+!nodes "_d_U30_5"     ! Node not accessible
+!nodes "_d_U30_9"     ! Node not accessible
+!nodes "_d_U30_13"     ! Node not accessible
+!nodes "_d_U30_16"     ! Node not accessible
+!! Start of Section 2
+threshold 100
+nodes "BMCINIT_CP"
+nodes "BUF_PCH_PLTRST_L"
+nodes "C33_SPI_10GBE_MOSI_CP"
+nodes "C105_CPU_PCH_PLTRST_N_CP"
+nodes "C105_PCH_CONSOLE2_RXD_CP"
+nodes "C105_PCH_CONSOLE_RXD_CP"
+nodes "C105_RESET_CPU_N_CP"
+nodes "C105_SPI_10GBE_CLK_CP"
+nodes "C105_SPI_10GBE_CS_N_CP"
+nodes "C105_SPI_10GBE_MISO_CP"
+nodes "C105_SPI_10GBE_MOSI_CP"
+!nodes "CLK100M_FPGA_PE_N"     ! Node not accessible
+nodes "SRT_CLK100M_FPGA_PE_N"
+!nodes "CLK100M_FPGA_PE_P"     ! Node not accessible
+nodes "SRT_CLK100M_FPGA_PE_P"
+!nodes "CLK_100M_MDOT2_N"     ! Node not accessible
+nodes "SRT_CLK_100M_MDOT2_N"
+!nodes "CLK_100M_MDOT2_P"     ! Node not accessible
+nodes "SRT_CLK_100M_MDOT2_P"
+nodes "CLK_100M_PHY3_N"
+nodes "CLK_100M_PHY3_P"
+nodes "CLK_100M_XDP_N_CP"
+nodes "CLK_100M_XDP_P_CP"
+nodes "CON_FAN01_12V_F"
+nodes "CON_FAN01_DIR_F"
+nodes "CON_FAN01_PRSNT_N_F"
+nodes "CON_FAN01_PWM_F"
+nodes "CON_FAN01_TACH0_F"
+nodes "CON_FAN01_TACH1_F"
+nodes "CON_FAN01_TACH2_F"
+nodes "CON_FAN01_TACH3_F"
+nodes "CON_FAN23_12V_F"
+nodes "CON_FAN23_DIR_F"
+nodes "CON_FAN23_PRSNT_N_F"
+nodes "CON_FAN23_PWM_F"
+nodes "CON_FAN23_TACH0_F"
+nodes "CON_FAN23_TACH1_F"
+nodes "CON_FAN23_TACH2_F"
+nodes "CON_FAN23_TACH3_F"
+nodes "CON_FAN45_12V_F"
+nodes "CON_FAN45_DIR_F"
+nodes "CON_FAN45_PRSNT_N_F"
+nodes "CON_FAN45_PWM_F"
+nodes "CON_FAN45_TACH0_F"
+nodes "CON_FAN45_TACH1_F"
+nodes "CON_FAN45_TACH2_F"
+nodes "CON_FAN45_TACH3_F"
+nodes "CONSOLE_DTR"
+nodes "CONSOLE_RXD"
+nodes "CONSOLE_RXD_LINE"
+nodes "CONSOLE_TXD"
+nodes "CONSOLE_TXD_LINE"
+nodes "CPU_FPGA_H_FIVR_FAULT"
+nodes "CPU_FPGA_PLTRST_PROC_L"
+nodes "CPU_PWRGD_PCH_CP"
+nodes "DB_PWR_EN"
+nodes "DBG_CONSOLE_RXD"
+nodes "DBG_CONSOLE_TXD"
+nodes "DC_CONSOLE_TXD"
+nodes "FAN01_AMB_LED_F"
+nodes "FAN01_AMB_LED_L"
+nodes "FAN01_DIR"
+nodes "FAN01_EN_F"
+nodes "FAN01_GATE_HV_F"
+nodes "FAN01_GRN_LED_F"
+nodes "FAN01_GRN_LED_L"
+nodes "FAN01_PG"
+nodes "FAN01_PROG_F"
+nodes "FAN01_PRSNT_L"
+nodes "FAN01_PWM_BASE_F"
+nodes "FAN01_PWM_F"
+nodes "FAN01_REF_F"
+nodes "FAN01_TACH0_F"
+nodes "FAN01_TACH1_F"
+nodes "FAN01_TACH2_F"
+nodes "FAN01_TACH3_F"
+nodes "FAN01_TIMER_F"
+nodes "FAN23_AMB_LED_F"
+nodes "FAN23_AMB_LED_L"
+nodes "FAN23_DIR"
+nodes "FAN23_EN_F"
+nodes "FAN23_GATE_HV_F"
+nodes "FAN23_GRN_LED_F"
+nodes "FAN23_GRN_LED_L"
+nodes "FAN23_PG"
+nodes "FAN23_PROG_F"
+nodes "FAN23_PRSNT_L"
+nodes "FAN23_PWM_BASE_F"
+nodes "FAN23_PWM_F"
+nodes "FAN23_REF_F"
+nodes "FAN23_TACH0_F"
+nodes "FAN23_TACH1_F"
+nodes "FAN23_TACH2_F"
+nodes "FAN23_TACH3_F"
+nodes "FAN23_TIMER_F"
+nodes "FAN45_AMB_LED_F"
+nodes "FAN45_AMB_LED_L"
+nodes "FAN45_DIR"
+nodes "FAN45_EN_F"
+nodes "FAN45_GATE_HV_F"
+nodes "FAN45_GRN_LED_F"
+nodes "FAN45_GRN_LED_L"
+nodes "FAN45_PG"
+nodes "FAN45_PROG_F"
+nodes "FAN45_PRSNT_L"
+nodes "FAN45_PWM_BASE_F"
+nodes "FAN45_PWM_F"
+nodes "FAN45_REF_F"
+nodes "FAN45_TACH0_F"
+nodes "FAN45_TACH1_F"
+nodes "FAN45_TACH2_F"
+nodes "FAN45_TACH3_F"
+nodes "FAN45_TIMER_F"
+nodes "FAN_01_PWM_F"
+nodes "FAN_23_PWM_F"
+nodes "FAN_45_PWM_F"
+nodes "FM_BDXDE_PMSYNC_PCH_CPU_CP"
+nodes "FM_SLP_A_N_CP"
+nodes "FPGA_BDX_CPU_RSMRST_N"
+nodes "FPGA_CPU_PCH_PLTRST_N"
+nodes "FPGA_FAN_GPIO_RESET_L"
+nodes "FPGA_IO_BANK5_PD0"
+nodes "FPGA_IO_BANK5_PD1"
+nodes "FPGA_IO_BANK6_PD1"
+nodes "FPGA_IO_BANK7_PD0"
+nodes "FPGA_LB_ADDR<0>"
+nodes "FPGA_LB_ADDR<1>"
+nodes "FPGA_LB_ADDR<2>"
+nodes "FPGA_LB_ADDR<3>"
+nodes "FPGA_LB_ADDR<4>"
+nodes "FPGA_LB_ADDR<5>"
+nodes "FPGA_LB_ADDR<6>"
+nodes "FPGA_LB_ADDR<7>"
+nodes "FPGA_LB_ADDR<8>"
+nodes "FPGA_LB_ADDR<9>"
+nodes "FPGA_LB_ADDR<10>"
+nodes "FPGA_LB_ADDR<11>"
+nodes "FPGA_LB_ADDR<12>"
+nodes "FPGA_LB_ADDR<13>"
+nodes "FPGA_LB_ADDR<14>"
+nodes "FPGA_LB_ADDR<15>"
+nodes "FPGA_LB_ADDR<16>"
+nodes "FPGA_LB_ADDR<17>"
+nodes "FPGA_LB_ADDR<18>"
+nodes "FPGA_LB_ADDR<19>"
+nodes "FPGA_LB_ADDR<20>"
+nodes "FPGA_LB_ADDR<21>"
+nodes "FPGA_LB_ADDR<22>"
+nodes "FPGA_LB_ADDR<23>"
+nodes "FPGA_LB_ADDR<24>"
+nodes "FPGA_LB_DATA<0>"
+nodes "FPGA_LB_DATA<1>"
+nodes "FPGA_LB_DATA<2>"
+nodes "FPGA_LB_DATA<3>"
+nodes "FPGA_LB_DATA<4>"
+nodes "FPGA_LB_DATA<5>"
+nodes "FPGA_LB_DATA<6>"
+nodes "FPGA_LB_DATA<7>"
+nodes "FPGA_LB_DATA<8>"
+nodes "FPGA_LB_DATA<9>"
+nodes "FPGA_LB_DATA<10>"
+nodes "FPGA_LB_DATA<11>"
+nodes "FPGA_LB_DATA<12>"
+nodes "FPGA_LB_DATA<13>"
+nodes "FPGA_LB_DATA<14>"
+nodes "FPGA_LB_DATA<15>"
+nodes "FPGA_LB_NVRAM_BHE_L"
+nodes "FPGA_LB_NVRAM_BLE_L"
+nodes "FPGA_LB_NVRAM_CS0"
+nodes "FPGA_LB_NVRAM_CS1"
+nodes "FPGA_LB_NVRAM_CS2"
+nodes "FPGA_LB_NVRAM_CS3"
+nodes "FPGA_LB_OE_L"
+nodes "FPGA_LB_RTC_CS_L"
+nodes "FPGA_LB_WE_L"
+nodes "FPGA_LED_REAR_BCN_BLUE"
+nodes "FPGA_LED_REAR_STAT_GRN_L"
+nodes "FPGA_LED_REAR_STAT_RED_L"
+nodes "FPGA_LED_STAT_GRN"
+nodes "FPGA_LED_STAT_RED"
+nodes "FPGA_M2_PERST_L"
+nodes "FPGA_M2_SUSCLK"
+nodes "FPGA_MPHY_RESET_L"
+nodes "FPGA_PCH_CRCERR"
+nodes "FPGA_PCH_GBE_AUX_PWR_OK"
+nodes "FPGA_PWRGOOD_CPU"
+nodes "FPGA_SPARE1"
+nodes "FPGA_SPARE2"
+nodes "FPGA_SPARE3"
+nodes "FPGA_SPARE4"
+nodes "FPGA_SPARE_PIN_0"
+nodes "FPGA_SPARE_PIN_1"
+nodes "FPGA_XDP_CPU_PWRGD"
+nodes "GP2_MVR"
+nodes "GP2_VR"
+nodes "GPIO8"
+nodes "GPIO15"
+nodes "GPIO17"
+nodes "GPIO24"
+nodes "GPIO32"
+nodes "GPIO44"
+nodes "GPIO45"
+nodes "GPIO70"
+nodes "GPIO71"
+nodes "H_BDXDE_FIVR_FAULT_CP"
+nodes "HS0_12V_SNS_F"
+nodes "HS1_12V_SNS_F"
+nodes "HS2_12V_SNS_F"
+nodes "HSD_PCIE_CPU_FP1_N"
+nodes "HSD_PCIE_CPU_FP1_P"
+nodes "HSD_PCIE_CPU_FP2_N"
+nodes "HSD_PCIE_CPU_FP2_P"
+nodes "HSD_PCIE_CPU_FP3_N"
+nodes "HSD_PCIE_CPU_FP3_P"
+!nodes "HSD_PCIE_CPU_PHY1_N"     ! Node not accessible
+!nodes "HSD_PCIE_CPU_PHY1_P"     ! Node not accessible
+!nodes "HSD_PCIE_CPU_PHY2_N"     ! Node not accessible
+!nodes "HSD_PCIE_CPU_PHY2_P"     ! Node not accessible
+!nodes "HSD_PCIE_CPU_PHY3_N"     ! Node not accessible
+!nodes "HSD_PCIE_CPU_PHY3_P"     ! Node not accessible
+!nodes "HSD_PCIE_FP1_CPU_AC_N"     ! Node not accessible
+nodes "HSD_PCIE_FP1_CPU_N"
+!nodes "HSD_PCIE_FP1_CPU_AC_P"     ! Node not accessible
+nodes "HSD_PCIE_FP1_CPU_P"
+!nodes "HSD_PCIE_FP2_CPU_AC_N"     ! Node not accessible
+nodes "HSD_PCIE_FP2_CPU_N"
+!nodes "HSD_PCIE_FP2_CPU_AC_P"     ! Node not accessible
+nodes "HSD_PCIE_FP2_CPU_P"
+!nodes "HSD_PCIE_FP3_CPU_AC_N"     ! Node not accessible
+nodes "HSD_PCIE_FP3_CPU_N"
+!nodes "HSD_PCIE_FP3_CPU_AC_P"     ! Node not accessible
+nodes "HSD_PCIE_FP3_CPU_P"
+!nodes "HSD_PCIE_PHY1_CPU_AC_N"     ! Node not accessible
+nodes "HSD_PCIE_PHY1_CPU_N"
+!nodes "HSD_PCIE_PHY1_CPU_AC_P"     ! Node not accessible
+nodes "HSD_PCIE_PHY1_CPU_P"
+!nodes "HSD_PCIE_PHY2_CPU_AC_N"     ! Node not accessible
+nodes "HSD_PCIE_PHY2_CPU_N"
+!nodes "HSD_PCIE_PHY2_CPU_AC_P"     ! Node not accessible
+nodes "HSD_PCIE_PHY2_CPU_P"
+!nodes "HSD_PCIE_PHY3_CPU_AC_N"     ! Node not accessible
+nodes "HSD_PCIE_PHY3_CPU_N"
+!nodes "HSD_PCIE_PHY3_CPU_AC_P"     ! Node not accessible
+nodes "HSD_PCIE_PHY3_CPU_P"
+!nodes "HSD_PE_CPU_MDOT2_LN0_AC_N"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN0_N"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN0_AC_P"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN0_P"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN1_AC_N"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN1_N"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN1_AC_P"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN1_P"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN2_AC_N"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN2_N"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN2_AC_P"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN2_P"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN3_AC_N"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN3_N"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN3_AC_P"     ! Node not accessible
+!nodes "HSD_PE_CPU_MDOT2_LN3_P"     ! Node not accessible
+nodes "HSD_PE_CPU_MIFPGA2_N"
+nodes "HSD_PE_CPU_MIFPGA2_P"
+nodes "HSD_PE_CPU_MIFPGA_N"
+nodes "HSD_PE_CPU_MIFPGA_P"
+nodes "HSD_PE_CPU_SA_LN0_N"
+nodes "HSD_PE_CPU_SA_LN0_P"
+nodes "HSD_PE_CPU_SA_LN1_N"
+nodes "HSD_PE_CPU_SA_LN1_P"
+nodes "HSD_PE_CPU_SA_LN2_N"
+nodes "HSD_PE_CPU_SA_LN2_P"
+nodes "HSD_PE_CPU_SA_LN3_N"
+nodes "HSD_PE_CPU_SA_LN3_P"
+!nodes "HSD_PE_IOFPGA_CPU_RC_LN0_AC_N"     ! Node not accessible
+!nodes "HSD_PE_IOFPGA_CPU_RC_LN0_N"     ! Node not accessible
+!nodes "HSD_PE_IOFPGA_CPU_RC_LN0_AC_P"     ! Node not accessible
+!nodes "HSD_PE_IOFPGA_CPU_RC_LN0_P"     ! Node not accessible
+!nodes "HSD_PE_MDOT2_CPU_LN0_N"     ! Node not accessible
+!nodes "HSD_PE_MDOT2_CPU_LN0_P"     ! Node not accessible
+!nodes "HSD_PE_MDOT2_CPU_LN1_N"     ! Node not accessible
+!nodes "HSD_PE_MDOT2_CPU_LN1_P"     ! Node not accessible
+!nodes "HSD_PE_MDOT2_CPU_LN2_N"     ! Node not accessible
+!nodes "HSD_PE_MDOT2_CPU_LN2_P"     ! Node not accessible
+!nodes "HSD_PE_MDOT2_CPU_LN3_N"     ! Node not accessible
+!nodes "HSD_PE_MDOT2_CPU_LN3_P"     ! Node not accessible
+!nodes "HSD_PE_MIFPGA2_CPU_AC_N"     ! Node not accessible
+nodes "HSD_PE_MIFPGA2_CPU_N"
+!nodes "HSD_PE_MIFPGA2_CPU_AC_P"     ! Node not accessible
+nodes "HSD_PE_MIFPGA2_CPU_P"
+!nodes "HSD_PE_MIFPGA_CPU_AC_N"     ! Node not accessible
+nodes "HSD_PE_MIFPGA_CPU_N"
+!nodes "HSD_PE_MIFPGA_CPU_AC_P"     ! Node not accessible
+nodes "HSD_PE_MIFPGA_CPU_P"
+!nodes "HSD_PE_SA_CPU_LN0_AC_N"     ! Node not accessible
+nodes "HSD_PE_SA_CPU_LN0_N"
+!nodes "HSD_PE_SA_CPU_LN0_AC_P"     ! Node not accessible
+nodes "HSD_PE_SA_CPU_LN0_P"
+!nodes "HSD_PE_SA_CPU_LN1_AC_N"     ! Node not accessible
+nodes "HSD_PE_SA_CPU_LN1_N"
+!nodes "HSD_PE_SA_CPU_LN1_AC_P"     ! Node not accessible
+nodes "HSD_PE_SA_CPU_LN1_P"
+!nodes "HSD_PE_SA_CPU_LN2_AC_N"     ! Node not accessible
+nodes "HSD_PE_SA_CPU_LN2_N"
+!nodes "HSD_PE_SA_CPU_LN2_AC_P"     ! Node not accessible
+nodes "HSD_PE_SA_CPU_LN2_P"
+!nodes "HSD_PE_SA_CPU_LN3_AC_N"     ! Node not accessible
+nodes "HSD_PE_SA_CPU_LN3_N"
+!nodes "HSD_PE_SA_CPU_LN3_AC_P"     ! Node not accessible
+nodes "HSD_PE_SA_CPU_LN3_P"
+!nodes "HSD_SATA1_PCH_TO_SSD_N"     ! Node not accessible
+!nodes "HSD_SSD_CPU_MDOT2_LN0_N"     ! Node not accessible
+!nodes "HSD_SATA1_PCH_TO_SSD_P"     ! Node not accessible
+!nodes "HSD_SSD_CPU_MDOT2_LN0_P"     ! Node not accessible
+!nodes "HSD_SATA1_SSD_TO_PCH_N"     ! Node not accessible
+!nodes "HSD_SSD_MDOT2_CPU_LN0_N"     ! Node not accessible
+!nodes "HSD_SATA1_SSD_TO_PCH_P"     ! Node not accessible
+!nodes "HSD_SSD_MDOT2_CPU_LN0_P"     ! Node not accessible
+!nodes "HSD_SATA_PCH_TO_SSD_N"     ! Node not accessible
+!nodes "HSD_SATA_PCH_TO_SSD_P"     ! Node not accessible
+nodes "HSD_SATA_SSD_TO_PCH_AC_N"
+!nodes "HSD_SATA_SSD_TO_PCH_N"     ! Node not accessible
+nodes "HSD_SATA_SSD_TO_PCH_AC_P"
+!nodes "HSD_SATA_SSD_TO_PCH_P"     ! Node not accessible
+nodes "HSD_SGMII0_CPU_LINE_N"
+nodes "HSD_SGMII0_CPU_LINE_P"
+!nodes "HSD_SGMII0_LINE_CPU_AC_N"     ! Node not accessible
+nodes "HSD_SGMII0_LINE_CPU_N"
+!nodes "HSD_SGMII0_LINE_CPU_AC_P"     ! Node not accessible
+nodes "HSD_SGMII0_LINE_CPU_P"
+nodes "HSD_SGMII1_CPU_LINE_N"
+nodes "HSD_SGMII1_CPU_LINE_P"
+!nodes "HSD_SGMII1_LINE_CPU_AC_N"     ! Node not accessible
+nodes "HSD_SGMII1_LINE_CPU_N"
+!nodes "HSD_SGMII1_LINE_CPU_AC_P"     ! Node not accessible
+nodes "HSD_SGMII1_LINE_CPU_P"
+nodes "HSD_USB0_N"
+nodes "HSD_USB0_P"
+nodes "HSD_USB1_CPU_FP_N"
+nodes "HSD_USB1_CPU_FP_P"
+nodes "HSD_USB3_N"
+nodes "HSD_USB3_P"
+!nodes "HSD_USB_EUSB_DRIVE_N"     ! Node not accessible
+!nodes "HSD_USB_EUSB_DRIVE_P"     ! Node not accessible
+nodes "IMON_TP_VR"
+nodes "JTAG_BDX_TDO_CP"
+nodes "JTAG_FPGA_CPU_TDI_3V3"
+nodes "JTAG_FPGA_CPU_TMS_3V3"
+nodes "JTAG_FPGA_CPU_TRST_3V3"
+nodes "JTAG_MUX_TCK"
+nodes "JTAG_MUX_TDI"
+nodes "JTAG_MUX_TMS"
+nodes "JTAG_MUX_TRST_L"
+nodes "JTAG_TDI_CPU_BUF_1V05_CP"
+nodes "JTAG_TRST_L_1V05_CP"
+!nodes "LAN_KX4_RX0_DN<0>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX0_DN<1>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX0_DN<2>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX0_DN<3>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX0_DP<0>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX0_DP<1>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX0_DP<2>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX0_DP<3>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX1_DN<0>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX1_DN<1>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX1_DN<2>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX1_DN<3>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX1_DP<0>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX1_DP<1>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX1_DP<2>_CP"     ! Node not accessible
+!nodes "LAN_KX4_RX1_DP<3>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX0_DN<0>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX0_DN<1>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX0_DN<2>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX0_DN<3>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX0_DP<0>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX0_DP<1>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX0_DP<2>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX0_DP<3>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX1_DN<0>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX1_DN<1>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX1_DN<2>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX1_DN<3>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX1_DP<0>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX1_DP<1>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX1_DP<2>_CP"     ! Node not accessible
+!nodes "LAN_KX4_TX1_DP<3>_CP"     ! Node not accessible
+nodes "LED_BCN_BLUE_R"
+nodes "LED_DBG_L<0>"
+nodes "LED_DBG_L<1>"
+nodes "LED_DBG_L<2>"
+nodes "LED_DBG_L<3>"
+nodes "LED_DBG_L<4>"
+nodes "LED_DBG_L<5>"
+nodes "LED_DBG_L<6>"
+nodes "LED_DBG_L<7>"
+nodes "LED_PORT80_0L"
+nodes "LED_PORT80_1L"
+nodes "LED_PORT80_2L"
+nodes "LED_PORT80_3L"
+nodes "LED_PORT80_4L"
+nodes "LED_PORT80_5L"
+nodes "LED_PORT80_6L"
+nodes "LED_PORT80_7L"
+nodes "LED_SB_L<0>"
+nodes "LED_SB_L<1>"
+nodes "LED_SB_L<2>"
+nodes "LED_SB_L<3>"
+nodes "LED_SB_L<4>"
+nodes "LED_SB_L<5>"
+nodes "LED_SB_L<6>"
+nodes "LED_SB_L<7>"
+nodes "LED_STAT_GRN"
+nodes "LED_STAT_GRN_R"
+nodes "LED_STAT_RED"
+nodes "LED_STAT_RED_R"
+nodes "M2_SLEEP"
+nodes "M_A_ACT_N_CP"
+nodes "M_A_ALERT_N_CP"
+nodes "M_A_BA<0>_CP"
+nodes "M_A_BA<1>_CP"
+nodes "M_A_BG<0>_CP"
+nodes "M_A_BG<1>_CP"
+nodes "M_A_CKE<0>_CP"
+nodes "M_A_CKE<1>_CP"
+nodes "M_A_CKE<2>_CP"
+nodes "M_A_CKE<3>_CP"
+nodes "M_A_CLK_DN<0>_CP"
+nodes "M_A_CLK_DN<1>_CP"
+nodes "M_A_CLK_DN<2>_CP"
+nodes "M_A_CLK_DN<3>_CP"
+nodes "M_A_CLK_DP<0>_CP"
+nodes "M_A_CLK_DP<1>_CP"
+nodes "M_A_CLK_DP<2>_CP"
+nodes "M_A_CLK_DP<3>_CP"
+nodes "M_A_CS_N<0>_CP"
+nodes "M_A_CS_N<1>_CP"
+nodes "M_A_CS_N<4>_CP"
+nodes "M_A_CS_N<5>_CP"
+nodes "M_A_DQ<0>_CP"
+nodes "M_A_DQ<1>_CP"
+nodes "M_A_DQ<2>_CP"
+nodes "M_A_DQ<3>_CP"
+nodes "M_A_DQ<4>_CP"
+nodes "M_A_DQ<5>_CP"
+nodes "M_A_DQ<6>_CP"
+nodes "M_A_DQ<7>_CP"
+nodes "M_A_DQ<8>_CP"
+nodes "M_A_DQ<9>_CP"
+nodes "M_A_DQ<10>_CP"
+nodes "M_A_DQ<11>_CP"
+nodes "M_A_DQ<12>_CP"
+nodes "M_A_DQ<13>_CP"
+nodes "M_A_DQ<14>_CP"
+nodes "M_A_DQ<15>_CP"
+nodes "M_A_DQ<16>_CP"
+nodes "M_A_DQ<17>_CP"
+nodes "M_A_DQ<18>_CP"
+nodes "M_A_DQ<19>_CP"
+nodes "M_A_DQ<20>_CP"
+nodes "M_A_DQ<21>_CP"
+nodes "M_A_DQ<22>_CP"
+nodes "M_A_DQ<23>_CP"
+nodes "M_A_DQ<24>_CP"
+nodes "M_A_DQ<25>_CP"
+nodes "M_A_DQ<26>_CP"
+nodes "M_A_DQ<27>_CP"
+nodes "M_A_DQ<28>_CP"
+nodes "M_A_DQ<29>_CP"
+nodes "M_A_DQ<30>_CP"
+nodes "M_A_DQ<31>_CP"
+nodes "M_A_DQ<32>_CP"
+nodes "M_A_DQ<33>_CP"
+nodes "M_A_DQ<34>_CP"
+nodes "M_A_DQ<35>_CP"
+nodes "M_A_DQ<36>_CP"
+nodes "M_A_DQ<37>_CP"
+nodes "M_A_DQ<38>_CP"
+nodes "M_A_DQ<39>_CP"
+nodes "M_A_DQ<40>_CP"
+nodes "M_A_DQ<41>_CP"
+nodes "M_A_DQ<42>_CP"
+nodes "M_A_DQ<43>_CP"
+nodes "M_A_DQ<44>_CP"
+nodes "M_A_DQ<45>_CP"
+nodes "M_A_DQ<46>_CP"
+nodes "M_A_DQ<47>_CP"
+nodes "M_A_DQ<48>_CP"
+nodes "M_A_DQ<49>_CP"
+nodes "M_A_DQ<50>_CP"
+nodes "M_A_DQ<51>_CP"
+nodes "M_A_DQ<52>_CP"
+nodes "M_A_DQ<53>_CP"
+nodes "M_A_DQ<54>_CP"
+nodes "M_A_DQ<55>_CP"
+nodes "M_A_DQ<56>_CP"
+nodes "M_A_DQ<57>_CP"
+nodes "M_A_DQ<58>_CP"
+nodes "M_A_DQ<59>_CP"
+nodes "M_A_DQ<60>_CP"
+nodes "M_A_DQ<61>_CP"
+nodes "M_A_DQ<62>_CP"
+nodes "M_A_DQ<63>_CP"
+nodes "M_A_DQS_DN<0>_CP"
+nodes "M_A_DQS_DN<1>_CP"
+nodes "M_A_DQS_DN<2>_CP"
+nodes "M_A_DQS_DN<3>_CP"
+nodes "M_A_DQS_DN<4>_CP"
+nodes "M_A_DQS_DN<5>_CP"
+nodes "M_A_DQS_DN<6>_CP"
+nodes "M_A_DQS_DN<7>_CP"
+nodes "M_A_DQS_DN<8>_CP"
+nodes "M_A_DQS_DN<9>_CP"
+nodes "M_A_DQS_DN<10>_CP"
+nodes "M_A_DQS_DN<11>_CP"
+nodes "M_A_DQS_DN<12>_CP"
+nodes "M_A_DQS_DN<13>_CP"
+nodes "M_A_DQS_DN<14>_CP"
+nodes "M_A_DQS_DN<15>_CP"
+nodes "M_A_DQS_DN<16>_CP"
+nodes "M_A_DQS_DN<17>_CP"
+nodes "M_A_DQS_DP<0>_CP"
+nodes "M_A_DQS_DP<1>_CP"
+nodes "M_A_DQS_DP<2>_CP"
+nodes "M_A_DQS_DP<3>_CP"
+nodes "M_A_DQS_DP<4>_CP"
+nodes "M_A_DQS_DP<5>_CP"
+nodes "M_A_DQS_DP<6>_CP"
+nodes "M_A_DQS_DP<7>_CP"
+nodes "M_A_DQS_DP<8>_CP"
+nodes "M_A_DQS_DP<9>_CP"
+nodes "M_A_DQS_DP<10>_CP"
+nodes "M_A_DQS_DP<11>_CP"
+nodes "M_A_DQS_DP<12>_CP"
+nodes "M_A_DQS_DP<13>_CP"
+nodes "M_A_DQS_DP<14>_CP"
+nodes "M_A_DQS_DP<15>_CP"
+nodes "M_A_DQS_DP<16>_CP"
+nodes "M_A_DQS_DP<17>_CP"
+nodes "M_A_ECC<0>_CP"
+nodes "M_A_ECC<1>_CP"
+nodes "M_A_ECC<2>_CP"
+nodes "M_A_ECC<3>_CP"
+nodes "M_A_ECC<4>_CP"
+nodes "M_A_ECC<5>_CP"
+nodes "M_A_ECC<6>_CP"
+nodes "M_A_ECC<7>_CP"
+nodes "M_A_MA<0>_CP"
+nodes "M_A_MA<1>_CP"
+nodes "M_A_MA<2>_CP"
+nodes "M_A_MA<3>_CP"
+nodes "M_A_MA<4>_CP"
+nodes "M_A_MA<5>_CP"
+nodes "M_A_MA<6>_CP"
+nodes "M_A_MA<7>_CP"
+nodes "M_A_MA<8>_CP"
+nodes "M_A_MA<9>_CP"
+nodes "M_A_MA<10>_CP"
+nodes "M_A_MA<11>_CP"
+nodes "M_A_MA<12>_CP"
+nodes "M_A_MA<13>_CP"
+nodes "M_A_MA<14>_CP"
+nodes "M_A_MA<15>_CP"
+nodes "M_A_MA<16>_CP"
+nodes "M_A_ODT<0>_CP"
+nodes "M_A_ODT<1>_CP"
+nodes "M_A_ODT<2>_CP"
+nodes "M_A_ODT<3>_CP"
+nodes "M_A_PAR_CP"
+nodes "M_AB_RESET_N_CP"
+nodes "M_B_ACT_N_CP"
+nodes "M_B_ALERT_N_CP"
+nodes "M_B_BA<0>_CP"
+nodes "M_B_BA<1>_CP"
+nodes "M_B_BG<0>_CP"
+nodes "M_B_BG<1>_CP"
+nodes "M_B_CKE<0>_CP"
+nodes "M_B_CKE<1>_CP"
+nodes "M_B_CKE<2>_CP"
+nodes "M_B_CKE<3>_CP"
+nodes "M_B_CLK_DN<0>_CP"
+nodes "M_B_CLK_DN<1>_CP"
+nodes "M_B_CLK_DN<2>_CP"
+nodes "M_B_CLK_DN<3>_CP"
+nodes "M_B_CLK_DP<0>_CP"
+nodes "M_B_CLK_DP<1>_CP"
+nodes "M_B_CLK_DP<2>_CP"
+nodes "M_B_CLK_DP<3>_CP"
+nodes "M_B_CS_N<0>_CP"
+nodes "M_B_CS_N<1>_CP"
+nodes "M_B_CS_N<4>_CP"
+nodes "M_B_CS_N<5>_CP"
+nodes "M_B_DQ<0>_CP"
+nodes "M_B_DQ<1>_CP"
+nodes "M_B_DQ<2>_CP"
+nodes "M_B_DQ<3>_CP"
+nodes "M_B_DQ<4>_CP"
+nodes "M_B_DQ<5>_CP"
+nodes "M_B_DQ<6>_CP"
+nodes "M_B_DQ<7>_CP"
+nodes "M_B_DQ<8>_CP"
+nodes "M_B_DQ<9>_CP"
+nodes "M_B_DQ<10>_CP"
+nodes "M_B_DQ<11>_CP"
+nodes "M_B_DQ<12>_CP"
+nodes "M_B_DQ<13>_CP"
+nodes "M_B_DQ<14>_CP"
+nodes "M_B_DQ<15>_CP"
+nodes "M_B_DQ<16>_CP"
+nodes "M_B_DQ<17>_CP"
+nodes "M_B_DQ<18>_CP"
+nodes "M_B_DQ<19>_CP"
+nodes "M_B_DQ<20>_CP"
+nodes "M_B_DQ<21>_CP"
+nodes "M_B_DQ<22>_CP"
+nodes "M_B_DQ<23>_CP"
+nodes "M_B_DQ<24>_CP"
+nodes "M_B_DQ<25>_CP"
+nodes "M_B_DQ<26>_CP"
+nodes "M_B_DQ<27>_CP"
+nodes "M_B_DQ<28>_CP"
+nodes "M_B_DQ<29>_CP"
+nodes "M_B_DQ<30>_CP"
+nodes "M_B_DQ<31>_CP"
+nodes "M_B_DQ<32>_CP"
+nodes "M_B_DQ<33>_CP"
+nodes "M_B_DQ<34>_CP"
+nodes "M_B_DQ<35>_CP"
+nodes "M_B_DQ<36>_CP"
+nodes "M_B_DQ<37>_CP"
+nodes "M_B_DQ<38>_CP"
+nodes "M_B_DQ<39>_CP"
+nodes "M_B_DQ<40>_CP"
+nodes "M_B_DQ<41>_CP"
+nodes "M_B_DQ<42>_CP"
+nodes "M_B_DQ<43>_CP"
+nodes "M_B_DQ<44>_CP"
+nodes "M_B_DQ<45>_CP"
+nodes "M_B_DQ<46>_CP"
+nodes "M_B_DQ<47>_CP"
+nodes "M_B_DQ<48>_CP"
+nodes "M_B_DQ<49>_CP"
+nodes "M_B_DQ<50>_CP"
+nodes "M_B_DQ<51>_CP"
+nodes "M_B_DQ<52>_CP"
+nodes "M_B_DQ<53>_CP"
+nodes "M_B_DQ<54>_CP"
+nodes "M_B_DQ<55>_CP"
+nodes "M_B_DQ<56>_CP"
+nodes "M_B_DQ<57>_CP"
+nodes "M_B_DQ<58>_CP"
+nodes "M_B_DQ<59>_CP"
+nodes "M_B_DQ<60>_CP"
+nodes "M_B_DQ<61>_CP"
+nodes "M_B_DQ<62>_CP"
+nodes "M_B_DQ<63>_CP"
+nodes "M_B_DQS_DN<0>_CP"
+nodes "M_B_DQS_DN<1>_CP"
+nodes "M_B_DQS_DN<2>_CP"
+nodes "M_B_DQS_DN<3>_CP"
+nodes "M_B_DQS_DN<4>_CP"
+nodes "M_B_DQS_DN<5>_CP"
+nodes "M_B_DQS_DN<6>_CP"
+nodes "M_B_DQS_DN<7>_CP"
+nodes "M_B_DQS_DN<8>_CP"
+nodes "M_B_DQS_DN<9>_CP"
+nodes "M_B_DQS_DN<10>_CP"
+nodes "M_B_DQS_DN<11>_CP"
+nodes "M_B_DQS_DN<12>_CP"
+nodes "M_B_DQS_DN<13>_CP"
+nodes "M_B_DQS_DN<14>_CP"
+nodes "M_B_DQS_DN<15>_CP"
+nodes "M_B_DQS_DN<16>_CP"
+nodes "M_B_DQS_DN<17>_CP"
+nodes "M_B_DQS_DP<0>_CP"
+nodes "M_B_DQS_DP<1>_CP"
+nodes "M_B_DQS_DP<2>_CP"
+nodes "M_B_DQS_DP<3>_CP"
+nodes "M_B_DQS_DP<4>_CP"
+nodes "M_B_DQS_DP<5>_CP"
+nodes "M_B_DQS_DP<6>_CP"
+nodes "M_B_DQS_DP<7>_CP"
+nodes "M_B_DQS_DP<8>_CP"
+nodes "M_B_DQS_DP<9>_CP"
+nodes "M_B_DQS_DP<10>_CP"
+nodes "M_B_DQS_DP<11>_CP"
+nodes "M_B_DQS_DP<12>_CP"
+nodes "M_B_DQS_DP<13>_CP"
+nodes "M_B_DQS_DP<14>_CP"
+nodes "M_B_DQS_DP<15>_CP"
+nodes "M_B_DQS_DP<16>_CP"
+nodes "M_B_DQS_DP<17>_CP"
+nodes "M_B_ECC<0>_CP"
+nodes "M_B_ECC<1>_CP"
+nodes "M_B_ECC<2>_CP"
+nodes "M_B_ECC<3>_CP"
+nodes "M_B_ECC<4>_CP"
+nodes "M_B_ECC<5>_CP"
+nodes "M_B_ECC<6>_CP"
+nodes "M_B_ECC<7>_CP"
+nodes "M_B_MA<0>_CP"
+nodes "M_B_MA<1>_CP"
+nodes "M_B_MA<2>_CP"
+nodes "M_B_MA<3>_CP"
+nodes "M_B_MA<4>_CP"
+nodes "M_B_MA<5>_CP"
+nodes "M_B_MA<6>_CP"
+nodes "M_B_MA<7>_CP"
+nodes "M_B_MA<8>_CP"
+!nodes "M_B_MA<9>_CP"
+nodes "M_B_MA<10>_CP"
+nodes "M_B_MA<11>_CP"
+nodes "M_B_MA<12>_CP"
+nodes "M_B_MA<13>_CP"
+nodes "M_B_MA<14>_CP"
+nodes "M_B_MA<15>_CP"
+nodes "M_B_MA<16>_CP"
+nodes "M_B_ODT<0>_CP"
+nodes "M_B_ODT<1>_CP"
+nodes "M_B_ODT<2>_CP"
+nodes "M_B_ODT<3>_CP"
+nodes "M_B_PAR_CP"
+nodes "MDIO_SEL0"
+nodes "MDIO_SEL1"
+nodes "MGMT_CONSOLE_DSR"
+nodes "MGMT_CONSOLE_DTR"
+nodes "MGMT_CONSOLE_TXD"
+nodes "MIFPGA2_POR_L"
+nodes "MIFPGA_POR_L"
+nodes "MPHY_FPGA_P0_INT_L"
+nodes "MPHY_PWR_EN"
+nodes "NC_CLK25M_FPGA_TCXO_N"
+nodes "NC_CLK25M_FPGA_TCXO_P"
+nodes "NC_CONSOLE_DSR"
+nodes "NC_CONSOLE_DSR_LINE"
+nodes "NC_CONSOLE_DTR_LINE"
+nodes "NC_CPU_PCH_PECI"
+nodes "NC_D0A17_CP"
+nodes "NC_D1A17_CP"
+nodes "NC_D2A17_CP"
+nodes "NC_D3A17_CP"
+nodes "NC_FANCON01_F_3"
+nodes "NC_FANCON23_F_3"
+nodes "NC_FANCON45_F_3"
+nodes "NC_J3_8"
+nodes "NC_L_D3"
+nodes "NC_L_E3"
+!nodes "NC_LAN_NCSI_ARB_IN_CP"     ! Node not accessible
+!nodes "NC_LAN_NCSI_CRS_DV_CP"     ! Node not accessible
+nodes "NC_LCTL_CONN_D7"
+nodes "NC_LCTL_CONN_E7"
+!nodes "NC_NCTF_TP1_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP2_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP3_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP4_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP6_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP7_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP8_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP9_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP10_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP11_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP14_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP15_CP"     ! Node not accessible
+!nodes "NC_NCTF_TP16_CP"     ! Node not accessible
+nodes "NC_PCH_CPU_PWRGOOD"
+nodes "NC_PCH_CPU_SM_DRAM_PWRGD"
+nodes "NC_PCH_FPGA_SLP_S5_L"
+nodes "NC_PCH_FPGA_SW_CHK_PT1"
+nodes "NC_PCH_FPGA_SW_CHK_PT2"
+nodes "NC_PCH_FPGA_SW_CHK_PT3"
+nodes "NC_R_H4"
+nodes "NC_R_J4"
+nodes "NC_SPARE0_3V3_BUFFER_CP"
+nodes "NC_SPARE1_3V3_BUFFER_CP"
+!nodes "NC_SPI_PCH_IO2_CP"     ! Node not accessible
+!nodes "NC_SPI_PCH_IO3_CP"     ! Node not accessible
+nodes "NC_U6_CP_1"
+nodes "NC_U6_CP_144"
+nodes "NC_U6_CP_145"
+nodes "NC_U6_CP_205"
+nodes "NC_U6_CP_227"
+nodes "NC_U7_CP_1"
+nodes "NC_U7_CP_144"
+nodes "NC_U7_CP_145"
+nodes "NC_U7_CP_205"
+nodes "NC_U7_CP_227"
+nodes "NC_U8_CP_1"
+nodes "NC_U8_CP_144"
+nodes "NC_U8_CP_145"
+nodes "NC_U8_CP_205"
+nodes "NC_U8_CP_227"
+nodes "NC_U9_CP_1"
+nodes "NC_U9_CP_144"
+nodes "NC_U9_CP_145"
+nodes "NC_U9_CP_205"
+nodes "NC_U9_CP_227"
+nodes "P1V2A_DCDC_A"
+nodes "P1V2A_DCDC_DIDT_A"
+nodes "P1V2A_EN_A"
+nodes "P1V2A_PGOOD_A"
+nodes "P1V2A_SS_A"
+nodes "P1V2A_VOS_A"
+nodes "P2V5A_EN_A"
+nodes "P2V5A_PGOOD_A"
+nodes "PCH_FPGA_SLP_S4_L"
+nodes "PCH_LPC_LAD<0>"
+nodes "PCH_LPC_LAD<1>"
+nodes "PCH_LPC_LAD<2>"
+nodes "PCH_LPC_LAD<3>"
+nodes "PCH_MIFPGA2_PERST_L"
+nodes "PCH_MIFPGA_PERST_L"
+nodes "PCH_PLTRST_L"
+nodes "PCH_SUS_STAT_L"
+nodes "PD_EXT_BGREF_CP"
+nodes "PD_EXT_SC_BGREF_CP"
+nodes "PD_RSVD<21>_CP"
+!nodes "PE1_RX_D1_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D1_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D2_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D2_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D3_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D3_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D4_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D4_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D5_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D5_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D6_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D6_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D7_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D7_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D8_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D8_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D9_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D9_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D10_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D10_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D11_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D11_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D12_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D12_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D13_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D13_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D14_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D14_P_CP"     ! Node not accessible
+!nodes "PE1_RX_D15_N_CP"     ! Node not accessible
+!nodes "PE1_RX_D15_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D1_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D1_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D2_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D2_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D3_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D3_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D4_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D4_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D5_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D5_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D6_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D6_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D7_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D7_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D8_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D8_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D9_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D9_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D10_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D10_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D11_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D11_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D12_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D12_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D13_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D13_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D14_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D14_P_CP"     ! Node not accessible
+!nodes "PE1_TX_D15_N_CP"     ! Node not accessible
+!nodes "PE1_TX_D15_P_CP"     ! Node not accessible
+nodes "PMOD_P2V5A_FB_A"
+nodes "PMOD_P2V5A_SS_A"
+nodes "PU_ADR_IN_CP"
+nodes "PU_DDR3_4_STRAP_CP"
+nodes "PU_EAR_N_CP"
+nodes "PU_LAN_JTDO_CP"
+nodes "PU_NCTF<4>_CP"
+nodes "PU_PME_N_CP"
+nodes "PU_SAFE_MODE_BOOT_CP"
+nodes "PVCCIN_EN"
+nodes "PWM1_MVR"
+nodes "PWM1_VR"
+nodes "PWM2_VR"
+nodes "PWM8_MVR"
+nodes "PWM_FAN01_F"
+nodes "PWM_FAN23_F"
+nodes "PWM_FAN45_F"
+nodes "RTC_NVRAM_CS_PROT_L"
+nodes "RVC_A1"
+nodes "RVC_COM1"
+nodes "SFP_PRESENT_L"
+nodes "SPI_PCH_CS0_L_CP"
+nodes "SPI_PCH_CS1_L"
+nodes "SPI_PCH_CS2_N_CP"
+nodes "SPI_PROG_CLK_CP"
+nodes "SPI_PROG_CS_L_CP"
+nodes "SPI_PROG_MISO_CP"
+nodes "SPI_PROG_MOSI_CP"
+nodes "SR1_SOUT"
+nodes "SR2_OUT"
+nodes "SR_DIN"
+nodes "SR_FAN01_DIR_F"
+nodes "SR_FAN01_PRSNT_N_F"
+nodes "SR_FAN01_PWM_F"
+nodes "SR_FAN01_TACH0_F"
+nodes "SR_FAN01_TACH1_F"
+nodes "SR_FAN01_TACH2_F"
+nodes "SR_FAN01_TACH3_F"
+nodes "SR_FAN23_DIR_F"
+nodes "SR_FAN23_PRSNT_N_F"
+nodes "SR_FAN23_PWM_F"
+nodes "SR_FAN23_TACH0_F"
+nodes "SR_FAN23_TACH1_F"
+nodes "SR_FAN23_TACH2_F"
+nodes "SR_FAN23_TACH3_F"
+nodes "SR_FAN45_DIR_F"
+nodes "SR_FAN45_PRSNT_N_F"
+nodes "SR_FAN45_PWM_F"
+nodes "SR_FAN45_TACH0_F"
+nodes "SR_FAN45_TACH1_F"
+nodes "SR_FAN45_TACH2_F"
+nodes "SR_FAN45_TACH3_F"
+nodes "SR_SOUT"
+nodes "SRT_CLK33M_PCI1"
+nodes "SRT_CON_DSR"
+nodes "SRT_CON_DTR"
+nodes "SRT_CON_RXD"
+nodes "SRT_CON_TXD"
+nodes "SRT_JTAG_TCK_PCH_EP_3V3"
+nodes "SRT_JTAG_TCK_SPARE_3V3"
+!nodes "TP_ADR_COMPLETE_CP"     ! Node not accessible
+nodes "TP_CH_A_NV_SAVE_N_0_CP"
+nodes "TP_CH_A_NV_SAVE_N_1_CP"
+nodes "TP_CH_B_NV_SAVE_N_0_CP"
+nodes "TP_CH_B_NV_SAVE_N_1_CP"
+!nodes "TP_CLKOUT_PEG_B_DN_CP"     ! Node not accessible
+!nodes "TP_CLKOUT_PEG_B_DP_CP"     ! Node not accessible
+!nodes "TP_CLKOUTFLEX1_GPIO65_CP"     ! Node not accessible
+!nodes "TP_CLKOUTFLEX3_GPIO67_CP"     ! Node not accessible
+nodes "TP_CPU_SLP_SUS_N_CP"
+!nodes "TP_DDR_VREFDQ0_CP"     ! Node not accessible
+!nodes "TP_DDR_VREFDQ1_CP"     ! Node not accessible
+nodes "TP_KR_EPHY_DFTANA<0>_CP"
+!nodes "TP_KR_EPHY_DFTANA<1>_CP"     ! Node not accessible
+!nodes "TP_KR_EPHY_DFTDIG<0>_CP"     ! Node not accessible
+!nodes "TP_KR_EPHY_DFTDIG<1>_CP"     ! Node not accessible
+!nodes "TP_KR_EPHY_MON_DN_CP"     ! Node not accessible
+nodes "TP_KR_EPHY_MON_DP_CP"
+nodes "TP_LAN_DISABLE_N_CP"
+!nodes "TP_LDRQ1_CP"     ! Node not accessible
+nodes "TP_M_A_C2_0_CP"
+nodes "TP_M_A_C2_1_CP"
+nodes "TP_M_A_CS_C0_CP"
+nodes "TP_M_A_CS_C1_CP"
+nodes "TP_M_A_CS_C2_CP"
+nodes "TP_M_A_CS_C3_CP"
+nodes "TP_M_B_C2_0_CP"
+nodes "TP_M_B_C2_1_CP"
+nodes "TP_M_B_CS_C0_CP"
+nodes "TP_M_B_CS_C1_CP"
+nodes "TP_M_B_CS_C2_CP"
+nodes "TP_M_B_CS_C3_CP"
+!nodes "TP_PWM0_CP"     ! Node not accessible
+!nodes "TP_RSVD15_CP"     ! Node not accessible
+!nodes "TP_RSVD16_CP"     ! Node not accessible
+!nodes "TP_RSVD23_CP"     ! Node not accessible
+!nodes "TP_RSVD24_CP"     ! Node not accessible
+!nodes "TP_RSVD25_CP"     ! Node not accessible
+!nodes "TP_RSVD26_CP"     ! Node not accessible
+!nodes "TP_RSVD27_CP"     ! Node not accessible
+!nodes "TP_RSVD28_CP"     ! Node not accessible
+!nodes "TP_RSVD29_CP"     ! Node not accessible
+!nodes "TP_RSVD30_CP"     ! Node not accessible
+!nodes "TP_RSVD31_CP"     ! Node not accessible
+!nodes "TP_RSVD32_CP"     ! Node not accessible
+!nodes "TP_RSVD33_CP"     ! Node not accessible
+!nodes "TP_RSVD34_CP"     ! Node not accessible
+!nodes "TP_RSVD35_CP"     ! Node not accessible
+!nodes "TP_RSVD36_CP"     ! Node not accessible
+!nodes "TP_RSVD37_CP"     ! Node not accessible
+!nodes "TP_RSVD38_CP"     ! Node not accessible
+!nodes "TP_RSVD39_CP"     ! Node not accessible
+!nodes "TP_RSVD40_CP"     ! Node not accessible
+!nodes "TP_RSVD41_CP"     ! Node not accessible
+!nodes "TP_RSVD42_CP"     ! Node not accessible
+!nodes "TP_RSVD43_CP"     ! Node not accessible
+!nodes "TP_RSVD44_CP"     ! Node not accessible
+!nodes "TP_RSVD45_CP"     ! Node not accessible
+!nodes "TP_RSVD46_CP"     ! Node not accessible
+!nodes "TP_RSVD47_CP"     ! Node not accessible
+nodes "TP_RSVD48_CP"
+!nodes "TP_RSVD49_CP"     ! Node not accessible
+!nodes "TP_RSVD50_CP"     ! Node not accessible
+!nodes "TP_RSVD51_CP"     ! Node not accessible
+!nodes "TP_RSVD52_CP"     ! Node not accessible
+!nodes "TP_RSVD53_CP"     ! Node not accessible
+!nodes "TP_RSVD54_CP"     ! Node not accessible
+!nodes "TP_RSVD55_CP"     ! Node not accessible
+!nodes "TP_RSVD56_CP"     ! Node not accessible
+!nodes "TP_RSVD63_CP"     ! Node not accessible
+!nodes "TP_RSVD64_CP"     ! Node not accessible
+!nodes "TP_RSVD65_CP"     ! Node not accessible
+!nodes "TP_RSVD66_CP"     ! Node not accessible
+!nodes "TP_RSVD67_CP"     ! Node not accessible
+!nodes "TP_RSVD68_CP"     ! Node not accessible
+!nodes "TP_RSVD69_CP"     ! Node not accessible
+!nodes "TP_RSVD70_CP"     ! Node not accessible
+!nodes "TP_RSVD71_CP"     ! Node not accessible
+!nodes "TP_RSVD72_CP"     ! Node not accessible
+!nodes "TP_RSVD73_CP"     ! Node not accessible
+!nodes "TP_RSVD74_CP"     ! Node not accessible
+!nodes "TP_RSVD75_CP"     ! Node not accessible
+!nodes "TP_RSVD76_CP"     ! Node not accessible
+!nodes "TP_RSVD77_CP"     ! Node not accessible
+!nodes "TP_RSVD78_CP"     ! Node not accessible
+!nodes "TP_RSVD79_CP"     ! Node not accessible
+!nodes "TP_RSVD80_CP"     ! Node not accessible
+!nodes "TP_RSVD81_CP"     ! Node not accessible
+!nodes "TP_RSVD82_CP"     ! Node not accessible
+!nodes "TP_RSVD83_CP"     ! Node not accessible
+!nodes "TP_RSVD84_CP"     ! Node not accessible
+!nodes "TP_RSVD86_CP"     ! Node not accessible
+!nodes "TP_RSVD87_CP"     ! Node not accessible
+!nodes "TP_RSVD88_CP"     ! Node not accessible
+!nodes "TP_RSVD89_CP"     ! Node not accessible
+!nodes "TP_RSVD90_CP"     ! Node not accessible
+!nodes "TP_RSVD91_CP"     ! Node not accessible
+!nodes "TP_RSVD92_CP"     ! Node not accessible
+!nodes "TP_RSVD93_CP"     ! Node not accessible
+!nodes "TP_SRC1CLKRQB_GPIO18_CP"     ! Node not accessible
+!nodes "TP_TEST_EDM0_CP"     ! Node not accessible
+!nodes "TP_TEST_EDM1_CP"     ! Node not accessible
+!nodes "TP_TEST_KX_AMONI_CP"     ! Node not accessible
+!nodes "TP_TEST_KX_AMONV_CP"     ! Node not accessible
+!nodes "TP_TEST_KX_DFX_DN_CP"     ! Node not accessible
+!nodes "TP_TEST_KX_DFX_DP_CP"     ! Node not accessible
+!nodes "TP_TEST_KX_HSCLK_DN_CP"     ! Node not accessible
+!nodes "TP_TEST_KX_HSCLK_DP_CP"     ! Node not accessible
+nodes "TP_XDP_CPU_OBSDATA_C0_CP"
+nodes "TP_XDP_CPU_OBSDATA_C1_CP"
+nodes "TP_XDP_CPU_OBSDATA_C2_CP"
+nodes "TP_XDP_CPU_OBSDATA_C3_CP"
+nodes "TP_XDP_CPU_OBSDATA_D0_CP"
+nodes "TP_XDP_CPU_OBSDATA_D1_CP"
+nodes "TP_XDP_CPU_OBSDATA_D2_CP"
+nodes "TP_XDP_CPU_OBSDATA_D3_CP"
+nodes "TP_XDP_CPU_OBSFN_C0_CP"
+nodes "TP_XDP_CPU_OBSFN_C1_CP"
+nodes "TP_XDP_CPU_OBSFN_D0_CP"
+nodes "TP_XDP_CPU_OBSFN_D1_CP"
+nodes "TP_XDP_CPU_TCK1_CP"
+nodes "TP_XDP_CPUOBSDATA_B0_CP"
+nodes "TP_XDP_CPUOBSDATA_B1_CP"
+nodes "TP_XDP_CPUOBSDATA_B2_CP"
+nodes "TP_XDP_CPUOBSDATA_B3_CP"
+nodes "UNNAMED_1_CAP_I14_A_A"
+nodes "UNNAMED_2_NMOSFET_I40_G_F"
+nodes "UNNAMED_2_NMOSFET_I47_G_F"
+nodes "UNNAMED_2_NMOSFET_I69_G_F"
+nodes "UNNAMED_2_RES_I53_A_F"
+nodes "UNNAMED_2_RES_I60_A_F"
+nodes "UNNAMED_2_RES_I61_B"
+nodes "UNNAMED_2_RES_I61_B_91"
+nodes "UNNAMED_2_RES_I61_B_92"
+nodes "UNNAMED_2_RES_I61_B_98"
+nodes "UNNAMED_2_RES_I65_A_F"
+nodes "UNNAMED_4_ADT7470_I71_ADDR_F"
+nodes "UNNAMED_4_ADT7470_I71_FULLSPEEDMTMPSTA_F"
+nodes "UNNAMED_4_ADT7470_I71_PWM2_F"
+nodes "UNNAMED_4_ADT7470_I71_PWM3_F"
+nodes "UNNAMED_4_ADT7470_I71_PWM4_F"
+nodes "UNNAMED_4_ADT7470_I71_TMPIN_F"
+nodes "UNNAMED_4_ADT7470_I79_ADDR_F"
+nodes "UNNAMED_4_ADT7470_I79_FULLSPEEDMTMPSTA_F"
+nodes "UNNAMED_4_ADT7470_I79_PWM2_F"
+nodes "UNNAMED_4_ADT7470_I79_PWM3_F"
+nodes "UNNAMED_4_ADT7470_I79_PWM4_F"
+nodes "UNNAMED_4_ADT7470_I79_TMPIN_F"
+nodes "UNNAMED_4_ADT7470_I105_ADDR_F"
+nodes "UNNAMED_4_ADT7470_I105_FULLSPEEDMTMPST_F"
+nodes "UNNAMED_4_ADT7470_I105_PWM2_F"
+nodes "UNNAMED_4_ADT7470_I105_PWM3_F"
+nodes "UNNAMED_4_ADT7470_I105_PWM4_F"
+nodes "UNNAMED_4_ADT7470_I105_TMPIN_F"
+nodes "UNNAMED_6_RES_I480_A_CP"
+!nodes "UNNAMED_7_CAP_I220_A_VR"     ! Node not accessible
+!nodes "UNNAMED_7_CAP_I220_B_VR"     ! Node not accessible
+nodes "UNNAMED_7_IR35215_I192_TSEN2VAUXSENPS_VR"
+nodes "UNNAMED_9_CAP_I132_A"
+nodes "UNNAMED_9_CAP_I132_B"
+nodes "UNNAMED_9_CAP_I133_A"
+nodes "UNNAMED_9_CAP_I133_B"
+nodes "UNNAMED_9_CAP_I134_A"
+nodes "UNNAMED_9_CAP_I135_A"
+nodes "UNNAMED_11_NMOSFET_I297_G"
+nodes "UNNAMED_11_NMOSFET_I303_G"
+nodes "UNNAMED_15_PCA9617_I66_EN"
+nodes "UNNAMED_18_LED_I108_A"
+nodes "UNNAMED_18_LED_I108_K"
+nodes "UNNAMED_18_LED_I109_A"
+nodes "UNNAMED_18_LED_I109_K"
+nodes "UNNAMED_18_LED_I110_A"
+nodes "UNNAMED_18_LED_I110_K"
+nodes "UNNAMED_18_LED_I114_A"
+nodes "UNNAMED_18_LED_I114_K"
+nodes "UNNAMED_18_LED_I117_A"
+nodes "UNNAMED_18_LED_I117_K"
+nodes "UNNAMED_18_LED_I119_A"
+nodes "UNNAMED_18_LED_I119_K"
+nodes "UNNAMED_18_LED_I121_A"
+nodes "UNNAMED_18_LED_I121_K"
+nodes "UNNAMED_18_LED_I123_A"
+nodes "UNNAMED_18_LED_I123_K"
+nodes "UNNAMED_18_LED_I124_A"
+nodes "UNNAMED_18_LED_I124_K"
+nodes "UNNAMED_18_LED_I125_A"
+nodes "UNNAMED_18_LED_I125_K"
+nodes "UNNAMED_18_LED_I126_A"
+nodes "UNNAMED_18_LED_I126_K"
+nodes "UNNAMED_18_LED_I130_A"
+nodes "UNNAMED_18_LED_I130_K"
+nodes "UNNAMED_18_LED_I133_A"
+nodes "UNNAMED_18_LED_I133_K"
+nodes "UNNAMED_18_LED_I135_A"
+nodes "UNNAMED_18_LED_I135_K"
+nodes "UNNAMED_18_LED_I137_A"
+nodes "UNNAMED_18_LED_I137_K"
+nodes "UNNAMED_18_LED_I139_A"
+nodes "UNNAMED_18_LED_I139_K"
+nodes "UNNAMED_18_LVC2244_I41_OE"
+nodes "UNNAMED_18_LVC2244_I42_A0"
+nodes "UNNAMED_18_LVC2244_I42_A3"
+nodes "UNNAMED_18_LVC2244_I42_OE"
+nodes "UNNAMED_20_LED_I106_A"
+nodes "UNNAMED_20_LED_I107_A"
+nodes "UNNAMED_20_LED_I108_A"
+nodes "UNNAMED_20_LED_I109_A"
+nodes "UNNAMED_20_LED_I110_A"
+nodes "UNNAMED_20_LED_I115_A"
+nodes "UNNAMED_20_LED_I116_A"
+nodes "UNNAMED_20_LED_I117_A"
+nodes "UNNAMED_20_LED_I232_A"
+nodes "UNNAMED_20_LED_I233_A"
+nodes "UNNAMED_20_LED_I236_A"
+nodes "UNNAMED_20_LED_I237_A"
+nodes "UNNAMED_20_LED_I238_A"
+nodes "UNNAMED_20_LED_I242_A"
+nodes "UNNAMED_20_LED_I243_A"
+nodes "UNNAMED_20_LED_I244_A"
+nodes "UNNAMED_20_LED_I276_A"
+nodes "UNNAMED_20_LED_I277_A"
+nodes "UNNAMED_20_LED_I278_A"
+nodes "UNNAMED_20_LED_I283_A"
+nodes "UNNAMED_20_LED_I293_A"
+nodes "UNNAMED_20_LED_I295_A"
+nodes "UNNAMED_20_LED_I299_A"
+nodes "UNNAMED_20_LED_I302_A"
+nodes "UNNAMED_20_MAX811_I140_MR"
+nodes "UNNAMED_25_BQ4802_I20_X1"
+nodes "UNNAMED_25_BQ4802_I20_X2"
+nodes "UNNAMED_36_PCA9617_I50_EN_CP"
+nodes "UNNAMED_39_AVC8T245_I243_A_CP"
+nodes "UNNAMED_40_RES_I5_B_CP"
+nodes "M_B_MA<9>_CP"
+!nodes "USB3_RX_D1_N_CP"     ! Node not accessible
+!nodes "USB3_RX_D1_P_CP"     ! Node not accessible
+!nodes "USB3_RX_D2_N_CP"     ! Node not accessible
+!nodes "USB3_RX_D2_P_CP"     ! Node not accessible
+!nodes "USB3_TX_D1_N_CP"     ! Node not accessible
+!nodes "USB3_TX_D1_P_CP"     ! Node not accessible
+!nodes "USB3_TX_D2_N_CP"     ! Node not accessible
+!nodes "USB3_TX_D2_P_CP"     ! Node not accessible
+!nodes "VSENSE_VCCSCSUS_SENSE_CP"     ! Node not accessible
+!nodes "VSENSE_VSS_VCCSCSUS_SENSE_CP"     ! Node not accessible
+!! Start of Section 3
+threshold 8
+nodes "BDX_INTRUDER_N_CP"
+nodes "PU_PCH_DSWODVREN_CP"
+nodes "PU_PCH_INTVRMEN_CP"
+nodes "P3V3_PVOUT_MODE"
+nodes "SPI_GOLD_CS0_L_CP"
+nodes "SPI_STD_CS0_L_CP"
+nodes "C33_SPI_10GBE_CLK_CP"
+nodes "FPGA_POR_L"
+nodes "P3V3_ADDR"
+nodes "TRIP_3V3"
+nodes "OBFL_FPGA_DS"
+nodes "FPGA_OBFL_RST_L"
+nodes "FPGA_OBFL_IO<0>"
+nodes "FPGA_OBFL_IO<1>"
+nodes "FPGA_OBFL_IO<2>"
+nodes "FPGA_OBFL_IO<3>"
+nodes "FPGA_OBFL_IO<4>"
+nodes "FPGA_OBFL_IO<5>"
+nodes "FPGA_OBFL_IO<6>"
+nodes "FPGA_OBFL_IO<7>"
+nodes "UNNAMED_30_CAP_I99_A"
+nodes "UNNAMED_2_CAP_I517_A_5V"
+nodes "VPP_FP_B"
+nodes "P1V7_FP_B"
+nodes "PSU2_AC_OK"
+nodes "GPIO69"
+nodes "PSU2_DC_OK"
+nodes "GPIO68"
+nodes "PSU1_AC_OK"
+nodes "GPIO7"
+nodes "PSU1_DC_OK"
+nodes "GPIO6"
+nodes "M2_FPGA_ALERT"
+nodes "GPIO21"
+nodes "FPGA_PCH_SYS_PWROK"
+nodes "UNNAMED_20_CAP_I267_B"
+nodes "TPM_PCH_DRQ_L0_CP"
+nodes "CPU_FPGA_CPU2PCH_THROT"
+nodes "PU_PIRQA_N_CP"
+nodes "FM_CPU_THROTTLE_N_CP"
+nodes "CPU_FPGA_CATERR_3V3_L"
+nodes "CPU_FPGA_ERR0"
+nodes "PU_BMBUSY_M_GPIO0_CP"
+nodes "UNNAMED_17_ICS553_I181_OE"
+nodes "GPIO49"
+nodes "NC_SATALED_N_CP"
+nodes "UNNAMED_43_N25QXX_I126_HOLDMDQ3_CP"
+nodes "FPGA_SPI_GOLD_WP_L"
+nodes "SPI_PROG_IO3_CP"
+nodes "UNNAMED_24_EP4CGX50FG484_I251_GXBRX1N"
+nodes "UNNAMED_24_EP4CGX50FG484_I251_GXBRX1P"
+nodes "FPGA_CE_L"
+nodes "C105_PWRGD_CPU_CP"
+nodes "PD_LAN_JRST_N_SDP1_1_CP"
+nodes "PD_PHY_JTDI_SDP0_0_CP"
+nodes "PD_LAN_NCSI_TX_EN_CP"
+nodes "PD_LAN_NCSI_CLKIN_EN_CP"
+nodes "PD_LAN_NCSI_TXD1_EN_CP"
+nodes "PD_LAN_NCSI_TXD0_EN_CP"
+nodes "PD_REFCLK14IN_CP"
+nodes "PD_CLKIN_CPY_DN_CP"
+nodes "PD_CLKIN_CPY_DP_CP"
+nodes "PD_CLKIN_DMI_DN_CP"
+nodes "PD_CLKIN_DMI_DP_CP"
+nodes "PD_CLK_SATA_DN_CP"
+nodes "PD_CLK_SATA_DP_CP"
+nodes "PU_MBP0_MBPM0_N_CP"
+nodes "LAN_I2C1_SCL_1P0V_CP"
+nodes "LAN_I2C1_SDA_1P0V_CP"
+nodes "LAN_I2C0_SCL_1P0V_CP"
+nodes "LAN_I2C0_SDA_1P0V_CP"
+nodes "PU_NCSI_ARB_OUT_CP"
+nodes "XDP_PRESENT_N_CP"
+nodes "XDP_CPU_OBSDATA_A_MBP4_N_CP"
+nodes "XDP_CPU_OBSDATA_A_MBP5_N_CP"
+nodes "PU_MBP0_MBPM1_N_CP"
+nodes "XDP_CPU_PRDY_N_CP"
+nodes "PU_LAN_JTMS_SDP0_1_CP"
+nodes "PU_PHY_JTDI_SDP1_0_CP"
+nodes "PD_SPARE<5>_CP"
+nodes "PU_PE_HP_SCL_CP"
+nodes "PU_PE_HP_SDA_CP"
+nodes "GPIO72_CP"
+nodes "SML0CLK_CP"
+nodes "SML0DATA_CP"
+nodes "GPIO75"
+nodes "GPIO58"
+nodes "CPU_FPGA_PCH_HOT_L"
+nodes "CPU_FPGA_ERR2"
+nodes "CPU_FPGA_ERR1"
+nodes "TH_DIR1_CP"
+nodes "TH_DIR2_CP"
+nodes "FPGA_CPU_THERMTRIP_3V3_L"
+nodes "PU_RI_N_CP"
+nodes "PU_SLP_WLAN_M_GPIO29_CP"
+nodes "GPIO59"
+nodes "GPIO40"
+nodes "GPIO31"
+nodes "DIMM_THERM_EVENT_L_2V5_CP"
+nodes "FAN_FPGA_GPIO_INT_L"
+nodes "FPGA_OBFL_CMD"
+nodes "PCH_PSU_POWER_CYCLE_L"
+nodes "FPGA_INIT_DONE"
+nodes "FPGA_CRCERR"
+nodes "FPGA_STATUS_L"
+nodes "FPGA_CONFIG_DONE"
+nodes "FPGA_SPARE_PU"
+nodes "P1V05C_PGOOD"
+nodes "P3V3_SSD_EN_L12V"
+nodes "UNNAMED_16_MT25Q8P_I92_HOLDMDQ3_CP"
+nodes "UNNAMED_16_MT25Q8P_I92_WPMVPPDQ2_CP"
+nodes "C33_SPI_10GBE_CS_N_CP"
+nodes "MGMT_CONSOLE_RXD"
+nodes "DC_CONSOLE_RXD"
+nodes "CLK25M_FPGA_TCXO_AC_N"
+nodes "CLK25M_FPGA_TCXO_AC_P"
+nodes "JTAG_BDX_TMS_CP"
+nodes "JTAG_BDX_TDI_CP"
+nodes "PU_IRQG_N_CP"
+nodes "PD_NCTF_TP5_CP"
+nodes "UNNAMED_2_RES_I472_B_ADV"
+nodes "DIFFCLK_BIASREF_CP"
+nodes "PU_SATA_RCOMP_CP"
+nodes "SOC_RCOMP_CP"
+nodes "PU_PCIE_RCOMP_CP"
+nodes "VFB1_5V"
+nodes "MB_PCH_INT_L_CP"
+nodes "PU_PIRQD_N_CP"
+nodes "PU_PIRQC_N_CP"
+nodes "PU_PIRQB_N_CP"
+nodes "PU_SUSWARN_N_GPIO30_CP"
+nodes "FM_BIOS_RCVR_BOOT_N_CP"
+nodes "PU_GPIO51_GSXDOUT_CP"
+nodes "PU_SATA1GP_GPIO19_CP"
+nodes "C105_PCH_CONSOLE2_TXD_CP"
+nodes "C105_PCH_CONSOLE_TXD_CP"
+nodes "PD_SPARE<3>_CP"
+nodes "PD_SPARE<4>_CP"
+nodes "PD_SPARE<2>_CP"
+nodes "PD_SPARE<1>_CP"
+nodes "PD_GPIO52_CPUSV_CP"
+nodes "SPEAKER_PCH_CP"
+nodes "LAN_SEL<1>_CP"
+nodes "PECI_ID<0>_CP"
+nodes "PECI_ID<1>_CP"
+nodes "FM_CPU2PCH_THROT_CP"
+nodes "PD_GPIO53_GSXDIN_CP"
+nodes "PD_DMI_TERMINATION_GPIO33_CP"
+nodes "FM_ADR_TRIGGER_N_GPIO37_CP"
+nodes "PD_DMI_TERMINATION_GPIO36_CP"
+nodes "PD_TEST_CPU_TSTSTRAP_CP"
+nodes "PD_CPU_TSTCLK_DN_CP"
+nodes "PD_CPU_TSTCLK_DP_CP"
+nodes "PD_TSTCLK_SC_DN_CP"
+nodes "PD_TSTCLK_SC_DP_CP"
+nodes "PU_NCSI_RXD0_CP"
+nodes "PU_NCSI_RXD1_CP"
+nodes "IRQ_SERIRQ_DIR_CP"
+nodes "LAN_SEL<0>_CP"
+nodes "PU_SUSACK_N_CP"
+nodes "PCH_FPGA_SUS_CLK"
+nodes "VFB1_VPP"
+nodes "CPU_FPGA_SMI_ACTIVE_N"
+nodes "GPIO35"
+nodes "PU_A20GATE_CP"
+nodes "XDP_CPU_TMS_CP"
+nodes "XDP_CPU_TDI_CP"
+nodes "SMB_10GBE_DATA_CP"
+nodes "SMB_10GBE_CLK_CP"
+nodes "GPIO60"
+nodes "P5V_USB0_FAULT_L"
+nodes "PU_TEST_RCIN_N_CP"
+nodes "UNNAMED_10_AT90SO72_I557_A2"
+nodes "FPGA_LED_BCN_BLUE_L"
+nodes "UNNAMED_10_AT90SO72_I557_A0"
+nodes "UNNAMED_10_AT90SO72_I557_A1"
+nodes "M2_DAS"
+nodes "M2_PEDET"
+nodes "M2_CLKREQ_L"
+nodes "UNNAMED_15_NMOSFET_I147_D"
+nodes "SR_CLR_L"
+nodes "MEM_VR_FAULT_L"
+nodes "CPU_VR_FAULT_L"
+nodes "MEM_VRHOT_L"
+nodes "BOARD_ID1"
+nodes "VCCSUS3_3_PGOOD"
+nodes "MIFPGA2_CPU_INT_L"
+nodes "MIFPGA_CPU_INT_L"
+nodes "CPU_VRHOT_L"
+nodes "MPHY_INT_3V3_L"
+nodes "DDR4_VPP_PGOOD"
+nodes "FPGA_LB_NVRAM_CE_L"
+nodes "FPGA_LB_BYTE_PU"
+nodes "JTAG_TDO_FPGA_3V3"
+nodes "UNNAMED_20_M25PXX_I131_WP"
+nodes "UNNAMED_20_M25PXX_I131_HOLD"
+nodes "FPGA_DBG_JMPR1"
+nodes "FPGA_DBG_JMPR2"
+nodes "FPGA_DBG_JMPR3"
+nodes "FPGA_DBG_JMPR_L"
+nodes "FPGA_SPARE5"
+nodes "FAN_FPGA_ALERT_L"
+nodes "P1V5_PCH_PGOOD"
+nodes "P1V3_PGOOD"
+nodes "P5V_PGOOD"
+nodes "P1V7_PGOOD"
+nodes "P0V6_PGOOD"
+nodes "PMBUS2_ALERT_L"
+nodes "PMBUS1_ALERT_L"
+nodes "MPHY_PWR_GOOD"
+nodes "DB_PGOOD"
+nodes "UNNAMED_20_OSC_I16_OE"
+nodes "VFB2_VPP"
+nodes "P3V3_PGOOD"
+nodes "P1V7_FP2"
+nodes "UNNAMED_2_RES_I471_B_ADV"
+nodes "BDXDE_DRAM_PWROK_CP"
+nodes "PMBUS1_SDA"
+nodes "VPP_FP_A"
+nodes "P1V5_PCH_FB"
+nodes "PMBUS_PSU1_SDA"
+nodes "PMBUS_PSU2_SDA"
+nodes "SMBUS_FAN_SDA"
+nodes "FPGA_M2_SCL"
+nodes "FPGA_M2_SDA"
+nodes "UNNAMED_24_EP4CGX50FG484_I251_RREF0"
+nodes "M2_ALERT_L_1V8"
+nodes "SMB_10GBE_ALRT_N_CP"
+nodes "FPGA_DC_SFP_SDA"
+nodes "FPGA_DBG_JMPR5"
+nodes "FPGA_DBG_JMPR4"
+nodes "FPGA_MGMT_SFP_SDA"
+nodes "PMBUS2_SDA"
+nodes "P1V3_FB"
+nodes "UNNAMED_15_RES_I55_B"
+nodes "PCH_MDIO"
+nodes "PCH_MDC"
+nodes "PCH_FPGA_MDIO0_CP"
+nodes "PCH_FPGA_MDC0_CP"
+nodes "C105_PCH_FPGA_MDIO1_CP"
+nodes "C105_PCH_FPGA_MDIO0_CP"
+nodes "PCH_DC_MDC"
+nodes "PCH_MGMT_MDC"
+nodes "PCH_FPGA_MDC"
+nodes "PCH_DC_MDIO"
+nodes "PCH_MGMT_MDIO"
+nodes "PCH_FPGA_MDIO"
+nodes "XDP_CPU_PWRGD_R_CP"
+nodes "XDP_CPU_PWRGD_CP"
+nodes "FPGA_SPI_GOLD_SEL"
+nodes "BUF_SPI_FLSH_SEL_CP"
+nodes "UNNAMED_15_RES_I77_B"
+nodes "XDP_PRESENT_3V3_N_CP"
+nodes "JTAG_TCK_CPU_FPGA_3V3"
+nodes "UNNAMED_43_HDR1X3_I37_C_CP"
+nodes "UNNAMED_43_HDR2X4_I20_P1_CP"
+nodes "P3V3_SSD_PWRDOWN_L"
+nodes "VCCSUS3_3_EN"
+nodes "FPGA_PCH_APWROK"
+nodes "UNNAMED_38_AVC8T245_I91_B_1_CP"
+nodes "CPU_RESET_3V3_L_CP"
+nodes "UNNAMED_43_PI3B3257PG_I28_E_CP"
+nodes "UNNAMED_43_HDR1X3_I37_A_CP"
+nodes "FPGA_PCH_SRTCRST"
+nodes "FPGA_PCH_RTCRST"
+nodes "DDR4_VPP_EN"
+nodes "P1V05C_EN"
+nodes "UNNAMED_40_RES_I60_A_CP"
+nodes "PCH_GP50_PSU_POWER_CYCLE_ENABLE_CP"
+nodes "JTAG_BDX_TRST_N_CP"
+nodes "FPGA_FAST_PROCHOT"
+nodes "UNNAMED_39_AVC8T245_I243_A_1_CP"
+nodes "PWRGD_BDXDE_LAN_CP"
+nodes "CPU_FPGA_PWRGD_PCH"
+nodes "HOT_DIR_CP"
+nodes "HOT_OE_CP"
+nodes "UNNAMED_39_AVC8T245_I243_B_1_CP"
+nodes "TH_OE2_CP"
+nodes "UNNAMED_39_AVC8T245_I243_B_CP"
+nodes "TH_OE1_CP"
+nodes "UNNAMED_38_AVC8T245_I91_DIR_CP"
+nodes "UNNAMED_38_AVC8T245_I91_OE_CP"
+nodes "UNNAMED_38_AVC8T245_I146_OE_CP"
+nodes "UNNAMED_38_AVC8T245_I91_B_CP"
+nodes "FAULT_OE1_CP"
+nodes "FAULT_DIR1_CP"
+nodes "FAULT_OE2_CP"
+nodes "FAULT_DIR2_CP"
+nodes "UNNAMED_37_AVCH4T245_I319_B12_CP"
+nodes "ERR_OE1_CP"
+nodes "ERR_DIR1_CP"
+nodes "ERR_OE2_CP"
+nodes "ERR_DIR2_CP"
+nodes "UNNAMED_37_AVCH4T245_I192_B22_CP"
+nodes "XDP_CPU_TRST_N_CP"
+nodes "XDP_CPU_TCK0_CP"
+nodes "P1V5_PCH_EN"
+nodes "P1V3_EN"
+nodes "P5V_EN"
+nodes "P1V7_EN"
+nodes "P0V6_EN"
+nodes "BDX_CPU_RSMRST_N_CP"
+nodes "FM_BDXDE_RESET_N_R_CP"
+nodes "FPGA_ACT2_RESET_L"
+nodes "FPGA_PCH_PWROK"
+nodes "PU_KR_EPHY_RBIAS_CP"
+nodes "JTAG_TMS_1V05_CP"
+nodes "CPLD_THERMTRIP_PCH_N_CP"
+nodes "ISEN2_VR"
+nodes "ISEN1_VR"
+nodes "ISEN8_MVR"
+nodes "ISEN1_MVR"
+nodes "GPIO26"
+nodes "UNNAMED_38_AVC8T245_I146_DIR_CP"
+nodes "GPIO28"
+nodes "P1V5_B"
+nodes "P1V3_B"
+nodes "UNNAMED_10_NMOSFET_I631_D"
+nodes "JTAG_TMS_FPGA_3V3"
+nodes "JTAG_TDI_FPGA_3V3"
+nodes "SR_OE_L"
+nodes "MIFPGA_IOFPGA_CRCERR"
+nodes "MIFPGA2_IOFPGA_CRCERR"
+nodes "CHIMAY_U"
+nodes "BOARD_ID0"
+nodes "FPGA_CPU_MFG_MODE_STRAP"
+nodes "JTAG_BDX_TCK_CP"
+nodes "P3V3_EN"
+nodes "FPGA_SPI_STD_WP_L"
+nodes "PVCCIN_PGOOD"
+nodes "P1V2_VDDQ_PGOOD"
+nodes "P3V3_VFB"
+nodes "XDP_RST_PCH_SYSRST_N_CP"
+nodes "FPGA_PCH_SYS_RESET_L"
+nodes "PD_TXT_PLTEN_CP"
+nodes "PU_TXT_AGENT_CP"
+nodes "CPU_BIST_ENABLE_CP"
+nodes "UNNAMED_26_PI3B3253_I1_EA"
+nodes "UNNAMED_42_PI3B3257PG_I223_E_CP"
+nodes "UNNAMED_17_PI3B3257PG_I429_E"
+nodes "P1V7_FP_A"
+nodes "UNNAMED_15_NMOSFET_I151_D"
+nodes "UNNAMED_15_LED_I153_K"
+nodes "TS_ADD0"
+nodes "TS_ADD1"
+nodes "UNNAMED_42_AUC1G125_I289_A_CP"
+nodes "UNNAMED_18_AUC1G125_I18_A_CP"
+nodes "UNNAMED_42_AUC1G125_I272_A_CP"
+nodes "UNNAMED_42_AUC1G125_I171_OE_CP"
+nodes "UNNAMED_42_AUC1G125_I178_OE_CP"
+nodes "UNNAMED_42_AUC1G125_I183_OE_CP"
+nodes "UNNAMED_42_AUC1G125_I192_OE_CP"
+nodes "UNNAMED_42_AUC1G125_I202_OE_CP"
+nodes "UNNAMED_42_AUC1G125_I251_A_CP"
+nodes "SRT_SVID_ALERT_CPU_L"
+nodes "SRT_SVID_CLK_MEM_VRM"
+nodes "SRT_SVID_CLK_VRM"
+nodes "PCH_FPGA_SLP_S3_L"
+nodes "SERIRQ_CLK_R_CP"
+nodes "FM_BDXDE_CATERR_GTL_N_CP"
+nodes "SRT_3V3_PMBUS1_SCL"
+nodes "SRT_CPUVR_PMBUS1_SCL"
+nodes "SRT_MEMVR_PMBUS1_SCL"
+nodes "PD_DDR01_RCOMP_0_CP"
+nodes "PD_DDR01_RCOMP_2_CP"
+nodes "UNNAMED_6_RES_I482_B_CP"
+nodes "UNNAMED_6_HDR1X3_I462_A_CP"
+nodes "UNNAMED_6_HDR1X3_I462_C_CP"
+nodes "P5V_R"
+nodes "CPLD_FAST_PROCHOT_N_CP"
+nodes "FM_PCH_HOT_N_CP"
+nodes "FM_BDXDE_ERR2_GTL_N_CP"
+nodes "FM_BDXDE_ERR1_GTL_N_CP"
+nodes "FM_BDXDE_ERR0_GTL_N_CP"
+nodes "P3V3_SSD_DISCHARGE"
+nodes "BDXDE_SLP3_CPU_N_CP"
+nodes "SERIRQ_CLK_CP"
+nodes "PD_TEST_NOA_COMP_CP"
+nodes "PD_TEST<0>_CP"
+nodes "PD_TEST<1>_CP"
+nodes "FM_BDXDE_THERMTRIP_N_CP"
+nodes "XDP_CPU_OBSFN_B_MBP7_N_CP"
+nodes "XDP_CPU_OBSFN_B_MBP6_N_CP"
+nodes "XDP_CPU_OBSDATA_A_MBP3_N_CP"
+nodes "XDP_CPU_OBSDATA_A_MBP2_N_CP"
+nodes "XDP_CPU_PREQ_N_CP"
+nodes "XDP_CPU_TDO_CP"
+nodes "PHY_BDXDE_WAKE_N_R_CP"
+nodes "PHY_BDXDE_WAKE_N_CP"
+nodes "PD_DDR01_RCOMP_1_CP"
+nodes "P1V5_C"
+nodes "P1V3_C"
+nodes "PCH_LPC_LFRAME_L"
+nodes "LPC_LFRAME_R_N_CP"
+nodes "SRT_IO_MI_STROBE"
+nodes "IO_MI_STROBE"
+nodes "SRT_IO_MI_DATA"
+nodes "IO_MI_DATA"
+nodes "SRT_IO_MI2_STROBE"
+nodes "IO_MI2_STROBE"
+nodes "SRT_IO_MI2_DATA"
+nodes "IO_MI2_DATA"
+nodes "SRT_FPGA_SDO"
+nodes "FPGA_SDO"
+nodes "LPC_SERIRQ_R_CP"
+nodes "SRT_FPGA_DCLK"
+nodes "JTAG_TCK_FPGA_3V3"
+nodes "IRQ_SERIRQ_DATA_R_CP"
+nodes "PHY_WAKE_N_CP"
+nodes "SRT_FPGA_SPI_CS_L"
+nodes "SRT_FPGA_SDI"
+nodes "UNNAMED_24_EP4CGX50FG484_I251_CONFIG"
+nodes "FPGA_DCLK"
+nodes "PCH_SERIRQ"
+nodes "PWR_A3V3_A2V5_A1V2_PGOOD"
+nodes "IRQ_SERIRQ_DATA_CP"
+nodes "PHY_WAKE_N_R_CP"
+nodes "FPGA_SPI_CS_L"
+nodes "FPGA_SDI"
+nodes "FP_PWR_SW_CP"
+nodes "UNNAMED_24_HDR2X5_I306_P1"
+nodes "SRT_SPI_PCI_MOSI_CP"
+nodes "SPI_PCH_MOSI_CP"
+nodes "SPI_FPGA_MISO"
+nodes "SRT_IOFPGA_MIFPGA_LEDCLK"
+nodes "NC_IOFPGA_MIFPGA_LEDCLK"
+nodes "SRT_CLK125M_FPGA"
+nodes "CLK125M_FPGA"
+nodes "M2_SDA_1V8"
+nodes "M2_SCL_1V8"
+nodes "SRT_PCH_FPGA_MDC1_CP"
+nodes "SRT_PCH_FPGA_MDC0_CP"
+nodes "10GBE_FLSHP_MISO_CP"
+nodes "C33_SPI_10GBE_MISO_CP"
+nodes "SRT_M2_SDA_1V8"
+nodes "SRT_M2_SCL_1V8"
+nodes "C105_PCH_FPGA_MDC1_CP"
+nodes "C105_PCH_FPGA_MDC0_CP"
+nodes "CLK_33M_PCH_PCH_R_CP"
+nodes "CLK_33M_PCH_CP"
+nodes "CLK_33M_TPM_R_CP"
+nodes "CLK33M_TPM_CP"
+nodes "USB2_BIAS_CP"
+nodes "SMB_DDR_SCL_LV2V5_CP"
+nodes "SMB_DDR_SDA_LV2V5_CP"
+nodes "SMB_DDR_SCL_LV2V5_R_CP"
+nodes "SMB_DDR_SDA_LV2V5_R_CP"
+nodes "SRT_SR_STORE_CLK"
+nodes "SR_STORE_CLK"
+nodes "SRT_SR_CLK"
+nodes "SR_CLK"
+nodes "SRT_FLSHP_MISO_CP"
+nodes "SRT_FLSHG_MISO_CP"
+nodes "SRT_JTAG_TCK_PCH_3V3"
+nodes "JTAG_TCK_PCH_3V3"
+nodes "SRT_JTAG_TCK_FPGA_CPU_3V3"
+nodes "JTAG_TCK_FPGA_CPU_3V3"
+nodes "UNNAMED_42_AUC1G125_I192_Y_CP"
+nodes "JTAG_TCK_CPU_BUF_1V05_CP"
+nodes "SRT_JTAG_TCK_CPU_3V3"
+nodes "JTAG_TCK_CPU_3V3"
+nodes "SRT_FPGA_OBFL_CLK"
+nodes "FPGA_OBFL_CLK"
+nodes "SRT_CLK33M_PCI0"
+nodes "CLK33M_FPGA"
+nodes "UNNAMED_42_AUC1G125_I202_Y_CP"
+nodes "SRT_PMBUS_PSU1_SCL"
+nodes "SRT_PMBUS_PSU2_SCL"
+nodes "PMBUS_PSU1_SCL"
+nodes "PMBUS_PSU2_SCL"
+nodes "JTAG_TCK_PCH_1V05_CP"
+nodes "PECI_PCH_R_CP"
+nodes "SRT_SPI_PCH_CLK_CP"
+nodes "SPI_PCH_CLK_CP"
+nodes "SMB_DDR01_SCL_CP"
+nodes "SMB_DDR01_SDA_CP"
+nodes "SMB_DDR01_SCL_R_CP"
+nodes "SMB_DDR01_SDA_R_CP"
+nodes "SPI_FLSH_MISO_CP"
+!! Start of Section 5
+nodes "XTAL_RTCX2_CP"
+nodes "XTAL_RTCX1_CP"
+nodes "XTAL_KR_EPHY_REFCLK_OUT_CP"
+nodes "XTAL_KR_EPHY_REFCLK_IN_CP"
+nodes "XTAL_PCH_25M_IN_CP"
+nodes "UNNAMED_2_CAP_I478_A_ADV"
+nodes "UNNAMED_15_CAP_I57_B"
+nodes "UNNAMED_31_CAP_I19_B"
+nodes "UNNAMED_31_CAP_I53_B"
+nodes "SRT_DDR_VTT_REF"
+nodes "AVDD_SENSE_R_MVR"
+nodes "DVDD_SENSE_R_VR"
+nodes "DVDD_SENSE_R_MVR"
+nodes "UNNAMED_7_CAP_I279_B_VR"
+nodes "UNNAMED_7_CAP_I279_B_MVR"
+nodes "UNNAMED_29_RES_I143_B"
+nodes "UNNAMED_29_RES_I264_B"
+nodes "UNNAMED_7_CAP_I276_B_VR"
+nodes "UNNAMED_7_CAP_I276_B_MVR"
+nodes "P3V3_SSD_EN_12V"
+settling delay 4.887e-05
+nodes "UNNAMED_28_CAP_I126_B"
+settling delay 4.95e-05
+nodes "HSD_PE_CPU_RC_LN0_IOFPGA_N"
+nodes "HSD_PE_CPU_RC_LN0_IOFPGA_AC_P"
+nodes "HSD_PE_CPU_RC_LN0_IOFPGA_P"
+nodes "HSD_PE_CPU_RC_LN0_IOFPGA_AC_N"
+nodes "UNNAMED_30_CAP_I149_A"
+nodes "XDP_CPU_SYSPWROK_CP"
+nodes "VBST1_VPP"
+nodes "UNNAMED_2_CAP_I486_A_ADV"
+nodes "VBST1_5V"
+nodes "VBST2_VPP"
+nodes "UNNAMED_2_CAP_I487_A_ADV"
+nodes "VBST2_5V"
+nodes "TS_VCC"
+nodes "XDP_CPU_PWR_DEBUG_N_CP"
+settling delay 4.5e-05
+nodes "VDD_BOOT_92"
+nodes "VDD_BOOT_91"
+settling delay 4.923e-05
+nodes "BDX_SRTCRST_N_CP"
+nodes "NVRAM_BAT2_FLTR"
+nodes "BDX_RTCRST_N_CP"
+nodes "A_VCCRTCEXT_CP"
+nodes "A_VCCSST_1P5_CP"
+nodes "TP_VCCDUSBSUS_1P05_CP"
+nodes "A_VCCSUS_1P05_CP"
+nodes "A_VCCUSB3SUS_1P05_CP"
+nodes "A_VCCDSW_1P05_CP"
+nodes "VREG5_VPP"
+nodes "UNNAMED_2_CAP_I490_A_ADV"
+nodes "VREG5_5V"
+nodes "P3V3_VREG"
+settling delay 0.0001395
+nodes "P3V3_VBAT_CP"
+settling delay 5.895e-05
+nodes "OBFL_VDDI"
+settling delay 6.39e-05
+nodes "ISENRTN_VR"
+nodes "ISENRTN_MVR"
+settling delay 9.9e-05
+nodes "TEMP_D2_P"
+settling delay 4.5e-05
+nodes "TEMP_D2_N"
+settling delay 0.000549
+nodes "NVRAM_VCC_3V3_FLTR"
+nodes "P3V3_CONN"
+settling delay 0.001089
+nodes "VDD_BOOT_98"
+nodes "VDD_BOOT"
+settling delay 0.002241
+nodes "P1V5_PCH"
+settling delay 0.00243
+nodes "P1V3"
+settling delay 0.002502
+nodes "P1V8"
+settling delay 0.002673
+nodes "P3V3_SSD"
+settling delay 0.008217
+nodes "P0V6_VTT"
+!! Start of Section 4
+settling delay 0.1764
+nodes "PVCCIN_SNS_P"
+nodes "PVCCIN"
+!! Start of Section 6
+!settling delay 50.0u  !50.00u
+nodes "VDD_BOOT_R"
+!settling delay 1.21m  !12.10m
+nodes "VDD_PH"
+settling delay 4.5e-05
+nodes "VDD_BOOT_R_91"
+settling delay 4.5e-05
+nodes "VDD_PH_91"
+settling delay 4.5e-05
+nodes "VDD_BOOT_R_92"
+settling delay 4.5e-05
+nodes "VDD_PH_92"
+settling delay 4.95e-05
+nodes "UNNAMED_1_CAP_I79_B_3V3"
+nodes "UNNAMED_1_RES_I78_A_3V3"
+nodes "CLK100M_PE_CPU_MIFPGA2_N"
+nodes "SRT_CLK100M_PE_CPU_MIFPGA2_N"
+nodes "CLK100M_PE_CPU_MIFPGA2_P"
+nodes "SRT_CLK100M_PE_CPU_MIFPGA2_P"
+nodes "CLK100M_PE_CPU_MIFPGA_N"
+nodes "SRT_CLK100M_PE_CPU_MIFPGA_N"
+nodes "CLK100M_PE_CPU_MIFPGA_P"
+nodes "SRT_CLK100M_PE_CPU_MIFPGA_P"
+nodes "CLK100M_PE_CPU_SA_N"
+nodes "SRT_CLK100M_PE_CPU_SA_N"
+nodes "CLK100M_PE_CPU_SA_P"
+nodes "SRT_CLK100M_PE_CPU_SA_P"
+nodes "CLK_100M_PE_FP_N"
+nodes "SRT_CLK_100M_PHY3_N"
+nodes "CLK_100M_PE_FP_P"
+nodes "SRT_CLK_100M_PHY3_P"
+nodes "CLK_100M_PHY1_N"
+nodes "SRT_CLK_100M_PHY1_N"
+nodes "CLK_100M_PHY1_P"
+nodes "SRT_CLK_100M_PHY1_P"
+nodes "CLK_100M_PHY2_N"
+nodes "SRT_CLK_100M_PHY2_N"
+nodes "CLK_100M_PHY2_P"
+nodes "SRT_CLK_100M_PHY2_P"
+nodes "IO_MI2_FPGA_SPARE<0>"
+nodes "IO_MI2_SPARE0"
+nodes "IO_MI2_FPGA_SPARE<1>"
+nodes "IO_MI2_SPARE1"
+nodes "IO_MI2_FPGA_SPARE<2>"
+nodes "IO_MI2_SPARE2"
+nodes "IO_MI2_FPGA_SPARE<3>"
+nodes "IO_MI2_SPARE3"
+nodes "IO_MI_FPGA_SPARE<0>"
+nodes "IO_MI_SPARE0"
+nodes "IO_MI_FPGA_SPARE<1>"
+nodes "IO_MI_SPARE1"
+nodes "IO_MI_FPGA_SPARE<2>"
+nodes "IO_MI_SPARE2"
+nodes "IO_MI_FPGA_SPARE<3>"
+nodes "IO_MI_SPARE3"
+nodes "R_SPI_PCH_MISO"
+nodes "SPI_PCH_MISO_CP"
+nodes "RST_FP_SYSRST_BTN_N_CP"
+nodes "RST_FP_SYSRST_BTN_N_R_CP"
+nodes "SPI_CS0_L_CP"
+nodes "SPI_PCH_CS0_L"
+nodes "SPI_FLSH_MOSI"
+nodes "SPI_FLSH_MOSI_CP"
+settling delay 4.95e-05
+nodes "UNNAMED_41_LSF0102_I37_EN_CP"
+nodes "UNNAMED_41_CAP_I44_A_CP"
+settling delay 4.5e-05
+nodes "UNNAMED_7_CAP_I261_B_CP"
+nodes "XTAL_PCH_25M_OUT_CP"
+settling delay 4.95e-05
+nodes "UNNAMED_41_LSF0102_I19_EN_CP"
+nodes "UNNAMED_41_CAP_I28_A_CP"
+settling delay 4.5e-05
+nodes "SPI_FLSH_CLK"
+nodes "SPI_FLSH_CLK_CP"
+nodes "FPGA_PCH_SPARE3"
+nodes "GPIO48"
+nodes "FPGA_PCH_SPARE2"
+nodes "SRT_FPGA_PCH_SPARE2"
+nodes "GPIO39"
+settling delay 0.001998
+nodes "RES_M2_PEWAKE_L"
+settling delay 4.5e-05
+nodes "M2_PEWAKE_L"
+nodes "DIMM_THERM_EVENT_L"
+nodes "GPIO10"
+nodes "UNNAMED_20_CAP_I259_B"
+nodes "SRT_MI_IO_DATA"
+nodes "MI_IO_DATA"
+nodes "SRT_MI2_IO_DATA"
+nodes "MI2_IO_DATA"
+nodes "JTAG_CABLE_PRSNT_L"
+nodes "LJTAG_CABLE_PRSNT_L"
+nodes "GPIO9"
+nodes "FPGA_PCH_CRCERR_L"
+nodes "FPGA_PCH_SPARE1"
+nodes "SRT_FPGA_PCH_SPARE1"
+nodes "GPIO38"
+nodes "JTAG_HDR_TMS"
+nodes "LJTAG_TMS_HDR_3V3"
+nodes "JTAG_HDR_TDI"
+nodes "LJTAG_TDI_HDR_3V3"
+nodes "JTAG_HDR_TRST_L"
+nodes "LJTAG_TRST_L_HDR_3V3"
+nodes "JTAG_HDR_TCK"
+nodes "LJTAG_TCK_HDR_3V3"
+nodes "PCH_TPM_CLKRUN_L_CP"
+nodes "R_PCH_TPM_CLKRUN_L_CP"
+nodes "FPGA_CPU_BRD_ID1"
+nodes "GPIO22"
+nodes "LJTAG_TDO_HDR_3V3"
+nodes "JTAG_TDO_CPU_3V3"
+nodes "GPIO1"
+nodes "PCH_NMI_L"
+nodes "IMON_TP_MVR"
+nodes "P1V2_VDDQ_EN"
+nodes "FPGA_PCH_RSMRST_L"
+nodes "PCH_DPWROK_CP"
+nodes "PLTRST_PROC_N_CP"
+nodes "RESET_CPU_N_CP"
+nodes "SRT_SVID_DIO_MEM_VRM"
+nodes "SRT_SVID_DIO_VRM"
+nodes "SRT_SVID_DIO_CPU"
+nodes "SVID_DIO_CPU_VRM"
+nodes "JTAG_TDO_R_CP"
+nodes "JTAG_1V05SB_TDO_CP"
+nodes "JTAG_1V05SB_PCH_TDI_CP"
+nodes "UNNAMED_42_PI5A3157_I263_B1_CP"
+nodes "JTAG_1V05SB_CPU_TDO_CP"
+nodes "SRT_SVID_ALERT_MEM_VRM_L"
+nodes "SRT_SVID_ALERT_VRM_L"
+nodes "SVID_ALERT_VRM_CPU_L"
+nodes "SRT_SVID_CLK_CPU"
+nodes "SVID_CLK_CPU_VRM"
+settling delay 0.05706
+nodes "XDP_CPU_VCCOBS_CD_CP"
+nodes "XDP_CPU_VCCOBS_AB_CP"
+nodes "FLTR_P1V05_PCH_CP"
+nodes "FLTR_PVCCGBE_VCCKRL_CP"
+nodes "FLTR_PVCCGBE_VCCS_CP"
+nodes "A_VCCCORE_1P05_SENSE_CP"
+nodes "P1V05C_SNS_P"
+nodes "P1V05C"
+settling delay 4.5e-05
+nodes "VDD_BOOT_R_98"
+settling delay 0.001089
+nodes "VDD_PH_98"
+
+
+
+
+
+settling delay 0.005589
+nodes "P2_5VA"
+nodes "FLTR_FPGA_VCCA_PLL"
+nodes "FLTR_FPGA_VCCA_GXB"
+settling delay 4.5e-05
+nodes "TSEN2_R_MVR"
+nodes "TSEN_R_98"
+nodes "TSEN2_MVR"
+nodes "FPGA_PCH_CATERR_DLY_L"
+nodes "UNNAMED_20_CAP_I258_B"
+nodes "GPIO14"
+nodes "PECI_PCH_CP"
+nodes "PECI_CPU_CP"
+nodes "UNNAMED_41_NC7SZ126_I4_Y_CP"
+nodes "CPU_FPGA_THROTTLE_LVC3_N"
+settling delay 4.5e-05
+nodes "XDP_PWRGD_RST_N_CP"
+nodes "FPGA_PCH_PWRBTN_L"
+nodes "FP_PWR_BTN_N_CP"
+settling delay 4.5e-05
+nodes "UNNAMED_20_CAP_I256_B"
+nodes "GPIO43"
+nodes "CPU_THERMTRIP_3V3_L"
+nodes "UNNAMED_20_CAP_I260_B"
+nodes "GPIO41"
+nodes "CPU_PROCHOT_3V3_L"
+nodes "FPGA_PCH_WDT_L"
+nodes "UNNAMED_20_CAP_I257_B"
+nodes "GPIO42"
+nodes "SMBUS_PCH_SCL_CP"
+nodes "XDP_CPU_SMBCLK_CP"
+nodes "SMB_HOST_3V3_CLK_CP"
+nodes "SMBUS_PCH_SDA_CP"
+nodes "XDP_CPU_SMBDAT_CP"
+nodes "SMB_HOST_3V3_DAT_CP"
+nodes "FPGA_CPU_BRD_ID0"
+nodes "GPIO11"
+settling delay 0.01359
+nodes "SW1_VPP"
+nodes "VCCSUS3_3"
+nodes "FLTR_FPGA_VCCL_GXB"
+nodes "FLTR_FPGA_VCCD_PLL"
+nodes "UNNAMED_2_CAP_I486_B_ADV"
+nodes "P1_2VA"
+settling delay 4.5e-05
+nodes "TSEN1_R_MVR"
+nodes "TSEN_R"
+nodes "TSEN1_MVR"
+nodes "TSEN1_R_VR"
+nodes "TSEN_R_91"
+nodes "TSEN_R_92"
+nodes "TSEN1_VR"
+nodes "UNNAMED_2_RES_I151_A_92"
+nodes "UNNAMED_2_RES_I151_A_91"
+nodes "UNNAMED_7_MPPS04_I306_EN_VR"
+nodes "UNNAMED_2_RES_I151_A_98"
+nodes "UNNAMED_2_RES_I151_A"
+nodes "UNNAMED_7_MPPS04_I306_EN_MVR"
+settling delay 0.02016
+nodes "VDD_VCIN_98"
+nodes "VDD_VCIN_92"
+nodes "VDD_VCIN_91"
+nodes "VDD_VCIN"
+nodes "SW1_5V"
+nodes "P5V"
+settling delay 0.008595
+nodes "SW2_VPP"
+nodes "DDR4_VPP"
+settling delay 4.5e-05
+nodes "SRT_MIFPGA2_OK"
+nodes "MIFPGA2_OK"
+nodes "SRT_MIFPGA_OK"
+nodes "MIFPGA_OK"
+nodes "GPIO27"
+nodes "PCH_GP27_MIFPGA2_PERST_L"
+nodes "GPIO57"
+nodes "PCH_GP57_MIFPGA_PERST_L"
+nodes "GPIO46"
+nodes "PCH_GP72_FPGA_PERST_L"
+settling delay 0.1287
+nodes "PWR_P12V_F_3V3"
+nodes "P12V"
+settling delay 4.5e-05
+nodes "SMBUS_FAN_SCL"
+nodes "SRT_SMBUS_FAN_SCL"
+nodes "FPGA_DC_SFP_SCL"
+nodes "SRT_FPGA_DC_SFP_SCL"
+nodes "FPGA_MGMT_SFP_SCL"
+nodes "SRT_FPGA_MGMT_SFP_SCL"
+nodes "PMBUS2_SCL"
+nodes "SRT_PMBUS2_SCL"
+nodes "SRT_ACT2_SDA"
+nodes "I2C_ACT2_SDA"
+nodes "SRT_ACT2_SCL"
+nodes "I2C_ACT2_SCL"
+settling delay 0.00936
+nodes "SW2_5V"
+nodes "P1V7"
+settling delay 4.5e-05
+nodes "SRT_PMBUS1_SCL"
+nodes "PMBUS1_SCL"
+settling delay 0.007371
+nodes "VRM2_VDD_P3V3_VR"
+nodes "VRM2_VDD_P3V3_MVR"
+nodes "FLTR_FPGA_VCC_CLKIN3A"
+nodes "FIL_CLK125M_P3V3"
+nodes "UNNAMED_2_CAP_I487_B_ADV"
+nodes "P3_3VA"
+settling delay 4.5e-05
+nodes "M_AB_VREF_CP"
+nodes "M_AB_VREF_R_CP"
+settling delay 4.5e-05
+
+settling delay 0.03951
+nodes "VDDQ_SNS_P"
+nodes "P1V2_VDDQ"
+nodes "GND"
+nodes "PD_RSVD_97_CP"
+nodes "PD_RSVD_R1_CP"
+nodes "PD_RSVD_R2_CP"
+nodes "LV_SNUB_3V3"
+nodes "VDDQ_SNS_N"
+nodes "DGND_SENSE_R_MVR"
+nodes "P1V05C_SNS_N"
+nodes "AGND_SENSE_R_MVR"
+nodes "DGND_SENSE_R_VR"
+nodes "UNNAMED_15_PCIEMINI75P8POM_I117_P9"
+settling delay 0.2925
+nodes "UNNAMED_10_AT90SO72_I557_MODE"
+nodes "UNNAMED_10_AT90SO72_I557_CLK"
+
+settling delay 0.01845
+nodes "UNNAMED_17_CAP_I8_B"
+nodes "P3_3V"
+nodes "PVCCIN_SNS_N"
+settling delay 4.5e-05
+nodes "PWR_LV_DIDT_3V3"
+

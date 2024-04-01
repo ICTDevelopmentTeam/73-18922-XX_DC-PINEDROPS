@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530582804  Vba73                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:27 2018
+disconnect all
+connect s to "GPIO7"
+connect i to "PSU1_AC_OK"
+!B!resistor 10k, 6.00, 6.00, re4, wb, ar100m
+resistor 10k,25.00, 20.00,re4,wb,ar100m
+! "r179" test.

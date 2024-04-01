@@ -1,0 +1,18 @@
+!!!!    2    0    1 1530582876  V8c40                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:39 2018
+on failure
+report parallel devices
+report "c119_cp 100n"
+report "c122_cp 100n"
+report "c125_cp 100n"
+report "c128_cp 100n"
+report "c131_cp 10.0n"
+end on failure
+disconnect all
+connect i to "M_AB_VREF_R_CP"
+connect s to "GND"
+connect g to "P1V2_VDDQ"
+!B!resistor 1k, 6.00, 6.00, re3, ar100m, ed, wa73.1u
+resistor 1k,25.00, 20.00,re3,ar100m,ed,wa73.1u
+! "r175_cp" is a limited test.
+off failure

@@ -1,0 +1,7 @@
+!!!!    2    0    1 1533016402   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:27 2018
+disconnect all
+connect i to "P1V05C"
+connect s to "XDP_CPU_OBSDATA_A_MBP4_N_CP"
+resistor 10k,25.00, 20.00,re4,wb,ar100m,ed,en
+! "r168_cp" test.

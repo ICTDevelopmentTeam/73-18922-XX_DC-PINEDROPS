@@ -1,0 +1,55 @@
+!!!!    2    0    1 1603786738  V300c                                         
+test analog
+test "U11_cp.1"
+test "U11_cp.2"
+test "U11_cp.3"
+test "U11_cp.5"
+test "U11_cp.6"
+test "U11_cp.7"
+end test
+
+
+subtest "U11_cp.1"
+disconnect all
+connect i to nodes "GND"
+connect s to nodes "C33_SPI_10GBE_CS_N_CP"
+diode 0.9, 0.5, idc5m, co3.5, ar2.55
+end subtest
+
+subtest "U11_cp.2"
+disconnect all
+connect i to nodes "GND"
+connect s to nodes "10GBE_FLSHP_MISO_CP"
+diode 0.9, 0.5, idc5m, co3.5, ar2.55
+end subtest
+
+subtest "U11_cp.3"
+disconnect all
+connect i to nodes "GND"
+connect s to nodes "UNNAMED_16_MT25Q8P_I92_WPMVPPDQ2_CP"
+diode 0.9, 0.5, idc5m, co3.5, ar2.55
+end subtest
+
+subtest "U11_cp.5"
+disconnect all
+connect i to nodes "GND"
+connect s to nodes "C33_SPI_10GBE_MOSI_CP"
+diode 0.9, 0.5, idc5m, co3.5, ar2.55
+end subtest
+
+subtest "U11_cp.6"
+disconnect all
+connect i to nodes "GND"
+connect s to nodes "C33_SPI_10GBE_CLK_CP"
+diode 0.9, 0.5, idc5m, co3.5, ar2.55
+end subtest
+
+subtest "U11_cp.7"
+disconnect all
+connect i to nodes "GND"
+connect s to nodes "UNNAMED_16_MT25Q8P_I92_HOLDMDQ3_CP"
+diode 0.9, 0.5, idc5m, co3.5, ar2.55
+end subtest
+
+
+

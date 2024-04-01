@@ -1,0 +1,12 @@
+!!!!    2    0    1 1529027717   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:18 2018
+on failure
+   report parallel devices
+   report "c290 100n"
+end on failure
+disconnect all
+connect s to "GND"
+connect i to "OBFL_VDDI"
+capacitor 1.1u, 35.00, 40.00, fr1024, re2, ar100m, nocomp
+! "c291" test.
+off failure

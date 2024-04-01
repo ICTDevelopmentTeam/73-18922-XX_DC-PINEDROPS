@@ -1,0 +1,8 @@
+!!!!    2    0    1 1610146427   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:09 2018
+disconnect all
+connect s to "GND"
+connect i to "SERIRQ_CLK_CP"
+!B!resistor 75, 12.67, 6.00, re2, ar100m
+resistor 75,30.00, 20,re2,ar100m
+! "r119_cp" test.

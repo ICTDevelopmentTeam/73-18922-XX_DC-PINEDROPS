@@ -1,0 +1,8 @@
+!!!!    2    0    1 1530583071  V0066                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:13 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "BDXDE_DRAM_PWROK_CP"
+!B!resistor 2.67k, 6.00, 6.00, re4, wb, ar500m
+resistor 2.67k,25.00, 20.00,re4,wb,ar500m
+! "r177_cp" test.

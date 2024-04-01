@@ -1,0 +1,7 @@
+!!!!    2    0    1 1529027709   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:10 2018
+disconnect all
+connect i to "UNNAMED_41_LSF0102_I37_EN_CP"
+connect s to "UNNAMED_41_CAP_I44_A_CP"
+jumper 6.04, re1, ar200m
+! "r418_cp" test.

@@ -1,0 +1,8 @@
+!!!!    2    0    1 1678315348   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:57 2018
+disconnect all
+connect s to "P1V05C"
+connect i to "PU_NCSI_RXD0_CP"
+connect g to "GND"
+resistor 5.11k,25.00, 20.00,re4,wb,ar200m,ed,wa20m, en
+! "r200_cp" test.

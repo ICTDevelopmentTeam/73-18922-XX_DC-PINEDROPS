@@ -1,0 +1,8 @@
+!!!!    2    0    1 1531555907   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:29 2018
+disconnect all
+connect i to "P1V05C"
+connect s to "LAN_I2C1_SDA_1P0V_CP"
+!connect g to "GND"
+resistor 10k,25.00, 20.00,re5,wb,ar100m,ed,en
+! "r358_cp" test.

@@ -1,0 +1,89 @@
+----------------------------------------
+CHEK-POINT Report for "pins_long".
+Wed Nov 29 18:18:42 2023
+73-19246-05_2old
+----------------------------------------
+Failed Open #1
+(223136) PVCCIN_SNS_N
+                r04_vr.1
+                 r497.1
+               u5_cp.AT75
+             u5_cp_pch.AT75
+----------------------------------------
+Failed Open #2
+(11456) p1v3_pgood
+                dbg_1.26
+                 r218.2
+                  u2.3
+                u11.Y10
+                u100.15
+----------------------------------------
+Failed Open #3
+(219157) UNNAMED_7_MPPS04_I306_EN_MVR
+               r29_mvr.2
+              r79_91_mvr.2
+              r79_98_mvr.2
+----------------------------------------
+Failed Open #4
+(204111) th_dir2_cp
+               r277_cp.2
+                u19_cp.3
+----------------------------------------
+Failed Open #5
+(205137) ts_vcc
+                 c303.1
+                 r529.2
+                 u30.2
+                 u30.15
+----------------------------------------
+Failed Open #6
+(22006) UNNAMED_18_AUC1G125_I18_A_CP
+               r429_cp.2
+                u33_cp.2
+----------------------------------------
+Failed Open #7
+(205107) c33_spi_10gbe_cs_n_cp
+               r146_cp.1
+                u11_cp.1
+                u18_cp.6
+----------------------------------------
+Failed Open #8
+(11468) dbg_console_rxd
+                 u15.12
+                u17_cp.6
+----------------------------------------
+Failed Open #9
+(11675) fpga_bdx_cpu_rsmrst_n
+                u11.G20
+                u17_cp.9
+----------------------------------------
+Failed Open #10
+(11671) pch_sus_stat_l
+                  p6.4
+                r76_cp.2
+               tpm_cp.19
+               u5_cp.BB18
+             u5_cp_pch.BB18
+                u11.P20
+----------------------------------------
+Failed Open #11
+(115148) SR_CLK
+                 r499.2
+                 u26.11
+                 u27.11
+                 u28.11
+------End, 11 Problems Reported---------
+                     Fixture Detected: Fixture_190
+                     Model: DC-PINEDROPS
+                     Fixture RFID: 0284239
+    Testing Long Pin Contact
+
+Position the Probe, then 'START'.
+
+Position the Probe, then 'START'.
+
+Position the Probe, then 'START'.
+
+Position the Probe, then 'START'.
+
+Position the Probe, then 'START'.

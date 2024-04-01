@@ -1,0 +1,10 @@
+!!!!    2    0    1 1645615493   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:21 2018
+disconnect all
+connect s to "GND"; a to "GND"
+connect i to "UNNAMED_20_CAP_I258_B"
+!connect g to "VCCSUS3_3"!; l to "VCCSUS3_3" 
+capacitor 1n, 22.70, 20.00, fr8192, re5, wb, ar100m, sa, ed,en, comp
+!capacitor 2n, 40, 40, fr1024, re4, wb, ar100m, ed, comp, en!, sl  !unstable
+warning "excessive plus tolerance or high limit."
+! "c19" is a commented test.

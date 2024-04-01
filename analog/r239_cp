@@ -1,0 +1,8 @@
+!!!!    2    0    1 1700857356   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:58 2018
+disconnect all
+connect s to "GND"
+connect i to "PD_SPARE<1>_CP"
+connect g to "P1V05C"
+resistor 5.11k,35.00, 25.00,re4,wb,ar200m,ed, wa10m
+! "r239_cp" test.

@@ -1,0 +1,41 @@
+!!!!    2    0    1 1529027808  Vc08a                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:49 2018
+
+!  311  MHz
+!  High Frequency Clock Oscillator  Single-Output, Enable
+
+test powered analog
+   power pins 2, 4
+
+   test "Enable"
+   test "Out_3"
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+
+subtest  "Enable"
+   connect i to pins 1
+   connect l to pins 2
+
+   detector dcv, expect 3.3
+   measure 3.5, 3.1
+end subtest
+
+subtest  "Out_3"
+   connect s to pins 1
+   connect rcva to pins 3
+   connect l to pins 3
+
+   source dcv, am3.3, ico1, on
+   detector frequency, expect 1.56M     !125 divided by 80
+   measure 1.56M * 1.5, 1.56M * 0.95
+end subtest
+
+
+
+
+!
+!  End test
+!

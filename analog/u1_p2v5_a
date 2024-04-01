@@ -1,0 +1,44 @@
+!!!!    2    0    1 1529027802  V1bb6                                         
+! IPG: rev 07.20pd Fri Jun 15 09:56:43 2018
+!IPG : Pin 2 is not connected in topology.
+!IPG : Pin 5 is not connected in topology.
+!IPG : Pin 6 is not connected in topology.
+!IPG : Pin 7 is not connected in topology.
+!IPG : Pin 9 is not connected in topology.
+!IPG : Pin 10 is not connected in topology.
+!IPG : Pin 11 is not connected in topology.
+!IPG : Pin 12 is not connected in topology.
+test powered analog
+   power pins 1,8,15,16,17,18,19,20
+   nonanalog pins 2,3,4,5,6,7,9,10,11,12,13,14
+
+   test "VIN"
+   test "VOUT"
+end test
+
+!
+!-----------------------------------------------------------------------
+!
+
+subtest "VIN"
+   clear connect i to pins  15
+   connect l to pins  8
+
+   detector dcv, expect  3.3
+   measure  3.3 * 1.05, 3.3 * 0.95
+end subtest
+
+subtest "VOUT"
+   clear connect i to pins  1
+   connect l to pins  8
+
+   detector dcv, expect  2.5
+   measure  2.5 * 1.05, 2.5 * 0.95        !change to appropriate value
+end subtest
+
+!
+!  End test
+!
+
+
+

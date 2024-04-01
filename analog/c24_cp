@@ -1,0 +1,15 @@
+!!!!    2    0    1 1597038854   0000                                         
+! IPG: rev 07.20pd Fri Jun 15 09:55:17 2018
+on failure
+   report parallel devices
+   report "c111_cp 100n"
+end on failure
+disconnect all
+connect s to "GND"; a to "GND"
+connect i to "P3V3_VBAT_CP"
+connect g to "NVRAM_VCC_3V3_FLTR" 
+connect g to "BDX_RTCRST_N_CP" 
+connect g to "BDX_SRTCRST_N_CP" 
+capacitor 1.1u, 35.00, 40.00, fr1024, re2, ar100m, sa, en, nocomp, am0.25
+! "c24_cp" test.
+off failure
